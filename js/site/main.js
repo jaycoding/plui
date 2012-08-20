@@ -1,18 +1,36 @@
 $(function(){
 	//Init expander
 	$('.expander').expander({
-		slicePoint: 100,
+		slicePoint: 120,
 		preserveWords: true,
 		widow: 4,
-		expandText: 'Read more',
+		expandText: 'More info',
 		expandPrefix: '&hellip; ',
 		moreClass: 'read-more',
 		lessClass: 'read-less',
 		expandEffect: 'fadeIn',
-		expandSpeed: 250,
+		expandSpeed: 400,
 		collapseEffect: 'fadeOut',
-		collapseSpeed: 200,
-		userCollapse: false,
+		collapseSpeed: 300,
+		userCollapse: true,
+		userCollapseText: 'Collapse',
+		userCollapsePrefix: ' '
+	});
+	
+	//Init expander
+	$('.expander-all').expander({
+		slicePoint: 0,
+		preserveWords: true,
+		widow: 4,
+		expandText: 'More info',
+		expandPrefix: '',
+		moreClass: 'read-more',
+		lessClass: 'read-less',
+		expandEffect: 'fadeIn',
+		expandSpeed: 400,
+		collapseEffect: 'fadeOut',
+		collapseSpeed: 300,
+		userCollapse: true,
 		userCollapseText: 'Collapse',
 		userCollapsePrefix: ' '
 	});

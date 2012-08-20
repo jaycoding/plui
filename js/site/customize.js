@@ -15,6 +15,30 @@ $(function(){
           }
         }
 	);
+	
+	$('.pms-list > .pms').bind("click", function(){
+		$(this).siblings(".pms").removeClass("selected");
+		$(this).addClass("selected");
+	});
+	
+	$(".customize-selection #input-quantity").click(function(){
+		$(".customize-selection").fadeIn(400, function(){$(this).removeClass("none")});
+	});
+	
+	$(".customize-selection").click(function(){
+		var $this = $(this);
+		if ($this.hasClass("active")) {
+			return;
+		}
+		
+		var $next = $this.next(".customize-selection");
+		if ($next && $next.hasClass("none")) {
+			$next.fadeIn(400, function(){$(this).removeClass("none")});
+		}
+		
+		$(".customize-selection").removeClass("active").find(".expandable").slideUp(300);
+		$(this).addClass("active").find(".expandable").slideDown(300);
+	});
 });
 
 
