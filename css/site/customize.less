@@ -1,0 +1,56 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          customize.less
+ //  Description:   Product customize
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+////Customize////
+.customize {
+  clear: both;
+  > .hd {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px #ddd;
+  }
+  > .bd {
+    margin: 15px 0;
+    > .main {
+      width: 740px;
+      float: left;
+    }
+    > .side {
+      width: 210px;
+      float: right;
+    }
+  }
+}
+
+////Customize Guide////
+.customize-guide {
+  padding: 5px 8px;
+  .nav {
+    margin: 0;
+  }
+}
+
+////Customize Selection////
+.customize-selection {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  &.active {
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 3px #ddd;
+  }
+  > .hd {
+    font-size: 18px;
+    color: #999;
+    .bold();
+    margin-bottom: 4px;
+  }
+  > .bd {
+    
+  }
+}

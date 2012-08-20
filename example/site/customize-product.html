@@ -6,15 +6,245 @@
 		<link rel="stylesheet/less" type="text/css" href="../../css/site/main.less">
 		<script type="text/javascript">less = {}; less.env = 'development';</script>
 		<script type="text/javascript" src="../../js/utils/less/1.3.0/less.min.js"></script>
-		
 		<script type="text/javascript" src="../../js/lib/jquery/1.8.0/jquery.min.js"></script>
 		<script type="text/javascript" src="../../js/utils/bootstrap/2.0.4/bootstrap.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.expander/1.4.3/jquery.expander.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.editable/1.0.1/jquery.editable.js"></script>
 		<script type="text/javascript" src="../../js/site/main.js"></script>
+		<script type="text/javascript" src="../../js/site/customize.js"></script>
 		<!--[if lt IE 9]>
 		<script src="../../js/utils/html5/3.0/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body>
-		
+		<div class="wrapper">
+			<div class="page">
+				<!-- Header Start -->
+				<header class="header cf none">
+					<div class="header-logo"><img src="../../img/icons/logo-sunjoy.png" alt="" /></div>
+					<div class="header-user">
+						Welcome! <a href="#">Sign In</a> | <a href="#">Register</a>
+					</div>
+					<div class="header-share">
+						<a href="#"><img alt="" src="../../img/icons/hd-ico-facebook.png"></a>
+				    	<a href="#"><img alt="" src="../../img/icons/hd-ico-twitter.png"></a>
+					</div>
+				</header>
+				<!-- Header End -->
+				
+				<!-- Navigation Start -->
+				<nav class="navigation cf none">
+				  	<div class="navigation-l"></div>
+				  	<div class="navigation-c">
+				    	<ul class="cf">
+				      		<li><a href="#">Home</a></li>
+				      		<li class="active"><a href="#">Products</a></li>
+				      		<li><a href="#">Specials</a></li>
+				      		<li><a href="#">eFlyers</a></li>
+				      		<li><a href="#">News</a></li>
+				      		<li></li>
+				    	</ul>
+				    	<div class="navigation-search">
+				      		<input type="text" placeholder="sku, keyword or name" />
+				      		<div class="navigation-search-go"></div>
+				    	</div>
+				  	</div>
+				  	<div class="navigation-r"></div>
+				</nav>
+				<!-- Navigation End -->
+				
+				<!-- Breadcrumb Start -->
+				<div class="position cf none">
+					<ul class="breadcrumb">
+						<li><a href="#">SU092938</a> &gt;</li>
+						<li><a href="#">Customize Product</a> &gt;</li>
+						<li>Product &amp; Color</li>
+					</ul>
+				</div>
+				<!-- Breadcrumb End -->
+				
+				<!-- Body Start -->
+				<div class="body cf">
+					
+					<!-- Customize Start -->
+					<div class="customize">
+						<div class="hd cf none">
+							<div class="customize-guide">
+								<ul class="nav nav-pills">
+									<li class="active"><a href="#">Product &amp; Color</a></li>
+									<li><a href="#">Accessories &amp; Options</a></li>
+									<li><a href="#">Packaging</a></li>
+									<li><a href="#">Shipping &amp; Turnarounds</a></li>
+									<li><a href="#">Review Summary</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="bd cf">
+							<div class="main">
+								<section class="customize-selection customize-selection-1 active">
+									<div class="hd">Price &amp; Quantity</div>
+									<div class="bd row-fluid">
+										<div class="span4">
+											<img src="../../mock/image/150x150/acc-1.jpg" alt="" />
+											<h4>SJUSB0006 - 5D</h4>
+										</div>
+										<div class="span8">
+											<h4>SJUSB0006 - 5D</h4>
+											<p>Swivel Drive-24-Hour Turnaround</p>
+											<div class="price">
+												<table class="table">
+													<thead>
+														<tr>
+															<th>&nbsp;</th>
+															<th>Capacity</th>
+															<th>Setup 1</th>
+															<th>Qty 100</th>
+															<th>Qty 200</th>
+															<th>Qty 300</th>
+															<th>Qty 1,000</th>
+															<th>Qty 3,000</th>
+															<th>Qty 5,000</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><input type="radio" name="radio"></td>
+															<td>1G</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+														</tr>
+														<tr>
+															<td><input type="radio" name="radio"></td>
+															<td>2G</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+														</tr>
+														<tr>
+															<td><input type="radio" name="radio"></td>
+															<td>4G</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+															<td>7.50</td>
+														</tr>
+														<tr>
+															<td><input type="radio" name="radio"></td>
+															<td><span class="editable">Custom</span></td>
+															<td>quote</td>
+															<td>quote</td>
+															<td>quote</td>
+															<td>quote</td>
+															<td>quote</td>
+															<td>quote</td>
+															<td>quote</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="quantity">
+												<form class="form-inline editables">
+													<label class="control-label bold">Enter Quantity:</label>
+													<span class="editable" data-type="editable" data-for="#input-quantity">0</span>
+      												<input id="input-quantity" class='input-small hidden' type="text" />
+												</form>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section class="customize-selection customize-selection-2">
+									<div class="hd">Mockup</div>
+									<div class="bd row-fluid">
+										<div class="span6">
+											<img src="../../mock/image/150x150/acc-1.jpg" alt="" />
+											<h4>SJUSB0006 - 5D</h4>
+										</div>
+										<div class="span6">
+											<h4>SJUSB0006 - 5D</h4>
+											<p>Swivel Drive-24-Hour Turnaround</p>
+											<p>Select the color</p>
+											<ul class="colors row-fluid">
+												<li class="span4">PMS 186C</li>
+												<li class="span4">PMS 186C</li>
+												<li class="span4">PMS 186C</li>
+												<li class="span4">PMS 186C</li>
+												<li class="span4">PMS 186C</li>
+												<li class="span4">PMS 186C</li>
+											</ul>
+											<p>Artwork &amp; production instructions</p>
+											
+											<p>Instructions</p>
+											<textarea name="" id="" cols="30" rows="4" class="input-large"></textarea>
+										</div>
+									</div>
+								</section>
+							</div>
+							<div class="side">
+								<div class="box light">
+									<div class="hd">Summary</div>
+									<div class="bd cf">
+										<ul>
+											<li class="summary-price bold">$560</li>
+											<li class="summary-quantity">Quantity: <span>100</span></li>
+											<li class="summary-ship">Ship: <span>4 business days</span></li>
+										</ul>
+										<div class="row-fluid">
+											<button class="btn btn-inverse btn-large block span12">Review Summary</button>
+										</div>
+										<div class="row-fluid">
+											<button class="btn btn-large pull-left bold span6">&lt;</button> <button class="btn btn-large pull-right span6">&gt;</button>
+										</div>
+									</div>
+								</div>
+								
+								<div class="box light">
+									<div class="hd">Item selected</div>
+									<div class="bd">
+										<ul>
+											<li>SJUSB0006 - 5D</li>
+											<li>SJUSB0006 - 5D</li>
+											<li>SJUSB0006 - 5D</li>
+											<li>SJUSB0006 - 5D</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Customize End -->
+				</div>
+				<!-- Body End -->
+				
+				<!-- Footer Start -->
+				<footer class="footer cf none">
+				  	<div class="footer-copyright">
+				    	<p>Power by no1sourcing.com <a href="#">Terms &amp; Conditions</a></p>
+				    	<p>Use of this website constitutes acceptance of the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>.</p>
+				    	<p>Copyright 2010, PromoLinked, Inc. All rights reserved.</p>
+				  	</div>
+				  	<div class="footer-links">
+				  		<ul>
+					    	<li><img src="../../mock/image/icon/ft-link1.png" alt="" /></li>
+					    	<li><img src="../../mock/image/icon/ft-link2.png" alt="" /></li>
+					    	<li><img src="../../mock/image/icon/ft-link3.png" alt="" /></li>
+					    	<li><img src="../../mock/image/icon/ft-link4.png" alt="" /></li>
+					  	</ul>
+				  	</div>
+				</footer>
+				<!-- Footer End -->
+			</div>
+		</div>
 	</body>
 </html>

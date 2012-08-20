@@ -9,3 +9,53 @@
     clear: both;
   }
 }
+
+.none, .hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.box {
+  margin-bottom: 15px;
+  border-radius: 3px;
+  &.light {
+    border: 1px solid #ddd;
+    > .hd {
+      font-size: 14px;
+      padding: 4px 8px;
+      border-bottom: 1px solid #ddd;
+      .bold;
+    }
+    > .bd {
+      padding: 8px;
+    }
+  }
+  &.grey {
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+.editable {
+  .inline-block;
+  min-width: 20px;
+  &:hover {
+    border: 1px solid #ddd;
+  }
+}
