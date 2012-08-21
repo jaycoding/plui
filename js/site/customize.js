@@ -39,6 +39,16 @@ $(function(){
 		$(".customize-selection").removeClass("active").find(".expandable").slideUp(300);
 		$(this).addClass("active").find(".expandable").slideDown(300);
 	});
+	
+	$(".customize-review-details > .bd > .item").click(function(){
+		var $this = $(this);
+		if ($this.hasClass("active")) {
+			return;
+		}
+		
+		$(".customize-review-details > .bd > .item").removeClass("active").find(".expandable").slideUp(300);
+		$(this).addClass("active").find(".expandable").slideDown(300);
+	});
 });
 
 
