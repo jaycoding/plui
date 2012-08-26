@@ -1,4 +1,6 @@
 $(function(){
+	
+	//Editables
 	$('.editables').editables(
 		{ 
           beforeEdit: function(field){
@@ -11,20 +13,18 @@ $(function(){
             //console.log('"on edit"', this);
           },
           onFreeze: function(){
-            console.log('"on freeze"', this);
+            
           }
         }
 	);
 	
+	//Pantone color select
 	$('.pms-list > .pms').bind("click", function(){
 		$(this).siblings(".pms").removeClass("selected");
 		$(this).addClass("selected");
 	});
 	
-	$(".customize-selection #input-quantity").click(function(){
-		$(".customize-selection").fadeIn(400, function(){$(this).removeClass("none")});
-	});
-	
+	//Show next custome section when click first section
 	$(".customize-selection").click(function(){
 		var $this = $(this);
 		if ($this.hasClass("active")) {
@@ -40,7 +40,8 @@ $(function(){
 		$(this).addClass("active").find(".expandable").slideDown(300);
 	});
 	
-	$(".customize-review-details > .bd > .item").click(function(){
+	//Show item details when mouseover on review item
+	$(".customize-review-details > .bd > .item").mouseover(function(){
 		var $this = $(this);
 		if ($this.hasClass("active")) {
 			return;
@@ -48,7 +49,18 @@ $(function(){
 		
 		$(".customize-review-details > .bd > .item").removeClass("active").find(".expandable").slideUp(300);
 		$(this).addClass("active").find(".expandable").slideDown(300);
+		
+		
 	});
+	
+	//Check radio when click on a row of price table
+	$(".price-table td").click(function(e){
+		$(this).siblings().find("input:radio").trigger("click");
+		//e.stopPropagation();
+	});
+	
+	//Fix side bar when scoll
+	$('.customize > .bd > .side').scrollToFixed();
 });
 
 

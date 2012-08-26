@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="../../js/utils/bootstrap/2.0.4/bootstrap.js"></script>
 		<script type="text/javascript" src="../../js/utils/jquery.expander/1.4.3/jquery.expander.js"></script>
 		<script type="text/javascript" src="../../js/utils/jquery.editable/1.0.1/jquery.editable.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
 		<script type="text/javascript" src="../../js/site/main.js"></script>
 		<script type="text/javascript" src="../../js/site/customize.js"></script>
 		<!--[if lt IE 9]>
@@ -81,8 +82,13 @@
 							</div>
 						</div>
 						<div class="bd cf">
+							
 							<div class="main">
-								
+								<div class="alert">
+								  <button type="button" class="close" data-dismiss="alert">×</button>
+								  <strong>Lorem ipsum!</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								</div>
+
 								<section class="customize-selection">
 									<div class="hd">Price &amp; Quantity</div>
 									<div class="bd row-fluid">
@@ -125,7 +131,7 @@
 											</section>
 											<section>
 												<h5>Pricing</h5>
-												<table class="table">
+												<table class="table price-table">
 													<thead>
 														<tr>
 															<th>&nbsp;</th>
@@ -141,7 +147,7 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>1G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -152,7 +158,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>2G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -163,7 +169,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>4G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -174,7 +180,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>Custom</td>
 															<td>quote</td>
 															<td>quote</td>
@@ -218,7 +224,11 @@
 											</section>
 											<section>
 												<h5>Artwork &amp; production instructions</h5>
-												<div class="upload spaced small">
+												<div class="customize-upload spaced small">
+													<div class="upload-thumbnails spaced small">
+														<img src="../../mock/image/60x60/logo-att.png" width="60" height="60" alt="" /> 
+														<img src="../../mock/image/60x60/ico-folder.png" width="60" height="60" alt="" /> 
+													</div>
 													<span class="btn btn-success fileinput-button">
 									                    <i class="icon-plus icon-white"></i>
 									                    <span>Upload file...</span>
@@ -238,7 +248,7 @@
 									<div class="bd cf">
 										<ul class="spaced">
 											<li class="summary-price bold">$560</li>
-											<li class="summary-quantity">Quantity: <span>100</span></li>
+											<li class="summary-quantity">Quantity: <span class="editable">100</span></li>
 											<li class="summary-ship">Ship: <span>4 business days</span></li>
 										</ul>
 										<div class="row-fluid spaced small">

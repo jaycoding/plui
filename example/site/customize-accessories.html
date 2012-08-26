@@ -10,6 +10,7 @@
 		<script type="text/javascript" src="../../js/utils/bootstrap/2.0.4/bootstrap.js"></script>
 		<script type="text/javascript" src="../../js/utils/jquery.expander/1.4.3/jquery.expander.js"></script>
 		<script type="text/javascript" src="../../js/utils/jquery.editable/1.0.1/jquery.editable.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
 		<script type="text/javascript" src="../../js/site/main.js"></script>
 		<script type="text/javascript" src="../../js/site/customize.js"></script>
 		<!--[if lt IE 9]>
@@ -129,7 +130,7 @@
 											
 											<section>
 												<h5>Pricing</h5>
-												<table class="table">
+												<table class="table price-table">
 													<thead>
 														<tr>
 															<th>&nbsp;</th>
@@ -145,7 +146,7 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>1G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -155,8 +156,9 @@
 															<td>7.50</td>
 															<td>7.50</td>
 														</tr>
+														
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>2G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -167,7 +169,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>4G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -178,7 +180,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio1"></td>
 															<td>Custom</td>
 															<td>quote</td>
 															<td>quote</td>
@@ -195,13 +197,6 @@
 											
 											<section class="expandable">
 												<section>
-													<h5>Quantity</h5>
-													<div>
-	  													<input id="input-quantity" value="0" class='input-small hidden' type="text" />
-													</div>
-												</section>
-											
-												<section>
 													<h5>Select the color</h5>
 													<ul class="pms-list">
 														<li class="pms pms-186c">PMS 186C</li>
@@ -215,7 +210,11 @@
 												
 												<section>
 													<h5>Artwork &amp; production instructions</h5>
-													<div class="upload spaced small">
+													<div class="customize-upload spaced small">
+														<div class="upload-thumbnails spaced small">
+															<img src="../../mock/image/60x60/logo-att.png" width="60" height="60" alt="" /> 
+															<img src="../../mock/image/60x60/ico-folder.png" width="60" height="60" alt="" /> 
+														</div>
 														<span class="btn btn-success fileinput-button">
 										                    <i class="icon-plus icon-white"></i>
 										                    <span>Upload file...</span>
@@ -275,7 +274,7 @@
 											</section>
 											<section>
 												<h5>Pricing</h5>
-												<table class="table">
+												<table class="table price-table">
 													<thead>
 														<tr>
 															<th>&nbsp;</th>
@@ -291,7 +290,7 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio2"></td>
 															<td>1G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -302,7 +301,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio2"></td>
 															<td>2G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -313,7 +312,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio2"></td>
 															<td>4G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -324,7 +323,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio2"></td>
 															<td>Custom</td>
 															<td>quote</td>
 															<td>quote</td>
@@ -343,13 +342,6 @@
 											<section class="expandable">
 												
 												<section>
-													<h5>Quantity</h5>
-													<div>
-	  													<input id="input-quantity" value="0" class='input-small hidden' type="text" />
-													</div>
-												</section>
-												
-												<section>
 													<h5>Select the color</h5>
 													<ul class="pms-list">
 														<li class="pms pms-186c">PMS 186C</li>
@@ -363,7 +355,11 @@
 												
 												<section>
 													<h5>Artwork &amp; production instructions</h5>
-													<div class="upload spaced small">
+													<div class="customize-upload spaced small">
+														<div class="upload-thumbnails spaced small">
+															<img src="../../mock/image/60x60/logo-att.png" width="60" height="60" alt="" /> 
+															<img src="../../mock/image/60x60/ico-folder.png" width="60" height="60" alt="" /> 
+														</div>
 														<span class="btn btn-success fileinput-button">
 										                    <i class="icon-plus icon-white"></i>
 										                    <span>Upload file...</span>
@@ -423,7 +419,7 @@
 											</section>
 											<section>
 												<h5>Pricing</h5>
-												<table class="table">
+												<table class="table price-table">
 													<thead>
 														<tr>
 															<th>&nbsp;</th>
@@ -439,7 +435,7 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio3"></td>
 															<td>1G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -450,7 +446,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio3"></td>
 															<td>2G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -461,7 +457,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio3"></td>
 															<td>4G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -472,7 +468,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio3"></td>
 															<td>Custom</td>
 															<td>quote</td>
 															<td>quote</td>
@@ -491,13 +487,6 @@
 											<section class="expandable">
 												
 												<section>
-													<h5>Quantity</h5>
-													<div>
-	  													<input id="input-quantity" value="0" class='input-small hidden' type="text" />
-													</div>
-												</section>
-												
-												<section>
 													<h5>Select the color</h5>
 													<ul class="pms-list">
 														<li class="pms pms-186c">PMS 186C</li>
@@ -511,7 +500,11 @@
 												
 												<section>
 													<h5>Artwork &amp; production instructions</h5>
-													<div class="upload spaced small">
+													<div class="customize-upload spaced small">
+														<div class="upload-thumbnails spaced small">
+															<img src="../../mock/image/60x60/logo-att.png" width="60" height="60" alt="" /> 
+															<img src="../../mock/image/60x60/ico-folder.png" width="60" height="60" alt="" /> 
+														</div>
 														<span class="btn btn-success fileinput-button">
 										                    <i class="icon-plus icon-white"></i>
 										                    <span>Upload file...</span>
@@ -571,7 +564,7 @@
 											</section>
 											<section>
 												<h5>Pricing</h5>
-												<table class="table">
+												<table class="table price-table">
 													<thead>
 														<tr>
 															<th>&nbsp;</th>
@@ -587,7 +580,7 @@
 													</thead>
 													<tbody>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio4"></td>
 															<td>1G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -598,7 +591,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio4"></td>
 															<td>2G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -609,7 +602,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio4"></td>
 															<td>4G</td>
 															<td>7.50</td>
 															<td>7.50</td>
@@ -620,7 +613,7 @@
 															<td>7.50</td>
 														</tr>
 														<tr>
-															<td><input type="radio" name="radio"></td>
+															<td><input type="radio" name="radio4"></td>
 															<td>Custom</td>
 															<td>quote</td>
 															<td>quote</td>
@@ -639,13 +632,6 @@
 											<section class="expandable">
 												
 												<section>
-													<h5>Quantity</h5>
-													<div>
-	  													<input id="input-quantity" value="0" class='input-small hidden' type="text" />
-													</div>
-												</section>
-												
-												<section>
 													<h5>Select the color</h5>
 													<ul class="pms-list">
 														<li class="pms pms-186c">PMS 186C</li>
@@ -659,7 +645,11 @@
 												
 												<section>
 													<h5>Artwork &amp; production instructions</h5>
-													<div class="upload spaced small">
+													<div class="customize-upload spaced small">
+														<div class="upload-thumbnails spaced small">
+															<img src="../../mock/image/60x60/logo-att.png" width="60" height="60" alt="" /> 
+															<img src="../../mock/image/60x60/ico-folder.png" width="60" height="60" alt="" /> 
+														</div>
 														<span class="btn btn-success fileinput-button">
 										                    <i class="icon-plus icon-white"></i>
 										                    <span>Upload file...</span>
