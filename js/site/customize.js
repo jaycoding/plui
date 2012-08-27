@@ -66,6 +66,23 @@ $(function(){
 	
 	//Fix side bar when scoll
 	$('.customize > .bd > .side').scrollToFixed();
+	
+	//Single Select
+	$(".single-select .select-item").bind("click", function(){
+		var $this = $(this);
+		$(".single-select .select-item").removeClass("checked");
+		$this.addClass("checked");
+	});
+	
+	//Single Select
+	$(".multiple-select .select-item").bind("click", function(){
+		var $this = $(this);
+		if ($this.hasClass("checked")){
+			$this.removeClass("checked");
+		} else {
+			$this.addClass("checked");
+		}
+	});
 });
 
 

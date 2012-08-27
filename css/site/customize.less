@@ -172,3 +172,40 @@ table.price-table {
   width: 100%;
   min-height: 80px;
 }
+
+
+
+////Multiple Select////
+.multiple-select {
+  .select-item {
+    position: relative;
+    i.icon-checkbox-m {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      display: none;
+    }
+    &.checked {
+      i.icon-checkbox-m {
+        .inline-block();
+      }
+    }
+  }
+}
+
+.single-select {
+  .select-item {
+    position: relative;
+    i.icon-radio-m {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      display: none;
+    }
+    &.checked {
+      i.icon-radio-m {
+        .inline-block();
+      }
+    }
+  }
+}
