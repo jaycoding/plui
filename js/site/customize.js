@@ -18,6 +18,26 @@ $(function(){
         }
 	);
 	
+	$('.editable').editable("http://www.no1promo.com", { 
+		indicator : "",
+		tooltip   : "Click to edit...",
+		style  : "inherit"
+	});
+	
+	$('.editable-textarea').editable("http://www.no1promo.com", { 
+		indicator : "",
+		type: "textarea",
+		tooltip   : "Click to edit...",
+		style  : "inherit"
+	});
+	
+	$('.editable-select').editable("http://www.no1promo.com", { 
+		indicator : "",
+		type: "select",
+		tooltip   : "Click to edit...",
+		style  : "inherit"
+	});
+	
 	//Pantone color select
 	$('.pms-list > .pms').bind("click", function(){
 		$(this).siblings(".pms").removeClass("selected");
