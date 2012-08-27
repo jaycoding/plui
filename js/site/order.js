@@ -9,6 +9,9 @@ $(function(){
 		
 	});
 	
+	//Fix side bar when scoll
+	$('.order > .bd > .side').scrollToFixed();
+	
 });
 
 
