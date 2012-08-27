@@ -1,29 +1,13 @@
 $(function(){
 	
-	//Editables
-	$('.editables').editables(
-		{ 
-          beforeEdit: function(field){
-            field.val(this.text());
-          },
-          beforeFreeze: function(display){ 
-            display.text(this.val());
-          },
-          onEdit: function(){
-            //console.log('"on edit"', this);
-          },
-          onFreeze: function(){
-            
-          }
-        }
-	);
-	
+	//Editable - Text
 	$('.editable').editable("http://www.no1promo.com", { 
 		indicator : "",
 		tooltip   : "Click to edit...",
 		style  : "inherit"
 	});
 	
+	//Editable - Textarea
 	$('.editable-textarea').editable("http://www.no1promo.com", { 
 		indicator : "",
 		type: "textarea",
@@ -31,6 +15,7 @@ $(function(){
 		style  : "inherit"
 	});
 	
+	//Editable - Select
 	$('.editable-select').editable("http://www.no1promo.com", { 
 		indicator : "",
 		type: "select",
