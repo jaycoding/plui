@@ -83,6 +83,17 @@ $(function(){
 			$this.addClass("checked");
 		}
 	});
+	
+	function triggerHash() {
+		var hash = window.location.hash,
+		targetModule = $(hash);
+		
+		if (targetModule) {
+			targetModule.trigger("click");
+		}
+	}
+	
+	$(window).bind("load", triggerHash);
 });
 
 

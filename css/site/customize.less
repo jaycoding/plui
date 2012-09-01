@@ -77,6 +77,7 @@
   padding: 15px;
   border-radius: 3px;
   margin-bottom: 15px;
+  position: relative;
   h5 {
     font-size: 14px;
     font-weight: 700;
@@ -85,6 +86,15 @@
     padding: 3px 6px;
     border-radius: 3px;
     color: #222;
+  }
+  .edit {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+  }
+  &:hover .edit {
+    display: inline;
   }
 }
 
@@ -95,12 +105,31 @@
   padding: 15px;
   > .bd > .item {
     margin-bottom: 25px;
+    position: relative;
+  }
+  > .bd > .item .edit{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   .expandable {
     display: none;
   }
+  > .bd > .item:hover .edit{
+    display: inline;
+  }
 }
 
+.customize-selected {
+  li {
+    clear: both;
+  }
+  li > img {
+    margin: 0 4px 4px 0;
+    border: 1px solid #ddd;
+  }
+}
 
 ////Price Table////
 table.price-table {

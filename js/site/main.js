@@ -34,4 +34,10 @@ $(function(){
 		userCollapseText: 'Collapse',
 		userCollapsePrefix: ' '
 	});
+	
+	//Fix alerts
+	$('.alerts').scrollToFixed();
+	
 });
+
+
