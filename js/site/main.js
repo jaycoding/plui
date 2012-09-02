@@ -39,6 +39,32 @@ $(function(){
 	$('.alerts').scrollToFixed();
 	
 	$(".with-tooltop").tooltip();
+	
+	//Editable - Text
+	$('.editable').editable("http://www.no1promo.com", { 
+		indicator : "",
+		style  : "inherit"
+	});
+	
+	//Editable - Textarea
+	$('.editable-textarea').editable("http://www.no1promo.com", { 
+		indicator : "",
+		type: "textarea",
+		tooltip   : "Click to edit...",
+		style  : "inherit"
+	});
+	
+	//Editable - Select
+	$('.editable-select').editable("http://www.no1promo.com", { 
+		indicator : "",
+		type: "select",
+		tooltip   : "Click to edit...",
+		style  : "inherit"
+	});
+	
+	$(".editable, .editable-textarea").bind("click", function(e){
+		e.stopPropagation();
+	})
 });
 
 

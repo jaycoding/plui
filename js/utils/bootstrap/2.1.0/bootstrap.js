@@ -1065,6 +1065,7 @@
         , actualHeight
         , placement
         , tp
+        , customClass
 
       if (this.hasContent() && this.enabled) {
         $tip = this.tip()
@@ -1077,6 +1078,10 @@
         placement = typeof this.options.placement == 'function' ?
           this.options.placement.call(this, $tip[0], this.$element[0]) :
           this.options.placement
+          
+        customClass = typeof this.options.customClass == 'function' ?
+          this.options.customClass.call(this, $tip[0], this.$element[0]) :
+          this.options.customClass
 
         inside = /in/.test(placement)
 
@@ -1109,6 +1114,7 @@
           .css(tp)
           .addClass(placement)
           .addClass('in')
+          .addClass(customClass)
       }
     }
 
