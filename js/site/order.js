@@ -1,6 +1,7 @@
+//Show form section step by step
 $(function(){
 	
-	$(".order-form > section").click(function(){
+	$(".order-form > section").live("click", function(){
 		var $this = $(this);		
 		var $next = $this.next("section");
 		if ($next && $next.hasClass("none")) {
@@ -11,6 +12,13 @@ $(function(){
 	//Fix side bar when scoll
 	$('.order > .bd > .side').scrollToFixed();
 	
+});
+
+
+//Fix side bar when scoll
+$(function(){
+	//Fix side bar when scoll
+	$('.order > .bd > .side').scrollToFixed();
 });
 
 //Show user profile when hover
@@ -33,3 +41,13 @@ $(function(){
 		customClass: "large user-profile"
 	});
 })
+
+//Show user profile when hover
+$(function(){
+	var shipToForm = $(".order-form-ship");
+	$(".shipto-add").bind("click", function(){
+		$(".order-form-ship").last().after(shipToForm.clone().hide(0).fadeIn(300));
+	});
+})
+
+
