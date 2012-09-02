@@ -84,7 +84,7 @@
 												
 												<section>
 													<ul class="pms-list">
-														<li class="pms pms-186c seleted">PMS 186C</li>
+														<li class="pms pms-186c seleted" data-toggle="modal" data-target="#modal-pantone">PMS 186C</li>
 													</ul>
 												</section>
 											</div>
@@ -101,7 +101,7 @@
 												</section>
 												<section class="spaced">
 													<h5>Specifications</h5>
-													<p>Capacity: 2G</p>
+													<p><a href="#" data-toggle="modal" data-target="#modal-specifications">Capacity: 2G</a></p>
 												</section>
 												<section class="spaced">
 													<h5>Attachments</h5>
@@ -134,7 +134,7 @@
 												
 												<section>
 													<ul class="pms-list">
-														<li class="pms pms-186c seleted">PMS 186C</li>
+														<li class="pms pms-186c seleted" data-toggle="modal" data-target="#modal-pantone">PMS 186C</li>
 													</ul>
 												</section>
 											</div>
@@ -146,7 +146,7 @@
 												</section>
 												<section class="spaced">
 													<h5>Specifications</h5>
-													<p>Capacity: 2G</p>
+													<p><a href="#" data-toggle="modal" data-target="#modal-specifications">Capacity: 2G</a></p>
 												</section>
 												<section class="spaced">
 													<h5>Attachments</h5>
@@ -179,7 +179,7 @@
 												
 												<section>
 													<ul class="pms-list">
-														<li class="pms pms-186c seleted">PMS 186C</li>
+														<li class="pms pms-186c seleted" data-toggle="modal" data-target="#modal-pantone">PMS 186C</li>
 													</ul>
 												</section>
 											</div>
@@ -191,7 +191,7 @@
 												</section>
 												<section class="spaced">
 													<h5>Specifications</h5>
-													<p>Capacity: 2G</p>
+													<p><a href="#" data-toggle="modal" data-target="#modal-specifications">Capacity: 2G</a></p>
 												</section>
 												<section class="spaced">
 													<h5>Attachments</h5>
@@ -220,12 +220,6 @@
 											<div class="span3">
 												<section class="spaced">
 													<img src="../../mock/image/150x150/shipping-1.jpg" width="150" height="150" alt="" />
-												</section>
-												
-												<section>
-													<ul class="pms-list">
-														<li class="pms pms-186c seleted">PMS 186C</li>
-													</ul>
 												</section>
 											</div>
 											<div class="span9">
@@ -297,5 +291,101 @@
 				<!-- Footer End -->
 			</div>
 		</div>
+		
+		<div class="modal hide fade" id="modal-pantone">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		    <h3>Select the color</h3>
+		  </div>
+		  <div class="modal-body">
+		    <ul class="pms-list">
+				<li class="pms pms-186c">PMS 186C</li>
+				<li class="pms pms-186c">PMS 186C</li>
+				<li class="pms pms-186c">PMS 186C</li>
+				<li class="pms pms-186c">PMS 186C</li>
+				<li class="pms pms-186c">PMS 186C</li>
+				<li class="pms pms-186c">PMS 186C</li>
+				<li class="pms pms-186c">PMS 186C</li>
+				<li class="pms pms-186c">PMS 186C</li>
+			</ul>
+		  </div>
+		  <div class="modal-footer">
+		    <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a>
+		  </div>
+		</div>
+		
+		<div class="modal hide fade" id="modal-specifications">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		    <h3>Choose specifications</h3>
+		  </div>
+		  <div class="modal-body">
+		    <table class="table price-table">
+				<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Capacity</th>
+						<th>Setup 1</th>
+						<th>Qty 100</th>
+						<th>Qty 200</th>
+						<th>Qty 300</th>
+						<th>Qty 1,000</th>
+						<th>Qty 3,000</th>
+						<th>Qty 5,000</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="radio" name="radio1"></td>
+						<td>1G</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="radio1"></td>
+						<td>2G</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="radio1"></td>
+						<td>4G</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+						<td>7.50</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="radio1"></td>
+						<td><span class="editable small with-tooltop" rel="tooltip" title="Please input capacity!">Custom</span></td>
+						<td>quote</td>
+						<td>quote</td>
+						<td>quote</td>
+						<td>quote</td>
+						<td>quote</td>
+						<td>quote</td>
+						<td>quote</td>
+					</tr>
+				</tbody>
+			</table>
+		  </div>
+		  <div class="modal-footer">
+		    <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a>
+		  </div>
+		</div>
+		
 	</body>
 </html>
