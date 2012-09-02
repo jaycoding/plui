@@ -3,7 +3,6 @@ $(function(){
 	//Editable - Text
 	$('.editable').editable("http://www.no1promo.com", { 
 		indicator : "",
-		tooltip   : "Click to edit...",
 		style  : "inherit"
 	});
 	
@@ -22,6 +21,10 @@ $(function(){
 		tooltip   : "Click to edit...",
 		style  : "inherit"
 	});
+	
+	$(".editable, .editable-textarea").bind("click", function(e){
+		e.stopPropagation();
+	})
 	
 	//Pantone color select
 	$('.pms-list > .pms').bind("click", function(){
@@ -61,7 +64,10 @@ $(function(){
 	//Check radio when click on a row of price table
 	$(".price-table td").click(function(e){
 		$(this).siblings().find("input:radio").trigger("click");
-		//e.stopPropagation();
+		var $editable = $(this).parent().find(".editable");
+		if ($editable && $editable.length > 0) {
+			$editable.trigger("click");
+		}
 	});
 	
 	//Fix side bar when scoll
@@ -84,6 +90,7 @@ $(function(){
 		}
 	});
 	
+	//Trigger hash
 	function triggerHash() {
 		var hash = window.location.hash,
 		targetModule = $(hash);
@@ -91,9 +98,15 @@ $(function(){
 		if (targetModule) {
 			targetModule.trigger("click");
 		}
+		
+		$("body").localScroll({
+		   target: hash,
+		   duration: 500
+		});
 	}
 	
 	$(window).bind("load", triggerHash);
+	
 });
 
 

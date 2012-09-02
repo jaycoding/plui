@@ -38,6 +38,7 @@ $(function(){
 	//Fix alerts
 	$('.alerts').scrollToFixed();
 	
+	$(".with-tooltop").tooltip();
 });
 
 

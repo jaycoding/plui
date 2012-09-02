@@ -1,3 +1,28 @@
+////Mixins////
+
+// inline-block
+// ----------------
+.inline-block() {
+  display: inline-block;
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+}
+
+
+.bold() {
+  font-weight: 700;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+
+
+////Common Styles////
+
+
 .cf, .clearfix {
   *zoom: 1;
   &:before,
