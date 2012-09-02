@@ -46,7 +46,7 @@ $(function(){
 $(function(){
 	var shipToForm = $(".order-form-ship");
 	$(".shipto-add").bind("click", function(){
-		$(".order-form-ship").last().after(shipToForm.clone().hide(0).fadeIn(300));
+		$(".order-form-ship").first().before(shipToForm.clone().hide(0).fadeIn(300));
 	});
 })
 

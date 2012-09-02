@@ -73,25 +73,34 @@
 							<div class="main">
 								<div class="order-guide spaced">
 									<ul class="nav nav-pills">
-										<li><a href="order-info.html">Additional order info <i class="icon-arrow-right"></i></a></li>
-										<li class="active"><a href="order-address.html">Addresses <i class="icon-arrow-right"></i></a></li>
-										<li><a href="order-review.html">Order review</a></li>
+										<li><a href="order-po-customer-info.html">Additional order info <i class="icon-arrow-right"></i></a></li>
+										<li class="active"><a href="order-po-customer-address.html">Addresses <i class="icon-arrow-right"></i></a></li>
+										<li><a href="order-po-customer-review.html">Order review</a></li>
 									</ul>
 								</div>
 								
 								<div class="order-form">
 									<section>
-										<h3>Shop to</h3>
+										<p>Most of our shipments contain valuable items, so our carriers are required to obtain a signature upon delivery. Please choose or enter an address where someone will be available to sign for your delivery.</p>
+										<div class="row-fluid spaced">
+											<button class="btn shipto-add"><i class="icon-plus-sign"></i> Ship to</button>
+										</div>
+									</section>
+									<section class="order-form-ship">
+										<h3>Ship to</h3>
 										<form class="form-horizontal">
 									        <fieldset>
 									          <div class="control-group">
 									            <label class="control-label">For job(s):</label>
 									            <div class="controls">
-									              <label class="checkbox">
-									                <input type="checkbox"> 1835
+									              <label class="checkbox inline">
+									                <input type="checkbox">1835 
 									              </label>
-									              <label class="checkbox">
-									                <input type="checkbox"> 1836
+									              <label class="checkbox inline">
+									                <input type="checkbox">1835 
+									              </label>
+									              <label class="checkbox inline">
+									                <input type="checkbox">1835 
 									              </label>
 									            </div>
 									          </div>
@@ -106,13 +115,55 @@
 									            <div class="controls spaced small">
 									            	<input type="text" class="auto-complete span6" placeholder="Apt, Suit" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
 									            </div>
-									            <div class="controls spaced small form-inline">
-									            	<input type="text" class="auto-complete span2" placeholder="City" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
-									            	<input type="text" class="auto-complete span2" placeholder="State" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
-									            	<input type="text" class="auto-complete span2" placeholder="Zip Code" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
+									            <div class="controls controls-row">
+									            	<input type="text" name="" id="" placeholder="City" class="span2" />
+									            	<input type="text" name="" id="" placeholder="State" class="span2" />
+									            	<input type="text" name="" id="" placeholder="Zip Code" class="span2" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Shipping notifications:</label>
+									            <div class="controls spaced small">
+									            	<input type="text" class="auto-complete span4" placeholder="First name, Last name" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
+									            </div>
+									            <div class="controls spaced small">
+									            	<input type="text" class="auto-complete span4" placeholder="Primary phone" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Availability:</label>
+									            <div class="controls controls-row">
+									            	<input type="text" name="" id="" placeholder="From time" class="span2" />
+									            	<input type="text" name="" id="" placeholder="To time" class="span2" />
+									            	<input type="text" name="" id="" placeholder="Timezone" class="span2" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Shipping file:</label>
+									            <div class="controls controls-row">
+									            	<span class="btn btn-small btn-success fileinput-button">
+									                    <i class="icon-plus icon-white"></i>
+									                    <span>Upload file...</span>
+									                </span>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Shipping instructions:</label>
+									            <div class="controls">
+									            	<textarea rows="3" class="span6"></textarea>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label"></label>
+									            <div class="controls">
+									              <label class="checkbox inline">
+									                <input type="checkbox">Save this Ship to address to address book 
+									              </label>
 									            </div>
 									          </div>
 									        </fieldset>
+									        
+									        
 									      </form>
 									</section>
 									
