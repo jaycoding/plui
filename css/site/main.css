@@ -5244,6 +5244,10 @@ a.badge:hover {
   width: 16px;
   height: 16px;
 }
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow: scroll;
+}
 .cf,
 .clearfix {
   *zoom: 1;
@@ -6350,24 +6354,95 @@ i.icon-radio-m {
   border-bottom: 1px solid #ccc;
   position: relative;
 }
-.order-form > section .btn.edit {
-  display: none;
+.order-form > section .btn.edit,
+.order-form > section .btn.save {
   position: absolute;
   right: 10px;
   top: 10px;
 }
-.order-form > section.readonly .btn.edit {
-  display: block;
-}
-.order-form > section.readonly .btn.save {
+.order-form > section .btn.edit {
   display: none;
 }
-.order-form > section.readonly input:text {
-  border: none;
+.order-form > section.readonly:hover .btn.edit {
+  display: block;
+}
+.order-form > section.readonly .btn.save,
+.order-form > section.readonly .fileinput-button {
+  display: none;
+}
+.order-form > section.readonly input,
+.order-form > section.readonly textarea {
+  border: 1px solid #fff!important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.order-form > section.readonly input:disabled,
+.order-form > section.readonly textarea:disabled {
+  background: none;
+  cursor: default;
+}
+.order-form > section.readonly .combobox-container .dropdown-toggle {
+  display: none;
+}
+.order-form > section.readonly input:-moz-placeholder {
+  color: #ddd;
+}
+.order-form > section.readonly input::-webkit-input-placeholder {
+  color: #ddd;
 }
 .order-form > section > h3 {
   color: #888;
   margin-bottom: 8px;
+}
+.order-review {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0;
+}
+.order-review > section {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.order-review > section .btn.edit {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+.order-review > section:hover .edit {
+  display: block;
+}
+.order-review > section > h3 {
+  color: #888;
+  margin-bottom: 8px;
+}
+.job-details {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  position: relative;
+}
+.job-details .btn.edit {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+}
+.job-details:hover .edit {
+  display: block;
+}
+.job-details > .bd > .item {
+  margin-bottom: 25px;
+  position: relative;
+}
+.job-details .expandable {
+  display: none;
+}
+.job-details > .bd > .item:hover .edit {
+  display: inline;
 }
 .job-summary li {
   clear: both;
