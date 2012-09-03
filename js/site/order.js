@@ -24,6 +24,7 @@ $(function(){
 //Show user profile when hover
 $(function(){
 	$(".user.with-profile").popover({
+		delay: {show: 0, hide: 1000},
 		trigger: 'hover',
 		title: function(){
 			$me = $(this);
@@ -42,7 +43,7 @@ $(function(){
 	});
 })
 
-//Show user profile when hover
+//Add ship to
 $(function(){
 	var shipToForm = $(".order-form-ship");
 	$(".shipto-add").bind("click", function(){
@@ -50,4 +51,25 @@ $(function(){
 	});
 })
 
+//Save
+$(".order-form > .order-form-section > .save").live("click", function(){
+	var $me = $(this),
+		$section = $me.parent();
+	$section.addClass("readonly");
+	$section.find("input, textarea").attr("disabled", "disabled");
+});
 
+$(".order-form > .order-form-section > .edit").live("click", function(){
+	var $me = $(this),
+		$section = $me.parent();
+	$section.removeClass("readonly");
+	$section.find("input, textarea").removeAttr("disabled");
+});
+
+// $(".order-form > .order-form-section input:disabled").bind("click", function(){
+	// alert(0);
+	// var $me = $(this),
+		// $section = $me.parents(".order-form-section")[0];
+	// $section.removeClass("readonly");
+	// $section.find("input, textarea").removeAttr("disabled");
+// });

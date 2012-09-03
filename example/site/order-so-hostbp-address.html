@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../../css/site/main.css" media="all">
+		<link rel="stylesheet/less" type="text/css" href="../../css/site/main.less" media="all">
+		<script type="text/javascript">less = {}; less.env = 'development';</script>
+		<script type="text/javascript" src="../../js/utils/less/1.3.0/less.min.js"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="../../css/site/main.css" media="all"> -->
 		<link rel="stylesheet" type="text/css" href="../../css/legacy/main.css" media="all">
-		<!-- <script type="text/javascript">less = {}; less.env = 'development';</script>
-		<script type="text/javascript" src="../../js/utils/less/1.3.0/less.min.js"></script> -->
 		<script type="text/javascript" src="../../js/lib/jquery/1.8.0/jquery.min.js"></script>
-		<script type="text/javascript" src="../../js/utils/bootstrap/2.0.4/bootstrap.js"></script>
+		<script type="text/javascript" src="../../js/utils/bootstrap/2.1.0/bootstrap.js"></script>
 		<script type="text/javascript" src="../../js/utils/jquery.expander/1.4.3/jquery.expander.js"></script>
 		<script type="text/javascript" src="../../js/utils/jquery.jeditable/1.7.2/jquery.jeditable.js"></script>
 		<script type="text/javascript" src="../../js/utils/jquery.scrollto/1.4.2/jquery.scrollto.min.js"></script>
@@ -87,7 +88,9 @@
 											<button class="btn shipto-add"><i class="icon-plus-sign"></i> Ship to</button>
 										</div>
 									</section>
-									<section class="order-form-ship">
+									<section class="order-form-section" id="ship">
+										<button class="btn btn-small btn-primary save"><i class="icon-ok-sign icon-white"></i> Save</button>
+									    <button class="btn btn-small edit"><i class="icon-edit"></i> Edit</button>
 										<h3>Ship to</h3>
 										<form class="form-horizontal">
 									        <fieldset>
@@ -124,24 +127,29 @@
 									          </div>
 									          <div class="control-group">
 									            <label class="control-label">Shipping notifications:</label>
-									            <div class="controls spaced small">
-									            	<input type="text" class="auto-complete span4" placeholder="First name, Last name" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
+									            <div class="controls controls-row spaced small">
+									            	<input type="text" name="" id="" placeholder="First name" class="span2" />
+									            	<input type="text" name="" id="" placeholder="Last name" class="span2" />
 									            </div>
 									            <div class="controls spaced small">
-									            	<input type="text" class="auto-complete span4" placeholder="Primary phone" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
+									            	<input type="text" class="span4" placeholder="Primary phone" />
 									            </div>
 									          </div>
 									          <div class="control-group">
 									            <label class="control-label">Availability:</label>
 									            <div class="controls controls-row">
-									            	<input type="text" name="" id="" placeholder="From time" class="span2" />
-									            	<input type="text" name="" id="" placeholder="To time" class="span2" />
+									            	<input type="text" class="span2 date" data-date-format="mm/dd/yy" placeholder="From date">
+									            	<input type="text" class="span2 date" data-date-format="mm/dd/yy" placeholder="To date">
 									            	<input type="text" name="" id="" placeholder="Timezone" class="span2" />
 									            </div>
 									          </div>
 									          <div class="control-group">
 									            <label class="control-label">Shipping file:</label>
 									            <div class="controls controls-row">
+									            	<ul class="spaced small">
+									            		<li><a href="#">shipping-file-1.jpg</a></li>
+									            		<li><a href="#">shipping-file-1.jpg</a></li>
+									            	</ul>
 									            	<span class="btn btn-small btn-success fileinput-button">
 									                    <i class="icon-plus icon-white"></i>
 									                    <span>Upload file...</span>
@@ -163,12 +171,12 @@
 									            </div>
 									          </div>
 									        </fieldset>
-									        
-									        
 									      </form>
 									</section>
 									
-									<section class="none">
+									<section class="order-form-section" id="bill">
+										<button class="btn btn-small btn-primary save"><i class="icon-ok-sign icon-white"></i> Save</button>
+									    <button class="btn btn-small edit"><i class="icon-edit"></i> Edit</button>
 										<h3>Bill to</h3>
 										<form class="form-horizontal">
 									        <fieldset>
@@ -197,6 +205,30 @@
 									            	<input type="text" class="auto-complete span2" placeholder="Zip Code" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
 									            </div>
 									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Billing notifications:</label>
+									            <div class="controls controls-row spaced small">
+									            	<input type="text" name="" id="" placeholder="First name" class="span2" />
+									            	<input type="text" name="" id="" placeholder="Last name" class="span2" />
+									            </div>
+									            <div class="controls spaced small">
+									            	<input type="text" class="span4" placeholder="Primary phone" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Billing instructions:</label>
+									            <div class="controls">
+									            	<textarea rows="3" class="span6"></textarea>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label"></label>
+									            <div class="controls">
+									              <label class="checkbox inline">
+									                <input type="checkbox">Save this Billing to address to address book 
+									              </label>
+									            </div>
+									          </div>
 									        </fieldset>
 									      </form>
 									</section>
@@ -212,8 +244,8 @@
 											<li class="summary-price bold font-larger">Total: $2560</li>
 										</ul>
 										<div class="row-fluid spaced small">
-											<a href="order-so-hostbp-review.html" class="btn btn-inverse btn-large block spaced small">Continue <i class="icon-arrow-right icon-white"></i></a>
-											<a href="order-so-hostbp-info.html" class="btn btn-large block spaced small"><i class="icon-arrow-left"></i> Previous</a>
+											<a href="order-po-customer-review.html" class="btn btn-inverse btn-large block spaced small">Continue <i class="icon-arrow-right icon-white"></i></a>
+											<a href="order-po-customer-info.html" class="btn btn-large block spaced small"><i class="icon-arrow-left"></i> Previous</a>
 											<a href="shopping-cart.html" class="btn btn-large block spaced small"><i class="icon-arrow-left"></i> Back to cart</a>
 										</div>
 									</div>

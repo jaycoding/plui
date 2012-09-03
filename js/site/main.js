@@ -68,6 +68,9 @@ $(function(){
 	
 	//Combobox
 	$('.combobox').combobox();
+	
+	//Datepicker
+	$('.date').datepicker();
 });
 
 

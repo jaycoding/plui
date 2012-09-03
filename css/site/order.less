@@ -54,10 +54,108 @@
   > section {
     padding: 15px;
     border-bottom: 1px solid #ccc;
+    position: relative;
+    .btn.edit, .btn.save {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .btn.edit{
+      display: none;
+    }
+    &.readonly {
+      &:hover {
+        .btn.edit {
+          display: block;
+        }
+      }
+      .btn.save,
+      .fileinput-button {
+        display: none;
+      }
+      input, textarea {
+        border: 1px solid #fff!important;
+        .box-shadow(none);
+      }
+      input:disabled, textarea:disabled {
+        background: none;
+        cursor: default;
+      }
+      .combobox-container .dropdown-toggle {
+        display: none;
+      }
+      // input:hover, textarea:hover {
+        // cursor: pointer;
+        // border: 1px solid #ddd!important;
+        // .box-shadow(none);
+      // }
+      input:-moz-placeholder { color:#ddd; }
+      input::-webkit-input-placeholder { color:#ddd; }
+    }
+    
     > h3 {
       color: #888;
       margin-bottom: 8px;
     }
+  }
+}
+
+
+
+.order-review {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0;
+  > section {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    .btn.edit {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: none;
+    }
+    &:hover {
+      .edit {
+        display: block;
+      }
+    }
+    
+    > h3 {
+      color: #888;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+.job-details {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px;
+  position: relative;
+  .btn.edit {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: none;
+    }
+    &:hover {
+      .edit {
+        display: block;
+      }
+    }
+  > .bd > .item {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .expandable {
+    display: none;
+  }
+  > .bd > .item:hover .edit{
+    display: inline;
   }
 }
 
