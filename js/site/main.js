@@ -64,7 +64,10 @@ $(function(){
 	
 	$(".editable, .editable-textarea").bind("click", function(e){
 		e.stopPropagation();
-	})
+	});
+	
+	//Combobox
+	$('.combobox').combobox();
 });
 
 
