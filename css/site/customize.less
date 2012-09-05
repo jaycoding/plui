@@ -138,11 +138,14 @@ table.price-table {
 
 .price-table td {
   padding: 3px 5px;
+  text-align: right;
+  font-size: 12px;
 }
 
 .price-table th {
   padding: 3px 5px;
   font-size: 11px;
+  text-align: right;
 }
 
 
@@ -207,6 +210,31 @@ table.price-table {
     > h3 {
       color: #888;
       margin-bottom: 8px;
+    }
+  }
+}
+
+
+
+////Upload////
+.upload-thumbnails {
+  .upload-thumbnail {
+    position: relative;
+    >.icon-remove {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      .opacity(80);
+      &:hover {
+        .opacity(100);
+      }
+    }
+    &:hover {
+      >.icon-remove {
+      display: block;
+      }
     }
   }
 }

@@ -1622,7 +1622,7 @@ table {
 }
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
 }
 table [class*=span],
 .row-fluid table [class*=span] {
@@ -5382,31 +5382,52 @@ img.spaced.large {
   text-align: center;
 }
 .pms {
-  width: 30px;
-  height: 80px;
-  width: 80px;
-  height: 30px;
+  height: 20px;
+  min-width: 10px;
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
   *zoom: 1;
   display: inline-block;
+  float: left;
   margin: 0 5px 5px 0;
-  padding: 0 10px;
-  line-height: 30px;
+  padding: 0 5px;
+  line-height: 20px;
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   border: 2px solid #fff;
   cursor: pointer;
+}
+.pms > span {
+  display: none;
 }
 .pms.selected {
   border: 2px solid #F9D15B;
   border-radius: 2px;
 }
+.pms.selected > span {
+  display: block;
+  white-space: nowrap;
+}
 .pms-186c {
   background: #CE1D2A;
+}
+.pms-534 {
+  background: #3a4972;
+}
+.pms-5503 {
+  background: #aac4bf;
+}
+.pms-584 {
+  background: #aaba0a;
+}
+.pms-693 {
+  background: #00a0c4;
+}
+.pms-657 {
+  background: #bc3877;
 }
 i.icon-checkbox-m {
   width: 32px;
@@ -6179,10 +6200,13 @@ i.icon-radio-m {
 }
 .price-table td {
   padding: 3px 5px;
+  text-align: right;
+  font-size: 12px;
 }
 .price-table th {
   padding: 3px 5px;
   font-size: 11px;
+  text-align: right;
 }
 .multiple-select .select-item {
   position: relative;
@@ -6233,6 +6257,25 @@ i.icon-radio-m {
 .job-edit .job-edit-section > h3 {
   color: #888;
   margin-bottom: 8px;
+}
+.upload-thumbnails .upload-thumbnail {
+  position: relative;
+}
+.upload-thumbnails .upload-thumbnail > .icon-remove {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.upload-thumbnails .upload-thumbnail > .icon-remove:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.upload-thumbnails .upload-thumbnail:hover > .icon-remove {
+  display: block;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
