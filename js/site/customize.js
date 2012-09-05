@@ -81,6 +81,12 @@ $(function(){
 	
 	$(window).bind("load", triggerHash);
 	
+	
+	//Remove attachment
+	$(".upload-thumbnail .icon-remove").live("click", function(){
+	    $(this).parent(".upload-thumbnail").fadeOut(250, function(){$(this).remove()});
+	    //@Todo: Add ajax function to remove upload file
+	});
 });
 
 

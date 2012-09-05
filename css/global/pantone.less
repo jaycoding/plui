@@ -3,22 +3,46 @@
 }
 
 .pms {
-  .size(80px, 30px);
+  height: 20px;
+  min-width: 10px;
   .inline-block();
+  float: left;
   margin: 0 5px 5px 0;
-  padding: 0 10px;
-  line-height: 30px;
+  padding: 0 5px;
+  line-height: 20px;
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   border: 2px solid #fff;
   cursor: pointer;
+  > span {
+    display: none;
+  }
   &.selected {
     border: 2px solid #F9D15B;
     border-radius: 2px;
+    > span {
+      display: block;
+      white-space:nowrap;
+    }
   }
 }
 
 .pms-186c {
   background: #CE1D2A;
+}
+.pms-534 {
+  background: #3a4972;
+}
+.pms-5503 {
+  background: #aac4bf;
+}
+.pms-584 {
+  background: #aaba0a;
+}
+.pms-693 {
+  background: #00a0c4;
+}
+.pms-657 {
+  background: #bc3877;
 }
