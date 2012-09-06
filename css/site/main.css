@@ -5381,9 +5381,22 @@ img.spaced.large {
 .tcenter {
   text-align: center;
 }
+label.valid {
+  width: 24px;
+  height: 24px;
+  background: url(../../img/icons/valid.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+}
+label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
 .pms {
-  height: 20px;
-  min-width: 10px;
+  height: 24px;
+  min-width: 14px;
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -5393,19 +5406,18 @@ img.spaced.large {
   float: left;
   margin: 0 5px 5px 0;
   padding: 0 5px;
-  line-height: 20px;
+  line-height: 24px;
   color: #fff;
   font-size: 10px;
   text-align: center;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   cursor: pointer;
 }
 .pms > span {
   display: none;
 }
 .pms.selected {
-  border: 2px solid #F9D15B;
-  border-radius: 2px;
+  border: 3px solid #75B7D7;
 }
 .pms.selected > span {
   display: block;
@@ -6115,24 +6127,25 @@ i.icon-radio-m {
   font-weight: 700;
   color: #222;
 }
-.customize-selection {
+.customize-section {
   border: 1px solid #ddd;
-  padding: 15px;
+  padding: 35px 15px 15px 15px;
   border-radius: 3px;
   margin-bottom: 15px;
+  position: relative;
 }
-.customize-selection.active {
+.customize-section.active {
   border: 1px solid #bbb;
   box-shadow: 0px 2px 3px #ccc;
 }
-.customize-selection > .hd {
+.customize-section > .hd {
   font-size: 18px;
   color: #999;
   font-weight: 700;
   font-weight: 700;
   margin-bottom: 4px;
 }
-.customize-selection h5 {
+.customize-section h5 {
   font-size: 14px;
   font-weight: 700;
   background: #eee;
@@ -6141,8 +6154,63 @@ i.icon-radio-m {
   border-radius: 3px;
   color: #222;
 }
-.customize-selection .expandable {
+.customize-section .expandable {
   display: none;
+}
+.customize-section .btn.edit,
+.customize-section .btn.save {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.customize-section .btn.edit {
+  display: none;
+}
+.customize-section.readonly:hover .btn.edit {
+  display: block;
+}
+.customize-section.readonly .btn.save,
+.customize-section.readonly .fileinput-button {
+  display: none;
+}
+.customize-section.readonly input,
+.customize-section.readonly textarea {
+  border: 1px solid #fff!important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.customize-section.readonly input:disabled,
+.customize-section.readonly textarea:disabled {
+  background: none;
+  cursor: default;
+}
+.customize-section.readonly .combobox-container .dropdown-toggle {
+  display: none;
+}
+.customize-section.readonly input:-moz-placeholder {
+  color: #ddd;
+}
+.customize-section.readonly input::-webkit-input-placeholder {
+  color: #ddd;
+}
+.customize-section .section-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #f3f3f3;
+  padding: 5px 5px 6px 6px;
+  width: 20px;
+  height: 18px;
+  width: 18px;
+  height: 20px;
+  border-bottom-right-radius: 3px;
+}
+.customize-section .section-select input {
+  margin: 0;
+  padding: 0;
 }
 .customize-review-overview {
   border: 1px solid #ddd;
@@ -6178,6 +6246,8 @@ i.icon-radio-m {
 .customize-review-details > .bd > .item {
   margin-bottom: 25px;
   position: relative;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 15px;
 }
 .customize-review-details > .bd > .item .edit {
   display: none;
@@ -6197,6 +6267,9 @@ i.icon-radio-m {
 .customize-summary li > img {
   margin: 0 4px 4px 0;
   border: 1px solid #ddd;
+}
+.customize-summary li > a {
+  color: #222;
 }
 .price-table td {
   padding: 3px 5px;
@@ -6259,6 +6332,7 @@ i.icon-radio-m {
   margin-bottom: 8px;
 }
 .upload-thumbnails .upload-thumbnail {
+  border: 1px dotted #ccc;
   position: relative;
 }
 .upload-thumbnails .upload-thumbnail > .icon-remove {
@@ -6276,6 +6350,12 @@ i.icon-radio-m {
 }
 .upload-thumbnails .upload-thumbnail:hover > .icon-remove {
   display: block;
+}
+.upload-thumbnails.readonly .upload-thumbnail {
+  border: none;
+}
+.upload-thumbnails.readonly .icon-remove {
+  display: none!important;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
