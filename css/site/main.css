@@ -6556,6 +6556,9 @@ i.icon-radio-m {
   color: #888;
   margin-bottom: 8px;
 }
+.order-form > section .combobox-container > input {
+  width: 272px;
+}
 .order-review {
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -6608,8 +6611,8 @@ i.icon-radio-m {
 .job-summary li {
   clear: both;
 }
-.job-summary li > img {
-  margin: 0 4px 4px 0;
+.job-summary img {
+  margin: 0 6px 6px 0;
   border: 1px solid #ddd;
 }
 .user.with-profile {
