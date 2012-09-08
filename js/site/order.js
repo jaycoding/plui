@@ -66,6 +66,21 @@ $(".order-form > .order-form-section > .edit").live("click", function(){
 	$section.find("input, textarea").removeAttr("disabled");
 });
 
+
+    //Save
+    $(".order-form-section").live("click", function(){
+        //Save first
+        var $all = $(".order-form-section");
+        $all.addClass("readonly");
+        $all.find("input, textarea").attr("disabled", "disabled");
+        
+        //Edit this
+        var $me = $(this);
+        
+        $me.removeClass("readonly");
+        $me.find("input, textarea").removeAttr("disabled");
+    });
+    
 // $(".order-form > .order-form-section input:disabled").bind("click", function(){
 	// alert(0);
 	// var $me = $(this),
