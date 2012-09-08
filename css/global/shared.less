@@ -41,6 +41,10 @@ html {
       font-size: 14px;
       padding: 6px 10px;
       border-bottom: 1px solid #ddd;
+      background: #ddd;
+      #gradient > .vertical(#f3f3f3, #ddd);
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
       .bold;
     }
     > .bd {
@@ -50,6 +54,20 @@ html {
   &.grey {
     border: 1px solid #ccc;
     background: #f6f6f6;
+  }
+  &.theme {
+    border: 1px solid #ddd;
+    > .hd {
+      font-size: 14px;
+      padding: 6px 10px;
+      border-bottom: 1px solid #ddd;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      .bold;
+    }
+    > .bd {
+      padding: 10px;
+    }
   }
 }
 

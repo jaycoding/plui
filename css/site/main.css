@@ -5287,6 +5287,17 @@ html {
   font-size: 14px;
   padding: 6px 10px;
   border-bottom: 1px solid #ddd;
+  background: #ddd;
+  background-color: #eaeaea;
+  background-image: -moz-linear-gradient(top, #f3f3f3, #dddddd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f3f3f3), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #f3f3f3, #dddddd);
+  background-image: -o-linear-gradient(top, #f3f3f3, #dddddd);
+  background-image: linear-gradient(to bottom, #f3f3f3, #dddddd);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3f3f3', endColorstr='#ffdddddd', GradientType=0);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   font-weight: 700;
   font-weight: 700;
 }
@@ -5296,6 +5307,21 @@ html {
 .box.grey {
   border: 1px solid #ccc;
   background: #f6f6f6;
+}
+.box.theme {
+  border: 1px solid #ddd;
+}
+.box.theme > .hd {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-weight: 700;
+  font-weight: 700;
+}
+.box.theme > .bd {
+  padding: 10px;
 }
 .editable {
   display: inline-block;
@@ -5800,6 +5826,18 @@ i.icon-radio-m {
 .theme-black .product-info-bd li.current,
 .theme-black .product-info-bd li:hover {
   outline: 2px solid #7a7a00;
+}
+.theme-black .box.theme > .hd {
+  background: #7A7A00;
+  color: #fff;
+  background-color: #949400;
+  background-image: -moz-linear-gradient(top, #a6a600, #7a7a00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#a6a600), to(#7a7a00));
+  background-image: -webkit-linear-gradient(top, #a6a600, #7a7a00);
+  background-image: -o-linear-gradient(top, #a6a600, #7a7a00);
+  background-image: linear-gradient(to bottom, #a6a600, #7a7a00);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa6a600', endColorstr='#ff7a7a00', GradientType=0);
 }
 /*===================================
  Theme: Blue

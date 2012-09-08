@@ -96,23 +96,21 @@ $(function(){
 	});
 	
 	//Save
-    $(".customize-section > .save").live("click", function(){
-        var $me = $(this),
-            $section = $me.parent();
-        $section.addClass("readonly");
-        $section.find("input, textarea").attr("disabled", "disabled");
-        $section.find(".pms-list, .upload-thumbnails").addClass("readonly");
+    $(".customize-section").live("click", function(){
+        //Save first
+        var $all = $(".customize-section");
+        $all.addClass("readonly");
+        $all.addClass("readonly");
+        $all.find("input, textarea").attr("disabled", "disabled");
+        $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
+        
+        //Edit this
+        var $me = $(this);
+        $me.removeClass("readonly");
+        $me.find("input, textarea").removeAttr("disabled");
+        $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
     });
     
-    //Edit
-    $(".customize-section > .edit").live("click", function(){
-        var $me = $(this),
-            $section = $me.parent();
-        $section.removeClass("readonly");
-        $section.find("input, textarea").removeAttr("disabled");
-        $section.find(".pms-list, .upload-thumbnails").removeClass("readonly");
-        
-    });
     
     
     //Form validation
