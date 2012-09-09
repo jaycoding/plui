@@ -53,8 +53,11 @@
   padding: 0;
   > section {
     padding: 15px;
-    border-bottom: 1px solid #ccc;
     position: relative;
+    background: url(../../img/site/line-shade.png) center bottom no-repeat;
+    &:last-of-type {
+      background: none;
+    }
     .btn.edit, .btn.save {
       position: absolute;
       right: 10px;
@@ -63,6 +66,7 @@
     .btn.edit{
       display: none;
     }
+    
     &.readonly {
       &:hover {
         .btn.edit {
@@ -100,6 +104,17 @@
     
     .combobox-container > input {
       width: 272px;
+      border-right: none;
+    }
+    
+    .combobox-container .dropdown-toggle,
+    .combobox-container .dropdown-toggle:active {
+      background: none;
+      box-shadow: none;
+      border-radius: 0 3px 3px 0;
+    }
+    .combobox-container .dropdown-toggle:hover {
+      background: #eee;
     }
   }
 }
@@ -112,7 +127,10 @@
   padding: 0;
   > section {
     padding: 15px;
-    border-bottom: 1px solid #ccc;
+    background: url(../../img/site/line-shade.png) center bottom no-repeat;
+    &:last-of-type {
+      background: none;
+    }
     position: relative;
     .btn.edit {
       position: absolute;

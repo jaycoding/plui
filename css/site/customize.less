@@ -49,6 +49,12 @@
   border-radius: 3px;
   margin-bottom: 15px;
   position: relative;
+  .icon-toggle-expand {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
   &.active {
     border: 1px solid #bbb;
     box-shadow: 0px 2px 3px #ccc;
@@ -119,14 +125,20 @@
       padding: 0;
     }
   }
+  
+}
+
+.customize-review {
+  border: 1px solid #ddd;
+  padding: 15px;
 }
 
 .customize-review-overview {
-  border: 1px solid #ddd;
-  padding: 15px;
   border-radius: 3px;
   margin-bottom: 15px;
   position: relative;
+  padding-bottom: 15px;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
   h5 {
     font-size: 14px;
     font-weight: 700;
@@ -148,10 +160,7 @@
 }
 
 .customize-review-details {
-  border: 1px solid #ddd;
   border-radius: 3px;
-  margin-bottom: 15px;
-  padding: 15px;
   > .bd > .item {
     margin-bottom: 25px;
     position: relative;
@@ -269,7 +278,6 @@ table.price-table {
 }
 
 
-
 ////Upload////
 .upload-thumbnails {
   .upload-thumbnail {
@@ -297,14 +305,12 @@ table.price-table {
 }
 
 
-
 ////Product viewer////
 .product-viewer{
   display: none;
   margin-bottom: 50px;
 }
 
-/* Large thumbnail: */
 .product-viewer .etalage_thumb{
   background: white url(../../img/icons/loading.gif) center no-repeat;
   border: 1px solid #ddd;
@@ -313,28 +319,25 @@ table.price-table {
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
 }
-/* Large thumbnail - image (in case you want to add a border around the image within the frame) */
-.product-viewer .etalage_thumb_image{ }
 
-/* Small thumbnails: */
+.product-viewer .etalage_thumb_image{
+}
+
 .product-viewer .etalage_small_thumbs li{
   background: white;
   border: 1px solid #ddd;
   margin: 10px;
   padding: 3px;
 }
-/* The one on the left that makes them slide */
+
 .product-viewer ul li.etalage_smallthumb_first{ }
-/* The one on the right that makes them slide */
 .product-viewer ul li.etalage_smallthumb_last{ }
-/* The currently active one */
 .product-viewer ul li.etalage_smallthumb_active{
   -webkit-box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
 }
 
-/* Zoomed image area: */
 .product-viewer .etalage_zoom_area,
 .etalage_zoom_area{
   background: white url(../../img/icons/loading.gif) center no-repeat;
@@ -345,21 +348,17 @@ table.price-table {
   box-shadow: 0 0 10px #ddd;
 }
 
-/* Magnifier area (thumbnail hovering rectangle): */
 .product-viewer .etalage_magnifier{
   background: white;
   border: 1px solid #bbb;
 }
 
-/* Icon that will apear at the left bottom of the large thumbnail (optional): */
 .product-viewer .etalage_icon{
   background: url(../../img/icons/zoom.png) no-repeat;
   width: 14px;
   height: 14px;
 }
 
-
-/* Description area (optional) */
 .product-viewer .etalage_description{
   background: white;
   font-style: italic;

@@ -22,8 +22,29 @@ $(function(){
 			$next.fadeIn(400, function(){$(this).removeClass("none")});
 		}
 		
-		$(".customize-section").removeClass("active").find(".expandable").slideUp(300);
-		$(this).addClass("active").find(".expandable").slideDown(300);
+		$(".customize-section").removeClass("active").find(".expandable").slideUp(300, function(){
+		    $(this).removeClass("expanded");
+		    $(this).parents(".customize-section").find(".icon-toggle-expand").removeClass("collapse");
+		});
+		$(this).addClass("active").find(".expandable").slideDown(300, function(){
+            $(this).addClass("expanded");
+            $(this).parents(".customize-section").find(".icon-toggle-expand").addClass("collapse");
+        });
+	});
+	
+	$(".customize-section .icon-toggle-expand").click(function(e){
+	    if ($(this).parent(".customize-section").hasClass("active")) {
+	        $(this).parent(".customize-section").removeClass("active").find(".expandable").slideUp(300, function(){
+                $(this).removeClass("expanded");
+                $(this).parents(".customize-section").find(".icon-toggle-expand").removeClass("collapse");
+            });
+	    } else {
+	        $(this).parent(".customize-section").addClass("active").find(".expandable").slideDown(300, function(){
+                $(this).addClass("expanded");
+                $(this).parents(".customize-section").find(".icon-toggle-expand").addClass("collapse");
+            });
+	    }
+	    e.stopPropagation();
 	});
 	
 	//Show item details when mouseover on review item

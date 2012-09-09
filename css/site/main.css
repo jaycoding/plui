@@ -5494,6 +5494,48 @@ i.icon-radio-m {
   display: inline-block;
   background: url(../../img/icons/icon-radio-m.png) 0 0 no-repeat;
 }
+i.icon-expand {
+  width: 22px;
+  height: 22px;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-expand.png) 0 0 no-repeat;
+}
+i.icon-collapse {
+  width: 22px;
+  height: 22px;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-collapse.png) 0 0 no-repeat;
+}
+i.icon-toggle-expand {
+  width: 22px;
+  height: 22px;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-expand.png) 0 0 no-repeat;
+}
+i.icon-toggle-expand.collapse {
+  background: url(../../img/icons/icon-collapse.png) 0 0 no-repeat;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          layout.less
@@ -6168,10 +6210,16 @@ i.icon-radio-m {
 }
 .customize-section {
   border: 1px solid #ddd;
-  padding: 35px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
   border-radius: 3px;
   margin-bottom: 15px;
   position: relative;
+}
+.customize-section .icon-toggle-expand {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
 }
 .customize-section.active {
   border: 1px solid #bbb;
@@ -6251,12 +6299,16 @@ i.icon-radio-m {
   margin: 0;
   padding: 0;
 }
-.customize-review-overview {
+.customize-review {
   border: 1px solid #ddd;
   padding: 15px;
+}
+.customize-review-overview {
   border-radius: 3px;
   margin-bottom: 15px;
   position: relative;
+  padding-bottom: 15px;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
 }
 .customize-review-overview h5 {
   font-size: 14px;
@@ -6277,10 +6329,7 @@ i.icon-radio-m {
   display: inline;
 }
 .customize-review-details {
-  border: 1px solid #ddd;
   border-radius: 3px;
-  margin-bottom: 15px;
-  padding: 15px;
 }
 .customize-review-details > .bd > .item {
   margin-bottom: 25px;
@@ -6396,7 +6445,6 @@ i.icon-radio-m {
   display: none;
   margin-bottom: 50px;
 }
-/* Large thumbnail: */
 .product-viewer .etalage_thumb {
   background: #ffffff url(../../img/icons/loading.gif) center no-repeat;
   border: 1px solid #ddd;
@@ -6405,23 +6453,17 @@ i.icon-radio-m {
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
 }
-/* Large thumbnail - image (in case you want to add a border around the image within the frame) */
-/* Small thumbnails: */
 .product-viewer .etalage_small_thumbs li {
   background: white;
   border: 1px solid #ddd;
   margin: 10px;
   padding: 3px;
 }
-/* The one on the left that makes them slide */
-/* The one on the right that makes them slide */
-/* The currently active one */
 .product-viewer ul li.etalage_smallthumb_active {
   -webkit-box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
 }
-/* Zoomed image area: */
 .product-viewer .etalage_zoom_area,
 .etalage_zoom_area {
   background: #ffffff url(../../img/icons/loading.gif) center no-repeat;
@@ -6431,18 +6473,15 @@ i.icon-radio-m {
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
 }
-/* Magnifier area (thumbnail hovering rectangle): */
 .product-viewer .etalage_magnifier {
   background: white;
   border: 1px solid #bbb;
 }
-/* Icon that will apear at the left bottom of the large thumbnail (optional): */
 .product-viewer .etalage_icon {
   background: url(../../img/icons/zoom.png) no-repeat;
   width: 14px;
   height: 14px;
 }
-/* Description area (optional) */
 .product-viewer .etalage_description {
   background: white;
   font-style: italic;
@@ -6493,8 +6532,7 @@ i.icon-radio-m {
   padding: 15px;
   border-radius: 3px;
   margin-bottom: 15px;
-  border: 1px solid #bbb;
-  box-shadow: 0px 2px 3px #ccc;
+  border: 1px solid #ddd;
   position: relative;
 }
 .job-item .job-item-menu {
@@ -6506,6 +6544,10 @@ i.icon-radio-m {
   left: auto;
   top: 100%;
   right: 0;
+}
+.job-item.active {
+  border: 1px solid #bbb;
+  box-shadow: 0px 2px 3px #ccc;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
@@ -6566,8 +6608,11 @@ i.icon-radio-m {
 }
 .order-form > section {
   padding: 15px;
-  border-bottom: 1px solid #ccc;
   position: relative;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
+}
+.order-form > section:last-of-type {
+  background: none;
 }
 .order-form > section .btn.edit,
 .order-form > section .btn.save {
@@ -6612,6 +6657,16 @@ i.icon-radio-m {
 }
 .order-form > section .combobox-container > input {
   width: 272px;
+  border-right: none;
+}
+.order-form > section .combobox-container .dropdown-toggle,
+.order-form > section .combobox-container .dropdown-toggle:active {
+  background: none;
+  box-shadow: none;
+  border-radius: 0 3px 3px 0;
+}
+.order-form > section .combobox-container .dropdown-toggle:hover {
+  background: #eee;
 }
 .order-review {
   border: 1px solid #ccc;
@@ -6620,8 +6675,11 @@ i.icon-radio-m {
 }
 .order-review > section {
   padding: 15px;
-  border-bottom: 1px solid #ccc;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
   position: relative;
+}
+.order-review > section:last-of-type {
+  background: none;
 }
 .order-review > section .btn.edit {
   position: absolute;
