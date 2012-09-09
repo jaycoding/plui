@@ -150,34 +150,36 @@
   }
   .edit {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    display: none;
+    right: 0px;
+    top: 0px;
+    color: #666;
   }
   &:hover .edit {
-    display: inline;
+    color: #08C;
   }
 }
 
 .customize-review-details {
+  padding-top: 15px;
   border-radius: 3px;
+  position: relative;
   > .bd > .item {
     margin-bottom: 25px;
     position: relative;
-    border-bottom: 1px dotted #ccc;
+    border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
   }
   > .bd > .item .edit{
-    display: none;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -22px;
+    color: #666;
   }
   .expandable {
     display: none;
   }
   > .bd > .item:hover .edit{
-    display: inline;
+    color: #08C;
   }
 }
 
@@ -274,9 +276,34 @@ table.price-table {
       background: none;
     }
     > h3 {
+      font-size: 20px;
       color: #888;
       margin-bottom: 8px;
     }
+    &.readonly {
+    &:hover {
+      .btn.edit {
+        display: block;
+      }
+    }
+    .btn.save,
+    .fileinput-button {
+      display: none;
+    }
+    input, textarea {
+      border: 1px solid #fff!important;
+      .box-shadow(none);
+    }
+    input:disabled, textarea:disabled {
+      background: none;
+      cursor: default;
+    }
+    .combobox-container .dropdown-toggle {
+      display: none;
+    }
+    input:-moz-placeholder { color:#ddd; }
+    input::-webkit-input-placeholder { color:#ddd; }
+  }
   }
 }
 

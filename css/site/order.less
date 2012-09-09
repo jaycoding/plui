@@ -116,6 +116,15 @@
     .combobox-container .dropdown-toggle:hover {
       background: #eee;
     }
+    
+    .combobox-wrap.medium .combobox-container > input {
+      width: 110px;
+    }
+    
+    .combobox-wrap.larger .combobox-container > input {
+      width: 420px;
+    }
+    
   }
 }
 
@@ -132,15 +141,16 @@
       background: none;
     }
     position: relative;
-    .btn.edit {
+    .edit {
       position: absolute;
       right: 10px;
       top: 10px;
-      display: none;
+      color: #666;
     }
     &:hover {
       .edit {
         display: block;
+        color: #08C;
       }
     }
     

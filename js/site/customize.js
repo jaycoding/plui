@@ -133,6 +133,26 @@ $(function(){
     });
     
     
+    //Save
+    $(".job-edit-section").live("click", function(){
+        //Save first
+        var $all = $(".job-edit-section");
+        $all.addClass("readonly");
+        $all.addClass("readonly");
+        $all.find("input, textarea").attr("disabled", "disabled");
+        $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
+        
+        //Edit this
+        var $me = $(this);
+        $me.removeClass("readonly");
+        $me.find("input, textarea").removeAttr("disabled");
+        $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
+    });
+    
+    
+    
+    
+    
     //Product viewer
     $('.product-viewer').etalage({
         thumb_image_width: 250,
@@ -148,6 +168,12 @@ $(function(){
         autoplay: false,
         keyboard: false,
         zoom_easing: false
+    });
+    
+    
+    $(".price-table td > input:radio").click(function(){
+        $(this).closest("tr").siblings("tr").removeClass("info");
+         $(this).closest("tr").addClass("info");
     });
     
     //Form validation

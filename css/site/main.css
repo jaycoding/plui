@@ -6321,33 +6321,35 @@ i.icon-toggle-expand.collapse {
 }
 .customize-review-overview .edit {
   position: absolute;
-  right: 10px;
-  top: 10px;
-  display: none;
+  right: 0px;
+  top: 0px;
+  color: #666;
 }
 .customize-review-overview:hover .edit {
-  display: inline;
+  color: #08C;
 }
 .customize-review-details {
+  padding-top: 15px;
   border-radius: 3px;
+  position: relative;
 }
 .customize-review-details > .bd > .item {
   margin-bottom: 25px;
   position: relative;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
 }
 .customize-review-details > .bd > .item .edit {
-  display: none;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -22px;
+  color: #666;
 }
 .customize-review-details .expandable {
   display: none;
 }
 .customize-review-details > .bd > .item:hover .edit {
-  display: inline;
+  color: #08C;
 }
 .customize-summary li {
   clear: both;
@@ -6419,8 +6421,37 @@ i.icon-toggle-expand.collapse {
   background: none;
 }
 .job-edit .job-edit-section > h3 {
+  font-size: 20px;
   color: #888;
   margin-bottom: 8px;
+}
+.job-edit .job-edit-section.readonly:hover .btn.edit {
+  display: block;
+}
+.job-edit .job-edit-section.readonly .btn.save,
+.job-edit .job-edit-section.readonly .fileinput-button {
+  display: none;
+}
+.job-edit .job-edit-section.readonly input,
+.job-edit .job-edit-section.readonly textarea {
+  border: 1px solid #fff!important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.job-edit .job-edit-section.readonly input:disabled,
+.job-edit .job-edit-section.readonly textarea:disabled {
+  background: none;
+  cursor: default;
+}
+.job-edit .job-edit-section.readonly .combobox-container .dropdown-toggle {
+  display: none;
+}
+.job-edit .job-edit-section.readonly input:-moz-placeholder {
+  color: #ddd;
+}
+.job-edit .job-edit-section.readonly input::-webkit-input-placeholder {
+  color: #ddd;
 }
 .upload-thumbnails .upload-thumbnail {
   border: 1px dotted #ccc;
@@ -6671,6 +6702,12 @@ i.icon-toggle-expand.collapse {
 .order-form > section .combobox-container .dropdown-toggle:hover {
   background: #eee;
 }
+.order-form > section .combobox-wrap.medium .combobox-container > input {
+  width: 110px;
+}
+.order-form > section .combobox-wrap.larger .combobox-container > input {
+  width: 420px;
+}
 .order-review {
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -6684,14 +6721,15 @@ i.icon-toggle-expand.collapse {
 .order-review > section:last-of-type {
   background: none;
 }
-.order-review > section .btn.edit {
+.order-review > section .edit {
   position: absolute;
   right: 10px;
   top: 10px;
-  display: none;
+  color: #666;
 }
 .order-review > section:hover .edit {
   display: block;
+  color: #08C;
 }
 .order-review > section > h3 {
   color: #888;
