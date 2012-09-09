@@ -6413,7 +6413,10 @@ i.icon-toggle-expand.collapse {
 }
 .job-edit .job-edit-section {
   padding: 15px;
-  border-bottom: 1px solid #ccc;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
+}
+.job-edit .job-edit-section:last-of-type {
+  background: none;
 }
 .job-edit .job-edit-section > h3 {
   color: #888;
@@ -6695,11 +6698,14 @@ i.icon-toggle-expand.collapse {
   margin-bottom: 8px;
 }
 .job-details {
-  border: 1px solid #ddd;
   border-radius: 3px;
   margin-bottom: 15px;
-  padding: 15px;
+  padding-bottom: 15px;
   position: relative;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
+}
+.job-details:last-of-type {
+  background: none;
 }
 .job-details .btn.edit {
   position: absolute;
