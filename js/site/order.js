@@ -68,19 +68,34 @@ $(function(){
     });
     
     
+    // //Save
+    // $(".order-form-section").live("click", function(){
+        // //Save first
+        // var $all = $(".order-form-section");
+        // $all.addClass("readonly");
+        // $all.find("input, textarea").attr("disabled", "disabled");
+//         
+        // //Edit this
+        // var $me = $(this);
+//         
+        // $me.removeClass("readonly");
+        // $me.find("input, textarea").removeAttr("disabled");
+    // });
+    
     //Save
-    $(".order-form-section").live("click", function(){
-        //Save first
-        var $all = $(".order-form-section");
-        $all.addClass("readonly");
-        $all.find("input, textarea").attr("disabled", "disabled");
-        
-        //Edit this
-        var $me = $(this);
-        
-        $me.removeClass("readonly");
-        $me.find("input, textarea").removeAttr("disabled");
-    });
+	$(".order-form > .order-form-section .save").live("click", function(){
+		var $me = $(this),
+			$section = $me.closest(".order-form-section");
+		$section.addClass("readonly");
+		$section.find("input, textarea").attr("disabled", "disabled");
+	});
+	
+	$(".order-form > .order-form-section .edit").live("click", function(){
+		var $me = $(this),
+			$section = $me.closest(".order-form-section");
+		$section.removeClass("readonly");
+		$section.find("input, textarea").removeAttr("disabled");
+	});
     
     $(".job-details > .bd > .item").mouseover(function(){
         var $this = $(this);

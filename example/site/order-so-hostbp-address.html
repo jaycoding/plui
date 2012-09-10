@@ -89,7 +89,9 @@
 										</div>
 									</section>
 									<section class="order-form-section order-form-ship" id="ship">
+									    <span class="btn btn-small edit"><i class="icon-edit"></i> Edit</span>
 										<h3>Ship to</h3>
+										
 										<form class="form-horizontal">
 									        <fieldset>
 									          <div class="control-group">
@@ -109,17 +111,24 @@
 									          <div class="control-group">
 									            <label class="control-label">Address info:</label>
 									            <div class="controls spaced small">
-									            	<input type="text" class="auto-complete span6" placeholder="Address name" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
+									            	<div class="combobox-wrap larger">
+										            	<select class="combobox">
+											                  <option></option>
+											                  <option value="1">iClick Co, Inc</option>
+											                  <option value="2">Sunjoy Group Inc</option>
+											                  <option value="3">No1Promo.com</option>
+											            </select>
+										            </div>
 									            </div>
 									            <div class="controls spaced small">
 									            	<input type="text" class="auto-complete span6" placeholder="Street" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
-									            </div>
+									            	</div>
 									            <div class="controls spaced small">
 									            	<input type="text" class="auto-complete span6" placeholder="Apt, Suit" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
 									            </div>
 									            <div class="controls controls-row">
 									            	<input type="text" name="" id="" placeholder="City" class="span2" />
-									            	<div class="combobox-wrap medium pull-left">
+									            	<div class="combobox-wrap medium inbetween pull-left">
 									            		<select class="combobox" placeholder="State">
 											                  <option></option>
 											                  <option value="1">California</option>
@@ -129,9 +138,8 @@
 									            	</div>
 									            	<input type="text" name="" id="" placeholder="Zip Code" class="span2" />
 									            </div>
-									          </div>
-									          <div class="controls controls-row">
-									            	<div class="combobox-wrap medium">
+									            <div class="controls controls-row">
+									            	<div class="combobox-wrap large">
 									            		<select class="combobox" placeholder="Country">
 											                  <option></option>
 											                  <option value="1">United States</option>
@@ -140,10 +148,12 @@
 											            </select>
 									            	</div>
 									            </div>
+									          </div>
+									          
 									          <div class="control-group">
 									            <label class="control-label">Shipping notifications:</label>
 									            <div class="controls controls-row spaced small">
-									            	<div class="combobox-wrap">
+									            	<div class="combobox-wrap large">
 									            		<select class="combobox" placeholder="Country">
 											                  <option></option>
 											                  <option value="1">Harrison Fu</option>
@@ -152,7 +162,7 @@
 									            	</div>
 									            </div>
 									            <div class="controls spaced small">
-									            	<div class="combobox-wrap">
+									            	<div class="combobox-wrap large">
 									            		<select class="combobox" placeholder="Primary phone">
 											                  <option></option>
 											                  <option value="1">64646312</option>
@@ -199,11 +209,21 @@
 									              </label>
 									            </div>
 									          </div>
+									          <div class="control-group">
+									            <label class="control-label"></label>
+									            <div class="controls">
+									              <label class="checkbox inline">
+									                <span class="btn btn-primary save"><i class="icon-ok-sign icon-white"></i> Save</span>
+									              </label>
+									            </div>
+									          </div>
+									          
 									        </fieldset>
 									      </form>
 									</section>
 									
 									<section class="order-form-section" id="bill">
+										<span class="btn btn-small edit"><i class="icon-edit"></i> Edit</span>
 										<h3>Bill to</h3>
 										<form class="form-horizontal">
 									        <fieldset>
@@ -226,9 +246,9 @@
 									            <div class="controls spaced small">
 									            	<input type="text" class="auto-complete span6" placeholder="Apt, Suit" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
 									            </div>
-									            <div class="controls spaced small form-inline">
-									            	<input type="text" class="auto-complete span2" placeholder="City" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
-									            	<div class="combobox-wrap medium pull-left">
+									            <div class="controls controls-row">
+									            	<input type="text" name="" id="" placeholder="City" class="span2" />
+									            	<div class="combobox-wrap medium inbetween pull-left">
 									            		<select class="combobox" placeholder="State">
 											                  <option></option>
 											                  <option value="1">California</option>
@@ -236,11 +256,10 @@
 											                  <option value="3">New York</option>
 											            </select>
 									            	</div>
-									            	<input type="text" class="auto-complete span2" placeholder="Zip Code" data-provide="typeahead" data-items="4" data-source="[&quot;Sunjoy Group, Inc&quot;,&quot;Harrison Fu&quot;,&quot;Alice Cong&quot;,&quot;Carly Xia&quot;,&quot;Jeff Hall&quot;,&quot;Marco Cheng&quot;,&quot;California&quot;]">
+									            	<input type="text" name="" id="" placeholder="Zip Code" class="span2" />
 									            </div>
-									          </div>
-									          <div class="controls controls-row">
-									            	<div class="combobox-wrap medium">
+									            <div class="controls controls-row">
+									            	<div class="combobox-wrap large">
 									            		<select class="combobox" placeholder="Country">
 											                  <option></option>
 											                  <option value="1">United States</option>
@@ -249,10 +268,12 @@
 											            </select>
 									            	</div>
 									            </div>
+									          </div>
+									          
 									          <div class="control-group">
 									            <label class="control-label">Billing notifications:</label>
 									            <div class="controls controls-row spaced small">
-									            	<div class="combobox-wrap">
+									            	<div class="combobox-wrap large">
 									            		<select class="combobox" placeholder="Country">
 											                  <option></option>
 											                  <option value="1">Harrison Fu</option>
@@ -261,7 +282,7 @@
 									            	</div>
 									            </div>
 									            <div class="controls spaced small">
-									            	<div class="combobox-wrap">
+									            	<div class="combobox-wrap large">
 									            		<select class="combobox" placeholder="Primary phone">
 											                  <option></option>
 											                  <option value="1">64646312</option>
@@ -284,6 +305,14 @@
 									            <div class="controls">
 									              <label class="checkbox inline">
 									                <input type="checkbox">Save this Billing to address to address book 
+									              </label>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label"></label>
+									            <div class="controls">
+									              <label class="checkbox inline">
+									                <span class="btn btn-primary save"><i class="icon-ok-sign icon-white"></i> Save</span>
 									              </label>
 									            </div>
 									          </div>

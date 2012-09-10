@@ -6648,19 +6648,16 @@ i.icon-toggle-expand.collapse {
 .order-form > section:last-of-type {
   background: none;
 }
-.order-form > section .btn.edit,
-.order-form > section .btn.save {
+.order-form > section > .edit {
   position: absolute;
   right: 10px;
   top: 10px;
-}
-.order-form > section .btn.edit {
   display: none;
 }
-.order-form > section.readonly:hover .btn.edit {
+.order-form > section.readonly > .edit {
   display: block;
 }
-.order-form > section.readonly .btn.save,
+.order-form > section.readonly .save,
 .order-form > section.readonly .fileinput-button {
   display: none;
 }
@@ -6703,10 +6700,18 @@ i.icon-toggle-expand.collapse {
   background: #eee;
 }
 .order-form > section .combobox-wrap.medium .combobox-container > input {
-  width: 110px;
+  width: 100px;
+}
+.order-form > section .combobox-wrap.inbetween.medium {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 140px;
 }
 .order-form > section .combobox-wrap.larger .combobox-container > input {
   width: 420px;
+}
+.order-form > section .combobox-wrap.large .combobox-container > input {
+  width: 260px;
 }
 .order-review {
   border: 1px solid #ccc;
