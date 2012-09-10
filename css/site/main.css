@@ -6740,6 +6740,7 @@ i.icon-toggle-expand.collapse {
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
+  padding-top: 15px;
   background: url(../../img/site/line-shade.png) center bottom no-repeat;
 }
 .job-details:last-of-type {
@@ -6757,12 +6758,20 @@ i.icon-toggle-expand.collapse {
 .job-details > .bd > .item {
   margin-bottom: 25px;
   position: relative;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+.job-details > .bd > .item .edit {
+  position: absolute;
+  right: 0;
+  top: -22px;
+  color: #666;
 }
 .job-details .expandable {
   display: none;
 }
 .job-details > .bd > .item:hover .edit {
-  display: inline;
+  color: #08C;
 }
 .job-summary li {
   clear: both;

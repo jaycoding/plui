@@ -167,6 +167,7 @@
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
+  padding-top: 15px;
   background: url(../../img/site/line-shade.png) center bottom no-repeat;
   &:last-of-type {
     background: none;
@@ -185,14 +186,23 @@
   > .bd > .item {
     margin-bottom: 25px;
     position: relative;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  > .bd > .item .edit{
+    position: absolute;
+    right: 0;
+    top: -22px;
+    color: #666;
   }
   .expandable {
     display: none;
   }
   > .bd > .item:hover .edit{
-    display: inline;
+    color: #08C;
   }
 }
+
 
 //Job summary
 .job-summary {
