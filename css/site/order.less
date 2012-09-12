@@ -58,22 +58,18 @@
     &:last-of-type {
       background: none;
     }
-    .btn.edit, .btn.save {
+    > .edit {
       position: absolute;
       right: 10px;
       top: 10px;
-    }
-    .btn.edit{
       display: none;
     }
     
     &.readonly {
-      &:hover {
-        .btn.edit {
-          display: block;
-        }
+      > .edit {
+        display: block;
       }
-      .btn.save,
+      .save,
       .fileinput-button {
         display: none;
       }
@@ -118,11 +114,21 @@
     }
     
     .combobox-wrap.medium .combobox-container > input {
-      width: 110px;
+      width: 100px;
+    }
+    
+    .combobox-wrap.inbetween.medium {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 140px;
     }
     
     .combobox-wrap.larger .combobox-container > input {
       width: 420px;
+    }
+    
+    .combobox-wrap.large .combobox-container > input {
+      width: 260px;
     }
     
   }
@@ -167,6 +173,7 @@
   margin-bottom: 15px;
   padding-bottom: 15px;
   position: relative;
+  padding-top: 15px;
   background: url(../../img/site/line-shade.png) center bottom no-repeat;
   &:last-of-type {
     background: none;
@@ -185,14 +192,23 @@
   > .bd > .item {
     margin-bottom: 25px;
     position: relative;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  > .bd > .item .edit{
+    position: absolute;
+    right: 0;
+    top: -22px;
+    color: #666;
   }
   .expandable {
     display: none;
   }
   > .bd > .item:hover .edit{
-    display: inline;
+    color: #08C;
   }
 }
+
 
 //Job summary
 .job-summary {

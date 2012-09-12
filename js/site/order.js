@@ -49,37 +49,66 @@ $(function(){
 	$(".shipto-add").bind("click", function(){
 		$(".order-form-ship").first().before(shipToForm.clone().hide(0).fadeIn(300));
 	});
-})
-
-//Save
-$(".order-form > .order-form-section > .save").live("click", function(){
-	var $me = $(this),
-		$section = $me.parent();
-	$section.addClass("readonly");
-	$section.find("input, textarea").attr("disabled", "disabled");
 });
 
-$(".order-form > .order-form-section > .edit").live("click", function(){
-	var $me = $(this),
-		$section = $me.parent();
-	$section.removeClass("readonly");
-	$section.find("input, textarea").removeAttr("disabled");
-});
-
-
+$(function(){
     //Save
-    $(".order-form-section").live("click", function(){
-        //Save first
-        var $all = $(".order-form-section");
-        $all.addClass("readonly");
-        $all.find("input, textarea").attr("disabled", "disabled");
-        
-        //Edit this
-        var $me = $(this);
-        
-        $me.removeClass("readonly");
-        $me.find("input, textarea").removeAttr("disabled");
+    $(".order-form > .order-form-section > .save").live("click", function(){
+        var $me = $(this),
+            $section = $me.parent();
+        $section.addClass("readonly");
+        $section.find("input, textarea").attr("disabled", "disabled");
     });
+    
+    $(".order-form > .order-form-section > .edit").live("click", function(){
+        var $me = $(this),
+            $section = $me.parent();
+        $section.removeClass("readonly");
+        $section.find("input, textarea").removeAttr("disabled");
+    });
+    
+    
+    // //Save
+    // $(".order-form-section").live("click", function(){
+        // //Save first
+        // var $all = $(".order-form-section");
+        // $all.addClass("readonly");
+        // $all.find("input, textarea").attr("disabled", "disabled");
+//         
+        // //Edit this
+        // var $me = $(this);
+//         
+        // $me.removeClass("readonly");
+        // $me.find("input, textarea").removeAttr("disabled");
+    // });
+    
+    //Save
+	$(".order-form > .order-form-section .save").live("click", function(){
+		var $me = $(this),
+			$section = $me.closest(".order-form-section");
+		$section.addClass("readonly");
+		$section.find("input, textarea").attr("disabled", "disabled");
+	});
+	
+	$(".order-form > .order-form-section .edit").live("click", function(){
+		var $me = $(this),
+			$section = $me.closest(".order-form-section");
+		$section.removeClass("readonly");
+		$section.find("input, textarea").removeAttr("disabled");
+	});
+    
+    $(".job-details > .bd > .item").mouseover(function(){
+        var $this = $(this);
+        if ($this.hasClass("active")) {
+            return;
+        }
+        
+        $(".job-details > .bd > .item").removeClass("active").find(".expandable").slideUp(300);
+        $(this).addClass("active").find(".expandable").slideDown(300);
+    });
+});
+
+
     
 // $(".order-form > .order-form-section input:disabled").bind("click", function(){
 	// alert(0);
