@@ -109,6 +109,12 @@
     }
     input:-moz-placeholder { color:#ddd; }
     input::-webkit-input-placeholder { color:#ddd; }
+    .pms-list .pms {
+      display: none;
+      &.selected {
+        .inline-block;
+      }
+    }
   }
   .section-select {
     position: absolute;
@@ -300,9 +306,9 @@ table.price-table {
     .combobox-container .dropdown-toggle {
       display: none;
     }
-    input:-moz-placeholder { color:#ddd; }
-    input::-webkit-input-placeholder { color:#ddd; }
-  }
+      input:-moz-placeholder { color:#ddd; }
+      input::-webkit-input-placeholder { color:#ddd; }
+    }
   }
 }
 

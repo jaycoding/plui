@@ -10,6 +10,16 @@ $(function(){
 		$(this).addClass("selected");
 	});
 	
+	//Pantone color select
+	$('.pms-list > .pms').bind("click", function(){
+	    if ($(this).parent().hasClass("readonly")) {
+	        return;
+	    }
+	    
+		$(this).siblings(".pms").removeClass("selected");
+		$(this).addClass("selected");
+	});
+	
 	//Show next custome section when click first section
 	$(".customize-section").click(function(){
 		var $this = $(this);

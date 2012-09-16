@@ -5453,6 +5453,17 @@ label.error {
   display: block;
   white-space: nowrap;
 }
+.pms.pms {
+  display: none;
+}
+.pms.pms.selected {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
 .pms-186c {
   background: #CE1D2A;
 }
@@ -6290,6 +6301,17 @@ i.icon-toggle-expand.collapse {
 .customize-section.readonly input::-webkit-input-placeholder {
   color: #ddd;
 }
+.customize-section.readonly .pms-list .pms {
+  display: none;
+}
+.customize-section.readonly .pms-list .pms.selected {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
 .customize-section .section-select {
   position: absolute;
   top: 0;
@@ -6710,6 +6732,17 @@ i.icon-toggle-expand.collapse {
 .order-form > section.readonly .save-address,
 .order-form > section.readonly .clone-address {
   display: none;
+}
+.order-form > section.readonly .pms-list .pms {
+  display: none;
+}
+.order-form > section.readonly .pms-list .pms.selected {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
 }
 .order-form > section > h3 {
   color: #888;
