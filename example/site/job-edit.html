@@ -87,9 +87,26 @@
 												</section>
 												
 												<section>
-													<ul class="pms-list cf">
-														<li class="pms pms-186c selected" rel="tooltip" title="PMS 186C"><span>PMS 186C</span></li>
-													</ul>
+													<div class="editable-color">
+														<ul class="pms-list cf">
+															<li class="pms pms-186c selected" title="PMS 186C"><span>PMS 186C</span></li>
+														</ul>
+														<div class="modal modal-color">
+														  <div class="modal-body">
+														    <ul class="pms-list cf">
+																<li class="pms pms-186c" rel="tooltip" title="PMS 186C"><span>PMS 186C</span></li>
+																<li class="pms pms-534" rel="tooltip" title="PMS 534"><span>PMS 534</span></li>
+																<li class="pms pms-5503" rel="tooltip" title="PMS 5503"><span>PMS 5503</span></li>
+																<li class="pms pms-584" rel="tooltip" title="PMS 584"><span>PMS 584</span></li>
+																<li class="pms pms-693" rel="tooltip" title="PMS 693"><span>PMS 693</span></li>
+																<li class="pms pms-657" rel="tooltip" title="PMS 657"><span>PMS 657</span></li>
+															</ul>
+														  </div>
+														  <div class="modal-footer">
+														    <span class="btn btn-primary btn-save">Save</span>  <span class="btn btn-cancel">Cancel</span>
+														  </div>
+														</div>
+													</div>
 												</section>
 											</div>
 											<div class="span9">
@@ -105,74 +122,83 @@
 												</section>
 												<section class="spaced">
 													<h5>Specifications</h5>
-													<p><a href="#" data-toggle="modal" data-target="#modal-specifications">Capacity: 2G</a></p>
-													<table class="table table-hover price-table">
-														<thead>
-															<tr>
-																<th>&nbsp;</th>
-																<th>Capacity</th>
-																<th>Setup 1</th>
-																<th>Qty 100</th>
-																<th>Qty 200</th>
-																<th>Qty 300</th>
-																<th>Qty 1,000</th>
-																<th>Qty 3,000</th>
-																<th>Qty 5,000</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td><input type="radio" name="radio1"></td>
-																<td>1G</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-															</tr>
-															<tr>
-																<td><input type="radio" name="radio1"></td>
-																<td>2G</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-															</tr>
-															<tr>
-																<td><input type="radio" name="radio1"></td>
-																<td>4G</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-																<td>7.50</td>
-															</tr>
-															<tr>
-																<td><input type="radio" name="radio1"></td>
-																<td>
-																	<div class="control-group">
-															            <div class="controls">
-															              <input type="text" class="input-mini with-tooltop tright" placeholder="Custom" name="" id="" rel="tooltip" title="Please input capacity!" />
-															            </div>
-															        </div>
-															    </td>
-																<td>quote</td>
-																<td>quote</td>
-																<td>quote</td>
-																<td>quote</td>
-																<td>quote</td>
-																<td>quote</td>
-																<td>quote</td>
-															</tr>
-														</tbody>
-													</table>
+													<div class="editable-specifications">
+														<a href="javascript:void(0);">Capacity: 2G</a>
+														<div class="modal modal-specifications">
+														  <div class="modal-body">
+														    <table class="table table-hover price-table">
+																<thead>
+																	<tr>
+																		<th>&nbsp;</th>
+																		<th>Capacity</th>
+																		<th>Setup 1</th>
+																		<th>Qty 100</th>
+																		<th>Qty 200</th>
+																		<th>Qty 300</th>
+																		<th>Qty 1,000</th>
+																		<th>Qty 3,000</th>
+																		<th>Qty 5,000</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>1G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>2G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>4G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>
+																			<div class="control-group">
+																	            <div class="controls">
+																	              <input type="text" class="input-mini with-tooltop tright" placeholder="Custom" name="" id="" rel="tooltip" title="Please input capacity!" />
+																	            </div>
+																	        </div>
+																		</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																	</tr>
+																</tbody>
+															</table>
+														  </div>
+														  <div class="modal-footer">
+														    <span class="btn btn-primary btn-save">Save</span>  <span class="btn btn-cancel">Cancel</span>
+														  </div>
+														</div>
+													</div>
 												</section>
 												<section class="spaced">
 													<h5>Attachments</h5>
@@ -222,9 +248,26 @@
 												</section>
 												
 												<section>
-													<ul class="pms-list cf">
-														<li class="pms pms-186c selected" data-toggle="modal" data-target="#modal-pantone" title="PMS 186C"><span>PMS 186C</span></li>
-													</ul>
+													<div class="editable-color">
+														<ul class="pms-list cf">
+															<li class="pms pms-186c selected" title="PMS 186C"><span>PMS 186C</span></li>
+														</ul>
+														<div class="modal modal-color">
+														  <div class="modal-body">
+														    <ul class="pms-list cf">
+																<li class="pms pms-186c" rel="tooltip" title="PMS 186C"><span>PMS 186C</span></li>
+																<li class="pms pms-534" rel="tooltip" title="PMS 534"><span>PMS 534</span></li>
+																<li class="pms pms-5503" rel="tooltip" title="PMS 5503"><span>PMS 5503</span></li>
+																<li class="pms pms-584" rel="tooltip" title="PMS 584"><span>PMS 584</span></li>
+																<li class="pms pms-693" rel="tooltip" title="PMS 693"><span>PMS 693</span></li>
+																<li class="pms pms-657" rel="tooltip" title="PMS 657"><span>PMS 657</span></li>
+															</ul>
+														  </div>
+														  <div class="modal-footer">
+														    <span class="btn btn-primary btn-save">Save</span>  <span class="btn btn-cancel">Cancel</span>
+														  </div>
+														</div>
+													</div>
 												</section>
 											</div>
 											<div class="span9">
@@ -240,7 +283,83 @@
 												</section>
 												<section class="spaced">
 													<h5>Specifications</h5>
-													<p><a href="#" data-toggle="modal" data-target="#modal-specifications">Capacity: 2G</a></p>
+													<div class="editable-specifications">
+														<a href="javascript:void(0);">Capacity: 2G</a>
+														<div class="modal modal-specifications">
+														  <div class="modal-body">
+														    <table class="table table-hover price-table">
+																<thead>
+																	<tr>
+																		<th>&nbsp;</th>
+																		<th>Capacity</th>
+																		<th>Setup 1</th>
+																		<th>Qty 100</th>
+																		<th>Qty 200</th>
+																		<th>Qty 300</th>
+																		<th>Qty 1,000</th>
+																		<th>Qty 3,000</th>
+																		<th>Qty 5,000</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>1G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>2G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>4G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>
+																			<div class="control-group">
+																	            <div class="controls">
+																	              <input type="text" class="input-mini with-tooltop tright" placeholder="Custom" name="" id="" rel="tooltip" title="Please input capacity!" />
+																	            </div>
+																	        </div>
+																		</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																	</tr>
+																</tbody>
+															</table>
+														  </div>
+														  <div class="modal-footer">
+														    <span class="btn btn-primary btn-save">Save</span>  <span class="btn btn-cancel">Cancel</span>
+														  </div>
+														</div>
+													</div>
 												</section>
 												<section class="spaced">
 													<h5>Attachments</h5>
@@ -290,14 +409,26 @@
 												</section>
 												
 												<section>
-													<ul class="pms-list pms-list-editable cf">
-														<li class="pms pms-186c selected" title="PMS 186C"><span>PMS 186C</span></li>
-														<li class="pms pms-534" title="PMS 534"><span>PMS 534</span></li>
-														<li class="pms pms-5503" title="PMS 5503"><span>PMS 5503</span></li>
-														<li class="pms pms-584" title="PMS 584"><span>PMS 584</span></li>
-														<li class="pms pms-693" title="PMS 693"><span>PMS 693</span></li>
-														<li class="pms pms-657" title="PMS 657"><span>PMS 657</span></li>
-													</ul>
+													<div class="editable-color">
+														<ul class="pms-list cf">
+															<li class="pms pms-186c selected" title="PMS 186C"><span>PMS 186C</span></li>
+														</ul>
+														<div class="modal modal-color">
+														  <div class="modal-body">
+														    <ul class="pms-list cf">
+																<li class="pms pms-186c" rel="tooltip" title="PMS 186C"><span>PMS 186C</span></li>
+																<li class="pms pms-534" rel="tooltip" title="PMS 534"><span>PMS 534</span></li>
+																<li class="pms pms-5503" rel="tooltip" title="PMS 5503"><span>PMS 5503</span></li>
+																<li class="pms pms-584" rel="tooltip" title="PMS 584"><span>PMS 584</span></li>
+																<li class="pms pms-693" rel="tooltip" title="PMS 693"><span>PMS 693</span></li>
+																<li class="pms pms-657" rel="tooltip" title="PMS 657"><span>PMS 657</span></li>
+															</ul>
+														  </div>
+														  <div class="modal-footer">
+														    <span class="btn btn-primary btn-save">Save</span>  <span class="btn btn-cancel">Cancel</span>
+														  </div>
+														</div>
+													</div>
 												</section>
 											</div>
 											<div class="span9">
@@ -313,7 +444,83 @@
 												</section>
 												<section class="spaced">
 													<h5>Specifications</h5>
-													<p><a href="#" data-toggle="modal" data-target="#modal-specifications">Capacity: 2G</a></p>
+													<div class="editable-specifications">
+														<a href="javascript:void(0);">Capacity: 2G</a>
+														<div class="modal modal-specifications">
+														  <div class="modal-body">
+														    <table class="table table-hover price-table">
+																<thead>
+																	<tr>
+																		<th>&nbsp;</th>
+																		<th>Capacity</th>
+																		<th>Setup 1</th>
+																		<th>Qty 100</th>
+																		<th>Qty 200</th>
+																		<th>Qty 300</th>
+																		<th>Qty 1,000</th>
+																		<th>Qty 3,000</th>
+																		<th>Qty 5,000</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>1G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>2G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>4G</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																		<td>7.50</td>
+																	</tr>
+																	<tr>
+																		<td><input type="radio" name="radio1"></td>
+																		<td>
+																			<div class="control-group">
+																	            <div class="controls">
+																	              <input type="text" class="input-mini with-tooltop tright" placeholder="Custom" name="" id="" rel="tooltip" title="Please input capacity!" />
+																	            </div>
+																	        </div>
+																		</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																		<td>quote</td>
+																	</tr>
+																</tbody>
+															</table>
+														  </div>
+														  <div class="modal-footer">
+														    <span class="btn btn-primary btn-save">Save</span>  <span class="btn btn-cancel">Cancel</span>
+														  </div>
+														</div>
+													</div>
 												</section>
 												<section class="spaced">
 													<h5>Attachments</h5>
@@ -429,105 +636,6 @@
 				</footer>
 				<!-- Footer End-->
 			</div>
-		</div>
-		
-		<div class="modal hide fade" id="modal-pantone">
-		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		    <h3>Select the color</h3>
-		  </div>
-		  <div class="modal-body">
-		    <ul class="pms-list cf">
-				<li class="pms pms-186c" rel="tooltip" title="PMS 186C"><span>PMS 186C</span></li>
-				<li class="pms pms-534" rel="tooltip" title="PMS 534"><span>PMS 534</span></li>
-				<li class="pms pms-5503" rel="tooltip" title="PMS 5503"><span>PMS 5503</span></li>
-				<li class="pms pms-584" rel="tooltip" title="PMS 584"><span>PMS 584</span></li>
-				<li class="pms pms-693" rel="tooltip" title="PMS 693"><span>PMS 693</span></li>
-				<li class="pms pms-657" rel="tooltip" title="PMS 657"><span>PMS 657</span></li>
-			</ul>
-		  </div>
-		  <div class="modal-footer">
-		    <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a>
-		  </div>
-		</div>
-		
-		<div class="modal hide fade" id="modal-specifications">
-		  <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		    <h3>Choose specifications</h3>
-		  </div>
-		  <div class="modal-body">
-		    <table class="table table-hover price-table">
-				<thead>
-					<tr>
-						<th>&nbsp;</th>
-						<th>Capacity</th>
-						<th>Setup 1</th>
-						<th>Qty 100</th>
-						<th>Qty 200</th>
-						<th>Qty 300</th>
-						<th>Qty 1,000</th>
-						<th>Qty 3,000</th>
-						<th>Qty 5,000</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input type="radio" name="radio1"></td>
-						<td>1G</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-					</tr>
-					<tr>
-						<td><input type="radio" name="radio1"></td>
-						<td>2G</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-					</tr>
-					<tr>
-						<td><input type="radio" name="radio1"></td>
-						<td>4G</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-						<td>7.50</td>
-					</tr>
-					<tr>
-						<td><input type="radio" name="radio1"></td>
-						<td>
-							<div class="control-group">
-					            <div class="controls">
-					              <input type="text" class="input-mini with-tooltop tright" placeholder="Custom" name="" id="" rel="tooltip" title="Please input capacity!" />
-					            </div>
-					        </div>
-						</td>
-						<td>quote</td>
-						<td>quote</td>
-						<td>quote</td>
-						<td>quote</td>
-						<td>quote</td>
-						<td>quote</td>
-						<td>quote</td>
-					</tr>
-				</tbody>
-			</table>
-		  </div>
-		  <div class="modal-footer">
-		    <a href="#" class="btn btn-primary" data-dismiss="modal">Save</a>
-		  </div>
 		</div>
 		
 	</body>

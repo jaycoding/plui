@@ -161,6 +161,37 @@ $(function(){
     
     
     
+    $(".job-edit .editable-color .pms-list .pms").live("click", function(){
+       var $me = $(this);
+       $me.closest(".editable-color").find(".modal-color").fadeIn(300);
+    });
+    
+    $(".job-edit .editable-color .modal-color .modal-footer .btn-save").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-color").fadeOut(300);
+    });
+    
+    $(".job-edit .editable-color .modal-color .modal-footer .btn-cancel").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-color").fadeOut(300);
+    });
+    
+    
+    $(".job-edit .editable-specifications > a").live("click", function(){
+       var $me = $(this);
+       $me.closest(".editable-specifications").find(".modal-specifications").fadeIn(300);
+    });
+    
+    $(".job-edit .editable-specifications .modal-specifications .modal-footer .btn-save").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-specifications").fadeOut(300);
+    });
+    
+    $(".job-edit .editable-specifications .modal-specifications .modal-footer .btn-cancel").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-specifications").fadeOut(300);
+    });
+    
     
     
     //Product viewer

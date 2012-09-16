@@ -5453,17 +5453,6 @@ label.error {
   display: block;
   white-space: nowrap;
 }
-.pms.readonly .pms {
-  display: none;
-}
-.pms.readonly .pms.selected {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-
-  *zoom: 1;
-  display: inline-block;
-}
 .pms-186c {
   background: #CE1D2A;
 }
@@ -6483,6 +6472,27 @@ i.icon-toggle-expand.collapse {
 }
 .job-edit .job-edit-section.readonly input::-webkit-input-placeholder {
   color: #ddd;
+}
+.job-edit .editable-color {
+  position: relative;
+}
+.job-edit .editable-color .modal.modal-color {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 320px;
+  margin: 0;
+}
+.job-edit .editable-specifications {
+  position: relative;
+}
+.job-edit .editable-specifications .modal.modal-specifications {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  margin: 0;
 }
 .upload-thumbnails .upload-thumbnail {
   border: 1px dotted #ccc;
