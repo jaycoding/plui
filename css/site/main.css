@@ -5453,10 +5453,10 @@ label.error {
   display: block;
   white-space: nowrap;
 }
-.pms.pms {
+.pms.readonly .pms {
   display: none;
 }
-.pms.pms.selected {
+.pms.readonly .pms.selected {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
