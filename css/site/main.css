@@ -5421,6 +5421,9 @@ label.error {
   padding: 2px 8px;
   margin-top: 2px;
 }
+.no-border {
+  border: none!important;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -6698,6 +6701,10 @@ i.icon-toggle-expand.collapse {
 .order-form > section.readonly input::-webkit-input-placeholder {
   color: #ddd;
 }
+.order-form > section.readonly .save-address,
+.order-form > section.readonly .clone-address {
+  display: none;
+}
 .order-form > section > h3 {
   color: #888;
   margin-bottom: 8px;
@@ -6796,6 +6803,15 @@ i.icon-toggle-expand.collapse {
 }
 .job-summary li {
   clear: both;
+}
+.job-summary li > a {
+  text-decoration: none;
+  padding: 4px;
+  display: block;
+}
+.job-summary li > a:hover {
+  text-decoration: none;
+  background: #f3f3f3;
 }
 .job-summary img {
   margin: 0 6px 0px 0;

@@ -53,20 +53,21 @@ $(function(){
 
 $(function(){
     //Save
-    $(".order-form > .order-form-section > .save").live("click", function(){
-        var $me = $(this),
-            $section = $me.parent();
-        $section.addClass("readonly");
-        $section.find("input, textarea").attr("disabled", "disabled");
-    });
-    
-    $(".order-form > .order-form-section > .edit").live("click", function(){
-        var $me = $(this),
-            $section = $me.parent();
-        $section.removeClass("readonly");
-        $section.find("input, textarea").removeAttr("disabled");
-    });
-    
+    // $(".order-form > .order-form-section > .save").live("click", function(){
+        // var $me = $(this),
+            // $section = $me.parent();
+        // $section.addClass("readonly");
+        // $section.find("input, textarea").attr("disabled", "disabled");
+        // console.log($section);
+    // });
+//     
+    // $(".order-form > .order-form-section > .edit").live("click", function(){
+        // var $me = $(this),
+            // $section = $me.parent();
+        // $section.removeClass("readonly");
+        // $section.find("input, textarea").removeAttr("disabled");
+    // });
+//     
     
     // //Save
     // $(".order-form-section").live("click", function(){
@@ -88,6 +89,8 @@ $(function(){
 			$section = $me.closest(".order-form-section");
 		$section.addClass("readonly");
 		$section.find("input, textarea").attr("disabled", "disabled");
+		console.log($section.find(".for-jobs input:not(:checked)").parent("label"));
+        $section.find(".for-jobs input:not(:checked)").parent("label").hide(0);
 	});
 	
 	$(".order-form > .order-form-section .edit").live("click", function(){
@@ -95,6 +98,7 @@ $(function(){
 			$section = $me.closest(".order-form-section");
 		$section.removeClass("readonly");
 		$section.find("input, textarea").removeAttr("disabled");
+        $section.find(".for-jobs input:not(:checked)").parent("label").show(0);
 	});
     
     $(".job-details > .bd > .item").mouseover(function(){
