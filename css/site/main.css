@@ -5796,6 +5796,12 @@ i.icon-toggle-expand.collapse {
 .popover.user-profile {
   width: 240px;
 }
+.row-fluid.inline-input {
+  line-height: 30px;
+}
+.row-fluid.inline-input input {
+  margin: 0;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          components.less
