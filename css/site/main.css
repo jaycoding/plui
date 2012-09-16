@@ -6583,6 +6583,22 @@ i.icon-toggle-expand.collapse {
   border: 1px solid #bbb;
   box-shadow: 0px 2px 3px #ccc;
 }
+.job-summary li {
+  clear: both;
+}
+.job-summary li > a {
+  text-decoration: none;
+  padding: 4px;
+  display: block;
+}
+.job-summary li > a:hover {
+  text-decoration: none;
+  background: #f3f3f3;
+}
+.job-summary img {
+  margin: 0 6px 0px 0;
+  border: 1px solid #ddd;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          shopping-cart.less
@@ -6782,7 +6798,7 @@ i.icon-toggle-expand.collapse {
   clear: both;
 }
 .job-summary img {
-  margin: 0 6px 6px 0;
+  margin: 0 6px 0px 0;
   border: 1px solid #ddd;
 }
 .user.with-profile {
