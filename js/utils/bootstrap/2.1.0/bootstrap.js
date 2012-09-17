@@ -2226,7 +2226,7 @@
       e.preventDefault()
       var val = this.$element.val()
       if (!this.selected && val != "" ) {
-        this.$element.val("")
+        //this.$element.val("")
         this.$target.val("").trigger('change')
       }
       if (this.shown) {
