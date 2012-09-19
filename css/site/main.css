@@ -5808,6 +5808,90 @@ i.icon-toggle-expand.collapse {
  //  Description:   Components
  //
  //////////////////////////////////////////////////////////////////////////////////////*/
+.modal-search-bp {
+  width: 480px;
+}
+.modal-search-bp .modal-body {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 0;
+}
+.search-bp-filter {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f8f8;
+  background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+  padding: 15px;
+}
+.search-bp-filter .btn-search-bp {
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  width: 82px;
+  height: 45px;
+  width: 45px;
+  height: 82px;
+  background: transparent url(../../img/site/btn-search-bp.png) 0 0 no-repeat;
+  cursor: pointer;
+  border: none;
+}
+.search-bp-filter .combobox-wrap input {
+  width: 320px;
+}
+.search-bp-result {
+  clear: both;
+  height: 180px;
+  overflow: auto;
+  padding: 0px 0 0 15px;
+}
+.modal-search-contact {
+  width: 480px;
+}
+.modal-search-contact .modal-body {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 0;
+}
+.search-contact-filter {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f8f8;
+  background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+  padding: 15px;
+}
+.search-contact-filter .btn-search-contact {
+  position: absolute;
+  right: 15px;
+  top: 23px;
+  width: 49px;
+  height: 45px;
+  width: 45px;
+  height: 49px;
+  background: transparent url(../../img/site/btn-search-contact.png) 0 0 no-repeat;
+  cursor: pointer;
+  border: none;
+}
+.search-contact-filter .combobox-wrap input {
+  width: 320px;
+}
+.search-contact-result {
+  clear: both;
+  height: 180px;
+  overflow: auto;
+  padding: 0px 0 0 15px;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          themes.less
