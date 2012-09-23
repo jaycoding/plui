@@ -235,6 +235,16 @@ $(function(){
                 // .closest('.control-group').addClass('success');
         // }
       // });
+      
+     //Check section
+     $(".customize-section input, .customize-section .pms, .customize-section textarea").live("click", function(){
+         if ($(this).parents(".section-select").length > 0 ) {
+             return;
+         }
+         
+         $(this).closest(".customize-section").find(".section-select input").attr("checked", "checked");
+     })
+     
 });
 
 
