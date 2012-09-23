@@ -5892,6 +5892,28 @@ i.icon-toggle-expand.collapse {
   overflow: auto;
   padding: 0px 0 0 15px;
 }
+.upload-thumbnails .upload-thumbnail {
+  border: 1px dotted #ccc;
+  position: relative;
+}
+.upload-thumbnails .upload-thumbnail > .icon-remove {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.upload-thumbnails .upload-thumbnail > .icon-remove:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.upload-thumbnails.readonly .upload-thumbnail {
+  border: none;
+}
+.upload-thumbnails.readonly .icon-remove {
+  display: none!important;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          themes.less
@@ -6374,17 +6396,6 @@ i.icon-toggle-expand.collapse {
 .customize-section.readonly input::-webkit-input-placeholder {
   color: #ddd;
 }
-.customize-section.readonly .pms-list .pms {
-  display: none;
-}
-.customize-section.readonly .pms-list .pms.selected {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-
-  *zoom: 1;
-  display: inline-block;
-}
 .customize-section .section-select {
   position: absolute;
   top: 0;
@@ -6577,28 +6588,6 @@ i.icon-toggle-expand.collapse {
   left: 0px;
   top: 20px;
   margin: 0;
-}
-.upload-thumbnails .upload-thumbnail {
-  border: 1px dotted #ccc;
-  position: relative;
-}
-.upload-thumbnails .upload-thumbnail > .icon-remove {
-  cursor: pointer;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-.upload-thumbnails .upload-thumbnail > .icon-remove:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-.upload-thumbnails.readonly .upload-thumbnail {
-  border: none;
-}
-.upload-thumbnails.readonly .icon-remove {
-  display: none!important;
 }
 .product-viewer {
   display: none;

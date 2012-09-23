@@ -109,12 +109,12 @@
     }
     input:-moz-placeholder { color:#ddd; }
     input::-webkit-input-placeholder { color:#ddd; }
-    .pms-list .pms {
-      display: none;
-      &.selected {
-        .inline-block;
-      }
-    }
+    // .pms-list.pms-list-editable .pms {
+      // display: none;
+      // &.selected {
+        // .inline-block;
+      // }
+    // }
   }
   .section-select {
     position: absolute;
@@ -333,33 +333,6 @@ table.price-table {
   }
 }
 
-
-
-////Upload////
-.upload-thumbnails {
-  .upload-thumbnail {
-    border: 1px dotted #ccc;
-    position: relative;
-    >.icon-remove {
-      cursor: pointer;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      .opacity(80);
-      &:hover {
-        .opacity(100);
-      }
-    }
-  }
-  &.readonly {
-    .upload-thumbnail {
-      border: none;
-    }
-    .icon-remove {
-      display: none!important;
-    }
-  }
-}
 
 
 ////Product viewer////
