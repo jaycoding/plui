@@ -47,8 +47,47 @@ $(function(){
 	$('.date').datepicker();
 	
 	
-	//Search BP/Contact
-	
+	//Theme picker
+	var wrapper = $(".wrapper");
+    var themePicker = {
+        black : function() {
+            wrapper.removeClass().addClass("theme-black");
+        },
+        blue : function() {
+            wrapper.removeClass().addClass("theme-blue");
+        },
+        deepBlue : function() {
+            wrapper.removeClass().addClass("theme-deepblue");
+        },
+        green : function() {
+            wrapper.removeClass().addClass("theme-green");
+        },
+        red : function() {
+            wrapper.removeClass().addClass("theme-red");
+        },
+        yellow : function() {
+            wrapper.removeClass().addClass("theme-yellow");
+        }
+    };
+    
+    $("#theme-picker-black").bind('click', function() {
+        themePicker.black();
+    });
+    $("#theme-picker-blue").bind('click', function() {
+        themePicker.blue();
+    });
+    $("#theme-picker-deepblue").bind('click', function() {
+        themePicker.deepBlue();
+    });
+    $("#theme-picker-green").bind('click', function() {
+        themePicker.green();
+    });
+    $("#theme-picker-red").bind('click', function() {
+        themePicker.red();
+    });
+    $("#theme-picker-yellow").bind('click', function() {
+        themePicker.yellow();
+    });
 });
 
 
