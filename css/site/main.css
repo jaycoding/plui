@@ -5802,6 +5802,9 @@ i.icon-toggle-expand.collapse {
 .row-fluid.inline-input input {
   margin: 0;
 }
+.bp-logo {
+  max-width: 150px;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          components.less
@@ -5871,6 +5874,9 @@ i.icon-toggle-expand.collapse {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
   padding: 15px;
 }
+.search-contact-filter .controls > input {
+  width: 347px;
+}
 .search-contact-filter .btn-search-contact {
   position: absolute;
   right: 15px;
@@ -5919,7 +5925,25 @@ i.icon-toggle-expand.collapse {
   height: 128px;
   width: 128px;
   height: 15px;
+  margin: 10px 0;
   background: transparent url(../../img/global/upload-in-progress.gif) 0 0 no-repeat;
+}
+.btn-search-bp,
+.btn-search-contact {
+  width: 20px;
+  height: 20px;
+  width: 20px;
+  height: 20px;
+  background: transparent url(../../img/icons/icon-search.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin: 0 4px;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
