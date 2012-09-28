@@ -5914,6 +5914,13 @@ i.icon-toggle-expand.collapse {
 .upload-thumbnails.readonly .icon-remove {
   display: none!important;
 }
+.upload-form-progress {
+  width: 15px;
+  height: 128px;
+  width: 128px;
+  height: 15px;
+  background: transparent url(../../img/global/upload-in-progress.gif) 0 0 no-repeat;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          themes.less
