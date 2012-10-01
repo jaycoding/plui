@@ -5714,17 +5714,70 @@ nav .clogo img {
 .order-list {
   margin-top: 30px;
 }
+.order-list h2 {
+  font-size: 18px;
+}
 .order-list-filter {
+  color: #444;
   border: 1px solid #ddd;
 }
 .order-list-filter > section {
   padding: 10px;
+}
+.order-list-filter > section.first {
   background: #f6f6f6;
   border-bottom: 1px solid #ddd;
 }
 .order-list-filter a {
   color: #666;
 }
+.order-list-filter .btn-advanced-filter {
+  cursor: pointer;
+  color: #666;
+}
+.order-list-filter .expandable {
+  display: none;
+}
 .order-list-table {
+  border-top: 2px solid #ccc;
   margin-top: 20px;
+}
+.order-list-table table th.tright,
+.order-list-table table td.tright {
+  text-align: right;
+}
+.order-list-table tr.type-job {
+  display: none;
+}
+.order-list-table .col-check {
+  width: 5%;
+}
+.order-list-table .col-expand {
+  width: 5%;
+}
+.order-list-table .col-no {
+  width: 15%;
+}
+.order-list-table .col-name {
+  width: 35%;
+}
+.order-list-table .col-value {
+  width: 30%;
+}
+.order-list-table .col-actions {
+  width: 10%;
+}
+.btn-expand-order {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.order-details {
+  margin-top: 30px;
+}
+.order-details h2 {
+  font-size: 18px;
+}
+.order-details .tab-content {
+  overflow: visible;
 }
