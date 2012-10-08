@@ -5832,6 +5832,9 @@ i.icon-toggle-expand.collapse {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
   padding: 15px;
 }
+.search-bp-filter .controls > input {
+  width: 347px;
+}
 .search-bp-filter .btn-search-bp {
   position: absolute;
   right: 15px;
