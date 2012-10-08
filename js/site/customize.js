@@ -193,6 +193,9 @@ $(function(){
     });
     
     
+    $(".expandable-once > .expandable-once-btn").live("click", function(){
+        $(this).hide().prev(".expandable-once-bd").slideDown("fast");
+    });
     
     //Product viewer
     $('.product-viewer').etalage({
