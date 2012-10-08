@@ -6495,10 +6495,7 @@ i.icon-toggle-expand.collapse {
   position: absolute;
   top: 0;
   left: 0;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  background: #f3f3f3;
-  padding: 5px 5px 6px 6px;
+  padding: 10px 10px 6px 10px;
   width: 20px;
   height: 18px;
   width: 18px;
@@ -6749,32 +6746,45 @@ i.icon-toggle-expand.collapse {
 
   opacity: 0;
   float: left;
-  width: 18px;
-  height: 18px;
+  width: 27px;
+  height: 25px;
 }
-.section-select:not(#foo) > input[type='radio'] + label,
-.section-select:not(#foo) > input[type='checkbox'] + label {
+.section-select:not(#foo) > input[type='radio'] + label {
   margin: 0;
   clear: none;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 17px;
+  height: 15px;
   /* Left padding makes room for image */
 
   padding: 5px 0 4px 24px;
   /* Make look clickable because they are */
 
   cursor: pointer;
-  background: url(../../img/icons/off.png) left center no-repeat;
+  background: url(../../img/icons/icon-radio.png) left center no-repeat;
+}
+.section-select:not(#foo) > input[type='checkbox'] + label {
+  margin: 0;
+  clear: none;
+  display: block;
+  width: 17px;
+  height: 15px;
+  /* Left padding makes room for image */
+
+  padding: 5px 0 4px 24px;
+  /* Make look clickable because they are */
+
+  cursor: pointer;
+  background: url(../../img/icons/icon-check.png) left center no-repeat;
 }
 /*
   Change from unchecked to checked graphic
 */
 .section-select:not(#foo) > input[type='radio']:checked + label {
-  background-image: url(../../img/icons/radio.png);
+  background-image: url(../../img/icons/icon-radio-checked.png);
 }
 .section-select:not(#foo) > input[type='checkbox']:checked + label {
-  background-image: url(../../img/icons/check.png);
+  background-image: url(../../img/icons/icon-check-checked.png);
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
