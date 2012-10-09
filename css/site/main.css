@@ -6941,7 +6941,9 @@ i.icon-toggle-expand.collapse {
   display: block;
 }
 .order-form > section.readonly .save,
-.order-form > section.readonly .fileinput-button {
+.order-form > section.readonly .fileinput-button,
+.order-form > section.readonly .btn-search-bp,
+.order-form > section.readonly .btn-search-contact {
   display: none;
 }
 .order-form > section.readonly input,
