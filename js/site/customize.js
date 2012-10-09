@@ -127,18 +127,18 @@ $(function(){
 	});
 	
 	//Save
-    $(".customize-section").live("click", function(){
+    $(".customize-section").bind("click", function(){
         //Save first
         var $all = $(".customize-section");
         $all.addClass("readonly");
         $all.addClass("readonly");
-        $all.find("input, textarea").attr("disabled", "disabled");
+        $all.find("input, textarea").addClass("disabled");
         $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
         
         //Edit this
         var $me = $(this);
         $me.removeClass("readonly");
-        $me.find("input, textarea").removeAttr("disabled");
+        $me.find("input, textarea").removeClass("disabled");
         $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
     });
     
@@ -149,13 +149,13 @@ $(function(){
         var $all = $(".job-edit-section");
         $all.addClass("readonly");
         $all.addClass("readonly");
-        $all.find("input, textarea").attr("disabled", "disabled");
+        $all.find("input, textarea").addClass("disabled");
         $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
         
         //Edit this
         var $me = $(this);
         $me.removeClass("readonly");
-        $me.find("input, textarea").removeAttr("disabled");
+        $me.find("input, textarea").removeClass("disabled");
         $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
     });
     
