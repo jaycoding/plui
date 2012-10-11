@@ -89,17 +89,19 @@ $(function(){
 		var $me = $(this),
 			$section = $me.closest(".order-form-section");
 		$section.addClass("readonly");
-		$section.find("input, textarea").attr("disabled", "disabled");
+		$section.find("input, textarea, select").attr("disabled", "disabled");
 		console.log($section.find(".for-jobs input:not(:checked)").parent("label"));
         $section.find(".for-jobs input:not(:checked)").parent("label").hide(0);
+        $section.find(".upload-thumbnails, .upload-text-links").addClass("readonly");
 	});
 	
 	$(".order-form > .order-form-section .edit").live("click", function(){
 		var $me = $(this),
 			$section = $me.closest(".order-form-section");
 		$section.removeClass("readonly");
-		$section.find("input, textarea").removeAttr("disabled");
+		$section.find("input, textarea, select").removeAttr("disabled");
         $section.find(".for-jobs input:not(:checked)").parent("label").show(0);
+        $section.find(".upload-thumbnails, .upload-text-links").removeClass("readonly");
 	});
     
     $(".job-details > .bd > .item").mouseover(function(){
@@ -110,6 +112,24 @@ $(function(){
         
         $(".job-details > .bd > .item").removeClass("active").find(".expandable").slideUp(300);
         $(this).addClass("active").find(".expandable").slideDown(300);
+    });
+    
+    
+    //Remove attachment
+    $(".upload-thumbnail .icon-remove").live("click", function(){
+        if ($(this).parent().parent(".upload-thumbnails").hasClass("readonly")) {
+            return;
+        }
+        $(this).parent(".upload-thumbnail").fadeOut(250, function(){$(this).remove()});
+        //@Todo: Add ajax function to remove upload file
+    });
+    
+    $(".upload-text-link .icon-remove").live("click", function(){
+        if ($(this).parent().parent(".upload-text-links").hasClass("readonly")) {
+            return;
+        }
+        $(this).parent(".upload-text-link").fadeOut(250, function(){$(this).remove()});
+        //@TODO: Add ajax function to remove upload file
     });
 });
 

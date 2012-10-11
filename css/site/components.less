@@ -117,6 +117,31 @@
   }
 }
 
+.upload-text-links {
+  .upload-text-link {
+    position: relative;
+    padding-left: 18px;
+    >.icon-remove {
+      cursor: pointer;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      .opacity(80);
+      &:hover {
+        .opacity(100);
+      }
+    }
+  }
+  &.readonly {
+    .upload-text-link {
+      border: none;
+    }
+    .icon-remove {
+      display: none!important;
+    }
+  }
+}
+
 .upload-form-progress {
   .size(128px, 15px);
   margin: 10px 0;

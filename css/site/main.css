@@ -5923,6 +5923,28 @@ i.icon-toggle-expand.collapse {
 .upload-thumbnails.readonly .icon-remove {
   display: none!important;
 }
+.upload-text-links .upload-text-link {
+  position: relative;
+  padding-left: 18px;
+}
+.upload-text-links .upload-text-link > .icon-remove {
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.upload-text-links .upload-text-link > .icon-remove:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.upload-text-links.readonly .upload-text-link {
+  border: none;
+}
+.upload-text-links.readonly .icon-remove {
+  display: none!important;
+}
 .upload-form-progress {
   width: 15px;
   height: 128px;

@@ -126,6 +126,14 @@ $(function(){
 	    //@Todo: Add ajax function to remove upload file
 	});
 	
+	$(".upload-text-link .icon-remove").live("click", function(){
+        if ($(this).parent().parent(".upload-text-links").hasClass("readonly")) {
+            return;
+        }
+        $(this).parent(".upload-text-link").fadeOut(250, function(){$(this).remove()});
+        //@TODO: Add ajax function to remove upload file
+    });
+	
 	//Save
     $(".customize-section").bind("click", function(){
         //Save first
@@ -133,13 +141,13 @@ $(function(){
         $all.addClass("readonly");
         $all.addClass("readonly");
         $all.find("input, textarea").addClass("disabled");
-        $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
+        $all.find(".pms-list, .upload-thumbnails, .upload-text-links").addClass("readonly");
         
         //Edit this
         var $me = $(this);
         $me.removeClass("readonly");
         $me.find("input, textarea").removeClass("disabled");
-        $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
+        $me.find(".pms-list, .upload-thumbnails, .upload-text-links").removeClass("readonly");
     });
     
     
@@ -150,13 +158,13 @@ $(function(){
         $all.addClass("readonly");
         $all.addClass("readonly");
         $all.find("input, textarea").addClass("disabled");
-        $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
+        $all.find(".pms-list, .upload-thumbnails, .upload-text-links").addClass("readonly");
         
         //Edit this
         var $me = $(this);
         $me.removeClass("readonly");
         $me.find("input, textarea").removeClass("disabled");
-        $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
+        $me.find(".pms-list, .upload-thumbnails, .upload-text-links").removeClass("readonly");
     });
     
     
