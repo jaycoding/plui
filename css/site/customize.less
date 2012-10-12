@@ -120,10 +120,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    background: #f3f3f3;
-    padding: 5px 5px 6px 6px;
+    // border-bottom: 1px solid #ccc;
+    // border-right: 1px solid #ccc;
+    // background: #f3f3f3;
+    padding: 10px 10px 6px 10px;
     .size(18px, 20px);
     border-bottom-right-radius: 3px;
     input {
@@ -394,4 +394,68 @@ table.price-table {
   font-style: italic;
   margin: 10px;
   padding: 6px 10px;
+}
+
+.expandable-once-bd {
+  display: none;
+}
+
+
+/* 
+  Hide the original radios and checkboxes
+  (but still accessible)
+    
+  :not(#foo) > is a rule filter to block browsers
+               that don't support that selector from
+               applying rules they shouldn't
+     
+*/
+.section-select:not(#foo) > input[type='radio'], 
+.section-select:not(#foo) > input[type='checkbox'] {
+  
+  /* Hide the input, but have it still be clickable */
+  opacity: 0;
+  
+  float: left;
+  width: 27px;
+  height: 25px;
+}
+
+
+.section-select:not(#foo) > input[type='radio'] + label {
+  margin: 0;
+  clear: none;
+  display: block;
+  width: 17px;
+  height: 15px;
+  /* Left padding makes room for image */
+  padding: 5px 0 4px 24px;
+  /* Make look clickable because they are */
+  cursor: pointer;
+  background: url(../../img/icons/icon-radio.png) left center no-repeat; 
+}
+
+
+.section-select:not(#foo) > input[type='checkbox'] + label {
+  margin: 0;
+  clear: none;
+  display: block;
+  width: 17px;
+  height: 15px;
+  /* Left padding makes room for image */
+  padding: 5px 0 4px 24px;
+  /* Make look clickable because they are */
+  cursor: pointer;
+  background: url(../../img/icons/icon-check.png) left center no-repeat; 
+}
+
+
+/*
+  Change from unchecked to checked graphic
+*/
+.section-select:not(#foo) > input[type='radio']:checked + label {
+  background-image: url(../../img/icons/icon-radio-checked.png);
+}
+.section-select:not(#foo) > input[type='checkbox']:checked + label {
+  background-image: url(../../img/icons/icon-check-checked.png);
 }

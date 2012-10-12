@@ -5832,6 +5832,9 @@ i.icon-toggle-expand.collapse {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
   padding: 15px;
 }
+.search-bp-filter .controls > input {
+  width: 347px;
+}
 .search-bp-filter .btn-search-bp {
   position: absolute;
   right: 15px;
@@ -5918,6 +5921,28 @@ i.icon-toggle-expand.collapse {
   border: none;
 }
 .upload-thumbnails.readonly .icon-remove {
+  display: none!important;
+}
+.upload-text-links .upload-text-link {
+  position: relative;
+  padding-left: 18px;
+}
+.upload-text-links .upload-text-link > .icon-remove {
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.upload-text-links .upload-text-link > .icon-remove:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.upload-text-links.readonly .upload-text-link {
+  border: none;
+}
+.upload-text-links.readonly .icon-remove {
   display: none!important;
 }
 .upload-form-progress {
@@ -6495,10 +6520,7 @@ i.icon-toggle-expand.collapse {
   position: absolute;
   top: 0;
   left: 0;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  background: #f3f3f3;
-  padding: 5px 5px 6px 6px;
+  padding: 10px 10px 6px 10px;
   width: 20px;
   height: 18px;
   width: 18px;
@@ -6731,6 +6753,64 @@ i.icon-toggle-expand.collapse {
   margin: 10px;
   padding: 6px 10px;
 }
+.expandable-once-bd {
+  display: none;
+}
+/* 
+  Hide the original radios and checkboxes
+  (but still accessible)
+    
+  :not(#foo) > is a rule filter to block browsers
+               that don't support that selector from
+               applying rules they shouldn't
+     
+*/
+.section-select:not(#foo) > input[type='radio'],
+.section-select:not(#foo) > input[type='checkbox'] {
+  /* Hide the input, but have it still be clickable */
+
+  opacity: 0;
+  float: left;
+  width: 27px;
+  height: 25px;
+}
+.section-select:not(#foo) > input[type='radio'] + label {
+  margin: 0;
+  clear: none;
+  display: block;
+  width: 17px;
+  height: 15px;
+  /* Left padding makes room for image */
+
+  padding: 5px 0 4px 24px;
+  /* Make look clickable because they are */
+
+  cursor: pointer;
+  background: url(../../img/icons/icon-radio.png) left center no-repeat;
+}
+.section-select:not(#foo) > input[type='checkbox'] + label {
+  margin: 0;
+  clear: none;
+  display: block;
+  width: 17px;
+  height: 15px;
+  /* Left padding makes room for image */
+
+  padding: 5px 0 4px 24px;
+  /* Make look clickable because they are */
+
+  cursor: pointer;
+  background: url(../../img/icons/icon-check.png) left center no-repeat;
+}
+/*
+  Change from unchecked to checked graphic
+*/
+.section-select:not(#foo) > input[type='radio']:checked + label {
+  background-image: url(../../img/icons/icon-radio-checked.png);
+}
+.section-select:not(#foo) > input[type='checkbox']:checked + label {
+  background-image: url(../../img/icons/icon-check-checked.png);
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          shopping-cart.less
@@ -6883,7 +6963,9 @@ i.icon-toggle-expand.collapse {
   display: block;
 }
 .order-form > section.readonly .save,
-.order-form > section.readonly .fileinput-button {
+.order-form > section.readonly .fileinput-button,
+.order-form > section.readonly .btn-search-bp,
+.order-form > section.readonly .btn-search-contact {
   display: none;
 }
 .order-form > section.readonly input,

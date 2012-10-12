@@ -126,20 +126,28 @@ $(function(){
 	    //@Todo: Add ajax function to remove upload file
 	});
 	
+	$(".upload-text-link .icon-remove").live("click", function(){
+        if ($(this).parent().parent(".upload-text-links").hasClass("readonly")) {
+            return;
+        }
+        $(this).parent(".upload-text-link").fadeOut(250, function(){$(this).remove()});
+        //@TODO: Add ajax function to remove upload file
+    });
+	
 	//Save
-    $(".customize-section").live("click", function(){
+    $(".customize-section").bind("click", function(){
         //Save first
         var $all = $(".customize-section");
         $all.addClass("readonly");
         $all.addClass("readonly");
-        $all.find("input, textarea").attr("disabled", "disabled");
-        $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
+        $all.find("input, textarea").addClass("disabled");
+        $all.find(".pms-list, .upload-thumbnails, .upload-text-links").addClass("readonly");
         
         //Edit this
         var $me = $(this);
         $me.removeClass("readonly");
-        $me.find("input, textarea").removeAttr("disabled");
-        $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
+        $me.find("input, textarea").removeClass("disabled");
+        $me.find(".pms-list, .upload-thumbnails, .upload-text-links").removeClass("readonly");
     });
     
     
@@ -149,14 +157,14 @@ $(function(){
         var $all = $(".job-edit-section");
         $all.addClass("readonly");
         $all.addClass("readonly");
-        $all.find("input, textarea").attr("disabled", "disabled");
-        $all.find(".pms-list, .upload-thumbnails").addClass("readonly");
+        $all.find("input, textarea").addClass("disabled");
+        $all.find(".pms-list, .upload-thumbnails, .upload-text-links").addClass("readonly");
         
         //Edit this
         var $me = $(this);
         $me.removeClass("readonly");
-        $me.find("input, textarea").removeAttr("disabled");
-        $me.find(".pms-list, .upload-thumbnails").removeClass("readonly");
+        $me.find("input, textarea").removeClass("disabled");
+        $me.find(".pms-list, .upload-thumbnails, .upload-text-links").removeClass("readonly");
     });
     
     
@@ -193,6 +201,9 @@ $(function(){
     });
     
     
+    $(".expandable-once > .expandable-once-btn").live("click", function(){
+        $(this).hide().prev(".expandable-once-bd").slideDown("fast");
+    });
     
     //Product viewer
     $('.product-viewer').etalage({

@@ -18,6 +18,9 @@
 
 .search-bp-filter {
   position: relative;
+  .controls > input {
+    width: 347px;
+  }
   .btn-search-bp {
     position: absolute;
     right: 15px;
@@ -106,6 +109,31 @@
   }
   &.readonly {
     .upload-thumbnail {
+      border: none;
+    }
+    .icon-remove {
+      display: none!important;
+    }
+  }
+}
+
+.upload-text-links {
+  .upload-text-link {
+    position: relative;
+    padding-left: 18px;
+    >.icon-remove {
+      cursor: pointer;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      .opacity(80);
+      &:hover {
+        .opacity(100);
+      }
+    }
+  }
+  &.readonly {
+    .upload-text-link {
       border: none;
     }
     .icon-remove {
