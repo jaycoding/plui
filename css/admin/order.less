@@ -43,33 +43,55 @@
   }
 }
 
-.order-list-table {
-  border-top: 2px solid #ccc;
-  margin-top: 3px;
-  table th.tright,
-  table td.tright {
-    text-align: right;
+.order-list-toolbar {
+  background: #fff;
+  margin-bottom: 3px;
+  border-top: 1px solid #ddd;
+  background: url(../../img/admin/order-list-toolbar-bg.png) 0 0 repeat-x;
+  padding: 10px 5px;
+}
+
+.order-list-main {
+  // table th.tright,
+  // table td.tright {
+    // text-align: right;
+  // }
+  // tr.type-job {
+    // display: none;
+  // }
+  // .col-check {
+    // width: 5%;
+  // }
+  // .col-expand {
+    // width: 5%;
+  // }
+  // .col-no {
+    // width: 15%;
+  // }
+  // .col-name {
+    // width: 35%;
+  // }
+  // .col-value {
+    // width: 30%;
+  // }
+  // .col-actions {
+    // width: 10%;
+  // }  .row-head {
+    font-weight: 700;
+    padding: 10px 0;
   }
-  tr.type-job {
+  .row-order {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .row-jobs {
+    clear: both;
+    padding: 10px 0;
     display: none;
   }
-  .col-check {
-    width: 5%;
-  }
-  .col-expand {
-    width: 5%;
-  }
-  .col-no {
-    width: 15%;
-  }
-  .col-name {
-    width: 35%;
-  }
-  .col-value {
-    width: 30%;
-  }
-  .col-actions {
-    width: 10%;
+  .row-job {
+    clear: both;
+    padding: 5px 0;
   }
 }
 
@@ -77,6 +99,7 @@
   .inline-block;
   cursor: pointer;
   .size(10px, 10px);
+  margin: 5px 0 0 10px;
   background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
   &:hover {
     background-position: 0 -40px;

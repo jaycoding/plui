@@ -5,8 +5,8 @@
 #wrapper {}
 
 #page {
-  margin:0px auto; 
-  width:960px;
+  min-width:960px;
+  position: relative;
 }
 
 /*--Header--*/
@@ -15,16 +15,15 @@
   background: url(../../img/admin/header-blue.png) repeat-x;
 }
 
-#hd-logo {padding: 8px 0 0 50px;margin:0px auto; width:960px;}
+#hd-logo {padding: 8px 0 0 15px; width:960px;}
 #hd-logo img{ max-height:36px;}
 
 /*--Navigation--*/
 nav {
   width: 160px;
-  left: 50px;
+  left: 20px;
   top: 50px;
-  position:static; 
-  float:left;
+  position:absolute; 
 }
 
 nav .clogo {
@@ -119,10 +118,7 @@ nav .clogo img{ max-width:150px;}
   border: 1px solid #ddd;
   min-height: 750px;
   border-radius: 3px;
-  margin:-32px 0 0 0px; 
-  width:768px; 
-  //position:static; 
-  float:left; 
+  margin:-32px 10px 0 200px; 
   padding:9px 15px;
   position: relative;
 }
@@ -133,10 +129,8 @@ nav .clogo img{ max-width:150px;}
 
 #footer {
   clear: both;
-  float: left;
-  padding: 20px 0;
+  padding: 20px 10px;
   color: #666;
-  width:100%;
   text-align:right;
 }
 

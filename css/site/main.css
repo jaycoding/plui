@@ -5447,7 +5447,7 @@ label.error {
   display: none;
 }
 .pms.selected {
-  border: 3px solid #75B7D7;
+  border: 3px solid #E85F23;
 }
 .pms.selected > span {
   display: block;

@@ -29,16 +29,19 @@ $(function(){
 	
 	$('.btn-expand-order').bind("click", function(){
 		var $me = $(this),
-			$order = $me.closest('.type-order');
+			$order = $me.closest('.row-order');
 		
-		if (!$order.next('.type-job').hasClass('expanded')) {
+		if (!$order.find('.row-jobs').hasClass('expanded')) {
 			$me.addClass("btn-collapse");
-			$order.next('.type-job').addClass("expanded").fadeIn(300);
+			$order.find('.row-jobs').addClass("expanded").slideDown(300);
 		} else {
 			$me.removeClass("btn-collapse");
-			$order.next('.type-job').removeClass("expanded").fadeOut(300);
+			$order.find('.row-jobs').removeClass("expanded").slideUp(300);
 		}
 	});
+	
+	
+	$('.order-list-toolbar').scrollToFixed();
 });
 
 
