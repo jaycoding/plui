@@ -16,6 +16,7 @@
 .order-list-filter {
   color: #444;
   border: 1px solid #ddd;
+  position: relative;
   > section {
     padding: 10px;
     &.first {
@@ -27,8 +28,15 @@
     color: #666;
   }
   .btn-advanced-filter {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
     cursor: pointer;
-    color: #666;
+    .size(20px, 20px);
+    background: url(../../img/icons/icon-expand-grey.png) 0 0 no-repeat;
+    &.btn-collapse {
+      background: url(../../img/icons/icon-collapse-grey.png) 0 0 no-repeat;
+    }
   }
   .expandable {
     display: none;
@@ -37,7 +45,7 @@
 
 .order-list-table {
   border-top: 2px solid #ccc;
-  margin-top: 20px;
+  margin-top: 3px;
   table th.tright,
   table td.tright {
     text-align: right;
@@ -66,11 +74,31 @@
 }
 
 .btn-expand-order {
+  .inline-block;
+  cursor: pointer;
+  .size(10px, 10px);
+  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
+  &:hover {
+    background-position: 0 -40px;
+  }
+  &.btn-collapse {
+    background-position: -40px 0;
+    &:hover {
+      background-position: -40px -40px;
+    }
+  }
+}
+
+.btn-expand-order-expanded {
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  .size(10px, 10px);
+  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
+  &:hover {
+    background-position: 0 -40px;
+  }
 }
-
 
 .order-details {
   margin-top: 30px;
@@ -81,3 +109,4 @@
     overflow: visible;
   }
 }
+

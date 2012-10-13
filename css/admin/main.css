@@ -5446,7 +5446,7 @@ label.error {
   display: none;
 }
 .pms.selected {
-  border: 3px solid #75B7D7;
+  border: 3px solid #E85F23;
 }
 .pms.selected > span {
   display: block;
@@ -5537,6 +5537,83 @@ i.icon-toggle-expand {
 }
 i.icon-toggle-expand.collapse {
   background: url(../../img/icons/icon-collapse.png) 0 0 no-repeat;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          common.less
+ //  Description:   Common
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+#body .btn-go-top {
+  position: absolute;
+  bottom: 20px;
+  right: -15px;
+  width: 40px;
+  height: 11px;
+  width: 11px;
+  height: 40px;
+  cursor: pointer;
+  background: url(../../img/icons/btn-gotop.png) 0 0 no-repeat;
+}
+.order-list-views {
+  text-align: right;
+  width: 100px;
+  margin-top: 10px;
+}
+.order-list-views > a {
+  margin-left: 5px;
+}
+.order-list-views .value-view {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/icons/icon-view-mode.png) 0 0 no-repeat;
+}
+.order-list-views .mockup-view {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/icons/icon-view-mode.png) -20px 0 no-repeat;
+}
+.order-list-views .conversation-view {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/icons/icon-view-mode.png) -40px 0 no-repeat;
+}
+.order-list-views .job-view {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/icons/icon-view-mode.png) -60px 0 no-repeat;
 }
 /*===================================
  Global
@@ -5640,9 +5717,9 @@ nav .clogo img {
   border-radius: 3px;
   margin: -32px 0 0 0px;
   width: 768px;
-  position: static;
   float: left;
   padding: 9px 15px;
+  position: relative;
 }
 .body-hd {
   width: 100%;
@@ -5720,6 +5797,7 @@ nav .clogo img {
 .order-list-filter {
   color: #444;
   border: 1px solid #ddd;
+  position: relative;
 }
 .order-list-filter > section {
   padding: 10px;
@@ -5732,15 +5810,25 @@ nav .clogo img {
   color: #666;
 }
 .order-list-filter .btn-advanced-filter {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
   cursor: pointer;
-  color: #666;
+  width: 20px;
+  height: 20px;
+  width: 20px;
+  height: 20px;
+  background: url(../../img/icons/icon-expand-grey.png) 0 0 no-repeat;
+}
+.order-list-filter .btn-advanced-filter.btn-collapse {
+  background: url(../../img/icons/icon-collapse-grey.png) 0 0 no-repeat;
 }
 .order-list-filter .expandable {
   display: none;
 }
 .order-list-table {
   border-top: 2px solid #ccc;
-  margin-top: 20px;
+  margin-top: 3px;
 }
 .order-list-table table th.tright,
 .order-list-table table td.tright {
@@ -5768,9 +5856,40 @@ nav .clogo img {
   width: 10%;
 }
 .btn-expand-order {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  width: 10px;
+  height: 10px;
+  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
+}
+.btn-expand-order:hover {
+  background-position: 0 -40px;
+}
+.btn-expand-order.btn-collapse {
+  background-position: -40px 0;
+}
+.btn-expand-order.btn-collapse:hover {
+  background-position: -40px -40px;
+}
+.btn-expand-order-expanded {
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  width: 10px;
+  height: 10px;
+  width: 10px;
+  height: 10px;
+  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
+}
+.btn-expand-order-expanded:hover {
+  background-position: 0 -40px;
 }
 .order-details {
   margin-top: 30px;

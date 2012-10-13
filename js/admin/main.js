@@ -19,10 +19,10 @@ $(function(){
 			$filter = $me.closest('.order-list-filter');
 		
 		if (!$filter.find('.expandable').hasClass('expanded')) {
-			$me.find('i').text("-");
+			$me.addClass("btn-collapse");
 			$filter.find('.expandable').addClass("expanded").slideDown(300);
 		} else {
-			$me.find('i').text('+');
+			$me.removeClass("btn-collapse");
 			$filter.find('.expandable').removeClass("expanded").slideUp(300);
 		}
 	});
@@ -32,10 +32,10 @@ $(function(){
 			$order = $me.closest('.type-order');
 		
 		if (!$order.next('.type-job').hasClass('expanded')) {
-			$me.text("-");
+			$me.addClass("btn-collapse");
 			$order.next('.type-job').addClass("expanded").fadeIn(300);
 		} else {
-			$me.text('+');
+			$me.removeClass("btn-collapse");
 			$order.next('.type-job').removeClass("expanded").fadeOut(300);
 		}
 	});
