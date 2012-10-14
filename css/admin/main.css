@@ -5380,6 +5380,9 @@ img.spaced.large {
 .white {
   color: #fff;
 }
+.green {
+  color: #698C00;
+}
 .bold {
   font-weight: 700;
 }
@@ -5625,6 +5628,10 @@ i.icon-toggle-expand.collapse {
   height: 16px;
   background: url(../../img/icons/icon-view-mode.png) -60px 0 no-repeat;
 }
+.dropdown-menu.align-right {
+  left: auto;
+  right: 0;
+}
 /*===================================
  Global
  ==================================*/
@@ -5723,7 +5730,7 @@ nav .clogo img {
   border: 1px solid #ddd;
   min-height: 750px;
   border-radius: 3px;
-  margin: -32px 10px 0 200px;
+  margin: -32px 20px 0 200px;
   padding: 9px 15px;
   position: relative;
 }
@@ -5899,4 +5906,60 @@ nav .clogo img {
 }
 .order-details .tab-content {
   overflow: visible;
+}
+.order-list-mockup {
+  position: relative;
+  float: left;
+  width: 122px;
+  height: 200px;
+  margin: 0 20px 30px 20px;
+}
+.order-list-mockup .status {
+  width: 22px;
+  height: 22px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+}
+.order-list-mockup .status.approved {
+  background: url(../../img/icons/icon-mockup-status.png) 0 0 no-repeat;
+}
+.order-list-mockup .status.pending {
+  background: url(../../img/icons/icon-mockup-status.png) -25px 0 no-repeat;
+}
+.order-list-mockup .status.revising {
+  background: url(../../img/icons/icon-mockup-revising.png) -50px 0 no-repeat;
+}
+.order-list-mockup .thumb {
+  position: relative;
+}
+.order-list-mockup .thumb > img {
+  width: 120px;
+  height: 120px;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ddd;
+}
+.order-list-mockup .thumb .add-image {
+  display: block;
+  width: 22px;
+  height: 22px;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  background: url(../../img/icons/icon-add-image.png) 0 0 no-repeat;
+}
+.order-list-mockup .actions {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.order-list-mockup:hover .actions {
+  display: block;
 }

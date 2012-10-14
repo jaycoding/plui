@@ -133,3 +133,56 @@
   }
 }
 
+.order-list-mockup {
+  position: relative;
+  float: left;
+  width: 122px;
+  height: 200px;
+  margin: 0 20px 30px 20px;
+  .status {
+    .size(22px, 22px);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    &.approved {
+      background: url(../../img/icons/icon-mockup-status.png) 0 0 no-repeat;
+    }
+    &.pending {
+      background: url(../../img/icons/icon-mockup-status.png) -25px 0 no-repeat;
+    }
+    &.revising {
+      background: url(../../img/icons/icon-mockup-revising.png) -50px 0 no-repeat;
+    }
+  }
+  .thumb {
+    > img {
+      .size(120px, 120px);
+      border: 1px solid #ddd;
+    }
+    position: relative;
+    .add-image {
+      display: block;
+      .size(22px, 22px);
+      position: absolute;
+      bottom: -8px;
+      right: -8px;
+      background: url(../../img/icons/icon-add-image.png) 0 0 no-repeat;
+    }
+  }
+  .details {
+    
+  }
+  .actions {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &:hover {
+    .actions {
+      display: block;
+    }
+  }
+}
+
