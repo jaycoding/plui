@@ -40,8 +40,29 @@ $(function(){
 		}
 	});
 	
+	$('.btn-expand-job').bind("click", function(){
+		var $me = $(this),
+			$job = $me.closest('.row-job');
+		
+		if (!$job.find('.row-expandable').hasClass('expanded')) {
+			$me.addClass("btn-collapse");
+			$job.find('.row-expandable').addClass("expanded").slideDown(300);
+		} else {
+			$me.removeClass("btn-collapse");
+			$job.find('.row-expandable').removeClass("expanded").slideUp(300);
+		}
+	});
+	
+	
 	
 	$('.order-list-toolbar').scrollToFixed();
+	
+	$(".filter-group .filter-item").live("click", function(){
+		var $me = $(this),
+			$group = $me.closest(".filter-group");
+		$group.find(".filter-item").removeClass("selected");
+		$me.addClass("selected");
+	})
 });
 
 

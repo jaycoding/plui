@@ -5845,6 +5845,34 @@ nav .clogo img {
 .order-list-filter .expandable {
   display: none;
 }
+.order-list-filter .filter-date {
+  width: 100px;
+  padding: 0px;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+}
+.order-list-filter .filter-date:focus {
+  box-shadow: none;
+}
+.order-list-filter .filter-item {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.order-list-filter .filter-item.selected {
+  padding: 0px 4px;
+  background: #dddddd url(../../img/icons/icon-tick-s.png) right center no-repeat;
+  padding-right: 12px;
+  color: #000;
+}
+.order-list-filter .filter-item:hover {
+  text-decoration: none;
+}
 .order-list-toolbar {
   margin-bottom: 3px;
   border-top: 1px solid #ddd;
@@ -5870,6 +5898,9 @@ nav .clogo img {
   border-bottom: 1px solid #ddd;
 }
 .order-list-main .row-job-history {
+  font-size: 12px;
+}
+.order-list-main .row-expandable {
   display: none;
 }
 .btn-expand-order {

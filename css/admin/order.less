@@ -41,6 +41,31 @@
   .expandable {
     display: none;
   }
+  .filter-date {
+    width: 100px;
+    padding: 0px;
+    border: 0;
+    box-shadow: none;
+    background: none;
+    cursor: pointer;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  
+
+  .filter-item {
+    .inline-block;
+    &.selected {
+      padding: 0px 4px;
+      background: #ddd url(../../img/icons/icon-tick-s.png) right center no-repeat;
+      padding-right: 12px;
+      color: #000;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .order-list-toolbar {
@@ -94,6 +119,9 @@
     border-bottom: 1px solid #ddd;
   }
   .row-job-history {
+    font-size: 12px;
+  }
+  .row-expandable {
     display: none;
   }
 }
@@ -132,6 +160,7 @@
   }
   
 }
+
 
 
 .order-details {
