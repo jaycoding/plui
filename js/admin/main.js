@@ -27,32 +27,18 @@ $(function(){
 		}
 	});
 	
-	$('.btn-expand-order').bind("click", function(){
+	$('.btn-expand').bind("click", function(){
 		var $me = $(this),
-			$order = $me.closest('.row-order');
+			$section = $me.closest('.data-section');
 		
-		if (!$order.find('.row-jobs').hasClass('expanded')) {
+		if (!$section.find('.row-expandable').hasClass('expanded')) {
 			$me.addClass("btn-collapse");
-			$order.find('.row-jobs').addClass("expanded").slideDown(300);
+			$section.find('.row-expandable').addClass("expanded").slideDown(300);
 		} else {
 			$me.removeClass("btn-collapse");
-			$order.find('.row-jobs').removeClass("expanded").slideUp(300);
+			$section.find('.row-expandable').removeClass("expanded").slideUp(300);
 		}
 	});
-	
-	$('.btn-expand-job').bind("click", function(){
-		var $me = $(this),
-			$job = $me.closest('.row-job');
-		
-		if (!$job.find('.row-expandable').hasClass('expanded')) {
-			$me.addClass("btn-collapse");
-			$job.find('.row-expandable').addClass("expanded").slideDown(300);
-		} else {
-			$me.removeClass("btn-collapse");
-			$job.find('.row-expandable').removeClass("expanded").slideUp(300);
-		}
-	});
-	
 	
 	
 	$('.order-list-toolbar').scrollToFixed();

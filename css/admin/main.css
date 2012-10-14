@@ -5429,6 +5429,24 @@ label.error {
 .no-border {
   border: none!important;
 }
+.border-bottom-dashed {
+  border-bottom: 1px dashed #ddd;
+}
+.border-top-dashed {
+  border-top: 1px dashed #ddd;
+}
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+.border-top {
+  border-top: 1px solid #ddd;
+}
+.border-left {
+  border-left: 1px solid #ddd;
+}
+.border-right {
+  border-right: 1px solid #ddd;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -5883,7 +5901,7 @@ nav .clogo img {
   font-weight: 700;
   padding: 10px 0 0 0;
 }
-.order-list-main .row-order {
+.order-list-main .section-order {
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
@@ -5892,7 +5910,7 @@ nav .clogo img {
   padding: 10px 0;
   display: none;
 }
-.order-list-main .row-job {
+.order-list-main .section-job {
   clear: both;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
@@ -5903,7 +5921,7 @@ nav .clogo img {
 .order-list-main .row-expandable {
   display: none;
 }
-.btn-expand-order {
+.btn-expand {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -5918,38 +5936,17 @@ nav .clogo img {
   margin: 5px 0 0 10px;
   background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
 }
-.btn-expand-order:hover {
+.btn-expand:hover {
   background-position: 0 -40px;
 }
-.btn-expand-order.btn-collapse {
+.btn-expand.btn-collapse {
   background-position: -40px 0;
 }
-.btn-expand-order.btn-collapse:hover {
+.btn-expand.btn-collapse:hover {
   background-position: -40px -40px;
 }
-.btn-expand-job {
-  display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-
-  *zoom: 1;
-  display: inline-block;
-  cursor: pointer;
-  width: 10px;
-  height: 10px;
-  width: 10px;
-  height: 10px;
-  margin: 5px 0 0 10px;
-  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
-}
-.btn-expand-job:hover {
-  background-position: 0 -40px;
-}
-.btn-expand-job.btn-collapse {
-  background-position: -40px 0;
-}
-.btn-expand-job.btn-collapse:hover {
-  background-position: -40px -40px;
+.row-expandable {
+  display: none;
 }
 .order-details {
   margin-top: 30px;
@@ -6015,4 +6012,39 @@ nav .clogo img {
 }
 .order-list-mockup:hover .actions {
   display: block;
+}
+#tab-order-content .section-job {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+#tab-order-content .section-job .row-job-sub {
+  border-top: 1px dashed #ddd;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+#tab-order-shipping .section-shipping {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+#tab-order-payment .section-payment {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+#tab-order-assignment .nav-tabs {
+  width: 30%;
+}
+#tab-order-assignment .tab-content {
+  width: 66%;
+  float: right;
+}
+#tab-order-assignment .section-contact {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+#tab-order-assignment .section-contact.selected {
+  background: url(../../img/icons/icon-arrow-seleted.png) 10px 10px no-repeat;
 }

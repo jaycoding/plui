@@ -104,7 +104,7 @@
     font-weight: 700;
     padding: 10px 0 0 0;
   }
-  .row-order {
+  .section-order {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
   }
@@ -113,7 +113,7 @@
     padding: 10px 0;
     display: none;
   }
-  .row-job {
+  .section-job {
     clear: both;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
@@ -126,7 +126,7 @@
   }
 }
 
-.btn-expand-order {
+.btn-expand {
   .inline-block;
   cursor: pointer;
   .size(10px, 10px);
@@ -143,24 +143,10 @@
   }
 }
 
-.btn-expand-job {
-  .inline-block;
-  cursor: pointer;
-  .size(10px, 10px);
-  margin: 5px 0 0 10px;
-  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
-  &:hover {
-    background-position: 0 -40px;
-  }
-  &.btn-collapse {
-    background-position: -40px 0;
-    &:hover {
-      background-position: -40px -40px;
-    }
-  }
-  
-}
 
+.row-expandable {
+  display: none;
+}
 
 
 .order-details {
@@ -226,3 +212,52 @@
   }
 }
 
+
+
+
+#tab-order-content  {
+  .section-job {
+    border-top: 1px solid #ddd;
+    padding:10px 0;
+    margin-top: 10px;
+    .row-job-sub {
+      border-top: 1px dashed #ddd;
+      padding: 10px 0;
+      margin-top: 10px;
+    }
+  }
+}
+
+#tab-order-shipping {
+  .section-shipping {
+    border-top: 1px solid #ddd;
+    padding:10px 0;
+    margin-top: 10px;
+  }
+}
+
+#tab-order-payment {
+  .section-payment {
+    border-bottom: 1px solid #ddd;
+    padding:10px 0;
+    margin-top: 10px;
+  }
+}
+
+#tab-order-assignment {
+  .nav-tabs {
+    width: 30%;
+  }
+  .tab-content {
+    width: 66%;
+    float: right;
+  }
+  .section-contact {
+    border-bottom: 1px solid #ddd;
+    padding:10px 0;
+    margin-top: 10px;
+    &.selected {
+      background: url(../../img/icons/icon-arrow-seleted.png) 10px 10px no-repeat;
+    }
+  }
+}
