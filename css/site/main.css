@@ -5381,6 +5381,12 @@ img.spaced.large {
 .white {
   color: #fff;
 }
+.green {
+  color: #698C00;
+}
+.orange {
+  color: #f30;
+}
 .bold {
   font-weight: 700;
 }
@@ -5424,6 +5430,24 @@ label.error {
 .no-border {
   border: none!important;
 }
+.border-bottom-dashed {
+  border-bottom: 1px dashed #ddd;
+}
+.border-top-dashed {
+  border-top: 1px dashed #ddd;
+}
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+.border-top {
+  border-top: 1px solid #ddd;
+}
+.border-left {
+  border-left: 1px solid #ddd;
+}
+.border-right {
+  border-right: 1px solid #ddd;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -5452,6 +5476,16 @@ label.error {
 .pms.selected > span {
   display: block;
   white-space: nowrap;
+}
+.pms-small {
+  width: 12px;
+  height: 12px;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+}
+.pms-small.selected {
+  border: 2px solid #E85F23;
 }
 .pms-186c {
   background: #CE1D2A;
@@ -6977,6 +7011,11 @@ i.icon-toggle-expand.collapse {
 }
 .order-form > section.readonly input:disabled,
 .order-form > section.readonly textarea:disabled {
+  background: none;
+  cursor: default;
+}
+.order-form > section.readonly select:disabled {
+  border: none;
   background: none;
   cursor: default;
 }
