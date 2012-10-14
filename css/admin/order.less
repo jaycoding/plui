@@ -44,11 +44,10 @@
 }
 
 .order-list-toolbar {
-  background: #fff;
   margin-bottom: 3px;
   border-top: 1px solid #ddd;
-  background: url(../../img/admin/order-list-toolbar-bg.png) 0 0 repeat-x;
-  padding: 10px 5px;
+  background: #fff url(../../img/admin/order-list-toolbar-bg.png) 0 0 repeat-x;
+  padding: 10px 0px 2px 0;
 }
 
 .order-list-main {
@@ -78,7 +77,7 @@
     // width: 10%;
   // }  .row-head {
     font-weight: 700;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
   }
   .row-order {
     padding: 10px 0;
@@ -91,7 +90,11 @@
   }
   .row-job {
     clear: both;
-    padding: 5px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .row-job-history {
+    display: none;
   }
 }
 
@@ -112,16 +115,24 @@
   }
 }
 
-.btn-expand-order-expanded {
-  font-weight: 700;
-  font-size: 16px;
+.btn-expand-job {
+  .inline-block;
   cursor: pointer;
   .size(10px, 10px);
+  margin: 5px 0 0 10px;
   background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
   &:hover {
     background-position: 0 -40px;
   }
+  &.btn-collapse {
+    background-position: -40px 0;
+    &:hover {
+      background-position: -40px -40px;
+    }
+  }
+  
 }
+
 
 .order-details {
   margin-top: 30px;
@@ -138,7 +149,7 @@
   float: left;
   width: 122px;
   height: 200px;
-  margin: 0 20px 30px 20px;
+  margin: 0 11px 30px 11px;
   .status {
     .size(22px, 22px);
     position: absolute;
@@ -152,7 +163,7 @@
       background: url(../../img/icons/icon-mockup-status.png) -25px 0 no-repeat;
     }
     &.revising {
-      background: url(../../img/icons/icon-mockup-revising.png) -50px 0 no-repeat;
+      background: url(../../img/icons/icon-mockup-status.png) -50px 0 no-repeat;
     }
   }
   .thumb {
