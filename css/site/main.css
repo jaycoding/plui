@@ -6602,13 +6602,15 @@ i.icon-toggle-expand.collapse {
 .customize-review-details > .bd > .item {
   margin-bottom: 25px;
   position: relative;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   padding-bottom: 15px;
+  padding-top: 25px;
+  margin-top: 15px;
 }
 .customize-review-details > .bd > .item .edit {
   position: absolute;
   right: 0;
-  top: -22px;
+  top: 2px;
   color: #666;
 }
 .customize-review-details .expandable {
@@ -7124,13 +7126,15 @@ i.icon-toggle-expand.collapse {
 .job-details > .bd > .item {
   margin-bottom: 25px;
   position: relative;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   padding-bottom: 15px;
+  padding-top: 25px;
+  margin-top: 15px;
 }
 .job-details > .bd > .item .edit {
   position: absolute;
   right: 0;
-  top: -22px;
+  top: 2px;
   color: #666;
 }
 .job-details .expandable {
