@@ -46,8 +46,16 @@ $(function(){
 	$(".filter-group .filter-item").live("click", function(){
 		var $me = $(this),
 			$group = $me.closest(".filter-group");
-		$group.find(".filter-item").removeClass("selected");
-		$me.addClass("selected");
+		if ($group.hasClass("filter-multi")){
+			if ($me.hasClass("selected")) {
+				$me.removeClass("selected");
+			} else {
+				$me.addClass("selected");
+			}
+		} else {
+			$group.find(".filter-item").removeClass("selected");
+			$me.addClass("selected");
+		}
 	})
 });
 

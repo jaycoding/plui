@@ -5921,6 +5921,16 @@ nav .clogo img {
 .order-list-main .row-expandable {
   display: none;
 }
+.order-list-main .sort-down {
+  color: #333;
+  padding-right: 15px;
+  background: url(../../img/icons/sort-arrow.png) right 4px no-repeat;
+}
+.order-list-main .sort-up {
+  color: #333;
+  padding-right: 15px;
+  background: url(../../img/icons/sort-arrow.png) right -36px no-repeat;
+}
 .btn-expand {
   display: inline-block;
   *display: inline;
