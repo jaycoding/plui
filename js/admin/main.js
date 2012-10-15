@@ -4,9 +4,19 @@ $(function(){
 	    if ($(this).parent().hasClass("readonly")) {
 	        return;
 	    }
+	    var $me = $(this),
+	    	$list = $me.parent(".pms-list");
 	    
-		$(this).siblings(".pms").removeClass("selected");
-		$(this).addClass("selected");
+	    if ($list.hasClass("pms-multi")) {
+	    	if ($me.hasClass("selected")) {
+				$me.removeClass("selected");
+			} else {
+				$me.addClass("selected");
+			}
+	    } else {
+	    	$list.find(".pms").removeClass("selected");
+			$me.addClass("selected");
+	    }
 	});
 	
 	$(".with-tooltop").tooltip();
