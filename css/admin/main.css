@@ -5897,36 +5897,49 @@ nav .clogo img {
   background: #ffffff url(../../img/admin/order-list-toolbar-bg.png) 0 0 repeat-x;
   padding: 10px 0px 2px 0;
 }
-.order-list-main .row-head {
+.row-head {
+  clear: both;
   font-weight: 700;
   padding: 10px 0 0 0;
 }
-.order-list-main .section-order {
+.section-order {
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
-.order-list-main .row-jobs {
+.section-order.status-closed {
+  color: #999;
+}
+.section-order.status-closed a {
+  color: #999;
+}
+.section-order.status-cancelled {
+  color: #999;
+}
+.section-order.status-cancelled a {
+  color: #999;
+}
+.row-jobs {
   clear: both;
   padding: 10px 0;
   display: none;
 }
-.order-list-main .section-job {
+.section-job {
   clear: both;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
-.order-list-main .row-job-history {
+.row-job-history {
   font-size: 12px;
 }
-.order-list-main .row-expandable {
+.row-expandable {
   display: none;
 }
-.order-list-main .sort-down {
+.sort-down {
   color: #333;
   padding-right: 15px;
   background: url(../../img/icons/sort-arrow.png) right 4px no-repeat;
 }
-.order-list-main .sort-up {
+.sort-up {
   color: #333;
   padding-right: 15px;
   background: url(../../img/icons/sort-arrow.png) right -36px no-repeat;
@@ -6057,4 +6070,26 @@ nav .clogo img {
 }
 #tab-order-assignment .section-contact.selected {
   background: url(../../img/icons/icon-arrow-seleted.png) 10px 10px no-repeat;
+}
+.data-section a,
+.order-list-mockup a {
+  color: #333;
+}
+.data-section:hover a,
+.order-list-mockup:hover a {
+  color: #08C;
+}
+.data-section .dropdown-menu a,
+.order-list-mockup .dropdown-menu a {
+  color: #555!important;
+}
+.data-section .dropdown-menu a:hover,
+.order-list-mockup .dropdown-menu a:hover {
+  color: #fff!important;
+}
+.dropdown-menu a {
+  color: #555;
+}
+.dropdown-menu a:hover {
+  color: #222;
 }

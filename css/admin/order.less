@@ -75,7 +75,7 @@
   padding: 10px 0px 2px 0;
 }
 
-.order-list-main {
+
   // table th.tright,
   // table td.tright {
     // text-align: right;
@@ -101,12 +101,28 @@
   // .col-actions {
     // width: 10%;
   // }  .row-head {
+    clear: both;
     font-weight: 700;
     padding: 10px 0 0 0;
   }
   .section-order {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    &.status-open {
+      
+    }
+    &.status-closed {
+      a {
+        color: #999;
+      }
+      color: #999;
+    }
+    &.status-cancelled {
+      a {
+        color: #999;
+      }
+      color: #999;
+    }
   }
   .row-jobs {
     clear: both;
@@ -134,7 +150,7 @@
     padding-right: 15px;
     background: url(../../img/icons/sort-arrow.png) right -36px no-repeat;
   }
-}
+
 
 .btn-expand {
   .inline-block;
@@ -270,4 +286,33 @@
       background: url(../../img/icons/icon-arrow-seleted.png) 10px 10px no-repeat;
     }
   }
+}
+
+.data-section, .order-list-mockup {
+   a {
+     color: #333;
+   }
+   &:hover a{
+     color: #08C;
+     
+   }
+   .dropdown-menu {
+    a {
+      color: #555!important;
+      &:hover {
+        color: #fff!important;
+      }
+    }
+  }
+  
+}
+
+.dropdown-menu {
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  
 }

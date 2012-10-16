@@ -66,7 +66,13 @@ $(function(){
 			$group.find(".filter-item").removeClass("selected");
 			$me.addClass("selected");
 		}
-	})
+	});
+	
+	$(".bp-popover").popover({
+		html: true,
+		trigger: 'hover',
+		delay: { show: 200, hide: 100 }
+	});
 });
 
 
