@@ -73,6 +73,24 @@ $(function(){
 		trigger: 'hover',
 		delay: { show: 200, hide: 100 }
 	});
+	
+	
+	//Remove attachment
+	$(".upload-thumbnail .icon-remove").live("click", function(){
+	    if ($(this).parent().parent(".upload-thumbnails").hasClass("readonly")) {
+	        return;
+	    }
+	    $(this).parent(".upload-thumbnail").fadeOut(250, function(){$(this).remove()});
+	    //@Todo: Add ajax function to remove upload file
+	});
+	
+	$(".upload-text-link .icon-remove").live("click", function(){
+        if ($(this).parent().parent(".upload-text-links").hasClass("readonly")) {
+            return;
+        }
+        $(this).parent(".upload-text-link").fadeOut(250, function(){$(this).remove()});
+        //@TODO: Add ajax function to remove upload file
+    });
 });
 
 
