@@ -91,6 +91,49 @@ $(function(){
         $(this).parent(".upload-text-link").fadeOut(250, function(){$(this).remove()});
         //@TODO: Add ajax function to remove upload file
     });
+    
+     $(".order-details .editable-color .pms-list .pms").live("click", function(){
+       var $me = $(this);
+       $me.closest(".editable-color").find(".modal-color").fadeIn(300);
+    });
+    
+    $(".order-details .editable-color .modal-color .modal-footer .btn-save").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-color").fadeOut(300);
+    });
+    
+    $(".order-details .editable-color .modal-color .modal-footer .btn-cancel").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-color").fadeOut(300);
+    });
+    
+    
+    $(".order-details .editable-specifications > a").live("click", function(){
+       var $me = $(this);
+       $me.closest(".editable-specifications").find(".modal-specifications").fadeIn(300);
+    });
+    
+    $(".order-details .editable-specifications .modal-specifications .modal-footer .btn-save").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-specifications").fadeOut(300);
+    });
+    
+    $(".order-details .editable-specifications .modal-specifications .modal-footer .btn-cancel").live("click", function(){
+       var $me = $(this);
+       $me.closest(".modal-specifications").fadeOut(300);
+    });
+    
+    
+    var shipToForm = $(".data-section.section-shipping");
+	$(".shipto-add").bind("click", function(){
+		$(".data-section.section-shipping").first().before(shipToForm.clone().hide(0).fadeIn(300));
+	});
+	
+	$(".data-section.section-shipping .btn.delete").live("click", function(){
+		$(this).closest(".data-section.section-shipping").fadeOut(200, function(){
+			$(this).remove();
+		});
+	});
 });
 
 
