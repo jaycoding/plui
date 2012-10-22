@@ -5448,6 +5448,9 @@ label.error {
 .border-right {
   border-right: 1px solid #ddd;
 }
+.input-tiny {
+  width: 24px;
+}
 .pms {
   height: 24px;
   min-width: 14px;
