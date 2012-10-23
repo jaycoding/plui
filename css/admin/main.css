@@ -6174,3 +6174,18 @@ nav .clogo img {
 .add-bp-wrap {
   padding: 0px 0 6px 26px;
 }
+.btn-search-contact-s {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  width: 31px;
+  height: 28px;
+  width: 28px;
+  height: 31px;
+  background: transparent url(../../img/icons/icon-search-2.png) 0 0 no-repeat;
+  cursor: pointer;
+  border: none;
+}
