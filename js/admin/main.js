@@ -50,6 +50,16 @@ $(function(){
 		}
 	});
 	
+	$('.btn-expand-all').bind("click", function(){
+		$(".data-section").find('.row-expandable').addClass("expanded").slideDown(300);
+		$(".data-section").find('.btn-expand').addClass("btn-collapse");
+	});
+	
+	$('.btn-collapse-all').bind("click", function(){
+		$(".data-section").find('.row-expandable').removeClass("expanded").slideUp(300);
+		$(".data-section").find('.btn-expand').removeClass("btn-collapse");
+	});
+	
 	
 	$('.order-list-toolbar').scrollToFixed();
 	

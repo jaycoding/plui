@@ -5994,7 +5994,7 @@ nav .clogo img {
   float: left;
   width: 122px;
   height: 200px;
-  margin: 0 11px 30px 11px;
+  margin: 0 30px 30px 30px;
 }
 .order-list-mockup .status {
   width: 22px;
@@ -6186,6 +6186,21 @@ nav .clogo img {
   width: 28px;
   height: 31px;
   background: transparent url(../../img/icons/icon-search-2.png) 0 0 no-repeat;
+  cursor: pointer;
+  border: none;
+}
+.btn-search-vendor {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  width: 22px;
+  height: 24px;
+  background: transparent url(../../img/icons/icon-search-add.png) 0 0 no-repeat;
   cursor: pointer;
   border: none;
 }
