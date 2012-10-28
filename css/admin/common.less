@@ -51,3 +51,103 @@
   left: auto;
   right: 0;
 }
+
+.alert-info {
+  background: #EEEEE2;
+  border: none;
+  box-shadow: 1px 1px 3px #bbb;
+  color: #666;
+  h5 {
+    color: #f30;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.push-notice {
+  position: absolute;
+  top: 45px;
+  right: -250px!important;
+  left: auto!important;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  &.expanded {
+    left: auto!important;
+    right: 0px!important;
+  }
+  
+  .push-notice-handle {
+    left: -10px;
+    height: 100%;
+    position: absolute;
+    background: #F3F3F3 url(../../img/admin/push-notice.png) -100px 0 repeat-y;
+    width: 9px;
+    border-right: 1px solid #ddd;
+  
+    > span {
+      .size(22px, 152px);
+      display: block;
+      background: transparent url(../../img/admin/push-notice.png) -50px 0 no-repeat;
+      position: relative;
+      top: 40%;
+      left: -21px;
+      cursor: pointer;
+    }
+    &.expanded {
+      > span {
+        background-position: 0 0;
+      }
+    }
+  }
+  
+  .push-notice-main {
+    height: 100%;
+    width: 250px;
+    background: #fff;
+    overflow: auto;
+    > .hd {
+      border-bottom: 1px solid #ddd;
+      padding: 8px;
+       ul li {
+          float: left;
+          .size(31px, 30px);
+          margin: 0 10px;
+          cursor: pointer;
+          &.push-notice-tab-1 {
+            background: transparent url(../../img/admin/push-notice-hd.png) 0 0 no-repeat;
+          }
+          &.push-notice-tab-2 {
+            background: transparent url(../../img/admin/push-notice-hd.png) 0 -47px no-repeat;
+          }
+          &.push-notice-tab-3 {
+            background: transparent url(../../img/admin/push-notice-hd.png) 0 -95px no-repeat;
+          }
+          &.push-notice-tab-4 {
+            background: transparent url(../../img/admin/push-notice-hd.png) 0 -143px no-repeat;
+          }
+       }
+    }
+    > .bd {
+      clear: both;
+    }
+  }
+  
+  .push-notice-person {
+    padding: 8px;
+    font-size: 12px;
+    margin: 4px 0;
+    border-bottom: 1px solid #ddd;
+    .row-fluid {
+      
+    }
+    img {
+      .size(56px, 56px);
+      margin: 0 8px 0 0;
+    }
+  }
+  
+}
+
+

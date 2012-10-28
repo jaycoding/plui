@@ -5662,6 +5662,101 @@ i.icon-toggle-expand.collapse {
   left: auto;
   right: 0;
 }
+.alert-info {
+  background: #EEEEE2;
+  border: none;
+  box-shadow: 1px 1px 3px #bbb;
+  color: #666;
+}
+.alert-info h5 {
+  color: #f30;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+.push-notice {
+  position: absolute;
+  top: 45px;
+  right: -250px !important;
+  left: auto!important;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+}
+.push-notice.expanded {
+  left: auto!important;
+  right: 0px!important;
+}
+.push-notice .push-notice-handle {
+  left: -10px;
+  height: 100%;
+  position: absolute;
+  background: #f3f3f3 url(../../img/admin/push-notice.png) -100px 0 repeat-y;
+  width: 9px;
+  border-right: 1px solid #ddd;
+}
+.push-notice .push-notice-handle > span {
+  width: 152px;
+  height: 22px;
+  width: 22px;
+  height: 152px;
+  display: block;
+  background: transparent url(../../img/admin/push-notice.png) -50px 0 no-repeat;
+  position: relative;
+  top: 40%;
+  left: -21px;
+  cursor: pointer;
+}
+.push-notice .push-notice-handle.expanded > span {
+  background-position: 0 0;
+}
+.push-notice .push-notice-main {
+  height: 100%;
+  width: 250px;
+  background: #fff;
+  overflow: auto;
+}
+.push-notice .push-notice-main > .hd {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.push-notice .push-notice-main > .hd ul li {
+  float: left;
+  width: 30px;
+  height: 31px;
+  width: 31px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.push-notice .push-notice-main > .hd ul li.push-notice-tab-1 {
+  background: transparent url(../../img/admin/push-notice-hd.png) 0 0 no-repeat;
+}
+.push-notice .push-notice-main > .hd ul li.push-notice-tab-2 {
+  background: transparent url(../../img/admin/push-notice-hd.png) 0 -47px no-repeat;
+}
+.push-notice .push-notice-main > .hd ul li.push-notice-tab-3 {
+  background: transparent url(../../img/admin/push-notice-hd.png) 0 -95px no-repeat;
+}
+.push-notice .push-notice-main > .hd ul li.push-notice-tab-4 {
+  background: transparent url(../../img/admin/push-notice-hd.png) 0 -143px no-repeat;
+}
+.push-notice .push-notice-main > .bd {
+  clear: both;
+}
+.push-notice .push-notice-person {
+  padding: 8px;
+  font-size: 12px;
+  margin: 4px 0;
+  border-bottom: 1px solid #ddd;
+}
+.push-notice .push-notice-person img {
+  width: 56px;
+  height: 56px;
+  width: 56px;
+  height: 56px;
+  margin: 0 8px 0 0;
+}
 /*===================================
  Global
  ==================================*/
