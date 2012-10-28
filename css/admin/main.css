@@ -5749,6 +5749,7 @@ i.icon-toggle-expand.collapse {
   font-size: 12px;
   margin: 4px 0;
   border-bottom: 1px solid #ddd;
+  line-height: 1.4;
 }
 .push-notice .push-notice-person img {
   width: 56px;
