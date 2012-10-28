@@ -66,6 +66,9 @@ $(function(){
 	
 	$('.push-notice').scrollToFixed();
 	
+	$('.mockup-edit-side').scrollToFixed();
+	
+	
 	$(".filter-group .filter-item").live("click", function(){
 		var $me = $(this),
 			$group = $me.closest(".filter-group");

@@ -1,0 +1,68 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          mockup-edit.less
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.mockup-edit {
+  padding: 15px;
+  width: 870px;
+  background: #fff;
+  .modal-body {
+    max-height: none;
+    overflow: auto;
+  }
+  
+  .box-themed {
+    background: #EEEDE1;
+    padding: 8px;
+  }
+}
+
+.mockup-edit-main {
+  
+  
+  > section {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.mockup-edit-size {
+  padding: 10px;
+}
+
+.mockup-btn-next {
+  .size(48px, 48px);
+  .inline-block;
+  background: url(../../img/icons/icon-direction.png) 0 0 no-repeat;
+  &.disabled {
+    background-position: 0 -100px;
+  }
+}
+
+.mockup-btn-prev {
+  .size(48px, 48px);
+  .inline-block;
+  background: url(../../img/icons/icon-direction.png) -134px 0 no-repeat;
+  &.disabled {
+    background-position: -134px -100px;
+  }
+}
+
+.mockup-link-pdf {
+  .size(18px, 19px);
+  .inline-block;
+  background: url(../../img/icons/icon-pdf-s.png) center center no-repeat;
+  margin: 0 2px;
+}
+
+.mockup-link-mail {
+  .size(18px, 18px);
+  .inline-block;
+  background: url(../../img/icons/icon-mail-s.png) center center no-repeat;
+  margin: 0 2px;
+}
