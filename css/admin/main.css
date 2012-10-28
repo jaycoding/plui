@@ -6326,13 +6326,19 @@ nav .clogo img {
   background: #EEEDE1;
   padding: 8px;
 }
+.mockup-edit-main {
+  width: 480px;
+  float: left;
+}
 .mockup-edit-main > section {
   border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 15px;
 }
-.mockup-edit-size {
+.mockup-edit-side {
   padding: 10px;
+  width: 320px;
+  float: right;
 }
 .mockup-btn-next {
   width: 48px;
@@ -6393,4 +6399,24 @@ nav .clogo img {
   display: inline-block;
   background: url(../../img/icons/icon-mail-s.png) center center no-repeat;
   margin: 0 2px;
+}
+.mock-edit-part {
+  border-bottom: 1px dashed #ddd;
+}
+.mock-edit-approved {
+  padding-left: 45px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background: url(../../img/icons/icon-approved.png) 0 center no-repeat;
+  font-weight: 700;
+}
+.mock-edit-revised {
+  padding-left: 45px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background: url(../../img/icons/icon-revised.png) 0 center no-repeat;
+  color: #f30;
+  font-weight: 700;
 }
