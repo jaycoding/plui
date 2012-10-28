@@ -87,6 +87,13 @@ $(function(){
 		delay: { show: 200, hide: 100 }
 	});
 	
+	$(".push-notice-person").clickover({
+		html: true,
+		trigger: 'hover',
+		placement: 'left',
+		delay: { show: 200, hide: 10000 }
+	});
+	
 	
 	//Remove attachment
 	$(".upload-thumbnail .icon-remove").live("click", function(){

@@ -65,6 +65,9 @@
   }
 }
 
+#wrapper {
+  overflow: hidden;
+}
 .push-notice {
   position: absolute;
   top: 45px;
@@ -85,6 +88,7 @@
     background: #F3F3F3 url(../../img/admin/push-notice.png) -100px 0 repeat-y;
     width: 9px;
     border-right: 1px solid #ddd;
+    cursor: pointer;
   
     > span {
       .size(22px, 152px);
@@ -93,7 +97,6 @@
       position: relative;
       top: 40%;
       left: -21px;
-      cursor: pointer;
     }
     &.expanded {
       > span {
@@ -143,6 +146,10 @@
     img {
       .size(56px, 56px);
       margin: 0 8px 0 0;
+    }
+    cursor: pointer;
+    &:hover {
+      background: #f3f3f3;
     }
   }
   
