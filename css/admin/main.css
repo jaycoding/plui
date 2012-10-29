@@ -5765,6 +5765,13 @@ i.icon-toggle-expand.collapse {
 .push-notice .push-notice-person:hover {
   background: #f3f3f3;
 }
+.alerts {
+  width: 500px;
+  position: fixed;
+  top: 40px;
+  left: 50%!important;
+  margin-left: -250px;
+}
 /*===================================
  Global
  ==================================*/

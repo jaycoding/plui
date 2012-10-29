@@ -68,6 +68,8 @@ $(function(){
 	
 	$('.mockup-edit-side').scrollToFixed();
 	
+	$('.alerts').scrollToFixed();
+	
 	
 	$(".filter-group .filter-item").live("click", function(){
 		var $me = $(this),
