@@ -2438,15 +2438,15 @@ table .span24 {
   line-height: 20px;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 .close:hover {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 button.close {
   padding: 0;
@@ -5587,6 +5587,19 @@ i.icon-toggle-expand {
 i.icon-toggle-expand.collapse {
   background: url(../../img/icons/icon-collapse.png) 0 0 no-repeat;
 }
+i.icon-close {
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-close.png) 0 0 no-repeat;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          common.less
@@ -5888,9 +5901,15 @@ i.icon-toggle-expand.collapse {
   top: 4px;
   margin: 0 4px;
 }
+.modal-inquiry-close {
+  width: 500px;
+}
 .modal-inquiry-close .box > .bd {
-  max-height: 400px;
   overflow: auto;
+  max-height: 240px;
+}
+.modal-inquiry-close p {
+  padding: 0 11px;
 }
 /*===================================
  Global
