@@ -5426,6 +5426,15 @@ label.error {
   padding: 2px 8px;
   margin-top: 2px;
 }
+.bordered {
+  border: 1px solid #ddd;
+}
+.border-dashed {
+  border: 1px dashed #ddd;
+}
+.border-dotted {
+  border: 1px dotted #ddd;
+}
 .no-border {
   border: none!important;
 }
@@ -5878,6 +5887,10 @@ i.icon-toggle-expand.collapse {
   position: relative;
   top: 4px;
   margin: 0 4px;
+}
+.modal-inquiry-close .box > .bd {
+  max-height: 400px;
+  overflow: auto;
 }
 /*===================================
  Global
