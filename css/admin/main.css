@@ -5542,6 +5542,18 @@ label.error {
     width: 60px;
   }
 }
+.alert-info {
+  background: #EEEEE2;
+  border: none;
+  box-shadow: 1px 1px 3px #bbb;
+  color: #666;
+}
+.alert-info h5 {
+  color: #f30;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -5679,6 +5691,19 @@ i.icon-close {
   *zoom: 1;
   display: inline-block;
   background: url(../../img/icons/icon-close.png) 0 0 no-repeat;
+}
+i.icon-magnifier {
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-magnifier.png) 0 0 no-repeat;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
@@ -6645,4 +6670,25 @@ nav .clogo img {
   background: url(../../img/icons/icon-revised.png) 0 center no-repeat;
   color: #f30;
   font-weight: 700;
+}
+.mockup-img-zoom {
+  position: relative;
+  float: left;
+}
+.mockup-img-zoom .icon-magnifier {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.mockup-section-upload {
+  padding: 5px;
+}
+.mockup-section-upload:hover {
+  background: #eee;
+}
+.mockup-section-color {
+  padding: 5px;
+}
+.mockup-section-color:hover {
+  background: #eee;
 }

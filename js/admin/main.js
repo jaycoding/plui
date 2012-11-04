@@ -63,10 +63,7 @@ $(function(){
 	
 	$('.order-list-toolbar').scrollToFixed();
 	
-	
 	$('.push-notice').scrollToFixed();
-	
-	$('.mockup-edit-side').scrollToFixed();
 	
 	$('.alerts').scrollToFixed();
 	

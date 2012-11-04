@@ -2439,15 +2439,15 @@ table .span24 {
   line-height: 20px;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 .close:hover {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
 button.close {
   padding: 0;
@@ -5427,6 +5427,15 @@ label.error {
   padding: 2px 8px;
   margin-top: 2px;
 }
+.bordered {
+  border: 1px solid #ddd;
+}
+.border-dashed {
+  border: 1px dashed #ddd;
+}
+.border-dotted {
+  border: 1px dotted #ddd;
+}
 .no-border {
   border: none!important;
 }
@@ -5453,6 +5462,98 @@ label.error {
 }
 .input-tinyer {
   width: 24px;
+}
+@charset 'UTF-8';
+/*
+ * jQuery File Upload UI Plugin CSS 6.3
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 4px;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: solid transparent;
+  border-width: 0 0 100px 200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-transform: translate(-300px, 0) scale(4);
+  direction: ltr;
+  cursor: pointer;
+}
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+.files .progress {
+  width: 200px;
+}
+.progress-animated .bar {
+  background: url(../img/progressbar.gif) !important;
+  filter: none;
+}
+.fileupload-loading {
+  position: absolute;
+  left: 50%;
+  width: 128px;
+  height: 128px;
+  background: url(../img/loading.gif) center no-repeat;
+  display: none;
+}
+.fileupload-processing .fileupload-loading {
+  display: block;
+}
+/* Fix for IE 6: */
+*html .fileinput-button {
+  line-height: 22px;
+  margin: 1px -3px 0 0;
+}
+/* Fix for IE 7: */
+* + html .fileinput-button {
+  margin: 1px 0 0 0;
+}
+@media (max-width: 480px) {
+  .files .btn span {
+    display: none;
+  }
+  .files .preview * {
+    width: 40px;
+  }
+  .files .name * {
+    width: 80px;
+    display: inline-block;
+    word-wrap: break-word;
+  }
+  .files .progress {
+    width: 20px;
+  }
+  .files .delete {
+    width: 60px;
+  }
+}
+.alert-info {
+  background: #EEEEE2;
+  border: none;
+  box-shadow: 1px 1px 3px #bbb;
+  color: #666;
+}
+.alert-info h5 {
+  color: #f30;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 .pms {
   height: 24px;
@@ -5578,6 +5679,32 @@ i.icon-toggle-expand {
 }
 i.icon-toggle-expand.collapse {
   background: url(../../img/icons/icon-collapse.png) 0 0 no-repeat;
+}
+i.icon-close {
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-close.png) 0 0 no-repeat;
+}
+i.icon-magnifier {
+  width: 16px;
+  height: 16px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-magnifier.png) 0 0 no-repeat;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
@@ -7198,4 +7325,129 @@ i.icon-toggle-expand.collapse {
   cursor: pointer;
   font-weight: 700;
   font-weight: 700;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          mockup-edit.less
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+.mockup-edit {
+  padding: 15px;
+  width: 870px;
+  background: #fff;
+}
+.mockup-edit .modal-body {
+  max-height: none;
+  overflow: auto;
+}
+.mockup-edit .box-themed {
+  background: #EEEDE1;
+  padding: 8px;
+}
+.mockup-edit-main {
+  width: 480px;
+  float: left;
+}
+.mockup-edit-main > section {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.mockup-edit-side {
+  padding: 10px;
+  width: 320px;
+  float: right;
+}
+.mockup-btn-next {
+  width: 48px;
+  height: 48px;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-direction.png) 0 0 no-repeat;
+}
+.mockup-btn-next.disabled {
+  background-position: 0 -100px;
+}
+.mockup-btn-prev {
+  width: 48px;
+  height: 48px;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-direction.png) -134px 0 no-repeat;
+}
+.mockup-btn-prev.disabled {
+  background-position: -134px -100px;
+}
+.mockup-link-pdf {
+  width: 19px;
+  height: 18px;
+  width: 18px;
+  height: 19px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-pdf-s.png) center center no-repeat;
+  margin: 0 2px;
+}
+.mockup-link-mail {
+  width: 18px;
+  height: 18px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-mail-s.png) center center no-repeat;
+  margin: 0 2px;
+}
+.mock-edit-part {
+  border-bottom: 1px dashed #ddd;
+}
+.mock-edit-approved {
+  padding-left: 45px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background: url(../../img/icons/icon-approved.png) 0 center no-repeat;
+  font-weight: 700;
+}
+.mock-edit-revised {
+  padding-left: 45px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background: url(../../img/icons/icon-revised.png) 0 center no-repeat;
+  color: #f30;
+  font-weight: 700;
+}
+.mockup-img-zoom {
+  position: relative;
+  float: left;
+}
+.mockup-img-zoom .icon-magnifier {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.mockup-section-upload:hover {
+  background: #eee;
 }
