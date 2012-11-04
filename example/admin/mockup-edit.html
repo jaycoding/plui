@@ -18,9 +18,9 @@
 	</head>
 	<body>
 		<div class="mockup-edit">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h3>Mockup</h3>
+			<div class="cf">
+				<button type="button" class="pull-right close" data-dismiss="modal" aria-hidden="true"><i class="icon-close"></i></button>
+				<h3 class="pull-left">Mockup</h3>
 			</div>
 			<div class="modal-body cf">
 				<div class="row-fluid cf">
@@ -54,12 +54,16 @@
 								</div>
 							</div>
 							
-							<div class="row-fluid">
+							<div class="row-fluid spaced">
 								<div class="span4">
 									<label for="radio1" class="radio"><input type="radio" name="" id="" /> default show</label>
 								</div>
 								<div class="span5">
-									<div class="mockup-edit-upload">Upload</div>
+									<span class="btn btn-small btn-success fileinput-button">
+					                    <i class="icon-plus icon-white"></i>
+					                    <span>Upload</span>
+					                    <input type="file" name="files[]" multiple>
+					                </span>
 								</div>
 								<div class="span3">
 									<a href="#">Delete</a>
