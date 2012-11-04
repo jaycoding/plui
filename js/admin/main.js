@@ -171,7 +171,12 @@ $(function(){
 			$panel.addClass('expanded');
 			$me.addClass('expanded');
 		}
-	})
+	});
+	
+	
+	$('.editable-inline').live('click', function(){
+		
+	});
 });
 
 
