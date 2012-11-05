@@ -13,14 +13,31 @@ $(function(){
 		$postTo.addClass("none");
 	});
 	
-	$(".mockup-img-zoom").etalage(
-		{
-			thumb_image_width: 160,
-			thumb_image_height: 160,
-			source_image_width: 600,
-			source_image_height: 600,
-		}
-	);
+	// $(".mockup-img-zoom").etalage(
+		// {
+			// thumb_image_width: 160,
+			// thumb_image_height: 160,
+			// source_image_width: 600,
+			// source_image_height: 600,
+		// }
+	// );
+	
+	// $('.jqzoom').jqzoom({
+        // zoomType: 'standard',
+        // lens:true,
+        // preloadImages: false,
+        // alwaysOn:false,
+        // title:false
+    // });
+    
+    $('body').nivoZoom({
+		speed:500,
+		zoomHoverOpacity:0.8,
+		overlay:false,
+		overlayColor:'#333',
+		overlayOpacity:0.5,
+		captionOpacity:0.8
+	});
 	
 });
 
