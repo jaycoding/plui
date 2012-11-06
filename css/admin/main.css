@@ -6581,6 +6581,7 @@ nav .clogo img {
   padding: 10px;
   width: 320px;
   float: right;
+  background: #ddd;
 }
 .mockup-btn-next {
   width: 48px;
@@ -6665,14 +6666,12 @@ nav .clogo img {
 .mockup-img-zoom {
   position: relative;
   float: left;
+  z-index: 9999;
 }
 .mockup-img-zoom .icon-magnifier {
   position: absolute;
   top: 5px;
   right: 10px;
-}
-.mockup-img-zoom .nivoLarge {
-  max-width: 300px;
 }
 .mockup-section-upload {
   padding: 5px;

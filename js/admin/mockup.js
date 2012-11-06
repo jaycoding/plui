@@ -13,14 +13,16 @@ $(function(){
 		$postTo.addClass("none");
 	});
 	
-	// $(".mockup-img-zoom").etalage(
-		// {
-			// thumb_image_width: 160,
-			// thumb_image_height: 160,
-			// source_image_width: 600,
-			// source_image_height: 600,
-		// }
-	// );
+	$(".mockup-img-zoom").etalage(
+		{
+			thumb_image_width: 160,
+			thumb_image_height: 160,
+			source_image_width: 600,
+			source_image_height: 600,
+			zoom_area_width: 300,
+			zoom_area_height: 300
+		}
+	);
 	
 	// $('.jqzoom').jqzoom({
         // zoomType: 'standard',
@@ -30,14 +32,14 @@ $(function(){
         // title:false
     // });
     
-    $('body').nivoZoom({
-		speed:500,
-		zoomHoverOpacity:0.8,
-		overlay:false,
-		overlayColor:'#333',
-		overlayOpacity:0.5,
-		captionOpacity:0.8
-	});
+    // $('body').nivoZoom({
+		// speed:500,
+		// zoomHoverOpacity:0.8,
+		// overlay:false,
+		// overlayColor:'#333',
+		// overlayOpacity:0.5,
+		// captionOpacity:0.8
+	// });
 	
 });
 
