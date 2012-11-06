@@ -19,6 +19,8 @@ $(function(){
 			thumb_image_height: 160,
 			source_image_width: 600,
 			source_image_height: 600,
+			zoom_area_width: 300,
+			zoom_area_height: 300
 		}
 	);
 });
