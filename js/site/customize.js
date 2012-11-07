@@ -222,6 +222,9 @@ $(function(){
         zoom_easing: false
     });
     
+    $(".etalage_small_thumbs ul > li:first").addClass("none");
+    $(".etalage_small_thumbs ul > li:last").addClass("none");
+    
     
     $(".price-table td > input:radio").click(function(){
         $(this).closest("tr").siblings("tr").removeClass("info");
