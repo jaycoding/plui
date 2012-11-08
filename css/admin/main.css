@@ -5696,6 +5696,14 @@ i.icon-magnifier {
     width: 60px;
   }
 }
+.upload-form-progress {
+  width: 15px;
+  height: 128px;
+  width: 128px;
+  height: 15px;
+  margin: 10px 0;
+  background: transparent url(../../img/global/upload-in-progress.gif) 0 0 no-repeat;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          common.less
@@ -6280,7 +6288,6 @@ nav .clogo img {
 .section-job {
   clear: both;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
 }
 .row-job-history {
   font-size: 12px;
