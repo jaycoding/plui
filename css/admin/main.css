@@ -5711,15 +5711,16 @@ i.icon-magnifier {
  //
  //////////////////////////////////////////////////////////////////////////////////////*/
 #body .btn-go-top {
-  position: absolute;
-  bottom: 20px;
-  right: -15px;
+  cursor: pointer;
+  background: url(../../img/icons/btn-gotop.png) 0 0 no-repeat;
+  position: fixed;
   width: 40px;
   height: 11px;
   width: 11px;
   height: 40px;
-  cursor: pointer;
-  background: url(../../img/icons/btn-gotop.png) 0 0 no-repeat;
+  left: 50%;
+  bottom: 50px;
+  margin-left: 500px;
 }
 .accordion-body.collapse {
   overflow: hidden;
@@ -6118,7 +6119,7 @@ nav .clogo img {
   border: 1px solid #ddd;
   min-height: 750px;
   border-radius: 3px;
-  margin: -32px 20px 0 200px;
+  margin: -32px 0px 0 200px;
   padding: 9px 15px;
   position: relative;
 }
