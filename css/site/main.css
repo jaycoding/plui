@@ -6597,6 +6597,148 @@ i.icon-magnifier {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa8aa1f', endColorstr='#ff848216', GradientType=0);
 }
+/*===================================
+ Theme: Fest red
+ ==================================*/
+.theme-fest-red .header a,
+.theme-fest-red .position a,
+.theme-fest-red .footer a,
+.theme-fest-red p a,
+.theme-fest-red .read-more a,
+.theme-fest-red .mod-cate ul li a:hover {
+  color: #FD4239;
+}
+.theme-fest-red .mod-nav li {
+  border-left-color: #CC270A;
+  border-right-color: #941403;
+}
+.theme-fest-red .mod-nav-l,
+.theme-fest-red .mod-nav-c,
+.theme-fest-red .mod-nav-r,
+.theme-fest-red .mod-nav li.on a,
+.theme-fest-red .mod-nav-search,
+.theme-fest-red .mod-nav-search-btn,
+.theme-fest-red .mod-cate h3,
+.theme-fest-red .mod-cate ul li,
+.theme-fest-red .btn-deep,
+.theme-fest-red .btn-deep span,
+.theme-fest-red .btn-light,
+.theme-fest-red .btn-light span,
+.theme-fest-red .go-back,
+.theme-fest-red .top-page,
+.theme-fest-red .mod-catelist-imgview ul li a:hover img,
+.theme-fest-red .mod-prolist-paged-bd ul li.list-category a:hover img {
+  background-image: url(../../img/themes/theme-fest-red.png);
+}
+.theme-fest-red .bp-roleUl li.hover,
+.theme-fest-red .bp-roleUl li:hover {
+  background: #FD4239;
+  color: #fff;
+}
+.theme-fest-red .mod-product-viewer ul li a:hover,
+.theme-fest-red .mod-product-viewer ul li.current a,
+.theme-fest-red .mod-recent-viewed ul li a:hover img,
+.theme-fest-red .mod-selected-options ul li a:first-child:hover img,
+.theme-fest-red .mod-prolist-paged ul li a:hover img,
+.theme-fest-red .mod-cate ul .extendable:hover .hover,
+.theme-fest-red .mod-cate ul .extendable .mod-sub-cate {
+  border-color: #FD4239;
+}
+.theme-fest-red .mod-prolist-paged-bd ul li.list-category a:first-child:hover {
+  outline: 0;
+}
+.theme-fest-red .mod-prolist-paged ul li a:first-child:hover,
+.theme-fest-red .mod-eflyerlist-paged ul li a:first-child:hover,
+.theme-fest-red .mod-promo-list ul li a:hover img {
+  outline: 4px solid #FD4239;
+}
+.theme-fest-red .product-info-bd li.current,
+.theme-fest-red .product-info-bd li:hover {
+  outline: 2px solid #FD4239;
+}
+.theme-fest-red .box.theme > .hd {
+  background: #A9440A;
+  color: #fff;
+  background-color: #b61f07;
+  background-image: -moz-linear-gradient(top, #cc270a, #941403);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc270a), to(#941403));
+  background-image: -webkit-linear-gradient(top, #cc270a, #941403);
+  background-image: -o-linear-gradient(top, #cc270a, #941403);
+  background-image: linear-gradient(to bottom, #cc270a, #941403);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc270a', endColorstr='#ff941403', GradientType=0);
+}
+/*===================================
+ Theme: Fest green
+ ==================================*/
+.theme-fest-green .header a,
+.theme-fest-green .position a,
+.theme-fest-green .footer a,
+.theme-fest-green p a,
+.theme-fest-green .read-more a,
+.theme-fest-green .mod-cate ul li a:hover {
+  color: #007836;
+}
+.theme-fest-green .mod-nav li {
+  border-left-color: #28913C;
+  border-right-color: #185822;
+}
+.theme-fest-green .mod-nav-l,
+.theme-fest-green .mod-nav-c,
+.theme-fest-green .mod-nav-r,
+.theme-fest-green .mod-nav li.on a,
+.theme-fest-green .mod-nav-search,
+.theme-fest-green .mod-nav-search-btn,
+.theme-fest-green .mod-cate h3,
+.theme-fest-green .mod-cate ul li,
+.theme-fest-green .btn-deep,
+.theme-fest-green .btn-deep span,
+.theme-fest-green .btn-light,
+.theme-fest-green .btn-light span,
+.theme-fest-green .go-back,
+.theme-fest-green .top-page,
+.theme-fest-green .mod-catelist-imgview ul li a:hover img,
+.theme-fest-green .mod-prolist-paged-bd ul li.list-category a:hover img {
+  background-image: url(../../img/themes/theme-fest-green.png);
+}
+.theme-fest-green .bp-roleUl li.hover,
+.theme-fest-green .bp-roleUl li:hover {
+  background: #007836;
+  color: #fff;
+}
+.theme-fest-green .mod-product-viewer ul li a:hover,
+.theme-fest-green .mod-product-viewer ul li.current a,
+.theme-fest-green .mod-recent-viewed ul li a:hover img,
+.theme-fest-green .mod-selected-options ul li a:first-child:hover img,
+.theme-fest-green .mod-prolist-paged ul li a:hover img,
+.theme-fest-green .mod-cate ul .extendable:hover .hover,
+.theme-fest-green .mod-cate ul .extendable .mod-sub-cate {
+  border-color: #007836;
+}
+.theme-fest-green .mod-prolist-paged-bd ul li.list-category a:first-child:hover {
+  outline: 0;
+}
+.theme-fest-green .mod-prolist-paged ul li a:first-child:hover,
+.theme-fest-green .mod-eflyerlist-paged ul li a:first-child:hover,
+.theme-fest-green .mod-promo-list ul li a:hover img {
+  outline: 4px solid #007836;
+}
+.theme-fest-green .product-info-bd li.current,
+.theme-fest-green .product-info-bd li:hover {
+  outline: 2px solid #007836;
+}
+.theme-fest-green .box.theme > .hd {
+  background: #41925C;
+  color: #fff;
+  background-color: #27884d;
+  background-image: -moz-linear-gradient(top, #41925c, #007836);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#41925c), to(#007836));
+  background-image: -webkit-linear-gradient(top, #41925c, #007836);
+  background-image: -o-linear-gradient(top, #41925c, #007836);
+  background-image: linear-gradient(to bottom, #41925c, #007836);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff41925c', endColorstr='#ff007836', GradientType=0);
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          customize.less
