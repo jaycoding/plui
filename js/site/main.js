@@ -68,6 +68,14 @@ $(function(){
         yellow : function() {
             wrapper.removeClass().addClass("theme-yellow");
         }
+        ,
+        festRed : function() {
+            wrapper.removeClass().addClass("theme-fest-red");
+        }
+        ,
+        festGreen : function() {
+            wrapper.removeClass().addClass("theme-fest-green");
+        }
     };
     
     $("#theme-picker-black").bind('click', function() {
@@ -87,6 +95,12 @@ $(function(){
     });
     $("#theme-picker-yellow").bind('click', function() {
         themePicker.yellow();
+    });
+    $("#theme-picker-fest-red").bind('click', function() {
+        themePicker.festRed();
+    });
+    $("#theme-picker-fest-green").bind('click', function() {
+        themePicker.festGreen();
     });
 });
 
