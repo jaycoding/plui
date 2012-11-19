@@ -50,6 +50,34 @@ $(function(){
 		}
 	});
 	
+	
+	$('.data-section.section-order').bind("mouseover", function(){
+		var $section = $(this);
+		
+		if (!$section.find('.row-expandable').hasClass('expanded')) {
+			$('.data-section.section-order').find(".btn-expand").removeClass("btn-collapse");
+			$('.data-section.section-order').find('.row-expandable').removeClass("expanded").slideUp(300);
+			$section.find(".btn-expand").addClass("btn-collapse");
+			$section.find('.row-expandable').addClass("expanded").slideDown(300);
+		} else {
+			
+		}
+	});
+	
+	$('.data-section.section-job').bind("mouseover", function(){
+		var $section = $(this);
+		
+		if (!$section.find('.row-expandable').hasClass('expanded')) {
+			$('.data-section.section-job').find(".btn-expand").removeClass("btn-collapse");
+			$('.data-section.section-job').find('.row-expandable').removeClass("expanded").slideUp(300);
+			$section.find(".btn-expand").addClass("btn-collapse");
+			$section.find('.row-expandable').addClass("expanded").slideDown(300);
+		} else {
+			
+		}
+	});
+	
+	
 	$('.btn-expand-all').bind("click", function(){
 		$(".data-section").find('.row-expandable').addClass("expanded").slideDown(300);
 		$(".data-section").find('.btn-expand').addClass("btn-collapse");
@@ -85,7 +113,7 @@ $(function(){
 	
 	$(".bp-popover").popover({
 		html: true,
-		trigger: 'hover',
+		trigger: 'click',
 		delay: { show: 200, hide: 100 }
 	});
 	
