@@ -6586,6 +6586,9 @@ nav .clogo img {
   cursor: pointer;
   border: none;
 }
+.order-email-send {
+  padding: 10px 0;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          mockup-edit.less
