@@ -6587,7 +6587,10 @@ nav .clogo img {
   border: none;
 }
 .order-email-send {
-  padding: 10px 0;
+  padding: 20px 0;
+}
+.order-email-send .send-to-list {
+  height: 150px;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
