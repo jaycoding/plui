@@ -21,6 +21,8 @@ $(function(){
 	
 	$(".with-tooltop").tooltip();
 	
+	$('.combobox').combobox();
+	
 	//Datepicker
 	$('.date').datepicker();
 	
