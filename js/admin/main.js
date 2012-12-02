@@ -101,15 +101,29 @@ $(function(){
 	$(".filter-group .filter-item").live("click", function(){
 		var $me = $(this),
 			$group = $me.closest(".filter-group");
-		if ($group.hasClass("filter-multi")){
-			if ($me.hasClass("selected")) {
-				$me.removeClass("selected");
-			} else {
-				$me.addClass("selected");
-			}
+		// if ($group.hasClass("filter-multi")){
+			// if ($me.hasClass("selected")) {
+				// $me.removeClass("selected");
+			// } else {
+				// $me.addClass("selected");
+			// }
+		// } else {
+			// if (!$me.hasClass("selected")) {
+				// $group.find(".filter-item").addClass("none");
+				// $me.removeClass("none").addClass("selected");
+			// } else {
+				// $group.find(".filter-item").removeClass("none");
+				// $me.removeClass.addClass("selected");
+			// }
+// 			
+		// }
+		
+		if (!$me.hasClass("selected")) {
+			$group.find(".filter-item").addClass("none");
+			$me.removeClass("none").addClass("selected");
 		} else {
-			$group.find(".filter-item").removeClass("selected");
-			$me.addClass("selected");
+			$group.find(".filter-item").removeClass("none");
+			$me.removeClass("selected");
 		}
 	});
 	
