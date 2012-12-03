@@ -6278,7 +6278,7 @@ nav .clogo img {
 .order-list-filter .filter-date:focus {
   box-shadow: none;
 }
-.order-list-filter .filter-item {
+.order-list-filter .filter-single .filter-item {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -6286,17 +6286,41 @@ nav .clogo img {
   *zoom: 1;
   display: inline-block;
 }
-.order-list-filter .filter-item.selected {
+.order-list-filter .filter-single .filter-item.selected {
   padding: 0px 4px;
   background: #dddddd url(../../img/icons/icon-close-3.png) right center no-repeat;
   padding-right: 20px;
   color: #000;
 }
-.order-list-filter .filter-item:hover {
+.order-list-filter .filter-single .filter-item:hover {
   text-decoration: none;
 }
-.order-list-filter .filter-item.none {
+.order-list-filter .filter-single .filter-item.none {
   display: none;
+}
+.order-list-filter .filter-multi .filter-item {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.order-list-filter .filter-multi .filter-item.selected {
+  padding: 0px 4px;
+  background: #dddddd url(../../img/icons/icon-tick-s.png) right center no-repeat;
+  padding-right: 12px;
+  color: #000;
+}
+.order-list-filter .filter-multi .filter-item:hover {
+  text-decoration: none;
+}
+.order-list-filter .filter-multi .filter-item.none {
+  display: none;
+}
+.order-list-filter .filter-list > li {
+  margin-right: 10px;
+  float: left;
 }
 .order-list-toolbar {
   margin-bottom: 3px;

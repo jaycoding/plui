@@ -60,7 +60,7 @@
   }
   
 
-  .filter-item {
+  .filter-single .filter-item {
     .inline-block;
     &.selected {
       padding: 0px 4px;
@@ -74,6 +74,27 @@
     &.none {
       display: none;
     }
+  }
+  
+  .filter-multi .filter-item {
+    .inline-block;
+    &.selected {
+      padding: 0px 4px;
+      background: #ddd url(../../img/icons/icon-tick-s.png) right center no-repeat;
+      padding-right: 12px;
+      color: #000;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &.none {
+      display: none;
+    }
+  }
+  
+  .filter-list > li {
+    margin-right: 10px;
+    float: left;
   }
 }
 
