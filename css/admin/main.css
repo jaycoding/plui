@@ -6011,7 +6011,7 @@ i.icon-magnifier {
 }
 .modal-inquiry-close .box > .bd {
   overflow: auto;
-  max-height: 240px;
+  height: 240px;
 }
 .modal-inquiry-close p {
   padding: 0 11px;
@@ -6045,7 +6045,7 @@ i.icon-magnifier {
   height: 26px;
   background: url(../../img/icons/icon-search-3.png) 0 2px no-repeat;
 }
-.modal.modal-normal .modal-body {
+.modal-normal .modal-body {
   height: 300px;
 }
 /*===================================
