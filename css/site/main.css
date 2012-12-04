@@ -5245,10 +5245,6 @@ a.badge:hover {
   width: 16px;
   height: 16px;
 }
-html {
-  overflow: -moz-scrollbars-vertical;
-  overflow: scroll;
-}
 .cf,
 .clearfix {
   *zoom: 1;
@@ -5386,6 +5382,9 @@ img.spaced.large {
 }
 .orange {
   color: #f30;
+}
+.red {
+  color: #f00;
 }
 .bold {
   font-weight: 700;
@@ -5970,6 +5969,18 @@ i.icon-magnifier {
 }
 .bp-logo {
   max-width: 150px;
+}
+.alert-info {
+  background: #EEEEE2;
+  border: none;
+  box-shadow: 1px 1px 3px #bbb;
+  color: #666;
+}
+.alert-info h5 {
+  color: #f30;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //

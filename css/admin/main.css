@@ -5382,6 +5382,9 @@ img.spaced.large {
 .orange {
   color: #f30;
 }
+.red {
+  color: #f00;
+}
 .bold {
   font-weight: 700;
 }
@@ -6553,6 +6556,9 @@ nav .clogo img {
   background: #f3f3f3;
   margin-bottom: 0px;
 }
+.order-details .nav-tabs > li > a:hover {
+  background: #eee;
+}
 .order-details .nav-tabs > .active > a,
 .order-details .nav-tabs > .active > a:hover {
   color: #333;
@@ -6654,6 +6660,14 @@ nav .clogo img {
 }
 .order-email-send .send-to-list {
   height: 150px;
+}
+.order-email-send .send-to-box {
+  min-height: 150px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  border-radius: 3px;
 }
 .combobox-wrap.large {
   width: 460px;
