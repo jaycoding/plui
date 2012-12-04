@@ -92,6 +92,21 @@
     }
   }
   
+  .filter-alphabet .filter-item {
+    .inline-block;
+    &.selected {
+      color: #245F9A;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    &.none {
+      display: none;
+    }
+  }
+  
   .filter-list > li {
     margin-right: 10px;
     float: left;

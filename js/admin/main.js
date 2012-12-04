@@ -115,7 +115,14 @@ $(function(){
 				$group.find(".filter-item").removeClass("none");
 				$me.removeClass("selected");
 			}
-		}
+		} else if ($group.hasClass("filter-alphabet")) {
+            if (!$me.hasClass("selected")) {
+                $group.find(".filter-item").removeClass("selected");
+                $me.addClass("selected");
+            } else {
+                $me.removeClass("selected");
+            }
+        }
 		
 	});
 	

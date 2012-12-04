@@ -6318,6 +6318,25 @@ nav .clogo img {
 .order-list-filter .filter-multi .filter-item.none {
   display: none;
 }
+.order-list-filter .filter-alphabet .filter-item {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.order-list-filter .filter-alphabet .filter-item.selected {
+  color: #245F9A;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.order-list-filter .filter-alphabet .filter-item:hover {
+  text-decoration: underline;
+}
+.order-list-filter .filter-alphabet .filter-item.none {
+  display: none;
+}
 .order-list-filter .filter-list > li {
   margin-right: 10px;
   float: left;
