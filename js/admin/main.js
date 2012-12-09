@@ -23,15 +23,6 @@ $(function(){
 	
 	$('.combobox').combobox();
 	
-	$('.fancybox-normal').fancybox({
-		width: 580,
-		height: 450
-	});
-	
-	$('.fancybox-large').fancybox({
-		width: 940,
-		height: "98%"
-	});
 	
 	//Datepicker
 	$('.date').datepicker();

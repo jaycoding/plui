@@ -24,14 +24,41 @@
 				list-style:disc;
 			}
 		</style>
+		<script type="text/javascript">
+		$('#download-invoice').fancybox({
+			width: 580,
+			height: 450,
+			href: "popup-download-invoice.html"
+		});
+
+		$('#close-inquery').fancybox({
+			width: 580,
+			height: 450,
+			href: "popup-inquiry-close.html"
+		});
+
+		$('#sample-volume').fancybox({
+			width: 580,
+			height: 450,
+			href: "popup-sample-volume.html"
+		});
+		
+		$('#mockup-edit').fancybox({
+			width: 940,
+			height: "98%",
+			href:"mockup-edit.html"
+		});
+
+
+		</script>
 	</head>
 	<body>
 		<ul style="padding: 20px; width: 300px; margin: 100px auto;">
 			<h4>Fancybox popup tests:</h4>
-			<li><a href="popup-download-invoice.html" class="fancybox fancybox-normal fancybox.iframe">Download payment invoice</a></li>
-			<li><a href="popup-inquiry-close.html" class="fancybox fancybox-normal fancybox.iframe">Inquiry Close</a></li>
-			<li><a href="popup-sample-volume.html" class="fancybox fancybox-normal fancybox.iframe">Sample Volume</a></li>
-			<li><a href="mockup-edit.html" class="fancybox fancybox-large fancybox.iframe">Mockup edit</a></li>
+			<li><a href="#" class="fancybox fancybox-normal fancybox.iframe" id="download-invoice">Download payment invoice</a></li>
+			<li><a href="#" class="fancybox fancybox-normal fancybox.iframe" id="close-inquery">Inquiry Close</a></li>
+			<li><a href="#" class="fancybox fancybox-normal fancybox.iframe" id="sample-volume">Sample Volume</a></li>
+			<li><a href="#" class="fancybox fancybox-large fancybox.iframe" id="mockup-edit">Mockup edit</a></li>
 		</ul>
 		
 	</body>
