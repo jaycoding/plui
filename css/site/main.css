@@ -171,7 +171,6 @@ a:hover {
 .row {
   margin-left: -20px;
   *zoom: 1;
-  *zoom: 1;
 }
 .row:before,
 .row:after {
@@ -274,7 +273,6 @@ a:hover {
 }
 .row-fluid {
   width: 100%;
-  *zoom: 1;
   *zoom: 1;
 }
 .row-fluid:before,
@@ -464,7 +462,6 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;
-  *zoom: 1;
 }
 .container:before,
 .container:after {
@@ -486,7 +483,6 @@ a:hover {
 .container-fluid {
   padding-right: 20px;
   padding-left: 20px;
-  *zoom: 1;
   *zoom: 1;
 }
 .container-fluid:before,
@@ -1064,7 +1060,6 @@ input.span1, textarea.span1, .uneditable-input.span1 {
 }
 .controls-row {
   *zoom: 1;
-  *zoom: 1;
 }
 .controls-row:before,
 .controls-row:after {
@@ -1217,7 +1212,6 @@ select:focus:required:invalid:focus {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border-top: 1px solid #e5e5e5;
-  *zoom: 1;
   *zoom: 1;
 }
 .form-actions:before,
@@ -1467,7 +1461,6 @@ legend + .control-group {
 }
 .form-horizontal .control-group {
   margin-bottom: 20px;
-  *zoom: 1;
   *zoom: 1;
 }
 .form-horizontal .control-group:before,
@@ -2320,7 +2313,7 @@ table .span24 {
 .open {
   *z-index: 1000;
 }
-.open  > .dropdown-menu {
+.open > .dropdown-menu {
   display: block;
 }
 .pull-right > .dropdown-menu {
@@ -3157,7 +3150,6 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs,
 .nav-pills {
   *zoom: 1;
-  *zoom: 1;
 }
 .nav-tabs:before,
 .nav-pills:before,
@@ -3327,7 +3319,6 @@ input[type="submit"].btn.btn-mini {
   border-color: #999999;
 }
 .tabbable {
-  *zoom: 1;
   *zoom: 1;
 }
 .tabbable:before,
@@ -3510,7 +3501,6 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-form {
   margin-bottom: 0;
-  *zoom: 1;
   *zoom: 1;
 }
 .navbar-form:before,
@@ -4015,7 +4005,6 @@ input[type="submit"].btn.btn-mini {
   list-style: none;
   text-align: center;
   *zoom: 1;
-  *zoom: 1;
 }
 .pager:before,
 .pager:after {
@@ -4156,7 +4145,6 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: inset 0 1px 0 #ffffff;
   -moz-box-shadow: inset 0 1px 0 #ffffff;
   box-shadow: inset 0 1px 0 #ffffff;
-  *zoom: 1;
   *zoom: 1;
 }
 .modal-footer:before,
@@ -4376,7 +4364,6 @@ input[type="submit"].btn.btn-mini {
 .thumbnails {
   margin-left: -20px;
   list-style: none;
-  *zoom: 1;
   *zoom: 1;
 }
 .thumbnails:before,
@@ -5096,7 +5083,6 @@ a.badge:hover {
 .datepicker td.active.disabled,
 .datepicker td.active.disabled:hover {
   color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
@@ -5174,7 +5160,6 @@ a.badge:hover {
 .datepicker td span.active.disabled,
 .datepicker td span.active.disabled:hover {
   color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
@@ -5296,7 +5281,6 @@ a.badge:hover {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   font-weight: 700;
-  font-weight: 700;
 }
 .box.light > .bd {
   padding: 10px;
@@ -5315,13 +5299,11 @@ a.badge:hover {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   font-weight: 700;
-  font-weight: 700;
 }
 .box.theme > .bd {
   padding: 10px;
 }
 .editable {
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5479,7 +5461,6 @@ label.error {
 .pms {
   height: 24px;
   min-width: 14px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5508,8 +5489,6 @@ label.error {
 .pms-small {
   width: 12px;
   height: 12px;
-  width: 12px;
-  height: 12px;
   padding: 0;
 }
 .pms-small.selected {
@@ -5536,9 +5515,6 @@ label.error {
 i.icon-checkbox-m {
   width: 32px;
   height: 32px;
-  width: 32px;
-  height: 32px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5549,9 +5525,6 @@ i.icon-checkbox-m {
 i.icon-radio-m {
   width: 32px;
   height: 32px;
-  width: 32px;
-  height: 32px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5562,9 +5535,6 @@ i.icon-radio-m {
 i.icon-expand {
   width: 22px;
   height: 22px;
-  width: 22px;
-  height: 22px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5575,9 +5545,6 @@ i.icon-expand {
 i.icon-collapse {
   width: 22px;
   height: 22px;
-  width: 22px;
-  height: 22px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5588,9 +5555,6 @@ i.icon-collapse {
 i.icon-toggle-expand {
   width: 22px;
   height: 22px;
-  width: 22px;
-  height: 22px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5604,9 +5568,6 @@ i.icon-toggle-expand.collapse {
 i.icon-close {
   width: 16px;
   height: 16px;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5617,9 +5578,6 @@ i.icon-close {
 i.icon-magnifier {
   width: 16px;
   height: 16px;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -5893,7 +5851,6 @@ i.icon-magnifier {
  //////////////////////////////////////////////////////////////////////////////////////*/
 .editable,
 .editable-select {
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -6134,10 +6091,7 @@ i.icon-magnifier {
 .btn-search-contact {
   width: 20px;
   height: 20px;
-  width: 20px;
-  height: 20px;
   background: transparent url(../../img/icons/icon-search.png) 0 0 no-repeat;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -6147,9 +6101,14 @@ i.icon-magnifier {
   top: 4px;
   margin: 0 4px;
 }
+.product-viewer.etalage {
+  height: auto!important;
+}
 .product-viewer.etalage .etalage_small_thumbs {
   width: 264px;
-  margin-top: 10px;
+  margin-top: 274px!important;
+  position: static;
+  top: 0!important;
 }
 .product-viewer.etalage .etalage_small_thumbs ul {
   width: 264px!important;
@@ -6788,7 +6747,6 @@ i.icon-magnifier {
 .customize-guide .nav-pills li.active a {
   background-color: #ddd;
   font-weight: 700;
-  font-weight: 700;
   color: #222;
 }
 .customize-section {
@@ -6811,7 +6769,6 @@ i.icon-magnifier {
 .customize-section > .hd {
   font-size: 18px;
   color: #999;
-  font-weight: 700;
   font-weight: 700;
   margin-bottom: 4px;
 }
@@ -6963,7 +6920,6 @@ i.icon-magnifier {
   display: none;
 }
 .multiple-select .select-item.checked i.icon-checkbox-m {
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -6980,7 +6936,6 @@ i.icon-magnifier {
   display: none;
 }
 .single-select .select-item.checked i.icon-radio-m {
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -7287,7 +7242,6 @@ i.icon-magnifier {
 .order-guide .nav-pills li.active a {
   background-color: #ddd;
   font-weight: 700;
-  font-weight: 700;
   color: #222;
 }
 .order-form {
@@ -7352,7 +7306,6 @@ i.icon-magnifier {
   display: none;
 }
 .order-form > section.readonly .pms-list .pms.selected {
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -7476,7 +7429,6 @@ i.icon-magnifier {
 .user.with-profile {
   cursor: pointer;
   font-weight: 700;
-  font-weight: 700;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
@@ -7514,9 +7466,6 @@ i.icon-magnifier {
 .mockup-btn-next {
   width: 48px;
   height: 48px;
-  width: 48px;
-  height: 48px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -7530,9 +7479,6 @@ i.icon-magnifier {
 .mockup-btn-prev {
   width: 48px;
   height: 48px;
-  width: 48px;
-  height: 48px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -7548,7 +7494,6 @@ i.icon-magnifier {
   height: 18px;
   width: 18px;
   height: 19px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -7560,9 +7505,6 @@ i.icon-magnifier {
 .mockup-link-mail {
   width: 18px;
   height: 18px;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
 

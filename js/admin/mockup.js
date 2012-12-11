@@ -13,6 +13,20 @@ $(function(){
 		$postTo.addClass("none");
 	});
 	
+	$('.btn-approve').bind('click', function(){
+		var $me = $(this),
+			$terms = $me.parent().parent().next('.section-terms');
+		$terms.removeClass("none");
+		console.log($terms);
+	});
+
+	$('.section-terms .btn-close').bind('click', function(){
+		var $me = $(this),
+			$terms = $me.closest('.section-terms');
+		$terms.addClass("none");
+	});
+
+
 	$(".mockup-img-zoom").etalage(
 		{
 			thumb_image_width: 160,
@@ -23,27 +37,6 @@ $(function(){
 			zoom_area_height: 300
 		}
 	);
-
-	
-	// $('.jqzoom').jqzoom({
-        // zoomType: 'standard',
-        // lens:true,
-        // preloadImages: false,
-        // alwaysOn:false,
-        // title:false
-    // });
-    
-    // $('body').nivoZoom({
-		// speed:500,
-		// zoomHoverOpacity:0.8,
-		// overlay:false,
-		// overlayColor:'#333',
-		// overlayOpacity:0.5,
-		// captionOpacity:0.8
-	// });
-
-
-
 	
 });
 
