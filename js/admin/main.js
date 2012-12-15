@@ -221,6 +221,12 @@ $(function(){
 	$('.editable-inline').live('click', function(){
 		
 	});
+
+	$('.btn-add-activity').live('click', function(){
+		$(this).parent().next('.activity-add').slideDown(400, function(){
+			$(this.removeClass("none"));
+		});
+	});
 });
 
 
