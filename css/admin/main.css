@@ -7003,3 +7003,23 @@ nav .clogo img {
   *zoom: 1;
   display: inline-block;
 }
+.activity-add-form .nav-tabs {
+  border: none;
+  margin: 0;
+}
+.activity-add-form .nav-tabs a,
+.activity-add-form .nav-tabs a:hover {
+  font-weight: 700;
+  color: #666;
+  border: none;
+  background: none;
+}
+.activity-add-form .nav-tabs li.active a,
+.activity-add-form .nav-tabs li.active a:hover {
+  color: #333;
+  background: url(../../img/admin/activity-add-tab-arrow.png) center bottom no-repeat;
+}
+.activity-add-content .tab-pane {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
