@@ -265,18 +265,50 @@ $(function(){
 	});
 
 	$(".section-edit .close").live('click', function(){
-		$(this).closest(".section-edit").slideUp(300, function(){
-			$(this).addClass("none");
-		});
+		$(this).closest(".section-edit").find("input").show().next().addClass("none")
 	});
 
-	$(".act-box").live('mouseover', function(){
+	$(".act-box, .activity-thread-reply").live('mouseover', function(){
 		$(this).find(".edit").removeClass("none");
+		$(this).find(".remove").removeClass("none");
 	});
 
-	$(".act-box").live('mouseout', function(){
+	$(".act-box, .activity-thread-reply").live('mouseout', function(){
 		$(this).find(".edit").addClass("none");
+		$(this).find(".remove").addClass("none");
 	});
+
+
+
+
+	$(".section-edit-reply > input").live("click", function(){
+		$(this).hide().next().removeClass("none").find("textarea").focus();
+	});
+
+	$(".section-edit-tag .edit").live("click", function(){
+		$(this).hide().closest(".section-edit").find(".edit-panel").removeClass("none");
+		$(this).closest(".section-edit").find(".save").show();
+	});
+
+	$(".section-edit-tag .save").live("click", function(){
+		$(this).hide().closest(".section-edit").find(".edit-panel").addClass("none");
+		$(this).closest(".section-edit").find(".edit").show();
+	});
+
+	$(".btn-change-vote").live("click", function(){
+		
+		$(this).siblings(".act-voting-edit").removeClass("none");
+		$(this).siblings(".act-voting").addClass("none");
+	});
+
+
+	$(".btn-submit-vote").live("click", function(){
+		$(this).parent(".act-voting-edit").addClass("none").siblings(".act-voting").removeClass("none");
+	});
+
+	
+
+	
 });
 
 

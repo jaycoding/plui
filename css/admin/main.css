@@ -6975,6 +6975,7 @@ nav .clogo img {
 .act-voting {
   color: #555;
   font-size: 12px;
+  margin-bottom: 10px;
 }
 .act-voting li {
   margin-bottom: 10px;
@@ -7007,6 +7008,50 @@ nav .clogo img {
   float: left;
 }
 .act-voting .act-voting-score {
+  width: 150px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.act-voting-edit {
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.act-voting-edit li {
+  margin-bottom: 10px;
+}
+.act-voting-edit .act-voting-item {
+  width: 150px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.act-voting-edit .act-voting-bar {
+  width: 200px;
+  height: 10px;
+  background: #eee;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  margin: 0 10px;
+}
+.act-voting-edit .act-voting-bar > span {
+  height: 10px;
+  background: #0A7DC4;
+  display: block;
+  float: left;
+}
+.act-voting-edit .act-voting-score {
   width: 150px;
   display: inline-block;
   *display: inline;
