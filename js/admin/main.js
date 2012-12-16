@@ -306,9 +306,19 @@ $(function(){
 		$(this).parent(".act-voting-edit").addClass("none").siblings(".act-voting").removeClass("none");
 	});
 
-	
+	$(".poll-option input").live("click", function(){
+		var option = $(this).closest(".poll-option");
+		var tpl = option.clone();
+		if (option.next(".poll-option").length <= 0) {
+			option.after(tpl);
+		}
+	});
 
-	
+	$(".poll-option .close").live("click", function(){
+		var option = $(this).closest(".poll-option");
+		option.remove();
+	});
+
 });
 
 
