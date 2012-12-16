@@ -269,6 +269,14 @@ $(function(){
 			$(this).addClass("none");
 		});
 	});
+
+	$(".act-box").live('mouseover', function(){
+		$(this).find(".edit").removeClass("none");
+	});
+
+	$(".act-box").live('mouseout', function(){
+		$(this).find(".edit").addClass("none");
+	});
 });
 
 

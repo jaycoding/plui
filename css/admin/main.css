@@ -7058,6 +7058,13 @@ nav .clogo img {
   padding-left: 22px;
   background: url(../../img/admin/icon-act-upload.png) 0 center no-repeat;
   color: #666;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  float: none;
 }
 .file-from-folder {
   padding-left: 22px;
