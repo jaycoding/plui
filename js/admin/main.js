@@ -223,8 +223,50 @@ $(function(){
 	});
 
 	$('.btn-add-activity').live('click', function(){
-		$(this).parent().next('.activity-add').slideDown(400, function(){
-			$(this.removeClass("none"));
+		$(this).parent().next('.activity-add').slideDown(300, function(){
+			$(this).removeClass("none");
+		});
+	});
+
+
+	$(".btn-edit-reply").live('click', function(){
+		$(this).parents(".activity-thread").find('.section-edit-reply').slideDown(300, function(){
+			$(this).removeClass("none");
+		});
+		return false;
+	});
+
+	$(".btn-edit-assignment").live('click', function(){
+		$(this).parents(".activity-thread").find('.section-edit-assignment').slideDown(300, function(){
+			$(this).removeClass("none");
+		});
+		return false;
+	});
+
+	$(".btn-edit-tag").live('click', function(){
+		$(this).parents(".activity-thread").find('.section-edit-tag').slideDown(300, function(){
+			$(this).removeClass("none");
+		});
+		return false;
+	});
+
+	$(".btn-edit-file").live('click', function(){
+		$(this).parents(".activity-thread").find('.section-edit-file').slideDown(300, function(){
+			$(this).removeClass("none");
+		});
+		return false;
+	});
+
+	$(".btn-edit-review").live('click', function(){
+		$(this).parents(".activity-thread").find('.section-edit-review').slideDown(300, function(){
+			$(this).removeClass("none");
+		});
+		return false;
+	});
+
+	$(".section-edit .close").live('click', function(){
+		$(this).closest(".section-edit").slideUp(300, function(){
+			$(this).addClass("none");
 		});
 	});
 });
