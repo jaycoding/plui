@@ -253,8 +253,10 @@
     }
   }
   .thumb {
+    .size(122px, 122px);
     > img {
-      .size(120px, 120px);
+      max-width: 120px;
+      max-height: 120px;
       border: 1px solid #ddd;
     }
     position: relative;
@@ -470,14 +472,14 @@
 }
 
 .order-email-send {
-  padding: 20px 0;
+  padding: 60px 0 20px 0;
   
   .send-to-list {
     height: 150px;
   }
   .send-to-box {
-    min-height: 150px;
-    max-height: 200px;
+    min-height: 100px;
+    max-height: 150px;
     overflow: auto;
     border: 1px solid #cdcdcd;
     padding: 10px;

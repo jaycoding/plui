@@ -29,8 +29,8 @@ $(function(){
 
 	$(".mockup-img-zoom").etalage(
 		{
-			thumb_image_width: 160,
-			thumb_image_height: 160,
+			thumb_image_width: 250,
+			thumb_image_height: 250,
 			source_image_width: 600,
 			source_image_height: 600,
 			zoom_area_width: 300,

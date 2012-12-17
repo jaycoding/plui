@@ -6467,13 +6467,15 @@ nav .clogo img {
   background: url(../../img/icons/icon-mockup-status.png) -50px 0 no-repeat;
 }
 .order-list-mockup .thumb {
+  width: 122px;
+  height: 122px;
+  width: 122px;
+  height: 122px;
   position: relative;
 }
 .order-list-mockup .thumb > img {
-  width: 120px;
-  height: 120px;
-  width: 120px;
-  height: 120px;
+  max-width: 120px;
+  max-height: 120px;
   border: 1px solid #ddd;
 }
 .order-list-mockup .thumb .add-image {
@@ -6668,14 +6670,14 @@ nav .clogo img {
   border: none;
 }
 .order-email-send {
-  padding: 20px 0;
+  padding: 60px 0 20px 0;
 }
 .order-email-send .send-to-list {
   height: 150px;
 }
 .order-email-send .send-to-box {
-  min-height: 150px;
-  max-height: 200px;
+  min-height: 100px;
+  max-height: 150px;
   overflow: auto;
   border: 1px solid #cdcdcd;
   padding: 10px;
