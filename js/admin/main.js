@@ -309,6 +309,7 @@ $(function(){
 	$(".poll-option input").live("click", function(){
 		var option = $(this).closest(".poll-option");
 		var tpl = option.clone();
+		tpl.find('input').removeAttr("placeholder").val('');
 		if (option.next(".poll-option").length <= 0) {
 			option.after(tpl);
 		}
