@@ -211,8 +211,25 @@
 				        </div>
 				        <div class="tab-content">
 				            <div id="tab-order-activity" class="tab-pane cf active">
-				            	
-				            	<p><a href="#" class="btn-add-activity">+1 Activity</a></p>
+				            	<div class="row-fluid spaced">
+				            		<div class="span10">
+				            			<a href="#" class="btn-add-activity">+1 Activity</a>
+				            		</div>
+				            		<div class="span2 tright">
+				            			<div class="btn-group tright">
+				    						<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-wrench"></i></button>
+							                <ul class="dropdown-menu tleft align-right">
+							                  <li><a href="#">Show 50 per page</a></li>
+							                  <li><a href="#">Push notice on</a></li>
+							                  <li><a href="#">Show assigned to me only</li>
+							                  <li class="divider"></li>
+							                  <li><a href="#">Reply most first</a></li>
+							                  <li><a href="#">Newest first</a></li>
+							                  <li><a href="#">Oldest first</a></li>
+							                </ul>
+							            </div>
+				            		</div>
+				            	</div>
 
 				            	<div class="row-fluid activity-add spaced none">
 				    				<div class="activity-add-tabs">
@@ -335,377 +352,435 @@
 				    				</div>
 
 				    				<div class="activity-list-bd">
-				    					<div class="activity-thread row-fluid">
+				    					<div class="activity-thread cf spaced">
+				    						<div class="row-fluid">
+							    				<div class="span2 tcenter">
+							    					<img src="../../mock/image/user/user-3.jpg" width="68" height="68" alt="">
+							    				</div>
+							    				<div class="span10">
+							    					<div class="row-fluid">
+							    						<div class="span10"><a href="#">Harrison Fu</a> <span class="bold grey">You are invited to SunJoy New System</span></div>
+							    						<div class="span2 tright">
+							    							<div class="btn-group tright">
+									    						<button class="btn btn-mini"><i class="icon-edit"></i> Edit</button>
+																  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+																    <span class="caret"></span>
+																  </button>
+												                <ul class="dropdown-menu tleft align-right">
+												                  <li><a href="#"><i class="icon-exclamation-sign"></i> Important</a></li>
+												                  <li><a href="#"><i class="icon-ok"></i> To-dos</a></li>
+												                  <li><a href="#"><i class="icon-folder-close"></i> Archive</a></li>
+												                  <li><a href="#"><i class="icon-envelope"></i> Read/Unread</a></li>
+												                </ul>
+												            </div>
+							    						</div>
+							    					</div>
+							    					<div class="row-fluid">
+							    						<div class="span1"><img src="../../img/admin/icon-act-plan.png" width="60" height="60" alt=""></div>
+							    						<div class="span11">
+							    							Hi Stephanie ,<br>
+					We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
+							    						</div>
+							    					</div>
+							    					<div class="section-expandable none">
+							    						<div class="row-fluid spaced small activity-actions">
+								    						<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
+								    						<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
+								    						<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
+								    						<a href="#" class="grey-light btn-edit-file">File</a>  ·  
+								    						<a href="#" class="grey-light">Email</a>  ·  
+								    						<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
+								    						<span class="grey-light">August 19 at 1:30pm</span>
+								    					</div>
+								    					
+								    					<div class="act-box section-edit section-edit-tag spaced small">
+								    						<div class="row-fluid">
+								    							<div class="span10">
+								    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
+								    								<span class="edit-zone none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
+								    							</div>
+								    							<div class="span2 tright">
+								    								<a href="javascript:void(0);" class="save none">Done</a> 
+								    								<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
+								    							</div>
+								    						</div>
+								    					</div>
+
+								    					<div class="act-box section-edit section-edit-assignment spaced small none">
+								    						<div class="row-fluid spaced small">
+								    							<div class="span11">Assign to</div>
+								    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+								    						</div>
+								    						<div class="row-fluid">
+								    							<div class="span12"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
+								    						</div>
+
+								    						<hr class="dashed">
+
+								    						<div class="row-fluid">
+								    							<div class="span10">Notify parties</div>
+								    							<div class="span2 tright"><a href="#" class="grey">Remove all</a></div>
+								    						</div>
+								    						<div class="row-fluid border-dashed-bottom">
+								    							<div class="span10"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
+								    							<div class="span2 tright"><button class="btn btn-primary btn-small">Assgin</button></div>
+								    							
+								    						</div>
+								    					</div>
+
+
+								    					<div class="act-box section-edit section-edit-file spaced small none">
+								    						<div class="row-fluid spaced small">
+								    							<div class="span11">Add file</div>
+								    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+								    						</div>
+								    						<div class="row-fluid">
+								    							<ul>
+								    								<li class="spaced small">
+								    									<div class="upload-form-progress none"></div>
+								    									<span class="file-from-upload fileinput-button">
+								    										Upload a file from your computer
+								    										<input type="file" name="files[]" multiple>
+								    									</span>
+								    								</li>
+								    								<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
+								    								<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
+								    							</ul>
+								    						</div>
+								    					</div>
+
+								    					<div class="act-box section-edit section-edit-review spaced small none">
+								    						<div class="row-fluid">
+								    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+									    						<div class="span11">
+									    							<div class="row-fluid spaced small">
+										    							<div class="span11">How do you like this?</div>
+										    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+										    						</div>
+									    							<div class="row-fluid">
+									    								<ul class="act-rating spaced small">
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-5"></span> <span>Excellent</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-4"></span> <span>Good</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-3"></span> <span>Normal</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-2"></span> <span>Poor</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-1"></span> <span>Terrible</span></li>
+									    								</ul>
+									    								<button class="btn btn-primary btn-small">Review</button>
+									    							</div>
+									    						</div>
+								    						</div>
+								    					</div>
+
+								    					<div class="act-box section-edit section-edit-reply spaced small">
+								    						<input type="" placeholder="Write a reply" class="span12">
+								    						<div class="row-fluid none">
+								    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+									    						<div class="span11">
+									    							<div class="row-fluid">
+									    								<div class="span11">Replying to Harrison Fu</div>
+									    								<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+									    							</div>
+									    							<div class="row-fluid">
+									    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+									    							</div>
+									    							<div class="row-fluid">
+									    								<div class="span10"><a href="#">Add file</a></div>
+									    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+									    							</div>
+									    						</div>
+								    						</div>
+								    					</div>
+							    					</div>
+							    				</div>
+					    					</div>
+					    					<div class="btn-section-expand">
+					    						<i class="icon-chevron-down"></i>
+					    						<i class="icon-chevron-up"></i>
+					    					</div>
+						    			</div>
+
+						    		<div class="activity-thread cf">
+						    			<div class="row-fluid">
 						    				<div class="span2 tcenter">
-						    					<img src="../../mock/image/user/user-3.jpg" width="68" height="68" alt="">
+						    					<img src="../../mock/image/user/user-2.jpg" width="68" height="68" alt="">
 						    				</div>
 						    				<div class="span10">
 						    					<div class="row-fluid">
 						    						<div class="span10"><a href="#">Harrison Fu</a> <span class="bold grey">You are invited to SunJoy New System</span></div>
-						    						<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
+						    						<div class="span2 tright">
+						    							<div class="btn-group tright">
+								    						<button class="btn btn-mini"><i class="icon-edit"></i> Edit</button>
+															  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+															    <span class="caret"></span>
+															  </button>
+											                <ul class="dropdown-menu tleft align-right">
+											                  <li><a href="#"><i class="icon-exclamation-sign"></i> Important</a></li>
+											                  <li><a href="#"><i class="icon-ok"></i> To-dos</a></li>
+											                  <li><a href="#"><i class="icon-folder-close"></i> Archive</a></li>
+											                  <li><a href="#"><i class="icon-envelope"></i> Read/Unread</a></li>
+											                </ul>
+											            </div>
+						    						</div>
 						    					</div>
 						    					<div class="row-fluid">
-						    						<div class="span1"><img src="../../img/admin/icon-act-plan.png" width="60" height="60" alt=""></div>
+						    						<div class="span1"><img src="../../img/admin/icon-act-sent.png" width="60" height="60" alt=""></div>
 						    						<div class="span11">
 						    							Hi Stephanie ,<br>
 				We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
 						    						</div>
 						    					</div>
-						    					<div class="row-fluid spaced small activity-actions">
-						    						<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
-						    						<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
-						    						<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
-						    						<a href="#" class="grey-light btn-edit-file">File</a>  ·  
-						    						<a href="#" class="grey-light">Email</a>  ·  
-						    						<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
-						    						<span class="grey-light">August 19 at 1:30pm</span>
-						    					</div>
-						    					
-						    					<div class="act-box section-edit section-edit-tag spaced small">
-						    						<div class="row-fluid">
-						    							<div class="span10">
-						    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
-						    								<span class="edit-zone none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
-						    							</div>
-						    							<div class="span2 tright">
-						    								<a href="javascript:void(0);" class="save none">Done</a> 
-						    								<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
-						    							</div>
-						    						</div>
-						    					</div>
 
-						    					<div class="act-box section-edit section-edit-assignment spaced small none">
-						    						<div class="row-fluid spaced small">
-						    							<div class="span11">Assign to</div>
-						    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-						    						</div>
-						    						<div class="row-fluid">
-						    							<div class="span12"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
-						    						</div>
+						    					<div class="section-expandable none">
+							    					
+							    					<div class="row-fluid spaced small activity-actions">
+							    						<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
+							    						<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
+							    						<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
+							    						<a href="#" class="grey-light btn-edit-file">File</a>  ·  
+							    						<a href="#" class="grey-light">Email</a>  ·  
+							    						<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
+							    						<span class="grey-light">August 19 at 1:30pm</span>
+							    					</div>
+							    					
+							    					<div class="act-box section-edit section-edit-tag spaced small">
+							    						<div class="row-fluid">
+							    							<div class="span10">
+							    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
+							    								<span class="edit-zone none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
+							    							</div>
+							    							<div class="span2 tright">
+							    								<a href="javascript:void(0);" class="grey save none">Done</a> 
+							    								<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
+							    							</div>
+							    						</div>
+							    					</div>
+							    					
 
-						    						<hr class="dashed">
+							    					<div class="act-box section-edit section-edit-assignment spaced small none">
+							    						<div class="row-fluid spaced small">
+							    							<div class="span11">Assign to</div>
+							    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+							    						</div>
+							    						<div class="row-fluid">
+							    							<div class="span12"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
+							    						</div>
 
-						    						<div class="row-fluid">
-						    							<div class="span10">Notify parties</div>
-						    							<div class="span2 tright"><a href="#" class="grey">Remove all</a></div>
-						    						</div>
-						    						<div class="row-fluid border-dashed-bottom">
-						    							<div class="span10"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
-						    							<div class="span2 tright"><button class="btn btn-primary btn-small">Assgin</button></div>
-						    							
-						    						</div>
-						    					</div>
+							    						<hr class="dashed">
 
+							    						<div class="row-fluid">
+							    							<div class="span10">Notify parties</div>
+							    							<div class="span2 tright"><a href="#" class="grey">Remove all</a></div>
+							    						</div>
+							    						<div class="row-fluid border-dashed-bottom">
+							    							<div class="span10"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
+							    							<div class="span2 tright"><button class="btn btn-primary btn-small">Assign</button></div>
+							    							
+							    						</div>
+							    					</div>
 
-						    					<div class="act-box section-edit section-edit-file spaced small none">
-						    						<div class="row-fluid spaced small">
-						    							<div class="span11">Add file</div>
-						    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-						    						</div>
-						    						<div class="row-fluid">
-						    							<ul>
-						    								<li class="spaced small">
-						    									<div class="upload-form-progress none"></div>
-						    									<span class="file-from-upload fileinput-button">
-						    										Upload a file from your computer
-						    										<input type="file" name="files[]" multiple>
-						    									</span>
-						    								</li>
-						    								<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
-						    								<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
-						    							</ul>
-						    						</div>
-						    					</div>
+							    					
 
-						    					<div class="act-box section-edit section-edit-review spaced small none">
-						    						<div class="row-fluid">
-						    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
-							    						<div class="span11">
-							    							<div class="row-fluid spaced small">
-								    							<div class="span11">How do you like this?</div>
-								    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+							    					<div class="act-box section-edit section-edit-file spaced small none">
+							    						<div class="row-fluid spaced small">
+							    							<div class="span11">Add file</div>
+							    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+							    						</div>
+							    						<div class="row-fluid">
+							    							<ul>
+							    								<li class="spaced small"><a href="#" class="file-from-upload">Upload a file from your computer</a></li>
+							    								<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
+							    								<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
+							    							</ul>
+							    						</div>
+							    					</div>
+
+							    					<div class="act-box section-edit section-edit-review spaced small none">
+							    						<div class="row-fluid">
+							    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid spaced small">
+									    							<div class="span11">How do you like this?</div>
+									    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+									    						</div>
+								    							<div class="row-fluid">
+								    								<ul class="act-rating spaced small">
+								    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-5"></span> <span>Excellent</span></li>
+								    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-4"></span> <span>Good</span></li>
+								    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-3"></span> <span>Normal</span></li>
+								    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-2"></span> <span>Poor</span></li>
+								    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-1"></span> <span>Terrible</span></li>
+								    								</ul>
+								    								<button class="btn btn-primary btn-small">Review</button>
+								    							</div>
 								    						</div>
-							    							<div class="row-fluid">
-							    								<ul class="act-rating spaced small">
-							    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-5"></span> <span>Excellent</span></li>
-							    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-4"></span> <span>Good</span></li>
-							    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-3"></span> <span>Normal</span></li>
-							    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-2"></span> <span>Poor</span></li>
-							    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-1"></span> <span>Terrible</span></li>
-							    								</ul>
-							    								<button class="btn btn-primary btn-small">Review</button>
-							    							</div>
 							    						</div>
-						    						</div>
-						    					</div>
+							    					</div>
 
-						    					<div class="act-box section-edit section-edit-reply spaced small">
-						    						<input type="" placeholder="Write a reply" class="span12">
-						    						<div class="row-fluid none">
-						    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
-							    						<div class="span11">
-							    							<div class="row-fluid">
-							    								<div class="span11">Replying to Harrison Fu</div>
-							    								<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-							    							</div>
-							    							<div class="row-fluid">
-							    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
-							    							</div>
-							    							<div class="row-fluid">
-							    								<div class="span10"><a href="#">Add file</a></div>
-							    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
-							    							</div>
+							    					<div class="activity-thread-reply">
+								    					<div class="row-fluid">
+								    						<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Emily Hu</a></div>
+								    								<div class="span2 tright"></div>
+								    							</div>
+								    							<div class="spaced small">Hi Harrison,<br>
+						We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</div>
+																<div><span class="grey-light">August 19 at 1:30pm</span></div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    				<div class="activity-thread-reply">
+								    					<div class="row-fluid">
+								    						<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="36" height="36" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">changed the assignment</span></div>
+								    								<div class="span2 tright"><a href="#" class="grey edit none">Change</a></div>
+								    							</div>
+								    							<div class="spaced small">
+								    								Assign to <br>
+								    								<a href="#">Harrison Fu</a> <br>
+								    								Notify parties <br>
+								    								<a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>
+								    							</div>
+																<div><span class="grey-light">August 19 at 1:30pm</span></div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    				<div class="activity-thread-reply">
+								    					<div class="row-fluid">
+								    						<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">tagged the activity</span></div>
+								    								<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
+								    							</div>
+								    							<div class="spaced small">
+								    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
+								    							</div>
+																<div><span class="grey-light">August 19 at 1:30pm</span></div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    				<div class="activity-thread-reply">
+								    					<div class="row-fluid">
+								    						<div class="span1"><img src="../../mock/image/user/user-3.jpg" width="36" height="36" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">uploaded the file</span></div>
+								    								<div class="span2 tright"><a href="#" class="grey remove none">Remove</a></div>
+								    							</div>
+								    							<div class="spaced small">
+								    								<a href="#">
+								    									<img src="../../mock/image/250x250/p1.jpg" width="160" height="160" alt="" /><br>
+								    									sample.jpg
+								    								</a>
+								    							</div>
+								    							<div class="spaced small">
+								    								<a href="#">
+									    								<img src="../../img/admin/activity-icon-file.png" alt="" /><br>
+									    								readme.doc
+								    								</a>
+								    							</div>
+																<div><span class="grey-light">August 19 at 1:30pm</span></div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    				<div class="activity-thread-reply">
+								    					<div class="row-fluid">
+								    						<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">sent emails</span></div>
+								    								<div class="span2 tright"><a href="#"></a></div>
+								    							</div>
+								    							<div class="spaced small">
+								    								<p class="bold">You're invited to sunjoy new system.</p>
+								    								<p>sent to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
+								    								<p>copied to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
+								    							</div>
+																<div><span class="grey-light">August 19 at 1:30pm</span></div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    				<div class="activity-thread-reply">
+								    					<div class="row-fluid">
+								    						<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">reviewed this</span></div>
+								    								<div class="span2 tright"><a href="#"></a></div>
+								    							</div>
+								    							<div class="spaced small">
+								    								<ul class="act-rating">
+								    									<li><span class="act-rating-stars-5"></span> <span>Excellent</span></li>
+								    								</ul>
+								    							</div>
+																<div><span class="grey-light">August 19 at 1:30pm</span></div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    				<div class="act-box section-edit section-edit-reply spaced small">
+							    						<input type="" placeholder="Write a reply" class="span12">
+							    						<div class="row-fluid none">
+							    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span11">Replying to Harrison Fu</div>
+								    								<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+								    							</div>
+								    							<div class="row-fluid">
+								    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+								    							</div>
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Add file</a></div>
+								    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+								    							</div>
+								    						</div>
 							    						</div>
-						    						</div>
+							    					</div>
+
 						    					</div>
 
 						    				</div>
 						    			</div>
-						    		</div>
-
-						    		<div class="activity-thread row-fluid">
-					    				<div class="span2 tcenter">
-					    					<img src="../../mock/image/user/user-2.jpg" width="68" height="68" alt="">
-					    				</div>
-					    				<div class="span10">
-					    					<div class="row-fluid">
-					    						<div class="span10"><a href="#">Harrison Fu</a> <span class="bold grey">You are invited to SunJoy New System</span></div>
-					    						<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
-					    					</div>
-					    					<div class="row-fluid">
-					    						<div class="span1"><img src="../../img/admin/icon-act-sent.png" width="60" height="60" alt=""></div>
-					    						<div class="span11">
-					    							Hi Stephanie ,<br>
-			We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
-					    						</div>
-					    					</div>
-					    					<div class="row-fluid spaced small activity-actions">
-					    						<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-file">File</a>  ·  
-					    						<a href="#" class="grey-light">Email</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
-					    						<span class="grey-light">August 19 at 1:30pm</span>
-					    					</div>
-					    					
-					    					<div class="act-box section-edit section-edit-tag spaced small">
-					    						<div class="row-fluid">
-					    							<div class="span10">
-					    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
-					    								<span class="edit-zone none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
-					    							</div>
-					    							<div class="span2 tright">
-					    								<a href="javascript:void(0);" class="grey save none">Done</a> 
-					    								<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
-					    							</div>
-					    						</div>
-					    					</div>
-					    					
-
-					    					<div class="act-box section-edit section-edit-assignment spaced small none">
-					    						<div class="row-fluid spaced small">
-					    							<div class="span11">Assign to</div>
-					    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-					    						</div>
-					    						<div class="row-fluid">
-					    							<div class="span12"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
-					    						</div>
-
-					    						<hr class="dashed">
-
-					    						<div class="row-fluid">
-					    							<div class="span10">Notify parties</div>
-					    							<div class="span2 tright"><a href="#" class="grey">Remove all</a></div>
-					    						</div>
-					    						<div class="row-fluid border-dashed-bottom">
-					    							<div class="span10"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
-					    							<div class="span2 tright"><button class="btn btn-primary btn-small">Assign</button></div>
-					    							
-					    						</div>
-					    					</div>
-
-					    					
-
-					    					<div class="act-box section-edit section-edit-file spaced small none">
-					    						<div class="row-fluid spaced small">
-					    							<div class="span11">Add file</div>
-					    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-					    						</div>
-					    						<div class="row-fluid">
-					    							<ul>
-					    								<li class="spaced small"><a href="#" class="file-from-upload">Upload a file from your computer</a></li>
-					    								<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
-					    								<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
-					    							</ul>
-					    						</div>
-					    					</div>
-
-					    					<div class="act-box section-edit section-edit-review spaced small none">
-					    						<div class="row-fluid">
-					    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid spaced small">
-							    							<div class="span11">How do you like this?</div>
-							    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-							    						</div>
-						    							<div class="row-fluid">
-						    								<ul class="act-rating spaced small">
-						    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-5"></span> <span>Excellent</span></li>
-						    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-4"></span> <span>Good</span></li>
-						    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-3"></span> <span>Normal</span></li>
-						    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-2"></span> <span>Poor</span></li>
-						    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-1"></span> <span>Terrible</span></li>
-						    								</ul>
-						    								<button class="btn btn-primary btn-small">Review</button>
-						    							</div>
-						    						</div>
-					    						</div>
-					    					</div>
-
-					    					<div class="activity-thread-reply">
-						    					<div class="row-fluid">
-						    						<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Emily Hu</a></div>
-						    								<div class="span2 tright"></div>
-						    							</div>
-						    							<div class="spaced small">Hi Harrison,<br>
-				We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</div>
-														<div><span class="grey-light">August 19 at 1:30pm</span></div>
-						    						</div>
-						    					</div>
-						    				</div>
-
-						    				<div class="activity-thread-reply">
-						    					<div class="row-fluid">
-						    						<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="36" height="36" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">changed the assignment</span></div>
-						    								<div class="span2 tright"><a href="#" class="grey edit none">Change</a></div>
-						    							</div>
-						    							<div class="spaced small">
-						    								Assign to <br>
-						    								<a href="#">Harrison Fu</a> <br>
-						    								Notify parties <br>
-						    								<a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>
-						    							</div>
-														<div><span class="grey-light">August 19 at 1:30pm</span></div>
-						    						</div>
-						    					</div>
-						    				</div>
-
-						    				<div class="activity-thread-reply">
-						    					<div class="row-fluid">
-						    						<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">tagged the activity</span></div>
-						    								<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
-						    							</div>
-						    							<div class="spaced small">
-						    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
-						    							</div>
-														<div><span class="grey-light">August 19 at 1:30pm</span></div>
-						    						</div>
-						    					</div>
-						    				</div>
-
-						    				<div class="activity-thread-reply">
-						    					<div class="row-fluid">
-						    						<div class="span1"><img src="../../mock/image/user/user-3.jpg" width="36" height="36" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">uploaded the file</span></div>
-						    								<div class="span2 tright"><a href="#" class="grey remove none">Remove</a></div>
-						    							</div>
-						    							<div class="spaced small">
-						    								<a href="#">
-						    									<img src="../../mock/image/250x250/p1.jpg" width="160" height="160" alt="" /><br>
-						    									sample.jpg
-						    								</a>
-						    							</div>
-						    							<div class="spaced small">
-						    								<a href="#">
-							    								<img src="../../img/admin/activity-icon-file.png" alt="" /><br>
-							    								readme.doc
-						    								</a>
-						    							</div>
-														<div><span class="grey-light">August 19 at 1:30pm</span></div>
-						    						</div>
-						    					</div>
-						    				</div>
-
-						    				<div class="activity-thread-reply">
-						    					<div class="row-fluid">
-						    						<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">sent emails</span></div>
-						    								<div class="span2 tright"><a href="#"></a></div>
-						    							</div>
-						    							<div class="spaced small">
-						    								<p class="bold">You're invited to sunjoy new system.</p>
-						    								<p>sent to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
-						    								<p>copied to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
-						    							</div>
-														<div><span class="grey-light">August 19 at 1:30pm</span></div>
-						    						</div>
-						    					</div>
-						    				</div>
-
-						    				<div class="activity-thread-reply">
-						    					<div class="row-fluid">
-						    						<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">reviewed this</span></div>
-						    								<div class="span2 tright"><a href="#"></a></div>
-						    							</div>
-						    							<div class="spaced small">
-						    								<ul class="act-rating">
-						    									<li><span class="act-rating-stars-5"></span> <span>Excellent</span></li>
-						    								</ul>
-						    							</div>
-														<div><span class="grey-light">August 19 at 1:30pm</span></div>
-						    						</div>
-						    					</div>
-						    				</div>
-
-						    				<div class="act-box section-edit section-edit-reply spaced small">
-					    						<input type="" placeholder="Write a reply" class="span12">
-					    						<div class="row-fluid none">
-					    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span11">Replying to Harrison Fu</div>
-						    								<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-						    							</div>
-						    							<div class="row-fluid">
-						    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
-						    							</div>
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Add file</a></div>
-						    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
-						    							</div>
-						    						</div>
-					    						</div>
-					    					</div>
-
-					    				</div>
-					    			</div>
+						    			<div class="btn-section-expand">
+				    						<i class="icon-chevron-down"></i>
+				    						<i class="icon-chevron-up"></i>
+				    					</div>
 					    		</div>
 
 					    		<div class="activity-thread row-fluid">
+					    			<div class="row-fluid">
+					    				
+					    			
 					    				<div class="span2 tcenter">
 					    					<img src="../../mock/image/user/user-2.jpg" width="68" height="68" alt="">
 					    				</div>
 					    				<div class="span10">
 					    					<div class="row-fluid spaced small">
 					    						<div class="span10"><a href="#">Harrison Fu</a> <span class="bold grey">How did you know about sunjoy products?</span></div>
-					    						<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
+					    						<div class="span2 tright">
+					    							<div class="btn-group tright">
+							    						<button class="btn btn-mini"><i class="icon-edit"></i> Edit</button>
+														  <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+														    <span class="caret"></span>
+														  </button>
+										                <ul class="dropdown-menu tleft align-right">
+										                  <li><a href="#"><i class="icon-exclamation-sign"></i> Important</a></li>
+										                  <li><a href="#"><i class="icon-ok"></i> To-dos</a></li>
+										                  <li><a href="#"><i class="icon-folder-close"></i> Archive</a></li>
+										                  <li><a href="#"><i class="icon-envelope"></i> Read/Unread</a></li>
+										                </ul>
+										            </div>
+					    						</div>
 					    					</div>
 					    					<div class="row-fluid spaced small">
 					    						<div class="span12">
@@ -729,89 +804,100 @@
 					    							2 total votes  <a href="javascript:void(0)" class="btn-change-vote">Change vote</a>  <a href="#">Reload</a>
 					    						</div>
 					    					</div>
-					    					<div class="row-fluid spaced small activity-actions">
-					    						<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-file">File</a>  ·  
-					    						<a href="#" class="grey-light">Email</a>  ·  
-					    						<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
-					    						<span class="grey-light">August 19 at 1:30pm</span>
-					    					</div>
 
-					    					<div class="act-box section-edit section-edit-tag spaced small">
-					    						<div class="row-fluid">
-					    							<div class="span10">
-					    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
-					    								<span class="edit-panel none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
-					    							</div>
-					    							<div class="span2 tright">
-					    								<a href="javascript:void(0);" class="grey save none">Done</a> 
-					    								<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
-					    							</div>
-					    						</div>
-					    					</div>
+					    					<div class="section-expandable none">
 					    					
+						    					<div class="row-fluid spaced small activity-actions">
+						    						<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
+						    						<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
+						    						<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
+						    						<a href="#" class="grey-light btn-edit-file">File</a>  ·  
+						    						<a href="#" class="grey-light">Email</a>  ·  
+						    						<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
+						    						<span class="grey-light">August 19 at 1:30pm</span>
+						    					</div>
 
-					    					<div class="act-box section-edit section-edit-assignment spaced small none">
-					    						<div class="row-fluid spaced small">
-					    							<div class="span11">Assign to</div>
-					    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-					    						</div>
-					    						<div class="row-fluid">
-					    							<div class="span12"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
-					    						</div>
-
-					    						<hr class="dashed">
-
-					    						<div class="row-fluid">
-					    							<div class="span10">Notify parties</div>
-					    							<div class="span2 tright"><a href="#" class="grey">Remove all</a></div>
-					    						</div>
-					    						<div class="row-fluid border-dashed-bottom">
-					    							<div class="span10"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
-					    							<div class="span2 tright"><button class="btn btn-primary btn-small">Assign</button></div>
-					    							
-					    						</div>
-					    					</div>
-
-					    					<div class="act-box section-edit section-edit-file spaced small none">
-					    						<div class="row-fluid spaced small">
-					    							<div class="span11">Add file</div>
-					    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
-					    						</div>
-					    						<div class="row-fluid">
-					    							<ul>
-					    								<li class="spaced small"><a href="#" class="file-from-upload">Upload a file from your computer</a></li>
-					    								<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
-					    								<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
-					    							</ul>
-					    						</div>
-					    					</div>
-
-					    					<div class="act-box section-edit section-edit-reply spaced small">
-					    						<input type="" placeholder="Write a reply" class="span12">
-					    						<div class="row-fluid none">
-					    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
-						    						<div class="span11">
-						    							<div class="row-fluid">
-						    								<div class="span11">Replying to Harrison Fu</div>
-						    								<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+						    					<div class="act-box section-edit section-edit-tag spaced small">
+						    						<div class="row-fluid">
+						    							<div class="span10">
+						    								<a href="#" class="act-tag">SO 10993</a> <a href="#" class="act-tag">SO 10993</a> 
+						    								<span class="edit-panel none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
 						    							</div>
-						    							<div class="row-fluid">
-						    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
-						    							</div>
-						    							<div class="row-fluid">
-						    								<div class="span10"><a href="#">Add file</a></div>
-						    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+						    							<div class="span2 tright">
+						    								<a href="javascript:void(0);" class="grey save none">Done</a> 
+						    								<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
 						    							</div>
 						    						</div>
-					    						</div>
+						    					</div>
+						    					
+
+						    					<div class="act-box section-edit section-edit-assignment spaced small none">
+						    						<div class="row-fluid spaced small">
+						    							<div class="span11">Assign to</div>
+						    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+						    						</div>
+						    						<div class="row-fluid">
+						    							<div class="span12"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
+						    						</div>
+
+						    						<hr class="dashed">
+
+						    						<div class="row-fluid">
+						    							<div class="span10">Notify parties</div>
+						    							<div class="span2 tright"><a href="#" class="grey">Remove all</a></div>
+						    						</div>
+						    						<div class="row-fluid border-dashed-bottom">
+						    							<div class="span10"><a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a></div>
+						    							<div class="span2 tright"><button class="btn btn-primary btn-small">Assign</button></div>
+						    							
+						    						</div>
+						    					</div>
+
+						    					<div class="act-box section-edit section-edit-file spaced small none">
+						    						<div class="row-fluid spaced small">
+						    							<div class="span11">Add file</div>
+						    							<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+						    						</div>
+						    						<div class="row-fluid">
+						    							<ul>
+						    								<li class="spaced small"><a href="#" class="file-from-upload">Upload a file from your computer</a></li>
+						    								<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
+						    								<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
+						    							</ul>
+						    						</div>
+						    					</div>
+
+						    					<div class="act-box section-edit section-edit-reply spaced small">
+						    						<input type="" placeholder="Write a reply" class="span12">
+						    						<div class="row-fluid none">
+						    							<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+							    						<div class="span11">
+							    							<div class="row-fluid">
+							    								<div class="span11">Replying to Harrison Fu</div>
+							    								<div class="span1 tright"><button type="button" class="close">&times;</button></div>
+							    							</div>
+							    							<div class="row-fluid">
+							    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+							    							</div>
+							    							<div class="row-fluid">
+							    								<div class="span10"><a href="#">Add file</a></div>
+							    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+							    							</div>
+							    						</div>
+						    						</div>
+						    					</div>
+
 					    					</div>
 
 					    				</div>
 					    			</div>
+					    			<div class="btn-section-expand">
+			    						<i class="icon-chevron-down"></i>
+			    						<i class="icon-chevron-up"></i>
+			    					</div>
 					    		</div>
+
+
 				    				</div>
 				    			</div>
 				    			

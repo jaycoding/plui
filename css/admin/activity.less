@@ -7,9 +7,43 @@
 
 .activity-thread {
   clear: both;
-  padding: 20px 0;
-  margin-bottom: 20px;
+  padding: 15px 0 3px 0;
+  margin-bottom: 10px;
   border-bottom: 1px dashed #ccc;
+  &:hover .btn-section-expand {
+    opacity: 0.5;
+  }
+  .btn-section-expand {
+    clear: both;
+    height: 14px;
+    padding: 0px 0 2px 0;
+    text-align: center;
+    background: #ddd;
+    opacity: 0;
+    margin: 5px 0 0 0 ;
+    cursor: pointer;
+    i.icon-chevron-up {
+      display: none;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+    &.expanded {
+      i.icon-chevron-up {
+        .inline-block;
+      }
+      i.icon-chevron-down {
+        display: none;
+      }
+    }
+    > i {
+      margin: 0;
+      vertical-align: top;
+    }
+  }
 }
 
 .activity-thread-reply {

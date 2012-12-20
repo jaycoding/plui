@@ -223,7 +223,7 @@ $(function(){
 	});
 
 	$('.btn-add-activity').live('click', function(){
-		$(this).parent().next('.activity-add').slideDown(300, function(){
+		$(this).parent().parent().next('.activity-add').slideDown(300, function(){
 			$(this).removeClass("none");
 		});
 	});
@@ -318,6 +318,21 @@ $(function(){
 	$(".poll-option .close").live("click", function(){
 		var option = $(this).closest(".poll-option");
 		option.remove();
+	});
+
+
+	$(".activity-thread .btn-section-expand").live("click", function(){
+		var $btn = $(this),
+			$thread = $btn.closest(".activity-thread"),
+			$expandable = $thread.find(".section-expandable");
+
+		if ($btn.hasClass("expanded")) {
+			$expandable.hide(0);
+			$btn.removeClass("expanded");
+		} else {
+			$expandable.show(0);
+			$btn.addClass("expanded");
+		}
 	});
 
 });
