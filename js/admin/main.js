@@ -335,6 +335,8 @@ $(function(){
 		}
 	});
 
+	$(".act-raty").raty();
+
 });
 
 
