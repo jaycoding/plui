@@ -335,8 +335,12 @@ $(function(){
 		}
 	});
 
-	$(".act-raty").raty();
 
+	$(".act-user-popover").popover({
+		html: true,
+		trigger: 'hover',
+		delay: { show: 200, hide: 200 }
+	});
 });
 
 
