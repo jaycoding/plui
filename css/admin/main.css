@@ -7161,3 +7161,7 @@ nav .clogo img {
   background: url(../../img/admin/icon-act-auth.png) 0 center no-repeat;
   color: #666;
 }
+.activity-stats {
+  margin-left: 20px;
+  padding-top: 6px;
+}

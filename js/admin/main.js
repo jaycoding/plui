@@ -265,7 +265,9 @@ $(function(){
 	});
 
 	$(".section-edit .close").live('click', function(){
-		$(this).closest(".section-edit").find("input").show().next().addClass("none")
+		//$(this).closest(".section-edit").find("input").show().next().addClass("none");
+
+		$(this).closest(".section-edit").hide();
 	});
 
 	$(".act-box, .activity-thread-reply").live('mouseover', function(){
@@ -341,6 +343,17 @@ $(function(){
 		trigger: 'hover',
 		delay: { show: 200, hide: 200 }
 	});
+
+
+	//Fake logic here, remove when integration
+	$(".act-list-by-type, act-list-by-user").live("click", function(){
+		$(".activity-list-hd").removeClass("none");
+	});
+
+	$(".activity-list-show-all").live("click", function(){
+		$(".activity-list-hd").addClass("none");
+	});
+
 });
 
 
