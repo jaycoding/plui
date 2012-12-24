@@ -226,6 +226,7 @@ $(function(){
 		$(this).parent().parent().next('.activity-add').slideDown(300, function(){
 			$(this).removeClass("none");
 		});
+		$(this).addClass("none");
 	});
 
 
@@ -288,12 +289,12 @@ $(function(){
 	});
 
 	$(".section-edit-tag .edit").live("click", function(){
-		$(this).hide().closest(".section-edit").find(".edit-panel").removeClass("none");
+		$(this).hide().closest(".section-edit").removeClass("no-shadow").find(".edit-panel").removeClass("none");
 		$(this).closest(".section-edit").find(".save").show();
 	});
 
 	$(".section-edit-tag .save").live("click", function(){
-		$(this).hide().closest(".section-edit").find(".edit-panel").addClass("none");
+		$(this).hide().closest(".section-edit").addClass("no-shadow").find(".edit-panel").addClass("none");
 		$(this).closest(".section-edit").find(".edit").show();
 	});
 
@@ -346,7 +347,7 @@ $(function(){
 
 
 	//Fake logic here, remove when integration
-	$(".act-list-by-type, act-list-by-user").live("click", function(){
+	$(".act-list-by-type, .act-list-by-user, .act-list-by-tag").live("click", function(){
 		$(".activity-list-hd").removeClass("none");
 	});
 
