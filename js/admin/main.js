@@ -231,7 +231,7 @@ $(function(){
 
 
 	$(".btn-edit-reply").live('click', function(){
-		$(this).parents(".activity-thread").find('.section-edit-reply').slideDown(300, function(){
+		$(this).parents(".activity-thread").find('.section-edit-reply').first().slideDown(300, function(){
 			$(this).removeClass("none");
 		});
 		return false;
@@ -297,6 +297,25 @@ $(function(){
 		$(this).hide().closest(".section-edit").addClass("no-shadow").find(".edit-panel").addClass("none");
 		$(this).closest(".section-edit").find(".edit").show();
 	});
+
+	$(".section-edit-assignment .edit").live("click", function(){
+		$(this).hide().closest(".section-edit").find(".edit-panel").removeClass("none");
+		$(this).closest(".section-edit").find(".save").show();
+		$(this).closest(".section-edit").find(".remove-all").show();
+	});
+
+	$(".section-edit-assignment .save").live("click", function(){
+		$(this).hide().closest(".section-edit").find(".edit-panel").addClass("none");
+		$(this).closest(".section-edit").find(".edit").removeAttr("style");
+		$(this).closest(".section-edit").find(".remove-all").hide();
+	});
+
+	$(".section-edit-assignment .remove-all").live("click", function(){
+		$(this).closest(".row-fluid").next(".row-fluid").find(".user-stripe").remove();
+	});
+
+
+	
 
 	$(".btn-change-vote").live("click", function(){
 		

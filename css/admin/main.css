@@ -7168,3 +7168,37 @@ nav .clogo img {
   margin-left: 20px;
   padding-top: 6px;
 }
+.user-stripe {
+  float: left;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  padding: 1px 5px;
+  background: #DEE7FB;
+  border: 1px solid #CFDCF9;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+.user-stripe span {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  float: left;
+}
+.user-stripe i.close {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 3px;
+  border-left: 1px dotted #999;
+}
