@@ -6912,13 +6912,40 @@ nav .clogo img {
   border-top: 1px dotted #ccc;
 }
 .act-tag {
-  padding: 3px 5px 3px 23px;
+  float: left;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  padding: 1px 5px 1px 23px;
   background: #f6f6f6 url(../../img/admin/icon-act-tag-s.png) 3px center no-repeat;
   color: #666;
   margin-right: 6px;
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 12px;
+}
+.act-tag span {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  float: left;
+}
+.act-tag i.close {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 3px;
+  border-left: 1px dotted #999;
 }
 .act-tag:hover {
   text-decoration: none;
@@ -7201,4 +7228,21 @@ nav .clogo img {
   margin-left: 5px;
   padding-left: 3px;
   border-left: 1px dotted #999;
+}
+.section-edit .edit-panel {
+  display: none;
+}
+.section-edit .act-tag .close {
+  display: none;
+}
+.section-edit.editing .edit-panel {
+  display: block;
+}
+.section-edit.editing .act-tag .close {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
 }
