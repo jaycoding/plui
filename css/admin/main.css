@@ -5638,6 +5638,19 @@ i.icon-magnifier {
   display: inline-block;
   background: url(../../img/icons/icon-magnifier.png) 0 0 no-repeat;
 }
+i.icon-right-m {
+  width: 32px;
+  height: 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  background: url(../../img/icons/icon-right-m.png) 0 0 no-repeat;
+}
 .fileinput-button {
   position: relative;
   overflow: hidden;
@@ -6058,6 +6071,57 @@ i.icon-magnifier {
 }
 .modal-normal .modal-body {
   height: 300px;
+}
+.modal-large .modal-body {
+  height: 400px;
+}
+.user-search-box {
+  border: 1px solid #ccc;
+}
+.user-search-box .hd {
+  border-bottom: 1px solid #ccc;
+  background: #f3f3f3;
+  padding: 10px;
+}
+.user-search-box .bd {
+  padding: 10px;
+}
+.user-search-box .filter-by-alphabet {
+  border: 1px solid #ddd;
+  border-right: 0;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.user-search-box .filter-by-alphabet li {
+  color: #06f;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 11px;
+}
+.user-search-box .btn-search-user {
+  width: 20px;
+  height: 20px;
+  width: 20px;
+  height: 20px;
+  background: transparent url(../../img/icons/icon-search.png) 0 0 no-repeat;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  margin: 0 4px;
+}
+.user-select-center {
+  padding-top: 130px;
+}
+.user-select-right {
+  padding-top: 110px;
+}
+.box-user-selected {
+  border: 1px solid #ddd;
+  padding: 10px;
 }
 /*===================================
  Global
