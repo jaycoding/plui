@@ -2705,6 +2705,8 @@
 									this.hide();
 								}
 							}
+              //Hide when click
+              this.hide();
 						}
 						break;
 				}
