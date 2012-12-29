@@ -292,27 +292,44 @@
 
 
 .modal-normal {
+  .modal-header {
+    padding: 0 15px;
+    h4 {
+      margin: 5px 0;
+    }
+  }
   .modal-body {
-    height: 300px;
+    height: 328px;
+    max-height: 328px;
   }
 }
 
 .modal-large {
+  .modal-header {
+    padding: 0 15px;
+    h4 {
+      margin: 5px 0;
+    }
+  }
   .modal-body {
-    height: 400px;
+    height: 428px;
+    max-height: 428px;
   }
 }
 
+.add-user-multi,
+.add-user-single {
 
   .user-search-box {
     border: 1px solid #ccc;
     .hd {
       border-bottom: 1px solid #ccc;
-      background: #f3f3f3;
-      padding: 10px;
+      background: #eee;
+      padding: 5px 10px;
     }
     .bd {
       padding: 10px;
+
     }
 
     .filter-by-alphabet {
@@ -342,7 +359,7 @@
     padding-top: 130px;
   }
   .user-select-right {
-    padding-top: 110px;
+    padding-top: 0px;
   }
 
   .box-user-selected {
@@ -350,3 +367,23 @@
     padding: 10px;
   }
 
+}
+
+.add-user-single {
+  .user-search-box {
+    .bd {
+      max-height: 180px;
+      overflow: auto;
+    }
+  }
+}
+
+
+.add-user-multi {
+  .user-search-box {
+    .bd {
+      max-height: 280px;
+      overflow: auto;
+    }
+  }
+}

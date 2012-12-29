@@ -6069,37 +6069,57 @@ i.icon-right-m {
   height: 26px;
   background: url(../../img/icons/icon-search-3.png) 0 2px no-repeat;
 }
+.modal-normal .modal-header {
+  padding: 0 15px;
+}
+.modal-normal .modal-header h4 {
+  margin: 5px 0;
+}
 .modal-normal .modal-body {
-  height: 300px;
+  height: 328px;
+  max-height: 328px;
+}
+.modal-large .modal-header {
+  padding: 0 15px;
+}
+.modal-large .modal-header h4 {
+  margin: 5px 0;
 }
 .modal-large .modal-body {
-  height: 400px;
+  height: 428px;
+  max-height: 428px;
 }
-.user-search-box {
+.add-user-multi .user-search-box,
+.add-user-single .user-search-box {
   border: 1px solid #ccc;
 }
-.user-search-box .hd {
+.add-user-multi .user-search-box .hd,
+.add-user-single .user-search-box .hd {
   border-bottom: 1px solid #ccc;
-  background: #f3f3f3;
+  background: #eee;
+  padding: 5px 10px;
+}
+.add-user-multi .user-search-box .bd,
+.add-user-single .user-search-box .bd {
   padding: 10px;
 }
-.user-search-box .bd {
-  padding: 10px;
-}
-.user-search-box .filter-by-alphabet {
+.add-user-multi .user-search-box .filter-by-alphabet,
+.add-user-single .user-search-box .filter-by-alphabet {
   border: 1px solid #ddd;
   border-right: 0;
   padding: 5px;
   text-align: center;
   border-radius: 5px;
 }
-.user-search-box .filter-by-alphabet li {
+.add-user-multi .user-search-box .filter-by-alphabet li,
+.add-user-single .user-search-box .filter-by-alphabet li {
   color: #06f;
   font-weight: 700;
   cursor: pointer;
   font-size: 11px;
 }
-.user-search-box .btn-search-user {
+.add-user-multi .user-search-box .btn-search-user,
+.add-user-single .user-search-box .btn-search-user {
   width: 20px;
   height: 20px;
   width: 20px;
@@ -6113,15 +6133,26 @@ i.icon-right-m {
   display: inline-block;
   margin: 0 4px;
 }
-.user-select-center {
+.add-user-multi .user-select-center,
+.add-user-single .user-select-center {
   padding-top: 130px;
 }
-.user-select-right {
-  padding-top: 110px;
+.add-user-multi .user-select-right,
+.add-user-single .user-select-right {
+  padding-top: 0px;
 }
-.box-user-selected {
+.add-user-multi .box-user-selected,
+.add-user-single .box-user-selected {
   border: 1px solid #ddd;
   padding: 10px;
+}
+.add-user-single .user-search-box .bd {
+  max-height: 180px;
+  overflow: auto;
+}
+.add-user-multi .user-search-box .bd {
+  max-height: 280px;
+  overflow: auto;
 }
 /*===================================
  Global
