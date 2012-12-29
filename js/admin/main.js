@@ -379,6 +379,19 @@ $(function(){
 		$(".activity-list-hd").addClass("none");
 	});
 
+	$(".search-box-input .dropdown-menu a").live('click', function(){
+		var $me = $(this),
+			$input = $(this).closest(".dropdown-menu").siblings("input").first(),
+			$hiddenSelect = $(this).closest(".search-box").find("select").first();
+
+		$input.val("").attr("placeholder", $me.data("placeholder"));
+		$hiddenSelect.find("option").filter(function(){
+			return $(this).attr("value") == $me.data("value");
+		})
+		.attr("selected", "selected")
+		.siblings().removeAttr("selected");
+	});
+
 });
 
 

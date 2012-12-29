@@ -120,7 +120,27 @@
 		    
 		    <div id="body">
 		    	<div class="search-box">
-		    		<input type="text" placeholder="Order #, job #, or reference" /> <a href="javascript:void(0);" class="btn-search"></a>
+		    		<select name="" id="" class="none">
+		    			<option value="job_no">Job No</option>
+		    			<option value="reference">Reference</option>
+		    			<option value="project_name">Project name</option>
+		    			<option value="conversation_tag">Conversation tag</option>
+		    			<option value="company_name">Company name</option>
+		    			<option value="user_name">User name</option>
+		    		</select>
+		    		<div class="search-box-input">
+		    			<input type="text" placeholder="Order #, job #, or reference" />
+		    			<span class="dropdown-toggle" role="button" data-toggle="dropdown"><b class="caret"></b></span>
+		    			<ul class="dropdown-menu" role="menu">
+		                  <li><a href="#" data-value="job_no" data-placeholder="Job No">Job No</a></li>
+		                  <li><a href="#" data-value="reference" data-placeholder="Reference">Reference</a></li>
+		                  <li><a href="#" data-value="project_name" data-placeholder="Project name">Project name</a></li>
+		                  <li><a href="#" data-value="conversation_tag" data-placeholder="Conversation tag">Conversation tag</a></li>
+		                  <li><a href="#" data-value="company_name" data-placeholder="Company name">Company name</a></li>
+		                  <li><a href="#" data-value="user_name" data-placeholder="User name">User name</a></li>
+		                </ul>
+		    		</div>
+		    		<a href="javascript:void(0);" class="btn-search"></a>
 		    	</div>
 		    	
 		    	<div class="order-details clear cf">
