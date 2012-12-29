@@ -305,27 +305,37 @@
 
 .modal-normal {
   .modal-header {
-    padding: 0 15px;
+    padding: 0;
     h4 {
       margin: 5px 0;
     }
   }
   .modal-body {
-    height: 328px;
-    max-height: 328px;
+    height: 348px;
+    max-height: 348px;
+    overflow: inherit;
+    padding: 10px 0;
+  }
+  .modal-footer {
+    padding: 10px 0;
   }
 }
 
 .modal-large {
   .modal-header {
-    padding: 0 15px;
+    padding: 0;
     h4 {
       margin: 5px 0;
     }
   }
   .modal-body {
-    height: 428px;
-    max-height: 428px;
+    height: 500px;
+    max-height: 500px;
+    overflow: inherit;
+    padding: 10px 0;
+  }
+  .modal-footer {
+    padding: 10px 0;
   }
 }
 
@@ -341,7 +351,6 @@
     }
     .bd {
       padding: 10px;
-
     }
 
     .filter-by-alphabet {
@@ -354,7 +363,8 @@
         color: #06f;
         font-weight: 700;
         cursor: pointer;
-        font-size: 11px;
+        font-size: 10px;
+        line-height: 1.1;
       }
     }
 
@@ -381,21 +391,24 @@
 
 }
 
-.add-user-single {
+.add-user-multi {
   .user-search-box {
-    .bd {
-      max-height: 180px;
+    .user-search-result {
+      max-height: 320px;
       overflow: auto;
     }
   }
 }
 
-
-.add-user-multi {
+.add-user-single {
   .user-search-box {
     .bd {
-      max-height: 280px;
+      padding: 0px;
+    }
+    .user-search-result {
+      max-height: 220px;
       overflow: auto;
+      padding: 10px;
     }
   }
 }

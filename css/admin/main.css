@@ -6087,24 +6087,34 @@ i.icon-right-m {
   background: url(../../img/icons/icon-search-3.png) 0 2px no-repeat;
 }
 .modal-normal .modal-header {
-  padding: 0 15px;
+  padding: 0;
 }
 .modal-normal .modal-header h4 {
   margin: 5px 0;
 }
 .modal-normal .modal-body {
-  height: 328px;
-  max-height: 328px;
+  height: 348px;
+  max-height: 348px;
+  overflow: inherit;
+  padding: 10px 0;
+}
+.modal-normal .modal-footer {
+  padding: 10px 0;
 }
 .modal-large .modal-header {
-  padding: 0 15px;
+  padding: 0;
 }
 .modal-large .modal-header h4 {
   margin: 5px 0;
 }
 .modal-large .modal-body {
-  height: 428px;
-  max-height: 428px;
+  height: 500px;
+  max-height: 500px;
+  overflow: inherit;
+  padding: 10px 0;
+}
+.modal-large .modal-footer {
+  padding: 10px 0;
 }
 .add-user-multi .user-search-box,
 .add-user-single .user-search-box {
@@ -6133,7 +6143,8 @@ i.icon-right-m {
   color: #06f;
   font-weight: 700;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 10px;
+  line-height: 1.1;
 }
 .add-user-multi .user-search-box .btn-search-user,
 .add-user-single .user-search-box .btn-search-user {
@@ -6163,13 +6174,17 @@ i.icon-right-m {
   border: 1px solid #ddd;
   padding: 10px;
 }
-.add-user-single .user-search-box .bd {
-  max-height: 180px;
+.add-user-multi .user-search-box .user-search-result {
+  max-height: 320px;
   overflow: auto;
 }
-.add-user-multi .user-search-box .bd {
-  max-height: 280px;
+.add-user-single .user-search-box .bd {
+  padding: 0px;
+}
+.add-user-single .user-search-box .user-search-result {
+  max-height: 220px;
   overflow: auto;
+  padding: 10px;
 }
 /*===================================
  Global
