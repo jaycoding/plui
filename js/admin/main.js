@@ -392,6 +392,23 @@ $(function(){
 		.siblings().removeAttr("selected");
 	});
 
+	$('.dropdown-menu-group li').live("click", function(){
+		var $me = $(this),
+			$group = $me.closest(".dropdown-menu-group");
+
+		if ($group.hasClass("group-radio")) {
+			console.log(0);
+			$me.addClass("selected").siblings().removeClass("selected");
+		} else if ($group.hasClass("group-checkbox")) {
+			if ($me.hasClass("selected")) {
+				$me.removeClass("selected");
+			} else {
+				$me.addClass("selected");
+			}
+		}
+
+	});
+
 });
 
 
