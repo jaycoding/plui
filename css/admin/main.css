@@ -6087,31 +6087,31 @@ i.icon-right-m {
   background: url(../../img/icons/icon-search-3.png) 0 2px no-repeat;
 }
 .modal-normal .modal-header {
-  padding: 0;
+  padding: 10px;
 }
 .modal-normal .modal-header h4 {
   margin: 5px 0;
 }
 .modal-normal .modal-body {
-  height: 348px;
-  max-height: 348px;
+  height: 328px;
+  max-height: 328px;
   overflow: inherit;
-  padding: 10px 0;
+  padding: 10px;
 }
 .modal-normal .modal-footer {
   padding: 10px 0;
 }
 .modal-large .modal-header {
-  padding: 0;
+  padding: 10px;
 }
 .modal-large .modal-header h4 {
   margin: 5px 0;
 }
 .modal-large .modal-body {
-  height: 500px;
-  max-height: 500px;
+  height: 430px;
+  max-height: 430px;
   overflow: inherit;
-  padding: 10px 0;
+  padding: 10px;
 }
 .modal-large .modal-footer {
   padding: 10px 0;
@@ -6175,14 +6175,14 @@ i.icon-right-m {
   padding: 10px;
 }
 .add-user-multi .user-search-box .user-search-result {
-  max-height: 320px;
+  max-height: 240px;
   overflow: auto;
 }
 .add-user-single .user-search-box .bd {
   padding: 0px;
 }
 .add-user-single .user-search-box .user-search-result {
-  max-height: 220px;
+  max-height: 180px;
   overflow: auto;
   padding: 10px;
 }
@@ -6317,6 +6317,7 @@ nav .clogo img {
   padding: 20px 10px;
   color: #666;
   text-align: right;
+  margin-bottom: 150px;
 }
 .item-grid-2 {
   clear: both;
