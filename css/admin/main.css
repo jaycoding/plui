@@ -7366,6 +7366,9 @@ nav .clogo img {
 .section-edit .act-tag .close {
   display: none;
 }
+.section-edit.editing {
+  background: #eee;
+}
 .section-edit.editing .edit-panel {
   display: block;
 }
