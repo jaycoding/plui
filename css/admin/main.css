@@ -1486,6 +1486,9 @@ legend + .control-group {
 .form-horizontal .control-group:after {
   clear: both;
 }
+.form-horizontal .control-group.tight {
+  margin-bottom: 10px;
+}
 .form-horizontal .control-label {
   float: left;
   width: 140px;
