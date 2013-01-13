@@ -7385,3 +7385,28 @@ nav .clogo img {
   background-position: 5px center;
   background-repeat: no-repeat;
 }
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          mockup-edit.less
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+.list-hd {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.list-bd > .row-fluid .btn-group {
+  display: none;
+}
+.list-bd > .row-fluid:hover .btn-group {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.filter-alphabet li {
+  float: left;
+  margin-right: 10px;
+}
