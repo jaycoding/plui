@@ -97,6 +97,8 @@ $(function(){
 	$('.push-notice').scrollToFixed();
 	
 	$('.alerts').scrollToFixed();
+
+	$('.list-time-filter').scrollToFixed();
 	
 	
 	$(".filter-group .filter-item").live("click", function(){
@@ -132,6 +134,12 @@ $(function(){
 		trigger: 'click',
 		delay: { show: 200, hide: 100 }
 	});
+
+	$(".bp-popover").popover({
+		html: true,
+		trigger: 'click',
+		delay: { show: 200, hide: 100 }
+	});
 	
 	$(".push-notice-person").clickover({
 		html: true,
@@ -139,6 +147,65 @@ $(function(){
 		placement: 'left',
 		delay: { show: 200, hide: 10000 }
 	});
+
+	$(".popover-user").clickover({ width: 300, height: "auto" });
+
+	$('.popover-user').popover({
+		placement: 'right',
+		offset: 15,
+		trigger: 'manual',
+		delay: { show: 350, hide: 100 },
+		html: true,
+	});
+
+	$('.popover-bp').popover({
+		placement: 'right',
+		offset: 15,
+		trigger: 'manual',
+		delay: { show: 350, hide: 100 },
+		html: true,
+	});
+
+	var timer,
+	popover_parent;
+	function hidePopover(elem) {
+		$(elem).popover('hide');
+	}
+	$('.popover-user').hover(
+		function() {
+			var self = this;
+			clearTimeout(timer);
+          $('.popover').hide(); //Hide any open popovers on other elements.
+          popover_parent = self
+          $(self).popover('show');            
+      }, 
+      function() {
+      	var self = this;
+      	timer = setTimeout(function(){hidePopover(self)},300);                 
+      });
+	$('.popover-bp').hover(
+		function() {
+			var self = this;
+			clearTimeout(timer);
+          $('.popover').hide(); //Hide any open popovers on other elements.
+          popover_parent = self
+          $(self).popover('show');            
+      }, 
+      function() {
+      	var self = this;
+      	timer = setTimeout(function(){hidePopover(self)},300);                 
+      });
+	$(document).on({
+		mouseenter: function() {
+			clearTimeout(timer);
+		},
+		mouseleave: function() {
+			var self = this;
+			timer = setTimeout(function(){hidePopover(popover_parent)},300); 
+		}
+	}, '.popover');
+
+
 	
 	
 	//Remove attachment

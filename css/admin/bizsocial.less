@@ -34,6 +34,7 @@
 }
 
 .bizsocial-list {
+  position: relative;
   > .row-fluid {
     color: #666;
     padding: 5px 5px 0 5px;
@@ -45,11 +46,37 @@
       color: #333;
       a {
         color: #333;
+        &:hover {
+          color: #005580;
+        }
       }
     }
   }
   a {
     color: #666;
+    &:hover {
+      color: #005580;
+    }
+  }
+
+  .list-time-filter {
+    padding-top: 100px;
+    ul > li a{
+      display: block;
+      padding: 10px 0 10px 12px;
+      &:hover {
+        color: #333;
+        text-decoration: none;
+        background: url(../../img/admin/list-filter-bar.png) 0 -60px no-repeat;
+      }
+      &.active {
+        background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+      }
+    }
+    position: absolute;
+    width: 100px;
+    right: -130px;
+    top: 0px;
   }
 
 }

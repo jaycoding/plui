@@ -6189,6 +6189,12 @@ i.icon-right-m {
   overflow: auto;
   padding: 10px;
 }
+.popover.right {
+  width: 300px;
+}
+.popover-title {
+  display: none;
+}
 /*===================================
  Global
  ==================================*/
@@ -7410,6 +7416,9 @@ nav .clogo img {
   float: left;
   margin-right: 10px;
 }
+.bizsocial-list {
+  position: relative;
+}
 .bizsocial-list > .row-fluid {
   color: #666;
   padding: 5px 5px 0 5px;
@@ -7424,6 +7433,31 @@ nav .clogo img {
 .bizsocial-list > .row-fluid.unread a {
   color: #333;
 }
+.bizsocial-list > .row-fluid.unread a:hover {
+  color: #005580;
+}
 .bizsocial-list a {
   color: #666;
+}
+.bizsocial-list a:hover {
+  color: #005580;
+}
+.bizsocial-list .list-time-filter {
+  padding-top: 100px;
+  position: absolute;
+  width: 100px;
+  right: -130px;
+  top: 0px;
+}
+.bizsocial-list .list-time-filter ul > li a {
+  display: block;
+  padding: 10px 0 10px 12px;
+}
+.bizsocial-list .list-time-filter ul > li a:hover {
+  color: #333;
+  text-decoration: none;
+  background: url(../../img/admin/list-filter-bar.png) 0 -60px no-repeat;
+}
+.bizsocial-list .list-time-filter ul > li a.active {
+  background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
 }
