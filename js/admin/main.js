@@ -141,20 +141,23 @@ $(function(){
 		delay: { show: 200, hide: 100 }
 	});
 	
-	$(".push-notice-person").clickover({
-		html: true,
-		trigger: 'hover',
-		placement: 'left',
-		delay: { show: 200, hide: 10000 }
-	});
+	// $(".push-notice-person").clickover({
+	// 	html: true,
+	// 	trigger: 'hover',
+	// 	placement: 'left',
+	// 	delay: { show: 200, hide: 10000 }
+	// });
 
-	$(".popover-user").clickover({ width: 300, height: "auto" });
+
+
+
+	//$(".popover-user").clickover({ width: 300, height: "auto" });
 
 	$('.popover-user').popover({
 		placement: 'right',
 		offset: 15,
 		trigger: 'manual',
-		delay: { show: 350, hide: 100 },
+		delay: { show: 350, hide: 200 },
 		html: true,
 	});
 
@@ -162,7 +165,15 @@ $(function(){
 		placement: 'right',
 		offset: 15,
 		trigger: 'manual',
-		delay: { show: 350, hide: 100 },
+		delay: { show: 350, hide: 200 },
+		html: true,
+	});
+
+	$('.push-notice-person').popover({
+		placement: 'left',
+		offset: 15,
+		trigger: 'manual',
+		delay: { show: 350, hide: 200 },
 		html: true,
 	});
 
@@ -181,7 +192,7 @@ $(function(){
       }, 
       function() {
       	var self = this;
-      	timer = setTimeout(function(){hidePopover(self)},300);                 
+      	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
 	$('.popover-bp').hover(
 		function() {
@@ -193,7 +204,19 @@ $(function(){
       }, 
       function() {
       	var self = this;
-      	timer = setTimeout(function(){hidePopover(self)},300);                 
+      	timer = setTimeout(function(){hidePopover(self)},500);                 
+      });
+	$('.push-notice-person').hover(
+		function() {
+			var self = this;
+			clearTimeout(timer);
+          $('.popover').hide(); //Hide any open popovers on other elements.
+          popover_parent = self
+          $(self).popover('show');            
+      }, 
+      function() {
+      	var self = this;
+      	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
 	$(document).on({
 		mouseenter: function() {
