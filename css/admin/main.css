@@ -7449,14 +7449,18 @@ nav .clogo img {
   right: -130px;
   top: 0px;
 }
+.bizsocial-list .list-time-filter ul > li {
+  margin-bottom: 6px;
+}
 .bizsocial-list .list-time-filter ul > li a {
   display: block;
   padding: 10px 0 10px 12px;
+  background: url(../../img/admin/list-filter-bar.png) 0 bottom no-repeat;
 }
 .bizsocial-list .list-time-filter ul > li a:hover {
   color: #333;
   text-decoration: none;
-  background: url(../../img/admin/list-filter-bar.png) 0 -60px no-repeat;
+  background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
 }
 .bizsocial-list .list-time-filter ul > li a.active {
   background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
