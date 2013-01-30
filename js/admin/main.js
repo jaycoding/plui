@@ -499,6 +499,12 @@ $(function(){
 
 	});
 
+
+	$(".fancybox-mockup-edit").fancybox({
+		width: 940,
+		minHeight: "98%"
+	});
+
 });
 
 
