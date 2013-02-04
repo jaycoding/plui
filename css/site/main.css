@@ -5491,6 +5491,9 @@ hr.dashed {
   margin: 10px 0;
   border-bottom: 1px dashed #ccc;
 }
+.word-break {
+  word-break: break-all;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -6109,6 +6112,7 @@ i.icon-right-m {
 .upload-thumbnails .upload-thumbnail {
   border: 1px dotted #ccc;
   position: relative;
+  word-break: break-all;
 }
 .upload-thumbnails .upload-thumbnail > .icon-remove {
   cursor: pointer;
