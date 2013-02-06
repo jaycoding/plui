@@ -146,6 +146,30 @@ $(function(){
         trigger: 'hover',
         delay: { show: 200, hide: 200 }
     });
+
+    $(".section-thread .btn-edit-thread").live("click", function(){
+        var $thread = $(this).closest(".section-thread"),
+            $threadEdit = $thread.next(".section-thread-edit");
+
+        $thread.addClass("none");
+        $threadEdit.removeClass("none");
+    });
+
+    $(".section-thread-edit .btn-save").live("click", function(){
+        var $threadEdit = $(this).closest(".section-thread-edit"),
+            $thread = $threadEdit.prev(".section-thread");
+
+        $thread.removeClass("none");
+        $threadEdit.addClass("none");
+    });
+
+    $(".section-thread-edit .btn-cancel").live("click", function(){
+        var $threadEdit = $(this).closest(".section-thread-edit"),
+            $thread = $threadEdit.prev(".section-thread");
+
+        $thread.removeClass("none");
+        $threadEdit.addClass("none");
+    });
     
 });
 
