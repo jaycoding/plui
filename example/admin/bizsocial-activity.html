@@ -21,6 +21,18 @@
 		<!--[if lt IE 9]>
 		<script src="../../js/utils/html5/3.0/html5.js"></script>
 		<![endif]-->
+
+		<script type="text/javascript">
+		$(function(){
+			$('.btn-email-preview').fancybox({
+				width: 800,
+				height: "98%",
+				minHeight: "98%",
+				href:"popup-email-activity.html"
+			});
+		});
+			
+		</script>
 	</head>
 	<body>
 		<div id="wrapper"> 
@@ -336,9 +348,9 @@
 
 											<div class="row-fluid">
 												<div class="span12 tright">
-													<button class="btn btn-small btn-email-preview"><i class="icon-eye-open"></i> Preview Email</button>
+													<button class="btn btn-small btn-email-preview fancybox fancybox-large fancybox.iframe"><i class="icon-eye-open"></i> Preview Email</button>
 													<button class="btn btn-small btn-email-send"><i class="icon-envelope"></i> Send</button>
-													<button class="btn btn-small btn-email-cancel">Cancel</button>
+													<button class="btn btn-small btn-email-cancel btn-close-section">Cancel</button>
 												</div>
 											</div>
 										</div>
