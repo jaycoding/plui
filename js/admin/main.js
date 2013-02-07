@@ -67,19 +67,6 @@ $(function(){
 		}
 	});
 	
-	$('.data-section.section-job').bind("mouseover", function(){
-		var $section = $(this);
-		
-		if (!$section.find('.row-expandable').hasClass('expanded')) {
-			$('.data-section.section-job').find(".btn-expand").removeClass("btn-collapse");
-			$('.data-section.section-job').find('.row-expandable').removeClass("expanded").slideUp(300);
-			$section.find(".btn-expand").addClass("btn-collapse");
-			$section.find('.row-expandable').addClass("expanded").slideDown(300);
-		} else {
-			
-		}
-	});
-	
 	
 	$('.btn-expand-all').bind("click", function(){
 		$(".data-section").find('.row-expandable').addClass("expanded").slideDown(300);
