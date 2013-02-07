@@ -5490,6 +5490,9 @@ hr.dashed {
   margin: 10px 0;
   border-bottom: 1px dashed #ccc;
 }
+.word-break {
+  word-break: break-all;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -7345,6 +7348,7 @@ nav .clogo img {
   border: 1px solid #CFDCF9;
   border-radius: 8px;
   margin-right: 5px;
+  margin-bottom: 5px;
 }
 .user-stripe span {
   display: inline-block;
