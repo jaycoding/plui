@@ -6507,6 +6507,12 @@ nav .clogo img {
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
+.section-order .btn-group {
+  display: none;
+}
+.section-order:hover .btn-group {
+  display: block;
+}
 .section-order.status-closed {
   color: #999;
 }
