@@ -3,202 +3,156 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-		<!-- <link rel="stylesheet/less" type="text/css" href="../../css/admin/main.less" media="all">
-		<script type="text/javascript">less = {}; less.env = 'development';</script>
-		<script type="text/javascript" src="../../js/utils/less/1.3.0/less.min.js"></script> -->
-		<link rel="stylesheet" type="text/css" href="../../css/admin/main.css" media="all">
-		<link rel="stylesheet" type="text/css" href="../../js/utils/jquery.star-rating/3.14/jquery.rating.css" media="all">
-		<script type="text/javascript" src="../../js/lib/jquery/1.8.0/jquery.min.js"></script>
-		<script type="text/javascript" src="../../js/utils/bootstrap/2.1.0/bootstrap.js"></script>
-		<script type="text/javascript" src="../../js/utils/jquery.star-rating/3.14/jquery.rating.pack.js"></script>
+	<style type="text/css" media="screen">
+	a {
+		color: #0088cc;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #005580;
+		text-decoration: underline;
+	}
+	p {
+		margin: 0 0 8px 0;
+		line-height: 1.4;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 8px 0;
+		line-height: 1.4;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../../css/admin/main.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../../js/utils/jquery.star-rating/3.14/jquery.rating.css" media="all">
 
-		<!--[if lt IE 9]>
-		<script src="../../js/utils/html5/3.0/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
+</head>
+<body>
+	<div style="max-width: 750px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #333333; background-color: #ffffff; line-height: 1.4;">
+
+		
 		<div style="padding: 10px 0;"> 
-			<div class="row-fluid tcenter"><button class="btn">Send</button> <button class="btn">Cancel</button></div>
+			<div style="padding: 10px 0; text-align:center;"><button class="btn">Send</button> <button class="btn">Cancel</button></div>
 			<div>
-				<div class="activity-thread cf">
-					<div class="row-fluid spaced small">
-						<textarea name="" id="" rows="2" class="span12" placeholder="Write a message and send"></textarea>
+				<div>
+					<div style="padding: 10px;">
+						<textarea  style="width: 99%; height: 50px;" placeholder="Write a message and send"></textarea>
 					</div>
-					<div class="row-fluid">
-						<div class="span2 tcenter">
-							<img src="../../mock/image/user/user-2.jpg" width="68" height="68" alt="">
-						</div>
-						<div class="span10">
-							<div class="section-thread">
-								<div class="row-fluid">
-									<div class="span10">
+					<div style="padding: 10px 0;">
+						<table style="width: 100%;">
+							<tr>
+								<td style="text-align: center; width: 15%; vertical-align: top;"><img src="../../mock/image/user/user-2.jpg" width="68" height="68" alt=""></td>
+								<td style="width: 85%;">
+									<p>
 										<a href="#">Harrison Fu</a>
-										<span class="bold grey">You are invited to SunJoy New System</span>
-									</div>
-								</div>
-								<div class="row-fluid">
-									<div class="span12">
+										<span class="bold grey" style="font-weight: 900; color: #666;">You are invited to SunJoy New System</span>
+									</p>
+									<p>
 										Hi Stephanie ,<br>
 										We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
-									</div>
-								</div>
-							</div>
-
-							<div class="section-thread-edit none">
-								<div class="row-fluid">
-									<input type="text" value="You are invited to SunJoy New System" class="span12 bold" />
-								</div>
-								<div class="row-fluid">
-									<div class="span12">
-										<textarea rows="3" class="span12">Hi Stephanie,We have launched a new and improved website to meet your promotional needs. As a valued customer, we have  already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</textarea>
-									</div>
-								</div>
-								<div class="row-fluid tright">
-									<button class="btn btn-small btn-primary btn-save">Save</button> <button class="btn btn-small btn-cancel">Cancel</button>
-								</div>
-							</div>
-
-
-							<div class="section-expandable">
-
-								<div class="row-fluid spaced small activity-actions">
-									<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
-									<a href="#" class="grey-light btn-edit-assignment">Assignment</a>  ·  
-									<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
-									<a href="#" class="grey-light btn-edit-file">File</a>  ·  
-									<a href="#" class="grey-light btn-edit-email">Email</a>  ·  
-									<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
-									<span class="grey-light">August 19 at 1:30pm</span>
-								</div>
-
-
-								<div class="activity-thread-reply">
-									<div class="row-fluid">
-										<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
-										<div class="span11">
-											<div class="row-fluid">
-												<div class="span10"><a href="#">Emily Hu</a></div>
-												<div class="span2 tright"></div>
-											</div>
-											<div class="spaced small">Hi Harrison,<br>
-												We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</div>
-												<div><span class="grey-light">August 19 at 1:30pm</span></div>
-											</div>
-										</div>
-									</div>
-
-
-									<div class="activity-thread-reply">
-										<div class="row-fluid">
-											<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
-											<div class="span11">
-												<div class="row-fluid">
-													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">tagged the activity</span></div>
-													<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
-												</div>
-												<div class="spaced small">
-													<a href="#" class="act-tag act-list-by-tag">SO 10993</a> <a href="#" class="act-tag act-list-by-tag">SO 10993</a> 
-												</div>
-												<div><span class="grey-light">August 19 at 1:30pm</span></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="activity-thread-reply">
-										<div class="row-fluid">
-											<div class="span1"><img src="../../mock/image/user/user-3.jpg" width="36" height="36" alt=""></div>
-											<div class="span11">
-												<div class="row-fluid">
-													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">uploaded the file</span></div>
-													<div class="span2 tright"><a href="#" class="grey remove none">Remove</a></div>
-												</div>
-												<div class="spaced small">
-													<a href="#">
-														<img src="../../mock/image/250x250/p1.jpg" width="160" height="160" alt=""><br>
-														sample.jpg
-													</a>
-												</div>
-												<div class="spaced small">
-													<a href="#">
-														<img src="../../img/admin/activity-icon-file.png" alt=""><br>
-														readme.doc
-													</a>
-												</div>
-												<div><span class="grey-light">August 19 at 1:30pm</span></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="activity-thread-reply">
-										<div class="row-fluid">
-											<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
-											<div class="span11">
-												<div class="row-fluid">
-													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">sent emails</span></div>
-													<div class="span2 tright"><a href="#"></a></div>
-												</div>
-												<div class="spaced small">
+									</p>
+									<p>
+										<a href="#" style="color: #999;">Reply</a>  ·  
+										<a href="#" style="color: #999;">Assignment</a>  ·  
+										<a href="#" style="color: #999;">Tag</a>  ·  
+										<a href="#" style="color: #999;">File</a>  ·  
+										<a href="#" style="color: #999;">Email</a>  ·  
+										<a href="#" style="color: #999;">Review</a>  ·  
+										<span class="grey-light" style="color: #999;">August 19 at 1:30pm</span>
+									</p>
+									<p>
+										<table style="width: 100%;">
+											<tr>
+												<td style="width: 10%; vertical-align: top;"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></td>
+												<td style="width: 90%;">
+													<p><a href="#">Emily Hu</a></p>
+													<p class="spaced small">Hi Harrison,<br>
+														We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
+													</p>
+													<p><span style="color: #999;">August 19 at 1:30pm</span></p>
+												</td>
+											</tr>
+										</table>
+									</p>
+									<p>
+										<table style="width: 100%;">
+											<tr>
+												<td style="width: 10%; vertical-align: top;"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></td>
+												<td style="width: 90%;">
+													<p><a href="#">Emily Hu</a> <span style="color: #999;">tagged the activity</span></p>
+													<p class="spaced small"><a href="#" class="act-tag act-list-by-tag">SO 10993</a> <a href="#" class="act-tag act-list-by-tag">SO 10993</a></p>
+													<p><span style="color: #999;">August 19 at 1:30pm</span></p>
+												</td>
+											</tr>
+										</table>
+									</p>
+									<p>
+										<table style="width: 100%;">
+											<tr>
+												<td style="width: 10%; vertical-align: top;"><img src="../../mock/image/user/user-3.jpg" width="36" height="36" alt=""></td>
+												<td style="width: 90%;">
+													<p><a href="#">Emily Hu</a> <span style="color: #999;">uploaded the file</span></p>
+													<p>
+														<a href="#">
+															<img src="../../mock/image/250x250/p1.jpg" width="160" height="160" alt=""><br>
+															sample.jpg
+														</a>
+													</p>
+													<p>
+														<a href="#">
+															<img src="../../img/admin/activity-icon-file.png" alt=""><br>
+															readme.doc
+														</a>
+													</p>
+													<p><span style="color: #999;">August 19 at 1:30pm</span></p>
+												</td>
+											</tr>
+										</table>
+									</p>
+									<p>
+										<table style="width: 100%;">
+											<tr>
+												<td style="width: 10%; vertical-align: top;"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></td>
+												<td style="width: 90%;">
+													<p><a href="#">Emily Hu</a> <span style="color: #999;">sent emails</span></p>
 													<p class="bold">You're invited to sunjoy new system.</p>
 													<p>sent to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
 													<p>copied to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
-												</div>
-												<div><span class="grey-light">August 19 at 1:30pm</span></div>
-											</div>
-										</div>
-									</div>
-
-									<div class="activity-thread-reply">
-										<div class="row-fluid">
-											<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
-											<div class="span11">
-												<div class="row-fluid">
-													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">reviewed this</span></div>
-													<div class="span2 tright"><a href="#" class="edit grey none">Change</a></div>
-												</div>
-												<div class="spaced small">
-													<div>Review comment Review comment Review comment Review comment </div>
-			    								<!-- <ul class="act-rating">
-			    									<li><span class="act-rating-stars-5"></span> <span>Excellent</span></li>
-			    								</ul> -->
-			    							</div>
-			    							<div><span class="grey-light">August 19 at 1:30pm</span></div>
-			    						</div>
-			    					</div>
-			    				</div>
-
-			    				<div class="act-box section-edit section-edit-reply spaced small">
-			    					<input type="" placeholder="Write a reply" class="span12">
-			    					<div class="row-fluid none">
-			    						<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
-			    						<div class="span11">
-			    							<div class="row-fluid">
-			    								<div class="span11">Replying to Harrison Fu</div>
-			    								<div class="span1 tright"><button type="button" class="close btn-close-section">×</button></div>
-			    							</div>
-			    							<div class="row-fluid">
-			    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
-			    							</div>
-			    							<div class="row-fluid">
-			    								<div class="span10"><a href="#">Add file</a></div>
-			    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
-			    							</div>
-			    						</div>
-			    					</div>
-			    				</div>
-
-			    			</div>
-
-			    		</div>
-			    	</div>
-
-			    	<div class="row-fluid spaced small">
-						<textarea name="" id="" rows="2" class="span12" placeholder="Write a message and send"></textarea>
+													<p><span style="color: #999;">August 19 at 1:30pm</span></p>
+												</td>
+											</tr>
+										</table>
+									</p>
+									<p>
+										<table style="width: 100%;">
+											<tr>
+												<td style="width: 10%; vertical-align: top;"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></td>
+												<td style="width: 90%;">
+													<p><a href="#">Emily Hu</a> <span style="color: #999;">reviewed this</span></p>
+													<p class="bold">Review comment Review comment Review comment Review commen</p>
+													<p><span style="color: #999;">August 19 at 1:30pm</span></p>
+												</td>
+											</tr>
+										</table>
+									</p>
+								</td>
+							</tr>
+						</table>
 					</div>
-			    </div>
+
+					<div style="padding: 10px;">
+						<textarea style="width: 99%; height: 50px;" placeholder="Write a message and send"></textarea>
+					</div>
+				</div>
 			</div>
 
-			<div class="row-fluid tcenter"><button class="btn">Send</button> <button class="btn">Cancel</button></div>
+			<div style="padding: 10px 0; text-align: center;"><button class="btn">Send</button> <button class="btn">Cancel</button></div>
 
 		</div>
-	</body>
-	</html>
+
+	</div>
+</body>
+</html>
