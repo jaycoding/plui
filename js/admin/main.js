@@ -523,6 +523,15 @@ $(function(){
 		$threadEdit.addClass("none");
 	});
 
+	$(".btn-add-activity").live("click", function(){
+		var $addActivity = $(this).closest(".data-section").find(".box-add-activity");
+		$addActivity.removeClass("none");
+	});
+
+	$(".box-add-activity .btn-cancel").live("click", function(){
+		$(this).closest(".box-add-activity").addClass("none");
+	});
+
 });
 
 
