@@ -145,7 +145,7 @@ $(function(){
 		offset: 15,
 		trigger: 'manual',
 		delay: { show: 350, hide: 200 },
-		html: true,
+		html: true
 	});
 
 	$('.popover-bp').popover({
@@ -153,7 +153,7 @@ $(function(){
 		offset: 15,
 		trigger: 'manual',
 		delay: { show: 350, hide: 200 },
-		html: true,
+		html: true
 	});
 
 	$('.push-notice-person').popover({
@@ -161,7 +161,11 @@ $(function(){
 		offset: 15,
 		trigger: 'manual',
 		delay: { show: 350, hide: 200 },
-		html: true,
+		html: true
+	});
+
+	$('.has-clickover').clickover({
+		html: true
 	});
 
 	var timer,

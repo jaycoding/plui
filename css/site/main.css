@@ -5465,6 +5465,9 @@ label.error {
 .input-tinyer {
   width: 24px;
 }
+.padding {
+  padding: 8px;
+}
 .input-readonly.input-editable {
   border: 1px solid transparent;
   background: none;
