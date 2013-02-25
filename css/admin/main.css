@@ -6577,6 +6577,30 @@ nav .clogo img {
 .btn-expand.btn-collapse:hover {
   background-position: -40px -40px;
 }
+.btn-add-item {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  width: 10px;
+  height: 10px;
+  margin: 5px 0 0 10px;
+  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
+}
+.btn-add-item:hover {
+  background-position: 0 -40px;
+}
+.btn-add-item.btn-collapse {
+  background-position: -40px 0;
+}
+.btn-add-item.btn-collapse:hover {
+  background-position: -40px -40px;
+}
 .row-expandable {
   display: none;
 }

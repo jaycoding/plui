@@ -223,6 +223,23 @@
   }
 }
 
+.btn-add-item {
+  .inline-block;
+  cursor: pointer;
+  .size(10px, 10px);
+  margin: 5px 0 0 10px;
+  background: url(../../img/icons/icon-expand-s.png) 0 0 no-repeat;
+  &:hover {
+    background-position: 0 -40px;
+  }
+  &.btn-collapse {
+    background-position: -40px 0;
+    &:hover {
+      background-position: -40px -40px;
+    }
+  }
+}
+
 
 .row-expandable {
   display: none;
