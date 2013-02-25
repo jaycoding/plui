@@ -6889,6 +6889,12 @@ nav .clogo img {
 .combobox-wrap.medium input {
   width: 179px;
 }
+.order-assignment-status table a {
+  color: #333;
+}
+.order-assignment-status table a:hover {
+  color: #005580;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          mockup-edit.less
