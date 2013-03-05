@@ -6899,6 +6899,10 @@ nav .clogo img {
 .order-assignment-status table a:hover {
   color: #005580;
 }
+.status-item {
+  padding: 8px 0;
+  height: 70px;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          mockup-edit.less
