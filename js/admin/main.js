@@ -164,9 +164,20 @@ $(function(){
 		html: true
 	});
 
-	$('.has-clickover').clickover({
+	$('.ajax-clickover').clickover({
 		html: true
 	});
+
+	$(".ajax-popover").click(function() {
+	    var el = $(this),
+	    	url = el.data("url");
+	    $.get(url, function(response) {
+	      el.popover({
+	        content: response,
+	        html: true
+	      }).popover('show');
+	    });
+	  });
 
 	var timer,
 	popover_parent;
