@@ -6207,6 +6207,10 @@ textarea.autosize {
   min-height: 80px!important;
   max-height: 500px!important;
 }
+.popover-content img {
+  max-width: 150px;
+  max-height: 60px;
+}
 /*===================================
  Global
  ==================================*/
@@ -6900,6 +6904,10 @@ nav .clogo img {
 }
 .order-assignment-status table a:hover {
   color: #005580;
+}
+.status-item {
+  padding: 8px 0;
+  height: 70px;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
