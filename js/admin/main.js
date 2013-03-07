@@ -169,7 +169,8 @@ $(function(){
 	});
 
 	var timer,
-	popover_parent;
+	popover_parent,
+	hoverTimeout;
 	function hidePopover(elem) {
 		$(elem).popover('hide');
 	}
@@ -177,38 +178,53 @@ $(function(){
 		function() {
 			var self = this;
 			clearTimeout(timer);
-          $('.popover').hide(); //Hide any open popovers on other elements.
-          popover_parent = self
-          $(self).popover('show');            
+			hoverTimeout = setTimeout(function(){
+				$('.popover').hide(); //Hide any open popovers on other elements.
+	          popover_parent = self
+	          $(self).popover('show');
+			}, 500);
       }, 
       function() {
       	var self = this;
       	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
+	$('.popover-user').mouseout(function(){
+		clearTimeout(hoverTimeout);
+	});
 	$('.popover-bp').hover(
 		function() {
 			var self = this;
 			clearTimeout(timer);
-          $('.popover').hide(); //Hide any open popovers on other elements.
-          popover_parent = self
-          $(self).popover('show');            
+          hoverTimeout = setTimeout(function(){
+				$('.popover').hide(); //Hide any open popovers on other elements.
+	          popover_parent = self
+	          $(self).popover('show');
+			}, 500);       
       }, 
       function() {
       	var self = this;
       	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
+	$('.popover-bp').mouseout(function(){
+		clearTimeout(hoverTimeout);
+	});
 	$('.push-notice-person').hover(
 		function() {
 			var self = this;
 			clearTimeout(timer);
-          $('.popover').hide(); //Hide any open popovers on other elements.
-          popover_parent = self
-          $(self).popover('show');            
+          hoverTimeout = setTimeout(function(){
+				$('.popover').hide(); //Hide any open popovers on other elements.
+	          popover_parent = self
+	          $(self).popover('show');
+			}, 500);       
       }, 
       function() {
       	var self = this;
       	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
+	$('.push-notice-person').mouseout(function(){
+		clearTimeout(hoverTimeout);
+	});
 	$(document).on({
 		mouseenter: function() {
 			clearTimeout(timer);
@@ -535,6 +551,9 @@ $(function(){
 	$(".box-add-activity .btn-cancel").live("click", function(){
 		$(this).closest(".box-add-activity").addClass("none");
 	});
+
+
+	$("textarea.autosize").autosize();
 
 });
 

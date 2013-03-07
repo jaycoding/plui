@@ -6182,6 +6182,8 @@ i.icon-right-m {
 .add-user-single .box-user-selected {
   border: 1px solid #ddd;
   padding: 10px;
+  max-height: 370px;
+  overflow: auto;
 }
 .add-user-multi .user-search-box .user-search-result {
   max-height: 240px;
@@ -6200,6 +6202,10 @@ i.icon-right-m {
 }
 .popover-title {
   display: none;
+}
+textarea.autosize {
+  min-height: 80px!important;
+  max-height: 500px!important;
 }
 /*===================================
  Global

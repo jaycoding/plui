@@ -387,6 +387,8 @@
   .box-user-selected {
     border: 1px solid #ddd;
     padding: 10px;
+    max-height: 370px;
+    overflow: auto;
   }
 
 }
@@ -426,3 +428,8 @@
 }
 
 .popover-title { display: none; }
+
+textarea.autosize {
+  min-height: 80px!important;
+  max-height: 500px!important;
+}
