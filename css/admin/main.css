@@ -7545,3 +7545,38 @@ nav .clogo img {
 .bizsocial-list .list-time-filter ul > li a.active {
   background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
 }
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          customer.less
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+.customer-list > .row-fluid {
+  color: #444;
+  padding: 5px 5px 0 5px;
+}
+.customer-list > .row-fluid:hover {
+  background: #eee;
+}
+.customer-list > .row-fluid.unread {
+  font-weight: 700;
+  color: #333;
+}
+.customer-list > .row-fluid.unread a {
+  color: #333;
+}
+.customer-list > .row-fluid.unread a:hover {
+  color: #005580;
+}
+.customer-list a {
+  color: #333;
+}
+.customer-list a:hover {
+  color: #005580;
+}
+.customer-list .on-hold {
+  color: #999;
+}
+.customer-list .on-hold a {
+  color: #999;
+}

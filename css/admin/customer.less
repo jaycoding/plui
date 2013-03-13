@@ -1,0 +1,42 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          customer.less
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.customer-list {
+  > .row-fluid {
+    color: #444;
+    padding: 5px 5px 0 5px;
+    &:hover {
+      background: #eee;
+    }
+    &.unread {
+      font-weight: 700;
+      color: #333;
+      a {
+        color: #333;
+        &:hover {
+          color: #005580;
+        }
+      }
+    }
+  }
+  a {
+    color: #333;
+    &:hover {
+      color: #005580;
+    }
+  }
+
+  .on-hold {
+    color: #999;
+    a {
+      color: #999;
+    }
+  }
+
+
+}
