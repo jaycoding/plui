@@ -5446,6 +5446,12 @@ label.error {
 .border-top-dashed {
   border-top: 1px dashed #ddd;
 }
+.border-bottom-dotted {
+  border-bottom: 1px dotted #ccc;
+}
+.border-top-dotted {
+  border-top: 1px dotted #ccc;
+}
 .border-bottom {
   border-bottom: 1px solid #ddd;
 }
@@ -6057,6 +6063,7 @@ i.icon-right-m {
   *zoom: 1;
   display: inline-block;
   float: left;
+  margin-bottom: 10px;
 }
 .search-box input {
   float: left;
@@ -6210,6 +6217,19 @@ textarea.autosize {
 .popover-content img {
   max-width: 150px;
   max-height: 60px;
+}
+.invoice-item {
+  padding: 8px 0;
+}
+.invoice-item ul {
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+.invoice-item ul li {
+  min-height: 1.5em;
+}
+.invoice-item .btn-add-item {
+  margin-left: 0;
 }
 /*===================================
  Global
@@ -6908,6 +6928,9 @@ nav .clogo img {
 .status-item {
   padding: 8px 0;
   height: 70px;
+}
+.status-item .btn-add-item {
+  margin-left: 0;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
