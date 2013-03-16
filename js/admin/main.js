@@ -135,6 +135,11 @@ $(function(){
 	// 	delay: { show: 200, hide: 10000 }
 	// });
 
+	$(".clickover.bottom").clickover({
+		html: true,
+		placement: 'bottom'
+	});
+
 
 
 
@@ -217,6 +222,23 @@ $(function(){
       	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
 	$('.popover-bp').mouseout(function(){
+		clearTimeout(hoverTimeout);
+	});
+	$('.popover-tags').hover(
+		function() {
+			var self = this;
+			clearTimeout(timer);
+          hoverTimeout = setTimeout(function(){
+				$('.popover').hide(); //Hide any open popovers on other elements.
+	          popover_parent = self
+	          $(self).popover('show');
+			}, 500);       
+      }, 
+      function() {
+      	var self = this;
+      	timer = setTimeout(function(){hidePopover(self)},500);                 
+      });
+	$('.popover-tags').mouseout(function(){
 		clearTimeout(hoverTimeout);
 	});
 	$('.push-notice-person').hover(
@@ -565,6 +587,24 @@ $(function(){
 
 
 	$("textarea.autosize").autosize();
+
+	$(".box-tags .btn-edit").live("click", function(){
+		var box = $(this).closest(".box-tags");
+
+		box.addClass("editing");
+	});
+
+	$(".box-tags .btn-save").live("click", function(){
+		var box = $(this).closest(".box-tags");
+
+		box.removeClass("editing");
+	});
+
+	$(".box-tags .btn-remove-tag").live("click", function(){
+		var tag = $(this).closest(".tag");
+
+		tag.remove();
+	});
 
 });
 

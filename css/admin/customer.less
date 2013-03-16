@@ -40,3 +40,91 @@
 
 
 }
+
+
+.tag {
+  float: left;
+  .inline-block;
+  padding: 1px 5px 1px 23px;
+  margin: 0 5px 5px 0;
+  background:#f6f6f6 url(../../img/admin/icon-act-tag-s.png) 3px center no-repeat;
+  color: #666;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+  span {
+    .inline-block;
+    float: left;
+  }
+  i.close {
+    display: none;
+    margin-left: 5px;
+    padding-left: 3px;
+    border-left: 1px dotted #999;
+  }
+  &:hover {
+    text-decoration: none;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    color: #f30;
+  }
+}
+
+.tag-user {
+  float: left;
+  .inline-block;
+  padding: 1px 5px;
+  background: #DEE7FB;
+  border: 1px solid #CFDCF9;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  span {
+    .inline-block;
+    float: left;
+  }
+  i.close {
+    .inline-block;
+    margin-left: 5px;
+    padding-left: 3px;
+    border-left: 1px dotted #999;
+  }
+}
+
+.editing {
+  .tag {
+    i.close {
+      .inline-block;
+    }
+  }
+  .tag-user {
+    i.close {
+      .inline-block;
+    }
+  }
+}
+
+.box-tags {
+  .panel-add-tag {
+    display: none;
+  }
+  .btn-save {
+    display: none;
+  }
+  .btn-edit {
+    .inline-block;
+  }
+
+  &.editing {
+    .panel-add-tag {
+      .inline-block;
+    }
+    .btn-save {
+      .inline-block;
+    }
+    .btn-edit {
+      display: none;
+    }
+  }
+}
