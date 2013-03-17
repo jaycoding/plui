@@ -6120,9 +6120,16 @@ i.icon-right-m {
 .add-user-multi .box-user-selected,
 .add-user-single .box-user-selected {
   border: 1px solid #ddd;
-  padding: 10px;
-  max-height: 370px;
+}
+.add-user-multi .box-user-selected .bd,
+.add-user-single .box-user-selected .bd {
+  max-height: 340px;
   overflow: auto;
+  padding: 10px;
+}
+.add-user-multi .box-user-selected .ft,
+.add-user-single .box-user-selected .ft {
+  padding: 5px 10px;
 }
 .add-user-multi .user-search-box .user-search-result {
   max-height: 240px;
