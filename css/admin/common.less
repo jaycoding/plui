@@ -455,3 +455,29 @@ textarea.autosize {
   }
 }
 
+i.icon-grey {
+  .opacity(40);
+  color: #333;
+  cursor: default;
+}
+
+a i.icon-grey {
+  .opacity(40);
+  color: #333;
+}
+
+a {
+   > i {
+      text-decoration: none;
+      color: #333;
+   }
+   > i.icon-white {
+    color: #fff;
+   }
+  
+}
+
+a [class^="icon-"], a [class*=" icon-"] {
+  text-decoration: none;
+
+}
