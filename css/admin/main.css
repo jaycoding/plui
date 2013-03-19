@@ -6078,6 +6078,14 @@ hr.dashed {
 .word-break {
   word-break: break-all;
 }
+ul.list-no-bullet {
+  line-height: 1.6;
+  margin-bottom: 0.8;
+}
+ul.list-no-bullet > li {
+  line-height: 1.6;
+  margin-bottom: 0.8;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -6785,6 +6793,17 @@ a > i.icon-white {
 a [class^="icon-"],
 a [class*=" icon-"] {
   text-decoration: none;
+}
+input.filter-date {
+  margin: 0;
+  padding: 0px;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+}
+input.filter-date:focus {
+  box-shadow: none;
 }
 /*===================================
  Global
@@ -8036,17 +8055,17 @@ nav .clogo img {
 .bizsocial-list .list-time-filter ul > li {
   margin-bottom: 6px;
 }
-.bizsocial-list .list-time-filter ul > li a {
+.bizsocial-list .list-time-filter ul > li {
   display: block;
   padding: 10px 0 10px 12px;
   background: url(../../img/admin/list-filter-bar.png) 0 bottom no-repeat;
 }
-.bizsocial-list .list-time-filter ul > li a:hover {
+.bizsocial-list .list-time-filter ul > li:hover {
   color: #333;
   text-decoration: none;
   background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
 }
-.bizsocial-list .list-time-filter ul > li a.active {
+.bizsocial-list .list-time-filter ul > li.active {
   background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
