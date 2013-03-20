@@ -6805,6 +6805,10 @@ input.filter-date {
 input.filter-date:focus {
   box-shadow: none;
 }
+span.mceEditor {
+  display: block!important;
+  margin-bottom: 10px;
+}
 /*===================================
  Global
  ==================================*/
