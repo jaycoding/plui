@@ -8064,7 +8064,7 @@ nav .clogo img {
   clear: both;
   width: 100px;
   margin-bottom: 6px;
-  background: #21252E;
+  background: #3D4454;
 }
 .bizsocial-list .list-time-filter ul > li {
   display: block;
@@ -8073,7 +8073,7 @@ nav .clogo img {
 .bizsocial-list .list-time-filter ul > li:hover {
   color: #fff;
   text-decoration: none;
-  background: #1A1D24;
+  background: #21252E;
 }
 .bizsocial-list .list-time-filter ul > li a {
   color: #fff;
@@ -8089,11 +8089,20 @@ nav .clogo img {
  //
  //////////////////////////////////////////////////////////////////////////////////////*/
 .customer-list > .row-fluid {
-  color: #444;
+  color: #888;
   padding: 5px 5px 0 5px;
+}
+.customer-list > .row-fluid i,
+.customer-list > .row-fluid a {
+  color: #888;
 }
 .customer-list > .row-fluid:hover {
   background: #eee;
+  color: #333;
+}
+.customer-list > .row-fluid:hover i,
+.customer-list > .row-fluid:hover a {
+  color: #333;
 }
 .customer-list > .row-fluid.unread {
   font-weight: 700;
