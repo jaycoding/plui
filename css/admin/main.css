@@ -6785,7 +6785,7 @@ a i.icon-grey {
 }
 a > i {
   text-decoration: none;
-  color: #333;
+  color: #555;
 }
 a > i.icon-white {
   color: #fff;
@@ -8054,26 +8054,33 @@ nav .clogo img {
 }
 .bizsocial-list .list-time-filter {
   padding-top: 100px;
+  color: #fff;
   position: absolute;
   width: 100px;
   right: -130px;
   top: 0px;
 }
 .bizsocial-list .list-time-filter ul > li {
+  clear: both;
+  width: 100px;
   margin-bottom: 6px;
+  background: #21252E;
 }
 .bizsocial-list .list-time-filter ul > li {
   display: block;
   padding: 10px 0 10px 12px;
-  background: url(../../img/admin/list-filter-bar.png) 0 bottom no-repeat;
 }
 .bizsocial-list .list-time-filter ul > li:hover {
-  color: #333;
+  color: #fff;
   text-decoration: none;
-  background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+  background: #1A1D24;
 }
-.bizsocial-list .list-time-filter ul > li.active {
-  background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+.bizsocial-list .list-time-filter ul > li a {
+  color: #fff;
+  font-weight: 700;
+}
+.bizsocial-list .list-time-filter ul > li a > i {
+  color: #fff;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //

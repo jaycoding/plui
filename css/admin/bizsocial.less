@@ -61,20 +61,32 @@
 
   .list-time-filter {
     padding-top: 100px;
+    color: #fff;
     ul > li {
+      clear: both;
+      width: 100px;
       margin-bottom: 6px;
+      background: #21252E;
     }
     ul > li{
       display: block;
       padding: 10px 0 10px 12px;
-      background: url(../../img/admin/list-filter-bar.png) 0 bottom no-repeat;
+      // background: url(../../img/admin/list-filter-bar.png) 0 bottom no-repeat;
       &:hover {
-        color: #333;
+        color: #fff;
         text-decoration: none;
-        background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+        background: #1A1D24;
+        // background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
       }
       &.active {
-        background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+        //background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+      }
+      a {
+        color: #fff;
+        font-weight: 700;
+        > i {
+          color: #fff;
+        }
       }
     }
     position: absolute;
