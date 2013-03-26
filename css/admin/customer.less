@@ -135,3 +135,27 @@
     }
   }
 }
+
+.box-assignment {
+  .edit-panel {
+    display: none;
+  }
+  .btn-save {
+    display: none;
+  }
+  .btn-edit {
+    .inline-block;
+  }
+
+  &.editing {
+    .edit-panel {
+      .inline-block;
+    }
+    .btn-save {
+      .inline-block;
+    }
+    .btn-edit {
+      display: none;
+    }
+  }
+}

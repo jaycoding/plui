@@ -241,6 +241,23 @@ $(function(){
 	$('.popover-tags').mouseout(function(){
 		clearTimeout(hoverTimeout);
 	});
+	$('.popover-assignment').hover(
+		function() {
+			var self = this;
+			clearTimeout(timer);
+          hoverTimeout = setTimeout(function(){
+				$('.popover').hide(); //Hide any open popovers on other elements.
+	          popover_parent = self
+	          $(self).popover('show');
+			}, 500);       
+      }, 
+      function() {
+      	var self = this;
+      	timer = setTimeout(function(){hidePopover(self)},500);                 
+      });
+	$('.popover-assignment').mouseout(function(){
+		clearTimeout(hoverTimeout);
+	});
 	$('.push-notice-person').hover(
 		function() {
 			var self = this;
@@ -604,6 +621,25 @@ $(function(){
 		var tag = $(this).closest(".tag");
 
 		tag.remove();
+	});
+
+
+	$(".box-assignment .btn-edit").live("click", function(){
+		var box = $(this).closest(".box-assignment");
+
+		box.addClass("editing");
+	});
+
+	$(".box-assignment .btn-save").live("click", function(){
+		var box = $(this).closest(".box-assignment");
+
+		box.removeClass("editing");
+	});
+
+	$(".user-stripe .btn-remove-user").live("click", function(){
+		var user = $(this).closest(".user-stripe");
+
+		user.remove();
 	});
 
 
