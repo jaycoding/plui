@@ -303,7 +303,10 @@
 
 				<div class="clear cf list-hd spaced small">
 		    		<div class="row-fluid">
-		    			<div class="span6">
+		    			<div class="span1">
+		    				<label for="" class="checkbox"><input type="checkbox" name="" id=""> All</label>
+		    			</div>
+		    			<div class="span5">
 							<div class="btn-group">
 								<button class="btn btn-mini">All</button>
 								<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
@@ -330,11 +333,15 @@
 
 		    		<div class="list-time-filter">
 		    			<ul>
-		    				<li><a href="#" class="active">Future</a></li>
-		    				<li><a href="#">Now</a></li>
-		    				<li><a href="#">Yesterday</a></li>
-		    				<li><a href="#">Last week</a></li>
-		    				<li><a href="#">Last month</a></li>
+		    				<li class="row-fluid">
+		    						<i class="icon-time"></i> <strong>From:</strong> <br>
+		    						<input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date span10"/>
+		    				</li>
+		    				<li class="row-fluid">
+		    						<i class="icon-time"></i> <strong>To:</strong> <br>
+		    						<input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date span10"/>
+		    				</li>
+		    				<li><a href="#"><i class="icon-time"></i> All</a></li>
 		    			</ul>
 		    		</div>
 
