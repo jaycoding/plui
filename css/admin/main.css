@@ -7114,6 +7114,22 @@ span.mceEditor {
 table.mceLayout {
   border-radius: 3px;
 }
+.dropdown-tagview .caret {
+  margin-top: 12px;
+}
+.dropdown-tagview a {
+  color: #333;
+}
+.dropdown-tagview a:hover {
+  text-decoration: none;
+}
+.dropdown-tagview img {
+  margin-right: 6px;
+}
+.dropdown-tagview .dropdown-toggle {
+  font-size: 14px;
+  font-weight: 700;
+}
 /*===================================
  Global
  ==================================*/
