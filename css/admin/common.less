@@ -527,3 +527,42 @@ table.mceLayout {
     font-weight: 700;
   }
 }
+
+.list-bd {
+  position: relative;
+  .list-time-filter {
+    padding-top: 100px;
+    color: #fff;
+    ul > li {
+      clear: both;
+      width: 100px;
+      margin-bottom: 6px;
+      background: #3D4454;
+    }
+    ul > li{
+      display: block;
+      padding: 10px 0 10px 12px;
+      // background: url(../../img/admin/list-filter-bar.png) 0 bottom no-repeat;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        background: #21252E;
+        // background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+      }
+      &.active {
+        //background: url(../../img/admin/list-filter-bar.png) 0 0 no-repeat;
+      }
+      a {
+        color: #fff;
+        font-weight: 700;
+        > i {
+          color: #fff;
+        }
+      }
+    }
+    position: absolute;
+    width: 100px;
+    right: -130px;
+    top: 0px;
+  }
+}
