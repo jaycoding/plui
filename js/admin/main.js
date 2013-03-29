@@ -247,8 +247,9 @@ $(function(){
 			clearTimeout(timer);
           hoverTimeout = setTimeout(function(){
 				$('.popover').hide(); //Hide any open popovers on other elements.
-	          popover_parent = self
+	          //popover_parent = self
 	          $(self).popover('show');
+	          $(".btn-close-popover").bind("click", function(){$(self).popover('destroy');});
 			}, 500);       
       }, 
       function() {
@@ -619,8 +620,8 @@ $(function(){
 
 	$(".box-tags .btn-remove-tag").live("click", function(){
 		var tag = $(this).closest(".tag");
-
 		tag.remove();
+		return false;
 	});
 
 
@@ -638,8 +639,8 @@ $(function(){
 
 	$(".user-stripe .btn-remove-user").live("click", function(){
 		var user = $(this).closest(".user-stripe");
-
 		user.remove();
+		return false;
 	});
 
 
