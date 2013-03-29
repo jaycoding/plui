@@ -52,6 +52,19 @@ $(function(){
 			$section.find('.row-expandable').removeClass("expanded").slideUp(300);
 		}
 	});
+
+	$('.btn-expand').bind("click", function(){
+		var $me = $(this),
+			$row = $me.closest('.data-row');
+		
+		if (!$row.find('.row-expandable').hasClass('expanded')) {
+			$me.addClass("btn-collapse");
+			$row.find('.row-expandable').addClass("expanded").slideDown(300);
+		} else {
+			$me.removeClass("btn-collapse");
+			$row.find('.row-expandable').removeClass("expanded").slideUp(300);
+		}
+	});
 	
 	
 	// $('.data-section.section-order').bind("mouseover", function(){
