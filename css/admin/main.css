@@ -6861,6 +6861,27 @@ table.mceLayout {
 .list-bd .list-time-filter ul > li a > i {
   color: #fff;
 }
+.workflow-step {
+  min-height: 52px;
+  height: 52px;
+  background: url(../../img/icons/step-arrow.png) right center no-repeat;
+  padding-right: 20px;
+  width: 70px;
+  margin-left: 8px;
+  float: left;
+  line-height: 1.2;
+}
+.workflow-step > span {
+  display: block;
+  height: 52px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.list-workflow .data-row {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
 /*===================================
  Global
  ==================================*/
