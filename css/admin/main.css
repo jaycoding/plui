@@ -6877,6 +6877,18 @@ table.mceLayout {
   display: table-cell;
   vertical-align: middle;
 }
+.workflow-step.pass {
+  background: url(../../img/icons/step-arrow-green.png) right center no-repeat;
+}
+.workflow-step.pass a {
+  color: #468C00;
+}
+.workflow-step.not-pass {
+  background: url(../../img/icons/step-arrow-grey.png) right center no-repeat;
+}
+.workflow-step.not-pass a {
+  color: #999;
+}
 .list-workflow .data-row {
   padding-bottom: 10px;
   margin-bottom: 10px;
