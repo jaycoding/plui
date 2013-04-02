@@ -725,12 +725,12 @@ $(function(){
 
 		// Theme options
 		theme : "advanced",
-	    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink,forecolor,backcolor",
+	    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,forecolor,backcolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
 	    theme_advanced_buttons2 : "",
 	    theme_advanced_buttons3 : "",
 		theme_advanced_toolbar_location : "top",
 		theme_advanced_toolbar_align : "left",
-		theme_advanced_statusbar_location : "bottom",
+		theme_advanced_statusbar_location : "",
 		theme_advanced_resizing : false,
 
 		autoresize_min_height: "100",
@@ -756,7 +756,7 @@ $(function(){
 	    theme_advanced_buttons3 : "",
 		theme_advanced_toolbar_location : "top",
 		theme_advanced_toolbar_align : "left",
-		theme_advanced_statusbar_location : "bottom",
+		theme_advanced_statusbar_location : "",
 		theme_advanced_resizing : false,
 
 		autoresize_min_height: "100",

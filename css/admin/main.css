@@ -7581,6 +7581,18 @@ nav .clogo img {
   margin-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
+.order-schedule-list .data-row .btn-expand {
+  margin-top: 0.8em;
+}
+.schedule-item {
+  padding: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.schedule-item:hover {
+  border: 1px solid #0088cc;
+  color: #0088cc;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          mockup-edit.less
