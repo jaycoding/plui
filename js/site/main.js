@@ -37,6 +37,8 @@ $(function(){
 	
 	//Fix alerts
 	$('.alerts').scrollToFixed();
+    
+    $('.popup-customize .hd').scrollToFixed();
 	
 	$(".with-tooltop").tooltip();
 	
