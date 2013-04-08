@@ -734,7 +734,7 @@ $(function(){
 		theme_advanced_resizing : false,
 
 		autoresize_min_height: "200",
-		autoresize_max_height: "400"
+		autoresize_max_height: "500"
 	});
 
 
@@ -760,7 +760,7 @@ $(function(){
 		theme_advanced_resizing : false,
 
 		autoresize_min_height: "100",
-		autoresize_max_height: "300"
+		autoresize_max_height: "200"
 	});
 
 
