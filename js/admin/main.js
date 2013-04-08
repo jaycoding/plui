@@ -733,8 +733,8 @@ $(function(){
 		theme_advanced_statusbar_location : "",
 		theme_advanced_resizing : false,
 
-		autoresize_min_height: "100",
-		autoresize_max_height: "200"
+		autoresize_min_height: "200",
+		autoresize_max_height: "400"
 	});
 
 
@@ -754,13 +754,13 @@ $(function(){
 	    theme_advanced_buttons1 : "",
 	    theme_advanced_buttons2 : "",
 	    theme_advanced_buttons3 : "",
-		theme_advanced_toolbar_location : "top",
-		theme_advanced_toolbar_align : "left",
+		theme_advanced_toolbar_location : "",
+		theme_advanced_toolbar_align : "",
 		theme_advanced_statusbar_location : "",
 		theme_advanced_resizing : false,
 
 		autoresize_min_height: "100",
-		autoresize_max_height: "200"
+		autoresize_max_height: "300"
 	});
 
 
