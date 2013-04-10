@@ -166,14 +166,6 @@ $(function(){
 		html: true
 	});
 
-	$('.popover-bp').popover({
-		placement: 'right',
-		offset: 15,
-		trigger: 'manual',
-		delay: { show: 350, hide: 200 },
-		html: true
-	});
-
 	$('.push-notice-person').popover({
 		placement: 'left',
 		offset: 15,
@@ -344,24 +336,6 @@ $(function(){
       	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
 	$('.popover-edit-step').mouseout(function(){
-		clearTimeout(hoverTimeout);
-	});
-	$('.popover-bp').hover(
-		function() {
-			var self = this;
-			clearTimeout(timer);
-          hoverTimeout = setTimeout(function(){
-				$('.popover').hide(); //Hide any open popovers on other elements.
-	          //popover_parent = self
-	          $(self).popover('show');
-	          $(".btn-close-popover").bind("click", function(){$(self).popover('destroy');});
-			}, 500);       
-      }, 
-      function() {
-      	var self = this;
-      	timer = setTimeout(function(){hidePopover(self)},500);                 
-      });
-	$('.popover-bp').mouseout(function(){
 		clearTimeout(hoverTimeout);
 	});
 	$('.push-notice-person').hover(
@@ -772,7 +746,7 @@ $(function(){
 		theme_advanced_resizing : false,
 
 		autoresize_min_height: "200",
-		autoresize_max_height: "500"
+		autoresize_max_height: "400"
 	});
 
 	$('textarea.rte-email').tinymce({
@@ -796,8 +770,8 @@ $(function(){
 		theme_advanced_statusbar_location : "",
 		theme_advanced_resizing : false,
 
-		autoresize_min_height: "300",
-		autoresize_max_height: "500"
+		autoresize_min_height: "250",
+		autoresize_max_height: "400"
 	});
 
 

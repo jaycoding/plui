@@ -6087,6 +6087,14 @@ ul.list-no-bullet > li {
   line-height: 1.6;
   margin-bottom: 0.8;
 }
+.bottom-bar-fixed {
+  padding: 8px 0;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -7758,6 +7766,12 @@ i.icon-right-m {
 }
 .popup-customize .hd {
   background: #fff;
+}
+.popup-customize .main > h4 {
+  color: #555;
+  border-top: 1px solid #ddd;
+  background: url(../../img/admin/order-list-toolbar-bg.png) repeat-x;
+  padding: 5px;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
