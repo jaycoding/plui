@@ -237,14 +237,16 @@ $(function(){
 	$('.popover-bp').mouseout(function(){
 		clearTimeout(hoverTimeout);
 	});
+
 	$('.popover-tags').hover(
 		function() {
 			var self = this;
 			clearTimeout(timer);
           hoverTimeout = setTimeout(function(){
 				$('.popover').hide(); //Hide any open popovers on other elements.
-	          popover_parent = self
+	          //popover_parent = self
 	          $(self).popover('show');
+	          $(".btn-close-popover").bind("click", function(){$(self).popover('destroy');});
 			}, 500);       
       }, 
       function() {
@@ -324,6 +326,24 @@ $(function(){
       	timer = setTimeout(function(){hidePopover(self)},500);                 
       });
 	$('.popover-add-step').mouseout(function(){
+		clearTimeout(hoverTimeout);
+	});
+	$('.popover-edit-step').hover(
+		function() {
+			var self = this;
+			clearTimeout(timer);
+          hoverTimeout = setTimeout(function(){
+				$('.popover').hide(); //Hide any open popovers on other elements.
+	          //popover_parent = self
+	          $(self).popover('show');
+	          $(".btn-close-popover").bind("click", function(){$(self).popover('destroy');});
+			}, 500);       
+      }, 
+      function() {
+      	var self = this;
+      	timer = setTimeout(function(){hidePopover(self)},500);                 
+      });
+	$('.popover-edit-step').mouseout(function(){
 		clearTimeout(hoverTimeout);
 	});
 	$('.push-notice-person').hover(
@@ -725,7 +745,7 @@ $(function(){
 
 		// Theme options
 		theme : "advanced",
-	    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,forecolor,backcolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
+	    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,backcolor,forecolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
 	    theme_advanced_buttons2 : "",
 	    theme_advanced_buttons3 : "",
 		theme_advanced_toolbar_location : "top",
@@ -736,6 +756,33 @@ $(function(){
 		autoresize_min_height: "200",
 		autoresize_max_height: "500"
 	});
+
+	$('textarea.rte-email').tinymce({
+
+		// Location of TinyMCE script
+		script_url : '../../js/utils/jquery.tinymce/3.5.8/tiny_mce.js',
+
+		width : "100%",
+
+		// General options
+		theme : "advanced",
+		plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
+
+		// Theme options
+		theme : "advanced",
+	    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,backcolor,forecolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
+	    theme_advanced_buttons2 : "",
+	    theme_advanced_buttons3 : "",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "left",
+		theme_advanced_statusbar_location : "",
+		theme_advanced_resizing : false,
+
+		autoresize_min_height: "300",
+		autoresize_max_height: "500"
+	});
+
+
 
 
 	$('textarea.rte-nocontrol').tinymce({

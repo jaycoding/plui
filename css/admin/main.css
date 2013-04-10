@@ -6842,8 +6842,8 @@ table.mceLayout {
 .list-bd .list-time-filter ul > li {
   clear: both;
   width: 100px;
-  margin-bottom: 6px;
-  background: #3D4454;
+  margin-bottom: 1px;
+  background: #BCBCBC;
 }
 .list-bd .list-time-filter ul > li {
   display: block;
@@ -6852,7 +6852,10 @@ table.mceLayout {
 .list-bd .list-time-filter ul > li:hover {
   color: #fff;
   text-decoration: none;
-  background: #21252E;
+  background: #313169;
+}
+.list-bd .list-time-filter ul > li.active {
+  background: #313169;
 }
 .list-bd .list-time-filter ul > li a {
   color: #fff;
