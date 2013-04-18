@@ -8390,3 +8390,7 @@ nav .clogo img {
 .payment-step.not-pass a {
   color: #999;
 }
+.payment-proof {
+  padding: 10px;
+  background: #eee;
+}
