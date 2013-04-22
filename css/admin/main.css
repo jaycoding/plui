@@ -6784,7 +6784,6 @@ i.icon-grey {
   opacity: 0.4;
   filter: alpha(opacity=40);
   color: #333;
-  cursor: default;
 }
 a i.icon-grey {
   opacity: 0.4;
@@ -7609,6 +7608,9 @@ nav .clogo img {
 .schedule-item:hover {
   border: 1px solid #0088cc;
   color: #0088cc;
+}
+.schedule-item.unfinished {
+  color: #999;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
