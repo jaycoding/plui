@@ -8398,5 +8398,12 @@ nav .clogo img {
 }
 .payment-reconciation {
   padding: 10px;
+  margin-bottom: 1px;
+  background: #f9f9f9;
+}
+.section-payment {
+  padding-top: 5px;
+}
+.section-payment:hover {
   background: #f6f6f6;
 }
