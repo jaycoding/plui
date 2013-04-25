@@ -803,6 +803,17 @@ $(function(){
 	});
 
 
+	$(".payment-list-filter .btn-close").bind("click", function(){
+		$(this).closest(".payment-list-filter").addClass("none");
+	});
+
+	$(".payment-summary .btn-edit").bind("click", function(){
+		$(this).closest(".payment-summary").addClass("editing");
+	});
+
+	$(".payment-summary .btn-save").bind("click", function(){
+		$(this).closest(".payment-summary").removeClass("editing");
+	});
 
 
 });

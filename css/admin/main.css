@@ -8407,3 +8407,114 @@ nav .clogo img {
 .section-payment:hover {
   background: #f6f6f6;
 }
+.payment-list-filter {
+  padding: 10px;
+  background: #eee;
+}
+.payment-list-filter {
+  color: #444;
+  border: 1px solid #ddd;
+  position: relative;
+}
+.payment-list-filter a {
+  color: #666;
+}
+.payment-list-filter .btn-advanced-filter {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url(../../img/icons/icon-expand-grey.png) 0 0 no-repeat;
+}
+.payment-list-filter .btn-advanced-filter.btn-collapse {
+  background: url(../../img/icons/icon-collapse-grey.png) 0 0 no-repeat;
+}
+.payment-list-filter .expandable {
+  display: none;
+}
+.payment-list-filter .filter-date {
+  width: 100px;
+  padding: 0px;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  cursor: pointer;
+}
+.payment-list-filter .filter-date:focus {
+  box-shadow: none;
+}
+.payment-list-filter .filter-single .filter-item {
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.payment-list-filter .filter-single .filter-item.selected {
+  padding: 0px 4px;
+  background: #dddddd url(../../img/icons/icon-close-3.png) right center no-repeat;
+  padding-right: 20px;
+  color: #000;
+}
+.payment-list-filter .filter-single .filter-item:hover {
+  text-decoration: none;
+}
+.payment-list-filter .filter-single .filter-item.none {
+  display: none;
+}
+.payment-list-filter .filter-multi .filter-item {
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.payment-list-filter .filter-multi .filter-item.selected {
+  padding: 0px 4px;
+  background: #dddddd url(../../img/icons/icon-tick-s.png) right center no-repeat;
+  padding-right: 12px;
+  color: #000;
+}
+.payment-list-filter .filter-multi .filter-item:hover {
+  text-decoration: none;
+}
+.payment-list-filter .filter-multi .filter-item.none {
+  display: none;
+}
+.payment-list-filter .filter-alphabet .filter-item {
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.payment-list-filter .filter-alphabet .filter-item.selected {
+  color: #245F9A;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.payment-list-filter .filter-alphabet .filter-item:hover {
+  text-decoration: underline;
+}
+.payment-list-filter .filter-alphabet .filter-item.none {
+  display: none;
+}
+.payment-list-filter .filter-list > li {
+  margin-right: 10px;
+  float: left;
+}
+.payment-summary input,
+.payment-summary select,
+.payment-summary .btn-save {
+  display: none!important;
+}
+.payment-summary.editing input,
+.payment-summary.editing select,
+.payment-summary.editing .btn-save {
+  display: inline-block !important;
+}
+.payment-summary.editing .value {
+  display: none;
+}
