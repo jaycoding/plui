@@ -815,6 +815,10 @@ $(function(){
 		$(this).closest(".payment-summary").removeClass("editing");
 	});
 
+	$(".btn-add-payment").bind("click", function(){
+		$(this).addClass("none").next("form").removeClass("none");
+	})
+
 
 });
 

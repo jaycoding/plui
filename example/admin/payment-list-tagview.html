@@ -149,17 +149,52 @@
 		    	</div>
 		    	
 		    	<div class="payment-list clear cf">
-		    		<div class="row-fluid tright spaced small">
+		    		<div class="row-fluid spaced small">
+		    			<div class="span6"><a href="javascript:void(0)" class="btn-add-payment">+1 Incoming payment</a> <form action="" class="form-inline none"> <input type="text" class="span8" placeholder="Enter a payer name..." name="" id=""> <input class="btn" type="submit" value="Add"></form></div>
+		    			<div class="span6 tright">
 		    				<a href="#" class="grey"><i class="icon-arrow-left"></i> Back to all</a>
+		    			</div>
 		    		</div>
 		    		<div class="row-fluid spaced">
 		    			<div class="span6">
-		    				<img src="../../img/koloria/Search.png" class="pull-left" style="margin-right: 5px;" alt=""> <div><h4 class="bold" style="line-height: 1; padding: 0; margin: 0;"> iClick, Inc.</h4> <span class="font-small"><strong class="grey">110</strong> Incoming payments</span></div>
+		    				<div class="row-fluid">
+		    					<div class="span2">
+		    						<img src="../../img/koloria/Search.png" class="pull-left" style="margin-right: 5px;" alt="">
+		    					</div>
+		    					<div class="span9">
+		    						<div class="dropdown">
+						                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#">All payments <b class="caret"></b></a>
+						                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+						                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Open payments</a></li>
+						                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Paid payments</a></li>
+						                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Reconciled payments</a></li>
+						                </ul>
+						            </div>
+						            <span class="font-small"><strong class="grey">110</strong> Incoming payments, $250,000.00</span>
+		    					</div>
+		    				</div>
+
 		    			</div>
 
-		    			<div class="span6 tright">
+		    			<div class="span5 tright">
 		    				<a href="#"><img src="../../img/icons/icon-pdf-32.png" alt=""></a> 
 			    			<a href="#"><img src="../../img/icons/icon-email-32.png" alt=""></a>
+		    			</div>
+		    			<div class="span1 tright">
+    						<div class="btn-group tright">
+								<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-wrench"></i></button>
+								<ul class="dropdown-menu tleft align-right">
+									<div class="dropdown-menu-group group-radio">
+										<li><a href="javascript:void(0);">Latest created first</a></li>
+										<li><a href="javascript:void(0);">Latest reply first</a></li>
+									</div>
+										<li class="divider"></li>
+									<div class="dropdown-menu-group group-radio">
+										<li><a href="javascript:void(0);">Show 25 per page</a></li>
+										<li><a href="javascript:void(0);">Show 50 per page</a></li>
+									</div>
+								</ul>
+							</div>
 		    			</div>
 		    		</div>
 		    		
