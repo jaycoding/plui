@@ -8392,9 +8392,42 @@ nav .clogo img {
 .payment-step.not-pass a {
   color: #999;
 }
+.payment-mean {
+  padding: 10px;
+  background: #f9f9f9;
+  margin-bottom: 1px;
+}
+.payment-mean .nav-tabs {
+  border: none;
+}
+.payment-mean .nav-tabs li {
+  border-radius: 0;
+  border: none;
+}
+.payment-mean .nav-tabs li a {
+  color: #888;
+  font-weight: 300;
+}
+.payment-mean .nav-tabs li a:hover {
+  border-color: transparent;
+  background: none;
+  color: #333;
+}
+.payment-mean .nav-tabs li.active {
+  color: #333;
+  border: 0;
+  background: none;
+  border-bottom: 1px solid #ccc;
+}
+.payment-mean .nav-tabs li.active a {
+  font-weight: 700;
+  border: none;
+  background: none;
+}
 .payment-proof {
   padding: 10px;
-  background: #f6f6f6;
+  background: #f9f9f9;
+  margin-bottom: 1px;
 }
 .payment-reconciation {
   padding: 10px;
@@ -8405,15 +8438,13 @@ nav .clogo img {
   padding-top: 5px;
 }
 .section-payment:hover {
-  background: #f6f6f6;
+  background: #f9f9f9;
 }
 .payment-list-filter {
   padding: 10px;
-  background: #eee;
-}
-.payment-list-filter {
+  background: #f9f9f9;
   color: #444;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   position: relative;
 }
 .payment-list-filter a {

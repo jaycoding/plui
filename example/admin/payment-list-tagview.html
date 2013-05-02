@@ -150,9 +150,9 @@
 		    	
 		    	<div class="payment-list clear cf">
 		    		<div class="row-fluid tright spaced small">
-		    				<a href="#">&lt; Back to all</a>
+		    				<a href="#" class="grey"><i class="icon-arrow-left"></i> Back to all</a>
 		    		</div>
-		    		<div class="spaced small border-bottom row-fluid">
+		    		<div class="row-fluid spaced">
 		    			<div class="span6">
 		    				<img src="../../img/koloria/Search.png" class="pull-left" style="margin-right: 5px;" alt=""> <div><h4 class="bold" style="line-height: 1; padding: 0; margin: 0;"> iClick, Inc.</h4> <span class="font-small"><strong class="grey">110</strong> Incoming payments</span></div>
 		    			</div>
@@ -161,51 +161,37 @@
 		    				<a href="#"><img src="../../img/icons/icon-pdf-32.png" alt=""></a> 
 			    			<a href="#"><img src="../../img/icons/icon-email-32.png" alt=""></a>
 		    			</div>
-		    			
 		    		</div>
 		    		
 		    		<div class="payment-list-filter spaced">
-		    			<div class="row-fluid"><button class="close btn-close">×</button></div>
-		    			<section class="first">
-				    		<div class="row-fluid">
-				    			<div class="span2">Created date:</div>
-				    			<div class="span10">
-				    				<div class="row-fluid filter-group filter-multi">
-				    					<div class="span2"><a href="#" class="filter-item">All</a></div>
-				    					<div class="span1">From</div>
-				    					<div class="span3"><input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date"/></div>
-				    					<div class="span1">To</div>
-				    					<div class="span3"><input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date"/></div>
-				    				</div>
-				    			</div>
-				    		</div>
-				    		<div class="row-fluid">
-				    			<div class="span2">Due date:</div>
-				    			<div class="span10">
-				    				<div class="row-fluid filter-group filter-multi">
-				    					<div class="span2"><a href="#" class="filter-item">All</a></div>
-				    					<div class="span1">From</div>
-				    					<div class="span3"><input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date"/></div>
-				    					<div class="span1">To</div>
-				    					<div class="span3"><input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date"/></div>
-				    				</div>
-				    			</div>
-				    		</div>
-				    		<div class="row-fluid">
-				    			<div class="span2">Status:</div>
-				    			<div class="span10">
-				    				<div class="row-fluid filter-group filter-multi">
-				    					<div class="span2"><a href="#" class="filter-item">All</a></div>
-				    					<div class="span2"><a href="#" class="filter-item">Open</a></div>
-				    					<div class="span2"><a href="#" class="filter-item">Paid</a></div>
-				    					<div class="span2"><a href="#" class="filter-item">Reconciled</a></div>
-				    				</div>
-				    			</div>
-				    		</div>
-		    			</section>
+			    		<div class="row-fluid">
+			    			<div class="span2">Status:</div>
+			    			<div class="span9">
+			    				<div class="row-fluid filter-group filter-multi">
+			    					<div class="span2"><a href="#" class="filter-item">All</a></div>
+			    					<div class="span2"><a href="#" class="filter-item">Open</a></div>
+			    					<div class="span2"><a href="#" class="filter-item">Paid</a></div>
+			    					<div class="span2"><a href="#" class="filter-item">Reconciled</a></div>
+			    				</div>
+			    			</div>
+			    			<div class="span1"><button class="close btn-close">×</button></div>
+			    		</div>
 			    	</div>
 			    	
-			    	<div class="payment-list-main">
+			    	<div class="payment-list-main list-bd">
+			    		<div class="list-time-filter">
+			    			<ul>
+			    				<li class="row-fluid">
+			    						<i class="icon-time"></i> <strong>From:</strong> <br>
+			    						<input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date span10"/>
+			    				</li>
+			    				<li class="row-fluid">
+			    						<i class="icon-time"></i> <strong>To:</strong> <br>
+			    						<input type="text" value="" placeholder="mm/dd/yyyy" class="filter-date date span10"/>
+			    				</li>
+			    				<li class="active"><a href="#"><i class="icon-time"></i> All</a></li>
+			    			</ul>
+			    		</div>
 			    		
 			    		<section class="row-fluid data-section section-payment status-open cf">
 			    			<div class="span1 tcenter"><img src="../../img/icons/icon-reconciled-24-dark.png" alt=""></div>
