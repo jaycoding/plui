@@ -35,23 +35,23 @@
   }
 }
 
-.payment-mean {
-  padding: 10px;
+.payment-mean, .payment-proof, .payment-reconciation {
+  padding: 20px 15px;
   background: #f9f9f9;
   margin-bottom: 1px;
-  .nav-tabs {
-    border: none;
-  }
-  .nav-tabs li {
+  ul.payment-list li {
     border-radius: 0;
     border: none;
     a {
+      display: block;
       color: #888;
       font-weight: 300;
+      padding: 10px 0;
       &:hover {
         border-color: transparent;
         background: none;
         color: #333;
+        text-decoration: none;
       };
     }
     &.active {
@@ -68,17 +68,6 @@
   }
 }
 
-.payment-proof {
-  padding: 10px;
-  background: #f9f9f9;
-  margin-bottom: 1px;
-}
-
-.payment-reconciation {
-  padding: 10px;
-  margin-bottom: 1px;
-  background: #f9f9f9;
-}
 
 .section-payment {
   padding-top: 5px;

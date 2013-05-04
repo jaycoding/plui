@@ -950,7 +950,7 @@ textarea::-webkit-input-placeholder {
 .radio,
 .checkbox {
   min-height: 18px;
-  padding-left: 18px;
+  padding-left: 19px;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
@@ -8392,47 +8392,49 @@ nav .clogo img {
 .payment-step.not-pass a {
   color: #999;
 }
-.payment-mean {
-  padding: 10px;
+.payment-mean,
+.payment-proof,
+.payment-reconciation {
+  padding: 20px 15px;
   background: #f9f9f9;
   margin-bottom: 1px;
 }
-.payment-mean .nav-tabs {
-  border: none;
-}
-.payment-mean .nav-tabs li {
+.payment-mean ul.payment-list li,
+.payment-proof ul.payment-list li,
+.payment-reconciation ul.payment-list li {
   border-radius: 0;
   border: none;
 }
-.payment-mean .nav-tabs li a {
+.payment-mean ul.payment-list li a,
+.payment-proof ul.payment-list li a,
+.payment-reconciation ul.payment-list li a {
+  display: block;
   color: #888;
   font-weight: 300;
+  padding: 10px 0;
 }
-.payment-mean .nav-tabs li a:hover {
+.payment-mean ul.payment-list li a:hover,
+.payment-proof ul.payment-list li a:hover,
+.payment-reconciation ul.payment-list li a:hover {
   border-color: transparent;
   background: none;
   color: #333;
+  text-decoration: none;
 }
-.payment-mean .nav-tabs li.active {
+.payment-mean ul.payment-list li.active,
+.payment-proof ul.payment-list li.active,
+.payment-reconciation ul.payment-list li.active {
   color: #333;
   border: 0;
   background: none;
   border-bottom: 1px solid #ccc;
 }
-.payment-mean .nav-tabs li.active a {
+.payment-mean ul.payment-list li.active a,
+.payment-proof ul.payment-list li.active a,
+.payment-reconciation ul.payment-list li.active a {
   font-weight: 700;
   border: none;
   background: none;
-}
-.payment-proof {
-  padding: 10px;
-  background: #f9f9f9;
-  margin-bottom: 1px;
-}
-.payment-reconciation {
-  padding: 10px;
-  margin-bottom: 1px;
-  background: #f9f9f9;
 }
 .section-payment {
   padding-top: 5px;
