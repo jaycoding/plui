@@ -818,7 +818,15 @@ $(function(){
 	$(".btn-add-payment").bind("click", function(){
 		$(this).addClass("none").next("form").removeClass("none");
 		$(".payment-search").addClass("none");
-	})
+	});
+
+	$(".payment-amount-details .row-invoice input:checkbox").bind("click", function(){
+		if ($(this).is(":checked")) {
+			$(this).closest(".row-invoice").addClass("row-active");
+		} else {
+			$(this).closest(".row-invoice").removeClass("row-active");
+		}
+	});
 
 
 });
