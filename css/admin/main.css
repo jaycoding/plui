@@ -8399,6 +8399,11 @@ nav .clogo img {
   background: #f9f9f9;
   margin-bottom: 1px;
 }
+.payment-mean ul.payment-list,
+.payment-proof ul.payment-list,
+.payment-reconciation ul.payment-list {
+  border: none;
+}
 .payment-mean ul.payment-list li,
 .payment-proof ul.payment-list li,
 .payment-reconciation ul.payment-list li {
