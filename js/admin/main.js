@@ -828,6 +828,18 @@ $(function(){
 		}
 	});
 
+	$(".item-bank-account .btn-edit").live("click", function(){
+		$(this).closest(".item-bank-account").addClass("editing");
+	});
+
+	$(".item-bank-account .btn-save").live("click", function(){
+		$(this).closest(".item-bank-account").removeClass("editing");
+	});
+
+	$(".btn-add-bank-account").bind("click", function(){
+		$(".bank-account-list").prepend($(".item-bank-account-new").clone().removeClass("none item-bank-account-new").addClass("editing"));
+	});
+
 
 });
 

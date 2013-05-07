@@ -8563,3 +8563,17 @@ nav .clogo img {
 .row-invoice.row-active {
   background: #f6f6f6;
 }
+.item-bank-account input,
+.item-bank-account .btn-save {
+  display: none!important;
+}
+.item-bank-account.editing span.value {
+  display: none;
+}
+.item-bank-account.editing .btn-edit {
+  display: none!important;
+}
+.item-bank-account.editing input,
+.item-bank-account.editing .btn-save {
+  display: inline-block !important;
+}
