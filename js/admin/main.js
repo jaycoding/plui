@@ -816,7 +816,7 @@ $(function(){
 	});
 
 	$(".btn-add-payment").bind("click", function(){
-		$(this).addClass("none").next("form").removeClass("none");
+		$(this).addClass("none").next(".form-inline").removeClass("none");
 		$(".payment-search").addClass("none");
 	});
 
