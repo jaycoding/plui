@@ -731,6 +731,8 @@ $(function(){
 
 		width : "100%",
 
+		forced_root_block : '',
+
 		// General options
 		theme : "advanced",
 		plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
@@ -755,6 +757,8 @@ $(function(){
 		script_url : '../../js/utils/jquery.tinymce/3.5.8/tiny_mce.js',
 
 		width : "100%",
+
+		forced_root_block : '',
 
 		// General options
 		theme : "advanced",
@@ -783,6 +787,8 @@ $(function(){
 		script_url : '../../js/utils/jquery.tinymce/3.5.8/tiny_mce.js',
 
 		width : "100%",
+
+		forced_root_block : '',
 
 		// General options
 		theme : "advanced",
