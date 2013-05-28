@@ -951,7 +951,7 @@ textarea::-webkit-input-placeholder {
 .radio,
 .checkbox {
   min-height: 18px;
-  padding-left: 18px;
+  padding-left: 19px;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
@@ -6094,6 +6094,28 @@ ul.list-no-bullet > li {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.pdf p {
+  margin: 0 0 4px 0;
+}
+.pdf h1,
+.pdf h2,
+.pdf h3,
+.pdf h4,
+.pdf h5 {
+  line-height: 1.1;
+  margin: 0 0 5px 0;
+}
+.email p {
+  margin: 0 0 4px 0;
+}
+.email h1,
+.email h2,
+.email h3,
+.email h4,
+.email h5 {
+  line-height: 1.1;
+  margin: 0 0 5px 0;
 }
 .pms {
   height: 24px;
