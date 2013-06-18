@@ -7814,9 +7814,9 @@ nav .clogo img {
 }
 .activity-thread-reply {
   clear: both;
-  padding: 10px 0;
-  margin-top: 10px;
+  padding: 10px;
   border-top: 1px dotted #ccc;
+  background: #f6f6f6;
 }
 .act-tag {
   float: left;

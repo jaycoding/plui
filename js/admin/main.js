@@ -99,6 +99,19 @@ $(function(){
 	$('.alerts').scrollToFixed();
 
 	$('.list-time-filter').scrollToFixed();
+
+	$(".btn-toggle-order-summary").live("click", function(){
+		if ($(this).find(".icon-toggle-expand").hasClass("collapse")) {
+			$(".order-summary > .row-fluid").addClass("none");
+			$(this).find(".icon-toggle-expand").removeClass("collapse");
+			$(".job-option").removeClass("none");
+		} else {
+			$(".order-summary > .row-fluid").removeClass("none");
+			$(this).find(".icon-toggle-expand").addClass("collapse");
+			$(".job-option").addClass("none");
+		}
+		
+	});
 	
 	
 	$(".filter-group .filter-item").live("click", function(){
@@ -454,6 +467,10 @@ $(function(){
 			$(this).removeClass("none");
 		});
 		$(this).addClass("none");
+	});
+
+	$(".btn-edit-follow").live('click', function(){
+		$('.btn-add-activity').trigger("click");
 	});
 
 
