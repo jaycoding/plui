@@ -1,0 +1,51 @@
+﻿/*===================================
+ ColorTheme
+ ==================================*/
+
+.color-theme .mod-cate ul li:hover{ background:#f3f3f3;}
+
+
+.color-theme a,
+.color-theme .mod-cate ul li a:hover{
+	color: [BarColor];
+}
+.color-theme .mod-nav li {
+	border-left-color: [BorderLeftColor];
+	border-right-color: [BorderRightColor];
+}
+.color-theme .mod-nav-l,
+.color-theme .mod-nav-c,
+.color-theme .mod-nav-r,
+.color-theme .mod-nav li.on a,
+.color-theme .mod-nav-search,
+.color-theme .mod-nav-search-btn,
+.color-theme .mod-cate h3,
+.color-theme .mod-cate ul li,
+.color-theme .btn-deep,
+.color-theme .btn-deep span,
+.color-theme .btn-light,
+.color-theme .btn-light span,
+.color-theme .go-back,
+.color-theme .top-page,
+.color-theme .mod-catelist-imgview ul li a:hover img,
+.color-theme .mod-prolist-paged-bd ul li.list-category a:hover img{background-image: url([BackgroundPicURL]);}
+
+.color-theme .bp-roleUl li.hover, 
+.bp-roleUl li:hover{ background:[BarColor]; color:#fff;}
+
+.color-theme .mod-product-viewer ul li a:hover, 
+.color-theme .mod-product-viewer ul li.current a,
+.color-theme .mod-recent-viewed ul li a:hover img,
+.color-theme .mod-selected-options ul li a:first-child:hover img,
+.color-theme .mod-prolist-paged ul li a:hover img,
+.color-theme .mod-cate ul .extendable:hover .hover,
+.color-theme .mod-cate ul .extendable .mod-sub-cate{ border-color: [BarColor];}
+
+.color-theme .mod-prolist-paged-bd ul li.list-category a:first-child:hover{ outline:0;}
+
+.color-theme .mod-prolist-paged ul li a:first-child:hover,
+.color-theme .mod-eflyerlist-paged ul li a:first-child:hover,
+.color-theme .mod-promo-list ul li a:hover img{outline:4px solid [BarColor];}
+
+.color-theme .product-info-bd li.current, 
+.color-theme .product-info-bd li:hover{ outline:2px solid [BarColor];}

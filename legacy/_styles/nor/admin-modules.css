@@ -1,0 +1,45 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          modules.css
+ //  Images:        
+ //  Dependencies:  bootstrap.css
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*===================================
+ Modules
+ ==================================*/
+/* -- Module: Nav Search --*/
+
+.mode-editor{ font-size:12px; line-height:22px; color:#555;}
+
+.mode-body{ 
+	width:758px; 
+	padding:9px 20px;
+	border: 1px solid #ddd;
+	min-height: 800px;
+	border-radius: 3px;
+	margin:-32px 0 0 0px;
+	float:left;
+	position:relative;}
+	
+.mode-hd{ width:100%; height:22px; overflow:hidden; float:left; margin:0px 0px 30px 0px;}
+.mode-bd{ width:100%; height:100%; float:left;}
+.mode-new{ height:28px; line-height:28px;}
+
+.mode-bd-hd,
+.mode-bd-bd,
+.mode-bd-ft{ float:left; width:100%; overflow:hidden; margin-bottom:10px;}
+.mode-bd-hd .pagination-filter,
+.mode-bd-hd .mod-paged-pager,
+.mode-bd-hd .mod-paged-pager .paginationSelect,
+.mode-bd-ft .mod-paged-pager{ margin:0px;}
+.mode-bd-hd .pagination{ height:28px;}
+.mode-bd-hd .pagination a, 
+.mode-bd-hd .pagination span{ height:28px; line-height:28px;}
+
+.mode-wrapper{ }
+.mode-page{margin:0px auto; width:960px; overflow:hidden;}
+

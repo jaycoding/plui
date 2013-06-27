@@ -1,0 +1,193 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          global.css
+ //  Dependencies:  bootstrap.css
+ //  Description:   Global style for admin pages, including layout and common styles
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+/*===================================
+ Global
+ ==================================*/
+
+#wrapper {}
+
+#page {
+	margin:0px auto; 
+	width:960px;
+}
+
+/*--Header--*/
+#header {
+	height: 45px;
+	background: url(../../_imgs/nor/header-blue.png) repeat-x;
+}
+
+#hd-logo {padding: 8px 0 0 50px;margin:0px auto; width:960px;}
+#hd-logo img{ max-height:36px;}
+
+/*--Navigation--*/
+nav {
+	width: 160px;
+	left: 50px;
+	top: 50px;
+	position:static; 
+	float:left;
+}
+
+nav .clogo {
+	text-align: left;
+	padding: 10px 0;
+}
+nav .clogo img{ max-width:150px;}
+
+#nav {
+	
+}
+
+#nav .accordion-group{
+	border: none;
+}
+
+#nav a {
+	color: #555;
+	outline: none;
+}
+
+#nav .accordion-heading {
+	font-weight: 700;
+	border-bottom: 1px solid #eee;
+}
+
+#nav .accordion-heading a {
+	color: #888;
+	font-size: 13px;
+}
+
+#nav .accordion-heading a:hover {
+	color: #555;
+	text-decoration: none;
+}
+
+#nav .accordion-heading {
+	background: url(../../_imgs/nor/admin-nav-icons.png) 0 0 no-repeat;
+	padding-left: 18px;
+}
+
+#nav .nav-hd-admin {
+	background-position: 4px 7px;
+}
+
+#nav .nav-hd-marketing {
+	background-position: 4px -21px;
+}
+
+#nav .nav-hd-sales {
+	background-position: 4px -53px;
+}
+
+#nav .nav-hd-purchase {
+	background-position: 4px -83px;
+}
+
+#nav .nav-hd-banking {
+	background-position: 4px -113px;
+}
+
+#nav .nav-hd-logout {
+	background-position: 4px -143px;
+}
+
+#nav .accordion-inner {
+	border: none;
+	padding: 0;
+}
+
+#nav .accordion-inner li{
+	line-height: 2;
+}
+
+#nav .accordion-inner li.active a{
+	font-weight: 700;
+	background: #eee;
+}
+
+#nav .accordion-inner li a{
+	display: block;
+	padding: 3px 4px 3px 32px;
+}
+
+#nav .accordion-inner li a:hover{
+	background: #f6f6f6;
+	text-decoration: none;
+}
+
+/*--Body--*/
+#body {
+	border: 1px solid #ddd;
+	min-height: 750px;
+	border-radius: 3px;
+	margin:-32px 0 0 0px; 
+	width:778px; 
+	position:static; 
+	float:left; 
+	padding:9px 10px;
+}
+
+.body-hd{ width:100%; height:22px; overflow:hidden; float:left; margin:0px 0px 30px 0px;}
+.body-bd{ width:100%; height:100%; float:left;}
+.body-new{ height:28px; line-height:28px;}
+
+#footer {
+	clear: both;
+	float: left;
+	padding: 20px 0;
+	color: #666;
+	width:100%;
+	text-align:right;
+}
+
+
+.item-grid-2 {
+	clear: both;
+}
+
+.item-grid-2 li{
+	float: left;
+	width: 50%;
+	margin-bottom: 15px;
+}
+
+.item-grid-3 {
+	clear: both;
+}
+
+.item-grid-3 li{
+	float: left;
+	width: 33%;
+	margin-bottom: 15px;
+}
+
+.item-grid-4 {
+	clear: both;
+}
+
+.item-grid-4 li{
+	float: left;
+	width: 25%;
+	margin-bottom: 15px;
+}
+
+.item-grid-5 {
+	clear: both;
+}
+
+.item-grid-5 li{
+	float: left;
+	width: 128px;
+	position:relative;
+	margin:10px 9px 15px 9px;
+}
+.item-grid-5 li img{ 
+	max-height:128px; 
+	max-width:128px;}

@@ -1,0 +1,1204 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          admin-style.css
+ //  Dependencies:  bootstrap.css, admin-global.css
+ //  Description:   Detail styles for admin pages
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*===================================
+ Homepage List
+ ==================================*/
+.eflyer-list-hd {
+	margin-top:61px;
+}
+.homepage-list-hd {
+	margin-top:31px;
+}
+.eflyer-preview-version li.right {
+	float:right;
+	margin:0;
+}
+.eflyer-preview-version li.right a {
+	text-indent:100000px;
+	width:20px;
+	height:19px;
+	overflow:hidden;
+	background:url(../../_imgs/nor/main.png) no-repeat;
+	display:block;
+	float:left;
+	margin:1px 0px 0px 10px;
+}
+.eflyer-preview-version li a.email {
+	background-position:0px -835px;
+}
+.eflyer-preview-version li a.pdf {
+	background-position:-28px -835px;
+}
+.homepage-list-new, .template-list-new, .mass-list-new {
+	padding: 15px 5px;
+	font-size:11px;
+	color:#005a91;
+	font-weight:normal;
+}
+.homepage-setup, .item-list, .schedule-list {
+	margin:40px 0px;
+}
+.eflyer-new, .homepage-new, .item-edit, .schedule-edit, .schedule-related-items, .site-theme, .template-edit {
+	margin:40px 20px;
+}
+.massPrice-list {
+	float:left;
+	width:100%;
+}
+.homepage-list-ft, .mass-list-ft, .schedule-list-ft {
+	margin:-20px 0px 20px 0px;
+	float:left;
+	width:100%;
+}
+.homepage-list-bd, .schedule-list-bd {
+	float:left;
+	width:100%;
+	padding: 5px 0;
+}
+.pagination {
+	height: 32px;
+	margin: 12px 0;
+}
+.pagination li a {
+	line-height: 28px;
+	padding: 0 10px;
+}
+.homepage-list-bd table {
+	border-bottom: 1px solid #ddd;
+}
+.homepage-list-bd table td {
+}
+/*===================================
+ Homepage New
+ ==================================*/
+.homepage-new-hd h3 {
+	font-size: 14px;
+	color: #555;
+}
+.homepage-new-bd {
+	margin: 6px 0;
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+}
+.homepage-new-bd table td {
+	padding: 5px 10px 0px 0px;
+	vertical-align: top;
+}
+/*===================================
+ Homepage Edit
+ ==================================*/
+
+.hp-info {
+	border-top: 1px solid #ddd;
+	margin: 10px 0 0 0;
+	padding: 10px 0 0 20px;
+}
+.hp-info table td {
+	padding: 3px 6px;
+}
+.hp-tpl {
+}
+.hp-tpl a {
+	color: #555;
+}
+.hp-tpl-hd {
+}
+.hp-tpl a.tpl-action {
+	color: #08c;
+}
+.hp-tpl-hd-logo {
+	width: 400px;
+	height: 50px;
+	float: left;
+}
+.hp-tpl-hd-logo img {
+	float: left;
+	max-height:50px;
+	max-width:312px;
+}
+.hp-tpl-hd-logo .tpl-action {
+	margin-left: 10px;
+	line-height:50px;
+}
+.hp-tpl-hd-icons {
+	float: right;
+	margin: 10px 10px 0 0;
+}
+.hp-tpl-hd-icons ul {
+	float: left;
+}
+.hp-tpl-hd-icons ul li {
+	float: left;
+	margin: 0 4px;
+}
+.hp-tpl-hd-icons ul li img {
+	max-width:25px;
+	max-height:25px;
+}
+.hp-tpl-nav {
+	clear: both;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+	padding: 5px 0;
+}
+.hp-tpl-nav ul li {
+	float: left;
+	margin: 0 10px;
+}
+.hp-tpl-bd-side {
+	width: 150px;
+	border: 1px solid #ddd;
+	float: left;
+	height: 200px;
+	padding: 10px;
+}
+.hp-tpl-bd-main {
+	width: 550px;
+	float: right;
+}
+.hp-tpl-mod-slider {
+	border: 1px solid #ddd;
+	height: 160px;
+	padding: 20px;
+}
+.hp-tpl-mod-promolinks {
+	margin: 10px 0;
+}
+.hp-tpl-mod-promolinks ul li {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ddd;
+	margin-right: 20px;
+	padding: 10px;
+}
+.hp-tpl-mod-promolinks ul li:last-of-type {
+	margin-right: 0;
+}
+.hp-tpl-mod-promolinks ul li.last {
+	margin-right: 0;
+}
+.hp-tpl-mod-catelist {
+	margin: 15px 0;
+	border: 1px dashed #ddd;
+}
+.hp-tpl-mod-catelist-hd {
+	position:relative;
+}
+.hp-tpl-mod-catelist-hd .hp-tpl-mod-catelist-img {
+	max-width:548px;
+}
+.hp-tpl-mod-close {
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+.hp-tpl-mod-catelist-bd {
+	overflow:visible;
+}
+.hp-tpl-mod-catelist-bd ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.hp-tpl-mod-catelist-bd ul li {
+	float: left;
+	width: 105px;
+	height: 105px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	border:0;
+	overflow:visible;
+	margin:0px 0px 60px 10px;
+	position:relative;
+}
+.hp-tpl-mod-catelist-bd ul li img {
+	max-width: 97px;
+	max-height: 97px;
+	padding: 7px 7px 1px 1px;
+	background:url(../../_imgs/nor/main.png) -172px -120px no-repeat;
+	display:block;
+}
+.hp-tpl-mod-catelist-bd ul li a {
+	display: block;
+	max-width: 105px;
+	color:#7a7a00;
+}
+.hp-tpl-mod-catelist-bd ul li span {
+	display: block;
+	color: #4c4c4c;
+	width: 105px;
+	height:auto;
+	word-break:break-word;
+	line-height: 1.6;
+}
+.hp-tpl-mod-catelist-bd ul li:nth-of-type(4), .hp-tpl-mod-catelist-bd ul li:nth-of-type(8) {
+	float: left;
+}
+.hp-tpl-mod-catelist-bd ul li:last-of-type {
+	margin-right: 0;
+}
+.hp-tpl-mod-catelist-bd ul li.last {
+	margin-right: 0;
+}
+.hp-tpl-ft-links {
+	float: right;
+}
+.hp-tpl-ft-links ul {
+	float: left;
+}
+.hp-tpl-ft-links ul li {
+	float: left;
+}
+.tpl-removable {
+	position: relative;
+}
+.tpl-btn-remove {
+	position: absolute;
+	top: -8px;
+	left: -4px;
+	width: 10px;
+	height: 10px;
+	font-size: 11px;
+	cursor: pointer;
+	color: #08c;
+}
+.tpl-btn-remove:hover {
+	color: #f90;
+}
+/*===================================
+ Site theme
+ ==================================*/
+.site-theme-hd h3 {
+	font-size: 14px;
+	color: #555;
+}
+.site-theme-bd {
+	padding: 12px 0;
+}
+.site-theme-bar {
+	width: 100px;
+	height: 30px;
+	line-height:28px;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 3px;
+}
+/* -- Site theme: Blue -- */
+.site-theme-blue {
+	color: #333;
+}
+.site-theme-blue a {
+	color: #0352A6;
+}
+.site-theme-blue .site-theme-bar {
+	background: url(../../_imgs/nor/theme-blue.png) 0 -232px;
+	color: #fff;
+}
+/* -- Site theme: Blue 2-- */
+.site-theme-blue2 {
+	color: #333;
+}
+.site-theme-blue2 a {
+	color: #003C76;
+}
+.site-theme-blue2 .site-theme-bar {
+	background: url(../../_imgs/nor/theme-deepblue.png) 0 -232px;
+	color: #fff;
+}
+/* -- Site theme: Green-- */
+.site-theme-green {
+	color: #333;
+}
+.site-theme-green a {
+	color: #298213;
+}
+.site-theme-green .site-theme-bar {
+	background: url(../../_imgs/nor/theme-green.png) 0 -232px;
+	color: #fff;
+}
+/* -- Site theme: Grey-- */
+.site-theme-grey {
+	color: #333;
+}
+.site-theme-grey a {
+	color: #7A7A00;
+}
+.site-theme-grey .site-theme-bar {
+	background: url(../../_imgs/nor/theme-black.png) 0 -232px;
+	color: #fff;
+}
+/* -- Site theme: Yellow-- */
+.site-theme-yellow {
+	color: #333;
+}
+.site-theme-yellow a {
+	color: #8D8B00;
+}
+.site-theme-yellow .site-theme-bar {
+	background: url(../../_imgs/nor/theme-yellow.png) 0 -232px;
+	color: #fff;
+}
+/* -- Site theme: Red-- */
+.site-theme-red {
+	color: #333;
+}
+.site-theme-red a {
+	color: #CD5315;
+}
+.site-theme-red .site-theme-bar {
+	background: url(../../_imgs/nor/theme-red.png) 0 -232px;
+	color: #fff;
+}
+/* -- Site theme: Custom -- */
+.btn-color-picker {
+	width: 92px;
+	height: 29px;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	background: url(../../_imgs/nor/btn-color-picker.png) 0 -232px;
+}
+.btn-color-picker:hover {
+	border: 1px solid #f60;
+}
+/*===================================
+ Eflyer List
+ ==================================*/
+.eflyer-list {
+	padding:0;
+	margin-top:-61px;
+}
+.eflyer-logo {
+	max-height:50px;
+	max-width:312px;
+}
+.eflyer-list-new {
+	padding: 15px 5px;
+	font-weight: 700;
+}
+.eflyer-list-bd {
+	margin: 10px 0;
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.eflyer-list-imgview ul li {
+	float: left;
+	position:relative;
+	margin: 10px 0px 10px 70px;
+	width: 212px;
+	text-align:center;
+}
+.item-list-imgview .mod-img {
+	width:128px;
+	height:128px;
+	line-height:128px;
+	text-align:center;
+	vertical-align:middle;
+	overflow:hidden;
+	display:block;
+}
+.eflyer-list-imgview .mod-img {
+	width:212px;
+	height:160px;
+	line-height:160px;
+	text-align:center;
+	vertical-align:middle;
+	overflow:hidden;
+	display:block;
+}
+.mod-img:hover {
+	outline:3px solid #0088cc;
+}
+.eflyer-list-imgview li img {
+	max-width:210px;
+	max-height:160px;
+	vertical-align:middle;
+}
+.item-list-imgview li img, .massPrice-list-imgview li img {
+	max-width:128px;
+	max-height:128px;
+	vertical-align:middle;
+}
+.eflyer-list-imgview ul li.clear {
+	margin-left: 2px;
+}
+.eflyer-list-imgview ul li .action, .eflyer-list-imgview ul li .no, .eflyer-list-imgview ul li .period {
+	color: #999;
+}
+/*===================================
+ eFlyer New
+ ==================================*/
+
+
+.eflyer-new-hd h3 {
+	font-size: 14px;
+	color: #555;
+}
+.eflyer-new-bd {
+	margin: 6px 0;
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+}
+.eflyer-new-bd table td {
+	padding: 5px 10px 0px 0px;
+	vertical-align: top;
+}
+.eflyer-new-bd td.value div.left a.link {
+	line-height:38px;
+	padding-left:5px;
+}
+.eflyer-layout-list li {
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+.eflyer-layout-list li img {
+	display: block;
+	margin-bottom: 10px;
+}
+/*===================================
+ eFlyer Edit
+ ==================================*/
+
+.eflyer-edit {
+	margin: 0px 20px;
+	overflow:hidden;
+	float:left;
+	width:95%;
+}
+.eflyer-edit-bd {
+	margin: 6px 0;
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+}
+.eflyer-edit-bd table.form-table td.name {
+	padding-top:7px;
+}
+.eflyer-edit-pic {
+	width: 200px;
+	float: left;
+	text-align:center;
+}
+.eflyer-edit-info {
+	width: 400px;
+	float: right;
+}
+.eflyer-input-group {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px 0;
+}
+.eflyer-input-group img {
+	max-width:600px;
+}
+.eflyer-edit-tabs {
+	margin-top: 10px;
+}
+.eflyer-input-group li.title {
+	border-bottom: 1px dashed #ddd;
+}
+.eflyer-input-group textarea, .eflyer-input-group input {
+	border: none;
+	border-radius: none;
+	box-shadow: none;
+	width: 99%;
+}
+.eflyer-input-group .cke_skin_kama {
+	border:0;
+	border-radius:0;
+	height:200px;
+	overflow:hidden;
+}
+.eflyer-input-group .cke_skin_kama .cke_wrapper {
+	background:#fff;
+	height:220px;
+	overflow:hidden;
+}
+.eflyer-input-group .cke_skin_kama .cke_editor {
+	background:#fff;
+	height:200px;
+	overflow:hidden;
+	margin:0;
+	float:left;
+}
+.eflyer-input-group td.cke_contents {
+	padding:0;
+	height:200px;
+	overflow:hidden;
+}
+.eflyer-input-group .cke_skin_kama .cke_wrapper iframe {
+	margin:0px 0px 0px 0px;
+	padding:0;
+	height:100%;
+	overflow:auto;
+}
+.eflyer-input-group td.cke_top, .eflyer-input-group td.cke_bottom {
+	display:none;
+	height:40px;
+}
+.eflyer-pro-item {
+	width:99%;
+	padding:15px 0px;
+	border-bottom:1px dashed #ccc;
+	color:#5e5e5e;
+	margin:0px 0px 0px 4px;
+}
+.eflyer-pro-item .col-1 {
+	width: 150px;
+	float: left;
+}
+.eflyer-pro-item .col-1 img {
+	max-width:150px;
+}
+.eflyer-pro-item .col-2 {
+	width: 550px;
+	float: right;
+}
+.eflyer-pro-item .mod-pricing{ margin:0px;}
+.eflyer-pro-item.removable {
+	position: relative;
+	z-index: 1;
+}
+.eflyer-pro-item .btn-remove {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	cursor: pointer;
+	color: #08c;
+	z-index: 1;
+}
+.eflyer-pro-item .btn-remove:hover {
+	color: #f90;
+}
+.eflyer-sendto-filter {
+	clear: both;
+}
+.eflyer-sendto-filter table.form-table td.name {
+	padding:3px 6px;
+}
+.eflyer-sendto-list {
+	margin: 10px 0;
+	clear: both;
+}
+.eflyer-sendto-list-hd, .eflyer-sendto-list-ft {
+	background: #eee;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+}
+.eflyer-sendto-list-bd {
+	overflow-y:auto;
+	height:300px;
+}
+.eflyer-preview-version li {
+	float: left;
+	margin-right: 20px;
+}
+.eflyer-preview-version li.active {
+	font-weight: 700;
+}
+.eflyer-page {
+	margin-top: 20px;
+}
+.eflyer-page-hd, 
+.eflyer-page-ft {
+	padding:30px;
+	min-height:160px;
+}
+.eflyer-page-hd h2{ font-size:200%;} 
+.eflyer-page-ft h2{ font-size:150%;}
+.eflyer-page-hd h3{ font-size:160%;}
+.eflyer-page-ft h3{ font-size:100%;}
+.eflyer-page-hd-img img {
+	max-width:738px;
+}
+#eflyer-edit-layout .mod-selected-options {
+	width:640px;
+	overflow-y:hidden;
+	overflow-x:auto;
+	margin-top:-10px;
+}
+#eflyer-edit-layout .mod-selected-options ul {
+	width:9999px!important;
+}
+#eflyer-edit-layout .mod-selected-options li {
+	margin:5px;
+	padding:5px;
+	border-radius:3px 3px 3px 3px;
+	text-align:center;
+}
+#eflyer-edit-layout .mod-selected-options li:hover, #eflyer-edit-layout .mod-selected-options li.active {
+	background:#0088CC;
+}
+#eflyer-edit-layout .image {
+	position:relative;
+}
+#form-eflyer-sendto .eflyer-sendto-list-bd {
+	height:100px;
+}
+#eflyer-edit-preview .eflyer-page {
+	margin:20px 0px;
+}
+/*===================================
+ Schedule List
+ ==================================*/
+.schedule-list-new {
+	padding: 15px 5px;
+	font-weight: 700;
+}
+.schedule-list-bd table {
+	border-bottom: 1px solid #ddd;
+}
+/*===================================
+ Schedule Edit
+ ==================================*/
+
+.schedule-edit-bd {
+	margin: 6px 0;
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+}
+.schedule-edit .removable {
+	position: relative;
+}
+.schedule-edit .btn-remove {
+	position: absolute;
+	top: -3px;
+	left: -15px;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	cursor: pointer;
+	color: #08c;
+}
+.schedule-edit .btn-remove:hover {
+	color: #f90;
+}
+/*===================================
+ Schedule Related Items
+ ==================================*/
+.schedule-related-items-bd {
+	margin: 6px 0;
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+}
+.schedule-edit .removable {
+	position: relative;
+}
+.schedule-edit .btn-remove {
+	position: absolute;
+	top: -3px;
+	left: -15px;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	cursor: pointer;
+	color: #08c;
+}
+.schedule-edit .btn-remove:hover {
+	color: #f90;
+}
+/*===================================
+ Item List
+ ==================================*/
+.item-list {
+	padding: 0 15px;
+}
+.item-list-new {
+	padding: 15px 5px;
+	font-weight: 700;
+}
+.item-list-bd {
+	margin: 10px 0;
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.item-list-imgview ul li {
+	width: 128px;
+	float: left;
+	margin:0 0 30px 78px;
+	text-align:center;
+}
+.item-list-imgview ul li.clear {
+	margin-left: 0;
+}
+.item-list-imgview ul li .action {
+	color: #999;
+}
+/*===================================
+ Item Edit
+ ==================================*/
+.item-edit-bd {
+	margin: 6px 0;
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+}
+.item-edit-pic {
+	width: 200px;
+	float: left;
+}
+.item-edit-tabs {
+	margin: 10px 0;
+}
+.item-edit-shipping-method {
+	border-top: 1px solid #ddd;
+	padding: 25px 0 0 0;
+}
+.item-edit-shipping-method .removable {
+	position: relative;
+}
+.item-edit-shipping-method .btn-remove {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+	font-weight: 300;
+	cursor: pointer;
+	color: #08c;
+}
+.item-edit-shipping-method .btn-remove:hover {
+	color: #f90;
+}
+.mod-paged-pager {
+	float:right;
+	margin-top:5px;
+}
+.mod-paged-pager select {
+	margin:0px 10px;
+	width:auto;
+	border-radius:0px 0px 0px 0px;
+}
+.mod-paged-pager .paginationSelect {
+	margin-top:6px;
+}
+.pagination-filter {
+	margin-top:12px;
+}
+.mod-nav-search {
+	background:#fff;
+	border:1px solid #ddd;
+	height:20px;
+	line-height:20px;
+	padding:0px 5px;
+	width:259px;
+	overflow:hidden;
+}
+.mod-nav-search input {
+	width:237px;
+	height:20px;
+	color:#666666;
+	font-size:11px;
+	border:0;
+	box-shadow:none;
+	margin:0;
+	padding:0;
+	float:left;
+}
+.mod-nav-search-btn {
+	width:22px;
+	background:url(../../_imgs/nor/main.png) no-repeat right -60px;
+	height:20px;
+	float:left;
+	cursor:pointer;
+}
+.admin-info {
+	margin:20px 0px;
+	width:100%;
+}
+.admin-info h5 {
+	padding-bottom:10px;
+}
+.admin-info small {
+	display:block;
+}
+.goBack {
+	padding:15px;
+}
+.admin-pagination {
+	position:relative;
+	width:100%;
+	z-index:20;
+	top:31px;
+}
+.admin-pagination a {
+	width:30px;
+	position:absolute;
+	background:url(../../_imgs/nor/admin-arrow.gif) no-repeat #fff;
+	display:block;
+	min-height:800px;
+	cursor:pointer;
+}
+.admin-pagination a.left, .admin-pagination a.left:hover {
+	left:-10px;
+	top:-9px;
+	background-position:left center;
+}
+.admin-pagination a.right, .admin-pagination a.right:hover {
+	right:-10px;
+	top:-9px;
+	background-position:right center;
+}
+.admin-pagination a:hover {
+	background:url(../../_imgs/nor/admin-arrow.gif) no-repeat #f2f2f2;
+}
+.table-none .td-dropdown {
+	width:150px;
+	height:40px;
+	;
+}
+.table-none .dropdown {
+	display:block;
+	width:150px;
+	position:relative;
+	left:0px;
+	top:0px;
+	margin:-12px;
+	background:none;
+}
+.table-none .dropdown dt {
+	width:110px;
+}
+.table-none .dropdown dd {
+	display:none;
+	width:150px;
+	position:absolute;
+	background:#fff;
+}
+.table-none .dropdown.active {
+	z-index:99999;
+}
+.table-none .dropdown.active dd {
+	display:block;
+}
+.table-none .dropdown.active dt {
+	border:1px solid #ccc;
+}
+.template-edit {
+	padding:30px 0px 0px 0px;
+	height:85%;
+}
+#set-calidation {
+	display:none;
+}
+.template-list-ft {
+	margin-top:0px;
+}
+#template-cate dt a {
+	background:url(../../_imgs/nor/main.png) no-repeat left -1108px;
+	padding-left:20px;
+	height:22px;
+	line-height:22px;
+	display:block;
+	cursor:pointer;
+}
+#template-cate dt a.visited {
+	background-position:left -1128px;
+}
+#template-cate dd {
+	padding-left:15px;
+	cursor:pointer;
+}
+.mass-list {
+	padding:30px 0px;
+}
+.mass-list-bd {
+	padding: 5px 0;
+}
+.mass-list-bd .table {
+	border-bottom:1px solid #DDDDDD;
+}
+.mass-list-bd .table-none td {
+	padding:10px 5px;
+}
+.mass-list-bd .table-none {
+	width:100%;
+}
+.massPrice-list-imgview ul li {
+	width: 128px;
+	float: left;
+	margin: 15px 0px 15px 75px;
+	text-align:center;
+}
+.massPrice-list-imgview ul li a:first-child {
+	text-align:center;
+	width:128px;
+	height:128px;
+	line-height:128px;
+	display:block;
+}
+.massPrice-list-imgview ul li img {
+	vertical-align:middle;
+}
+.massPrice-list-imgview ul li.clear {
+	margin-left: 0;
+}
+.massPrice-list-hd select {
+	width:auto;
+}
+.massPrice-section {
+	padding:10px 0px;
+	margin:10px 0px;
+}
+.massPrice-info{ background:#F6F6F6; border-radius:3px; padding:5px 10px; margin-bottom:-15px; height:auto;}
+.massPrice-info p{ margin:3px 0px;}
+
+.massPrice-list-bd {
+	margin-top:10px;
+}
+.massPrice-list-ft {
+	margin-bottom:20px;
+}
+.massPrice-upload-hd{}
+.mass-bp {
+	margin:40px 30px;
+}
+.mass-bp-steps {
+	margin:10px 0px;
+	padding:10px 0px;
+	border:1px solid #d6d6d6;
+	overflow:hidden;
+}
+.mass-bp-steps li {
+	float:left;
+	height:27px;
+	display:block;
+	background:url(../../_imgs/nor/admin.png) right center no-repeat;
+	padding-right:25px;
+	text-align:center;
+	line-height:27px;
+	margin:0px 20px;
+	color:#005a91;
+	cursor:pointer;
+}
+.mass-bp-steps li:last-child {
+	background:none;
+	padding-right:0px;
+}
+.mass-bp-steps li span {
+	padding:0px 5px;
+	height:22px;
+	line-height:22px;
+	display:block;
+}
+.mass-bp-steps li em {
+	width:100%;
+	height:5px;
+	display:block;
+	float:left;
+	background:none;
+}
+.mass-bp-steps li.current, .mass-bp-steps li.active {
+	color:#666666;
+	font-weight:700;
+}
+.mass-bp-steps li.current span {
+	background:#efefef;
+}
+.mass-bp-steps li.current em {
+	background:url(../../_imgs/nor/admin-mass.png) center top no-repeat;
+}
+.mass-bp .mass-list-hd {
+	border-bottom:1px solid #e4e4e4;
+}
+.mass-bp .mass-list-ft {
+	border-top:1px solid #e4e4e4;
+	margin:10px 0px 0px 0px;
+}
+.table-mapping {
+	margin-left:100px;
+}
+.table-mapping td {
+	line-height:28px;
+}
+.table-mapping td.b {
+	padding-top:20px;
+}
+.table-mapping td.tleft {
+	background:#f3f3f3;
+}
+.table-mapping tr.no-mapping td, .table-mapping td.no-mapping, .no-mapping td.tleft {
+	background:none;
+}
+.table-mapping tr.message td.tleft, .table-mapping tr.message td input {
+	color:#ff0000;
+}
+.colorbig {
+	color: #FFFFFF;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	width: 90px;
+	cursor:pointer;
+}
+.color-pm li {
+	display:block;
+	width:180px;
+	height:18px;
+	line-height:18px;
+	text-align:center;
+	margin:5px;
+}
+.PMS-range {
+	position:relative;
+	width:20px;
+	height:231px;
+	font-size:0;
+	line-height:0;
+	background:url(../../_imgs/nor/color-bar.png) no-repeat;
+	margin:0px 20px;
+	cursor:pointer;
+}
+.PMS-mea {
+	position:absolute;
+	top:-2px;
+	left:-10px;
+	width:40px;
+	height:9px;
+	background:url(../../_imgs/nor/color-arrow.png) no-repeat;
+	cursor:n-resize;
+}
+.PMS-box {
+	margin:40px 10px 10px;
+}
+.PMS-group {
+	border:1px solid #ccc;
+	padding:2px;
+}
+.ActivityAttachList, .ActivityCommentsList {
+	float:left;
+}
+.itemLine {
+	margin:0px 5px;
+}
+div.itemPicture {
+	width:102px;
+	margin:0px auto;
+}
+div.itemText {
+	width:102px;
+	margin:0px auto;
+	position:relative;
+}
+div.itemText a.link {
+	position:absolute;
+	left:0px;
+	top:-15px;
+}
+.massPrice-list #divList, .mass-list #divList {
+	border:0px;
+}
+.massPrice-list{}
+.contentLeftSmall img {
+	max-width:210px;
+}
+.BPCenterRightMed img {
+	max-width:300px;
+}
+.hp-tpl-mod-promolinks img {
+	max-width:100px;
+	max-height:100px;
+}
+.hp-tpl-mod-catelist-hd .hp-tpl-mod-catelist-img {
+	max-height:548px;
+}
+.eflyer-input-group img {
+	max-width:598px;
+}
+.hp-tpl-mod-catelist-bd ul li img {
+	max-width:97px;
+}
+.eflyer-edit-pic img {
+	max-width:210px;
+	max-height:160px;
+}
+.nav .clogo img {
+	max-width:150px;
+}
+.eflyer-page table:first-child td:first-child img {
+	max-width:312px;
+	max-height:50px;
+}
+td.ckeditor {
+	width:535px;
+}
+td.ckeditor iframe {
+	height:100%;
+}
+.template-edit td.cke_contents {
+	height:300px;
+}
+.todo-list-bd .table th, .todo-list-bd .table td {
+	border:0;
+	color:#666;
+}
+.todo-list-bd .table td:nth-child(1) {
+	width:100px;
+}
+.todo-list-bd .table td:nth-child(3) {
+	min-width:100px;
+	max-width:150px;
+}
+.todo-list-bd .table td:nth-child(4) {
+	width:50px;
+}
+.todo-list-bd .table td:nth-child(5) {
+	width:40px;
+}
+.todo-list-bd .table a {
+	color:#666;
+}
+.tpl-main .user-form {
+	padding:10px;
+}
+.user-from-scroll {
+	overflow-y:auto;
+	width:90%;
+	height:70%;
+	position:fixed;
+	left:10px;
+	top:10px;
+	margin-bottom:10px;
+	border:1px dashed #ccc;
+}
+.tpl-btns {
+	margin:10px 0px;
+	position:fixed;
+	left:10px;
+	bottom:0;
+}
+.tpl-main .tpl-paged-pager {
+	padding:10px 10px;
+	clear:both;
+	position:fixed;
+	left:0;
+	bottom:30px;
+}
+td.product-pdf-logo img {
+	max-width:312px;
+	max-height:50px;
+}
+.data-loading {
+	padding:100px;
+}
+.massPrice-section {
+	padding:10px 0px;
+	margin:10px 0px;
+}

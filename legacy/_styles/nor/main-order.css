@@ -1,0 +1,59 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          main-order.css
+ //  Images:        
+ //  Dependencies:  bootstrap.css
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*===================================
+ Order
+ ==================================*/
+
+.order-steps {
+	height: 32px;
+	background: url(../../_imgs/nor/main.png) center -900px repeat-x;
+	border-radius: 5px;
+	padding-left: 20px;
+}
+
+.order-steps ul li {
+	float: left;
+	padding: 0 40px 0 40px;
+	background: url(../../_imgs/nor/main.png) right -1020px repeat-x;
+	height: 32px;
+	line-height: 32px;
+	font-size: 13px;
+	color: #666;
+	position: relative;
+	margin-left: -20px;
+}
+.order-steps ul li a{
+	color: #666;
+	text-decoration:none;
+}
+
+.order-steps ul li.active {
+	float: left;
+	padding: 0 40px 0 40px;
+	background: url(../../_imgs/nor/main.png) right -960px repeat-x;
+	font-weight: 700;
+	color: #222; 
+}
+.order-steps ul li.active a{
+	color: #222; 
+}
+
+.order-steps ul li.first {
+	z-index: 100;
+}
+
+.order-steps ul li.second {
+	z-index: 98;
+}
+
+.order-steps ul li.third {
+	z-index: 96;
+}

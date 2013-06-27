@@ -1,0 +1,63 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          user.css
+ //  Images:        
+ //  Dependencies:  bootstrap.css
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+/*===================================
+ User
+ ==================================*/
+
+#user-whyjoin {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: #eee;
+	padding: 0 0 8px 0;
+}
+#user-whyjoin h3 {
+	font-size: 1.2em;
+	font-weight: 700;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 0 8px;
+}
+#user-whyjoin ul li {
+	padding: 0 0 0 8px;
+	line-height: 1.8;
+}
+#user-help {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: #eee;
+	padding: 0 0 8px 0;
+}
+#user-help h3 {
+	font-size: 1.2em;
+	font-weight: 700;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 0 8px;
+}
+#user-help ul li {
+	padding: 0 0 0 8px;
+	line-height: 1.8;
+}
+.user-main h3 {
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 30px;
+	background: #f6f6f6;
+	padding: 0 10px;
+}
+.user-main-form td.name {
+	width:20%;
+}
+
+

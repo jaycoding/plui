@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../_styles/nor/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-global.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/jquery.pagination.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/ui/jquery.validate.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/car/common.css" media="all" />
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/bootstrap.js"></script>
+<script type="text/javascript" src="../_scripts/nor/plugins.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/admin-main.js"></script>
+<script type="text/javascript" src="../_scripts/car/admin-main.js"></script>
+<!--[if lt IE 9]>
+<script src="../_scripts/nor/lib/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- Header Start -->
+  <header id="header" class="cf">
+    <div id="hd-logo"><img src="../temp/promoLogo.png" alt="" /></div>
+  </header>
+  <!-- Header End -->
+  
+  <div id="page"> 
+    
+    <!-- Side Navigation Start -->
+    <nav>
+      <div class="clogo"> <img src="../_imgs/defaultImages/admin/default_admin_logo_150.gif" alt="" /> </div>
+      <div class="accordion" id="nav">
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-admin"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-admin">Administration</a> </div>
+          <div id="nav-admin" class="accordion-body collapse" style="height: 0; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Company Profiles</a></li>
+                <li><a href="#">Personal Profile</a></li>
+                <li><a href="#">To Do List</a></li>
+                <li><a href="templates-my.html">My Templates</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="site-theme.html">Site Theme</a></li>
+                <li><a href="#">Login &amp; Password</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-marketing"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-marketing">Marketing</a> </div>
+          <div id="nav-marketing" class="accordion-body in collapse" style="height: auto; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="homepage-admin.html">Homepage Admin</a></li>
+                <li><a href="item-list.html">Item Admin</a></li>
+                <li><a href="tier-pricing-list.html">Tier Pricing</a></li>
+                <li class="active"><a href="mass-price.html">Mass price update</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Banners</a></li>
+                <li><a href="eflyer-list.html">eFlyer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-sales"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-sales">Sales</a> </div>
+          <div id="nav-sales" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#"><strong>Custom</strong>er Data</a></li>
+                <li><a href="mass-<strong>Custom</strong>er.html">Mass <strong>Custom</strong>er import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-purchase"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-purchase">Purchase</a> </div>
+          <div id="nav-purchase" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Vendor Data</a></li>
+                <li><a href="mass-vendor.html">Mass vendor import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-banking"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-banking">Banking</a> </div>
+          <div id="nav-banking" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Currency Rate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-logout"> <a class="accordion-toggle" href="#">LOGOUT</a> </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Side Navigation End -->
+    
+    <div id="body">
+      <div class="body-hd">
+        <div class="mod-nav-search" id="nav-search">
+          <input type="text" placeholder="specification name or key words" />
+          <div class="mod-nav-search-btn"></div>
+        </div>
+      </div>
+      <div class="massPrice-list">
+        <div class="massPrice-list-hd cf">
+          <div class="admin-info">
+            <h5>Tag Name: Economical Drives</h5>
+            <small>1,400 price rows are ready to export.</small></div>
+          <div class="pagination-filter left"> Filter:
+            <select name="" class="" id="">
+              <option value="">Vendor price</option>
+              <option value="">Distributor price</option>
+              <option value="">End user price</option>
+            </select>
+            <select name="" class="" id="">
+              <option value="">sku alphabetic order</option>
+              <option value="">name alphabetic order</option>
+            </select>
+            <select name="" class="" id="">
+              <option value="">USD</option>
+              <option value="">CNY</option>
+            </select>
+          </div>
+          <div class="mod-paged-pager right"><!-- #BeginLibraryItem "/Library/mode-pagination.lbi" -->
+            <div class="pagination"> <span>Total&nbsp;26(1/2Pages)</span> <span class="current prev">|&lt;&lt;</span> <span class="current prev">&lt;</span> <span>&nbsp;1</span> <a class="next" href="#">&gt;</a> <a class="next" href="#">&gt;&gt;|</a> <span>&nbsp;Go</span>
+              <select class="paginationSelect">
+                <option selected="selected" value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+            <!-- #EndLibraryItem --></div>
+        </div>
+        <div class="massPrice-list-bd">
+          <div class="massPrice-section">
+            <div class="massPrice-info">
+              <p><span class="b">SJUSB0006</span><br/><span class="grey">Swivel USB Flash Drive</span></p>
+            </div>
+            <div class="mod-pricing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="tleft"><strong>Capacity</strong></th>
+                    <th class="tright">Setup<br />
+                      1</th>
+                    <th class="tright">Qty<br />
+                      100</th>
+                    <th class="tright">Qty<br />
+                      300</th>
+                    <th class="tright">Qty<br />
+                      500</th>
+                    <th class="tright">Qty<br />
+                      1,000</th>
+                    <th class="tright">Qty<br />
+                      3,000</th>
+                    <th class="tright">Qty<br />
+                      5,000</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tleft"><strong>1G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>2G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>4G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>8G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>Custom</strong></td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="massPrice-section">
+            <div class="massPrice-info">
+              <p><span class="b">SJUSB0006</span><br/><span class="grey">Swivel USB Flash Drive</span></p>
+            </div>
+            <div class="mod-pricing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="tleft"><strong>Capacity</strong></th>
+                    <th class="tright">Setup<br />
+                      1</th>
+                    <th class="tright">Qty<br />
+                      100</th>
+                    <th class="tright">Qty<br />
+                      300</th>
+                    <th class="tright">Qty<br />
+                      500</th>
+                    <th class="tright">Qty<br />
+                      1,000</th>
+                    <th class="tright">Qty<br />
+                      3,000</th>
+                    <th class="tright">Qty<br />
+                      5,000</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tleft"><strong>1G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>2G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>4G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>8G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>Custom</strong></td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="massPrice-section">
+            <div class="massPrice-info">
+              <p><span class="b">SJUSB0006</span><br/><span class="grey">Swivel USB Flash Drive</span></p>
+            </div>
+            <div class="mod-pricing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="tleft"><strong>Capacity</strong></th>
+                    <th class="tright">Setup<br />
+                      1</th>
+                    <th class="tright">Qty<br />
+                      100</th>
+                    <th class="tright">Qty<br />
+                      300</th>
+                    <th class="tright">Qty<br />
+                      500</th>
+                    <th class="tright">Qty<br />
+                      1,000</th>
+                    <th class="tright">Qty<br />
+                      3,000</th>
+                    <th class="tright">Qty<br />
+                      5,000</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tleft"><strong>1G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>2G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>4G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>8G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>Custom</strong></td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="massPrice-section">
+            <div class="massPrice-info">
+              <p><span class="b">SJUSB0006</span><br/><span class="grey">Swivel USB Flash Drive</span></p>
+            </div>
+            <div class="mod-pricing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="tleft"><strong>Capacity</strong></th>
+                    <th class="tright">Setup<br />
+                      1</th>
+                    <th class="tright">Qty<br />
+                      100</th>
+                    <th class="tright">Qty<br />
+                      300</th>
+                    <th class="tright">Qty<br />
+                      500</th>
+                    <th class="tright">Qty<br />
+                      1,000</th>
+                    <th class="tright">Qty<br />
+                      3,000</th>
+                    <th class="tright">Qty<br />
+                      5,000</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tleft"><strong>1G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>2G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>4G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>8G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>Custom</strong></td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="massPrice-section">
+            <div class="massPrice-info">
+              <p><span class="b">SJUSB0006</span><br/><span class="grey">Swivel USB Flash Drive</span></p>
+            </div>
+            <div class="mod-pricing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="tleft"><strong>Capacity</strong></th>
+                    <th class="tright">Setup<br />
+                      1</th>
+                    <th class="tright">Qty<br />
+                      100</th>
+                    <th class="tright">Qty<br />
+                      300</th>
+                    <th class="tright">Qty<br />
+                      500</th>
+                    <th class="tright">Qty<br />
+                      1,000</th>
+                    <th class="tright">Qty<br />
+                      3,000</th>
+                    <th class="tright">Qty<br />
+                      5,000</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tleft"><strong>1G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>2G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>4G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>8G</strong></td>
+                    <td class="tright">37.5</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                    <td class="tright">5.82</td>
+                  </tr>
+                  <tr>
+                    <td class="tleft"><strong>Custom</strong></td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                    <td class="tright">quote</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="massPrice-list-ft cf">
+          <div class="mod-paged-pager right"><!-- #BeginLibraryItem "/Library/mode-pagination.lbi" -->
+            <div class="pagination"> <span>Total&nbsp;26(1/2Pages)</span> <span class="current prev">|&lt;&lt;</span> <span class="current prev">&lt;</span> <span>&nbsp;1</span> <a class="next" href="#">&gt;</a> <a class="next" href="#">&gt;&gt;|</a> <span>&nbsp;Go</span>
+              <select class="paginationSelect">
+                <option selected="selected" value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+            <!-- #EndLibraryItem --></div>
+        </div>
+        <div class="cf"> <a href="mass-price-export-report.html">
+          <input type="button" value="Export Excel" class="btn" />
+          </a> <a href="mass-price-pdf.html">
+          <input type="button" value="Export pdf" class="btn" />
+          </a> <a href="mass-price.html">
+          <input type="button" value="Cancel" class="btn" />
+          </a> </div>
+      </div>
+    </div>
+    
+    <!-- Footer Start-->
+    <footer id="footer" class="cf"> © 2012, Promolinked, Inc. All right reserved. 
+      Powered by www.no1sourcing.com.
+      <select name="" class="input-small" id="">
+        <option value="">English</option>
+        <option value="">中文</option>
+      </select>
+    </footer>
+    <!-- Footer End--> 
+  </div>
+</div>
+</body>
+</html>

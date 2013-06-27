@@ -1,0 +1,111 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          global.css
+ //  Images:        
+ //  Dependencies:  bootstrap.css
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+/*===================================
+ Global
+ ==================================*/
+
+#wrapper {
+	
+}
+
+#page {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*--Header--*/
+#header {
+	position: relative;
+	padding: 10px 0;
+	clear: both;
+}
+
+#hd-logo {
+	float: left;
+	width:55%;
+}
+#hd-logo img{ max-width:500px; max-height:80px;}
+#hd-welcome {
+	float: right;
+	color: #666;
+	text-align:right; 
+	width:40%;
+}
+#hd-share{float:right; text-align:right; width:40%; margin-top:15px;}
+#hd-share img{ max-height:26px; margin:0px 0px 0px 5px;}
+
+/*--Navigation--*/
+#nav {
+	clear: both;
+}
+
+/*--Body--*/
+#body {
+	clear: both;
+	margin: 12px 0 0 0;
+	padding: 0 0 15px 0;
+}
+
+/*--Body Side--*/
+#side {
+	width: 190px;
+	float: left;
+}
+
+/*--Body Main*/
+#main {
+	width: 760px;
+	float: right;
+}
+
+/*--Footer--*/
+#footer {
+	clear: both;
+	border-top: 2px solid #ccc;
+	padding: 10px 0 30px;
+}
+
+#footer-copyright {
+	float: left;
+}
+
+#footer-links {
+	float: right;
+}
+
+#footer p {
+	line-height: 1.2;
+	color: #666;
+}
+
+#footer-links li{
+	float: left;
+	max-width:85px; 
+	max-height:58px; 
+	padding:5px; 
+	overflow:hidden;
+}
+
+#footer-links li img{
+	max-width:85px; max-height:58px;
+}
+.lay-wrapper{}
+.lay-page{}
+.lay-body{}
+.lay-side{}
+.lay-main{}
+.lay-cus-main{ width:720px;}
+.lay-cus-side{ 
+	width:210px;
+	bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0px;
+	height:800px;}

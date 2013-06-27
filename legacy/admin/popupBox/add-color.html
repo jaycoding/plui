@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../_styles/nor/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-global.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/main-global.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-themes.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-user.css" media="all" />
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/bootstrap.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/plugins.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/admin-main.js"></script>
+<script type="text/javascript" src="../../_scripts/car/tplAction.js"></script>
+<script type="text/javascript" src="../../_scripts/car/admin-main.js"></script>
+<!--[if lt IE 9]>
+<script src="../../_scripts/nor/lib/html5.js"></script>
+<![endif]-->
+<script type='text/javascript'>
+function change2(o,e){
+	var e = e ? e : window.event;
+	if(!window.event) {e.preventDefault();}
+	var tY=o.offsetTop,
+		dy=e.clientY;
+		
+	document.onclick=function(e){
+		var e = e ? e : window.event;
+		var len=tY+e.clientY-dy;
+		if(len>=0 && len<=225){
+			o.style.top=len+"px";
+			document.getElementById('value2').innerHTML =5 + Math.round(len/7);
+		}
+	}
+	
+	document.onmousemove=function(e){
+		var e = e ? e : window.event;
+		var len=tY+e.clientY-dy;
+		if(len>=0 && len<=225){
+			o.style.top=len+"px";
+			document.getElementById('value2').innerHTML =5 + Math.round(len/7);
+		}
+	}
+	document.onmouseup=function(){
+		document.onmousemove=null;
+		document.onmouseup=null;
+	}
+	
+	
+}
+
+</script>
+</head>
+<body>
+<div id="addColor" class="tpl-main">
+  <div id="form-addColor" class="user-form">
+    <div class="tpl-search" id="tpl-search">
+      <input type="text" class="text-normal" placeholder="PMS search" />
+      <div class="tpl-search-btn"></div>
+    </div>
+    <div class="PMS-box">
+      <div class="left PMS-group" id="ColorGroup">
+        <ul id="colorG1" class="color-pm">
+          <li style="color:#B7B7B7; background:#fee000">Yellow C</li>
+          <li style="color:#B7B7B7; background:#fee000">Yellow C</li>
+          <li style="color:#B7B7B7; background:#fee000">Yellow C</li>
+        </ul>
+      </div>
+      <div class="left PMS-range">
+        <div class='PMS-mea' onmousedown="change2(this,event)" ></div>
+      </div>
+      <div class="tpl-btns">
+        <input type="button" class="bluebutton" value="Submit" id="btnSubmitPantoneColor">
+        <input type="reset" class="button" value="Cancel" id="btnCancelPantoneColor">
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="itemColNoBorder" style="border: 0">
+  <input type="hidden" value="71" name="hidSubItemID">
+  <div class="clear"> </div>
+  <a href="#"><img src="http://c296273.r73.cf1.rackcdn.com///UserImages/4/6/201204/20120425063450ed1ztvuu.jpg" class="itemPic" alt=""></a> <br>
+  <b>Cellphone Tech Loop</b><br>
+  USBAS19<br>
+  <input type="radio" class="SubItemRadiobox" style="height: 30px">
+</div>
+<div class="itemColNoBorder" style="border: 0">
+  <input type="hidden" value="71" name="hidSubItemID">
+  <div class="clear"> </div>
+  <a href="#"><img src="http://c296273.r73.cf1.rackcdn.com///UserImages/4/6/201204/20120425063450ed1ztvuu.jpg" class="itemPic" alt=""></a> <br>
+  <b>Cellphone Tech Loop</b><br>
+  USBAS19<br>
+  <input type="radio" class="SubItemRadiobox" style="height: 30px">
+</div>-->
+</body>
+</html>

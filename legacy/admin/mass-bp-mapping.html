@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../_styles/nor/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-global.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/jquery.pagination.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/ui/jquery.validate.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/car/common.css" media="all" />
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/bootstrap.js"></script>
+<script type="text/javascript" src="../_scripts/nor/plugins.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/admin-main.js"></script>
+<script type="text/javascript" src="../_scripts/car/admin-main.js"></script>
+<!--[if lt IE 9]>
+<script src="../_scripts/nor/lib/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- Header Start -->
+  <header id="header" class="cf">
+    <div id="hd-logo"><img src="../temp/promoLogo.png" alt="" /></div>
+  </header>
+  <!-- Header End -->
+  
+  <div id="page"> 
+    
+    <!-- Side Navigation Start -->
+    <nav>
+      <div class="clogo"> <img src="../_imgs/defaultImages/admin/default_admin_logo_150.gif" alt="" /> </div>
+      <div class="accordion" id="nav">
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-admin"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-admin">Administration</a> </div>
+          <div id="nav-admin" class="accordion-body collapse" style="height: 0; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Company Profiles</a></li>
+                <li><a href="#">Personal Profile</a></li>
+                <li><a href="#">To Do List</a></li>
+                <li><a href="templates-my.html">My Templates</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="site-theme.html">Site Theme</a></li>
+                <li><a href="#">Login &amp; Password</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-marketing"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-marketing">Marketing</a> </div>
+          <div id="nav-marketing" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="homepage-admin.html">Homepage Admin</a></li>
+                <li><a href="item-list.html">Item Admin</a></li>
+                <li><a href="tier-pricing-list.html">Tier Pricing</a></li>
+                <li><a href="mass-price.html">Mass price update</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Banners</a></li>
+                <li><a href="eflyer-list.html">eFlyer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-sales"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-sales">Sales</a> </div>
+          <div id="nav-sales" class="accordion-body in collapse" style="height: auto; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Customer Data</a></li>
+                <li class="active"><a href="mass-customer.html">Mass customer import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-purchase"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-purchase">Purchase</a> </div>
+          <div id="nav-purchase" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Vendor Data</a></li>
+                <li><a href="mass-vendor.html">Mass vendor import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-banking"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-banking">Banking</a> </div>
+          <div id="nav-banking" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Currency Rate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-logout"> <a class="accordion-toggle" href="#">LOGOUT</a> </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Side Navigation End -->
+    
+    <div id="body">
+      <div class="mass-bp">
+        <div class="mass-bp-hd cf">
+          <div class="mass-bp-steps">
+            <ul>
+              <li class="active"><span>Upload file</span><em></em></li>
+              <li class="current"><span>Fields mapping</span><em></em></li>
+              <li><span>Sample check</span><em></em></li>
+              <li><span>Import</span><em></em></li>
+              <li><span>Import report</span><em></em></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mass-bp-bd">
+          <div class="admin-info cf"><small>Match the upload file fields with system fields</small></div>
+          <table class="table-mapping">
+            <tr>
+              <td class="tright">System field</td>
+              <td class="tleft">Upload file field</td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright b">General information</td>
+              <td class="tleft">&nbsp;</td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">BP name</td>
+              <td class="tleft"><select name="" class="" id="">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Website</td>
+              <td class="tleft"><select name="" class="" id="">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">ASI No.</td>
+              <td class="tleft"><select name="select" class="" id="select">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">PPAI</td>
+              <td class="tleft"><select name="select2" class="" id="select2">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">UPIC</td>
+              <td class="tleft"><select name="select3" class="" id="select3">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">SAGE</td>
+              <td class="tleft"><select name="select4" class="" id="select4">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Other Orginization</td>
+              <td class="tleft"><select name="select5" class="" id="select5">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright b">Customer default contact</td>
+              <td class="tleft">&nbsp;</td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">First name</td>
+              <td class="tleft"><select name="select6" class="" id="select6">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Last name</td>
+              <td class="tleft"><select name="select7" class="" id="select7">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Title</td>
+              <td class="tleft"><select name="select8" class="" id="select8">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Position</td>
+              <td class="tleft"><select name="select9" class="" id="select9">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Telephone 1</td>
+              <td class="tleft"><select name="select10" class="" id="select10">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Telephone 2</td>
+              <td class="tleft"><select name="select11" class="" id="select11">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Cell</td>
+              <td class="tleft"><select name="select12" class="" id="select12">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Fax</td>
+              <td class="tleft"><select name="select13" class="" id="select13">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Email</td>
+              <td class="tleft"><select name="select14" class="" id="select14">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright b">Primary business address</td>
+              <td class="tleft">&nbsp;</td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Address name</td>
+              <td class="tleft"><select name="select15" class="" id="select15">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Street Address 1</td>
+              <td class="tleft"><select name="select16" class="" id="select16">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Street Address 2</td>
+              <td class="tleft"><select name="select17" class="" id="select17">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">City</td>
+              <td class="tleft"><select name="select18" class="" id="select18">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">County</td>
+              <td class="tleft"><select name="select20" class="" id="select20">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">State/Province</td>
+              <td class="tleft"><select name="select19" class="" id="select19">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Zip code</td>
+              <td class="tleft"><select name="select21" class="" id="select21">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="tright">Country</td>
+              <td class="tleft"><select name="select22" class="" id="select22">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft no-mapping">&nbsp;</td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright b">Default value</td>
+              <td class="tleft">&nbsp;</td>
+              <td class="tleft">&nbsp;</td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright">Tag:</td>
+              <td class="tleft"><input type="text" class="input-large"/></td>
+              <td class="tleft">&nbsp;</td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright">default payment term:</td>
+              <td class="tleft"><select name="select24" class="" id="select24">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft">&nbsp;</td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright">default payment mean:</td>
+              <td class="tleft"><select name="select25" class="" id="select25">
+                  <option value="">Business name</option>
+                  <option value="">UserNameFirst</option>
+                  <option value="">UserEmail</option>
+                  <option value="">No data</option>
+                </select></td>
+              <td class="tleft">&nbsp;</td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright">default Account Executive:</td>
+              <td class="tleft"><input type="text" class="input-large"/></td>
+              <td class="tleft"><a>Search Account Executive</a></td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright">default Customer Care:</td>
+              <td class="tleft"><input type="text" class="input-large"/></td>
+              <td class="tleft"><a>Search Customer Care</a></td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright">Cutomer tier:</td>
+              <td class="tleft"><select name="select23" class="" id="select23">
+                  <option value="">A</option>
+                  <option value="">B</option>
+                  <option value="">C</option>
+                  <option value="">D</option>
+                </select></td>
+              <td class="tleft">&nbsp;</td>
+            </tr>
+            <tr class="no-mapping">
+              <td class="tright">&nbsp;</td>
+              <td colspan="2" class="tleft"><a href="mass-bp-upload.html">
+                <input type="button" value=" < Back" class="btn" />
+                </a> <a href="mass-bp-check.html">
+                <input type="button" value="Next > " class="btn" />
+                </a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="mass-bp-ft cf"> </div>
+      </div>
+    </div>
+    
+    <!-- Footer Start-->
+    <footer id="footer" class="cf"> © 2012, Promolinked, Inc. All right reserved. 
+      Powered by www.no1sourcing.com.
+      <select name="" class="input-small" id="">
+        <option value="">English</option>
+        <option value="">中文</option>
+      </select>
+    </footer>
+    <!-- Footer End--> 
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.pagination { margin:0px; float:right;}
+        
+.pagination a {
+    text-decoration: none;
+	border: solid 0px #ccc;
+}
+
+.pagination a, .pagination span {
+    display: block;
+    float: left;
+	min-width:1em;
+	text-align:center;
+	padding:0px 5px;
+	line-height:40px;
+}
+
+.pagination .current {}
+
+.pagination .current.prev, .pagination .current.next{color:#999;}
+
+.paginationSelect{ width:auto; border:0px; background:none; margin:6px;}
+
+.pagination a:hover, .pagination .active a{ background:none;}

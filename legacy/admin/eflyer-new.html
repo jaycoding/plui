@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../_styles/nor/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-global.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/jquery.pagination.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/ui/jquery.validate.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/car/common.css" media="all" />
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/bootstrap.js"></script>
+<script type="text/javascript" src="../_scripts/nor/plugins.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/admin-main.js"></script>
+<script type="text/javascript" src="../_scripts/car/admin-main.js"></script>
+<!--[if lt IE 9]>
+<script src="../_scripts/nor/lib/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- Header Start -->
+  <header id="header" class="cf">
+    <div id="hd-logo"><img src="../temp/promoLogo.png" alt="" /></div>
+  </header>
+  <!-- Header End -->
+  
+  <div id="page"> 
+    
+    <!-- Side Navigation Start -->
+    <nav>
+      <div class="clogo"> <img src="../_imgs/defaultImages/admin/default_admin_logo_150.gif" alt=""/> </div>
+      <div class="accordion" id="nav">
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-admin"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-admin">Administration</a> </div>
+          <div id="nav-admin" class="accordion-body collapse" style="height: 0; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Company Profiles</a></li>
+                <li><a href="#">Personal Profile</a></li>
+                <li><a href="#">To Do List</a></li>
+                <li><a href="templates-my.html">My Templates</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="site-theme.html">Site Theme</a></li>
+                <li><a href="#">Login &amp; Password</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-marketing"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-marketing">Marketing</a> </div>
+          <div id="nav-marketing" class="accordion-body in collapse" style="height: auto; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="homepage-admin.html">Homepage Admin</a></li>
+                <li><a href="item-list.html">Item Admin</a></li>
+                <li><a href="tier-pricing-list.html">Tier Pricing</a></li>
+                <li><a href="mass-price.html">Mass price update</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Banners</a></li>
+                <li class="active"><a href="eflyer-list.html">eFlyer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-sales"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-sales">Sales</a> </div>
+          <div id="nav-sales" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Customer Data</a></li>
+                <li><a href="mass-customer.html">Mass customer import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-purchase"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-purchase">Purchase</a> </div>
+          <div id="nav-purchase" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Vendor Data</a></li>
+                <li><a href="mass-vendor.html">Mass vendor import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-banking"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-banking">Banking</a> </div>
+          <div id="nav-banking" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Currency Rate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-logout"> <a class="accordion-toggle" href="#">LOGOUT</a> </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Side Navigation End -->
+    
+    <div id="body">
+      <div class="eflyer-new">
+        <div class="eflyer-new-hd cf">
+          <h3 class="left">Add a new eFlyer</h3>
+          <a href="eflyer-list.html" class="right">« Return to eFlyer list</a> </div>
+        <div class="eflyer-new-bd">
+          <table class="form-table">
+            <tr>
+              <td class="name">eFlyer Name:</td>
+              <td class="value"><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td class="name">Responsible Person:</td>
+              <td class="value"><input type="text" name="" id="" />
+                <a href="javascript:void(0)">Search...</a></td>
+            </tr>
+            <tr>
+              <td class="name">Status:</td>
+              <td class="value"><select name="" id="">
+                  <option value="">Demo</option>
+                  <option value="">Active</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td class="name">Display From:</td>
+              <td class="value"><input type="text" name="" id="" class="datepicker" /></td>
+            </tr>
+            <tr>
+              <td class="name">Display To:</td>
+              <td class="value"><input type="text" name="" id="" class="datepicker" /></td>
+            </tr>
+            <tr>
+              <td class="name">Choose a template:</td>
+              <td class="value"><div>
+                  <ul class="eflyer-layout-list">
+                    <li>
+                      <label for="eflyer-layout-1"><img src="../temp/eflyer-layout-1.png" alt="" /></label>
+                      <input type="radio" name="eflyer-layout-option" id="eflyer-layout-1" />
+                    </li>
+                    <li>
+                      <label for="eflyer-layout-2"><img src="../temp/eflyer-layout-2.png" alt="" /></label>
+                      <input type="radio" name="eflyer-layout-option" id="eflyer-layout-2" />
+                    </li>
+                  </ul>
+                </div></td>
+            </tr>
+            <tr>
+              <td class="name"></td>
+              <td class="value">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="name"></td>
+              <td class="value"><input type="button" value="Add" class="btn" />
+                <input type="button" value="Cancel" class="btn" /></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Start-->
+    <footer id="footer" class="cf"> © 2012, Promolinked, Inc. All right reserved. 
+      Powered by www.no1sourcing.com.
+      <select name="" class="input-small" id="">
+        <option value="">English</option>
+        <option value="">中文</option>
+      </select>
+    </footer>
+    <!-- Footer End--> 
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          customize.css
+ //  Images:        
+ //  Dependencies:  bootstrap.css
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*===================================
+ Customize
+ ==================================*/
+
+.customize-step {
+	margin-bottom: 10px;
+}
+.customize-step h3.customize-step-name {
+	font-size: 15px;
+	line-height: 20px;
+}
+.customize-step-content {
+	padding: 10px 0 10px 25px;
+}
+.customize-step .step-no {
+	background: url(../../_imgs/nor/main.png) -960px -320px no-repeat;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+ *display: inline;
+ *zoom: 1;
+}
+.customize-step-content .btn-large {
+	color: #fff;
+}
+.customize-color li {
+	float: left;
+	margin-right: 12px;
+}
+.customize-color li span {
+	display: block;
+	padding: 5px 12px;
+	text-align: center;
+	min-width: 90px;
+}
+.colorpane {
+	display: inline-block;
+ *display: inline;
+ *zoom: 1;
+	padding: 5px 12px;
+	text-align: center;
+	min-width: 80px;
+}
+.customize-info .span4 {
+	display:block;
+	float:left;
+}
+.customize-pdf-content {
+	width:980px;
+	margin:20px auto;
+	overflow:hidden;
+}
+.customize-pdf-content-hd table {
+	width:100%;
+}
+.customize-pdf-info {
+	font-size:16px;
+	font-weight:500;
+	color:#4c4c4c;
+}
+.customize-pdf-content-ft {
+	width:980px;
+	margin:20px auto;
+}
+.customize-pdf-content-ft .pdf-title {
+	background:url(../../_imgs/nor/main.png) left -1384px;
+}
+.span3.greybox {
+	width:auto;
+}
+/* New style */
+.sec-tabs {
+	border: 1px solid #ddd;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0px 1px 2px #ddd;
+}
+.sec-tabs ul li {
+	float: left;
+	padding-right: 10px;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	margin: 0 10px;
+}
+.sec-tabs ul li.current {
+	float: left;
+	background-color: #eee;
+	border-radius: 5px;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+.sec-tabs ul li.current, .customize-tabs ul li.active {
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+.sec-tabs ul li.active a, .customize-tabs ul li.current a {
+	color:#000;
+	font-weight:bold;
+}
+.sec-tabs ul li a {
+	display: block;
+	padding: 5px 20px;
+	background: url(../../_imgs/nor/main.png) right -239px no-repeat;
+	padding-right: 12px;
+	color: #4c4c4c;
+}
+.sec-cus-li {
+	border: 1px solid #ddd;
+	border-radius: 5px 5px 5px 5px;
+	padding: 15px;
+	margin-bottom:15px;
+}
+.sec-cus-li.select {
+	box-shadow: 0 1px 2px #ddd;
+}
+.sec-cus-li, .sec-cus-li dt, .sec-cus-li dd, .sec-cus-li .sec-select, .sec-cus-li .sec-items, .sec-cus-li pre, .sec-cus-li .mod-pricing, .sec-cus-li section, .sec-cus-li section h3, .sec-cus-li section h5 {
+	overflow:hidden;
+	float:left;
+	display:block;
+}
+.sec-cus-li section.hide{ display:none;}
+.sec-cus-li pre {
+	font-weight:normal;
+	width:100%;
+	margin:0px 0px 10px 0px;
+}
+.sec-cus-li dt {
+	width:220px;
+}
+.sec-cus-li .sec-select {
+	width:30px;
+}
+.sec-cus-li .sec-select.select input[type="checkbox"]{ display:none;}
+.sec-cus-li .sec-select.select {
+	background:
+url(../../_imgs/nor/theme-black.png) no-repeat 0px -600px;
+	height:30px;
+}
+.sec-cus-li .sec-items {
+	width:150px;
+	margin:0px 30px 0px 10px;
+	float:right;
+}
+.sec-cus-li dd {
+	width:468px;
+	margin:0;
+}
+.sec-cus-li section {
+	width:100%;
+	margin:10px 0;
+}
+.sec-cus-li section h3 {
+	border-radius:5px;
+	background:#f0f0f0;
+	padding:0px 12px;
+	height:26px;
+	line-height:26px;
+	font-size:14px;
+	width:95%;
+	margin-bottom:10px;
+}
+.sec-cus-li section h5 {
+	padding:0px 12px;
+	line-height:20px;
+	width:95%;
+	margin:5px 0;
+}
+.sec-cus-li section textarea {
+	max-width:444px;
+	min-width:444px;
+	overflow:hidden;
+	margin-bottom:30px;
+}
+
+.lay-cus-main {
+	width:720px;
+}
+.lay-cus-side {
+	width:210px;
+}
+
+
+.mod-price {
+	border:0px;
+	width:auto;
+	border-radius: 5px 5px 5px 5px;
+}
+.mod-price tr {
+	cursor:pointer;
+}
+.mod-pricing .table thead th, 
+.mod-pricing .table thead td {
+	color:#999;
+	cursor:default;
+}
+.mod-pricing .table td, .mod-pricing .table th {
+	border:0;
+	word-wrap:break-word;
+	word-break:normal;
+	word-break:break-all;
+	padding:2px 3px;
+	color:#000;
+	line-height:20px;
+}
+.mod-pricing .table th {
+	text-align:left;
+	max-width:185px;
+}
+.mod-pricing .table th input[type="text"] {
+	resize:none;
+	width:50px;
+	height:20px;
+	margin:0px;
+	padding:0;
+	border-radius:0;
+	color:#000;
+	font-weight:bold;
+	font-size:12px;
+	background:none;
+}
+.mod-pricing .table th input[type="text"]:focus {
+	border-radius:3px;
+	background:#fff;
+	width:auto;
+}
+.mod-pricing .table th .select-noborder {
+	width:auto;
+}
+.mod-pricing .table td {
+	text-align:right;
+	width:50px;
+}
+.mod-pricing .table td .radio {
+	width:2px;
+	height:20px;
+	overflow:hidden;
+}
+.mod-pricing .table tr.select, 
+.mod-pricing .table tr.select:hover th, 
+.mod-pricing .table tr.select:hover td {
+	background:#dfdfc8;
+}
+.mod-pricing .table tr.select .radio {
+	background:
+url(../../_imgs/nor/theme-black.png) no-repeat -30px -605px;
+	margin:0;
+}
+.mod-pricing .table tr.select .radio input[type="radio"] {
+	display:none;
+}
+.active input[type="text"], 
+.active textarea {
+	border:0px;
+	color:#666;
+	margin:0px 12px;
+	line-height:20px;
+	-moz-transition:none;
+	box-shadow:none;
+	resize:none;
+}
+.active input[type="text"]:focus, 
+.active textarea:focus {
+	-moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	border:1px solid #ccc;
+	resize:vertical;
+}

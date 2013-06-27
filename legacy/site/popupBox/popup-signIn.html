@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/jquery.pagination.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/jquery.tagedit.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/asyncbox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-themes.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/ui/jquery.validate.css" media="all" />
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/bootstrap.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/plugins.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/main.js"></script>
+<script type="text/javascript" src="../../_scripts/car/main.js"></script>
+<!--[if lt IE 9]>
+<script src="../../_scripts/nor/lib/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="signin" class="tpl-main">
+  <div id="form-signin" class="user-form">
+    <table>
+      <tbody>
+        <tr>
+          <td class="name"> BP ID </td>
+          <td class="field"><input name="ctl00$ContentPlaceHolder1$SJLogin$txtBPID" type="text" id="ContentPlaceHolder1_SJLogin_txtBPID" class="text-normal" tabindex="1" />
+            <span id="ContentPlaceHolder1_SJLogin_RequiredFieldValidator1" style="display:none;">*</span></td>
+        </tr>
+        <tr>
+          <td class="name"> Login ID </td>
+          <td class="field"><input name="ctl00$ContentPlaceHolder1$SJLogin$txtUserName" type="text" id="ContentPlaceHolder1_SJLogin_txtUserName" class="text-normal" tabindex="2" />
+            <span id="ContentPlaceHolder1_SJLogin_RequiredFieldValidator4" style="display:none;">*</span></td>
+        </tr>
+        <tr>
+          <td class="name"> Password </td>
+          <td class="field"><input name="ctl00$ContentPlaceHolder1$SJLogin$txtPassword" type="password" id="ContentPlaceHolder1_SJLogin_txtPassword" class="text-normal" tabindex="3" />
+            <span id="ContentPlaceHolder1_SJLogin_RequiredFieldValidator8" style="display:none;">*</span></td>
+        </tr>
+        <tr>
+          <td class="name"> Verification </td>
+          <td class="field"><input name="ctl00$ContentPlaceHolder1$SJLogin$txtVerification" type="text" id="ContentPlaceHolder1_SJLogin_txtVerification" class="text-small" tabindex="4" />
+            <img border="0" id="vImg" align="absmiddle" onclick="refresh(this);" alt="click to refresh validatecode"
+                                style="cursor: pointer;" /></td>
+        </tr>
+        <tr>
+          <td class="name"></td>
+          <td class="field"><input type="submit" name="ctl00$ContentPlaceHolder1$SJLogin$btnlogin" value="Sign in" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$SJLogin$btnlogin&quot;, &quot;&quot;, true, &quot;login&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_SJLogin_btnlogin" tabindex="5" class="btn btn-inverse btn-large" />
+            <input type="button" class="btn btn-large" value="Cancel" onclick="top.$.close('sign'); return false;" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

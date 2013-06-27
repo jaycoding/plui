@@ -1,0 +1,112 @@
+	div.itemLine
+{
+	float: left;
+	text-align: center;
+	padding:0px;
+}
+
+.listingItem div.itemLine{width:128px;margin:0px 23px; padding:0px;}
+#divTagList .listingItem div.itemLine{ width:80px;}
+
+.itemColNoBorder div.itemLine{width:80px; margin:10px 9px; float:left;}
+
+.listingItem .itemPic{max-width:128px;}
+
+a:hover .itemPic{outline:3px solid #0088cc;}
+
+.itemColNoBorder .itemPic,
+#divTagList .listingItem div.itemLine .itemPic{max-width:80px;}
+
+div.itemColNoBorder
+{
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: bottom;
+    border: 0;
+	width:80px; 
+	margin:10px 16px; 
+	position:relative;
+}
+
+div.itemColNoBorder:hover, .div.itemColNoBorder.selected{ outline:3px solid #0088CC;}
+div.itemColNoBorder a:hover .itemPic{outline:0;}
+
+div.itemColNoBorder input[type="radio"], div.itemColNoBorder input[type="radio"]{position:absolute; bottom:0;}
+
+div.itemText
+{
+    width:102px;
+    margin:0px auto; 
+    position:relative;
+    height: 30px;
+}
+
+div.itemText a.link{ position:absolute; left:0px; top:-15px;}
+
+div.itemPicture
+{
+    width:102px; 
+	margin:0px auto;
+    height: 100px;
+}
+
+.smallspace{ float:left;}
+
+.menu_Search
+{
+    height: 21px;
+	font: 11px/1.9em Verdana,Lucida,Arial,Helvetica,sans-serif;
+	color: #666;
+	margin-right: 5px;
+	text-align:center;
+}
+div.searchengine{ background-color:none; border:0; width:auto; background:none;}
+.pulldown_search{background:#FFF; border:1px solid #ddd;}
+.input_search{ height:18px; line-height:18px; margin-left:10px;}
+.itemPic
+{
+    border: 0;
+    vertical-align: sub;
+}
+
+.listingItem .itemPic{max-width:128px;}
+
+.itemColNoBorder .itemPic{max-width:80px;}
+
+.addCol{height:446px; line-height:446px;}
+.addCol a:hover{ text-decoration:none;}
+.addCol em{ font-style:normal; font-size:100px; line-height:30px; position:relative; top:40%;}
+.addCol em, .addCol span{ display:block; float:left; margin:0px auto; width:100%; text-align:center;}
+.productPic
+{
+	max-width: 150px;
+	border: 0;
+}
+
+.PriceRow{ height:20px; overflow:hidden;}
+
+.ActivityCommentsList{ float:left;}
+
+.menu_left_selected, .menu_left_selected A
+{
+	display: block;
+    line-height: 30px;
+	padding-left: 18px;
+	width: 124px;
+	background: #EEEEEE;
+	text-align: left;
+	font-weight: 700;
+	text-indent: 0px;
+}
+
+.tagedit-list li.tagedit-listelement-old{border-radius:8px; padding:2px 10px;}
+
+.contentLeftSmallPic {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.item-comment-input{ padding:5px; font:12px Verdana, Lucida, Arial, Helvetica, sans-serif; color:#666; margin-left:15px;}
+
+.BPRightInputBig td.cke_contents{ height:380px;}

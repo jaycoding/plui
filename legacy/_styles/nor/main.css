@@ -1,0 +1,115 @@
+.top-page {
+	height:14px;
+	padding-left:20px;
+	background:0px -398px no-repeat;
+}
+.go-back {
+	padding-left:10px;
+	background:left -330px no-repeat;
+	font-weight:normal;
+	font-size:12px;
+	line-height:18px;
+}
+.btn-deep-left {
+	border:0;
+	background:none;
+}
+.btn-deep-right {
+	border:0;
+	background:none;
+}
+.btn-deep-middle {
+	border:0;
+	background:none;
+}
+.btn-deep-middle div {
+	background:url(../../_imgs/nor/theme-black.png) repeat scroll left -350px;
+	cursor: pointer;
+	display:-block;
+	height: 38px;
+	border:0;
+	padding:0px 0px 0px 12px;
+}
+.btn-deep-middle span {
+	background: url(../../_imgs/nor/theme-black.png) repeat scroll right -350px;
+	display: block;
+	float:left;
+	height: 38px;
+	line-height:34px;
+	padding: 0px 12px 0px 0px;
+	color: #FFFFFF;
+	font-size: 17px;
+	font-weight: 600;
+}
+.btn-deep-left div {
+	background:url(../../_imgs/nor/theme-black.png) repeat scroll left 0;
+	cursor: pointer;
+	display:block;
+	height: 38px;
+	border:0;
+	padding:0px 0px 0px 25px;
+}
+.btn-deep-left span {
+	background: url(../../_imgs/nor/theme-black.png) repeat scroll right -350px;
+	display: block;
+	float:left;
+	height: 38px;
+	line-height:34px;
+	padding: 0px 12px 0px 0px;
+	color: #FFFFFF;
+	font-size: 17px;
+	font-weight: 600;
+}
+.btn-deep-right div {
+	background:url(../../_imgs/nor/theme-black.png) repeat scroll left -350px;
+	cursor: pointer;
+	display: inline-block;
+	height: 38px;
+	padding-left: 12px;
+	border:0;
+}
+.btn-deep-right span {
+	background: url(../../_imgs/nor/theme-black.png) repeat scroll right 0;
+	color: #FFFFFF;
+	display: block;
+	font-size: 17px;
+	font-weight: 600;
+	height: 38px;
+	line-height: 34px;
+	padding: 0px 25px 0 0px;
+}
+
+td.ckeditor {
+	width:800px;
+}
+h2.title1 {
+	background: none repeat scroll 0 0 #EEEEEE;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 15px;
+	line-height: 1.4;
+	margin: 15px 0;
+	padding: 4px 10px;
+}
+td.product-pdf-logo img, 
+td.customize-pdf-logo img, 
+td.eflyer-pdf-logo img {
+	max-width:312px;
+	max-height:50px;
+}
+.product-email-preview, 
+.product-email-preview table {
+	overflow:hidden;
+	width:760px;
+}
+.product-email-preview td.grey {
+	width:80px;
+}
+.product-email-preview td.black {
+	width:680px;
+	overflow:hidden;
+	word-wrap:break-word;
+	word-break:normal;
+	word-break:break-all;
+}
+a,
+button{cursor:pointer;}

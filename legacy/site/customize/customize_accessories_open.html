@@ -1,0 +1,942 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../../_styles/car/main-order.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-order.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-shoppingcart.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-customize.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/ui/jquery-ui-1.8.16.custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/ui/jquery.validate.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-themes.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/asyncbox.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/jquery.tagedit.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/jquery.pagination.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-product.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/main-global.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../../_styles/nor/bootstrap.css" media="all" />
+
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery.validate.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/bootstrap.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/plugins.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../_scripts/nor/main.js"></script>
+<script type="text/javascript" src="../../_scripts/car/main.js"></script>
+<!--[if lt IE 9]>
+<script src="../_scripts/nor/lib/html5.js"></script>
+<![endif]-->
+<script>
+$(function(){
+$("form").validate();
+var sT =$('html').scrollTop();
+	var lay_cus_side_p =$('.lay-cus-side').offset();
+	var sec_panels_left =lay_cus_side_p.left;
+	var sec_panels_top=lay_cus_side_p.top;
+	$('.sec-panels').css('left', sec_panels_left);
+	
+	if ( sT<259){
+		sec_panels_top=259-sT;
+		$('.sec-panels').css('top',sec_panels_top);
+	}
+	else if(sT=0){$('.sec-panels').css('top',lay_cus_side_p.top);}
+	else{$('.sec-panels').css('top',0);}
+	
+	$('.btn-step').click(function(){
+		var sT =$('html').scrollTop();
+			alert(sT);
+		
+	});
+	
+	$('.sec-item-select li a').click(function(){
+		var sT =$('html').scrollTop();
+		location.reload();
+		if ( sT<259){
+				sec_panels_top=259-sT;
+				$('.sec-panels').css('top',sec_panels_top);
+			}
+		else if(sT=0){$('.sec-panels').css('top',lay_cus_side_p.top);}
+		else if(sT>=259){$('.sec-panels').css('top',0);}
+		});
+	$(window).scroll(function(){
+		var sT =$('html').scrollTop();
+		if ( sT<259){
+				sec_panels_top=259-sT;
+				$('.sec-panels').css('top',sec_panels_top);
+			}
+		else if(sT=0){$('.sec-panels').css('top',lay_cus_side_p.top);}
+		else if(sT>=259){$('.sec-panels').css('top',0);}
+		
+		
+	});	
+});
+</script>
+</head>
+<body>
+<div id="wrapper" class="theme-black">
+<div id="page">
+	<div id="theme-picker" style="text-align: center; clear:both; color: #666;">
+		<span id="theme-picker-black" style="cursor: pointer;">Black</span> | 
+		<span id="theme-picker-blue" style="cursor: pointer;">Blue</span> | 
+		<span id="theme-picker-deepblue" style="cursor: pointer;">Deep Blue</span> | 
+		<span id="theme-picker-green" style="cursor: pointer;">Green</span> | 
+		<span id="theme-picker-red" style="cursor: pointer;">Red</span> | 
+		<span id="theme-picker-yellow" style="cursor: pointer;">Yellow</span>
+	</div>
+	<!-- #BeginLibraryItem "/Library/mode-header.lbi" -->
+    <!-- Header Start -->
+    <header id="header" class="cf">
+      <div id="hd-logo"><img src="../../temp/logo-sunjoy.png" alt="" /></div>
+      <section class="mod-welcome" id="hd-welcome"> Welcome! <a href="../userCenter/user-signin.html">Sign In</a> | <a href="../userCenter/user-register.html">Register</a> </section>
+      <section class="mod-share" id="hd-share"> <a href="#"><img alt="" src="../../temp/hd-ico-facebook.png"></a> <a href="#"><img alt="" src="../../temp/hd-ico-facebook.png"></a> <a href="#"><img alt="" src="../../temp/hd-ico-facebook.png"></a> </section>
+    </header>
+    <!-- Header End -->	<!-- #EndLibraryItem -->
+	<!-- #BeginLibraryItem "/Library/mode-nav.lbi" -->
+    <!-- Navigation Start -->
+    <nav id="nav" class="mod-nav cf">
+      <div class="mod-nav-l"></div>
+      <div class="mod-nav-c">
+        <ul class="cf" id="nav-list">
+          <li> <a href="../homepage.html">Home</a></li>
+          <li class="on"> <a href="../category-list.html">Products</a></li>
+          <li> <a href="../specials.html">Specials</a></li>
+          <li> <a href="../eflyer/eflyers.html">eFlyers</a></li>
+          <li> <a href="../news.html">News</a></li>
+          <li></li>
+        </ul>
+        <div class="mod-nav-search" id="nav-search">
+          <input type="text" placeholder="sku, keyword or name" />
+          <div class="mod-nav-search-btn"></div>
+        </div>
+      </div>
+      <div class="mod-nav-r"></div>
+    </nav>
+    <!-- Navigation End -->
+	<!-- #EndLibraryItem -->
+	<div id="body" class="cf">
+    	<!-- Module [Breadcrumb] Start -->
+        <div class="cf">
+    		<div class="mod-breadcrumb left">
+      			<ul>
+        			<li> <a href="../homepage.html">Home</a> </li>
+        			<li> &gt; </li>
+        			<li><a href="../item/product-list.html">Products</a></li>
+        			<li> &gt; </li>
+        			<li><a href="../item/product-list.html">USB Flash Drives</a></li>
+        			<li> &gt; </li>
+        			<li><a href="../item/product-page.html">SJUSB0006-24H</a></li>
+					<li> &gt; </li>
+        			<li> Customize </li>
+      			</ul>
+    		</div>
+        </div>
+    	<!-- Module [Breadcrumb] End -->
+        <!-- Module [customize-tabs] Start -->
+        <div class="sec-tabs gapping">
+      		<ul class="cf">
+        		<li class="active"> <a href="">Product &amp; Color</a></li>
+        		<li class="current"> <a href="">Accessories &amp; Options</a></li>
+        		<li><a href="">Packaging</a></li>
+        		<li><a href="">Shipping &amp; Turnarounds</a></li>
+        		<li><a href="">Review Summary</a></li>
+      		</ul>
+    	</div>
+        <!-- Module [customize-tabs] End -->
+        <!-- Module [customize-body] Star -->
+		<div class="gapping sec-cus relative">
+			<div class="pull-left lay-cus-main">
+				<div class="sec-cus-li select relative" id="li1">
+                	<div class="mod-show"></div>
+                	<dl>
+                    <dt>
+                    	<div class="sec-select select"><input type="checkbox" name="checkbox" id=""></div>
+                        <ul class="sec-items">
+                        	<li class="item-img"><img src="../../temp/p2bs.jpg"></li>
+                        	<li class="item-sku">SJUSB0006 - 5A</li>
+                        	<li class="item-name">Key Rings</li>
+                            <li class="item-colors select"><a style="background:#ff0000; color:#fff;">PMS 186C</a></li>
+                            <li class="item-info"><div class="expand hide">
+								<h5>Dimensions:</h5><pre>2.25"Wx0.8"Hx0.4"D</pre>
+								<h5>Max Logo Size:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5>
+                                <pre>Laser engrave, Silk Screen PrintingPlease continue to "Accessories & Options" section to choose the method(s).</pre>
+<h5>Materials & Finish:</h5><pre>Aluminum alloy & ABS</pre></div><a class="mod-more">More info...</a></li>
+                        </ul>
+                    </dt>
+                    <dd>
+                    	<pre>Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions...<span class="expand hide">descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions</span><em class="mod-arrow bottom"></em><a class="mod-more right">Expand</a></pre>
+						<div class="mod-pricing">
+                        	<table class="table mod-price">
+                            	<thead>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>Capacity<br/><select name="" id="" class="select-noborder">
+                      			  <option selected="selected">All</option>
+                      			  <option>1G</option>
+                      			  <option>2G</option>
+                      			  <option>4G</option>
+                      			  <option>8G</option>
+                   			  </select>
+    								</th>
+    								<td>Setup<br>1</td>
+    								<td>Qty<br/>100</td>
+    								<td>Qty<br/>200</td>
+    								<td>Qty<br/>300</td>
+    								<td>Qty<br/>400</td>
+    								<td>Qty<br/>500</td>
+    								<td>Qty<br/>600</td>
+  								</tr>
+                                </thead>
+                                <tbody>
+  								<tr>
+    								<td>      								<label class="radio"><input type="radio" name="radio" id="" value=""></label>    								</td>
+    								<th>1G</th>
+        							<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>2G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>4G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th class="active"><input type="text" value="Custom"/></th>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+  								</tr>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>&nbsp;</th>
+    								<td>V</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+  								</tr>
+                                </tbody>
+                          </table>
+                        </div>
+                        <section class="expand active hide section1">
+                        	<h3>Quantity</h3>
+							<form id="" name="" method="post"><input class="number" name="" type="text" value="0" placeholder="Please enter a number!"/></form>
+                        </section>
+                        <section class="expand hide section2">
+                        	<h3>Select the item color</h3>
+							<p class="item-colors">
+                            	<a style="background:#ff0000; color:#fff;">PMS 186C</a>
+                                <a style="background:#00ff00; color:#fff;">PMS 187C</a>
+                                <a style="background:#0000ff; color:#fff;">PMS 188C</a>
+                            </p>
+                        </section>
+                        <section class="expand hide section3">
+                        	<h3>Artwork & production instruction</h3>
+							<ul class="sec-attachment">
+                            	<li class="active">
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="att-img"><img src="../../temp/attachment-add.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                            </ul>
+                            <div class="att-com active">
+                            	<h5>Comments & instructions:</h5>
+                                <form id="" name="" method="post"><textarea>Comment text</textarea></form>
+                            </div>
+                        </section>
+                    </dd>
+                    </dl>
+              	</div>
+                <div class="sec-cus-li select relative" id="li2">
+                	<div class="mod-show"></div>
+                	<dl>
+                    <dt>
+                    	<div class="sec-select select"><input type="checkbox" name="checkbox" id=""></div>
+                        <ul class="sec-items">
+                        	<li class="item-img"><img src="../../temp/p2bs.jpg"></li>
+                        	<li class="item-sku">SJUSB0006 - 5B</li>
+                        	<li class="item-name">Key Rings</li>
+                            <li class="item-colors select"><a style="background:#ff0000; color:#fff;">PMS 186C</a></li>
+                            <li class="item-info"><div class="expand hide">
+								<h5>Dimensions:</h5><pre>2.25"Wx0.8"Hx0.4"D</pre>
+								<h5>Max Logo Size:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5>
+                                <pre>Laser engrave, Silk Screen PrintingPlease continue to "Accessories & Options" section to choose the method(s).</pre>
+<h5>Materials & Finish:</h5><pre>Aluminum alloy & ABS</pre></div><a class="mod-more">More info...</a></li>
+                        </ul>
+                    </dt>
+                    <dd>
+                    	<pre>Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions...<span class="expand hide">descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions</span><em class="mod-arrow bottom"></em><a class="mod-more right">Expand</a></pre>
+						<div class="mod-pricing">
+                        	<table class="table mod-price">
+                            	<thead>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>Capacity<br/><select name="" id="" class="select-noborder">
+                      			  <option selected="selected">All</option>
+                      			  <option>1G</option>
+                      			  <option>2G</option>
+                      			  <option>4G</option>
+                      			  <option>8G</option>
+                   			  </select>
+    								</th>
+    								<td>Setup<br>1</td>
+    								<td>Qty<br/>100</td>
+    								<td>Qty<br/>200</td>
+    								<td>Qty<br/>300</td>
+    								<td>Qty<br/>400</td>
+    								<td>Qty<br/>500</td>
+    								<td>Qty<br/>600</td>
+  								</tr>
+                                </thead>
+                                <tbody>
+  								<tr>
+    								<td>      								<label class="radio"><input type="radio" name="radio" id="" value=""></label>    								</td>
+    								<th>1G</th>
+        							<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>2G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>4G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th class="active"><input type="text" value="Custom"/></th>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+  								</tr>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>&nbsp;</th>
+    								<td>V</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+  								</tr>
+                                </tbody>
+                          </table>
+                        </div>
+                        <section class="expand active hide section1">
+                        	<h3>Quantity</h3>
+							<form id="" name="" method="post"><input class="number" name="" type="text" value="0" placeholder="Please enter a number!"/></form>
+                        </section>
+                        <section class="expand hide section2">
+                        	<h3>Select the item color</h3>
+							<p class="item-colors">
+                            	<a style="background:#ff0000; color:#fff;">PMS 186C</a>
+                                <a style="background:#00ff00; color:#fff;">PMS 187C</a>
+                                <a style="background:#0000ff; color:#fff;">PMS 188C</a>
+                            </p>
+                        </section>
+                        <section class="expand hide section3">
+                        	<h3>Artwork & production instruction</h3>
+							<ul class="sec-attachment">
+                            	<li class="active">
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="att-img"><img src="../../temp/attachment-add.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                            </ul>
+                            <div class="att-com active">
+                            	<h5>Comments & instructions:</h5>
+                                <form id="" name="" method="post"><textarea>Comment text</textarea></form>
+                            </div>
+                        </section>
+                    </dd>
+                    </dl>
+              	</div>
+                <div class="sec-cus-li relative" id="li3">
+                	<div class="mod-show"></div>
+                	<dl>
+                    <dt>
+                    	<div class="sec-select select"><input type="checkbox" name="checkbox" id=""></div>
+                        <ul class="sec-items">
+                        	<li class="item-img"><img src="../../temp/p2bs.jpg"></li>
+                        	<li class="item-sku">SJUSB0006 - 5C</li>
+                        	<li class="item-name">Key Rings</li>
+                            <li class="item-colors select"><a style="background:#ff0000; color:#fff;">PMS 186C</a></li>
+                            <li class="item-info"><div class="expand hide">
+								<h5>Dimensions:</h5><pre>2.25"Wx0.8"Hx0.4"D</pre>
+								<h5>Max Logo Size:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5>
+                                <pre>Laser engrave, Silk Screen PrintingPlease continue to "Accessories & Options" section to choose the method(s).</pre>
+<h5>Materials & Finish:</h5><pre>Aluminum alloy & ABS</pre></div><a class="mod-more">More info...</a></li>
+                        </ul>
+                    </dt>
+                    <dd>
+                    	<pre>Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions...<span class="expand hide">descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions</span><em class="mod-arrow bottom"></em><a class="mod-more right">Expand</a></pre>
+						<div class="mod-pricing">
+                        	<table class="table mod-price">
+                            	<thead>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>Capacity<br/><select name="" id="" class="select-noborder">
+                      			  <option selected="selected">All</option>
+                      			  <option>1G</option>
+                      			  <option>2G</option>
+                      			  <option>4G</option>
+                      			  <option>8G</option>
+                   			  </select>
+    								</th>
+    								<td>Setup<br>1</td>
+    								<td>Qty<br/>100</td>
+    								<td>Qty<br/>200</td>
+    								<td>Qty<br/>300</td>
+    								<td>Qty<br/>400</td>
+    								<td>Qty<br/>500</td>
+    								<td>Qty<br/>600</td>
+  								</tr>
+                                </thead>
+                                <tbody>
+  								<tr>
+    								<td>      								<label class="radio"><input type="radio" name="radio" id="" value=""></label>    								</td>
+    								<th>1G</th>
+        							<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>2G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>4G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th class="active"><input type="text" value="Custom"/></th>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+  								</tr>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>&nbsp;</th>
+    								<td>V</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+  								</tr>
+                                </tbody>
+                          </table>
+                        </div>
+                        <section class="expand active hide section1">
+                        	<h3>Quantity</h3>
+							<form id="" name="" method="post"><input class="number" name="" type="text" value="0" placeholder="Please enter a number!"/></form>
+                        </section>
+                        <section class="expand hide section2">
+                        	<h3>Select the item color</h3>
+							<p class="item-colors">
+                            	<a style="background:#ff0000; color:#fff;">PMS 186C</a>
+                                <a style="background:#00ff00; color:#fff;">PMS 187C</a>
+                                <a style="background:#0000ff; color:#fff;">PMS 188C</a>
+                            </p>
+                        </section>
+                        <section class="expand hide section3">
+                        	<h3>Artwork & production instruction</h3>
+							<ul class="sec-attachment">
+                            	<li class="active">
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="att-img"><img src="../../temp/attachment-add.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                            </ul>
+                            <div class="att-com active">
+                            	<h5>Comments & instructions:</h5>
+                                <form id="" name="" method="post"><textarea>Comment text</textarea></form>
+                            </div>
+                        </section>
+                    </dd>
+                    </dl>
+              	</div>
+                <div class="sec-cus-li relative" id="li4">
+                	<div class="mod-show"></div>
+                	<dl>
+                    <dt>
+                    	<div class="sec-select select"><input type="checkbox" name="checkbox" id=""></div>
+                        <ul class="sec-items">
+                        	<li class="item-img"><img src="../../temp/p2bs.jpg"></li>
+                        	<li class="item-sku">SJUSB0006 - 5D</li>
+                        	<li class="item-name">Key Rings</li>
+                            <li class="item-colors select"><a style="background:#ff0000; color:#fff;">PMS 186C</a></li>
+                            <li class="item-info"><div class="expand hide">
+								<h5>Dimensions:</h5><pre>2.25"Wx0.8"Hx0.4"D</pre>
+								<h5>Max Logo Size:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5>
+                                <pre>Laser engrave, Silk Screen PrintingPlease continue to "Accessories & Options" section to choose the method(s).</pre>
+<h5>Materials & Finish:</h5><pre>Aluminum alloy & ABS</pre></div><a class="mod-more">More info...</a></li>
+                        </ul>
+                    </dt>
+                    <dd>
+                    	<pre>Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions...<span class="expand hide">descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions</span><em class="mod-arrow bottom"></em><a class="mod-more right">Expand</a></pre>
+						<div class="mod-pricing">
+                        	<table class="table mod-price">
+                            	<thead>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>Capacity<br/><select name="" id="" class="select-noborder">
+                      			  <option selected="selected">All</option>
+                      			  <option>1G</option>
+                      			  <option>2G</option>
+                      			  <option>4G</option>
+                      			  <option>8G</option>
+                   			  </select>
+    								</th>
+    								<td>Setup<br>1</td>
+    								<td>Qty<br/>100</td>
+    								<td>Qty<br/>200</td>
+    								<td>Qty<br/>300</td>
+    								<td>Qty<br/>400</td>
+    								<td>Qty<br/>500</td>
+    								<td>Qty<br/>600</td>
+  								</tr>
+                                </thead>
+                                <tbody>
+  								<tr>
+    								<td>      								<label class="radio"><input type="radio" name="radio" id="" value=""></label>    								</td>
+    								<th>1G</th>
+        							<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>2G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>4G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th class="active"><input type="text" value="Custom"/></th>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+  								</tr>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>&nbsp;</th>
+    								<td>V</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+  								</tr>
+                                </tbody>
+                          </table>
+                        </div>
+                        <section class="expand active hide section1">
+                        	<h3>Quantity</h3>
+							<form id="" name="" method="post"><input class="number" name="" type="text" value="0" placeholder="Please enter a number!"/></form>
+                        </section>
+                        <section class="expand hide section2">
+                        	<h3>Select the item color</h3>
+							<p class="item-colors">
+                            	<a style="background:#ff0000; color:#fff;">PMS 186C</a>
+                                <a style="background:#00ff00; color:#fff;">PMS 187C</a>
+                                <a style="background:#0000ff; color:#fff;">PMS 188C</a>
+                            </p>
+                        </section>
+                        <section class="expand hide section3">
+                        	<h3>Artwork & production instruction</h3>
+							<ul class="sec-attachment">
+                            	<li class="active">
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="att-img"><img src="../../temp/attachment-add.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                            </ul>
+                            <div class="att-com active">
+                            	<h5>Comments & instructions:</h5>
+                                <form id="" name="" method="post"><textarea>Comment text</textarea></form>
+                            </div>
+                        </section>
+                    </dd>
+                    </dl>
+              	</div>
+                <div class="sec-cus-li relative" id="li5">
+                	<div class="mod-show"></div>
+                	<dl>
+                    <dt>
+                    	<div class="sec-select select"><input type="checkbox" name="checkbox" id=""></div>
+                        <ul class="sec-items">
+                        	<li class="item-img"><img src="../../temp/p2bs.jpg"></li>
+                        	<li class="item-sku">SJUSB0006 - 5E</li>
+                        	<li class="item-name">Key Rings</li>
+                            <li class="item-colors select"><a style="background:#ff0000; color:#fff;">PMS 186C</a></li>
+                            <li class="item-info"><div class="expand hide">
+								<h5>Dimensions:</h5><pre>2.25"Wx0.8"Hx0.4"D</pre>
+								<h5>Max Logo Size:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5><pre>0.9"W x 0.45"H</pre>
+								<h5>Imprint Method:</h5>
+                                <pre>Laser engrave, Silk Screen PrintingPlease continue to "Accessories & Options" section to choose the method(s).</pre>
+<h5>Materials & Finish:</h5><pre>Aluminum alloy & ABS</pre></div><a class="mod-more">More info...</a></li>
+                        </ul>
+                    </dt>
+                    <dd>
+                    	<pre>Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions Sub item descriptions...<span class="expand hide">descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions descriptions</span><em class="mod-arrow bottom"></em><a class="mod-more right">Expand</a></pre>
+						<div class="mod-pricing">
+                        	<table class="table mod-price">
+                            	<thead>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>Capacity<br/><select name="" id="" class="select-noborder">
+                      			  <option selected="selected">All</option>
+                      			  <option>1G</option>
+                      			  <option>2G</option>
+                      			  <option>4G</option>
+                      			  <option>8G</option>
+                   			  </select>
+    								</th>
+    								<td>Setup<br>1</td>
+    								<td>Qty<br/>100</td>
+    								<td>Qty<br/>200</td>
+    								<td>Qty<br/>300</td>
+    								<td>Qty<br/>400</td>
+    								<td>Qty<br/>500</td>
+    								<td>Qty<br/>600</td>
+  								</tr>
+                                </thead>
+                                <tbody>
+  								<tr>
+    								<td>      								<label class="radio"><input type="radio" name="radio" id="" value=""></label>    								</td>
+    								<th>1G</th>
+        							<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>2G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th>4G</th>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+   									<td>37.500</td>
+    								<td>37.500</td>
+    								<td>37.500</td>
+  								</tr>
+  								<tr>
+    								<td><label class="radio"><input type="radio" name="radio" id="input" value=""></label></td>
+    								<th class="active"><input type="text" value="Custom"/></th>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+    								<td>quote</td>
+  								</tr>
+  								<tr>
+    								<td>&nbsp;</td>
+    								<th>&nbsp;</th>
+    								<td>V</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+    								<td>R</td>
+  								</tr>
+                                </tbody>
+                          </table>
+                        </div>
+                        <section class="expand active hide section1">
+                        	<h3>Quantity</h3>
+							<form id="" name="" method="post"><input class="number" name="" type="text" value="0" placeholder="Please enter a number!"/></form>
+                        </section>
+                        <section class="expand hide section2">
+                        	<h3>Select the item color</h3>
+							<p class="item-colors">
+                            	<a style="background:#ff0000; color:#fff;">PMS 186C</a>
+                                <a style="background:#00ff00; color:#fff;">PMS 187C</a>
+                                <a style="background:#0000ff; color:#fff;">PMS 188C</a>
+                            </p>
+                        </section>
+                        <section class="expand hide section3">
+                        	<h3>Artwork & production instruction</h3>
+							<ul class="sec-attachment">
+                            	<li class="active">
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="mod-close">X</a>
+                                	<a class="att-img"><img src="../../temp/attachment.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                                <li>
+                                	<a class="att-img"><img src="../../temp/attachment-add.gif"></a>
+                                    <a class="att-name">Blue USB Logo</a>
+                                    <a class="att-time">Upload ID:123</a>
+                                </li>
+                            </ul>
+                            <div class="att-com active">
+                            	<h5>Comments & instructions:</h5>
+                                <form id="" name="" method="post"><textarea>Comment text</textarea></form>
+                            </div>
+                        </section>
+                    </dd>
+                    </dl>
+              	</div>
+          	</div>
+          	<div class="pull-right lay-cus-side">
+            	<div class="sec-panels">
+          			<div class="sec-panel">
+                <dl>
+                	<dt>Summary</dt>
+                    <dd class="sec-panel-btns">
+                    	<h4>$560.00</h4>
+                        <p>Qty: 100</p>
+                        <p>Ship: 4 business days</p>
+                        <div class="btn-groups">
+                        	<button class="btn-deep-middle"><div><span>Review Summary</span></div></button>
+                        	<button class="btn btn-step"> < </button>
+                        	<button class="btn btn-step"> > </button>
+                    	</div>
+                    </dd>
+                </dl>
+			</div>
+           			<div class="sec-panel">
+                <dl>
+                	<dt>Item selected</dt>
+                    <dd>
+                    	<ul class="sec-item-select">
+                        <li>
+                        	<a href="#li1" class="item-sku">SJUSB0006 - 5A</a>
+                            <a href="#li1" class="item-name">SJUSB0006 - 5-Day Delivery</a>
+                       	</li>
+                       	<li>
+                        	<a href="#li2" class="item-sku">SJUSB0006 - 5B</a>
+                            <a href="#li2" class="item-name">SJUSB0006 - 5-Day  Delivery Delivery</a>
+                        </li>
+                        <li>
+                        	<a href="#li3" class="item-sku">SJUSB0006 - 5C</a>
+                            <a href="#li3" class="item-name">SJUSB0006 - 5-Day  Delivery Delivery Delivery Delivery</a>
+                        </li>
+                        <li>
+                        	<a href="#li4" class="item-sku">SJUSB0006 - 5D</a>
+                            <a href="#li4" class="item-name">SJUSB0006 - 5-Day  Delivery Delivery Delivery Delivery</a>
+                        </li>
+                        <li>
+                        	<a href="#li5" class="item-sku">SJUSB0006 - 5E</a>
+                            <a href="#li5" class="item-name">SJUSB0006 - 5-Day  Delivery Delivery Delivery Delivery Delivery Delivery Delivery...</a>
+                        </li>
+                        </ul>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            	</div>
+			</div>
+    	</div>
+    	<!-- Module [customize-body] End -->
+	</div>
+	<!-- #BeginLibraryItem "/Library/mode-footer.lbi" -->
+    <!-- Footer Start-->
+    <footer id="footer" class="cf">
+      <div id="footer-copyright">
+        <p>Power by no1sourcing.com <a href="../userCenter/user-terms.html">Terms &amp; Conditions</a></p>
+        <p>Use of this website constitutes acceptance of the <a href="#">User Agreement</a> and <a href="../user-privacy.html">Privacy Policy</a>.</p>
+        <p>Copyright 2010, PromoLinked, Inc. All rights reserved.</p>
+      </div>
+      <ul id="footer-links">
+        <li><img src="../../temp/ft-link1.png" alt="" /></li>
+        <li><img src="../../temp/ft-link2.png" alt="" /></li>
+        <li><img src="../../temp/ft-link3.png" alt="" /></li>
+        <li><img src="../../temp/ft-link4.png" alt="" /></li>
+      </ul>
+    </footer>
+    <!-- Footer End-->
+  <!-- #EndLibraryItem -->
+</div>
+</div>
+</body>
+</html>

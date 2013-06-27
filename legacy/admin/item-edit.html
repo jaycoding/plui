@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="../_styles/nor/bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/plugins.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-global.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-modules.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/admin-style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/jquery.pagination.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/nor/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/ui/jquery.validate.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../_styles/car/common.css" media="all" />
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/bootstrap.js"></script>
+<script type="text/javascript" src="../_scripts/nor/plugins.js"></script>
+<script type="text/javascript" src="../_scripts/nor/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../_scripts/nor/admin-main.js"></script>
+<script type="text/javascript" src="../_scripts/car/admin-main.js"></script>
+<!--[if lt IE 9]>
+<script src="../_scripts/nor/lib/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper"> 
+  <!-- Header Start -->
+  <header id="header" class="cf">
+    <div id="hd-logo"><img src="../temp/promoLogo.png" alt="" /></div>
+  </header>
+  <!-- Header End -->
+  
+  <div id="page"> 
+    
+    <!-- Side Navigation Start -->
+    <nav>
+      <div class="clogo"> <img src="../_imgs/defaultImages/admin/default_admin_logo_150.gif" alt="" /> </div>
+      <div class="accordion" id="nav">
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-admin"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-admin">Administration</a> </div>
+          <div id="nav-admin" class="accordion-body collapse" style="height: 0; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Company Profiles</a></li>
+                <li><a href="#">Personal Profile</a></li>
+                <li><a href="#">To Do List</a></li>
+                <li><a href="templates-my.html">My Templates</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="site-theme.html">Site Theme</a></li>
+                <li><a href="#">Login &amp; Password</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-marketing"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-marketing">Marketing</a> </div>
+          <div id="nav-marketing" class="accordion-body in collapse" style="height: auto; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="homepage-admin.html">Homepage Admin</a></li>
+                <li class="active"><a href="item-list.html">Item Admin</a></li>
+                <li><a href="tier-pricing-list.html">Tier Pricing</a></li>
+                <li><a href="mass-price.html">Mass price update</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Banners</a></li>
+                <li><a href="eflyer-list.html">eFlyer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-sales"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-sales">Sales</a> </div>
+          <div id="nav-sales" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Customer Data</a></li>
+                <li><a href="mass-customer.html">Mass customer import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-purchase"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-purchase">Purchase</a> </div>
+          <div id="nav-purchase" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Vendor Data</a></li>
+                <li><a href="mass-vendor.html">Mass vendor import</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-banking"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-banking">Banking</a> </div>
+          <div id="nav-banking" class="accordion-body collapse" style="height: 0px; ">
+            <div class="accordion-inner">
+              <ul>
+                <li><a href="todo-list.html">Biz Social</a></li>
+                <li><a href="#">Currency Rate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading nav-hd-logout"> <a class="accordion-toggle" href="#">LOGOUT</a> </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Side Navigation End -->
+    
+    <div id="body">
+      <div class="item-edit">
+        <div class="item-edit-hd cf"> <a href="item-list.html" class="right">« Return to item list</a> </div>
+        <div class="item-edit-bd">
+          <div class="item-edit-general cf">
+            <div class="item-edit-pic"> <img src="../temp/pro-120-1.jpg" alt="" />
+              <p class="tcenter"><a href="#">Picture Admin</a></p>
+            </div>
+            <div class="item-edit-info">
+              <table>
+                <tr>
+                  <td>Item No.:</td>
+                  <td>10-6546546</td>
+                </tr>
+                <tr>
+                  <td>Item Name:</td>
+                  <td>Get your Christmas USB delivered in 5 days</td>
+                </tr>
+                <tr>
+                  <td>SKU:</td>
+                  <td>SJUSB0006</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a href="#">General Admin</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="item-edit-tabs">
+            <ul class="nav nav-tabs cf">
+              <li class="item-edit-tab"><a href="#item-edit-accessories" data-toggle="tab">Accessories</a></li>
+              <li class="item-edit-tab"><a href="#item-edit-packaging" data-toggle="tab">Packaging</a></li>
+              <li class="item-edit-tab active"><a href="#item-edit-shipping" data-toggle="tab">Shipping &amp; turnaround</a></li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div id="item-edit-accessories" class="tab-pane cf"> Accessories </div>
+            <div id="item-edit-packaging" class="tab-pane cf"> Packaging </div>
+            <div id="item-edit-shipping" class="tab-pane cf active">
+              <table class="form-table">
+                <tr>
+                  <td class="name">Tag name:</td>
+                  <td class="value"><input type="text" name="" id="" class="input-large" />
+                    <a href="#">Search schedule</a></td>
+                </tr>
+                <tr>
+                  <td class="name b">Turnaround:</td>
+                  <td class="value b">11 business days Show <a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                  <td class="name">Virtual time:</td>
+                  <td class="value">24 hours variance 24 hours hide</td>
+                </tr>
+                <tr>
+                  <td class="name">Sample time:</td>
+                  <td class="value">2 business days variance 5 hours hide</td>
+                </tr>
+                <tr>
+                  <td class="name">Mass time:</td>
+                  <td class="value">3 business days variance 1 business day hide</td>
+                </tr>
+              </table>
+              <div class="item-edit-shipping-method row">
+                <input type="text" name="" id="" class="input-xlarge" placeholder="sku, name" />
+                <a href="#">+ Add shipping method</a>
+                <ul class="item-grid-5 cf">
+                  <li class="removable clear">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-1.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-2.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-3.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-1.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-2.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable clear">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-1.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-2.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-3.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-1.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                  <li class="removable">
+                    <label class="radio form-inline">
+                    <p><img src="../temp/shipping-2.jpg" alt="" /></p>
+                    <p class="grey">UPS Priority</p>
+                    <p class="grey">2 days</p>
+                    <p class="grey">Var: 0.3 days</p>
+                    <p class="tcenter">
+                      <input type="radio" name="" id="" />
+                    </p>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Start-->
+    <footer id="footer" class="cf"> © 2012, Promolinked, Inc. All right reserved. 
+      Powered by www.no1sourcing.com.
+      <select name="" class="input-small" id="">
+        <option value="">English</option>
+        <option value="">中文</option>
+      </select>
+    </footer>
+    <!-- Footer End--> 
+  </div>
+</div>
+</body>
+</html>
