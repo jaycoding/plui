@@ -844,6 +844,13 @@
 }
 /* -- Module [Product Viewer] --*/
 .mod-product-viewer {
+	position: relative;
+}
+.mod-product-viewer .item-status {
+	position: absolute;
+	z-index: 1000;
+	left: 3px;
+	top: 3px;
 }
 .mod-product-viewer ul {
 	clear: both;
@@ -852,8 +859,8 @@
 .mod-product-viewer ul li {
 	float: left;
 	margin: 4px 4px 4px 0;
-	width: 48px;
-	height: 48px;
+	width: 51px;
+	height: 51px;
 }
 .mod-product-viewer a.cloud-zoom {
 	width:250px;
@@ -950,14 +957,6 @@
 	border-radius: 5px;
 	background: #f9f9f9;
 }
-.mod-shortcuts-customize {
-	width: 48%;
-	float: left;
-}
-.mod-shortcuts-quickbuy {
-	width: 48%;
-	float: right;
-}
 .mod-shortcuts ul {
 	margin: 12px 0;
 }
@@ -1030,7 +1029,7 @@ ul.mod-links li.link-email {
 	max-width:600px;
 }
 .mod-product-viewer ul li a img, .customize-brandLogo img {
-	max-width:42px;
+	max-width:45px;
 }
 .mod-selected-options ul li img, .mod-related-products-imgview ul li img {
 	max-width:80px;

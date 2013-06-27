@@ -1,4 +1,8 @@
 $(function() {
+
+	$(function(){
+	    $(".has-tooltip").tooltip();
+	  });
 	
 	$("ul").each(function(){
 		$(this).children("li:first").addClass("first");

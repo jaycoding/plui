@@ -17,7 +17,7 @@
 <link rel="stylesheet" type="text/css" href="../../_styles/ui/jquery.validate.css" media="all" />
 <link rel="stylesheet" type="text/css" href="../../_styles/ui/jquery-ui-1.8.16.custom.css" media="all" />
 <script type="text/javascript" src="../../_scripts/nor/lib/jquery-1.7.1.min.js"></script>
-
+<script type="text/javascript" src="../../_scripts/nor/lib/bootstrap.js"></script>
 <script type="text/javascript" src="../../_scripts/nor/plugins.js"></script>
 <script type="text/javascript" src="../../_scripts/nor/lib/jquery-ui.min.js"></script>
 <script type="text/javascript" src="../../_scripts/nor/main.js"></script>
@@ -92,7 +92,10 @@
       </div>
       </div>
 	  <!-- Module [Breadcrumb] End -->
-					
+					<div class="alert fade in">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Holy guacamole!</strong> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+          </div>
 		<div id="product"><!-- #BeginLibraryItem "/Library/mode-productTabs.lbi" -->
 <div id="product-tabs">
   <ul class="cf ">
@@ -125,19 +128,22 @@
 </div>
 <!-- #EndLibraryItem --><div class="tab-content"><!-- #BeginLibraryItem "/Library/mode-productViewer.lbi" -->
 <!------- Product Overview Start ------->
-<div id="product-overview" class="tab-pane cf active">
+<div id="product-overview" class="tab-pane cf active row-fluid">
   <div class="product-side"> 
     <!-- Module [Product Viewer] Start -->
-    <div class="mod-product-viewer"> <a href='../../_imgs/defaultImages/item/default_product_600.gif' class = 'cloud-zoom' id='zoom1' rel="adjustX: 10, adjustY:-4"> <img src="../../temp/home-slider-1.jpg" alt='' /> </a>
+    <div class="mod-product-viewer">
+      <img src="../../_imgs/nor/mockup-32.png" class="item-status" alt="">
+      <a href='../../_imgs/defaultImages/item/default_product_600.gif' class = 'cloud-zoom' id='zoom1' rel="adjustX: 10, adjustY:-4"> <img src="../../temp/home-slider-1.jpg" alt='' /> </a>
       <ul class="cf">
-        <li class="current"> <a href='../../temp/p1b.jpg' class='cloud-zoom-gallery' rel="useZoom: 'zoom1', smallImage: '../temp/p1s.jpg' "> <img src="../../temp/p1t.jpg" alt = "Thumbnail 1"/> </a> </li>
-        <li> <a href='../../temp/p2b.jpg' class='cloud-zoom-gallery' rel="useZoom: 'zoom1', smallImage: '../temp/p2s.jpg'"> <img src="../../temp/p2t.jpg" alt = "Thumbnail 2"/> </a> </li>
+
+        <li class="current"> <a href='../../temp/p1b.jpg' class='cloud-zoom-gallery' rel="useZoom: 'zoom1', smallImage: '../temp/p1s.jpg' "> <img src="../../temp/p1t.jpg" data-toggle="tooltip" class="has-tooltip" title="Photo 1" alt = "Thumbnail 1"/> </a> </li>
+        <li> <a href='../../temp/p2b.jpg' class='cloud-zoom-gallery' rel="useZoom: 'zoom1', smallImage: '../temp/p2s.jpg'"> <img src="../../temp/p2t.jpg" data-toggle="tooltip" class="has-tooltip" title="Photo 2"  alt = "Thumbnail 2"/> </a> </li>
       </ul>
     </div>
     <!-- Module [Product Viewer] End -->
     
-    <div class="product-info">
-      <h4>Available Colors:</h4>
+    <div class="product-info spaced">
+      <h4 class="spaced small">Available Colors:</h4>
       <div class="product-info-bd">
         <ul>
           <li class=" current pro-red">PMS 186C</li>
@@ -152,6 +158,37 @@
       <h4>Imprint Method:</h4>
       <pre>Laser engrave,Silk Screen Printing Please Continue to "Accessories &amp; Options" Section to choose the method(s). Aluminum alloy &amp; ABS</pre>
     </div>
+
+    <div class="product-decoration spaced">
+      <h4 class="spaced small">Decoration options:</h4>
+      <div>
+        <img src="../../_imgs/nor/silkscreen.png" width="64" height="64" alt=""> 
+        <img src="../../_imgs/nor/silkscreen.png" width="64" height="64" alt=""> 
+        <img src="../../_imgs/nor/silkscreen.png" width="64" height="64" alt=""> 
+        <img src="../../_imgs/nor/silkscreen.png" width="64" height="64" alt="">
+      </div>
+    </div>
+
+    <div class="product-browse spaced">
+      <h4 class="spaced small">Also browse:</h4>
+      <div>
+        <ul>
+          <li>By category: <a href="#">Best Seller</a></li>
+          <li>By promotion: <a href="#">Weekly Special</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="product-alsolike spaced">
+      <h4 class="spaced small">You may also like:</h4>
+      <div>
+        <a href='#'> <img src="../../temp/p1t.jpg" data-toggle="tooltip" class="has-tooltip" title="USB Drive"/> </a> 
+        <a href='#'> <img src="../../temp/p1t.jpg" data-toggle="tooltip" class="has-tooltip" title="USB Drive"/> </a> 
+        <a href='#'> <img src="../../temp/p1t.jpg" data-toggle="tooltip" class="has-tooltip" title="USB Drive"/> </a> 
+        <a href='#'> <img src="../../temp/p1t.jpg" data-toggle="tooltip" class="has-tooltip" title="USB Drive"/> </a>
+      </div>
+    </div>
+
   </div>
   <div class="product-main">
     <div id="product-sku">SKU/Model NO.: SJUSB0006-24H</div>
@@ -263,37 +300,12 @@
             <td></td>
           </tr>
           </tbody>
-  </table>
+        </table>
     </div>
       <div class="mod-pricing-notes">
         <pre>The pricing is good as of October 01,2011 and will expire on October 09,2011. We update our prices<br/>regularly,so please check back often for most current pricing and surprise specials!</pre>
         <pre class="mod-pricing-notes-add">The pricing is good as of October 01,2011 and will expire on October 09,2011. We update our prices<br/>regularly,so please check back often for most current pricing and surprise specials!</pre>
         <pre class="mod-pricing-notes-add">The pricing is good as of October 01,2011 and will expire on October 09,2011. We update our prices<br/>regularly,so please check back often for most current pricing and surprise specials!</pre>
-      </div>
-    </div>
-    <div class="mod-shortcuts cf">
-      <div class="mod-shortcuts-customize"> <a class="hide" href="../customize-product.html">
-        <button class="btn-deep-right">
-        <div><span>Customize</span></div>
-        </button>
-        </a>
-        <ul>
-          <li class="shortcut-link hide"><a href="#">Link request</a></li>
-          <li class="shortcut-pdf"><a href="../popupBox/product-item-select.html">Create a pdf file</a></li>
-          <li class="shortcut-email"><a href="../popupBox/product-item-select.html">Email this product</a></li>
-          <li class="shortcut-add hide"><a href="#">Add to my portfolio</a></li>
-          <li class="shortcut-share"><a href="#">Share in the social media</a></li>
-        </ul>
-      </div>
-      <div class="mod-shortcuts-quickbuy">
-        <button class="btn-deep-right hide">
-        <div><span>Quick Buy</span></div>
-        </button>
-        <ul>
-          <li class="shortcut-sample"><a href="post-request.html">Sample request</a></li>
-          <li class="shortcut-mockup"><a href="post-request.html">Mockup request</a></li>
-          <li class="shortcut-qrCode"><a href="../popupBox/qr-code.html">Generate a QR code</a></li>
-        </ul>
       </div>
     </div>
     
@@ -394,6 +406,27 @@
       <pre>High quality. 47" inches long/Retracts down to 5”. Great gift for listening to music on a plane, computer, mp3 player or exercising or any other activity you can think of. 
 <br/>The setup shown is for 1 color/1 location imprint. For multi-color imprint, please go to the tables under the “Accessories & Options” tab.
 <br/>Extra 3 business days for 4-Color Imprint Label With Epoxy Dome.</pre>
+    </div>
+  </div>
+
+  <div class="product-customize">
+    <div class="mod-shortcuts cf">
+      <div class="mod-shortcuts-customize"> <a class="" href="../customize-product.html">
+        <button class="btn-deep-right">
+        <div><span>Customize</span></div>
+        </button>
+        </a>
+        <ul>
+          <li class="shortcut-link hide"><a href="#">Link request</a></li>
+          <li class="shortcut-pdf"><a href="../popupBox/product-item-select.html">Create a pdf file</a></li>
+          <li class="shortcut-email"><a href="../popupBox/product-item-select.html">Email this product</a></li>
+          <li class="shortcut-add hide"><a href="#">Add to my portfolio</a></li>
+          <li class="shortcut-share"><a href="#">Share in social media</a></li>
+          <li class="shortcut-sample"><a href="post-request.html">Sample request</a></li>
+          <li class="shortcut-mockup"><a href="post-request.html">Mockup request</a></li>
+          <li class="shortcut-qrCode"><a href="../popupBox/qr-code.html">Generate a QR code</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   

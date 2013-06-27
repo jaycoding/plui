@@ -67,11 +67,12 @@ h2.page-title {
 	margin-bottom: 15px;
 }
 .product-main {
-	width: 680px;
-	float: right;
+	width: 500px;
+	float: left;
 	font-size: 1.1em;
 	margin-bottom: 15px;
 	overflow:hidden;
+	margin-left: 20px;
 }
 .product-main .row img {
 	max-width:677px;
@@ -81,6 +82,13 @@ h2.page-title {
 }
 .product-main h4 small {
 	color:#4c4c4c;
+}
+.product-customize {
+	width: 180px;
+	float: right;
+	font-size: 1.1em;
+	margin-bottom: 15px;
+	overflow:hidden;
 }
 #product-sku, .accessories-name, .packaging-name {
 	color:#4c4c4c;
