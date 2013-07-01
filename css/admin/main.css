@@ -6116,6 +6116,13 @@ ul.list-no-bullet > li {
   line-height: 1.1;
   margin: 0 0 5px 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 5px 0;
+}
 .pms {
   height: 24px;
   min-width: 14px;
