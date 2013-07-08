@@ -7373,6 +7373,10 @@ table.mceLayout {
   margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
+.list-bd > .row-fluid {
+  padding: 3px 5px;
+}
+.list-bd > .row-fluid:hover,
 .list-bd > .row-fluid.row-active {
   background: #eee;
 }
