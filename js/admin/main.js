@@ -863,6 +863,15 @@ $(function(){
 		$(".bank-account-list").prepend($(".item-bank-account-new").clone().removeClass("none item-bank-account-new").addClass("editing"));
 	});
 
+	$("#set-validation").bind("click", function(){
+		$("#row-validation").show();
+	});
+
+	$("#set-permanent").bind("click", function(){
+		$("#row-validation").hide();
+	});
+
+
 
 });
 
