@@ -7383,6 +7383,18 @@ table.mceLayout {
 .fancybox-skin {
   background: #fff;
 }
+.data-row a {
+  color: #333;
+}
+.data-row:hover a {
+  color: #08C;
+}
+.data-row .dropdown-menu a {
+  color: #555!important;
+}
+.data-row .dropdown-menu a:hover {
+  color: #fff!important;
+}
 /*===================================
  Global
  ==================================*/
