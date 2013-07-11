@@ -864,11 +864,15 @@ $(function(){
 	});
 
 	$("#set-validation").bind("click", function(){
-		$("#row-validation").show();
+		$("#row-validation").removeClass("none");
+		$("#set-permanent").removeClass("none");
+		$("#set-validation").addClass("none");
 	});
 
 	$("#set-permanent").bind("click", function(){
-		$("#row-validation").hide();
+		$("#row-validation").addClass("none");
+		$("#set-permanent").addClass("none");
+		$("#set-validation").removeClass("none");
 	});
 
 
