@@ -8134,22 +8134,13 @@ i.icon-right-m {
 }
 .product-viewer .etalage_thumb {
   background: #ffffff url(../../img/icons/loading.gif) center no-repeat;
-  border: 1px solid #ddd;
-  padding: 6px;
-  -webkit-box-shadow: 0 0 10px #ddd;
-  -moz-box-shadow: 0 0 10px #ddd;
-  box-shadow: 0 0 10px #ddd;
+  padding: 0px;
 }
 .product-viewer .etalage_small_thumbs li {
   background: white;
   border: 1px solid #ddd;
   margin: 10px;
   padding: 3px;
-}
-.product-viewer ul li.etalage_smallthumb_active {
-  -webkit-box-shadow: 0 0 10px #ddd;
-  -moz-box-shadow: 0 0 10px #ddd;
-  box-shadow: 0 0 10px #ddd;
 }
 .product-viewer .etalage_zoom_area,
 .etalage_zoom_area {
@@ -9073,9 +9064,9 @@ i.icon-right-m {
   float: left;
 }
 .product-main {
-  width: 500px;
+  width: 480px;
   float: left;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .product-main-2 {
   width: 780px;
@@ -9084,6 +9075,7 @@ i.icon-right-m {
 .product-customize {
   width: 180px;
   float: right;
+  padding-top: 50px;
 }
 .product-right h4 {
   background: #777;
@@ -9100,6 +9092,9 @@ i.icon-right-m {
 }
 .product-right ul li a {
   color: #555;
+}
+.price-table td {
+  border: none;
 }
 .product-imageview {
   position: relative;
