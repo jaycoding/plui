@@ -125,6 +125,8 @@ $(function(){
         zoom_easing: false
     });
 
+    $(".product-customize").scrollToFixed();
+
 
 });
 
