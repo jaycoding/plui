@@ -147,15 +147,17 @@
     margin-bottom: 10px;
   }
   .act-voting-item {
-    width: 150px;
-    .inline-block;
+    width: 100%;
+    text-align: left!important;
+    display: block;
+    line-height: 1;
   }
   .act-voting-bar {
-    width: 200px;
+    width: 48%;
     height: 10px;
     background: #eee;
     .inline-block;
-    margin: 0 10px;
+    margin: 0 2%  0 0; 
     > span{
       height: 10px;
       background: #0A7DC4;
@@ -164,7 +166,11 @@
     }
   }
   .act-voting-score {
-    width: 150px;
+    width: 10%;
+    .inline-block;
+  }
+  .act-voting-number {
+    width: 20%;
     .inline-block;
   }
 }

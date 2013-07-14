@@ -7125,7 +7125,7 @@ i.icon-right-m {
 .modal-normal .modal-body {
   height: 328px;
   max-height: 328px;
-  overflow: inherit;
+  overflow: auto;
   padding: 10px;
 }
 .modal-normal .modal-footer {
@@ -7394,6 +7394,9 @@ table.mceLayout {
 }
 .data-row .dropdown-menu a:hover {
   color: #fff!important;
+}
+textarea {
+  resize: none;
 }
 /*===================================
  Global
@@ -8413,15 +8416,13 @@ nav .clogo img {
   margin-bottom: 10px;
 }
 .act-voting .act-voting-item {
-  width: 150px;
-  *display: inline;
-  /* IE7 inline-block hack */
-
-  *zoom: 1;
-  display: inline-block;
+  width: 100%;
+  text-align: left!important;
+  display: block;
+  line-height: 1;
 }
 .act-voting .act-voting-bar {
-  width: 200px;
+  width: 48%;
   height: 10px;
   background: #eee;
   *display: inline;
@@ -8429,7 +8430,7 @@ nav .clogo img {
 
   *zoom: 1;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 2%  0 0;
 }
 .act-voting .act-voting-bar > span {
   height: 10px;
@@ -8438,7 +8439,15 @@ nav .clogo img {
   float: left;
 }
 .act-voting .act-voting-score {
-  width: 150px;
+  width: 10%;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+}
+.act-voting .act-voting-number {
+  width: 20%;
   *display: inline;
   /* IE7 inline-block hack */
 
