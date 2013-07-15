@@ -83,7 +83,7 @@
                     
                     <!-- Customize Start -->
                     <div class="product-details">
-                        <div class="hd cf">     
+                        <div class="hd cf spaced small">     
                             <ul class="nav nav-tabs">
                                 <li class="dropdown active">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="product-overview.html">Overview <b class="caret"></b></a>
@@ -101,12 +101,16 @@
                                 <li class="pull-right"><a href="product-imprint.html"><i class="icon-arrow-right"></i></a></li>
                                 <li class="pull-right"><a href="product-overview.html"><i class="icon-arrow-left"></i></a></li>
                             </ul>
+                            <div class="row-fluid">
+                                <span class="badge badge-important">Distributor page</span>
+                            </div>
                         </div>
                         <div class="bd cf">
                             <div class="row-fluid">
                                 <div class="product-side">
 
-                                    <div class="row-fluid spaced">
+                                    <div class="row-fluid spaced product-imageview">
+                                        <img src="../../img/icons/mockup.png" class="item-status">
                                         <ul class="product-viewer etalage">
                                             <li>
                                                 <img class="etalage_thumb_image" src="../../mock/image/250x250/p1.jpg" />
@@ -208,11 +212,20 @@
                                         <p>Made from 100% post-consumer recycled PET. Main compartment with cinch top. Front corner slash pocket.<br/>Drawstring design for over-the-shoulder or backpack carry. EcoSmart educational hang tag.US Certified.</p>
                                     </div>
                                     <div>
-                                      <div class="spaced small">The currency displayed is in
-                                        <select name="" id="" class="span2">
-                                          <option value="USD" selected="selected">USD</option>
-                                          <option value="EU">EU</option>
-                                        </select>
+                                      <div class="spaced small row-fluid">
+                                        <div class="span5">The currency displayed is in</div>
+                                        <div class="span2">
+                                            <div class="btn-group pull-left">
+                                              <button class="btn btn-mini">USD</button>
+                                              <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                                <li><a href="#">USD</a></li>
+                                                <li><a href="#">CNY</a></li>
+                                              </ul>
+                                            </div>
+                                        </div>
                                       </div>
 
                                       <div class="spaced small">
