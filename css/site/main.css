@@ -64,7 +64,7 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-#map_canvas img {
+#map-box img {
   max-width: none;
 }
 button,
