@@ -7252,6 +7252,10 @@ i.icon-right-m {
 .product-viewer.etalage .etalage_small_thumbs:after {
   clear: both;
 }
+.product-viewer.etalage.product-viewer-landscape .etalage_small_thumbs {
+  margin-top: 0px!important;
+  margin-left: 260px!important;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          themes.less
@@ -9060,16 +9064,36 @@ i.icon-right-m {
   color: #666;
 }
 .product-details .nav {
-  margin-bottom: 8px;
+  margin-bottom: 28px;
 }
-.product-details .nav-tabs li {
+.product-details .nav-tabs > li {
+  position: relative;
   margin-bottom: 0;
 }
-.product-details .nav-tabs a {
+.product-details .nav-tabs > li > a {
+  border: none;
+  text-align: center;
+}
+.product-details .nav-tabs > li > a:hover {
   border: none;
 }
-.product-details .nav-tabs a:hover {
-  border: none;
+.product-details .nav-tabs .page-types {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  bottom: -22px;
+  left: 0;
+}
+.product-details .nav-tabs .page-types > a {
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  background: #b94a48;
+  padding: 3px 10px;
+}
+.product-details .nav-tabs .page-types > a:hover {
+  text-decoration: none;
 }
 .product-side {
   width: 270px;
@@ -9089,7 +9113,7 @@ i.icon-right-m {
   float: right;
   padding-top: 50px;
 }
-.product-right h4 {
+.product-customize h4 {
   background: #777;
   color: #fff;
   margin: 0;
@@ -9097,13 +9121,19 @@ i.icon-right-m {
   font-size: 14px;
   padding: 8px;
 }
-.product-right ul li {
+.product-customize ul li {
   background: #f2f2f2;
   margin-bottom: 1px;
   padding: 5px 8px;
 }
-.product-right ul li a {
+.product-customize ul li a {
   color: #555;
+}
+.product-customize a:hover {
+  text-decoration: none;
+}
+.product-customize li:hover {
+  background: #eee;
 }
 .price-table td {
   border: none;
@@ -9184,6 +9214,34 @@ i.icon-right-m {
   margin-bottom: 10px;
   max-height: 80px;
   max-width: 80px;
+}
+.deco-options a {
+  display: block;
+  float: left;
+  border: 1px solid transparent;
+}
+.deco-options a.active {
+  border: 1px solid #f30;
+}
+.faq-list .accordion-toggle {
+  color: #333;
+}
+.faq-list .accordion-toggle:hover {
+  text-decoration: none;
+}
+.faq-list .accordion-inner {
+  color: #888;
+}
+.color-options .dropdown-menu {
+  width: 280px;
+  padding: 15px;
+}
+.color-options .dropdown-menu li {
+  float: left;
+}
+.color-options .dropdown-menu a {
+  padding: 5px;
+  float: left;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //

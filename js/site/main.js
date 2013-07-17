@@ -39,6 +39,7 @@ $(function(){
 	$('.alerts').scrollToFixed();
 	
 	$(".with-tooltop").tooltip();
+    $(".with-tooltip").tooltip();
 	
 	//Combobox
 	$('.combobox').combobox();
@@ -126,6 +127,10 @@ $(function(){
     });
 
     $(".product-customize").scrollToFixed();
+
+    $(".deco-options a").live("click", function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    });
 
 
 });
