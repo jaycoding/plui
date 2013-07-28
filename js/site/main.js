@@ -136,3 +136,10 @@ $(function(){
 });
 
 
+$(".btn-add-question").live("click", function(){
+    $(this).addClass("none").siblings(".form-question").removeClass("none");
+});
+
+$(".btn-add-answer").live("click", function(){
+    $(this).parent().siblings(".form-answer").removeClass("none");
+});
