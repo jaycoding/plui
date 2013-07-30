@@ -6336,44 +6336,6 @@ i.icon-right-m {
   top: 4px;
   margin: 0 4px;
 }
-.product-viewer.etalage {
-  height: auto!important;
-}
-.product-viewer.etalage .etalage_small_thumbs {
-  width: 264px;
-  margin-top: 274px!important;
-  position: static;
-  top: 0!important;
-}
-.product-viewer.etalage .etalage_small_thumbs ul {
-  width: 264px!important;
-}
-.product-viewer.etalage .etalage_small_thumbs ul li {
-  left: auto!important;
-  float: left!important;
-  display: static!important;
-  opacity: none!important;
-  margin-bottom: 8px!important;
-}
-.product-viewer.etalage .etalage_small_thumbs ul li img {
-  width: 47px!important;
-  height: 47px!important;
-}
-.product-viewer.etalage .etalage_small_thumbs {
-  *zoom: 1;
-}
-.product-viewer.etalage .etalage_small_thumbs:before,
-.product-viewer.etalage .etalage_small_thumbs:after {
-  display: table;
-  content: "";
-}
-.product-viewer.etalage .etalage_small_thumbs:after {
-  clear: both;
-}
-.product-viewer.etalage.product-viewer-landscape .etalage_small_thumbs {
-  margin-top: 0px!important;
-  margin-left: 260px!important;
-}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          themes.less
@@ -8213,6 +8175,59 @@ i.icon-right-m {
 .product-details .nav-tabs .page-types > a:hover {
   text-decoration: none;
 }
+.product-viewer.etalage {
+  height: auto!important;
+}
+.product-viewer.etalage .etalage_zoom_area {
+  background-color: #fff;
+  z-index: 100;
+}
+.product-viewer.etalage .etalage_small_thumbs {
+  width: 264px;
+  margin-top: 274px!important;
+  position: static;
+  top: 0!important;
+}
+.product-viewer.etalage .etalage_small_thumbs ul {
+  width: 264px!important;
+}
+.product-viewer.etalage .etalage_small_thumbs ul li {
+  left: auto!important;
+  float: left!important;
+  display: static!important;
+  opacity: none!important;
+  margin-bottom: 8px!important;
+}
+.product-viewer.etalage .etalage_small_thumbs ul li img {
+  width: 47px!important;
+  height: 47px!important;
+}
+.product-viewer.etalage .etalage_small_thumbs {
+  *zoom: 1;
+}
+.product-viewer.etalage .etalage_small_thumbs:before,
+.product-viewer.etalage .etalage_small_thumbs:after {
+  display: table;
+  content: "";
+}
+.product-viewer.etalage .etalage_small_thumbs:after {
+  clear: both;
+}
+.product-viewer.etalage.product-viewer-landscape .etalage_small_thumbs {
+  margin-top: 0px!important;
+  margin-left: 260px!important;
+}
+.product-viewer .etalage_small_thumbs > ul > li:first-child {
+  display: none;
+}
+.product-viewer .etalage_small_thumbs > ul > li:last-child {
+  display: none;
+}
+.product-viewer.etalage.product-viewer-landscape.rect .etalage_small_thumbs {
+  width: 260px!important;
+  margin-top: 0px!important;
+  margin-left: 450px!important;
+}
 .product-side {
   width: 270px;
   float: left;
@@ -8361,12 +8376,6 @@ i.icon-right-m {
   padding: 5px;
   float: left;
 }
-.product-viewer .etalage_small_thumbs > ul > li:first-child {
-  display: none;
-}
-.product-viewer .etalage_small_thumbs > ul > li:last-child {
-  display: none;
-}
 .color-pane {
   margin: 10px 0;
   display: block;
@@ -8400,12 +8409,38 @@ i.icon-right-m {
   margin-right: 2px;
   margin-bottom: 2px;
 }
-.accordion-heading .accordion-toggle {
-  padding: 0;
-  background: url(../../img/icons/icon-collapse.png) top right no-repeat;
+.accordion-group {
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
-.accordion-heading .accordion-toggle.collapsed {
-  background: url(../../img/icons/icon-expand.png) top right no-repeat;
+.accordion-group .accordion-heading > .accordion-toggle {
+  min-height: 20px;
+  padding: 0;
+  background: url(../../img/icons/ico-fold-s.png) top right no-repeat;
+}
+.accordion-group .accordion-heading > .accordion-toggle.collapsed {
+  background: url(../../img/icons/ico-expand-s.png) top right no-repeat;
+}
+.accordion-group .accordion-inner {
+  border: none;
+}
+.combo-box {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.combo-box input,
+.combo-box textarea {
+  border: none!important;
+  border-radius: 0!important;
+  box-shadow: none!important;
+}
+.combo-box textarea {
+  border-top: 1px solid #ddd!important;
+}
+.row-fluid img {
+  vertical-align: top;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //

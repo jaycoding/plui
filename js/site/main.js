@@ -110,7 +110,7 @@ $(function(){
     } 
 
 
-    $('.product-viewer').etalage({
+    $('.product-viewer.square').etalage({
         thumb_image_width: 250,
         thumb_image_height: 250,
         source_image_width: 600,
@@ -126,6 +126,24 @@ $(function(){
         zoom_easing: false
     });
 
+    $('.product-viewer.rect').etalage({
+        thumb_image_width: 400,
+        thumb_image_height: 200,
+        source_image_width: 800,
+        source_image_height: 400,
+        zoom_area_width: 300,
+        zoom_area_height: 300,
+        zoom_area_distance: 5,
+        smallthumb_inactive_opacity: 0.5,
+        smallthumbs_position: 'bottom',
+        show_icon: false,
+        autoplay: false,
+        keyboard: false,
+        zoom_easing: false
+    });
+
+
+
     $(".product-customize").scrollToFixed();
 
     $(".deco-options a").live("click", function(){
@@ -136,10 +154,14 @@ $(function(){
 });
 
 
-$(".btn-add-question").live("click", function(){
-    $(this).addClass("none").siblings(".form-question").removeClass("none");
+$(".btn-faq-question").live("click", function(){
+    $(this).addClass("none").siblings(".form-faq-question").removeClass("none");
 });
 
-$(".btn-add-answer").live("click", function(){
-    $(this).parent().siblings(".form-answer").removeClass("none");
+$(".btn-faq-answer").live("click", function(){
+    $(this).parent().siblings(".form-faq-answer").removeClass("none");
+});
+
+$(".btn-faq-edit").live("click", function(){
+    $(this).parent().siblings(".form-faq-edit").removeClass("none");
 });

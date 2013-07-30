@@ -43,6 +43,78 @@
     }
 }
 
+
+
+.product-viewer.etalage {
+  height: auto!important;
+  .etalage_zoom_area {
+    background-color: #fff;
+    z-index: 100;
+  }
+}
+
+.product-viewer.etalage .etalage_small_thumbs {
+  width: 264px;
+  margin-top: 274px!important;
+  position: static;
+  top: 0!important;
+  ul {
+    width: 264px!important;
+    
+    li {
+      left: auto!important;
+      float: left!important;
+      display: static!important;
+      opacity: none!important;
+      margin-bottom: 8px!important;
+      img {
+        width: 47px!important;
+        height: 47px!important;
+      }
+    }
+  }
+}
+
+
+.product-viewer.etalage .etalage_small_thumbs {
+  *zoom: 1;
+}
+.product-viewer.etalage .etalage_small_thumbs:before,
+.product-viewer.etalage .etalage_small_thumbs:after {
+  display: table;
+  content: "";
+}
+.product-viewer.etalage .etalage_small_thumbs:after {
+  clear: both;
+}
+
+
+.product-viewer.etalage.product-viewer-landscape {
+  .etalage_small_thumbs {
+    margin-top: 0px!important;
+    margin-left: 260px!important;
+  }
+}
+.product-viewer {
+    .etalage_small_thumbs > ul > li:first-child {
+        display: none;
+    };
+    .etalage_small_thumbs > ul > li:last-child {
+        display: none;
+    };
+    .etalage_smallthumb_first {
+        //display: none;
+    }
+}
+
+.product-viewer.etalage.product-viewer-landscape.rect {
+  .etalage_small_thumbs {
+    width: 260px!important;
+    margin-top: 0px!important;
+    margin-left: 450px!important;
+  }
+}
+
 .product-side {
     width: 270px;
     float: left;
@@ -216,18 +288,6 @@
     }
 }
 
-.product-viewer {
-    .etalage_small_thumbs > ul > li:first-child {
-        display: none;
-    };
-    .etalage_small_thumbs > ul > li:last-child {
-        display: none;
-    };
-    .etalage_smallthumb_first {
-        //display: none;
-    }
-}
-
 .color-pane {
     margin: 10px 0;
     display: block;
@@ -245,10 +305,38 @@
     }
 }
 
-.accordion-heading .accordion-toggle {
-    padding: 0;
-    background: url(../../img/icons/icon-collapse.png) top right no-repeat;
-    &.collapsed {
-        background: url(../../img/icons/icon-expand.png) top right no-repeat;
+.accordion-group {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    .accordion-heading > .accordion-toggle {
+        min-height: 20px;
+        padding: 0;
+        background: url(../../img/icons/ico-fold-s.png) top right no-repeat;
+        &.collapsed {
+            background: url(../../img/icons/ico-expand-s.png) top right no-repeat;
+        }
     }
+    .accordion-inner {
+        border: none;
+    }
+
+}
+
+.combo-box {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    input,textarea {
+        border: none!important;
+        border-radius: 0!important;
+        box-shadow: none!important;
+    }
+    textarea {
+        border-top: 1px solid #ddd!important;
+    }
+}
+
+.row-fluid img {
+    vertical-align: top;
 }
