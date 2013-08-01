@@ -107,13 +107,6 @@
     }
 }
 
-.product-viewer.etalage.product-viewer-landscape.rect {
-  .etalage_small_thumbs {
-    width: 260px!important;
-    margin-top: 0px!important;
-    margin-left: 450px!important;
-  }
-}
 
 .product-side {
     width: 270px;
@@ -307,7 +300,10 @@
 
 .accordion-group {
     border: none;
-    border-bottom: 1px solid #ddd;
+    &:hover {
+        background: #f6f6f6;
+    };
+    //border-bottom: 1px solid #ddd;
     .accordion-heading > .accordion-toggle {
         min-height: 20px;
         padding: 0;
@@ -323,6 +319,7 @@
 }
 
 .combo-box {
+    background: #fff;
     border: 1px solid #ccc;
     padding: 8px;
     margin-bottom: 10px;
@@ -339,4 +336,10 @@
 
 .row-fluid img {
     vertical-align: top;
+}
+
+.deco-options {
+    a {
+        margin-right: 15px;
+    }
 }

@@ -113,8 +113,8 @@ $(function(){
     $('.product-viewer.square').etalage({
         thumb_image_width: 250,
         thumb_image_height: 250,
-        source_image_width: 600,
-        source_image_height: 600,
+        source_image_width: 800,
+        source_image_height: 800,
         zoom_area_width: 400,
         zoom_area_height: 400,
         zoom_area_distance: 5,
@@ -127,12 +127,12 @@ $(function(){
     });
 
     $('.product-viewer.rect').etalage({
-        thumb_image_width: 400,
-        thumb_image_height: 200,
+        thumb_image_width: 250,
+        thumb_image_height: 125,
         source_image_width: 800,
         source_image_height: 400,
-        zoom_area_width: 300,
-        zoom_area_height: 300,
+        zoom_area_width: 400,
+        zoom_area_height: 400,
         zoom_area_distance: 5,
         smallthumb_inactive_opacity: 0.5,
         smallthumbs_position: 'bottom',
