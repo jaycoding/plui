@@ -6173,6 +6173,10 @@ i.icon-right-m {
   padding: 0;
   margin: 0;
 }
+.shade-box {
+  background: #ddd;
+  padding: 10px;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  File:          components.less

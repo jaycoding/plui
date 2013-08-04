@@ -159,9 +159,13 @@ $(".btn-faq-question").live("click", function(){
 });
 
 $(".btn-faq-answer").live("click", function(){
-    $(this).parent().siblings(".form-faq-answer").removeClass("none");
+    $(this).closest(".faq-actions").siblings(".form-faq-answer").removeClass("none");
+});
+
+$(".btn-faq-add-file").live("click", function(){
+    $(this).closest(".faq-actions").siblings(".form-faq-add-file").removeClass("none");
 });
 
 $(".btn-faq-edit").live("click", function(){
-    $(this).parent().siblings(".form-faq-edit").removeClass("none");
+    $(this).closest(".faq-actions").siblings(".form-faq-edit").removeClass("none");
 });
