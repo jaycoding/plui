@@ -8151,11 +8151,15 @@ i.icon-right-m {
   margin-bottom: 0;
 }
 .product-details .nav-tabs > li > a {
+  color: #888;
   border: none;
   text-align: center;
 }
 .product-details .nav-tabs > li > a:hover {
   border: none;
+}
+.product-details .nav-tabs > li.active > a {
+  color: #222;
 }
 .product-details .nav-tabs .page-types {
   position: absolute;
@@ -8169,11 +8173,15 @@ i.icon-right-m {
   color: #fff;
   text-align: left;
   text-decoration: none;
-  background: #b94a48;
+  background: #7A7A00;
   padding: 3px 10px;
 }
 .product-details .nav-tabs .page-types > a:hover {
   text-decoration: none;
+}
+.jcarousel-skin-tango img {
+  width: 90px;
+  height: 90px;
 }
 .product-viewer.etalage {
   height: auto!important;
@@ -8228,12 +8236,12 @@ i.icon-right-m {
   float: left;
 }
 .product-main {
-  width: 480px;
+  width: 460px;
   float: left;
   margin-left: 30px;
 }
 .product-main-2 {
-  width: 780px;
+  width: 760px;
   float: left;
 }
 .product-customize {
@@ -8242,7 +8250,7 @@ i.icon-right-m {
   padding-top: 50px;
 }
 .product-customize h4 {
-  background: #777;
+  background: #7A7A00;
   color: #fff;
   margin: 0;
   margin-bottom: 1px;
@@ -8258,7 +8266,7 @@ i.icon-right-m {
   color: #555;
 }
 .product-customize a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .product-customize li:hover {
   background: #eee;
@@ -10246,23 +10254,11 @@ button.ui-button::-moz-focus-inner {
   /*sorry for IE5*/
 
   position: absolute;
-  /*must have*/
-
   z-index: -1;
-  /*must have*/
-
   filter: mask();
-  /*must have*/
-
   top: -4px;
-  /*must have*/
-
   left: -4px;
-  /*must have*/
-
   width: 200px;
-  /*must have*/
-
   height: 200px;
   /*must have*/
 
@@ -10400,8 +10396,6 @@ button.ui-button::-moz-focus-inner {
 .jPicker .Icon {
   display: inline-block;
   height: 24px;
-  /* change this value if using a different sized color picker icon */
-
   position: relative;
   /* make this element an absolute positioning container */
 
@@ -10470,8 +10464,6 @@ table.jPicker {
   border-top: 2px solid #9a9a9a;
   cursor: crosshair;
   height: 260px;
-  /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
-
   margin: 0px 10px 10px 10px;
   overflow: hidden;
   /* hide the overdraw of the Color Map icon when at edge of viewing box */
@@ -10486,8 +10478,6 @@ table.jPicker {
 }
 .jPicker div[class="Map"] {
   height: 256px;
-  /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
-
   width: 256px;
   /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
 
