@@ -6174,7 +6174,7 @@ i.icon-right-m {
   margin: 0;
 }
 .shade-box {
-  background: #ddd;
+  background: #eee;
   padding: 10px;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
@@ -8150,6 +8150,9 @@ i.icon-right-m {
 .product-details .nav {
   margin-bottom: 28px;
 }
+.product-details .nav-tabs {
+  border-bottom: 2px solid #999;
+}
 .product-details .nav-tabs > li {
   position: relative;
   margin-bottom: 0;
@@ -8358,10 +8361,10 @@ i.icon-right-m {
 .deco-options a {
   display: block;
   float: left;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
 }
 .deco-options a.active {
-  border: 1px solid #f30;
+  border: 3px solid #f30;
 }
 .faq-list .accordion-toggle {
   color: #333;
@@ -8419,9 +8422,6 @@ i.icon-right-m {
 .accordion-group {
   border: none;
 }
-.accordion-group:hover {
-  background: #f6f6f6;
-}
 .accordion-group .accordion-heading > .accordion-toggle {
   min-height: 20px;
   padding: 0;
@@ -8454,6 +8454,15 @@ i.icon-right-m {
 }
 .deco-options a {
   margin-right: 15px;
+}
+.faq-actions a {
+  margin-right: 10px;
+}
+.form-faq-add-file a {
+  color: #666;
+}
+.form-faq-add-file a:hover {
+  color: #7A7A00;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //

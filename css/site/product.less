@@ -10,6 +10,7 @@
     }
 
     .nav-tabs {
+        border-bottom: 2px solid #999;
         > li {
             position: relative;
             margin-bottom: 0;
@@ -258,11 +259,11 @@
     a {
         display: block;
         float: left;
-        border: 1px solid transparent;
+        border: 3px solid transparent;
     }
     
     a.active {
-        border: 1px solid #f30;
+        border: 3px solid #f30;
     }
 }
 
@@ -311,9 +312,6 @@
 
 .accordion-group {
     border: none;
-    &:hover {
-        background: #f6f6f6;
-    };
     //border-bottom: 1px solid #ddd;
     .accordion-heading > .accordion-toggle {
         min-height: 20px;
@@ -353,4 +351,15 @@
     a {
         margin-right: 15px;
     }
+}
+
+.faq-actions a {
+    margin-right: 10px;
+}
+
+.form-faq-add-file a {
+    color: #666;
+    &:hover {
+        color: #7A7A00;
+    };
 }
