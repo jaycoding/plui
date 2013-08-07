@@ -8232,6 +8232,9 @@ i.icon-right-m {
   margin-top: 0px!important;
   margin-left: 260px!important;
 }
+.product-viewer.etalage.product-viewer-landscape.rect .etalage_small_thumbs {
+  margin-left: 450px!important;
+}
 .product-viewer .etalage_small_thumbs > ul > li:first-child {
   display: none;
 }
@@ -10267,11 +10270,23 @@ button.ui-button::-moz-focus-inner {
   /*sorry for IE5*/
 
   position: absolute;
+  /*must have*/
+
   z-index: -1;
+  /*must have*/
+
   filter: mask();
+  /*must have*/
+
   top: -4px;
+  /*must have*/
+
   left: -4px;
+  /*must have*/
+
   width: 200px;
+  /*must have*/
+
   height: 200px;
   /*must have*/
 
@@ -10409,6 +10424,8 @@ button.ui-button::-moz-focus-inner {
 .jPicker .Icon {
   display: inline-block;
   height: 24px;
+  /* change this value if using a different sized color picker icon */
+
   position: relative;
   /* make this element an absolute positioning container */
 
@@ -10477,6 +10494,8 @@ table.jPicker {
   border-top: 2px solid #9a9a9a;
   cursor: crosshair;
   height: 260px;
+  /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
+
   margin: 0px 10px 10px 10px;
   overflow: hidden;
   /* hide the overdraw of the Color Map icon when at edge of viewing box */
@@ -10491,6 +10510,8 @@ table.jPicker {
 }
 .jPicker div[class="Map"] {
   height: 256px;
+  /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
+
   width: 256px;
   /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
 

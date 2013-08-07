@@ -127,12 +127,12 @@ $(function(){
     });
 
     $('.product-viewer.rect').etalage({
-        thumb_image_width: 250,
-        thumb_image_height: 125,
-        source_image_width: 800,
-        source_image_height: 400,
+        thumb_image_width: 430,
+        thumb_image_height: 230,
+        source_image_width: 960,
+        source_image_height: 540,
         zoom_area_width: 400,
-        zoom_area_height: 400,
+        zoom_area_height: 210,
         zoom_area_distance: 5,
         smallthumb_inactive_opacity: 0.5,
         smallthumbs_position: 'bottom',
