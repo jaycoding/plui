@@ -169,3 +169,7 @@ $(".btn-faq-add-file").live("click", function(){
 $(".btn-faq-edit").live("click", function(){
     $(this).closest(".faq-actions").siblings(".form-faq-edit").removeClass("none");
 });
+
+$(".faq-upload .btn-add-upload").live("click", function(){
+    $(this).before('<br><a href="#" class="btn-faq-upload">Upload the file</a> ');
+});
