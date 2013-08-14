@@ -38,7 +38,6 @@ $(function(){
 	//Fix alerts
 	$('.alerts').scrollToFixed();
 	
-	$(".with-tooltop").tooltip();
     $(".with-tooltip").tooltip();
 	
 	//Combobox
@@ -123,7 +122,8 @@ $(function(){
         show_icon: false,
         autoplay: false,
         keyboard: false,
-        zoom_easing: false
+        zoom_easing: false,
+        show_descriptions: true
     });
 
     $('.product-viewer.rect').etalage({
@@ -139,7 +139,8 @@ $(function(){
         show_icon: false,
         autoplay: false,
         keyboard: false,
-        zoom_easing: false
+        zoom_easing: false,
+        show_descriptions: true
     });
 
 
@@ -173,3 +174,7 @@ $(".btn-faq-edit").live("click", function(){
 $(".faq-upload .btn-add-upload").live("click", function(){
     $(this).before('<br><a href="#" class="btn-faq-upload">Upload the file</a> ');
 });
+
+
+
+$(".with-tooltip").tooltip();
