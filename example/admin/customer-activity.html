@@ -1,0 +1,1308 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+		<!-- <link rel="stylesheet/less" type="text/css" href="../../css/admin/main.less" media="all">
+		<script type="text/javascript">less = {}; less.env = 'development';</script>
+		<script type="text/javascript" src="../../js/utils/less/1.3.0/less.min.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="../../css/admin/main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../../js/utils/jquery.star-rating/3.14/jquery.rating.css" media="all">
+		<script type="text/javascript" src="../../js/lib/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/utils/bootstrap/2.1.0/bootstrap.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.expander/1.4.3/jquery.expander.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.star-rating/3.14/jquery.rating.pack.js"></script>
+
+		<script type="text/javascript" src="../../js/utils/jquery.fancybox/2.1.3/jquery.fancybox.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../js/utils/jquery.fancybox/2.1.3/jquery.fancybox.css" media="all" />
+
+		<script type="text/javascript" src="../../js/utils/jquery.autosize/1.16.5/jquery.autosize.min.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.tinymce/3.5.8/jquery.tinymce.js"></script>
+
+
+		<script type="text/javascript" src="../../js/admin/main.js"></script>
+		<!--[if lt IE 9]>
+		<script src="../../js/utils/html5/3.0/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper"> 
+			<!-- Header Start -->
+			<header id="header" class="cf">
+				<div id="hd-logo"><img src="../../mock/image/promo-logo.png" alt="" /></div>
+			</header>
+			<!-- Header End -->
+			
+			<div id="page"> 
+				
+				<!-- Side Navigation Start -->
+				<nav>
+					<div class="clogo"> <img src="../../img/default-images/admin/default-admin-logo-150.gif" alt="" /> </div>
+					<div class="accordion" id="nav">
+						<div class="accordion-group">
+							<div class="accordion-heading nav-hd-admin"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-admin">Administration</a> </div>
+							<div id="nav-admin" class="accordion-body in collapse" style="height: auto; ">
+								<div class="accordion-inner">
+									<ul>
+										<li><a href="#">Biz Social</a></li>
+										<li><a href="#">Company Profiles</a></li>
+										<li><a href="#">Personal Profile</a></li>
+										<li><a href="#">To Do List</a></li>
+										<li><a href="#">My Templates</a></li>
+										<li><a href="#">Site Settings</a></li>
+										<li><a href="#">Site Theme</a></li>
+										<li><a href="#">Login &amp; Password</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading nav-hd-marketing"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-marketing">Marketing</a> </div>
+							<div id="nav-marketing" class="accordion-body collapse" style="height: 0px; ">
+								<div class="accordion-inner">
+									<ul>
+										<li><a href="#">Biz Social</a></li>
+										<li><a href="#">Homepage Admin</a></li>
+										<li><a href="#">Item Admin</a></li>
+										<li><a href="#">Tier Pricing</a></li>
+										<li><a href="#">Mass price update</a></li>
+										<li><a href="#">Categories</a></li>
+										<li><a href="#">Tags</a></li>
+										<li><a href="#">Specials</a></li>
+										<li><a href="#">Banners</a></li>
+										<li><a href="#">eFlyer</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading nav-hd-sales"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-sales">Sales</a> </div>
+							<div id="nav-sales" class="accordion-body collapse" style="height: 0px; ">
+								<div class="accordion-inner">
+									<ul>
+										<li><a href="#">Biz Social</a></li>
+										<li><a href="#">Customer Data</a></li>
+										<li><a href="#">Mass customer import</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading nav-hd-purchase"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-purchase">Purchase</a> </div>
+							<div id="nav-purchase" class="accordion-body collapse" style="height: 0px; ">
+								<div class="accordion-inner">
+									<ul>
+										<li><a href="#">Biz Social</a></li>
+										<li><a href="#">Vendor Data</a></li>
+										<li><a href="#">Mass vendor import</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading nav-hd-banking"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-banking">Banking</a> </div>
+							<div id="nav-banking" class="accordion-body collapse" style="height: 0px; ">
+								<div class="accordion-inner">
+									<ul>
+										<li><a href="#">Biz Social</a></li>
+										<li><a href="#">Currency Rate</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading nav-hd-mockup"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav" href="#nav-mockup">Mockup</a> </div>
+							<div id="nav-mockup" class="accordion-body collapse" style="height: 0px; ">
+								<div class="accordion-inner">
+									<ul>
+										<li><a href="#">Mockup</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading nav-hd-logout"> <a class="accordion-toggle" href="#">LOGOUT</a> </div>
+						</div>
+					</div>
+				</nav>
+				<!-- Side Navigation End -->
+				
+				<div id="body">
+					<div class="search-box">
+						<select name="" id="" class="none">
+							<option value="job_no">Job No</option>
+							<option value="reference">Reference</option>
+							<option value="project_name">Project name</option>
+							<option value="conversation_tag">Conversation tag</option>
+							<option value="company_name">Company name</option>
+							<option value="user_name">User name</option>
+						</select>
+						<div class="search-box-input">
+							<input type="text" placeholder="Order #, job #, or reference" />
+							<span class="dropdown-toggle" role="button" data-toggle="dropdown"><b class="caret"></b></span>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#" data-value="job_no" data-placeholder="Job No">Job No</a></li>
+								<li><a href="#" data-value="reference" data-placeholder="Reference">Reference</a></li>
+								<li><a href="#" data-value="project_name" data-placeholder="Project name">Project name</a></li>
+								<li><a href="#" data-value="conversation_tag" data-placeholder="Conversation tag">Conversation tag</a></li>
+								<li><a href="#" data-value="company_name" data-placeholder="Company name">Company name</a></li>
+								<li><a href="#" data-value="user_name" data-placeholder="User name">User name</a></li>
+							</ul>
+						</div>
+						<a href="javascript:void(0);" class="btn-search"></a>
+					</div>
+					
+					
+
+					<div class="clear cf">
+						<div class="customer-details-hd spaced">
+							<div class="row-fluid">
+								<div class="span5"></div>
+								<div class="span7 tright"><a href="#">&larr; Customer list</a></div>
+							</div>
+							<div class="row-fluid spaced">
+								<div class="span3">
+									<p><img src="../../mock/image/logo/iclick.jpg" width="150" alt=""></p>
+									BP ID. 4 Tier D
+								</div>
+								<div class="span5">
+									SunJoy Group, Inc. <br>
+									Chicago, IL
+								</div>
+							</div>
+
+							<div class="row-fluid">
+								<div class="span4"><a href="workflow-add.html">Add a workflow</a></div>
+								<div class="span8 tright">
+									<button class="btn btn-small clickover bottom" data-content='<div class="box-assign row-fluid"><h5>Assigned to</h5><div class="row-fluid"><a href="#" class="tag-user"><span>Brian Eichman</span><i class="close btn-remove-tag">×</i></a></div><div class="row-fluid"><input type="text" class="span12" placeholder="Assgin to"/></div></div>'><i class="icon-user"></i></button> 
+
+									<div class="btn-group tright">
+										<button class="btn btn-small dropdown-toggle" data-toggle="dropdown"><i class="icon-shopping-cart"></i></button>
+										<ul class="dropdown-menu tleft align-right">
+											<div class="dropdown-menu-group group-checkbox">
+												<li><a href="javascript:void(0);">Quotations</a></li>
+												<li><a href="javascript:void(0);">Sales orders</a></li>
+												<li><a href="javascript:void(0);">Sample orders</a></li>
+											</div>
+												<li class="divider"></li>
+											<div class="dropdown-menu-group group-radio">
+												<li><a href="javascript:void(0);">AR down invoice</a></li>
+												<li><a href="javascript:void(0);">AR invoice</a></li>
+												<li><a href="javascript:void(0);">AR credit memo</a></li>
+											</div>
+										</ul>
+									</div>
+
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="customer-details-bd">
+							<div class="item-edit-tabs">
+								<ul class="nav nav-tabs cf">
+									<li class="item-edit-tab first active"><a href="customer-activity.html">Activities</a></li>
+									<li class="item-edit-tab"><a href="customer-tags.html">Tags</a></li>
+									<li class="item-edit-tab"><a href="customer-profile.html">Profile</a></li>
+									<li class="item-edit-tab"><a href="customer-contacts.html">Contacts</a></li>
+									<li class="item-edit-tab"><a href="customer-statistics.html">Statistics</a></li>
+								</ul>
+							</div>
+							<div class="tab-content">
+								<div class="row-fluid spaced">
+									<div class="span5">
+										<div class="dropdown dropdown-tagview pull-left">
+											<a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><img src="../../img/icons/activity/icon-activity.png" class="" alt=""> Activity <b class="caret"></b></a>
+											<ul id="menu1" class="dropdown-menu" role="menu">
+												<li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="../../img/icons/activity/icon-todo.png" class="" alt=""> Todo</a></li>
+											</ul>
+										</div>
+										<div class="pull-right">
+											<span class="grey"><a href="#" class="bold">10,167</a> customer</span>
+										</div>
+									</div>
+									<div class="span7 tright"><a href="#">&larr; Back to all</a></div>
+								</div>
+								<div id="tab-customer-activity" class="tab-pane cf active">
+									<div class="row-fluid spaced small">
+										<div class="span10"><a href="javascript:void(0);" class="btn-add-activity">+1 Activity</a></div>
+										<div class="span2 tright">
+											<div class="btn-group tright">
+												<button class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-wrench"></i></button>
+												<ul class="dropdown-menu tleft align-right">
+													<div class="dropdown-menu-group group-checkbox">
+														<li><a href="javascript:void(0);">Push notice on</a></li>
+														<li><a href="javascript:void(0);">Show assigned to me only</a></li>
+													</div>
+														<li class="divider"></li>
+													<div class="dropdown-menu-group group-radio">
+														<li><a href="javascript:void(0);">Latest created first</a></li>
+														<li><a href="javascript:void(0);">Latest reply first</a></li>
+														<li><a href="javascript:void(0);">Oldest first</a></li>
+													</div>
+														<li class="divider"></li>
+													<div class="dropdown-menu-group group-radio">
+														<li><a href="javascript:void(0);">Show 25 per page</a></li>
+														<li><a href="javascript:void(0);">Show 50 per page</a></li>
+													</div>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="row-fluid activity-add spaced none">
+										<div class="activity-add-tabs">
+											<ul class="nav nav-tabs cf">
+												<li class="first active"><a href="#tab-add-activity" data-toggle="tab" >Activity</a></li>
+												<li class=""><a href="#tab-add-meeting" data-toggle="tab">Meeting</a></li>
+												<li class=""><a href="#tab-add-knowledge" data-toggle="tab">Knowledge</a></li>
+												<li class=""><a href="#tab-add-poll" data-toggle="tab">Poll</a></li>
+											</ul>
+										</div>
+										<div class="activity-add-content tab-content">
+											<div id="tab-add-activity" class="tab-pane cf active">
+												<div class="title"><input type="text" placeholder="You're invited to sunjoy new system" class="span12" /> </div>
+												<div class="content"><textarea name="" placeholder="Activity content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
+												<div class="notify spaced small">
+													<div class="row-fluid">
+														<div class="span10">
+															<a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+														</div>
+														<div class="span2 tright"><a href="#">Remove all</a></div>
+													</div>
+												</div>
+												<div class="assign">
+													<div class="row-fluid">
+														<div class="span10">
+															<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
+														</div>
+														<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
+													</div>
+												</div>
+											</div>
+											<div id="tab-add-meeting" class="tab-pane cf">
+												<div class="title"><input type="text" placeholder="Meeting" class="span12" /> </div>
+												<div class="content"><textarea name="" placeholder="Meeting content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
+												<div class="notify spaced small">
+													<div class="row-fluid">
+														<div class="span10">
+															<a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+														</div>
+														<div class="span2 tright"><a href="#">Remove all</a></div>
+													</div>
+													
+												</div>
+												<div class="assign">
+													<div class="row-fluid">
+														<div class="span10">
+														</div>
+														<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
+													</div>
+												</div>
+											</div>
+											<div id="tab-add-knowledge" class="tab-pane cf">
+												<div class="title"><input type="text" placeholder="Knowledge" class="span12" /> </div>
+												<div class="content"><textarea name="" placeholder="Knowledge content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
+												<div class="notify spaced small">
+													<div class="row-fluid">
+														<div class="span10">
+															<input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+														</div>
+														<div class="span2 tright"><a href="#">Remove all</a></div>
+													</div>
+													
+												</div>
+												<div class="assign">
+													<div class="row-fluid">
+														<div class="span12">
+														</div>
+														<div class="span10 tright"><div class="btn btn-primary btn-small">Add</div></div>
+													</div>
+												</div>
+											</div>
+											<div id="tab-add-poll" class="tab-pane cf">
+												<div class="row-fluid">
+													<div class="span11"><input type="text" name="" value="How did you know about sunjoy product and service?" class="span12" id=""></div>
+												</div>
+												<div class="row-fluid">
+													<div class="span11">
+														<textarea placeholder="Enter descriptions" class="span12 rte-nocontrol" name="" id="" cols="30" rows="4"></textarea>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span11"><label for="checkbox2" class="checkbox"><input type="checkbox" class="" name="" id="checkbox2"> allow multi-choice</label></div>
+												</div>
+
+												<div class="row-fluid poll-option">
+													<div class="span11"><input type="text" name="" placeholder="Answer A" class="span12" id=""></div>
+													<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+												</div>
+
+												<div class="notify spaced small">
+													<div class="row-fluid">
+														<div class="span10">
+															<input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+														</div>
+														<div class="span2 tright"><a href="#">Remove all</a></div>
+													</div>
+												</div>
+												<div class="assign">
+													<div class="row-fluid">
+														<div class="span10">
+															<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
+														</div>
+														<div class="span2 tright"><button class="btn btn-primary btn-small">Add</button></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="activity-list">
+										<div class="row-fluid spaced small activity-list-hd none">
+											<div class="span10">
+												<div class="dropdown spaced small pull-left">
+													<span class="dropdown-toggle grey bold" role="button" data-toggle="dropdown">
+														<img src="../../img/admin/icon-act-todo.png" alt=""> <span>Todo <i class="icon-chevron-down"></i></span> </span>
+														<ul class="dropdown-menu">
+															<li><a href="#"><img src="../../img/admin/icon-act-important.png" alt=""> Important</li>
+															<li><a href="#"><img src="../../img/admin/icon-act-archive.png" alt=""> Archives</a></li>
+															<li><a href="#"><img src="../../img/admin/icon-act-plan.png" alt=""> Plans</a></li>
+															<li><a href="#"><img src="../../img/admin/icon-act-sent.png" alt=""> Emails Sent</a></li>
+															<li><a href="#"><img src="../../img/admin/icon-act-read.png" alt=""> Read</a></li>
+															<li><a href="#"><img src="../../img/admin/icon-act-unread.png" alt=""> Unread</a></li>
+															<li><a href="#"><img src="../../img/admin/icon-act-tag.png" alt=""> Tag</a></li>
+														</ul>
+													</div>
+
+													<div class="activity-stats pull-left"><span class="bold">10</span> activities  ·  <span class="bold">15</span> replies  ·  <span class="bold">2</span> reviews</div>
+
+												</div>
+												<div class="span2 tright"><a href="#" class="activity-list-show-all">&larr; Back to all</a></div>
+											</div>
+
+											<div class="activity-list-bd">
+												<div class="activity-thread cf spaced">
+													<div class="row-fluid">
+														<div class="span2 tcenter">
+															<img src="../../mock/image/user/user-3.jpg" width="68" height="68" alt="">
+														</div>
+														<div class="span10">
+															<div class="section-thread">
+																<div class="row-fluid">
+																	<div class="span10">
+																		<a href="#" class="act-user-popover act-list-by-user" data-content="&lt;img width='36' height='36' src='../../mock/image/user/user-2.jpg' /&gt; &lt;br /&gt;Seatle, WA, USA &lt;br /&gt;Phone: 54648789 &lt;br /&gt;Email: &lt;a href='#'&gt;harrison.fu@sunjoy.com&lt;/a&gt;" data-original-title="Harrison Fu">Harrison Fu</a>
+
+																		<span class="bold grey">You are invited to SunJoy New System</span>
+																	</div>
+																	<div class="span2 tright">
+																		<div class="btn-group tright">
+																			<button class="btn btn-mini btn-edit-thread"><i class="icon-edit"></i> Edit</button>
+																			<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu tleft align-right">
+																				<li><a href="#"><i class="icon-exclamation-sign"></i> Important</a></li>
+																				<li><a href="#"><i class="icon-ok"></i> To-dos</a></li>
+																				<li><a href="#"><i class="icon-folder-close"></i> Archive</a></li>
+																				<li><a href="#"><i class="icon-envelope"></i> Read/Unread</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="row-fluid">
+																	<div class="span12">
+																		Hi Stephanie ,<br>
+																		We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
+																	</div>
+																</div>
+															</div>
+
+															<div class="section-thread-edit none">
+																<div class="row-fluid">
+																	<input type="text" value="You are invited to SunJoy New System" class="span12 bold" />
+																</div>
+																<div class="row-fluid">
+																	<div class="span12">
+																		<textarea rows="3" class="span12 rte-simple">Hi Stephanie,We have launched a new and improved website to meet your promotional needs. As a valued customer, we have  already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</textarea>
+																	</div>
+																</div>
+																<div class="row-fluid">
+																	<div class="span6">
+																		<label for="internal" class="checkbox"><input type="checkbox" name="" id="internal"> Internal only</label>
+																	</div>
+																	<div class="span6 tright">
+																		<button class="btn btn-small btn-primary btn-save">Save</button> <button class="btn btn-small btn-cancel">Cancel</button>
+																	</div>
+																</div>
+															</div>
+
+																<div class="section-expandable none">
+																	<div class="row-fluid spaced small activity-actions">
+																		<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
+																		<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
+																		<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
+																		<a href="#" class="grey-light btn-edit-file">File</a>  ·  
+																		<a href="#" class="grey-light">Email</a>  ·  
+																		<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
+																		<span class="grey-light">August 19 at 1:30pm</span>
+																	</div>
+
+																	<div class="act-box section-edit section-edit-reply spaced small none">
+																		<input type="" placeholder="Write a reply" class="span12">
+																		<div class="row-fluid none">
+																			<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+																			<div class="span11">
+																				<div class="row-fluid">
+																					<div class="span11">Replying to Harrison Fu</div>
+																					<div class="span1 tright"><button type="button" class="close">×</button></div>
+																				</div>
+																				<div class="row-fluid">
+																					<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+																				</div>
+																				<div class="row-fluid">
+																					<div class="span10"><a href="#">Add file</a></div>
+																					<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	
+																	<div class="act-box section-edit section-edit-tag spaced small no-shadow">
+																		<div class="row-fluid">
+																			<div class="span10">
+																				<a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span></a> <a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span> <i class="close btn-remove-tag">&times;</i></a>
+																				<span class="edit-panel none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
+																			</div>
+																			<div class="span2 tright">
+																				<a href="javascript:void(0);" class="grey save none">Done</a> 
+																				<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="act-box section-edit section-edit-assignment spaced small no-shadow none">
+																		<div class="row-fluid spaced small">
+																			<div class="span10">Assign to</div>
+																			<div class="span2 tright"><a href="javascript:void(0);" class="edit grey none">Change</a></div>
+																		</div>
+																		<div class="row-fluid">
+																			<div class="span12">
+																				<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+																				<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+																				<span class="edit-panel none">
+																					<input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> 
+																					<a href="#" class="grey">Search &amp; Add</a>
+																				</span>
+																			</div>
+																		</div>
+
+																		<hr class="dashed">
+
+																		<div class="row-fluid">
+																			<div class="span10">Notify parties</div>
+																			<div class="span2 tright"><a href="javascript:void(0);" class="grey remove-all none">Remove all</a></div>
+																		</div>
+																		<div class="row-fluid border-dashed-bottom">
+																			<div class="span10">
+																				<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+																				<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+																				<span class="edit-panel none">
+																					<input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a>
+																				</span>
+																			</div>
+																			<div class="span2 tright"><button class="btn btn-primary btn-small save none">Assgin</button></div>
+																		</div>
+																	</div>
+
+
+																	<div class="act-box section-edit section-edit-file spaced small none">
+																		<div class="row-fluid spaced small">
+																			<div class="span11">Add file</div>
+																			<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+																		</div>
+																		<div class="row-fluid">
+																			<div><input type="text" name="" placeholder="Comment on this file..." id="" class="span12"> </div>
+																			<ul>
+																				<li class="spaced small">
+																					<div class="upload-form-progress none"></div>
+																					<span class="file-from-upload fileinput-button">
+																						Upload a file from your computer
+																						<input type="file" name="files[]" multiple>
+																					</span>
+																				</li>
+																				<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
+																				<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
+																			</ul>
+																			<div><button class="btn btn-small btn-primary">Add</button></div>
+																		</div>
+																	</div>
+
+																	<div class="act-box section-edit section-edit-review spaced small none">
+																		<div class="row-fluid">
+																			<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+																			<div class="span11">
+																				<div class="row-fluid spaced small">
+																					<div class="span11">How do you like this?</div>
+																					<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+																				</div>
+																				<div class="row-fluid">
+									    								<!-- <ul class="act-rating spaced small">
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-5"></span> <span>Excellent</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-4"></span> <span>Good</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-3"></span> <span>Normal</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-2"></span> <span>Poor</span></li>
+									    									<li><input type="radio" name="rating" id=""> <span class="act-rating-stars-1"></span> <span>Terrible</span></li>
+									    								</ul> -->
+									    								<div class="act-rate cf spaced small">
+									    									<input name="star1" type="radio" class="star"/>
+									    									<input name="star1" type="radio" class="star"/>
+									    									<input name="star1" type="radio" class="star"/>
+									    									<input name="star1" type="radio" class="star"/>
+									    									<input name="star1" type="radio" class="star"/>
+									    								</div>
+									    								<textarea name="" id="" rows="3" class="span12" placeholder="Comment on this review..."></textarea>
+									    								<button class="btn btn-primary btn-small">Review</button>
+									    							</div>
+									    						</div>
+									    					</div>
+									    				</div>
+
+									    				<div class="act-box section-edit section-edit-reply spaced small">
+									    					<input type="" placeholder="Write a reply" class="span12">
+									    					<div class="row-fluid none">
+									    						<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+									    						<div class="span11">
+									    							<div class="row-fluid">
+									    								<div class="span11">Replying to Harrison Fu</div>
+									    								<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+									    							</div>
+									    							<div class="row-fluid">
+									    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+									    							</div>
+									    							<div class="row-fluid">
+									    								<div class="span10"><a href="#">Add file</a></div>
+									    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+									    							</div>
+									    						</div>
+									    					</div>
+									    				</div>
+									    			</div>
+									    		</div>
+									    	</div>
+									    	<div class="btn-section-expand">
+									    		<i class="icon-chevron-down"></i>
+									    		<i class="icon-chevron-up"></i>
+									    	</div>
+									    </div>
+									</div>
+
+									<div class="activity-thread cf">
+										<div class="row-fluid">
+											<div class="span2 tcenter">
+												<img src="../../mock/image/user/user-2.jpg" width="68" height="68" alt="">
+											</div>
+											<div class="span10">
+												<div class="section-thread">
+													<div class="row-fluid">
+														<div class="span10">
+															<a href="#" class="act-user-popover act-list-by-user" data-content="&lt;img width='36' height='36' src='../../mock/image/user/user-2.jpg' /&gt; &lt;br /&gt;Seatle, WA, USA &lt;br /&gt;Phone: 54648789 &lt;br /&gt;Email: &lt;a href='#'&gt;harrison.fu@sunjoy.com&lt;/a&gt;" data-original-title="Harrison Fu">Harrison Fu</a>
+
+															<span class="bold grey">You are invited to SunJoy New System</span>
+														</div>
+														<div class="span2 tright">
+															<div class="btn-group tright">
+																<button class="btn btn-mini btn-edit-thread"><i class="icon-edit"></i> Edit</button>
+																<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu tleft align-right">
+																	<li><a href="#"><i class="icon-exclamation-sign"></i> Important</a></li>
+																	<li><a href="#"><i class="icon-ok"></i> To-dos</a></li>
+																	<li><a href="#"><i class="icon-folder-close"></i> Archive</a></li>
+																	<li><a href="#"><i class="icon-envelope"></i> Read/Unread</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="row-fluid">
+														<div class="span12">
+															Hi Stephanie ,<br>
+															We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
+														</div>
+													</div>
+												</div>
+
+												<div class="section-thread-edit none">
+													<div class="row-fluid">
+														<input type="text" value="You are invited to SunJoy New System" class="span12 bold" />
+													</div>
+													<div class="row-fluid">
+														<div class="span12">
+															<textarea rows="3" class="span12 rte-simple">Hi Stephanie,We have launched a new and improved website to meet your promotional needs. As a valued customer, we have  already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</textarea>
+														</div>
+													</div>
+													<div class="row-fluid">
+														<div class="span6">
+															<label for="internal" class="checkbox"><input type="checkbox" name="" id="internal"> Internal only</label>
+														</div>
+														<div class="span6 tright">
+															<button class="btn btn-small btn-primary btn-save">Save</button> <button class="btn btn-small btn-cancel">Cancel</button>
+														</div>
+													</div>
+												</div>
+
+													<div class="section-expandable none">
+														
+														<div class="row-fluid spaced small activity-actions">
+															<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
+															<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
+															<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
+															<a href="#" class="grey-light btn-edit-file">File</a>  ·  
+															<a href="#" class="grey-light">Email</a>  ·  
+															<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
+															<span class="grey-light">August 19 at 1:30pm</span>
+														</div>
+
+														<div class="act-box section-edit section-edit-reply spaced small none">
+															<input type="" placeholder="Write a reply" class="span12">
+															<div class="row-fluid none">
+																<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+																<div class="span11">
+																	<div class="row-fluid">
+																		<div class="span11">Replying to Harrison Fu</div>
+																		<div class="span1 tright"><button type="button" class="close">×</button></div>
+																	</div>
+																	<div class="row-fluid">
+																		<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+																	</div>
+																	<div class="row-fluid">
+																		<div class="span10"><a href="#">Add file</a></div>
+																		<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														
+														<div class="act-box section-edit section-edit-tag spaced small">
+															<div class="row-fluid">
+																<div class="span10">
+																	<a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span></a> <a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span> <i class="close btn-remove-tag">&times;</i></a> 
+																	<span class="edit-panel none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
+																</div>
+																<div class="span2 tright">
+																	<a href="javascript:void(0);" class="grey save none">Done</a> 
+																	<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
+																</div>
+															</div>
+														</div>
+														
+
+														<div class="act-box section-edit section-edit-assignment spaced small no-shadow none">
+															<div class="row-fluid spaced small">
+																<div class="span10">Assign to</div>
+																<div class="span2 tright"><a href="javascript:void(0);" class="edit grey none">Change</a></div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+																	<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+																	<span class="edit-panel none">
+																		<input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> 
+																		<a href="#" class="grey">Search &amp; Add</a>
+																	</span>
+																</div>
+															</div>
+
+															<hr class="dashed">
+
+															<div class="row-fluid">
+																<div class="span10">Notify parties</div>
+																<div class="span2 tright"><a href="javascript:void(0);" class="grey remove-all none">Remove all</a></div>
+															</div>
+															<div class="row-fluid border-dashed-bottom">
+																<div class="span10">
+																	<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+																	<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+																	<span class="edit-panel none">
+																		<input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a>
+																	</span>
+																</div>
+																<div class="span2 tright"><button class="btn btn-primary btn-small save none">Assgin</button></div>
+															</div>
+														</div>
+
+														
+
+														<div class="act-box section-edit section-edit-file spaced small none">
+															<div class="row-fluid spaced small">
+																<div class="span11">Add file</div>
+																<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+															</div>
+															<div class="row-fluid">
+																<div><input type="text" name="" placeholder="Comment on this file..." id="" class="span12"> </div>
+																<ul>
+																	<li class="spaced small">
+																		<div class="upload-form-progress none"></div>
+																		<span class="file-from-upload fileinput-button">
+																			Upload a file from your computer
+																			<input type="file" name="files[]" multiple>
+																		</span>
+																	</li>
+																	<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
+																	<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
+																</ul>
+																<div><button class="btn btn-small btn-primary">Add</button></div>
+															</div>
+														</div>
+
+														<div class="act-box section-edit section-edit-review spaced small none">
+															<div class="row-fluid">
+																<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+																<div class="span11">
+																	<div class="row-fluid spaced small">
+																		<div class="span11">How do you like this?</div>
+																		<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+																	</div>
+																	<div class="row-fluid">
+																		<div class="act-rate cf spaced small">
+																			<input name="star2" type="radio" class="star"/>
+																			<input name="star2" type="radio" class="star"/>
+																			<input name="star2" type="radio" class="star"/>
+																			<input name="star2" type="radio" class="star"/>
+																			<input name="star2" type="radio" class="star"/>
+																		</div>
+																		<button class="btn btn-primary btn-small">Review</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="activity-thread-reply">
+															<div class="row-fluid">
+																<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
+																<div class="span11">
+																	<div class="row-fluid">
+																		<div class="span10"><a href="#">Emily Hu</a></div>
+																		<div class="span2 tright"></div>
+																	</div>
+																	<div class="spaced small">Hi Harrison,<br>
+																		We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</div>
+																		<div><span class="grey-light">August 19 at 1:30pm</span></div>
+																	</div>
+																</div>
+															</div>
+
+															
+															<div class="activity-thread-reply">
+																<div class="row-fluid">
+																	<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
+																	<div class="span11">
+																		<div class="row-fluid">
+																			<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">tagged the activity</span></div>
+																			<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
+																		</div>
+																		<div class="spaced small">
+																			<a href="#" class="act-tag act-list-by-tag">SO 10993</a> <a href="#" class="act-tag act-list-by-tag">SO 10993</a> 
+																		</div>
+																		<div><span class="grey-light">August 19 at 1:30pm</span></div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="activity-thread-reply">
+																<div class="row-fluid">
+																	<div class="span1"><img src="../../mock/image/user/user-3.jpg" width="36" height="36" alt=""></div>
+																	<div class="span11">
+																		<div class="row-fluid">
+																			<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">uploaded the file</span></div>
+																			<div class="span2 tright"><a href="#" class="grey remove none">Remove</a></div>
+																		</div>
+																		<div class="spaced small">
+																			<a href="#">
+																				<img src="../../mock/image/250x250/p1.jpg" width="160" height="160" alt="" /><br>
+																				sample.jpg
+																			</a>
+																		</div>
+																		<div class="spaced small">
+																			<a href="#">
+																				<img src="../../img/admin/activity-icon-file.png" alt="" /><br>
+																				readme.doc
+																			</a>
+																		</div>
+																		<div><span class="grey-light">August 19 at 1:30pm</span></div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="activity-thread-reply">
+																<div class="row-fluid">
+																	<div class="span1"><img src="../../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
+																	<div class="span11">
+																		<div class="row-fluid">
+																			<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">sent emails</span></div>
+																			<div class="span2 tright"><a href="#"></a></div>
+																		</div>
+																		<div class="spaced small">
+																			<p class="bold">You're invited to sunjoy new system.</p>
+																			<p>sent to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
+																			<p>copied to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
+																		</div>
+																		<div><span class="grey-light">August 19 at 1:30pm</span></div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="activity-thread-reply">
+																<div class="row-fluid">
+																	<div class="span1"><img src="../../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
+																	<div class="span11">
+																		<div class="row-fluid">
+																			<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">reviewed this</span></div>
+																			<div class="span2 tright"><a href="#" class="edit grey none">Change</a></div>
+																		</div>
+																		<div class="spaced small">
+																			<div class="act-rate cf spaced small">
+																				<input name="star3" type="radio" class="star"/>
+																				<input name="star3" type="radio" class="star"/>
+																				<input name="star3" type="radio" class="star"/>
+																				<input name="star3" type="radio" class="star"/>
+																				<input name="star3" type="radio" class="star"/>
+																			</div>
+																			<div>Review comment Review comment Review comment Review comment </div>
+								    								<!-- <ul class="act-rating">
+								    									<li><span class="act-rating-stars-5"></span> <span>Excellent</span></li>
+								    								</ul> -->
+								    							</div>
+								    							<div><span class="grey-light">August 19 at 1:30pm</span></div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    				<div class="act-box section-edit section-edit-reply spaced small">
+								    					<input type="" placeholder="Write a reply" class="span12">
+								    					<div class="row-fluid none">
+								    						<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+								    						<div class="span11">
+								    							<div class="row-fluid">
+								    								<div class="span11">Replying to Harrison Fu</div>
+								    								<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+								    							</div>
+								    							<div class="row-fluid">
+								    								<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+								    							</div>
+								    							<div class="row-fluid">
+								    								<div class="span10"><a href="#">Add file</a></div>
+								    								<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+								    							</div>
+								    						</div>
+								    					</div>
+								    				</div>
+
+								    			</div>
+
+								    		</div>
+								    	</div>
+								    	<div class="btn-section-expand">
+								    		<i class="icon-chevron-down"></i>
+								    		<i class="icon-chevron-up"></i>
+								    	</div>
+								    </div>
+
+								</div>
+
+								<div class="activity-thread row-fluid">
+									<div class="row-fluid">
+										
+										
+										<div class="span2 tcenter">
+											<img src="../../mock/image/user/user-2.jpg" width="68" height="68" alt="">
+										</div>
+										<div class="span10">
+											<div class="section-thread">
+												<div class="row-fluid spaced small">
+													<div class="span10">
+														<a href="#" class="act-user-popover act-list-by-user" data-content="&lt;img width='36' height='36' src='../../mock/image/user/user-2.jpg' /&gt; &lt;br /&gt;Seatle, WA, USA &lt;br /&gt;Phone: 54648789 &lt;br /&gt;Email: &lt;a href='#'&gt;harrison.fu@sunjoy.com&lt;/a&gt;" data-original-title="Harrison Fu">Harrison Fu</a>
+
+														<span class="bold grey">How did you know about sunjoy products?</span>
+													</div>
+													<div class="span2 tright">
+														<div class="btn-group tright">
+															<button class="btn btn-mini btn-edit-thread"><i class="icon-edit"></i> Edit</button>
+															<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+																<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu tleft align-right">
+																<li><a href="#"><i class="icon-exclamation-sign"></i> Important</a></li>
+																<li><a href="#"><i class="icon-ok"></i> To-dos</a></li>
+																<li><a href="#"><i class="icon-folder-close"></i> Archive</a></li>
+																<li><a href="#"><i class="icon-envelope"></i> Read/Unread</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="row-fluid spaced small">
+													<div class="span12">
+														<ul class="act-voting">
+															<li> <span class="act-voting-item tright">Send offer</span> <span class="act-voting-bar"><span style="width: 0%;"></span></span> <span class="act-voting-score">0%</span> </li>
+															<li> <span class="act-voting-item tright">ESP online</span> <span class="act-voting-bar"><span style="width: 50%;"></span></span> <span class="act-voting-score">50%</span> </li>
+															<li> <span class="act-voting-item tright">Logo mall</span> <span class="act-voting-bar"><span style="width: 20%;"></span></span> <span class="act-voting-score">20%</span> </li>
+															<li> <span class="act-voting-item tright">PPAI</span> <span class="act-voting-bar"><span style="width: 20%;"></span></span> <span class="act-voting-score">20%</span> </li>
+															<li> <span class="act-voting-item tright">Sunjoy email blast</span> <span class="act-voting-bar"><span style="width: 20%;"></span></span> <span class="act-voting-score">20%</span> </li>
+														</ul>
+
+														<ul class="act-voting-edit none">
+															<li><label for="c1" class="checkbox"><input type="checkbox" name="" id="c1"> <span class="act-voting-item">Send offer</span></label></li>
+															<li><label for="c2" class="checkbox"><input type="checkbox" name="" id="c2"> <span class="act-voting-item">ESP online</span></label></li>
+															<li><label for="c3" class="checkbox"><input type="checkbox" name="" id="c3"> <span class="act-voting-item">Logo mall</span></label></li>
+															<li><label for="c4" class="checkbox"><input type="checkbox" name="" id="c4"> <span class="act-voting-item">PPAI</span></label></li>
+															<li><label for="c5" class="checkbox"><input type="checkbox" name="" id="c5"> <span class="act-voting-item">Sunjoy email blast</span></label></li>
+															<button class="btn btn-primary btn-small btn-submit-vote">Vote</button>
+														</ul>
+
+														2 total votes  <a href="javascript:void(0)" class="btn-change-vote">Change vote</a>  <a href="#">Reload</a>
+													</div>
+												</div>
+
+											</div>
+
+											<div class="section-thread-edit none">
+
+												<div class="row-fluid">
+													<div class="span11"><input type="text" name="" value="How did you know about sunjoy product and service?" class="span12" id=""></div>
+												</div>
+												<div class="row-fluid">
+													<div class="span11">
+														<textarea placeholder="Enter descriptions" class="span12" name="" id="" cols="30" rows="4"></textarea>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span11"><label for="checkbox2" class="checkbox"><input type="checkbox" class="" name="" id="checkbox2"> allow multi-choice</label></div>
+												</div>
+
+												<div class="row-fluid poll-option">
+													<div class="span11"><input type="text" name="" value="Send offer" class="span12" id=""></div>
+													<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+												</div>
+
+												<div class="row-fluid poll-option">
+													<div class="span11"><input type="text" name="" value="ESP online" class="span12" id=""></div>
+													<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+												</div>
+
+												<div class="row-fluid poll-option">
+													<div class="span11"><input type="text" name="" value="Logo mall" class="span12" id=""></div>
+													<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+												</div>
+
+												<div class="row-fluid poll-option">
+													<div class="span11"><input type="text" name="" value="PPAI" class="span12" id=""></div>
+													<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+												</div>
+
+												<div class="row-fluid poll-option">
+													<div class="span11"><input type="text" name="" value="Sunjoy email blast" class="span12" id=""></div>
+													<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+												</div>
+
+												<div class="row-fluid">
+													<div class="span6">
+														<label for="internal" class="checkbox"><input type="checkbox" name="" id="internal"> Internal only</label>
+													</div>
+													<div class="span6 tright">
+														<button class="btn btn-small btn-primary btn-save">Save</button> <button class="btn btn-small btn-cancel">Cancel</button>
+													</div>
+												</div>
+											</div>
+												
+
+											<div class="section-expandable none">
+												
+												<div class="row-fluid spaced small activity-actions">
+													<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
+													<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
+													<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
+													<a href="#" class="grey-light btn-edit-file">File</a>  ·  
+													<a href="#" class="grey-light">Email</a>  ·  
+													<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
+													<span class="grey-light">August 19 at 1:30pm</span>
+												</div>
+
+												<div class="act-box section-edit section-edit-reply spaced small none">
+													<input type="" placeholder="Write a reply" class="span12">
+													<div class="row-fluid none">
+														<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+														<div class="span11">
+															<div class="row-fluid">
+																<div class="span11">Replying to Harrison Fu</div>
+																<div class="span1 tright"><button type="button" class="close">×</button></div>
+															</div>
+															<div class="row-fluid">
+																<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+															</div>
+															<div class="row-fluid">
+																<div class="span10"><a href="#">Add file</a></div>
+																<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="act-box section-edit section-edit-tag spaced small">
+													<div class="row-fluid">
+														<div class="span10">
+															<a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span></a> <a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span> <i class="close btn-remove-tag">&times;</i></a>
+															<span class="edit-panel none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
+														</div>
+														<div class="span2 tright">
+															<a href="javascript:void(0);" class="grey save none">Done</a> 
+															<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
+														</div>
+													</div>
+												</div>
+												
+
+												<div class="act-box section-edit section-edit-assignment spaced no-shadow small none">
+													<div class="row-fluid spaced small">
+														<div class="span10">Assign to</div>
+														<div class="span2 tright"><a href="javascript:void(0);" class="edit grey none">Change</a></div>
+													</div>
+													<div class="row-fluid">
+														<div class="span12">
+															<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+															<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+															<span class="edit-panel none">
+																<input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> 
+																<a href="#" class="grey">Search &amp; Add</a>
+															</span>
+														</div>
+													</div>
+
+													<hr class="dashed">
+
+													<div class="row-fluid">
+														<div class="span10">Notify parties</div>
+														<div class="span2 tright"><a href="javascript:void(0);" class="grey remove-all none">Remove all</a></div>
+													</div>
+													<div class="row-fluid border-dashed-bottom">
+														<div class="span10">
+															<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+															<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+															<span class="edit-panel none">
+																<input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a>
+															</span>
+														</div>
+														<div class="span2 tright"><button class="btn btn-primary btn-small save none">Assgin</button></div>
+													</div>
+												</div>
+
+												<div class="act-box section-edit section-edit-file spaced small none">
+													<div class="row-fluid spaced small">
+														<div class="span11">Add file</div>
+														<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+													</div>
+													<div class="row-fluid">
+														<div><input type="text" name="" placeholder="Comment on this file..." id="" class="span12"> </div>
+														<ul>
+															<li class="spaced small">
+																<div class="upload-form-progress none"></div>
+																<span class="file-from-upload fileinput-button">
+																	Upload a file from your computer
+																	<input type="file" name="files[]" multiple>
+																</span>
+															</li>
+															<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
+															<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
+														</ul>
+														<div><button class="btn btn-small btn-primary">Add</button></div>
+													</div>
+												</div>
+
+												<div class="act-box section-edit section-edit-reply spaced small">
+													<input type="" placeholder="Write a reply" class="span12">
+													<div class="row-fluid none">
+														<div class="span1"><img src="../../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+														<div class="span11">
+															<div class="row-fluid">
+																<div class="span11">Replying to Harrison Fu</div>
+																<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+															</div>
+															<div class="row-fluid">
+																<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+															</div>
+															<div class="row-fluid">
+																<div class="span10"><a href="#">Add file</a></div>
+																<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+											</div>
+										</div>
+										<div class="btn-section-expand">
+											<i class="icon-chevron-down"></i>
+											<i class="icon-chevron-up"></i>
+										</div>
+									</div>
+
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					
+					
+
+				</div>
+			</div>
+			
+
+		</div>
+		<a href="#" class="btn-go-top"></a>
+	</div>
+	
+	<!-- Footer Start-->
+	<footer id="footer" class="cf"> © 2012, Promolinked, Inc. All right reserved. 
+		Powered by www.no1sourcing.com.
+		<select name="" class="input-small" id="">
+			<option value="">English</option>
+			<option value="">中文</option>
+		</select>
+	</footer>
+	<!-- Footer End--> 
+</div>
+
+<div class="push-notice">
+		  	<div class="push-notice-handle"><span></span></div>
+		  	<div class="push-notice-main">
+		  		<div class="hd cf">
+		  			<ul>
+		  				<li class="push-notice-tab-1"></li>
+		  				<li class="push-notice-tab-2"></li>
+		  				<li class="push-notice-tab-3"></li>
+		  				<li class="push-notice-tab-4"></li>
+		  			</ul>
+		  		</div>
+		  		<div class="bd cf">
+		  			<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-4.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="http://www.sunjoy.us" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-3.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-2.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-1.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-4.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-3.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-2.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-1.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+			  		
+			  		<div class="push-notice-person cf" title="Harrison Fu" data-content="<div class='row-fluid font-small'><div class='span3'><img src='../../mock/image/user/user-2.jpg' width='48' height='48' alt=''><br><a href='#'>Profile</a></div><div class='span9'><div><a href='#'>Harrison Fu</a><br>from <a href='#'>SunJoy Group Inc</a><br>Chicago, Illinois USA <br>Phone: (773) 631 2008 <br>Email: <a href='#'>harrison@sunjoy.us</a></div></div></div><div class='row-fluid'><textarea class='span12 font-small' placeholder='Write a comment  and Enter to post...'></textarea></div>">
+			  			<div class="row-fluid">
+			  				<div class="span3 font-small pull-left">
+		                  		<img src="../../mock/image/user/user-4.jpg" alt="" />
+		                  	</div>
+		                  	<div class="span9">
+	                  			<div class=""><a href="#" class="bold">Harrison Fu</a></div>
+								<div class=""><span class="grey">Can we have a marketing meeting on 10:00am today?</span></div>
+		                  	</div>
+			  			</div>
+			  		</div>
+		  		</div>
+		  	</div>
+		  </div>
+
+
+</div>
+</body>
+</html>

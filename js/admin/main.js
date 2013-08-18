@@ -904,6 +904,15 @@ $(function(){
 	});
 
 
+	$(".tag-item-img .btn-remove-tag").live("click", function(){
+		$(this).closest(".tag-item-img").remove();
+	});
+
+	$(".btn-add-contact").live("click", function(){
+		$(this).parent().next(".form-add-contact").removeClass("none");
+		$(this).addClass("none");
+	});
+
 
 });
 

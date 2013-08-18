@@ -7107,6 +7107,9 @@ h4,
 h5 {
   margin: 0 0 5px 0;
 }
+textarea {
+  resize: none;
+}
 .pms {
   height: 24px;
   min-width: 14px;
@@ -9012,7 +9015,7 @@ nav .clogo img {
 }
 .act-voting-edit .act-voting-item {
   min-width: 150px;
-  max-width: 400px;
+  max-width: 500px;
   *display: inline;
   /* IE7 inline-block hack */
 
@@ -9398,6 +9401,36 @@ nav .clogo img {
 }
 .box-assignment.editing .btn-edit {
   display: none;
+}
+.tag-item-img {
+  position: relative;
+}
+.tag-item-img .btn-remove-tag {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.tag-item-img:hover .btn-remove-tag {
+  display: inline-block;
+  *display: block;
+}
+.tag-item-img-add {
+  font-size: 64px;
+  line-height: 96px;
+}
+.customer-contact-tab {
+  position: relative;
+}
+.customer-contact-tab .btn-remove-tab {
+  display: none;
+  position: absolute;
+  right: 2px;
+  top: 10px;
+}
+.customer-contact-tab:hover .btn-remove-tab {
+  display: inline-block;
+  *display: block;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
