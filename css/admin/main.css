@@ -7347,7 +7347,7 @@ i.icon-right-m {
 }
 .order-list-views {
   text-align: right;
-  width: 100px;
+  width: 150px;
   margin-top: 10px;
 }
 .order-list-views > a {
@@ -7392,6 +7392,16 @@ i.icon-right-m {
   width: 16px;
   height: 16px;
   background: url(../../img/icons/icon-view-mode.png) -60px 0 no-repeat;
+}
+.order-list-views .schedule-view {
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/icons/icon-view-mode.png) -80px 0 no-repeat;
 }
 .dropdown-menu.align-right {
   left: auto;
