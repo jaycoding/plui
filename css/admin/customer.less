@@ -181,7 +181,20 @@
   line-height: 96px;
 }
 
+.customer-contact {
+  border: 1px solid #ddd;
+  .tab-pane {
+    padding: 10px;
+  }
+}
+
+.customer-contact-tabs {
+  background: #eee;
+  border: none;
+}
+
 .customer-contact-tab {
+  border: none;
   position: relative;
   .btn-remove-tab {
     display: none;
@@ -193,6 +206,20 @@
     .btn-remove-tab {
       display: inline-block;
       *display: block;
+    }
+  }
+
+}
+
+.customer-contact-tab {
+  padding: 0;
+  a, a:hover {
+    border: none!important;
+    border-radius: 0!important;
+  }
+  &.active {
+    a, a:hover {
+      border: none!important;
     }
   }
 }
