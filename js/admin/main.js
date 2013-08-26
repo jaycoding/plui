@@ -700,7 +700,9 @@ $(function(){
 	});
 
 
-	$("textarea.autosize").autosize();
+	if ($("textarea.autosize").length > 0) {
+		$("textarea.autosize").autosize();
+	}
 
 	$(".box-tags .btn-edit").live("click", function(){
 		var box = $(this).closest(".box-tags");
@@ -912,6 +914,15 @@ $(function(){
 		$(this).parent().next(".form-add-contact").removeClass("none");
 		$(this).addClass("none");
 	});
+
+	$(".toggle-hidden-section").live("click", function(){
+		if ($(this).attr("checked") == true) {
+			$(this).parent().parent().next(".hidden-section").removeClass("none");
+		} else {
+			$(this).parent().parent().next(".hidden-section").addClass("none");
+		}
+	});
+
 
 
 });
