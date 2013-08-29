@@ -1,54 +1,76 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		<style type="text/css" media="screen">
-			div {font-size: 13px;}
-			a {
-			  color: #0088cc;
-			  text-decoration: none;
-			}
-			a:hover {
-			  color: #005580;
-			  text-decoration: underline;
-			}
-			p {
-				font-size: 13px;
-				margin: 0 0 4px 0;
-				line-height: 1.2;
-			}
-			h1, h2, h3, h4, h5, h6 {
-				margin: 0 0 4px 0;
-				line-height: 1.2;
-			}
-			h1 {font-size: 20px;}
-			h2 {font-size: 18px;}
-			h3 {font-size: 16px;}
-			h4 {font-size: 14px;}
-			h5 {font-size: 12px;}
-			ul, li {
-				margin: 0;
-				padding: 0;
-				list-style: none;
-			}
-			table {
-				width: 100%;
-				border-spacing: 0;
-				margin-bottom: 10px;
-			}
-			table td {
-				vertical-align: top;
-			}
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<style type="text/css" media="screen">
+	div {font-size: 13px;}
+	a {
+		color: #666600;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #333;
+		text-decoration: underline;
+	}
+	p {
+		font-size: 13px;
+		margin: 0 0 4px 0;
+		line-height: 1.2;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 4px 0;
+		line-height: 1.2;
+	}
+	h1 {font-size: 20px;}
+	h2 {font-size: 18px;}
+	h3 {font-size: 16px;}
+	h4 {font-size: 14px;}
+	h5 {font-size: 12px;}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	table {
+		width: 100%;
+		border-spacing: 0;
+		margin-bottom: 10px;
+	}
+	table td {
+		vertical-align: top;
+	}
 
-		</style>
-		<div style="max-width: 750px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #333333; background-color: #ffffff; line-height: 1.4;">
+	table.border-table {
+		border: 1px solid #ccc;
+		width: 100%;
+		border-spacing: 0;
+		margin-bottom: 10px;
+	}
+	table.border-table td,
+	table.border-table th {
+		vertical-align: top;
+		border-right: 1px solid #ccc;
+		padding: 8px;
+	}
+	table.border-table td:last-child,
+	table.border-table th:last-child {
+		border-right: 0;
+	}
+	table.border-table th {
+		background: #ccc;
+	}
+
+	
+
+	</style>
+	<div style="max-width: 750px; margin: 0 auto; font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: #333333; background-color: #ffffff; line-height: 1.4;">
 		<div style="text-align: center; padding: 10px;">
-		  <input type="button" value="Close Preview Window" />
+			<input type="button" value="Close Preview Window" />
 		</div> 
-		  <table style="width: 100%;">
+		<table style="width: 100%;">
 			<tr>
 				<td style="width: 10%;">To:</td>
 				<td><a href="#">harrison@sunjoy.us</a></td>
@@ -181,905 +203,455 @@
 			
 			<div>
 				
-			<table style="width: 100%;">
-				<tr>
-					<td style="width: 50%">
-						<h4>Billing to address</h4>
-						<div>Attn: Harrison Fu</div>
-						<div>SunJoy Group, Inc.</div>
-						<div>5310 N. Harlem Ave. Suite 207</div>
-						<div>Chicago, IL 60656</div>
-						<div>United States</div>
-					</td>
-					<td style="width: 50%">
-						<h4>Ship to address</h4>
-						<div>Attn: Harrison Fu</div>
-						<div>SunJoy Group, Inc.</div>
-						<div>5310 N. Harlem Ave. Suite 207</div>
-						<div>Chicago, IL 60656</div>
-						<div>United States</div>
-					</td>
-				</tr>
-			</table>
-			<table style="width: 100%;">
-				<tr>
-					<td>
-						<div>Billing instructions</div>
-						<div><span>Billing instructions Billing instructions Billing instructions Billing instructions Billing </span></div>
-					</td>
-				</tr>
-			</table>
-			
-		</div>
+				<table style="width: 100%;">
+					<tr>
+						<td style="width: 50%">
+							<h4>Billing to address</h4>
+							<div>Attn: Harrison Fu</div>
+							<div>SunJoy Group, Inc.</div>
+							<div>5310 N. Harlem Ave. Suite 207</div>
+							<div>Chicago, IL 60656</div>
+							<div>United States</div>
+						</td>
+						<td style="width: 50%">
+							<h4>Ship to address</h4>
+							<div>Attn: Harrison Fu</div>
+							<div>SunJoy Group, Inc.</div>
+							<div>5310 N. Harlem Ave. Suite 207</div>
+							<div>Chicago, IL 60656</div>
+							<div>United States</div>
+						</td>
+					</tr>
+				</table>
+				<table style="width: 100%;">
+					<tr>
+						<td>
+							<div>Billing instructions</div>
+							<div><span>Billing instructions Billing instructions Billing instructions Billing instructions Billing </span></div>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+
+			<div>
+				<table class="border-table">
+					<thead style="background: ">
+						<tr>
+							<th>Item name &amp; SKU</th>
+							<th>Description</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Sub</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div><strong>Job 1103</strong></div>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>
+								<div><strong>Job 1103</strong></div>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>
+								<div><strong>Job 1103</strong></div>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div><a href="#">Swivel Drive-24-Hour Turnaround</a></div>
+								<div><a href="#">SJUSB0006-24H</a></div>
+							</td>
+							<td>
+								<div>PMS Black C | Capacity: 2G</div>
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+									incididunt ut labore et dolore magna.
+								</div>
+							</td>
+							<td>
+								$1.00
+							</td>
+							<td>
+								260
+							</td>
+							<td>
+								$260.00
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div>Setup</div>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								$30.00
+							</td>
+							<td>
+								1
+							</td>
+							<td>
+								$30.00
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 			
 
 			
 			<div class="job">
-				<div>
-					<table style="width: 100%;">
-						<tr>
-							<td style="width: 25%; border-bottom: 2px solid #333;">
-								<strong>Job 1103</strong> <br>
-								<strong>Sub $1,200.00</strong> <br>
-							</td>
-							<td></td>
-						</tr>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-								<div>Swivel Drive-24-Hour Turnaround</div>
-								<div>PMS Black C</div>
-								<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>DHL-5D</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SURE SCHEDULE</div>
-								<div>
-								Virtual time: 24 hours <br />
-								Sample time: 2 business days <br />
-								Mass time: 2 business days <br />
-								Shipping time: 2 business days</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
+
+				<div class="job">
+
+					<div class="job">
 
 
-			<div class="job">
-				<div>
-					<table style="width: 100%;">
-						<tr>
-							<td style="width: 25%; border-bottom: 2px solid #333;">
-								<strong>Job 1103</strong> <br>
-								<strong>Sub $1,200.00</strong> <br>
-							</td>
-							<td></td>
-						</tr>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>DHL-5D</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SURE SCHEDULE</div>
-								<div>
-								Virtual time: 24 hours <br />
-								Sample time: 2 business days <br />
-								Mass time: 2 business days <br />
-								Shipping time: 2 business days</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
+						<div style="text-align: right; width: 40%; float: right; ">
+							<table style="width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333; margin-bottom: 10px; font-weight:bold;">
+								<tr>
+									<td style="width: 50%">Total before discount</td>
+									<td style="width: 20%"></td>
+									<td style="width: 30%">$54,168.00</td>
+								</tr>
+								<tr>
+									<td>Discount</td>
+									<td>10%</td>
+									<td>$5,416.80</td>
+								</tr>
+								<tr>
+									<td>Tax</td>
+									<td></td>
+									<td>$0</td>
+								</tr>
+								<tr>
+									<td><a href="#" style="font-weight: bold; color: #333;">Total</span></td>
+									<td></td>
+									<td><a href="#" style="font-weight: bold; color: #333;">$48,751.20</span></td>
+								</tr>
+							</table>
+						</div>
 
 
-			<div class="job">
-				<div>
-					<table style="width: 100%;">
-						<tr>
-							<td style="width: 25%; border-bottom: 2px solid #333;">
-								<strong>Job 1103</strong> <br>
-								<strong>Sub $1,200.00</strong> <br>
-							</td>
-							<td></td>
-						</tr>
-					</table>
+						<div style="clear: both; padding-top: 20px;">Copyright © 2012 Promolinked, Inc. All rights reserved. <a href="#">Terms &amp; conditions</a> | <a href="#">Terms of use</a></div>
+					</div>
+
+					<div style="text-align: center; padding: 10px;">
+						<input type="button" value="Close Preview Window" />
+					</div>
+
 				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SJUSB0006-24H</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>Attachments</div>
-								<table style="width: 100%;">
-									<tr>
-										<td><a href="#">logo.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-									<tr>
-										<td><a href="#">logo2.png</a></td>
-										<td><span style="color: #999;">Aug 10, 2012</span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-						
-						<section>
-							<div>Comments &amp; Instructions</div>
-							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-								incididunt ut labore et dolore magna.
-							</div>
-						</section>
-					</table>
-				</div>
-				
-				<div class="item">
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>DHL-5D</div>
-									<div>Swivel Drive-24-Hour Turnaround</div>
-									<div>PMS Black C</div>
-									<div>Capacity: 2G</div>
-							</td>
-							<td>
-								<table style="width: 100%;">
-									<tr>
-										<td style="width:10%; text-align: right;">Unit Price:</td>
-										<td style="width:5%; text-align: right;">$1.00</td>
-										<td style="width:10%; text-align: right;">Volume:</td>
-										<td style="width:5%; text-align: right;">260</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$260.00</td>
-									</tr>
-									<tr>
-										<td style="width:10%; text-align: right;">Setup:</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-										<td style="width:10%; text-align: right;"></td>
-										<td style="width:5%; text-align: right;">1</td>
-										<td style="width:10%; text-align: right;">Sub</td>
-										<td style="width:5%; text-align: right;">$30.00</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					
-					<table style="width: 100%;">
-						<tr>
-							<td>
-								<div>SURE SCHEDULE</div>
-								<div>
-								Virtual time: 24 hours <br />
-								Sample time: 2 business days <br />
-								Mass time: 2 business days <br />
-								Shipping time: 2 business days</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div>Comments &amp; Instructions</div>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-									incididunt ut labore et dolore magna.
-								</div>
-							</td>
-						</tr>
-					</table>
-				</div>
-			</div>
 
 
-			<div style="text-align: right; width: 40%; float: right; ">
-			  <table style="width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333; margin-bottom: 10px; font-weight:bold;">
-				  <tr>
-				  	<td style="width: 50%">Total before discount</td>
-				  	<td style="width: 20%"></td>
-				  	<td style="width: 30%">$54,168.00</td>
-				  </tr>
-				  <tr>
-				  	<td>Discount</td>
-				  	<td>10%</td>
-				  	<td>$5,416.80</td>
-				  </tr>
-				  <tr>
-				  	<td>Tax</td>
-				  	<td></td>
-				  	<td>$0</td>
-				  </tr>
-				  <tr>
-				  	<td><a href="#" style="font-weight: bold; color: #333;">Total</span></td>
-				  	<td></td>
-				  	<td><a href="#" style="font-weight: bold; color: #333;">$48,751.20</span></td>
-				  </tr>
-			  </table>
-			</div>
-			
-			
-			<div style="clear: both; padding-top: 20px;">Copyright © 2012 Promolinked, Inc. All rights reserved. <a href="#">Terms &amp; conditions</a> | <a href="#">Terms of use</a></div>
-		</div>
-		
-		<div style="text-align: center; padding: 10px;">
-		  <input type="button" value="Close Preview Window" />
-		</div>
-		
-		</div>
-		
-		
-	</body>
-</html>
+			</body>
+			</html>
