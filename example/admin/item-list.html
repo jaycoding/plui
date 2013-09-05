@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="../../gui/css/plugins/fullcalendar/fullcalendar.print.css" media="print">
 	<!-- chosen -->
 	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<!-- multi select -->
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
 	<!-- select2 -->
 	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
 	<!-- icheck -->
@@ -26,11 +28,14 @@
 	<link rel="stylesheet" href="../../gui/css/style.css">
 	<!-- Color CSS -->
 	<link rel="stylesheet" href="../../gui/css/themes.css">
-
+	<!-- Tagsinput -->
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
 
 	<!-- jQuery -->
 	<script src="../../gui/js/jquery.min.js"></script>
-	
+
 	<!-- Nice Scroll -->
 	<script src="../../gui/js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
 	<!-- jQuery UI -->
@@ -69,13 +74,17 @@
 	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
 	<!-- icheck -->
 	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<!-- fancybox -->
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<!-- TagsInput -->
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<!-- MultiSelect -->
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
 
 	<!-- Theme framework -->
-	<script src="../../gui/js/eakroko.min.js"></script>
-	<!-- Theme scripts -->
-	<script src="../../gui/js/application.min.js"></script>
-	<!-- Just for demonstration -->
-	<script src="../../gui/js/demonstration.min.js"></script>
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/admin/item-admin.js"></script>
 	
 	<!--[if lte IE 9]>
 		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
@@ -217,6 +226,7 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="container" id="content">
 		<div id="left">
 			<div style="padding: 25px 10px; text-align: center; background: #fff;">
@@ -283,7 +293,7 @@
 						<h1>Items</h1>
 					</div>
 					<div class="pull-right" style="padding-top: 25px;">
-						<button class="btn btn-success"><i class="icon-plus"></i> Add item</button>
+						<button class='btn btn-success fancybox fancybox-normal fancybox.iframe' id="btn-add-item" ><i class="icon-plus"></i> Add item</button>
 						<div class="btn-group">
 							<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"><i class="icon-cog"></i> <span class="caret"></span></a>
 							<ul class="dropdown-menu">

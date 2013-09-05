@@ -1,6 +1,3 @@
-/*
-	FLAT Theme v.1.4
-	*/
 
 	var onlineUserArray = [255,455,385,759,500,284,581,684,255,455,385,759,500,293,585,342,684];
 	function getUser(){

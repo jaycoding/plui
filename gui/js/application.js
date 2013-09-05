@@ -1,8 +1,4 @@
-/*
-    FLAT Theme v.1.4
-    */
-
-    function sidebarFluid(){
+function sidebarFluid(){
      if($("#left").hasClass("sidebar-fixed")){
         $("#left").removeClass("sidebar-fixed").css({
             "height": "auto",

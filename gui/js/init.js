@@ -1,14 +1,4 @@
-/*
-	FLAT Theme v.1.4
-	*/
-
-/*
-	* eakroko.js - Copyright 2013 by Ernst-Andreas Krokowski
-	* Framework for themeforest themes
-
-	* Date: 2013-01-01
-	*/
-	(function( $ ){
+(function( $ ){
 		$.fn.retina = function(retina_part) {
 		// Set default retina file part to '-2x'
 		// Eg. some_image.jpg will become some_image-2x.jpg
