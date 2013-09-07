@@ -7705,3 +7705,48 @@ a:focus {
 .basic-margin > li, .basic-margin > a {
   margin: 0 5px 5px 0;
 }
+
+.gray {
+  color: #666;
+}
+
+.gray-light {
+  color: #999;
+}
+
+.gray-dark {
+  color: #333;
+}
+
+.gray-darker {
+  color: #111;
+}
+
+.gray-lighter {
+  color: #ccc;
+}
+
+
+.red {
+  color: #f30;
+}
+
+.tcenter {
+  text-align: center;
+}
+
+.tright {
+  text-align: right;
+}
+
+.tleft {
+  text-align: left;
+}
+
+.spaced {
+  margin-bottom: 15px;
+}
+
+.spaced.small {
+  margin-bottom: 10px;
+}
