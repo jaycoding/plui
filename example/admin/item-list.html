@@ -232,59 +232,12 @@
 			<div style="padding: 25px 10px; text-align: center; background: #fff;">
 				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
 			</div>
-			<div class="subnav">
-				<div class="subnav-title">
-					<span>Item status</span>
+			<form action="#" method="GET" class='search-form'>
+				<div class="search-pane">
+					<input type="text" name="search" placeholder="Search items...">
+					<button type="submit"><i class="icon-search"></i></button>
 				</div>
-				<div style="padding: 15px;">
-					<div>
-						<div class="check-line">
-							<input type="radio" id="c7" class='icheck-me' name="same3" data-skin="square" data-color="blue"> <label class='inline' for="c7">Active</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c8" class='icheck-me' name="same3" data-skin="square" data-color="blue" checked> <label class='inline' for="c8">Demo</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c9" class='icheck-me' name="same3" data-skin="square" data-color="blue" checked> <label class='inline' for="c9">On hold</label>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="subnav">
-				<div class="subnav-title">
-					<span>Item ownership</span>
-				</div>
-				<div style="padding: 15px;">
-					<div>
-						<div class="check-line">
-							<input type="radio" id="c2" class='icheck-me' name="same2" data-skin="square" data-color="blue"> <label class='inline' for="c2">Owner items</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c3" class='icheck-me' name="same2" data-skin="square" data-color="blue" checked> <label class='inline' for="c3">Guest items</label>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="subnav">
-				<div class="subnav-title">
-					<span>Item permissions</span>
-				</div>
-				<div style="padding: 15px;">
-					<div>
-						<div class="check-line">
-							<input type="radio" id="c4" class='icheck-me' name="same4" data-skin="square" data-color="blue"> <label class='inline' for="c4">Public items</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c5" class='icheck-me' name="same4" data-skin="square" data-color="blue" checked> <label class='inline' for="c5">Private items</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c6" class='icheck-me' name="same4" data-skin="square" data-color="blue" checked> <label class='inline' for="c6">Internal items</label>
-						</div>
-					</div>
-				</div>
-			</div>
+			</form>
 		</div>
 		<div id="main">
 			<div class="container-fluid">
@@ -342,31 +295,38 @@
 									<div class="pull-left">
 										<div class="btn-toolbar">
 											<div class="btn-group">
-												<select name="sort" id="sort" class='chosen-select input-medium' data-placeholder="Sort by" data-nosearch="true">
+												<select name="sort" id="item-owner" class='chosen-select input-large' data-placeholder="Created by" data-nosearch="false">
 													<option value=""></option>
-													<option value="sort-1">Alphabet</option>
-													<option value="sort-2">Color</option>
-													<option value="sort-3">Status</option>
+													<option value="1">All</option>
+													<option value="2">Harrison Fu</option>
+													<option value="3">James Bond</option>
+													<option value="4">Luis Ji</option>
 												</select>
 											</div>
 											<div class="btn-group">
-												<a href="#" class="btn" rel="tooltip" title="Grid view"><i class="icon-th"></i></a>
-												<a href="#" class="btn" rel="tooltip" title="List view"><i class="icon-th-list"></i></a>
-											</div>
-											<div class="btn-group">
-											</div>
-										</div>
-									</div>
-									<div class="pull-right">
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<select name="cat" id="cat" class='chosen-select input-medium' data-placeholder="Show items">
+												<select name="sort" id="item-status" class='chosen-select input-medium' data-placeholder="Status" data-nosearch="true">
 													<option value=""></option>
-													<option value="opt-1">10</option>
-													<option value="opt-2">25</option>
-													<option value="opt-3">50</option>
-													<option value="opt-4">100</option>
-													<option value="opt-5">all</option>
+													<option value="1">All</option>
+													<option value="2">Active</option>
+													<option value="3">Demo</option>
+													<option value="4">On hold</option>
+												</select>
+											</div>
+											<div class="btn-group">
+												<select name="sort" id="item-ownership" class='chosen-select input-medium' data-placeholder="Ownership" data-nosearch="true">
+													<option value=""></option>
+													<option value="1">All</option>
+													<option value="2">Owner items</option>
+													<option value="3">Guest items</option>
+												</select>
+											</div>
+											<div class="btn-group">
+												<select name="sort" id="item-permissions" class='chosen-select input-medium' data-placeholder="Permission" data-nosearch="true">
+													<option value=""></option>
+													<option value="1">All</option>
+													<option value="2">Public items</option>
+													<option value="3">Private items</option>
+													<option value="3">Internal items</option>
 												</select>
 											</div>
 										</div>
@@ -416,7 +376,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -445,7 +407,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -474,7 +438,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -503,7 +469,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -537,7 +505,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -566,7 +536,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -595,7 +567,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -624,7 +598,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -658,7 +634,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -687,7 +665,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -716,7 +696,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>
@@ -745,7 +727,9 @@
 													</ul>
 												</div>
 												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Duplicate"><i class="icon-copy"></i></a>
 													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+													<a href="#" rel='tooltip' title="Delete"><i class="icon-trash"></i></a>
 												</div>
 											</div>
 										</li>

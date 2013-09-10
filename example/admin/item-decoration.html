@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
 	<!-- multi select -->
 	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<!-- Datepicker -->
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
 	<!-- select2 -->
 	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
 	<!-- icheck -->
@@ -74,6 +76,8 @@
 	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
 	<!-- icheck -->
 	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<!-- Datepicker -->
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
 	<!-- fancybox -->
 	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
 	<!-- TagsInput -->
@@ -210,7 +214,7 @@
 					</li>
 				</ul>
 				<div class="dropdown">
-					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Harrison Fu <img src="../../mock/image/user/user.png" width="27" height="27" alt=""></a>
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Harrison Fu <img src="../../mock/image/user/user-avatar.jpg" width="27" height="27" alt=""></a>
 					<ul class="dropdown-menu pull-right">
 						<li>
 							<a href="#">Edit profile</a>
@@ -226,87 +230,109 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="container" id="content">
 		<div id="left">
 			<div style="padding: 25px 10px; text-align: center; background: #fff;">
 				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
 			</div>
+			<form action="#" method="GET" class='search-form'>
+				<div class="search-pane">
+					<input type="text" name="search" placeholder="Search items...">
+					<button type="submit"><i class="icon-search"></i></button>
+				</div>
+			</form>
 			<div class="subnav">
 				<div class="subnav-title">
-					<span>Item status</span>
+					<span>Item general</span>
 				</div>
-				<div style="padding: 15px;">
-					<div>
-						<div class="check-line">
-							<input type="radio" id="c7" class='icheck-me' name="same3" data-skin="square" data-color="blue"> <label class='inline' for="c7">Active</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c8" class='icheck-me' name="same3" data-skin="square" data-color="blue" checked> <label class='inline' for="c8">Demo</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c9" class='icheck-me' name="same3" data-skin="square" data-color="blue" checked> <label class='inline' for="c9">On hold</label>
-						</div>
-					</div>
-				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">General info.</a>
+					</li>
+					<li>
+						<a href="#">Images</a>
+					</li>
+				</ul>
 			</div>
 
 			<div class="subnav">
 				<div class="subnav-title">
-					<span>Item ownership</span>
+					<span>Custom options</span>
 				</div>
-				<div style="padding: 15px;">
-					<div>
-						<div class="check-line">
-							<input type="radio" id="c2" class='icheck-me' name="same2" data-skin="square" data-color="blue"> <label class='inline' for="c2">Owner items</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c3" class='icheck-me' name="same2" data-skin="square" data-color="blue" checked> <label class='inline' for="c3">Guest items</label>
-						</div>
-					</div>
-				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Decorations</a>
+					</li>
+					<li>
+						<a href="#">Accessories</a>
+					</li>
+					<li>
+						<a href="#">Packaging</a>
+					</li>
+					<li>
+						<a href="#">Turnaround</a>
+					</li>
+					<li>
+						<a href="#">Add category</a>
+					</li>
+				</ul>
 			</div>
 
 			<div class="subnav">
 				<div class="subnav-title">
-					<span>Item permissions</span>
+					<span>Item audiance</span>
 				</div>
-				<div style="padding: 15px;">
-					<div>
-						<div class="check-line">
-							<input type="radio" id="c4" class='icheck-me' name="same4" data-skin="square" data-color="blue"> <label class='inline' for="c4">Public items</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c5" class='icheck-me' name="same4" data-skin="square" data-color="blue" checked> <label class='inline' for="c5">Private items</label>
-						</div>
-						<div class="check-line">
-							<input type="radio" id="c6" class='icheck-me' name="same4" data-skin="square" data-color="blue" checked> <label class='inline' for="c6">Internal items</label>
-						</div>
-					</div>
-				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Vendor page</a>
+					</li>
+					<li>
+						<a href="#">Distributor page</a>
+					</li>
+					<li>
+						<a href="#">End buyer page</a>
+					</li>
+				</ul>
 			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<span>Item acivties</span>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Vendor activities</a>
+					</li>
+					<li>
+						<a href="#">Distributor activities</a>
+					</li>
+					<li>
+						<a href="#">End buyer activities</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<span>Item acivties</span>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Item classifications</a>
+					</li>
+					<li>
+						<a href="#">Item tags</a>
+					</li>
+				</ul>
+			</div>
+
 		</div>
 		<div id="main">
 			<div class="container-fluid">
 				<div class="page-header">
 					<div class="pull-left">
-						<h1>Items</h1>
-					</div>
-					<div class="pull-right" style="padding-top: 25px;">
-						<button class='btn btn-success fancybox fancybox-normal fancybox.iframe' id="btn-add-item" ><i class="icon-plus"></i> Add item</button>
-						<div class="btn-group">
-							<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"><i class="icon-cog"></i> <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Action 1</a>
-								</li>
-								<li>
-									<a href="#">Action 2</a>
-								</li>
-								<li>
-									<a href="#">Action 3</a>
-								</li>
-							</ul>
-						</div>
+						<h1>Item general</h1>
 					</div>
 				</div>
 				<div class="breadcrumbs">
@@ -325,8 +351,11 @@
 						</li>
 						<li>
 							<a href="#">Items</a>
+							<i class="icon-angle-right"></i>
 						</li>
-
+						<li>
+							<a href="#">SJUSB0006</a>
+						</li>
 					</ul>
 					<div class="close-bread">
 						<a href="#"><i class="icon-remove"></i></a>
@@ -335,450 +364,247 @@
 
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="box">
-							<div class="box-title">
-								<h3>
-									<img src="../../mock/image/user/user.png" width="30" height="30" alt="">
-									<span style="color: #888;">Created by</span> <strong>Harrison Fu</strong>
-								</h3>
-								<div class="actions">
-									<a href="#" class="btn btn-mini"><i class="icon-angle-left"></i>  Back to all</a>
-								</div>
-							</div>
+						<div class="box margin-top">
 							<div class="box-content">
-								<div class="highlight-toolbar">
-									<div class="pull-left">
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<select name="sort" id="sort" class='chosen-select input-medium' data-placeholder="Sort by" data-nosearch="true">
-													<option value=""></option>
-													<option value="sort-1">Alphabet</option>
-													<option value="sort-2">Color</option>
-													<option value="sort-3">Status</option>
-												</select>
-											</div>
-											<div class="btn-group">
-												<a href="#" class="btn" rel="tooltip" title="Grid view"><i class="icon-th"></i></a>
-												<a href="#" class="btn" rel="tooltip" title="List view"><i class="icon-th-list"></i></a>
-											</div>
-											<div class="btn-group">
-											</div>
-										</div>
-									</div>
-									<div class="pull-right">
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<select name="cat" id="cat" class='chosen-select input-medium' data-placeholder="Show items">
-													<option value=""></option>
-													<option value="opt-1">10</option>
-													<option value="opt-2">25</option>
-													<option value="opt-3">50</option>
-													<option value="opt-4">100</option>
-													<option value="opt-5">all</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="highlight-toolbar">
-									<div class="pull-left">
-										<div class="btn-toolbar">
-											<div class="btn-group text">
-												Showing <strong>1</strong> to <strong>10</strong> of 25 items
-											</div>
-										</div>
-									</div>
-									<div class="pull-right">
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<a href="#" class="btn"><i class="icon-angle-left"></i></a>
-												<a href="#" class="btn"><i class="icon-angle-right"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
 								<div class="row-fluid">
-									<ul class="shop-items">
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p2.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p1.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p2.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p1.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="row-fluid margin-top">
-									<ul class="shop-items">
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p2.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p1.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p2.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p1.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="row-fluid margin-top">
-									<ul class="shop-items">
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p2.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p1.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p2.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-										<li class="span3">
-											<a href="#">
-												<img src="../../mock/image/250x250/p1.jpg" alt="" />
-												<div class="details">
-													<div class="name">
-														SJUSB0006
-													</div>
-													<div>Swivel USB Flash Drive</div>
-												</div>
-											</a>
-											<div class="extended">
-												<div class="pull-left">
-													<ul class="colors small">
-														<li class="red">
-															<a href="#"></a>
-														</li>
-														<li class="pink">
-															<a href="#"></a>
-														</li>
-														<li class="lightgrey">
-															<a href="#"></a>
-														</li>
-													</ul>
-												</div>
-												<div class="pull-right">
-													<a href="#" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="highlight-toolbar">
-									<div class="pull-left">
-										<div class="btn-toolbar">
-											<div class="btn-group text">
-												Showing <strong>1</strong> to <strong>10</strong> of 25 items
-											</div>
-										</div>
+									<div class="span3">
+										<img src="../../mock/image/250x250/p2.jpg" width="160" height="160" alt="" />
 									</div>
-									<div class="pull-right">
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<a href="#" class="btn"><i class="icon-angle-left"></i></a>
-												<a href="#" class="btn"><i class="icon-angle-right"></i></a>
-											</div>
+									<div class="span8">
+										<div class="row-fluid">
+											<div class="span3">Item No.:</div>
+											<div class="span7">10-xxxxxxx</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Item Name:</div>
+											<div class="span7">Swivel usb flash drive</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">SKU:</div>
+											<div class="span7">SJUSB0006</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Item status:</div>
+											<div class="span7">Active</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Item type:</div>
+											<div class="span7">Normal item</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Display date:</div>
+											<div class="span7">09/25/2010 to 09/25/2015</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+
+						<div class="box">
+							<div class="box-title">
+								<h3><i class="icon-picture"></i>Decoration options</h3>
+								<div class="pull-right">
+									<button class="btn btn-primary"><i class="icon-plus-sign"></i> Add picture</button>
+								</div>
+							</div>
+							<div class="box-content">
+								<div class="row-fluid">
+									<ul class="shop-items">
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p1.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Pink
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="pink">
+															<a href="#" rel='tooltip' title="PMS 2909"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin red"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p2.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Gray
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="red">
+															<a href="#" rel='tooltip' title="PMS 2909"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p1.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Black
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="red">
+															<a href="#" rel='tooltip' title="PMS 2909"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p1.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Red
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="lightgrey">
+															<a href="#"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="row-fluid margin-top">
+									<ul class="shop-items">
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p1.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Pink
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="pink">
+															<a href="#" rel='tooltip' title="PMS 2909"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p2.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Gray
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="red">
+															<a href="#" rel='tooltip' title="PMS 2909"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p1.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Black
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="red">
+															<a href="#" rel='tooltip' title="PMS 2909"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+										<li class="span3">
+											<a href="#">
+												<img src="../../mock/image/250x250/p1.jpg" alt="" />
+												<div class="details">
+													<div class="name">
+														Red
+													</div>
+												</div>
+											</a>
+											<div class="extended">
+												<div class="pull-left">
+													<ul class="colors small">
+														<li class="lightgrey">
+															<a href="#"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="pull-right">
+													<a href="#" rel='tooltip' title="Set primary"><i class="icon-pushpin"></i></a> 
+													<a href="#" rel='tooltip' title="Remove"><i class="icon-trash"></i></a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
