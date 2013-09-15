@@ -7750,3 +7750,7 @@ a:focus {
 .spaced.small {
   margin-bottom: 10px;
 }
+
+.none {
+  display: none;
+}
