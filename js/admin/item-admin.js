@@ -6,4 +6,10 @@ $(function(){
 			href: "popup-add-item.html"
 		});
 	}
+
+	$(".sortable-img-list").sortable({
+	    forcePlaceholderSize: true,
+	    connectWith: ".sortable-connected",
+	    tolerance:"pointer"
+	});
 });
