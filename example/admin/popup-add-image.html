@@ -34,6 +34,8 @@
 	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
 	<!-- icheck -->
 	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<!-- Color picker -->
+	<link rel="stylesheet" href="../../gui/js/plugins/jquery-colorpicker/jquery.colorpicker.css">
 	<!-- Theme CSS -->
 	<link rel="stylesheet" href="../../gui/css/style.css">
 	<!-- Color CSS -->
@@ -47,13 +49,8 @@
 	<!-- imagesLoaded -->
 	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
 	<!-- jQuery UI -->
-	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
-	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
-	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
-	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
-	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.sortable.min.js"></script>
-	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.spinner.js"></script>
-	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.slider.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+
 	<!-- Bootstrap -->
 	<script src="../../gui/js/bootstrap.min.js"></script>
 	<!-- Bootbox -->
@@ -84,6 +81,10 @@
 	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
 	<!-- icheck -->
 	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<!-- Color picker -->
+	<script src="../../gui/js/plugins/jquery-colorpicker/jquery.colorpicker.js"></script>
+	<script src="../../gui/js/plugins/jquery-colorpicker/swatches/jquery.ui.colorpicker-pantone.js"></script>
+	
 	<!-- complexify -->
 	<script src="../../gui/js/plugins/complexify/jquery.complexify-banlist.min.js"></script>
 	<script src="../../gui/js/plugins/complexify/jquery.complexify.min.js"></script>
@@ -140,37 +141,38 @@
 							</li>
 						</ul>
 						<div class="control-group">
-							<div class="box box-bordered">
-								<div class="box-title">
-									<h3><i class="icon-cloud-upload"></i>Upload large size image (600x600)</h3>
-								</div>
-								<div class="box-content">
-									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
-										<span class="fileupload-preview"></span>
-										<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-									</div>
-									<div>Or input image url:</div>
-									<input type="text" name="" placeholder="" id="" class="input-large">
-								</div>
-							</div>
+							<p><i class="icon-cloud-upload"></i> 1. Upload large size image (600x600)</p>
+							<table class="table">
+								<tr>
+									<td width="18%">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+											<span class="fileupload-preview"></span>
+											<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+										</div>
+									</td>
+									<td width="5%" class="tcenter">or</td>
+									<td><input type="text" name="" placeholder="Input image url" id="" class="input-xlarge"></td>
+								</tr>
+							</table>
 						</div>
 						<div class="control-group">
-							<div class="box box-bordered">
-								<div class="box-title">
-									<h3><i class="icon-cloud-upload"></i>Upload HD image or PSD</h3>
-								</div>
-								<div class="box-content">
-									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
-										<span class="fileupload-preview"></span>
-										<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-									</div>
-									<div>Or input image url:</div>
-									<input type="text" name="" placeholder="" id="" class="input-xlarge">
-								</div>
-							</div>
+							<p><i class="icon-cloud-upload"></i> 2. Upload high definition image</p>
+							<table class="table">
+								<tr>
+									<td width="18%">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+											<span class="fileupload-preview"></span>
+											<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+										</div>
+									</td>
+									<td width="5%" class="tcenter">or</td>
+									<td><input type="text" name="" placeholder="Input image url" id="" class="input-xlarge"></td>
+								</tr>
+							</table>
 						</div>
+						
 						<div class="control-group">
 							<input type="text" name="" placeholder="Image name" id="" class="input-xlarge">
 						</div>
@@ -208,16 +210,7 @@
 							</li>
 						</ul>
 						<div class="control-group">
-							<label for="text" class="control-label"></label>
-							<div class="controls">
-								<input type="text" name="" id="" placeholder="PMS color" class="input-medium">
-							</div>
-						</div>
-						<div class="control-group">
-							<label for="text" class="control-label"></label>
-							<div class="controls">
-								New PMS Color Picker under development
-							</div>
+							<input type="text" name="" id="" placeholder="Pick a color" class="input-medium colorpicker-pantone">
 						</div>
 					</div>
 					<div class="form-actions tright spaced">

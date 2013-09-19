@@ -9,16 +9,16 @@ $(function(){
 
 	if ($('#btn-add-main-image').length > 0) {
 		$('#btn-add-main-image').fancybox({
-			width: 580,
-			height: 610,
+			width: 640,
+			height: 600,
 			href: "popup-add-image.html"
 		});
 	}
 
 	if ($('#btn-add-imprint-image').length > 0) {
 		$('#btn-add-imprint-image').fancybox({
-			width: 580,
-			height: 610,
+			width: 640,
+			height: 600,
 			href: "popup-add-image.html"
 		});
 	}
@@ -62,6 +62,22 @@ $(function(){
 
 		return false;
 	});
+
+	if ($('.colorpicker-pantone').length > 0) {
+		$('.colorpicker-pantone').colorpicker({
+			parts:			['map', 'bar', 'swatches'],
+			swatches:		'pantone',
+			colorFormat:	'NAME',
+			swatchesWidth:	173,
+			limit:			'name',
+			init:			function(event, color) {
+								//$('.cp-pantone-output').text(color.formatted);
+							},
+			select:			function(event, color) {
+								//$('.cp-pantone-output').text(color.formatted);
+							}
+		});
+	}
 
 
 });
