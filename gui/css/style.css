@@ -6447,13 +6447,13 @@ body.error .wrapper .input-append .btn:hover {
   background: #fff;
 }
 
-.shop-items > li {
+.image-items > li {
   position: relative;
 }
-.shop-items > li:hover {
+.image-items > li:hover {
   background: #368ee0;
 }
-.shop-items > li:hover .extended {
+.image-items > li:hover .extended {
   display: block;
   position: absolute;
   z-index: 999;
@@ -6461,41 +6461,41 @@ body.error .wrapper .input-append .btn:hover {
   left: 0;
   right: 0;
 }
-.shop-items > li:hover > a .details {
+.image-items > li:hover > a .details {
   color: #fff;
 }
-.shop-items > li:hover > a .details .name {
+.image-items > li:hover > a .details .name {
   color: #fff;
 }
-.shop-items > li > a {
+.image-items > li > a {
   text-decoration: none;
 }
-.shop-items > li > a img {
+.image-items > li > a img {
   max-width: 100%;
 }
-.shop-items > li > a .details {
+.image-items > li > a .details {
   padding: 10px;
 }
-.shop-items > li > a .details .name {
+.image-items > li > a .details .name {
   display: block;
   font-size: 16px;
   color: #333;
 }
-.shop-items > li > a .details .price {
+.image-items > li > a .details .price {
   text-align: right;
   font-size: 18px;
 }
-.shop-items > li .extended {
+.image-items > li .extended {
   padding: 10px 10px 5px 10px;
   display: none;
   *zoom: 1;
 }
-.shop-items > li .extended:after {
+.image-items > li .extended:after {
   content: "";
   display: table;
   clear: both;
 }
-.shop-items > li .extended .pull-right > a {
+.image-items > li .extended .pull-right > a {
   color: #fff;
   font-size: 16px;
   padding: 1px 2px;
@@ -7659,7 +7659,7 @@ a:focus {
   text-decoration: none;
 }
 
-.ulreset, #navigation .user .icon-nav, #navigation .main-nav, .letterbox .letter, .user-list > ul, .statistic-big .stats-overview, .pagestats, .userlist, .quickstats, .tags, .bestseller, .tabs, .stats, .minitiles, .timeline, .timeline > li .timeline-content .activity .timeline-images, .search-results ul, .shop-items, .colors {
+.ulreset, #navigation .user .icon-nav, #navigation .main-nav, .letterbox .letter, .user-list > ul, .statistic-big .stats-overview, .pagestats, .userlist, .quickstats, .tags, .bestseller, .tabs, .stats, .minitiles, .timeline, .timeline > li .timeline-content .activity .timeline-images, .search-results ul, .image-items, .colors {
   list-style-type: none;
   margin: 0;
   padding: 0;
