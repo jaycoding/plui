@@ -3,6 +3,31 @@
 	background: #f6f6f6;
 }
 
+.sortable-img-item {
+
+}
+
+.image-items {
+	> li.image-item {
+		padding: 2px;
+		margin-bottom: 15px;
+		.btn-select {
+			display: inline;
+		}
+		.btn-unselect {
+			display: none;
+		}
+		&.selected {
+			background: #ccc;
+			.btn-select {
+				display: none;
+			}
+			.btn-unselect {
+				display: inline;
+			}
+		}
+	}
+}
 
 .filter-list  {
 	margin: 0;
@@ -13,3 +38,27 @@
 	}
 	
 }
+
+.tasklist {
+	 > li {
+	 	height: 43px;
+		line-height: 43px;
+	 }
+	 .check {
+	 	display: none!important;
+	 }
+	 .task-bookmark {
+	 	display: none!important;
+	 }
+	 .task {
+	 	padding: 0!important;
+	 	text-decoration: none!important;
+	 	span {
+	 		text-decoration: none!important;
+	 	}
+	 }
+	 .task-actions {
+	 	padding: 0 10px!important;
+	 }
+}
+

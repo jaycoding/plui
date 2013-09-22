@@ -5,6 +5,25 @@
   border: 1px dotted #ccc;
   background: #f6f6f6;
 }
+.image-items > li.image-item {
+  padding: 2px;
+  margin-bottom: 15px;
+}
+.image-items > li.image-item .btn-select {
+  display: inline;
+}
+.image-items > li.image-item .btn-unselect {
+  display: none;
+}
+.image-items > li.image-item.selected {
+  background: #ccc;
+}
+.image-items > li.image-item.selected .btn-select {
+  display: none;
+}
+.image-items > li.image-item.selected .btn-unselect {
+  display: inline;
+}
 .filter-list {
   margin: 0;
 }
@@ -12,4 +31,24 @@
   list-style: none;
   float: left;
   margin-right: 10px;
+}
+.tasklist > li {
+  height: 43px;
+  line-height: 43px;
+}
+.tasklist .check {
+  display: none!important;
+}
+.tasklist .task-bookmark {
+  display: none!important;
+}
+.tasklist .task {
+  padding: 0!important;
+  text-decoration: none!important;
+}
+.tasklist .task span {
+  text-decoration: none!important;
+}
+.tasklist .task-actions {
+  padding: 0 10px!important;
 }
