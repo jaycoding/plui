@@ -377,45 +377,45 @@
 								</div>
 							</div>
 							<div class="box-content nopadding">
-								<ul class="tasklist">
+								<ul class="item-categories">
 									<li>
 										<div class="check">
 											<input type="checkbox" class='icheck-me' data-skin="square" data-color="blue">
 										</div>
-										<span class="task">Decorations</span></span>
-										<span class="task-actions">
-											<a href="#" class='task-delete'><i class="icon-remove"></i></a>
-											<a href="#" class='task-bookmark' rel="tooltip" title="Mark as important"><i class="icon-bookmark-empty"></i></a>
+										<span class="category">Decorations</span></span>
+										<span class="category-actions">
+											<a href="#edit-category" data-toggle="modal" class='btn-edit-category' rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+											<a href="#" class='btn-delete-category' rel='tooltip' title="Delete"><i class="icon-remove"></i></a>
 										</span>
 									</li>
 									<li>
 										<div class="check">
 											<input type="checkbox" class='icheck-me' data-skin="square" data-color="blue" rel="tooltip" title="Allow multi selection">
 										</div>
-										<span class="task"><span>Accessories</span></span>
-										<span class="task-actions">
-											<a href="#" class='task-delete'><i class="icon-remove"></i></a>
-											<a href="#" class='task-bookmark' rel="tooltip" title="Mark as important"><i class="icon-bookmark-empty"></i></a>
+										<span class="category"><span>Accessories</span></span>
+										<span class="category-actions">
+											<a href="#edit-category" data-toggle="modal" class='btn-edit-category' rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+											<a href="#" class='btn-delete-category' rel='tooltip' title="Delete"><i class="icon-remove"></i></a>
 										</span>
 									</li>
 									<li>
 										<div class="check">
 											<input type="checkbox" class='icheck-me' data-skin="square" data-color="blue" rel="tooltip" title="Allow multi selection">
 										</div>
-										<span class="task"><span>Packaging</span></span>
-										<span class="task-actions">
-											<a href="#" class='task-delete'><i class="icon-remove"></i></a>
-											<a href="#" class='task-bookmark' rel="tooltip" title="Mark as important"><i class="icon-bookmark-empty"></i></a>
+										<span class="category"><span>Packaging</span></span>
+										<span class="category-actions">
+											<a href="#edit-category" data-toggle="modal" class='btn-edit-category' rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+											<a href="#" class='btn-delete-category' rel='tooltip' title="Delete"><i class="icon-remove"></i></a>
 										</span>
 									</li>
 									<li>
 										<div class="check">
 											<input type="checkbox" class='icheck-me' data-skin="square" data-color="blue" rel="tooltip" title="Allow multi selection">
 										</div>
-										<span class="task"><span>Turnaround</span></span>
-										<span class="task-actions">
-											<a href="#" class='task-delete'><i class="icon-remove"></i></a>
-											<a href="#" class='task-bookmark' rel="tooltip" title="Mark as important"><i class="icon-bookmark-empty"></i></a>
+										<span class="category"><span>Turnaround</span></span>
+										<span class="category-actions">
+											<a href="#edit-category" data-toggle="modal" class='btn-edit-category' rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+											<a href="#" class='btn-delete-category' rel='tooltip' title="Delete"><i class="icon-remove"></i></a>
 										</span>
 									</li>
 								</ul>
@@ -455,6 +455,37 @@
 			</div>
 			<div class="modal-footer">
 				<input type="submit" class="btn btn-primary" value="Add category"> 
+				<button class="btn">Cancel</button>
+			</div>
+		</form>
+
+	</div>
+
+
+	<div id="edit-category" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="myModalLabel">Edit category</h3>
+		</div>
+		<form action="#" class='new-task-form form-horizontal form-bordered'>
+			<div class="modal-body nopadding">
+				<div class="control-group">
+					<label for="task-name" class="control-label">Category</label>
+					<div class="controls">
+						<input type="text" name="task-name" value="Decorations">
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label for="tasktitel" class="control-label"></label>
+				<div class="controls">
+					<div class="check-line">
+						<input type="checkbox" id="c5" class='icheck-me' data-skin="square" data-color="blue" checked> <label class='inline' for="c5"> Allow multi selection</label>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-primary" value="Save"> 
 				<button class="btn">Cancel</button>
 			</div>
 		</form>
