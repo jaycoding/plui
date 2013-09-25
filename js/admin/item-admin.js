@@ -38,6 +38,32 @@ $(function(){
 		boxContentView.addClass("none");
 		boxContentEdit.removeClass("none");
 
+		if(boxContentEdit.find(".price-table-edit").length > 0) {
+			function getData() {
+			  return [
+			      ["Capacity", "Setup 1", "Qty 100", "Qty 200", "Qty 300", "Qty 1000", "Qty 3000", "Qty 5000"],
+			      ["1G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
+			      ["2G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
+			      ["4G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
+			      ["Custom", "quote", "quote", "quote", "quote", "quote", "quote", "quote"]
+			    ];
+			}
+
+			$("#price-table-1").handsontable({
+			    data: getData(),
+			    startRows: 5,
+			    startCols: 5,
+			    minRows: 5,
+			    minCols: 5,
+			    maxRows: 10,
+			    maxCols: 10,
+			    rowHeaders: true,
+			    colHeaders: true,
+			    minSpareRows: 1,
+			    contextMenu: true
+			  });
+		}
+
 		return false;
 	});
 
@@ -97,7 +123,6 @@ $(function(){
 
 		return false;
 	});
-
 
 
 
