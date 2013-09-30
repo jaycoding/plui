@@ -192,8 +192,8 @@
 .ui-colorpicker-swatch {
 	cursor:					pointer;
 	float:					left;
-	width:					11px;
-	height:					11px;
+	width:					23px;
+	height:					23px;
     border-right:			1px solid black;
     border-bottom:			1px solid black;
 }

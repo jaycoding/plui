@@ -43,6 +43,10 @@
   border-bottom: 1px solid #ccc;
   position: relative;
 }
+.item-categories li .icon-draggable {
+  margin-left: 4px;
+  color: #999;
+}
 .item-categories li:after {
   content: "";
   display: table;
@@ -63,7 +67,7 @@
   white-space: nowrap;
   max-width: 100%;
   position: absolute;
-  left: 16px;
+  left: 26px;
   right: 50px;
   overflow: hidden;
   font-weight: 700;

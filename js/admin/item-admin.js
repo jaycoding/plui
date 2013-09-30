@@ -26,9 +26,14 @@ $(function(){
 
 	$(".image-items-sortable").sortable({
 	    forcePlaceholderSize: true,
-	    connectWith: ".sortable-connected",
 	    tolerance:"pointer"
 	});
+
+	$(".item-categories").sortable({
+	    forcePlaceholderSize: true,
+	    tolerance:"pointer"
+	});
+	
 
 	$(".box .btn-edit").bind("click", function(){
 		var box = $(this).closest(".box");
@@ -101,7 +106,9 @@ $(function(){
 							},
 			select:			function(event, color) {
 								//$('.cp-pantone-output').text(color.formatted);
-							}
+							},
+			showOn:	'button',
+			buttonImageOnly:true
 		});
 	}
 
