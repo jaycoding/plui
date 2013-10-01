@@ -1,6 +1,13 @@
 .row-fluid .break-line {
   margin-left: 0!important;
 }
+.badge .close {
+  float: none;
+  line-height: 14px;
+  position: relative;
+  top: -3px;
+  left: 2px;
+}
 .sortable-img-item-placeholder {
   border: 1px dotted #ccc;
   background: #f6f6f6;
@@ -23,6 +30,23 @@
 }
 .image-items > li.image-item.selected .btn-unselect {
   display: inline;
+}
+.image-items.editing > li {
+  background: #368ee0;
+}
+.image-items.editing > li .extended {
+  display: block;
+  position: absolute;
+  z-index: 999;
+  background: #368ee0;
+  left: 0;
+  right: 0;
+}
+.image-items.editing > li .extended .pull-right > a {
+  color: #fff;
+  font-size: 16px;
+  padding: 1px 2px;
+  text-decoration: none;
 }
 .filter-list {
   margin: 0;

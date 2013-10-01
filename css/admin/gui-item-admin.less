@@ -27,7 +27,28 @@
 			}
 		}
 	}
+	&.editing {
+		> li {
+			background: #368ee0;
+		}
+		> li .extended {
+			display: block;
+			position: absolute;
+			z-index: 999;
+			background: #368ee0;
+			left: 0;
+			right: 0;
+
+			.pull-right > a {
+			  color: #fff;
+			  font-size: 16px;
+			  padding: 1px 2px;
+			  text-decoration: none;
+			}
+		}
+	}
 }
+
 
 .filter-list  {
 	margin: 0;

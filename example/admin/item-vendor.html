@@ -424,9 +424,17 @@
 								</div>
 							</div>
 							<div class="box-content editing none">
-								<div class="row-fluid">
+								<div class="row-fluid spaced">
 									<div class="span3 tright">Responsible person:</div>
-									<div class="span7"><input type="text" name="" value="Helen Huang" id="" class="input-medium"></div>
+									<div class="span7">
+										<div class="input-xlarge">
+											<select name="select" id="select" class='chosen-select'>
+												<option value="1">Helen Huang</option>
+												<option value="2">Harrison Fu</option>
+												<option value="3">Jeffery Li</option>
+											</select>
+										</div>
+									</div>
 								</div>
 								<div class="row-fluid">
 									<div class="span3 tright"></div>
@@ -682,10 +690,16 @@
 										<input type="text" value="USD, RMB, CAD" name="" id="" class="input-large">
 									</div>
 								</div>
-								<div class="row-fluid">
+								<div class="row-fluid spaced">
 									<div class="span3 tright">Default currency:</div>
 									<div class="span7">
-										<input type="text" value="USD" name="" id="" class="input-large">
+										<div class="input-medium">
+											<select name="select" id="defaultCurrency" class='chosen-select'>
+												<option value="1" selected>USD</option>
+												<option value="2">RMB</option>
+												<option value="3">CAD</option>
+											</select>
+										</div>
 									</div>
 								</div>
 								<div class="row-fluid">
@@ -726,8 +740,8 @@
 								<div class="row-fluid">
 									<div class="span3 tright"></div>
 									<div class="span7">
-										<div class="clearfix">
-											<ul class="image-items">
+										<div class="clearfix spaced">
+											<ul class="image-items editing">
 												<li class="span6 image-item">
 													<a href="#">
 														<img src="../../mock/image/poster-color.jpg" width="500"  alt="" />
@@ -740,8 +754,10 @@
 												</li>
 											</ul>
 										</div>
+
+										<p>&nbsp;</p>
 										
-										<p>
+										<p class="margin-top">
 											<div class="fileupload fileupload-new" data-provides="fileupload">
 												<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
 												<span class="fileupload-preview"></span>
