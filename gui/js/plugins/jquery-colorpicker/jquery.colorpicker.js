@@ -2248,17 +2248,17 @@
 			});
 
 			// Close (with OK) on tab key in element
-			that.element.keydown(function (event) {
-				if (event.keyCode === 9) {
-					that.close();
-				}
-			}).keyup(function (event) {
-				var color = that._parseColor(that.element.val());
-				if (!that.color.equals(color)) {
-					that.color = color;
-					that._change();
-				}
-			});
+			// that.element.keydown(function (event) {
+			// 	if (event.keyCode === 9) {
+			// 		that.close();
+			// 	}
+			// }).keyup(function (event) {
+			// 	var color = that._parseColor(that.element.val());
+			// 	if (!that.color.equals(color)) {
+			// 		that.color = color;
+			// 		that._change();
+			// 	}
+			// });
 		},
 
 		_generate: function () {

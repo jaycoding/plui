@@ -723,7 +723,8 @@
 							<div class="box-title">
 								<h3><i class="icon-info-sign"></i>Additional description</h3>
 								<div class="actions">
-									<a href="#" class="btn btn-mini btn-edit" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+									<a href="#" class="btn btn-mini btn-edit" rel='tooltip' title="Edit"><i class="icon-edit"></i></a> 
+									<a href="#new-description" data-toggle="modal" class="btn btn-mini btn-add" rel='tooltip' title="Add"><i class="glyphicon-circle_plus"></i></a>
 								</div>
 							</div>
 							<div class="box-content view">
@@ -739,10 +740,10 @@
 							<div class="box-content editing none">
 								<div class="row-fluid">
 									<div class="span3 tright"></div>
-									<div class="span7">
+									<div class="span8">
 										<div class="clearfix spaced">
 											<ul class="image-items editing">
-												<li class="span6 image-item">
+												<li class="span10 image-item">
 													<a href="#">
 														<img src="../../mock/image/poster-color.jpg" width="500"  alt="" />
 													</a>
@@ -782,7 +783,39 @@
 
 		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
 	</div>
-		
+
+	<div id="new-description" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h4 id="myModalLabel">Add description</h4>
+		</div>
+		<form action="#" class='new-task-form form-horizontal form-bordered'>
+			<div class="modal-body nopadding">
+				<div class="control-group">
+					<label for="task-name" class="control-label">Image</label>
+					<div class="controls">
+						<div class="fileupload fileupload-new" data-provides="fileupload">
+							<span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+							<span class="fileupload-preview"></span>
+							<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="tasktitel" class="control-label">Description</label>
+					<div class="controls">
+						<textarea name=""  rows="4" class="input-xlarge"></textarea>
+					</div>
+				</div>
+			</div>
+			
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-primary" value="Add category"> 
+				<button class="btn">Cancel</button>
+			</div>
+		</form>
+
+	</div>
 </body>
 
 </html>

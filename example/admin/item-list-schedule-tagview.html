@@ -1,0 +1,793 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap.min.css">
+	<!-- Bootstrap responsive -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap-responsive.min.css">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<!-- PageGuide -->
+	<link rel="stylesheet" href="../../gui/css/plugins/pageguide/pageguide.css">
+	<!-- Fullcalendar -->
+	<link rel="stylesheet" href="../../gui/css/plugins/fullcalendar/fullcalendar.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/fullcalendar/fullcalendar.print.css" media="print">
+	<!-- chosen -->
+	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<!-- multi select -->
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<!-- select2 -->
+	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
+	<!-- icheck -->
+	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="../../gui/css/style.css">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="../../gui/css/themes.css">
+	<!-- Tagsinput -->
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+
+	<!-- Admin -->
+	<link rel="stylesheet" href="../../css/admin/admin.css">
+
+	<!-- jQuery -->
+	<script src="../../gui/js/jquery.min.js"></script>
+
+	<!-- Nice Scroll -->
+	<script src="../../gui/js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.draggable.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.sortable.min.js"></script>
+	<!-- Touch enable for jquery UI -->
+	<script src="../../gui/js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<!-- slimScroll -->
+	<script src="../../gui/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../../gui/js/bootstrap.min.js"></script>
+	<!-- vmap -->
+	<script src="../../gui/js/plugins/vmap/jquery.vmap.min.js"></script>
+	<script src="../../gui/js/plugins/vmap/jquery.vmap.world.js"></script>
+	<script src="../../gui/js/plugins/vmap/jquery.vmap.sampledata.js"></script>
+	<!-- Bootbox -->
+	<script src="../../gui/js/plugins/bootbox/jquery.bootbox.js"></script>
+	<!-- Flot -->
+	<script src="../../gui/js/plugins/flot/jquery.flot.min.js"></script>
+	<script src="../../gui/js/plugins/flot/jquery.flot.bar.order.min.js"></script>
+	<script src="../../gui/js/plugins/flot/jquery.flot.pie.min.js"></script>
+	<script src="../../gui/js/plugins/flot/jquery.flot.resize.min.js"></script>
+	<!-- imagesLoaded -->
+	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<!-- PageGuide -->
+	<script src="../../gui/js/plugins/pageguide/jquery.pageguide.js"></script>
+	<!-- FullCalendar -->
+	<script src="../../gui/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+	<!-- Chosen -->
+	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
+	<!-- select2 -->
+	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<!-- icheck -->
+	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<!-- fancybox -->
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<!-- TagsInput -->
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<!-- MultiSelect -->
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+
+	<!-- Theme framework -->
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/admin/item-admin.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container">
+			<div class="pull-left" style="padding-top: 4px; min-width: 200px;"><img src="../../mock/image/promo-logo.png" alt="" /></div>
+			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle sidebar"><i class="icon-reorder"></i></a>
+			<ul class='main-nav'>
+				<li>
+					<a href="#">
+						<span>Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Biz Social</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Internal social</a></li>
+					</ul>
+				</li>
+				<li class='active'>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Marketing</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Homepage admin</a></li>
+						<li><a href="#">Item admin</a></li>
+						<li><a href="#">Mass price updating</a></li>
+						<li><a href="#">Mass info updating</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Banners</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Workflow</a></li>
+						<li><a href="#">My surveys</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Customers</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Quotes</a></li>
+						<li><a href="#">Sale orders</a></li>
+						<li><a href="#">AR down invoices</a></li>
+						<li><a href="#">AR invoice</a></li>
+						<li><a href="#">AR credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Vendors</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Inquiries</a></li>
+						<li><a href="#">Puchuse orders</a></li>
+						<li><a href="#">AP down invoices</a></li>
+						<li><a href="#">AP invoices</a></li>
+						<li><a href="#">AP credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Finance</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Currency exchange</a></li>
+						<li><a href="#">Incoming payments</a></li>
+						<li><a href="#">Outgoing payments</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>HR</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Orginizaion chart</a></li>
+						<li><a href="#">Member profiles</a></li>
+						<li><a href="#">Permissions</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user">
+				<ul class="icon-nav">
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-search"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings" style="padding: 15px 15px 0;">
+							<form class='form-horizontal'>
+								<div class="input-append">
+									<input type="text" name="search" placeholder="Type a company name">
+									<button type='submit' class='btn'><i class="icon-search"></i></button>
+								</div>
+							</form>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings">
+							<li><a href="#">Company profile</a></li>
+							<li><a href="#">Site theme</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="dropdown">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Harrison Fu <img src="../../mock/image/user/user-avatar.jpg" width="27" height="27" alt=""></a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="#">Edit profile</a>
+						</li>
+						<li>
+							<a href="#">Account settings</a>
+						</li>
+						<li>
+							<a href="#">Sign out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="content">
+		<div id="left">
+			<div style="padding: 25px 10px; text-align: center; background: #fff;">
+				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
+			</div>
+			<form action="#" method="GET" class='search-form'>
+				<div class="search-pane">
+					<input type="text" name="search" placeholder="Search items...">
+					<button type="submit"><i class="icon-search"></i></button>
+				</div>
+			</form>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Item status</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="checkbox" class='icheck-me' id="c1" data-skin="minimal"> <label class='inline' for="c1">Active</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="checkbox" class='icheck-me' id="c2" data-skin="minimal"> <label class='inline' for="c2">Demo</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="checkbox" class='icheck-me' id="c3" data-skin="minimal"> <label class='inline' for="c3">On hold</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Ownership</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r1" class='icheck-me' name="r1" data-skin="minimal"> <label class='inline' for="r1">All</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r2" class='icheck-me' name="r1" data-skin="minimal"> <label class='inline' for="r2">Owner items</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r3" class='icheck-me' name="r1" data-skin="minimal"> <label class='inline' for="r3">Guest items</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Permission</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r5" class='icheck-me' name="r2" data-skin="minimal"> <label class='inline' for="r5">All</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r6" class='icheck-me' name="r2" data-skin="minimal"> <label class='inline' for="r6">Public</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r7" class='icheck-me' name="r2" data-skin="minimal"> <label class='inline' for="r7">Private</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r8" class='icheck-me' name="r2" data-skin="minimal"> <label class='inline' for="r8">Internal</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Display</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r9" class='icheck-me' name="r3" data-skin="minimal"> <label class='inline' for="r9">All</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r10" class='icheck-me' name="r3" data-skin="minimal"> <label class='inline' for="r10">Valid</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="radio" id="r11" class='icheck-me' name="r3" data-skin="minimal"> <label class='inline' for="r11">Invalid</label>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Assign to</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="checkbox" class='icheck-me' id="c5" data-skin="minimal"> <label class='inline' for="c5">All</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="checkbox" class='icheck-me' id="c6" data-skin="minimal"> <label class='inline' for="c6">Harrison Fu</label>
+						</div>
+					</li>
+					<li style="padding-left: 27px">
+						<div class="check-line">
+							<input type="checkbox" class='icheck-me' id="c7" data-skin="minimal"> <label class='inline' for="c7">Micheal Beets</label>
+						</div>
+					</li>
+					<li>
+						<a><input type="text" placeholder="Search user" class="input-medium" name="" id=""></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>Items</h1>
+					</div>
+					<div class="pull-right" style="padding-top: 25px;">
+						<button class='btn btn-success fancybox fancybox-normal fancybox.iframe' id="btn-add-item" ><i class="icon-plus"></i> Add item</button>
+						<div class="btn-group">
+							<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"><i class="icon-cog"></i> <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action 1</a>
+								</li>
+								<li>
+									<a href="#">Action 2</a>
+								</li>
+								<li>
+									<a href="#">Action 3</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Marketing</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Item admin</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Items</a>
+						</li>
+
+					</ul>
+					<div class="close-bread">
+						<a href="#"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="icon-calendar"></i>
+									Demo ready (02/28/2013)
+								</h3>
+								<div class="actions">
+									<a href="item-list-schedule.html" class="btn btn-mini"><i class="icon-arrow-left"></i> Back to all</a>
+								</div>
+							</div>
+							<div class="box-content">
+								<div class="highlight-toolbar">
+									<div class="pull-left">
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<select name="sort" id="sort" class='chosen-select input-medium' data-placeholder="Sort by" data-nosearch="true">
+													<option value=""></option>
+													<option value="sort-1">One</option>
+													<option value="sort-2">Two</option>
+													<option value="sort-3">Three</option>
+												</select>
+											</div>
+											<div class="btn-group">
+												<a href="item-list.html" class="btn" rel="tooltip" title="Grid view"><i class="icon-th"></i></a>
+												<a href="#" class="btn" rel="tooltip" title="List view"><i class="icon-th-list"></i></a>
+												<a href="item-list-schedule-view.html" class="btn" rel="tooltip" title="Schedule view"><i class="icon-calendar"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="pull-right">
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<select name="cat" id="cat" class='chosen-select input-medium' data-placeholder="Show items">
+													<option value=""></option>
+													<option value="opt-1">10</option>
+													<option value="opt-2">25</option>
+													<option value="opt-3">50</option>
+													<option value="opt-4">100</option>
+													<option value="opt-5">all</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight-toolbar">
+									<div class="pull-left">
+										<div class="btn-toolbar">
+											<div class="btn-group text">
+												Showing <strong>1</strong> to <strong>10</strong> of 25 items
+											</div>
+										</div>
+									</div>
+									<div class="pull-right">
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<a href="#" class="btn"><i class="icon-angle-left"></i></a>
+												<a href="#" class="btn"><i class="icon-angle-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="highlight-toolbar row-fluid">
+									<div class="span1">
+										<div class="check-line">
+											<input type="checkbox" class='icheck-me' id="select-all" data-skin="minimal"> <label class='inline' for="select-all">All</label>
+										</div>
+									</div>
+									<div class="span8">
+										<button class="btn btn-mini"><i class="icon-envelope"></i> Email</button> 
+										<button class="btn btn-mini"><i class="icon-user"></i> Assign</button> 
+										<button class="btn btn-mini"><i class="icon-ok-sign"></i> Approve</button>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<table class="table table-hover table-nomargin">
+										<tbody>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+
+								<div class="highlight-toolbar">
+									<div class="pull-left">
+										<div class="btn-toolbar">
+											<div class="btn-group text">
+												Showing <strong>1</strong> to <strong>10</strong> of 25 items
+											</div>
+										</div>
+									</div>
+									<div class="pull-right">
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<a href="#" class="btn"><i class="icon-angle-left"></i></a>
+												<a href="#" class="btn"><i class="icon-angle-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
+	</div>
+		
+</body>
+
+</html>
+
