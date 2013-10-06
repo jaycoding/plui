@@ -32,6 +32,8 @@
 	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
 	<!-- Fancybox -->
 	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+	<!-- Datepicker -->
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
 
 	<!-- Admin -->
 	<link rel="stylesheet" href="../../css/admin/admin.css">
@@ -75,6 +77,8 @@
 	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
 	<!-- select2 -->
 	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<!-- Datepicker -->
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
 	<!-- icheck -->
 	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
 	<!-- fancybox -->
@@ -402,8 +406,11 @@
 						<div class="box">
 							<div class="box-title">
 								<h3><i class="icon-file-alt"></i>General Info</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini btn-edit" rel='tooltip' title="Edit"><i class="icon-edit"></i></a>
+								</div>
 							</div>
-							<div class="box-content">
+							<div class="box-content view">
 								<div class="row-fluid">
 									<div class="span12 tright"><span class="gray-light">Created by <strong>Harrison Fu</strong> &nbsp;&nbsp;&nbsp; 09/25/2013</span></div>
 								</div>
@@ -412,11 +419,11 @@
 									<div class="span2">Item status:</div>
 									<div class="span8">New</div>
 								</div>
-								<div class="row-fluid">
+								<div class="row-fluid spaced">
 									<div class="span2">Display date:</div>
 									<div class="span8">09/25/2010 to 09/25/2015</div>
 								</div>
-								<div class="row-fluid">
+								<div class="row-fluid spaced">
 									<div class="span2">Item type:</div>
 									<div class="span8">
 										<div class="row-fluid">
@@ -490,9 +497,149 @@
 										Green Marketing Innovations</p>
 									</div>
 								</div>
+							</div>
+							<div class="box-content editing none">
+								<div class="row-fluid spaced">
+									<div class="span2">Item status:</div>
+									<div class="span8">
+										<div class="input-large">
+											<select name="select" id="select" class='chosen-select' >
+												<option value="1">New</option>
+												<option value="2">Pending</option>
+												<option value="3">Abadoned</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row-fluid spaced">
+									<div class="span2">Display date:</div>
+									<div class="span8"><input type="text" name="textfield" value="09/25/2015" id="textfield" class="input-small datepick"> to <input type="text" name="textfield" value="09/25/2015" id="textfield" class="input-small datepick"></div>
+								</div>
+								<div class="row-fluid spaced">
+									<div class="span2">Item type:</div>
+									<div class="span8">
+										<div class="row-fluid">
+											<div class="span3">
+												<div class="check-line">
+													<input type="radio" id="c31" class='icheck-me' name="same3" data-skin="square" data-color="blue" checked> <label class='inline' for="c31">Normal Item </label>
+												</div>
+											</div>
+											<div class="span3"><span  rel="tooltip" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh." style="margin-left: 20px;"><i class="icon-question-sign"></i></span></div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">
+												<div class="check-line">
+													<input type="radio" id="c32" class='icheck-me' name="same3" data-skin="square" data-color="blue"> <label class='inline' for="c32">Decoration Item</label>
+												</div>
+											</div>
+											<div class="span3"><span  rel="tooltip" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh." style="margin-left: 20px;"><i class="icon-question-sign"></i></span></div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">
+												<div class="check-line">
+													<input type="radio" id="c33" class='icheck-me' name="same3" data-skin="square" data-color="blue"> <label class='inline' for="c33">Shipping Item</label>
+												</div>
+											</div>
+											<div class="span3"><span  rel="tooltip" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh." style="margin-left: 20px;"><i class="icon-question-sign"></i></span></div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">
+												<div class="check-line">
+													<input type="radio" id="c34" class='icheck-me' name="same3" data-skin="square" data-color="blue"> <label class='inline' for="c34">Planning Item</label> 
+												</div>
+											</div>
+											<div class="span3"><span  rel="tooltip" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh." style="margin-left: 20px;"><i class="icon-question-sign"></i></span></div>
+										</div>
+									</div>
+								</div>
+								<div class="row-fluid">
+									<div class="span2">Item permission:</div>
+									<div class="span8">
+										<div class="row-fluid">
+											<div class="span4">
+												<div class="check-line">
+													<input type="radio" id="c41" class='icheck-me pull-left' name="same4" data-skin="square" data-color="blue" checked> <label class='inline' for="c41">This is a public item. </label>
+												</div>
+											</div>
+											<div class="span3"><span  rel="tooltip" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh."><i class="icon-question-sign"></i></span></div>
+										</div>
+										<div class="row-fluid">
+											<div class="span4">
+												<div class="check-line">
+													<input type="radio" id="c42" class='icheck-me' name="same4" data-skin="square" data-color="blue"> <label class='inline' for="c42">This is an intenal item.</label>
+												</div>
+											</div>
+											<div class="span3"><span  rel="tooltip" title="An internal items cannot be shared with other business partners. Normally a private item can be used for internal admin purpose."><i class="icon-question-sign"></i></span></div>
+										</div>
+										<div class="row-fluid">
+											<div class="span8">
+												<div class="check-line">
+													<input type="radio" id="c43" class='icheck-me' name="same4" data-skin="square" data-color="blue"> <label class='inline' for="c43">This is a private item for the following business partners.</label>
+												</div>
+											</div>
+											<div class="span3"><span  rel="tooltip" title="A private items can only be viewed by the selected BP partners. These items are built for contract or agreement."><i class="icon-question-sign"></i></span></div>
+										</div>
+									</div>
+								</div>
 								<div class="row-fluid margin-top">
-									<div class="span2"></div>
-									<div class="span8"><button class="btn btn-primary"><i class="icon-edit"></i> Edit</button></div>
+									<div class="span2 tright"></div>
+									<div class="span8"><a href="#" class="btn btn-primary btn-save"><i class="icon-save"></i> Save</a> <a href="#" class="btn btn-cancel">Cancel</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box">
+							<div class="box-title">
+								<h3><i class="icon-file-alt"></i>Item Workflow</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini btn-edit" id="btn-add-main-image" rel='tooltip' title="Change workflow"><i class="icon-edit"></i></a>
+								</div>
+							</div>
+							<div class="box-content view">
+								<div class="row-fluid">
+									<div class="span12">
+										<h5 class="gray">Workflow 1:</h5>
+										<ul class="workflow workflow-small no-margin">
+											<li class="lightgrey">
+												<a href="#"><span>1</span><span class="name">Greeting</span></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"><span>2</span><span class="name">Introduction</span></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"><span>3</span><span class="name">Phone follow-up</span></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"><span>4</span><span class="name">Special offer</span></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"><span>5</span><span class="name">Revise</span></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"><span>6</span><span class="name">Complete</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="box-content editing none">
+								<div class="row-fluid">
+									<div class="span2">Pick a workflow</div>
+									<div class="span8">
+										<div class="input-xlarge">
+											<select name="select" id="select-workflow" class='chosen-select' >
+												<option value="1" selected>Workflow 1</option>
+												<option value="2">Workflow 2</option>
+												<option value="3">Workflow 3</option>
+												<option value="2">Workflow 4</option>
+												<option value="3">Workflow 5</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row-fluid margin-top">
+									<div class="span2 tright"></div>
+									<div class="span8"><a href="#" class="btn btn-primary btn-save"><i class="icon-save"></i> Save</a> <a href="#" class="btn btn-cancel">Cancel</a></div>
 								</div>
 							</div>
 						</div>
