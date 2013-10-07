@@ -8652,7 +8652,7 @@ i.icon-right-m {
 }
 .product-viewer {
   display: none;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .product-viewer .etalage_thumb {
   background: #ffffff url(../../img/icons/loading.gif) center no-repeat;
@@ -9910,6 +9910,23 @@ i.icon-right-m {
 }
 .form-faq-add-file a:hover {
   color: #7A7A00;
+}
+.product-view {
+  clear: both;
+}
+.product-view .product-view-colorpane > ul > li {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+  border: 3px solid #eee;
+}
+.product-view .product-view-colorpane > ul > li:hover {
+  border: 3px solid #ccc;
+}
+.product-view .product-view-colorpane > ul > li.active {
+  border: 3px solid #f00;
 }
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
@@ -11714,23 +11731,11 @@ button.ui-button::-moz-focus-inner {
   /*sorry for IE5*/
 
   position: absolute;
-  /*must have*/
-
   z-index: -1;
-  /*must have*/
-
   filter: mask();
-  /*must have*/
-
   top: -4px;
-  /*must have*/
-
   left: -4px;
-  /*must have*/
-
   width: 200px;
-  /*must have*/
-
   height: 200px;
   /*must have*/
 
@@ -11868,8 +11873,6 @@ button.ui-button::-moz-focus-inner {
 .jPicker .Icon {
   display: inline-block;
   height: 24px;
-  /* change this value if using a different sized color picker icon */
-
   position: relative;
   /* make this element an absolute positioning container */
 
@@ -11938,8 +11941,6 @@ table.jPicker {
   border-top: 2px solid #9a9a9a;
   cursor: crosshair;
   height: 260px;
-  /* IE 6 incorrectly draws border inside the width and height instead of outside - We will fix this to 256px later */
-
   margin: 0px 10px 10px 10px;
   overflow: hidden;
   /* hide the overdraw of the Color Map icon when at edge of viewing box */
@@ -11954,8 +11955,6 @@ table.jPicker {
 }
 .jPicker div[class="Map"] {
   height: 256px;
-  /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
-
   width: 256px;
   /* correct to 256px for browsers that support the "[class="xxx"]" selector (IE7+,Firefox,Safari,Chrome,Opera,etc.) */
 

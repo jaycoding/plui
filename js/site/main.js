@@ -178,3 +178,29 @@ $(".faq-upload .btn-add-upload").live("click", function(){
 
 
 $(".with-tooltip").tooltip();
+
+
+
+$(".product-view .product-view-colorpane > ul > li").live("click", function(){
+    var container = $(this).closest(".product-view");
+    var generalView = container.find(".product-view-general");
+    var colorViews = container.find(".product-view-color");
+    var colorButtons = $(this).siblings("li");
+    if ($(this).hasClass("active")) {
+        colorViews.addClass("none");
+        generalView.removeClass("none");
+        $(this).removeClass("active");
+    } else {
+        var colorCode = $(this).attr("data-color").toString();
+        var target = colorViews.filter(function(){
+            return $(this).data("color") == colorCode;
+        });
+
+        if (target && target.length > 0) {
+            generalView.addClass("none");
+            colorViews.addClass("none");
+            target.removeClass("none");
+        }
+        $(this).addClass("active").siblings("li").removeClass("active");
+    }
+});
