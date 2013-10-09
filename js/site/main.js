@@ -187,9 +187,9 @@ $(".product-view .product-view-colorpane > ul > li").live("click", function(){
     var colorViews = container.find(".product-view-color");
     var colorButtons = $(this).siblings("li");
     if ($(this).hasClass("active")) {
-        colorViews.addClass("none");
-        generalView.removeClass("none");
-        $(this).removeClass("active");
+        // colorViews.addClass("none");
+        // generalView.removeClass("none");
+        // $(this).removeClass("active");
     } else {
         var colorCode = $(this).attr("data-color").toString();
         var target = colorViews.filter(function(){

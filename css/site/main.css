@@ -9706,7 +9706,7 @@ i.icon-right-m {
   margin: 0;
   margin-bottom: 1px;
   font-size: 14px;
-  padding: 8px;
+  padding: 4px 8px;
 }
 .product-customize > ul > li {
   background: #f2f2f2;
@@ -9714,7 +9714,6 @@ i.icon-right-m {
 }
 .product-customize > ul > li > a {
   padding-left: 5px;
-  color: #555;
 }
 .price-table td {
   border: none;
@@ -9917,15 +9916,16 @@ i.icon-right-m {
 .product-view .product-view-colorpane > ul > li {
   cursor: pointer;
   display: inline-block;
-  width: 30px;
-  height: 25px;
+  width: 48px;
+  height: 38px;
   margin-right: 3px;
   border: 3px solid #eee;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 10px;
   color: #fff;
   text-shadow: 1px 1px 1px #666;
   font-size: 12px;
+  line-height: 1.2;
 }
 .product-view .product-view-colorpane > ul > li:hover {
   border: 3px solid #ccc;
