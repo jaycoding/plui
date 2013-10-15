@@ -254,3 +254,10 @@
 .item-categories .category-actions {
   padding: 0 10px!important;
 }
+.price-table-edit input,
+.price-table-edit select {
+  margin: 0;
+}
+.price-table-edit .tcenter {
+  text-align: center!important;
+}

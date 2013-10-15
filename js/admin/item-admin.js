@@ -43,31 +43,31 @@ $(function(){
 		boxContentView.addClass("none");
 		boxContentEdit.removeClass("none");
 
-		if(boxContentEdit.find(".price-table-edit").length > 0) {
-			function getData() {
-			  return [
-			      ["Capacity", "Setup 1", "Qty 100", "Qty 200", "Qty 300", "Qty 1000", "Qty 3000", "Qty 5000"],
-			      ["1G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
-			      ["2G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
-			      ["4G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
-			      ["Custom", "quote", "quote", "quote", "quote", "quote", "quote", "quote"]
-			    ];
-			}
+		// if(boxContentEdit.find(".price-table-edit").length > 0) {
+		// 	function getData() {
+		// 	  return [
+		// 	      ["Capacity", "Setup 1", "Qty 100", "Qty 200", "Qty 300", "Qty 1000", "Qty 3000", "Qty 5000"],
+		// 	      ["1G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
+		// 	      ["2G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
+		// 	      ["4G", 7.50, 7.50, 7.50, 7.50, 7.50, 7.50, 7.50],
+		// 	      ["Custom", "quote", "quote", "quote", "quote", "quote", "quote", "quote"]
+		// 	    ];
+		// 	}
 
-			$("#price-table-1").handsontable({
-			    data: getData(),
-			    startRows: 5,
-			    startCols: 5,
-			    minRows: 5,
-			    minCols: 5,
-			    maxRows: 10,
-			    maxCols: 10,
-			    rowHeaders: true,
-			    colHeaders: true,
-			    minSpareRows: 1,
-			    contextMenu: true
-			  });
-		}
+		// 	$("#price-table-1").handsontable({
+		// 	    data: getData(),
+		// 	    startRows: 5,
+		// 	    startCols: 5,
+		// 	    minRows: 5,
+		// 	    minCols: 5,
+		// 	    maxRows: 10,
+		// 	    maxCols: 10,
+		// 	    rowHeaders: true,
+		// 	    colHeaders: true,
+		// 	    minSpareRows: 1,
+		// 	    contextMenu: true
+		// 	  });
+		// }
 
 		return false;
 	});
@@ -131,6 +131,44 @@ $(function(){
 		return false;
 	});
 
+	// $(".price-table-edit table").on("click", ".price-table-delete-col", function ( event ) {
+	//     // Get index of parent TD among its siblings (add one for nth-child)
+	//     var ndx = $(this).parent().index() + 1;
+	//     // Find all TD elements with the same index
+	//     $("td", event.delegateTarget).remove(":nth-child(" + ndx + ")");
+	// });
+
+	$(".price-table-edit table .price-table-delete-col").live("click", function(){
+		var table = $(this).closest("table");
+		var index = $(this).parent("td")[0].cellIndex;
+
+	    $(table).find('tr').each(function() {
+	    	$(this).children().eq(index).remove();
+	    });
+	});
+
+	$(".price-table-edit table .price-table-delete-row").live("click", function(){
+		$(this).closest("tr").remove();
+	});
+
+	$(".price-table-edit table .price-table-add-row").bind("click", function(){
+		var row = $(this).closest("tr").prev();
+		var newRow = row.clone();
+		newRow.find("input").attr("value", "");
+		row.after(newRow);
+	});
+
+	$(".price-table-edit table .price-table-add-col").bind("click", function(){
+		var table = $(this).closest("table");
+		var index = $(this).parent("td")[0].cellIndex - 1;
+
+		$(table).find('tr').each(function() {
+			var cell = $(this).children().eq(index);
+			var newCell = cell.clone();
+			newCell.find("input").attr("value", "");
+	    	cell.after(newCell);
+	    });
+	});
 
 
 });
