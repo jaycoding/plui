@@ -509,7 +509,7 @@
 										</div>
 									</div>
 									<div class="span8">
-										<button class="btn btn-mini"><i class="icon-user"></i> Assign</button>
+										<a href="#schedule-assign" data-toggle="modal" class="btn btn-mini"><i class="icon-user"></i> Assign</a>
 										<button class="btn btn-mini"><i class="icon-ok-sign"></i> Launch</button>
 									</div>
 								</div>
@@ -810,6 +810,37 @@
 		</div>
 
 		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
+	</div>
+
+
+	<div id="schedule-assign" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h4 id="myModalLabel">Assign</h4>
+		</div>
+		<form action="#" class='form-horizontal form-bordered'>
+			<div class="modal-body nopadding">
+				<div class="control-group">
+					<label for="" class="control-label">Assign to</label>
+					<div class="controls">
+						<div class="input-xlarge">
+							<select name="select" id="select" class='chosen-select'>
+								<option value="1">Helen Huang</option>
+								<option value="2">Harrison Fu</option>
+								<option value="3">Jeffery Li</option>
+							</select>
+						</div>
+						<p style="min-height: 100px;"></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-primary" value="Assign"> 
+				<button class="btn">Cancel</button>
+			</div>
+		</form>
+
 	</div>
 		
 </body>

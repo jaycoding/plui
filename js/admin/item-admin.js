@@ -170,5 +170,34 @@ $(function(){
 	    });
 	});
 
+	$(".btn-delete-param-value").live("click", function(){
+		var row = $(this).closest(".row-fluid");
+		row.remove();
+	});
+
+	$(".btn-delete-param").live("click", function(){
+		var param = $(this).closest(".spec-param");
+		param.remove();
+	});
+
+	$(".btn-insert-param-value").live("click", function(){
+		var row = $(this).closest(".row-fluid").prev();
+		var newRow = row.clone();
+		newRow.find("input").val("");
+
+		row.after(newRow);
+	});
+
+	$(".btn-insert-param").live("click", function(){
+		if ($(".spec-param").length < 4) {
+			var tpl = $(".spec-param-template");
+			var newParam = tpl.clone().removeClass("spec-param-template");
+			tpl.before(newParam);
+		} else {
+			return;
+		}
+	});
+	
+
 
 });

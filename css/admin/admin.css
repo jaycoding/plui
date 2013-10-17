@@ -1,3 +1,6 @@
+.none {
+  display: none;
+}
 .row-fluid .break-line {
   margin-left: 0!important;
 }
@@ -260,4 +263,11 @@
 }
 .price-table-edit .tcenter {
   text-align: center!important;
+}
+.spec-param {
+  background: #f3f3f3;
+  padding: 6px;
+}
+.spec-param-template {
+  display: none!important;
 }
