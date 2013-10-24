@@ -654,6 +654,7 @@
 													<th>Qty 1,000</th>
 													<th>Qty 3,000</th>
 													<th>Qty 5,000</th>
+													<th>Weight &amp; Packaging</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -667,6 +668,7 @@
 													<td>7.50</td>
 													<td>7.50</td>
 													<td>7.50</td>
+													<td><a href="#">Packaging</a></td>
 												</tr>
 												<tr>
 													<td></td>
@@ -678,6 +680,7 @@
 													<td>7.50</td>
 													<td>7.50</td>
 													<td>7.50</td>
+													<td><a href="#">Packaging</a></td>
 												</tr>
 												<tr>
 													<td></td>
@@ -689,6 +692,7 @@
 													<td>7.50</td>
 													<td>7.50</td>
 													<td>7.50</td>
+													<td><a href="#">Packaging</a></td>
 												</tr>
 												<tr>
 													<td></td>
@@ -702,6 +706,20 @@
 													<td>quote</td>
 													<td>quote</td>
 													<td>quote</td>
+													<td><a href="#">Packaging</a></td>
+												</tr>
+												<tr>
+													<td></td>
+													<td>
+														
+													</td>
+													<td></td>
+													<td>S</td>
+													<td>S</td>
+													<td>S</td>
+													<td>S</td>
+													<td>S</td>
+													<td>S</td>
 												</tr>
 											</tbody>
 										</table>
@@ -710,10 +728,18 @@
 							</div>
 
 							<div class="box-content editing none">
-								<div class="row-fluid">
+								<div class="row-fluid spaced">
 									<div class="span3 tright">Currencies:</div>
 									<div class="span7">
-										<input type="text" value="USD, RMB, CAD" name="" id="" class="input-large">
+										<div class="input-xxlarge">
+											<select name="currencies" id="currencies" placeholder="Select currencies" multiple="multiple" class="chosen-select input-xxlarge">
+												<option value="1">USD</option>
+												<option value="2">CAD</option>
+												<option value="3">AUD</option>
+												<option value="4">EU</option>
+												<option value="5">CNY</option>
+											</select>	
+										</div>
 									</div>
 								</div>
 								<div class="row-fluid spaced">
@@ -744,6 +770,7 @@
 															<td class="tcenter"><a href="javascript:void(0)" class="price-table-delete-col"><i class="icon-trash"></i></a></td>
 															<td class="tcenter"><a href="javascript:void(0)" class="price-table-delete-col"><i class="icon-trash"></i></a></td>
 															<td class="tcenter"><a href="javascript:void(0)" class="price-table-add-col"><i class="icon-chevron-right"></i></a></td>
+															<td></td>
 														</tr>
 														<tr>
 															<td>Header</td>
@@ -753,6 +780,7 @@
 															<td><input type="text" class="span12" value="Qty" ></td>
 															<td><input type="text" class="span12" value="Qty" ></td>
 															<td><input type="text" class="span12" value="Qty" ></td>
+															<td></td>
 															<td></td>
 														</tr>
 														<tr>
@@ -764,6 +792,18 @@
 															<td><input type="text" class="span12" value="300" ></td>
 															<td><input type="text" class="span12" value="500" ></td>
 															<td></td>
+															<td></td>
+														</tr>
+														<tr>
+															<td>Commission code</td>
+															<td><input type="text" class="span12" value="NA" ></td>
+															<td><input type="text" class="span12" value="NA" ></td>
+															<td><input type="text" class="span12" value="S" ></td>
+															<td><input type="text" class="span12" value="S" ></td>
+															<td><input type="text" class="span12" value="S" ></td>
+															<td><input type="text" class="span12" value="S" ></td>
+															<td></td>
+															<td></td>
 														</tr>
 														<tr>
 															<td><input type="radio" class="span12" name="" id=""></td>
@@ -785,6 +825,7 @@
 															<td><input type="text" class="span12" value="0.95" ></td>
 															<td><input type="text" class="span12" value="0.90" ></td>
 															<td><a href="javascript:void(0)" class="price-table-delete-row"><i class="icon-trash"></i></a></td>
+															<td><a href="#">pkg</a></td>
 														</tr>
 														<tr>
 															<td><input type="radio" class="span12" name="" id=""></td>
@@ -806,6 +847,7 @@
 															<td><input type="text" class="span12" value="0.95" ></td>
 															<td><input type="text" class="span12" value="0.90" ></td>
 															<td><a href="javascript:void(0)" class="price-table-delete-row"><i class="icon-trash"></i></a></td>
+															<td><a href="#">pkg</a></td>
 														</tr>
 														<tr>
 															<td><input type="radio" class="span12" name="" id=""></td>
@@ -827,6 +869,7 @@
 															<td><input type="text" class="span12" value="0.95" ></td>
 															<td><input type="text" class="span12" value="0.90" ></td>
 															<td><a href="javascript:void(0)" class="price-table-delete-row"><i class="icon-trash"></i></a></td>
+															<td><a href="#">pkg</a></td>
 														</tr>
 														<tr>
 															<td></td>
@@ -842,7 +885,23 @@
 												</div>
 												
 												<div>
-													<a href="#add-specifications" data-toggle="modal" class="btn btn-mini">Add specifications</a>
+													<h5>Current specification:</h5>
+													<div class="row-fluid">
+														<div class="span4">
+															<div class="input-large">
+																<select name="select" id="select-tier-price" class='chosen-select' >
+																	<option value="1" selected>Specification 1</option>
+																	<option value="2">Specification 2</option>
+																	<option value="3">Specification 3</option>
+																	<option value="2">Specification 4</option>
+																	<option value="3">Specification 5</option>
+																</select>
+															</div>
+														</div>
+														<div class="span3">
+															<a href="#add-specifications" data-toggle="modal" class="btn">Add specifications</a>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
