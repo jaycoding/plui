@@ -170,6 +170,18 @@ $(function(){
 	    });
 	});
 
+	$(".price-table-edit table .price-table-add-setup").bind("click", function(){
+		var table = $(this).closest("table");
+		var index = $(this).parent("td")[0].cellIndex;
+
+		$(table).find('tr').each(function() {
+			var cell = $(this).children().eq(index);
+			var newCell = cell.clone();
+			newCell.find("input").attr("value", "");
+	    	cell.after(newCell);
+	    });
+	});
+
 	$(".btn-delete-param-value").live("click", function(){
 		var row = $(this).closest(".row-fluid");
 		row.remove();
