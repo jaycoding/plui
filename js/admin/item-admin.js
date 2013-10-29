@@ -209,6 +209,19 @@ $(function(){
 			return;
 		}
 	});
+
+	var pmsDemo = [
+      "PMS 293",
+      "PMS 229",
+      "PMS 239",
+      "PMS 291",
+      "PMS 288",
+      "PMS 212"
+    ];
+
+	$("#input-pms-color").autocomplete({
+    	source: pmsDemo
+    });
 	
 
 
