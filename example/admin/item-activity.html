@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap.min.css">
+	<!-- Bootstrap responsive -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap-responsive.min.css">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<!-- PageGuide -->
+	<link rel="stylesheet" href="../../gui/css/plugins/pageguide/pageguide.css">
+	<!-- Fullcalendar -->
+	<link rel="stylesheet" href="../../gui/css/plugins/fullcalendar/fullcalendar.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/fullcalendar/fullcalendar.print.css" media="print">
+	<!-- chosen -->
+	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<!-- multi select -->
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<!-- Datepicker -->
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
+	<!-- select2 -->
+	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
+	<!-- icheck -->
+	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="../../gui/css/style.css">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="../../gui/css/themes.css">
+	<!-- Tagsinput -->
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+	
+	<!-- Admin -->
+	<link rel="stylesheet" href="../../css/admin/admin.css">
+
+	<!-- jQuery -->
+	<script src="../../gui/js/jquery.min.js"></script>
+
+	<!-- Nice Scroll -->
+	<script src="../../gui/js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.draggable.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery.ui.sortable.min.js"></script>
+	<!-- Touch enable for jquery UI -->
+	<script src="../../gui/js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<!-- slimScroll -->
+	<script src="../../gui/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../../gui/js/bootstrap.min.js"></script>
+	<!-- vmap -->
+	<script src="../../gui/js/plugins/vmap/jquery.vmap.min.js"></script>
+	<script src="../../gui/js/plugins/vmap/jquery.vmap.world.js"></script>
+	<script src="../../gui/js/plugins/vmap/jquery.vmap.sampledata.js"></script>
+	<!-- Bootbox -->
+	<script src="../../gui/js/plugins/bootbox/jquery.bootbox.js"></script>
+	<!-- Flot -->
+	<script src="../../gui/js/plugins/flot/jquery.flot.min.js"></script>
+	<script src="../../gui/js/plugins/flot/jquery.flot.bar.order.min.js"></script>
+	<script src="../../gui/js/plugins/flot/jquery.flot.pie.min.js"></script>
+	<script src="../../gui/js/plugins/flot/jquery.flot.resize.min.js"></script>
+	<!-- imagesLoaded -->
+	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<!-- PageGuide -->
+	<script src="../../gui/js/plugins/pageguide/jquery.pageguide.js"></script>
+	<!-- FullCalendar -->
+	<script src="../../gui/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+	<!-- Chosen -->
+	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
+	<!-- select2 -->
+	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<!-- icheck -->
+	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<!-- Datepicker -->
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<!-- fancybox -->
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<!-- TagsInput -->
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<!-- MultiSelect -->
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+
+	<!-- Theme framework -->
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/admin/item-admin.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container">
+			<div class="pull-left" style="padding-top: 4px; min-width: 200px;"><img src="../../mock/image/promo-logo.png" alt="" /></div>
+			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle sidebar"><i class="icon-reorder"></i></a>
+			<ul class='main-nav'>
+				<li>
+					<a href="#">
+						<span>Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Biz Social</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Internal social</a></li>
+					</ul>
+				</li>
+				<li class='active'>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Marketing</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Homepage admin</a></li>
+						<li><a href="#">Item admin</a></li>
+						<li><a href="#">Mass price updating</a></li>
+						<li><a href="#">Mass info updating</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Banners</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Workflow</a></li>
+						<li><a href="#">My surveys</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Customers</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Quotes</a></li>
+						<li><a href="#">Sale orders</a></li>
+						<li><a href="#">AR down invoices</a></li>
+						<li><a href="#">AR invoice</a></li>
+						<li><a href="#">AR credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Vendors</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Inquiries</a></li>
+						<li><a href="#">Puchuse orders</a></li>
+						<li><a href="#">AP down invoices</a></li>
+						<li><a href="#">AP invoices</a></li>
+						<li><a href="#">AP credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Finance</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Currency exchange</a></li>
+						<li><a href="#">Incoming payments</a></li>
+						<li><a href="#">Outgoing payments</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>HR</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Orginizaion chart</a></li>
+						<li><a href="#">Member profiles</a></li>
+						<li><a href="#">Permissions</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user">
+				<ul class="icon-nav">
+					<li class='dropdown colo'>
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-tint"></i></a>
+						<ul class="dropdown-menu pull-right theme-colors">
+							<li class="subtitle">
+								Theme colors
+							</li>
+							<li>
+								<span class='red'></span>
+								<span class='orange'></span>
+								<span class='green'></span>
+								<span class="brown"></span>
+								<span class="blue"></span>
+								<span class='lime'></span>
+								<span class="teal"></span>
+								<span class="purple"></span>
+								<span class="pink"></span>
+								<span class="magenta"></span>
+								<span class="grey"></span>
+								<span class="darkblue"></span>
+								<span class="lightred"></span>
+								<span class="lightgrey"></span>
+								<span class="satblue"></span>
+								<span class="satgreen"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-search"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings" style="padding: 15px 15px 0;">
+							<form class='form-horizontal'>
+								<div class="input-append">
+									<input type="text" name="search" placeholder="Type a company name">
+									<button type='submit' class='btn'><i class="icon-search"></i></button>
+								</div>
+							</form>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings">
+							<li><a href="#">Company profile</a></li>
+							<li><a href="#">Site theme</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="dropdown">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Harrison Fu <img src="../../mock/image/user/user-avatar.jpg" width="27" height="27" alt=""></a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="#">Edit profile</a>
+						</li>
+						<li>
+							<a href="#">Account settings</a>
+						</li>
+						<li>
+							<a href="#">Sign out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="content">
+		<div id="left">
+			<div style="padding: 25px 10px; text-align: center; background: #fff;">
+				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
+			</div>
+			<form action="#" method="GET" class='search-form'>
+				<div class="search-pane">
+					<input type="text" name="search" placeholder="Search items...">
+					<button type="submit"><i class="icon-search"></i></button>
+				</div>
+			</form>
+			<div class="subnav">
+				<div class="subnav-title">
+					<span>Item general</span>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">General info.</a>
+					</li>
+					<li>
+						<a href="#">Images</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<span>Custom options</span>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Decorations</a>
+					</li>
+					<li>
+						<a href="#">Accessories</a>
+					</li>
+					<li>
+						<a href="#">Packaging</a>
+					</li>
+					<li>
+						<a href="#">Turnaround</a>
+					</li>
+					<li>
+						<a href="item-manage-category.html"><i class="icon-cog"></i> Manage category</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<span>Item audiance</span>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Vendor page</a>
+					</li>
+					<li>
+						<a href="#">Distributor page</a>
+					</li>
+					<li>
+						<a href="#">End buyer page</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<span>Item acivties</span>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Vendor activities</a>
+					</li>
+					<li>
+						<a href="#">Distributor activities</a>
+					</li>
+					<li>
+						<a href="#">End buyer activities</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="subnav">
+				<div class="subnav-title">
+					<span>Item acivties</span>
+				</div>
+				<ul class="subnav-menu">
+					<li>
+						<a href="#">Item classifications</a>
+					</li>
+					<li>
+						<a href="#">Item tags</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>Item activities</h1>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Marketing</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Item admin</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Items</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">SJUSB0006</a>
+						</li>
+					</ul>
+					<div class="close-bread">
+						<a href="#"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box margin-top">
+							<div class="box-content">
+								<div class="row-fluid">
+									<div class="span3">
+										<img src="../../mock/image/250x250/p2.jpg" width="160" height="160" alt="" />
+									</div>
+									<div class="span8">
+										<div class="row-fluid">
+											<div class="span3">Item No.:</div>
+											<div class="span7">10-xxxxxxx</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Item Name:</div>
+											<div class="span7">Swivel usb flash drive</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">SKU:</div>
+											<div class="span7">SJUSB0006</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Item status:</div>
+											<div class="span7">Active</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Item type:</div>
+											<div class="span7">Normal item</div>
+										</div>
+										<div class="row-fluid">
+											<div class="span3">Display date:</div>
+											<div class="span7">09/25/2010 to 09/25/2015</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box">
+							<div class="box-title">
+								<h3><i class="icon-picture"></i>Activities</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini" rel='tooltip' title="Add activity"><i class="glyphicon-circle_plus"></i></a>
+								</div>
+							</div>
+							<div class="box-content nopadding">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-content">
+											<div class="left">
+												<div class="icon">
+													<i class="icon-picture"></i>
+												</div>
+												<div class="date">25. Apr</div>
+											</div>
+											<div class="activity">
+												<div class="user"><img src="../../mock/image/user/user-2.jpg" width="24" height="24" alt=""> <a href="#">John Edwards</a> <span>uploaded 3 new files</span></div>
+												<ul class="timeline-images">
+													<li>
+														<a href="#"><img src="../../mock/image/qualification-1.png" alt=""> <br>
+														Qualification 1
+														</a>
+													</li>
+													<li>
+														<a href="#"><img src="../../mock/image/qualification-2.png" alt=""> <br> 
+														Qualification 2</a>
+													</li>
+													<li>
+														<a href="#"><img src="../../mock/image/qualification-3.png" alt=""> <br> 
+															Qualification 3
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="line"></div>
+									</li>
+									<li>
+										<div class="timeline-content">
+											<div class="left">
+												<div class="icon green">
+													<i class="icon-comment"></i>
+												</div>
+												<div class="date">18. Apr</div>
+											</div>
+											<div class="activity">
+												<div class="user"><img src="../../mock/image/user/user-4.jpg" width="24" height="24" alt=""> <a href="#">Emily Shin</a> <span>added a new comment</span></div>
+												<p>
+													Lorem ipsum Fugiat magna velit consectetur qui in veniam cillum exercitation Ut occaecat Duis mollit. Lorem ipsum Dolore dolor Excepteur sunt amet officia officia sunt aliquip id occaecat officia.
+												</p>
+											</div>
+										</div>
+										<div class="line"></div>
+									</li>
+									<li>
+										<div class="timeline-content">
+											<div class="left">
+												<div class="icon lightred">
+													<i class="icon-facetime-video"></i>
+												</div>
+												<div class="date">17. Apr</div>
+											</div>
+											<div class="activity">
+												<div class="user"><img src="../../mock/image/user/user-3.jpg" width="24" height="24" alt=""> <a href="#">James Blunt</a> <span>shared a video</span></div>
+												<p>
+													<iframe width="640" height="390" src="http://www.youtube.com/embed/zoKj7TdJk98" frameborder="0" allowfullscreen style="max-width:100%;"></iframe>
+												</p>
+											</div>
+										</div>
+										<div class="line"></div>
+									</li>
+									<li>
+										<div class="timeline-content">
+											<div class="left">
+												<div class="icon orange">
+													<i class="icon-bullhorn"></i>
+												</div>
+												<div class="date">15. Apr</div>
+											</div>
+											<div class="activity">
+												<div class="user"><img src="../../mock/image/user/user-6.jpg" width="24" height="24" alt=""> <a href="#">Jeff Bezos</a> <span>added a new article</span></div>
+												<p>
+													Lorem ipsum Ad ullamco elit reprehenderit veniam aute minim dolore ullamco incididunt ea do. Lorem ipsum Reprehenderit do consectetur dolore do fugiat proident incididunt consequat minim ullamco. Lorem ipsum Proident laboris dolore in aliqua ut magna minim irure ut proident. Lorem ipsum Anim dolore incididunt aliquip do irure aute reprehenderit reprehenderit enim ut. Lorem ipsum Reprehenderit commodo anim laboris ex cupidatat dolor deserunt dolore exercitation Ut et culpa.
+												</p>
+												<p>Lorem ipsum Sit aliqua eu dolore laboris non consectetur sit qui laboris adipisicing nisi exercitation. Lorem ipsum Incididunt minim irure sit cillum in consequat voluptate est labore enim ut. Lorem ipsum Duis officia proident Ut cillum occaecat magna ad ad incididunt. Lorem ipsum Ullamco eiusmod aute sed id eiusmod in est id do deserunt quis. Lorem ipsum Quis proident Excepteur tempor commodo consectetur dolor ex cillum proident id. Lorem ipsum Veniam esse laborum ut in id officia velit voluptate aliquip deserunt.</p>
+											</div>
+										</div>
+										<div class="line"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
+	</div>
+		
+</body>
+
+</html>
+
