@@ -163,6 +163,9 @@
   border: 1px dotted #ccc;
   background: #f6f6f6;
 }
+.modal-body {
+  max-height: 600px;
+}
 .image-items > li.image-item {
   padding: 2px;
   margin-bottom: 15px;

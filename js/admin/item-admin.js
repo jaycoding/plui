@@ -10,7 +10,7 @@ $(function(){
 	if ($('#btn-add-main-image').length > 0) {
 		$('#btn-add-main-image').fancybox({
 			width: 640,
-			height: 600,
+			height: 495,
 			href: "popup-add-image.html"
 		});
 	}
@@ -18,7 +18,7 @@ $(function(){
 	if ($('#btn-add-imprint-image').length > 0) {
 		$('#btn-add-imprint-image').fancybox({
 			width: 640,
-			height: 600,
+			height: 495,
 			href: "popup-add-image.html"
 		});
 	}
