@@ -1,3 +1,6 @@
+/* Blue 
+===================================*/
+
 .font-blue {
   color: #368ee0;
 }
@@ -215,7 +218,13 @@ ul > li.blue, .label-blue {
 .theme-blue #main .box.box-bordered.box-color .box-content {
   border-color: #368ee0;
 }
+.theme-blue .image-items > li:hover,
+.theme-blue .image-items > li:hover .extended {
+  background: #368ee0;
+}
 
+/* Orange 
+===================================*/
 .font-orange {
   color: #f8a31f;
 }
@@ -433,6 +442,15 @@ ul > li.orange, .label-orange {
 .theme-orange #main .box.box-bordered.box-color .box-content {
   border-color: #f8a31f;
 }
+.theme-orange .image-items > li:hover,
+.theme-orange .image-items > li:hover .extended {
+  background: #f8a31f;
+}
+
+
+
+/* Red 
+===================================*/
 
 .font-red {
   color: #e51400;
@@ -651,6 +669,13 @@ ul > li.red, .label-red {
 .theme-red #main .box.box-bordered.box-color .box-content {
   border-color: #e51400;
 }
+.theme-red .image-items > li:hover,
+.theme-red .image-items > li:hover .extended {
+  background: #e51400;
+}
+
+/* Green 
+===================================*/
 
 .font-green {
   color: #339933;
@@ -869,6 +894,13 @@ ul > li.green, .label-green {
 .theme-green #main .box.box-bordered.box-color .box-content {
   border-color: #339933;
 }
+.theme-green .image-items > li:hover,
+.theme-green .image-items > li:hover .extended {
+  background: #339933;
+}
+
+/* Lime 
+===================================*/
 
 .font-lime {
   color: #8cbf26;
@@ -1087,6 +1119,13 @@ ul > li.lime, .label-lime {
 .theme-lime #main .box.box-bordered.box-color .box-content {
   border-color: #8cbf26;
 }
+.theme-lime .image-items > li:hover,
+.theme-lime .image-items > li:hover .extended {
+  background: #8cbf26;
+}
+
+/* Teal 
+===================================*/
 
 .font-teal {
   color: #00aba9;
@@ -1306,6 +1345,10 @@ ul > li.teal, .label-teal {
   border-color: #00aba9;
 }
 
+
+/* Purple 
+===================================*/
+
 .font-purple {
   color: #ff0097;
 }
@@ -1524,6 +1567,10 @@ ul > li.purple, .label-purple {
   border-color: #ff0097;
 }
 
+
+/* Brown 
+===================================*/
+
 .font-brown {
   color: #a05000;
 }
@@ -1741,6 +1788,11 @@ ul > li.brown, .label-brown {
 .theme-brown #main .box.box-bordered.box-color .box-content {
   border-color: #a05000;
 }
+
+
+
+/* Pink 
+===================================*/
 
 .font-pink {
   color: #e671b8;
@@ -1963,6 +2015,10 @@ ul > li.pink, .label-pink {
   border-color: #e671b8;
 }
 
+
+/* Magenta 
+===================================*/
+
 .font-magenta {
   color: #a200ff;
 }
@@ -2181,6 +2237,10 @@ ul > li.magenta, .label-magenta {
   border-color: #a200ff;
 }
 
+
+/* Grey 
+===================================*/
+
 .font-grey {
   color: #333333;
 }
@@ -2398,6 +2458,14 @@ ul > li.grey, .label-grey {
 .theme-grey #main .box.box-bordered.box-color .box-content {
   border-color: #333333;
 }
+.theme-grey .image-items > li:hover,
+.theme-grey .image-items > li:hover .extended {
+  background: #333333;
+}
+
+
+/* Darkblue 
+===================================*/
 
 .font-darkblue {
   color: #204e81;
@@ -2616,6 +2684,13 @@ ul > li.darkblue, .label-darkblue {
 .theme-darkblue #main .box.box-bordered.box-color .box-content {
   border-color: #204e81;
 }
+.theme-darkblue .image-items > li:hover,
+.theme-darkblue .image-items > li:hover .extended {
+  background: #204e81;
+}
+
+/* Light Red 
+===================================*/
 
 .font-lightred {
   color: #e63a3a;
@@ -2834,6 +2909,14 @@ ul > li.lightred, .label-lightred {
 .theme-lightred #main .box.box-bordered.box-color .box-content {
   border-color: #e63a3a;
 }
+.theme-lightred .image-items > li:hover,
+.theme-lightred .image-items > li:hover .extended {
+  background: #e63a3a;
+}
+
+
+/* Light grey 
+===================================*/
 
 .font-lightgrey {
   color: #666666;
@@ -3052,6 +3135,14 @@ ul > li.lightgrey, .label-lightgrey {
 .theme-lightgrey #main .box.box-bordered.box-color .box-content {
   border-color: #666666;
 }
+.theme-lightgrey .image-items > li:hover,
+.theme-lightgrey .image-items > li:hover .extended {
+  background: #666666;
+}
+
+
+/* Satblue 
+===================================*/
 
 .font-satblue {
   color: #2c5e7b;
@@ -3270,6 +3361,14 @@ ul > li.satblue, .label-satblue {
 .theme-satblue #main .box.box-bordered.box-color .box-content {
   border-color: #2c5e7b;
 }
+.theme-satblue .image-items > li:hover,
+.theme-satblue .image-items > li:hover .extended {
+  background: #2c5e7b;
+}
+
+
+/* Satgreen 
+===================================*/
 
 .font-satgreen {
   color: #56af45;
@@ -3488,6 +3587,13 @@ ul > li.satgreen, .label-satgreen {
 .theme-satgreen #main .box.box-bordered.box-color .box-content {
   border-color: #56af45;
 }
+.theme-satgreen .image-items > li:hover,
+.theme-satgreen .image-items > li:hover .extended {
+  background: #56af45;
+}
+
+/* Lighter grey
+===================================*/
 
 .font-grey-3 {
   color: #eeeeee;
@@ -3709,6 +3815,11 @@ ul > li.grey-3, .label-grey-3 {
 .theme-grey-3 #main .box.box-bordered.box-color .box-content {
   border-color: #eeeeee;
 }
+
+
+
+/* Light grey 
+===================================*/
 
 .font-grey-4 {
   color: #999999;
