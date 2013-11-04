@@ -903,19 +903,19 @@ ul > li.green, .label-green {
 ===================================*/
 
 .font-lime {
-  color: #8cbf26;
+  color: #8D8B00;
 }
 
 ul > li.lime, .label-lime {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 
 .progress .bar.bar-lime {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 
 .pricing-tables .pricing.lime > li.head {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .pricing-tables .pricing.lime > li.head .info {
   background: #9cd42a;
@@ -925,7 +925,7 @@ ul > li.lime, .label-lime {
 }
 
 .btn.btn-lime {
-  background: #8cbf26;
+  background: #8D8B00;
   color: #fff !important;
 }
 .btn.btn-lime:hover {
@@ -933,76 +933,76 @@ ul > li.lime, .label-lime {
 }
 
 .box.box-color.lime .box-title {
-  background: #8cbf26 !important;
+  background: #8D8B00 !important;
 }
 .box.box-color.lime .box-title .actions > a:hover {
-  color: #8cbf26;
+  color: #8D8B00;
 }
 .box.box-color.lime .form-wizard .wizard-steps li.active .single-step .title {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .box.box-color.lime .btn.btn-primary {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .box.box-bordered.box-color.lime .box-title {
-  border-color: #8cbf26 !important;
+  border-color: #8D8B00 !important;
 }
 .box.box-bordered.box-color.lime .box-content {
-  border-color: #8cbf26 !important;
+  border-color: #8D8B00 !important;
 }
 .box.box-bordered.box-color.lime .slimScrollDiv {
-  border-bottom: 2px solid #8cbf26;
+  border-bottom: 2px solid #8D8B00;
 }
 
 .timeline > li .timeline-content .left .icon.lime {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 
 .theme-lime .mobile-sidebar-toggle {
   color: #fff;
 }
 .theme-lime #navigation .dropdown-menu {
-  border-color: #8cbf26;
+  border-color: #8D8B00;
 }
 .theme-lime #navigation .dropdown-menu > li.dropdown-submenu .dropdown-menu {
-  border-top: 2px solid #8cbf26;
+  border-top: 2px solid #8D8B00;
 }
 .theme-lime #navigation .dropdown-menu > li.dropdown-submenu:hover > a, .theme-lime #navigation .dropdown-menu > li.dropdown-submenu:focus > a {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime #navigation .dropdown-menu > li > a:hover {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .datepicker.datepicker-dropdown .datepicker-days .active, .theme-lime .datepicker.datepicker-dropdown .datepicker-years .active, .theme-lime .datepicker.datepicker-dropdown .datepicker-months .active {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .datepicker.datepicker-dropdown .datepicker-days .active:hover, .theme-lime .datepicker.datepicker-dropdown .datepicker-years .active:hover, .theme-lime .datepicker.datepicker-dropdown .datepicker-months .active:hover {
   background: #6d941e;
 }
 .theme-lime .form-wizard .wizard-steps li.active .single-step .title {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .btn.btn-primary {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime.login {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime a {
-  color: #8cbf26;
+  color: #8D8B00;
 }
 .theme-lime .btn {
   color: #333;
 }
 .theme-lime .btn.btn-primary {
-  background: #8cbf26;
+  background: #8D8B00;
   color: #fff;
 }
 .theme-lime .btn.btn-inverse, .theme-lime .btn.btn-success, .theme-lime .btn.btn-danger {
   color: #fff;
 }
 .theme-lime.locked {
-  background: #8cbf26 !important;
+  background: #8D8B00 !important;
 }
 .theme-lime.locked .pull-left a {
   background: #5d7f19;
@@ -1011,13 +1011,13 @@ ul > li.lime, .label-lime {
   background: #3e5511;
 }
 .theme-lime #navigation {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime #navigation .toggle-mobile {
   background: #5d7f19;
 }
 .theme-lime #navigation .mobile-nav.open {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime #navigation .mobile-nav.open > li.active > a {
   background: #3e5511;
@@ -1053,16 +1053,16 @@ ul > li.lime, .label-lime {
   background: #5d7f19;
 }
 .theme-lime #navigation .dropdown-menu {
-  border-color: #8cbf26;
+  border-color: #8D8B00;
 }
 .theme-lime #navigation .dropdown-menu > li > a:hover {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .search-form .search-pane button[type="submit"] {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .messages > li.insert .submit button {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .messages > li.right .name {
   color: #0f1504;
@@ -1080,48 +1080,48 @@ ul > li.lime, .label-lime {
   border-left: 7px solid #e1f2bf;
 }
 .theme-lime .letterbox .letter > li.active {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .calendar .fc-content .fc-event .fc-event-inner {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .calendar .fc-button.fc-state-active {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .calendar .fc-button.fc-state-active:hover {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .table.table-user tr.alpha td.alpha-val span {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .tagsinput#textfield_tagsinput .tag, .theme-lime .ms-container .multi-custom-header, .theme-lime .slider .ui-slider-handle, .theme-lime .form-wizard .wizard-steps li.active .single-step .title, .theme-lime .user-list h4, .theme-lime .nav.nav-pills > li.active > a, .theme-lime .nav.nav-list > li.active > a, .theme-lime .table.table-colored-header thead th, .theme-lime .table.table-colored-header thead td, .theme-lime .dataTables_wrapper .dataTables_paginate > span > a.paginate_active, .theme-lime .elfinder-navbar .ui-state-active, .theme-lime .pagination.pagination-custom li.active a:hover, .theme-lime .pagination.pagination-custom li.active a {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime .elfinder-navbar .ui-state-active {
-  border-color: #8cbf26;
+  border-color: #8D8B00;
 }
 .theme-lime #main .box .box-title .tabs > li.active > a {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime #main .box.box-color .box-title {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 .theme-lime #main .box.box-color .box-title .tabs > li.active > a {
   background: #fff;
-  color: #8cbf26;
+  color: #8D8B00;
 }
 .theme-lime #main .box.box-color .box-title .tabs > li > a:hover {
-  color: #8cbf26;
+  color: #8D8B00;
 }
 .theme-lime #main .box.box-bordered.box-color .box-title {
-  border-color: #8cbf26;
+  border-color: #8D8B00;
 }
 .theme-lime #main .box.box-bordered.box-color .box-content {
-  border-color: #8cbf26;
+  border-color: #8D8B00;
 }
 .theme-lime .image-items > li:hover,
 .theme-lime .image-items > li:hover .extended {
-  background: #8cbf26;
+  background: #8D8B00;
 }
 
 /* Teal 
