@@ -162,8 +162,11 @@ $(document).ready(function() {
 
 	// datepicker
 	if($('.datepick').length > 0){
-		$('.datepick').datepicker();
+		$('.datepick').datepicker().on('changeDate', function(ev){
+		    $(this).datepicker('hide');
+		  });
 	}
+	
 	// timepicker
 	if($('.timepick').length > 0){
 		$('.timepick').timepicker({
