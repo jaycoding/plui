@@ -306,7 +306,9 @@
   margin-right: 5px;
 }
 .item-categories li .category-actions {
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
   padding: 10px 10px 0 10px;
 }
 .item-categories li .category-actions > a {

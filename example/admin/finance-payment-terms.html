@@ -34,7 +34,7 @@
 	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
 	<script src="../../gui/js/init.js"></script>
 	<script src="../../gui/js/application.js"></script>
-	<script src="../../js/admin/item-admin.js"></script>
+	<script src="../../js/admin/finance.js"></script>
 	
 	<!--[if lte IE 9]>
 		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
@@ -384,10 +384,10 @@
 							<div class="box-title">
 								<h3>
 									<i class="icon-calendar"></i>
-									Demo ready (02/28/2013)
+									Item Schedule
 								</h3>
 								<div class="actions">
-									<a href="item-list-schedule.html" class="btn btn-mini"><i class="icon-arrow-left"></i> Back to all</a>
+									
 								</div>
 							</div>
 							<div class="box-content">
@@ -406,6 +406,8 @@
 												<a href="item-list.html" class="btn" rel="tooltip" title="Grid view"><i class="icon-th"></i></a>
 												<a href="#" class="btn" rel="tooltip" title="List view"><i class="icon-th-list"></i></a>
 												<a href="item-list-schedule-view.html" class="btn" rel="tooltip" title="Schedule view"><i class="icon-calendar"></i></a>
+											</div>
+											<div class="btn-group">
 											</div>
 										</div>
 									</div>
@@ -441,20 +443,48 @@
 										</div>
 									</div>
 								</div>
-								<div class="highlight-toolbar row-fluid">
-									<div class="span1">
-										<div class="check-line">
-											<input type="checkbox" class='icheck-me' id="select-all" data-skin="minimal"> <label class='inline' for="select-all">All</label>
-										</div>
-									</div>
-									<div class="span8">
-										<a href="#schedule-assign" data-toggle="modal" class="btn btn-mini"><i class="icon-user"></i> Assign</a>
-										<button class="btn btn-mini"><i class="icon-ok-sign"></i> Launch</button>
+								<div class="row-fluid">
+									<div class="alert">
+										<button type="button" class="close" data-dismiss="alert">&times;</button>
+										All 50 item on this page are selected. <a href="#">Select all 10,167 items</a>
 									</div>
 								</div>
 								<div class="row-fluid">
 									<table class="table table-hover table-nomargin">
 										<tbody>
+											<tr>
+												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
+												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
+												<td>
+													<strong>SJUSB0006</strong> <br>
+													<span class="gray">Swivel USB Flash Drive</span>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Demo ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Pricing ready <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Prelaunch meeting <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Revision <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+												<td>
+													<a href="item-list-schedule-tagview.html">Launch <br>
+														<span class="gray">02/28/2013</span>
+													</a>
+												</td>
+											</tr>
 											<tr>
 												<td width="3%"><input type="checkbox" class='icheck-me' id="c28" data-skin="minimal"></td>
 												<td width="8%"><img src="../../mock/image/250x250/p1.jpg" widht="40" height="40" alt="" /></td>
@@ -749,48 +779,6 @@
 		</div>
 
 		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
-	</div>
-
-
-	<div id="schedule-assign" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h4 id="myModalLabel">Assign</h4>
-		</div>
-		<form action="#" class='form-horizontal form-bordered'>
-			<div class="modal-body nopadding">
-				<div class="control-group">
-					<label for="" class="control-label"></label>
-					<div class="controls">
-						<div class="input-xlarge">
-							<select name="select" id="select" class='chosen-select'>
-								<option value="1">Vendor page</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="control-group">
-					<label for="" class="control-label">Assign to</label>
-					<div class="controls">
-
-						<div class="input-xlarge">
-							<select name="a" id="a" multiple="multiple" class="chosen-select input-xlarge">
-								<option value="1">Harrison Fu</option>
-								<option value="2">Michael Beets</option>
-								<option value="2">Jack Chow</option>
-							</select>
-						</div>
-						<p style="min-height: 100px;"></p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="modal-footer">
-				<input type="submit" class="btn btn-primary" value="Assign"> 
-				<button class="btn">Cancel</button>
-			</div>
-		</form>
-
 	</div>
 		
 </body>

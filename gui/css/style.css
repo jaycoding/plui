@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);*/
 /*
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
@@ -21,6 +21,32 @@
  *  Twitter: http://twitter.com/fortaweso_me
  *  Work: Lead Product Designer @ http://kyruus.com
  */
+
+ @font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url('../font/OpenSans-Regular-webfont.eot');
+    src: url('../font/penSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../font/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../font/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-Light-webfont.eot');
+    src: url('../font/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/OpenSans-Light-webfont.woff') format('woff'),
+         url('../font/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../font/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
 @font-face {
   font-family: 'FontAwesome';
   src: url("../font/fontawesome-webfont.eot?v=3.0.1");
@@ -7373,19 +7399,19 @@ div.DTS div.dataTables_scrollBody {
   cursor: pointer;
 }
 .cluster.cluster-1 {
-  background: url(http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/images/m1.png);
+  background: url(img/m1.png);
   width: 53px;
   height: 52px;
   line-height: 52px;
 }
 .cluster.cluster-2 {
-  background: url(http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/images/m2.png);
+  background: url(img/m2.png);
   width: 56px;
   height: 55px;
   line-height: 55px;
 }
 .cluster.cluster-5 {
-  background: url(http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/images/m3.png);
+  background: url(img/m3.png);
   width: 66px;
   height: 65px;
   line-height: 65px;
