@@ -9633,6 +9633,7 @@ i.icon-right-m {
 }
 .product-viewer.etalage {
   height: auto!important;
+  min-height: 230px;
 }
 .product-viewer.etalage .etalage_zoom_area {
   background-color: #fff;
