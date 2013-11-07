@@ -213,9 +213,6 @@
 					<div class="pull-left">
 						<h1>Payment Terms</h1>
 					</div>
-					<div class="pull-right" style="padding-top: 25px;">
-						<a href="finance-payment-terms-add.html" class='btn btn-success'><i class="icon-plus"></i> Add Payment Term</a>
-					</div>
 				</div>
 				<div class="breadcrumbs">
 					<ul>
@@ -244,21 +241,22 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="icon-group"></i>
+									"30% down, 80% COD" {Customers}
+								</h3>
+								<div class="actions">
+									<a href="finance-payment-terms-bp.html" class="btn btn-mini"><i class="icon-arrow-left"></i> Back to all</a>
+								</div>
+							</div>
 							<div class="box-content nopadding">
 								<div class="highlight-toolbar">
 									<div class="pull-left">
 										<div class="btn-toolbar">
 											<div class="btn-group">
-												<select name="sort" id="terms" class='chosen-select input-medium' data-placeholder="Type" data-nosearch="true">
-													<option value=""></option>
-													<option value="sort-1">Customer Terms</option>
-													<option value="sort-2">Vendor Terms</option>
-												</select>
-											</div>
-											<div class="btn-group">
 												<select name="sort" id="status" class='chosen-select input-medium' data-placeholder="Status" data-nosearch="true">
-													<option value=""></option>
-													<option value="sort-1">Active</option>
+													<option value="sort-1" selected>Active</option>
 													<option value="sort-2">On hold</option>
 												</select>
 											</div>
@@ -283,7 +281,7 @@
 									<div class="pull-left">
 										<div class="btn-toolbar">
 											<div class="btn-group text">
-												Showing <strong>1</strong> to <strong>10</strong> of 25 items
+												Showing <strong>1</strong> to <strong>10</strong> of 10,167 items
 											</div>
 										</div>
 									</div>
@@ -297,27 +295,43 @@
 									</div>
 								</div>
 								<div class="row-fluid">
+									<div class="alert">
+										<button type="button" class="close" data-dismiss="alert">&times;</button>
+										All 50 customers on this page are selected. <a href="#">Select all 10,167 customers</a>
+									</div>
+								</div>
+								<div class="highlight-toolbar row-fluid">
+									<div class="span1">
+										<div class="check-line">
+											<input type="checkbox" class='icheck-me' id="select-all" data-skin="minimal"> <label class='inline' for="select-all">All</label>
+										</div>
+									</div>
+									<div class="span8">
+										<a href="#change-term" data-toggle="modal" class="btn btn-mini">Change term</a>
+									</div>
+								</div>
+								<div class="row-fluid">
 									<table class="table table-hover table-nomargin">
 										<tbody>
 											<tr>
+												<td class="span1">
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
 												<td>
-													<strong>30% down, 80 COD</strong>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
 												</td>
 												<td>
 													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
 												</td>
 												<td class="span1">
 													<div class="btn-group">
 														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
 														<ul class="dropdown-menu">
 															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
 														</ul>
 													</div>
@@ -325,23 +339,23 @@
 											</tr>
 											<tr>
 												<td>
-													<strong>30% down, 80 COD</strong>
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
 												</td>
 												<td>
 													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
 												</td>
 												<td class="span1">
 													<div class="btn-group">
 														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
 														<ul class="dropdown-menu">
 															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
 														</ul>
 													</div>
@@ -349,23 +363,47 @@
 											</tr>
 											<tr>
 												<td>
-													<strong>30% down, 80 COD</strong>
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
 												</td>
 												<td>
 													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
 												</td>
 												<td class="span1">
 													<div class="btn-group">
 														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
 														<ul class="dropdown-menu">
 															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="span1">
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
+												</td>
+												<td>
+													<span>Active</span>
+												</td>
+												<td class="span1">
+													<div class="btn-group">
+														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
+														<ul class="dropdown-menu">
 															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
 														</ul>
 													</div>
@@ -373,23 +411,23 @@
 											</tr>
 											<tr>
 												<td>
-													<strong>30% down, 80 COD</strong>
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
 												</td>
 												<td>
 													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
 												</td>
 												<td class="span1">
 													<div class="btn-group">
 														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
 														<ul class="dropdown-menu">
 															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
 														</ul>
 													</div>
@@ -397,23 +435,47 @@
 											</tr>
 											<tr>
 												<td>
-													<strong>30% down, 80 COD</strong>
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
 												</td>
 												<td>
 													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
 												</td>
 												<td class="span1">
 													<div class="btn-group">
 														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
 														<ul class="dropdown-menu">
 															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="span1">
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
+												</td>
+												<td>
+													<span>Active</span>
+												</td>
+												<td class="span1">
+													<div class="btn-group">
+														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
+														<ul class="dropdown-menu">
 															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
 														</ul>
 													</div>
@@ -421,23 +483,23 @@
 											</tr>
 											<tr>
 												<td>
-													<strong>30% down, 80 COD</strong>
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
 												</td>
 												<td>
 													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
 												</td>
 												<td class="span1">
 													<div class="btn-group">
 														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
 														<ul class="dropdown-menu">
 															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
 														</ul>
 													</div>
@@ -445,119 +507,23 @@
 											</tr>
 											<tr>
 												<td>
-													<strong>30% down, 80 COD</strong>
+													<input type="checkbox" class='icheck-me' id="c28" data-skin="minimal">
+												</td>
+												<td>
+													<strong>No.1 Sourcing</strong>
+												</td>
+												<td>
+													A
 												</td>
 												<td>
 													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
 												</td>
 												<td class="span1">
 													<div class="btn-group">
 														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
 														<ul class="dropdown-menu">
 															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
-															</li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<strong>30% down, 80 COD</strong>
-												</td>
-												<td>
-													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
-												</td>
-												<td class="span1">
-													<div class="btn-group">
-														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
-														<ul class="dropdown-menu">
-															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
-															</li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<strong>30% down, 80 COD</strong>
-												</td>
-												<td>
-													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
-												</td>
-												<td class="span1">
-													<div class="btn-group">
-														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
-														<ul class="dropdown-menu">
-															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
-															</li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<strong>30% down, 80 COD</strong>
-												</td>
-												<td>
-													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
-												</td>
-												<td class="span1">
-													<div class="btn-group">
-														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
-														<ul class="dropdown-menu">
-															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
-															</li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<strong>30% down, 80 COD</strong>
-												</td>
-												<td>
-													<span>Active</span>
-												</td>
-												<td>
-													<a href="finance-payment-terms-bp.html">Related {customer}</a>
-												</td>
-												<td class="span1">
-													<div class="btn-group">
-														<a href="#" data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></a>
-														<ul class="dropdown-menu">
-															<li>
-																<a href="finance-payment-terms-add.html"><i class="icon-edit"></i> Edit</a>
-															</li>
-															<li>
-																<a href="javascript:void(0)"><i class="icon-trash"></i> Delete</a>
+																<a href="#change-term" data-toggle="modal">Change term</a>
 															</li>
 														</ul>
 													</div>
@@ -592,6 +558,42 @@
 		</div>
 
 		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
+	</div>
+
+	<div id="change-term" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h4 id="myModalLabel">Change Term</h4>
+		</div>
+		<form action="#" class='form-horizontal form-bordered'>
+			<div class="modal-body nopadding">
+				<div class="control-group">
+					<label for="" class="control-label">From</label>
+					<div class="controls">
+						30% down, 70% upon shiping
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="" class="control-label">To</label>
+					<div class="controls">
+						<div class="input-xlarge">
+							<select name="select" id="select-terms" class='chosen-select'>
+								<option value="1">30% down, 70% upon shiping</option>
+								<option value="1">50% down, 40% upon shiping</option>
+								<option value="1">60% down, 20% upon shiping</option>
+							</select>
+						</div>
+						<p style="min-height: 100px;"></p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-primary" value="Save"> 
+				<button class="btn">Cancel</button>
+			</div>
+		</form>
+
 	</div>
 		
 </body>
