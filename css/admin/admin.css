@@ -220,6 +220,7 @@
 }
 .image-items > li.image-item {
   padding: 2px;
+  min-height: 200px;
   margin-bottom: 15px;
 }
 .image-items > li.image-item .btn-select {
@@ -227,6 +228,12 @@
 }
 .image-items > li.image-item .btn-unselect {
   display: none;
+}
+.image-items > li.image-item .details {
+  padding: 5px;
+}
+.image-items > li.image-item .name {
+  font-size: 14px!important;
 }
 .image-items > li.image-item.selected {
   background: #ccc;
