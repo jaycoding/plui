@@ -9677,10 +9677,10 @@ i.icon-right-m {
 .product-viewer.etalage.product-viewer-landscape.rect .etalage_small_thumbs {
   margin-left: 450px!important;
 }
-.product-viewer .etalage_small_thumbs > ul > li:first-child {
+.product-viewer .etalage_small_thumbs_overflow > ul > li:first-child {
   display: none;
 }
-.product-viewer .etalage_small_thumbs > ul > li:last-child {
+.product-viewer .etalage_small_thumbs_overflow > ul > li:last-child {
   display: none;
 }
 .product-side {
