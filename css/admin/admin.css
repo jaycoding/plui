@@ -4,6 +4,21 @@
 .row-fluid .break-line {
   margin-left: 0!important;
 }
+.bold {
+  font-weight: bold;
+}
+.tcenter,
+.table td.center {
+  text-align: center;
+}
+.tright,
+.table td.tright {
+  text-align: right;
+}
+.tleft,
+.table td.tleft {
+  text-align: left;
+}
 #left {
   background: none;
 }
