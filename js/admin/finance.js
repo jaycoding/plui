@@ -183,7 +183,6 @@ $(function(){
 			$group = $me.closest(".dropdown-menu-group");
 
 		if ($group.hasClass("group-radio")) {
-			console.log(0);
 			$me.addClass("selected").siblings().removeClass("selected");
 		} else if ($group.hasClass("group-checkbox")) {
 			if ($me.hasClass("selected")) {

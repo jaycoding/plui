@@ -90,7 +90,7 @@ $(function(){
 			$section = $me.closest(".order-form-section");
 		$section.addClass("readonly");
 		$section.find("input, textarea, select").attr("disabled", "disabled");
-		console.log($section.find(".for-jobs input:not(:checked)").parent("label"));
+		//console.log($section.find(".for-jobs input:not(:checked)").parent("label"));
         $section.find(".for-jobs input:not(:checked)").parent("label").hide(0);
         $section.find(".upload-thumbnails, .upload-text-links").addClass("readonly");
 	});

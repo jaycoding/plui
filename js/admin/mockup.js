@@ -17,7 +17,6 @@ $(function(){
 		var $me = $(this),
 			$terms = $me.parent().parent().next('.section-terms');
 		$terms.removeClass("none");
-		console.log($terms);
 	});
 
 	$('.section-terms .btn-close').bind('click', function(){
