@@ -1,0 +1,49 @@
+.none {
+  display: none;
+}
+.row-fluid .break-line {
+  margin-left: 0!important;
+}
+.bold {
+  font-weight: bold;
+}
+.tcenter,
+.table td.center {
+  text-align: center;
+}
+.tright,
+.table td.tright {
+  text-align: right;
+}
+.tleft,
+.table td.tleft {
+  text-align: left;
+}
+.header {
+  clear: both;
+}
+.header .header-main {
+  width: 1002px;
+  margin: 0 auto;
+}
+.navi {
+  clear: both;
+}
+.navi .navi-main {
+  width: 1002px;
+  margin: 0 auto;
+}
+.body {
+  clear: both;
+}
+.body .body-main {
+  width: 1002px;
+  margin: 0 auto;
+}
+.footer {
+  clear: both;
+}
+.footer .footer-main {
+  width: 1002px;
+  margin: 0 auto;
+}

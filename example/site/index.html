@@ -1,79 +1,420 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="../../css/site/main.css" media="all">
-		<script type="text/javascript">less = {}; less.env = 'development';</script>
-		<script type="text/javascript" src="../../js/utils/less/1.3.0/less.min.js"></script>
-		<script type="text/javascript" src="../../js/lib/jquery/1.8.0/jquery.min.js"></script>
-		<script type="text/javascript" src="../../js/utils/bootstrap/2.1.0/bootstrap.js"></script>
-		<script type="text/javascript" src="../../js/site/main.js"></script>
-		<!--[if lt IE 9]>
-		<script src="../../js/utils/html5/3.0/html5.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="page">
-				<!-- Header Start -->
-				<header class="header cf">
-					<div class="header-logo"><img src="../../img/icons/logo-sunjoy.png" alt="" /></div>
-					<div class="header-user">
-						Welcome! <a href="#">Sign In</a> | <a href="#">Register</a>
-					</div>
-					<div class="header-share">
-						<a href="#"><img alt="" src="../../img/icons/hd-ico-facebook.png"></a>
-				    	<a href="#"><img alt="" src="../../img/icons/hd-ico-twitter.png"></a>
-					</div>
-				</header>
-				<!-- Header End -->
-				
-				<!-- Navigation Start -->
-				<nav class="nav cf">
-				  	<div class="nav-l"></div>
-				  	<div class="nav-c">
-				    	<ul class="cf">
-				      		<li><a href="#">Home</a></li>
-				      		<li class="active"><a href="#">Products</a></li>
-				      		<li><a href="#">Specials</a></li>
-				      		<li><a href="#">eFlyers</a></li>
-				      		<li><a href="#">News</a></li>
-				      		<li></li>
-				    	</ul>
-				    	<div class="nav-search">
-				      		<input type="text" placeholder="sku, keyword or name" />
-				      		<div class="nav-search-go"></div>
-				    	</div>
-				  	</div>
-				  	<div class="nav-r"></div>
-				</nav>
-				<!-- Navigation End -->
-				
-				<div class="position">
-					
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../gui/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../../gui/css/style.css">
+	<link rel="stylesheet" href="../../gui/css/themes.css">
+	<link rel="stylesheet" href="../../css/site/site.css">
+
+	<!-- JS -->
+	<script src="../../gui/js/jquery.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../../gui/js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<script src="../../gui/js/bootstrap.min.js"></script>
+	<script src="../../gui/js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/site/site.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="topbar">
+			<div class="topbar-main cf">
+				<div class="pull-left">
+					Your value customizer!
 				</div>
-				
-				<div class="body cf">
-					
+				<div class="pull-right">
+					<span class="gapped"><i class="icon-phone"></i> 1-820-900-8800</span>
+					<a href="#" class="gapped"><i class="icon-facebook-sign"></i></a>
+					<a href="#" class="gapped"><i class="icon-twitter"></i></a> 
 				</div>
-				
-				<footer class="footer cf">
-				  	<div class="footer-copyright">
-				    	<p>Power by no1sourcing.com <a href="#">Terms &amp; Conditions</a></p>
-				    	<p>Use of this website constitutes acceptance of the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>.</p>
-				    	<p>Copyright 2010, PromoLinked, Inc. All rights reserved.</p>
-				  	</div>
-				  	<div class="footer-links">
-				  		<ul>
-					    	<li><img src="../../mock/image/icon/ft-link1.png" alt="" /></li>
-					    	<li><img src="../../mock/image/icon/ft-link2.png" alt="" /></li>
-					    	<li><img src="../../mock/image/icon/ft-link3.png" alt="" /></li>
-					    	<li><img src="../../mock/image/icon/ft-link4.png" alt="" /></li>
-					  	</ul>
-				  	</div>
-				</footer>
 			</div>
 		</div>
-	</body>
+		<div class="header">
+			<div class="header-main">
+				<div class="row-fluid">
+					<div class="span3">
+						<div class="header-logo">
+							<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
+						</div>
+					</div>
+					<div class="span6">
+						<div class="header-search">
+							<form class='form-horizontal'>
+								<div class="input-append">
+									<input type="text" class="input-xlarge" name="search" placeholder="Search all products, sku or keywords...">
+									<button type='submit' class='btn'><i class="icon-search"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="span3 tright">
+						<h5><a href="#" class="gapped"><i class="icon-shopping-cart"></i> Cart</a> <span class="gapped">|</span> <a href="#" class="gapped">Login</a></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navi">
+			<div class="navi-main cf">
+				<div class="pull-left">
+					<ul class="navi-list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Upload</a></li>
+						<li><a href="#">USB Catalog</a></li>
+						<li><a href="#" class="red"><i class="icon-gift"></i> Holiday</a></li>
+					</ul>
+				</div>
+				<div class="pull-right tright">
+					<a href="#">30% off on Thanks Giving Day!</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="body-main">
+				<div class="section row-fluid">
+					<div class="span2 side-menu">
+						<h4>NEW ARRIVAL</h4>
+						<ul>
+							<li><a href="#">Power banks</a></li>
+							<li><a href="#">Car chargers</a></li>
+							<li><a href="#">Wall chargers</a></li>
+							<li><a href="#">Go Share</a></li>
+							<li><a href="#">Super Savers</a></li>
+						</ul>
+						<h4>FEATURED</h4>
+						<ul>
+							<li><a href="#">5-Day Delivery</a></li>
+							<li><a href="#">10-Day Delivery</a></li>
+							<li><a href="#">Super Savers</a></li>
+							<li><a href="#">All Models</a></li>
+							<li><a href="#">Printed Pins</a></li>
+						</ul>
+						<h4><a href="#">ALL PRODUCTS <i class="icon-angle-right"></i></a></h4>
+					</div>
+
+					<div class="span8">
+						<div id="home-slide" class="carousel slide">
+						  <ol class="carousel-indicators">
+						    <li data-target="#home-slide" data-slide-to="0" class="active"></li>
+						    <li data-target="#home-slide" data-slide-to="1"></li>
+						    <li data-target="#home-slide" data-slide-to="2"></li>
+						  </ol>
+						  <!-- Carousel items -->
+						  <div class="carousel-inner">
+						    <div class="active item">
+						    	<a href="#"><img src="../../mock/v2/banner/01.png" alt=""></a>
+						    </div>
+						    <div class="item">
+						    	<a href="#"><img src="../../mock/v2/banner/02.png" alt=""></a>
+						    </div>
+						    <div class="item">
+						    	<a href="#"><img src="../../mock/v2/banner/03.jpg" alt=""></a>
+						    </div>
+						    <div class="item">
+						    	<a href="#"><img src="../../mock/v2/banner/04.jpg" alt=""></a>
+						    </div>
+						  </div>
+						  <!-- Carousel nav -->
+						  <a class="carousel-control left" href="#home-slide" data-slide="prev">&lsaquo;</a>
+						  <a class="carousel-control right" href="#home-slide" data-slide="next">&rsaquo;</a>
+						</div>
+					</div>
+
+					<div class="span2">
+						<a href="#"><img src="../../mock/v2/home/b01.png" alt=""></a>
+					</div>
+				</div>
+
+				<div class="section spaced">
+					<h3>Popular in <span class="red">THANKS GIVING!</span></h3>
+					<div class="cf">
+						<ul class="row-fluid item-list">
+							<li class="span3">
+								<a href="#"><img width="240px" src="../../mock/v2/home/01.jpg" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Executive Power Bank</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="240px" src="../../mock/v2/home/02.jpg" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">3D 100% Custom Shape USB</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="240px" src="../../mock/v2/home/03.jpg" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Swivel USB</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="240px" src="../../mock/v2/home/04.jpg" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Soft Touch Wireless Folding Mouse</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section spaced">
+					<h3><span class="red">November</span> New Arrivals</h3>
+					<div class="cf">
+						<ul class="row-fluid item-list">
+							<li class="span2">
+								<a href="#"><img src="../../mock/v2/home/a01.png" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Soft Touch Wireless</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span2">
+								<a href="#"><img src="../../mock/v2/home/a02.png" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Soft Touch Wireless</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span2">
+								<a href="#"><img src="../../mock/v2/home/a03.png" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Soft Touch Wireless</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span2">
+								<a href="#"><img src="../../mock/v2/home/a04.png" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Soft Touch Wireless</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span2">
+								<a href="#"><img src="../../mock/v2/home/a02.png" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Soft Touch Wireless</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+							<li class="span2">
+								<a href="#"><img src="../../mock/v2/home/a03.png" alt=""></a>
+								<div class="more">
+									<div><a href="#" class="name bold">Soft Touch Wireless</a></div>
+									<span class="price">[C] $1.84-[C]$3.26</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section spaced">
+					<h3>Browse by Category</h3>
+					<div class="cf">
+						<ul class="row-fluid cate-list spaced">
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c01.png" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">Car chargers</a></div>
+										<span class="info">Budget holiday gift</span>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c02.png" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">Wall chargers</a></div>
+										<span class="info">Show it off for everyone!</span>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c03.jpg" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">Go share</a></div>
+										<span class="info">On the go executive tool!</span>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c04.png" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">Power banks</a></div>
+										<span class="info">Charge you mobile on the go</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="row-fluid cate-list spaced">
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c05.png" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">Iron Pins</a></div>
+										<span class="info">Great value, low cost!</span>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c06.png" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">Plating Pins</a></div>
+										<span class="info">Distinguishing looks</span>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c07.jpg" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">Drink coolers</a></div>
+										<span class="info">Coolers for nature lovers!</span>
+									</div>
+								</div>
+							</li>
+							<li class="span3">
+								<a href="#"><img width="250" src="../../mock/v2/home/c08.png" alt=""></a>
+								<div class="more">
+									<div class="more-main">
+										<div><a href="#" class="name bold">USB Drives</a></div>
+										<span class="info">Save $1 on every drive!</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-main">
+				<div class="row-fluid spaced">
+					<div class="span2">
+						<div class="spaced">
+							<h4>User</h4>
+							<ul>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+						</div>
+						<div class="about">
+							<h4>About</h4>
+							<ul>
+								<li><a href="#">About Sunjoy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span8">
+						<div class="explore">
+							<h4>Explore</h4>
+							<div class="row-fluid">
+								<div class="span4">
+									<ul>
+										<li><a href="#">USB Flash Drives</a></li>
+										<li><a href="#">Lapel Pins</a></li>
+										<li><a href="#">Custom Imprinted Mice</a></li>
+										<li><a href="#">Custom Imprinted USB</a></li>
+										<li><a href="#">Drink insulators</a></li>
+										<li><a href="#">Ball Markers</a></li>
+									</ul>
+								</div>
+								<div class="span4">
+									<ul>
+										<li><a href="#">Custom Imprinted Ear</a></li>
+										<li><a href="#">Bag Tags</a></li>
+										<li><a href="#">Custom Coins</a></li>
+										<li><a href="#">Embroideries</a></li>
+										<li><a href="#">Cufflinks</a></li>
+										<li><a href="#">Hat Clips</a></li>
+									</ul>
+								</div>
+								<div class="span4">
+									<ul>
+										<li><a href="#">Car Charger</a></li>
+										<li><a href="#">Go Share</a></li>
+										<li><a href="#">Power Bank</a></li>
+										<li><a href="#">Wall Charger</a></li>
+										<li><a href="#">Logo cables</a></li>
+										<li><a href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span2">
+						<div>
+							<h4>Service</h4>
+							<ul>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Feedback</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tcenter spaced gray-light">
+					Copyright © 2000-2013, Sunjoy Inc. All rights reserved. <a href="#">User Agreement</a> | <a href="#">Privacy Policy</a>
+				</div>
+			</div>
+			
+			
+
+		</div>
+	</div>
+	
+
+
+</body>
+
 </html>
+

@@ -1,0 +1,4 @@
+$(function(){
+	$("#home-slide").carousel();
+
+});

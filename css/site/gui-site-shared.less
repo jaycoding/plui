@@ -1,0 +1,115 @@
+// inline-block
+// ----------------
+.inline-block() {
+  display: inline-block;
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+}
+
+.cf {
+  *zoom: 1;
+}
+.cf:before,
+.cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.cf:after {
+  clear: both;
+}
+
+.gapped {
+  margin-left: 10px;
+}
+
+.gray {
+  color: #555;
+}
+.gray-dark {
+  color: #333;
+}
+.gray-darker {
+  color: #222;
+}
+.gray-light {
+  color: #999;
+}
+.gray-lighter {
+  color: #ccc;
+}
+
+.black {
+  color: #000;
+}
+.white {
+  color: #fff;
+}
+.green {
+  color: #698C00;
+}
+.orange {
+  color: #f30;
+}
+.red {
+  color: #f00;
+}
+.bold {
+  font-weight: 700;
+}
+
+.font-small {
+  font-size: 11px;
+}
+.font-smaller {
+  font-size: 10px;
+}
+.font-large {
+  font-size: 13px;
+}
+.font-larger {
+  font-size: 14px;
+}
+.clear {
+  clear: both;
+}
+
+
+.bold() {
+  font-weight: 700;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.none {
+  display: none;
+}
+
+.row-fluid {
+  .break-line {
+    margin-left: 0!important;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tcenter,
+.table td.center {
+  text-align: center;
+}
+
+.tright,
+.table td.tright {
+  text-align: right;
+}
+
+.tleft,
+.table td.tleft {
+  text-align: left;
+}
+
