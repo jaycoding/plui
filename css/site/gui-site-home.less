@@ -70,6 +70,8 @@ a {
 
 .body  {
 	clear: both;
+
+
 	.body-main {
 		width: 1002px;
 		margin: 0 auto;
@@ -179,6 +181,146 @@ a {
 			}
 		}
 	}
+
+	.body-left {
+		background: #f9f9f9;
+		width: 220px;
+		float: left;
+	}
+
+	.body-right {
+		width: 760px;
+		float: right;
+	}
+	.body-left.full {
+	  bottom: auto;
+	  height: auto;
+	}
+	.body-left.sidebar-fixed {
+	  position: fixed;
+	  top: 40px;
+	  overflow-x: hidden;
+	}
+	.body-left.sidebar-fixed .ui-resizable-handle {
+	  right: 0;
+	}
+	.body-left .subnav {
+	  margin-top: 15px;
+	}
+	.body-left .subnav:hover .subnav-title .toggle-subnav i {
+	  display: block;
+	}
+	.body-left .subnav .subnav-content {
+	  *zoom: 1;
+	  padding: 10px 20px;
+	}
+	.body-left .subnav .subnav-content:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	.body-left .subnav .subnav-content.less {
+	  padding: 10px 13px;
+	}
+	.body-left .subnav .subnav-title {
+	  *zoom: 1;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	}
+	.body-left .subnav .subnav-title:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	.body-left .subnav .subnav-title span {
+	  margin-left: 20px;
+	  font-size: 18px;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	}
+	.body-left .subnav .subnav-title .toggle-subnav {
+	  color: #444;
+	  padding: 1px 6px;
+	  text-decoration: none;
+	  display: block;
+	  position: relative;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  overflow: hidden;
+	}
+	.body-left .subnav .subnav-title .toggle-subnav i {
+	  position: absolute;
+	  font-size: 14px;
+	  left: 10px;
+	  top: 4px;
+	  display: none;
+	}
+	.body-left .subnav .subnav-title .toggle-subnav:hover {
+	  color: #222;
+	}
+	.body-left .subnav .subnav-menu {
+	  list-style-type: none;
+	  margin: 5px 0;
+	  padding: 0;
+	}
+	.body-left .subnav .subnav-menu > li {
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	}
+	.body-left .subnav .subnav-menu > li.dropdown > a {
+	  position: relative;
+	}
+	.body-left .subnav .subnav-menu > li.dropdown > a:after {
+	  position: absolute;
+	  right: 5px;
+	  top: 10px;
+	  width: 5px;
+	  border-color: rgba(0, 0, 0, 0);
+	  border-left-color: #999;
+	  border-style: solid;
+	  border-width: 5px 0 5px 5px;
+	  content: " ";
+	}
+	.body-left .subnav .subnav-menu > li.dropdown.open > a {
+	  background: #ccc;
+	  color: #333;
+	}
+	.body-left .subnav .subnav-menu > li.dropdown.open .dropdown-menu {
+	  left: 100%;
+	  top: 0;
+	  border-color: #aaa;
+	  border-left: 0;
+	  margin: 0;
+	}
+	.body-left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu .dropdown-menu {
+	  border-left: 2px solid #999;
+	}
+	.body-left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:hover > a, .body-left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:focus > a {
+	  background: #ccc;
+	  color: #333;
+	}
+	.body-left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:hover > a:after, .body-left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:focus > a:after {
+	  border-left-color: #999;
+	}
+	.body-left .subnav .subnav-menu > li > a {
+	  color: #555;
+	  display: block;
+	  padding: 5px 0 5px 27px;
+	  text-decoration: none;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+	  overflow: hidden;
+	}
+	.body-left .subnav .subnav-menu > li > a:hover {
+	  background: #ddd;
+	  color: #222;
+	}
+	.body-left .subnav .subnav-menu > li.active > a {
+	  background: #ccc;
+	  color: #222;
+	  font-weight: bold;
+	}
+
 }
 
 .footer  {
