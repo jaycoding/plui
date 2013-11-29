@@ -7,13 +7,15 @@ a {
 	
 }
 
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
 .wrapper {
 	color: #555;
-	ul, li {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
+	
 }
 
 .topbar {
@@ -319,6 +321,56 @@ a {
 	  background: #ccc;
 	  color: #222;
 	  font-weight: bold;
+	}
+
+	.breadcrumbs {
+	  *zoom: 1;
+	  background: #f4f4f4;
+	}
+	.breadcrumbs:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	.breadcrumbs ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 2px 5px;
+	  *zoom: 1;
+	  float: left;
+	}
+	.breadcrumbs ul:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	.breadcrumbs ul > li {
+	  float: left;
+	  color: #666;
+	}
+	.breadcrumbs ul > li > a {
+	  color: #666;
+	  display: block;
+	  padding: 2px 6px;
+	  font-size: 12px;
+	  float: left;
+	}
+	.breadcrumbs ul > li i {
+	  float: left;
+	  font-size: 11px;
+	  margin: 7px 0 6px 0;
+	}
+	.breadcrumbs .close-bread {
+	  float: right;
+	}
+	.breadcrumbs .close-bread > a {
+	  color: #999;
+	  display: block;
+	  font-size: 14px;
+	  margin: 4px 8px;
+	}
+	.breadcrumbs .close-bread > a:hover {
+	  text-decoration: none;
 	}
 
 }

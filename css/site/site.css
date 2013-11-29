@@ -89,14 +89,14 @@ a:hover {
   color: #111;
   text-decoration: none;
 }
-.wrapper {
-  color: #555;
-}
-.wrapper ul,
-.wrapper li {
+ul,
+li {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.wrapper {
+  color: #555;
 }
 .topbar {
   padding: 3px 0;
@@ -384,6 +384,55 @@ a:hover {
   background: #ccc;
   color: #222;
   font-weight: bold;
+}
+.body .breadcrumbs {
+  *zoom: 1;
+  background: #f4f4f4;
+}
+.body .breadcrumbs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.body .breadcrumbs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2px 5px;
+  *zoom: 1;
+  float: left;
+}
+.body .breadcrumbs ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.body .breadcrumbs ul > li {
+  float: left;
+  color: #666;
+}
+.body .breadcrumbs ul > li > a {
+  color: #666;
+  display: block;
+  padding: 2px 6px;
+  font-size: 12px;
+  float: left;
+}
+.body .breadcrumbs ul > li i {
+  float: left;
+  font-size: 11px;
+  margin: 7px 0 6px 0;
+}
+.body .breadcrumbs .close-bread {
+  float: right;
+}
+.body .breadcrumbs .close-bread > a {
+  color: #999;
+  display: block;
+  font-size: 14px;
+  margin: 4px 8px;
+}
+.body .breadcrumbs .close-bread > a:hover {
+  text-decoration: none;
 }
 .footer {
   background: #eee;
