@@ -122,6 +122,7 @@ li {
   margin-bottom: 10px;
 }
 .navi .navi-main {
+  position: relative;
   width: 1002px;
   margin: 0 auto;
   padding: 8px 0;
@@ -139,10 +140,19 @@ li {
 .navi .navi-list li a {
   padding: 0 15px;
   font-size: 15px;
-  border-right: 1px solid #ddd;
 }
 .navi .navi-list li:first-child a {
   padding-left: 0;
+}
+.navi .navi-sub {
+  display: none;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  top: 38px;
+  width: 100%;
+  z-index: 100;
 }
 .body {
   clear: both;
@@ -205,13 +215,14 @@ li {
   padding: 0;
 }
 .body .section .item-list li {
+  border: 1px solid transparent;
   list-style: none;
 }
-.body .section .item-list li img {
-  border: 1px solid transparent;
-}
-.body .section .item-list li img:hover {
+.body .section .item-list li:hover {
   border: 1px solid #ddd;
+}
+.body .section .item-list li .more {
+  padding: 4px;
 }
 .body .section .cate-list {
   margin: 0;
@@ -250,6 +261,7 @@ li {
   background: #f9f9f9;
   width: 220px;
   float: left;
+  min-height: 500px;
 }
 .body .body-right {
   width: 760px;

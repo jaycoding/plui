@@ -43,6 +43,7 @@ ul, li {
 	clear: both;
 	margin-bottom: 10px;
 	.navi-main {
+		position: relative;
 		width: 1002px;
 		margin: 0 auto;
 		padding: 8px 0;
@@ -58,7 +59,7 @@ ul, li {
 			a {
 				padding: 0 15px;
 				font-size: 15px;
-				border-right: 1px solid #ddd;
+				//border-right: 1px solid #ddd;
 
 			}
 			&:first-child {
@@ -67,6 +68,16 @@ ul, li {
 				}
 			}
 		}
+	}
+	.navi-sub {
+		display: none;
+		background: rgba(255, 255, 255, 0.95);
+		padding: 10px 0;
+		position: absolute;
+		left: 0;
+		top: 38px;
+		width: 100%;
+		z-index: 100;
 	}
 }
 
@@ -135,14 +146,17 @@ ul, li {
 			margin: 0;
 			padding: 0;
 			li {
+				border: 1px solid transparent;
 				list-style: none;
-				img {
-					border: 1px solid transparent;
-					&:hover {
+				&:hover {
 						border: 1px solid #ddd;
 					}
+				img {
+					
+					
 				}
 				.more {
+					padding: 4px;
 					&:hover {
 					}
 				}
@@ -188,6 +202,7 @@ ul, li {
 		background: #f9f9f9;
 		width: 220px;
 		float: left;
+		min-height: 500px;
 	}
 
 	.body-right {

@@ -54,12 +54,12 @@
 		<div class="topbar">
 			<div class="topbar-main cf">
 				<div class="pull-left">
-					Your value customizer!
+					Your value customizer! 
+					<a href="#" class="gapped"><i class="icon-facebook-sign"></i></a>
+					<a href="#" class="gapped"><i class="icon-twitter"></i></a>
 				</div>
 				<div class="pull-right">
-					<span class="gapped"><i class="icon-phone"></i> 1-820-900-8800</span>
-					<a href="#" class="gapped"><i class="icon-facebook-sign"></i></a>
-					<a href="#" class="gapped"><i class="icon-twitter"></i></a> 
+					<a href="#" class="gapped"><i class="icon-shopping-cart"></i> Cart</a> <span class="gapped">|</span> <a href="#" class="gapped">Login</a> 
 				</div>
 			</div>
 		</div>
@@ -93,7 +93,7 @@
 				<div class="pull-left">
 					<ul class="navi-list">
 						<li><a href="#">Home</a></li>
-						<li><a href="#">Products</a></li>
+						<li><a href="#" class="extend-sub-navi">Products</a></li>
 						<li><a href="#">Specials</a></li>
 						<li><a href="#">eFlyers</a></li>
 						<li><a href="#">Upload</a></li>
@@ -104,6 +104,40 @@
 				<div class="pull-right tright">
 					<a href="#">30% off on Thanks Giving Day!</a>
 				</div>
+				<div class="navi-sub" id="sub-navi">
+					<div class="row-fluid">
+						<ul class="span3">
+							<li>
+								<a href="#">USB Flash Drives</a>
+							</li>
+							<li>
+								<a href="#">Lapel Pins</a>
+							</li>
+							<li><a href="#">Custom Imprinted Mice</a></li>
+							<li><a href="#">Custom Imprinted USB</a></li>
+							<li><a href="#">Drink insulators</a></li>
+							<li><a href="#">Ball Markers</a></li>
+							
+						</ul>
+						<ul class="span3">
+							<li><a href="#">Custom Imprinted Ear...</a></li>
+							<li><a href="#">Bag Tags</a></li>
+							<li><a href="#">Custom Coins</a></li>
+							<li><a href="#">Embroideries</a></li>
+							<li><a href="#">Cufflinks</a></li>
+							<li><a href="#">Hat Clips</a></li>
+						</ul>
+						<ul class="span3">
+							<li><a href="#">Car Charger</a></li>
+							<li><a href="#">Go Share</a></li>
+							<li><a href="#">Power Bank</a></li>
+							<li><a href="#">Wall Charger</a></li>
+							<li><a href="#">Logo cabels</a></li>
+							<li><a href="#">All</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -112,47 +146,88 @@
 				<div class="body-left">
 					<div class="subnav">
 						<div class="subnav-title">
-							<a href="#" class='toggle-subnav'><i class="icon-angle-down"></i><span>Products</span></a>
+							<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Battery</span></a>
 						</div>
 						<ul class="subnav-menu">
-							<li class='dropdown'>
-								<a href="#" data-toggle="dropdown">USB Flash Drives</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">24H Ship</a></li>
-									<li><a href="#">10 Day Delivery</a></li>
-									<li><a href="#">All models</a></li>
-								</ul>
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c1" data-skin="minimal"> <label class='inline' for="c1">1800MAh</label>
+								</div>
 							</li>
-							<li class='dropdown'>
-								<a href="#" data-toggle="dropdown">Lapel Pins</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Iron Pins</a></li>
-									<li><a href="#">Brass Pins</a></li>
-									<li><a href="#">Plate Pins</a></li>
-								</ul>
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c2" data-skin="minimal"> <label class='inline' for="c2">2000MAh</label>
+								</div>
 							</li>
-							<li><a href="#">Custom Imprinted Mice</a></li>
-							<li><a href="#">Custom Imprinted USB</a></li>
-							<li><a href="#">Drink insulators</a></li>
-							<li><a href="#">Ball Markers</a></li>
-							<li><a href="#">Custom Imprinted Ear...</a></li>
-							<li><a href="#">Bag Tags</a></li>
-							<li><a href="#">Custom Coins</a></li>
-							<li><a href="#">Embroideries</a></li>
-							<li><a href="#">Cufflinks</a></li>
-							<li><a href="#">Hat Clips</a></li>
-							<li><a href="#">Car Charger</a></li>
-							<li><a href="#">Go Share</a></li>
-							<li><a href="#">Power Bank</a></li>
-							<li><a href="#">Wall Charger</a></li>
-							<li><a href="#">Logo cabels</a></li>
-							<li><a href="#">All</a></li>
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c3" data-skin="minimal"> <label class='inline' for="c3">2200MAh</label>
+								</div>
+							</li>
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c4" data-skin="minimal"> <label class='inline' for="c4">2400MAh</label>
+								</div>
+							</li>
 						</ul>
+					</div>
+
+					<div class="subnav">
+						<div class="subnav-title">
+							<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Price</span></a>
+						</div>
+						<ul class="subnav-menu">
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c11" data-skin="minimal"> <label class='inline' for="c11">$5 - $10</label>
+								</div>
+							</li>
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c21" data-skin="minimal"> <label class='inline' for="c21">$10 - $15</label>
+								</div>
+							</li>
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c31" data-skin="minimal"> <label class='inline' for="c31">$15 - $20</label>
+								</div>
+							</li>
+							<li style="padding-left: 27px">
+								<div class="check-line">
+									<input type="checkbox" class='icheck-me' id="c41" data-skin="minimal"> <label class='inline' for="c41">$20 - $25</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="subnav">
+						<div class="subnav-title">
+							<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Recent viewed</span></a>
+						</div>
+						<p>&nbsp;</p>
+
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
 					</div>
 				</div>
 				<div class="body-right">
 					<div class="section spaced">
-						<h3>Power Banks</h3>
+						<!-- <h3>Power Banks</h3> -->
+						<div class="breadcrumbs">
+							<ul>
+								<li>
+									<a href="#">Home</a>
+									<i class="icon-angle-right"></i>
+								</li>
+								<li>
+									<a href="#">Power Banks</a>
+									<!-- <i class="icon-angle-right"></i> -->
+								</li>
+							</ul>
+							<div class="close-bread">
+								<a href="#"><i class="icon-remove"></i></a>
+							</div>
+						</div>
 						<div class="highlight-toolbar">
 							<div class="pull-left">
 								<div class="btn-toolbar">
@@ -185,7 +260,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="highlight-toolbar">
+						<!-- <div class="highlight-toolbar">
 							<div class="pull-left">
 								<div class="btn-toolbar">
 									<div class="btn-group text">
@@ -201,7 +276,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="cf spaced">
 							<ul class="row-fluid cf item-list spaced">
 								<li class="span3">
@@ -209,6 +284,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">Executive Power Bank</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -216,6 +302,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB004</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -223,6 +320,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB005</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -230,6 +338,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB006</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
@@ -240,6 +359,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">Executive Power Bank</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -247,6 +377,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB004</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -254,6 +395,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB005</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -261,6 +413,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB006</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
@@ -271,6 +434,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">Executive Power Bank</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -278,6 +452,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB004</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -285,6 +470,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB005</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -292,6 +488,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB006</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
@@ -302,6 +509,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">Executive Power Bank</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -309,6 +527,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB004</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -316,6 +545,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB005</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 								<li class="span3">
@@ -323,6 +563,17 @@
 									<div class="more">
 										<div><a href="#" class="name bold">PWB006</a></div>
 										<span class="price">[C] $1.84-[C]$3.26</span>
+										<ul class="colors small">
+											<li class="red">
+												<a href="#"></a>
+											</li>
+											<li class="pink">
+												<a href="#"></a>
+											</li>
+											<li class="lightgrey">
+												<a href="#"></a>
+											</li>
+										</ul>
 									</div>
 								</li>
 							</ul>
