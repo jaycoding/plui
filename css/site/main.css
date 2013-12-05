@@ -10020,6 +10020,10 @@ i.icon-right-m {
   *float: left;
   *margin-right: 2px;
 }
+.thumblist li img {
+  *width: 25px;
+  *height: 25px;
+}
 /*///////////////////////////////////////////////////////////////////////////////////////
  //
  //  Plugin:        Clour Zoom
