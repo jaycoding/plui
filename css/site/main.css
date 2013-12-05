@@ -9971,6 +9971,9 @@ i.icon-right-m {
 .product-view .product-view-colorpane > ul > li.active {
   border: 3px solid #f00;
 }
+.product-view {
+  *padding-top: 10px;
+}
 .product-view .product-view-colorpane ul li {
   *cursor: pointer;
   *display: inline-block;
