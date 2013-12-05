@@ -10002,6 +10002,12 @@ i.icon-right-m {
 .product-view .product-view-colorpane ul li.active {
   *border: 3px solid #f00;
 }
+.product-viewer.etalage.product-viewer-landscape li {
+  *left: 0;
+}
+.product-viewer.etalage.product-viewer-landscape .etalage_small_thumbs {
+  *padding-top: 0;
+}
 .product-recommend img {
   width: 64px;
   height: 64px;
