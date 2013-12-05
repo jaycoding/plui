@@ -9940,6 +9940,10 @@ i.icon-right-m {
 .form-faq-add-file a:hover {
   color: #7A7A00;
 }
+.product-viewer.etalage .etalage_small_thumbs {
+  *padding-top: 274px!important;
+  *position: static;
+}
 .product-view {
   clear: both;
 }
@@ -9980,6 +9984,7 @@ i.icon-right-m {
   *text-shadow: 1px 1px 1px #666;
   *font-size: 12px;
   *line-height: 1.2;
+  *float: left;
   *display: inline;
   /* IE7 inline-block hack */
 
