@@ -9972,6 +9972,8 @@ i.icon-right-m {
   border: 3px solid #f00;
 }
 .product-view {
+  *position: relative;
+  *z-index: 1;
   *padding-top: 10px;
 }
 .product-view .product-view-colorpane ul li {
