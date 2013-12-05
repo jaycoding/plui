@@ -10003,7 +10003,7 @@ i.icon-right-m {
   *left: 0;
 }
 .product-viewer.etalage.product-viewer-landscape .etalage_small_thumbs {
-  *padding-top: 0;
+  *padding-top: 0!important;
 }
 .product-recommend img {
   width: 64px;
