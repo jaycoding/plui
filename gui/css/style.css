@@ -7780,3 +7780,7 @@ a:focus {
 .none {
   display: none;
 }
+
+.ui-spinner .ui-spinner-input {
+  margin: 0;
+}
