@@ -82,6 +82,28 @@
 .table td.tleft {
   text-align: left;
 }
+.headline {
+  background: #ddd;
+  width: 80%;
+  margin: 20px auto;
+}
+.headline h2,
+.headline h3 {
+  position: relative;
+  background: #f6f6f6;
+  top: -5px;
+  left: -5px;
+  border: 1px solid #ddd;
+  color: #666;
+  text-align: center;
+  padding: 10px 0;
+}
+.headline h2 {
+  font-size: 24px;
+}
+.headline h3 {
+  font-size: 18px;
+}
 a {
   color: #444;
 }
@@ -146,13 +168,21 @@ li {
 }
 .navi .navi-sub {
   display: none;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
-  left: 0;
-  top: 38px;
+  left: 6px;
+  top: 44px;
   width: 100%;
   z-index: 100;
+  line-height: 1.8;
+}
+.navi .navi-sub .navi-sub-main {
+  position: relative;
+  left: -6px;
+  top: -6px;
+  background: #fcfcfc;
+  padding: 10px 15px 15px;
+  z-index: 101;
 }
 .body {
   clear: both;
@@ -258,7 +288,6 @@ li {
   color: #fff;
 }
 .body .body-left {
-  background: #f9f9f9;
   width: 220px;
   float: left;
   min-height: 500px;
