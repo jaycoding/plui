@@ -484,3 +484,6 @@ li {
   width: 1002px;
   margin: 0 auto;
 }
+.header-search .form-horizontal {
+  margin-bottom: 0;
+}
