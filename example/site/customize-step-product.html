@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../gui/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/colorbox/colorbox.css">
+	<link rel="stylesheet" href="../../gui/css/style.css">
+	<link rel="stylesheet" href="../../gui/css/themes.css">
+	<link rel="stylesheet" href="../../css/site/site.css">
+
+	<!-- JS -->
+	<script src="../../gui/js/jquery.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../../gui/js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<script src="../../gui/js/bootstrap.min.js"></script>
+	<script src="../../gui/js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../../gui/js/plugins/colorbox/jquery.colorbox-min.js"></script>
+	<script src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/site/site.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="topbar">
+			<div class="topbar-main cf">
+				<div class="pull-left">
+					Your value customizer! 
+				</div>
+				<div class="pull-right">
+					<a href="#" class="gapped"><i class="icon-shopping-cart"></i> Cart</a> <span class="gapped gray-light">|</span> <a href="#" class="gapped">Login</a> <span class="gapped gray-light">|</span> <a href="#" class="gapped">Register</a>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="header-main">
+				<div class="row-fluid">
+					<div class="span3">
+						<div class="header-logo">
+							<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
+						</div>
+					</div>
+					<div class="span9 tright">
+						<h3>
+							<a href="#" class="gapped gray"><i class="icon-facebook-sign"></i></a>
+							<a href="#" class="gapped gray"><i class="icon-twitter"></i></a>
+							<a href="#" class="gapped gray"><i class="icon-linkedin-sign"></i></a>
+							<a href="#" class="gapped gray"><i class="icon-pinterest-sign"></i></a>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navi">
+			<div class="navi-main cf">
+				<div class="pull-left">
+					<ul class="navi-list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#" class="extend-sub-navi">Products</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Event &amp; News</a></li>
+					</ul>
+				</div>
+				<div class="pull-right tright">
+					<div class="header-search">
+						<form class='form-horizontal'>
+							<div class="input-append">
+								<input type="text" class="input-xlarge" name="search" placeholder="Search all products, sku or keywords...">
+								<button type='submit' class='btn'><i class="icon-search"></i></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="navi-sub" id="sub-navi">
+					<div class="navi-sub-main">
+						<div class="row-fluid">
+							<div class="span6">
+								<h4 class="green">Categories</h4>
+								<div class="row-fluid">
+									<ul class="span4">
+										<li>
+											<a href="#">USB Flash Drives</a>
+										</li>
+										<li>
+											<a href="#">Lapel Pins</a>
+										</li>
+										<li><a href="#">Custom Imprinted Mice</a></li>
+										<li><a href="#">Custom Imprinted USB</a></li>
+										<li><a href="#">Drink insulators</a></li>
+										<li><a href="#">Ball Markers</a></li>
+										
+									</ul>
+									<ul class="span4">
+										<li><a href="#">Custom Imprinted Ear...</a></li>
+										<li><a href="#">Bag Tags</a></li>
+										<li><a href="#">Custom Coins</a></li>
+										<li><a href="#">Embroideries</a></li>
+										<li><a href="#">Cufflinks</a></li>
+										<li><a href="#">Hat Clips</a></li>
+									</ul>
+									<ul class="span4">
+										<li><a href="#">Car Charger</a></li>
+										<li><a href="#">Go Share</a></li>
+										<li><a href="#">Power Bank</a></li>
+										<li><a href="#">Wall Charger</a></li>
+										<li><a href="#">Logo cabels</a></li>
+										<li><a href="#">All</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="span3">
+								<h4 class="green">Top Sellers</h4>
+								<ul class="">
+									<li><a href="#">USB Flash Drives</a></li>
+									<li><a href="#">Lapel Pins</a></li>
+									<li><a href="#">Custom Imprinted Mice</a></li>
+									<li><a href="#">Custom Imprinted USB</a></li>
+									<li><a href="#">Drink insulators</a></li>
+									<li><a href="#">Ball Markers</a></li>
+								</ul>
+							</div>
+
+							<div class="span3">
+								<h4 class="green">Seasonal</h4>
+								<ul class="">
+									<li><a href="#">Car Charger</a></li>
+									<li><a href="#">Go Share</a></li>
+									<li><a href="#">Power Bank</a></li>
+									<li><a href="#">Wall Charger</a></li>
+									<li><a href="#">Logo cabels</a></li>
+									<li><a href="#">All</a></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="body-main cf">
+				
+				<div class="row-fluid">
+					<div class="order-indication">
+						<ul class="nav nav-pills">
+							<li class="active"><a href="customize-step-product.html">Product <i class="icon-arrow-right"></i></a></li>
+							<li><a href="customize-step-services.html">Services <i class="icon-arrow-right"></i></a></li>
+							<li><a href="customize-step-accessories.html">Accessories <i class="icon-arrow-right"></i></a></li>
+							<li><a href="customize-step-packagings.html">Packagings <i class="icon-arrow-right"></i></a></li>
+							<li><a href="customize-step-turnarounds.html">Turnarounds <i class="icon-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span9">
+
+						<div class="box box-bordered spaced" id="product">
+							<div class="box-title">
+								<h3>Product</h3>
+								<div class="actions">
+									<a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i></a>
+								</div>
+							</div>
+
+							<div class="box-content">
+								<div class="row-fluid">
+									<div class="span3">
+										<img width="120" src="../../mock/v2/home/d1.jpg" alt="">
+									</div>
+									<div class="span9">
+										<div>
+											<h4>Power Bank - PWB004</h4>
+											<p>SKU: PWB004</p>
+											<p>This unique design and bright vibrant colors lets your logo stand out and get constant use! This power bank is a great match for the iPhone 5C or Android phones and has enough juice to get you through the whole day. It's a power bank you're not embarrassed of, and with it's wide design space.</p>
+											<div class="spaced">
+												<div class="row-fluid">
+													<div class="span6">
+														<div class="row-fluid">
+															<div class="span4">Capacity</div>
+															<div class="span8">
+																<select name="sort" id="39" class='chosen-select input-medium' data-placeholder="Capacity" data-nosearch="true">
+																	<option value="">1G</option>
+																	<option value="">2G</option>
+																	<option value="">4G</option>
+																	<option value="">8G</option>
+																</select>
+															</div>
+														</div>
+														
+														<div class="row-fluid">
+															<div class="span4">Color</div>
+															<div class="span8">
+																<select name="sort" id="99" class='chosen-select input-medium' data-placeholder="Color" data-nosearch="true">
+																	<option value="">PMS 186C</option>
+																	<option value="">PMS 9320</option>
+																</select>
+															</div>
+														</div>
+														
+
+														<div class="row-fluid spaced">
+															<div class="span4"><strong>Quantity</strong></div>
+															<div class="span8"><input type="text" name="textfield" id="textfield" value="50" class="spinner input-mini"></div>
+														</div>
+													</div>
+													<div class="span6">
+														<div class="row-fluid">
+															<div class="span4">Chip Type</div>
+															<div class="span8">
+																<select name="sort" id="34" class='chosen-select input-medium' data-placeholder="Chip Type" data-nosearch="true">
+																	<option value="">Tier 1</option>
+																	<option value="">Tier 2</option>
+																	<option value="">Tier 3</option>
+																</select>
+															</div>
+														</div>
+														<div class="row-fluid">
+															<div class="span4">Decoration</div>
+															<div class="span8">
+																<select name="sort" id="23" class='chosen-select input-medium' data-placeholder="Decoration" data-nosearch="true">
+																	<option value="">Silk Screen</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="span3" style="padding-top: 20px;">
+						<div class="box spaced scrolltofixed" id="overview">
+
+							<div class="box-content" style="background: #eee;">
+								<div class="row-fluid tcenter spaced">
+									<div class="span10 offset1">
+										<h4 class="gray">Total </h4>
+										<hr style="margin: 0; border-color: #ccc;">
+										<h3><span class="green">$360.00</span></h3>
+									</div>
+								</div>
+								<div class="row-fluid tcenter spaced">
+									<div class="span10 offset1">
+										<a href="customize-step-services.html" class="btn btn btn-primary btn-large">Continue <i class="icon-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-main">
+				<div class="row-fluid spaced">
+					<div class="span2">
+						<div class="spaced">
+							<h4>User</h4>
+							<ul>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+						</div>
+						<div class="about">
+							<h4>About</h4>
+							<ul>
+								<li><a href="#">About Sunjoy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span8">
+						<div class="explore">
+							<h4>Explore</h4>
+							<div class="row-fluid">
+								<div class="span4">
+									<ul>
+										<li><a href="#">USB Flash Drives</a></li>
+										<li><a href="#">Lapel Pins</a></li>
+										<li><a href="#">Custom Imprinted Mice</a></li>
+										<li><a href="#">Custom Imprinted USB</a></li>
+										<li><a href="#">Drink insulators</a></li>
+										<li><a href="#">Ball Markers</a></li>
+									</ul>
+								</div>
+								<div class="span4">
+									<ul>
+										<li><a href="#">Custom Imprinted Ear</a></li>
+										<li><a href="#">Bag Tags</a></li>
+										<li><a href="#">Custom Coins</a></li>
+										<li><a href="#">Embroideries</a></li>
+										<li><a href="#">Cufflinks</a></li>
+										<li><a href="#">Hat Clips</a></li>
+									</ul>
+								</div>
+								<div class="span4">
+									<ul>
+										<li><a href="#">Car Charger</a></li>
+										<li><a href="#">Go Share</a></li>
+										<li><a href="#">Power Bank</a></li>
+										<li><a href="#">Wall Charger</a></li>
+										<li><a href="#">Logo cables</a></li>
+										<li><a href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span2">
+						<div>
+							<h4>Service</h4>
+							<ul>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Feedback</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tcenter spaced gray-light">
+					Copyright © 2000-2013, Sunjoy Inc. All rights reserved. <a href="#">User Agreement</a> | <a href="#">Privacy Policy</a>
+				</div>
+			</div>
+			
+			
+
+		</div>
+	</div>
+	
+
+
+</body>
+
+</html>
+
