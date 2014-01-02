@@ -17,5 +17,8 @@ $(function(){
 		$(".navi-sub").hide();
 	});
 
+	if ($('.scrolltofixed').length > 0) {
+		$('.scrolltofixed').scrollToFixed();
+	}
 
 });
