@@ -403,5 +403,24 @@ $(function(){
 		}
 	});
 
+	$('.popover-workflow').hover(
+		function() {
+			var self = this;
+			clearTimeout(timer);
+          hoverTimeout = setTimeout(function(){
+				$('.popover').hide(); //Hide any open popovers on other elements.
+	          //popover_parent = self
+	          $(self).popover('show');
+	          $(".btn-close-popover").bind("click", function(){$(self).popover('destroy');});
+			}, 500);       
+      }, 
+      function() {
+      	var self = this;
+      	timer = setTimeout(function(){hidePopover(self)},500);                 
+      });
+	$('.popover-workflow').mouseout(function(){
+		clearTimeout(hoverTimeout);
+	});
+
 
 });

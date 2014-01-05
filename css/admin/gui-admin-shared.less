@@ -72,6 +72,35 @@
   font-weight: bold;
 }
 
+.workflow-step {
+  min-height: 52px;
+  height: 52px;
+  background: url(../../img/icons/step-arrow.png) right center no-repeat;
+  padding-right: 20px;
+  width: 70px;
+  margin-left: 8px;
+  float: left;
+  line-height: 1.2;
+  > span {
+    display: block;
+    height: 52px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &.pass {
+    background: url(../../img/icons/step-arrow-green.png) right center no-repeat;
+    a {
+      color: #468C00;
+    }
+  }
+  &.not-pass {
+    background: url(../../img/icons/step-arrow-grey.png) right center no-repeat;
+    a {
+      color: #999;
+    }
+  }
+}
+
 .workflow {
   list-style-type: none;
   margin: 10px 0;
@@ -208,7 +237,14 @@
   box-shadow: 0 0 12px #bbb;
 }
 
-
+.upload-form-progress {
+  width: 15px;
+  height: 128px;
+  width: 128px;
+  height: 15px;
+  margin: 10px 0;
+  background: transparent url(../../img/global/upload-in-progress.gif) 0 0 no-repeat;
+}
 
 .dropdown-menu li > a {
   display: block;
