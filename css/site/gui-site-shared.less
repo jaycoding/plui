@@ -121,8 +121,8 @@
   h2, h3 {
     position: relative;
     background: #f6f6f6;
-    top: -5px;
-    left: -5px;
+    //top: -5px;
+    //left: -5px;
     border: 1px solid #ddd;
     color: #666;
     text-align: center;
@@ -133,5 +133,25 @@
   }
   h3 {
     font-size: 18px;
+  }
+}
+
+.colors.small {
+  li.active {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f60;
+  }
+}
+
+.tabs.tabs-inline.tabs-top {
+  border-bottom: 1px solid #ccc;
+  > li > a {
+    position: relative;
+    top: 1px;
+  }
+  > li.active > a {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
   }
 }

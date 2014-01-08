@@ -20,7 +20,7 @@ ul, li {
 
 .topbar {
 	padding: 3px 0;
-	background: #eee;
+	//background: #eee;
 	.topbar-main {
 		width: 1002px;
 		margin: 0 auto;
@@ -57,9 +57,14 @@ ul, li {
 			list-style: none;
 			margin: 0;
 			a {
+				font-weight: bold;
 				padding: 0 15px;
 				font-size: 15px;
+				color: #666;
 				//border-right: 1px solid #ddd;
+				&:hover {
+					color: #f60;
+				}
 
 			}
 			&:first-child {
@@ -73,18 +78,21 @@ ul, li {
 		display: none;
 		background: rgba(0, 0, 0, 0.3);
 		position: absolute;
-		left: 6px;
-		top: 44px;
+		left: 16px;
+		top: 54px;
 		width: 100%;
 		z-index: 100;
 		line-height: 1.8;
 		.navi-sub-main {
 			position: relative;
-			left: -6px;
-			top: -6px;
-			background: #fcfcfc;
+			left: -16px;
+			top: -16px;
+			background: #f9f9f9;
 			padding: 10px 15px 15px;
 			z-index: 101;
+			a:hover {
+				color: #f60;
+			}
 		}
 	}
 }
@@ -125,21 +133,31 @@ ul, li {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		margin: 0;
 		.carousel-control {
-			display: none;
+			display: block;
+			background: none;
+			border: 0;
+			top: 45%;
+			color: #555;
+			font-size: 150px;
+			&.left {
+				left: -40px;
+			}
+			&.right {
+				right: -40px;
+			}
+			&:hover {
+				color: #333;
+			}
 		}
 		.carousel-indicators {
 			top: auto;
 			bottom: 15px;
-		}
-		&:hover {
-			.carousel-control {
-				display: block;
-			}
+			display: none;
 		}
 	}
 
 	.section {
-		border-bottom: 1px solid #ddd;
+		//border-bottom: 1px solid #ddd;
 		margin-bottom: 12px;
 		padding-bottom: 12px;
 		h3 {
@@ -153,6 +171,7 @@ ul, li {
 			li {
 				border: 1px solid transparent;
 				list-style: none;
+				text-align: center;
 				&:hover {
 						border: 1px solid #ddd;
 					}
@@ -174,29 +193,30 @@ ul, li {
 			margin-bottom: 15px;
 			li {
 				list-style: none;
-				img {
-					border: 1px solid transparent;
-					&:hover {
-						border: 1px solid #ddd;
-					}
-				}
+				border: 1px solid transparent;
 				position: relative;
 				.more {
-					position: absolute;
-					left: 0;
-					bottom: 0px;
+					// position: absolute;
+					// left: 0;
+					// bottom: 0px;
 					width: 100%;
 					min-height: 50px;
-					background: rgba(0, 0, 0, 0.6);
-					color: #fff;
+					color: #555;
 					.more-main {
 						padding: 6px 10px;
 					}
 					a.name {
-						color: #fff;
+						color: #333;
 					}
 					.info {
-						color: #fff;
+						color: #555;
+					}
+				}
+				&:hover {
+
+					border: 1px solid #ddd;
+					.more {
+						background: #eee;
 					}
 				}
 			}
@@ -409,4 +429,12 @@ ul, li {
 	.form-horizontal {
 		margin-bottom: 0;
 	}
+}
+
+
+.alert-promo {
+	width: 75%;
+	margin: 20px auto;
+	background: #fff;
+	border: #ddd;
 }
