@@ -102,7 +102,22 @@
 .headline h3 {
   font-size: 18px;
 }
-.colors.small li.active {
+.colors li a {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 0px 1px 1px #666;
+}
+.colors li.active a {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #f60;
+}
+.colors.small li.active a {
   width: 16px;
   height: 16px;
   border: 2px solid #f60;
@@ -117,6 +132,9 @@
 .tabs.tabs-inline.tabs-top > li.active > a {
   border: 1px solid #ccc;
   border-bottom: 1px solid #fff;
+}
+.padding {
+  padding: 10px;
 }
 a {
   color: #444;
