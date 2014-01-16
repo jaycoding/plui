@@ -538,6 +538,8 @@ li {
 .alert-promo {
   width: 75%;
   margin: 20px auto;
+}
+.alert-white {
   background: #fff;
   border: #ddd;
 }
