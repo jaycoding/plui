@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap.css">
+	<link rel="stylesheet" href="../../gui/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/colorbox/colorbox.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery.etalage/jquery.etalage.css">
+	<link rel="stylesheet" href="../../gui/css/style.css">
+	<link rel="stylesheet" href="../../gui/css/themes.css">
+	<link rel="stylesheet" href="../../css/site/site.css">
+
+	<!-- JS -->
+	<script src="../../gui/js/jquery.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../../gui/js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<script src="../../gui/js/bootstrap.min.js"></script>
+	<script src="../../gui/js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../../gui/js/plugins/colorbox/jquery.colorbox-min.js"></script>
+	<script src="../../gui/js/plugins/jquery.etalage/jquery.etalage.min.js"></script>
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/site/site.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="topbar">
+			<div class="topbar-main cf">
+				<div class="pull-left">
+					Your value customizer! 
+				</div>
+				<div class="pull-right">
+					<a href="#" class="gapped"><i class="icon-shopping-cart"></i> Cart</a> <span class="gapped gray-light">|</span> <a href="#" class="gapped">Login</a> <span class="gapped gray-light">|</span> <a href="#" class="gapped">Register</a>
+				</div>
+			</div>
+		</div>
+		<div class="header">
+			<div class="header-main">
+				<div class="row-fluid">
+					<div class="span3">
+						<div class="header-logo">
+							<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
+						</div>
+					</div>
+					<div class="span9 tright">
+						<h3>
+							<a href="#" class="gapped gray"><i class="icon-facebook-sign"></i></a>
+							<a href="#" class="gapped gray"><i class="icon-twitter"></i></a>
+							<a href="#" class="gapped gray"><i class="icon-linkedin-sign"></i></a>
+							<a href="#" class="gapped gray"><i class="icon-pinterest-sign"></i></a>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navi">
+			<div class="navi-main cf">
+				<div class="pull-left">
+					<ul class="navi-list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#" class="extend-sub-navi">Products</a></li>
+						<li><a href="#">Specials</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Event &amp; News</a></li>
+					</ul>
+				</div>
+				<div class="pull-right tright">
+					<div class="header-search">
+						<form class='form-horizontal'>
+							<div class="input-append">
+								<input type="text" class="input-xlarge" name="search" placeholder="Search all products, sku or keywords...">
+								<button type='submit' class='btn'><i class="icon-search"></i></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="navi-sub" id="sub-navi">
+					<div class="navi-sub-main">
+						<div class="row-fluid">
+							<div class="span6">
+								<h4 class="green">Categories</h4>
+								<div class="row-fluid">
+									<ul class="span4">
+										<li>
+											<a href="#">USB Flash Drives</a>
+										</li>
+										<li>
+											<a href="#">Lapel Pins</a>
+										</li>
+										<li><a href="#">Custom Imprinted Mice</a></li>
+										<li><a href="#">Custom Imprinted USB</a></li>
+										<li><a href="#">Drink insulators</a></li>
+										<li><a href="#">Ball Markers</a></li>
+										
+									</ul>
+									<ul class="span4">
+										<li><a href="#">Custom Imprinted Ear...</a></li>
+										<li><a href="#">Bag Tags</a></li>
+										<li><a href="#">Custom Coins</a></li>
+										<li><a href="#">Embroideries</a></li>
+										<li><a href="#">Cufflinks</a></li>
+										<li><a href="#">Hat Clips</a></li>
+									</ul>
+									<ul class="span4">
+										<li><a href="#">Car Charger</a></li>
+										<li><a href="#">Go Share</a></li>
+										<li><a href="#">Power Bank</a></li>
+										<li><a href="#">Wall Charger</a></li>
+										<li><a href="#">Logo cabels</a></li>
+										<li><a href="#">All</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="span3">
+								<h4 class="green">Top Sellers</h4>
+								<ul class="">
+									<li><a href="#">USB Flash Drives</a></li>
+									<li><a href="#">Lapel Pins</a></li>
+									<li><a href="#">Custom Imprinted Mice</a></li>
+									<li><a href="#">Custom Imprinted USB</a></li>
+									<li><a href="#">Drink insulators</a></li>
+									<li><a href="#">Ball Markers</a></li>
+								</ul>
+							</div>
+
+							<div class="span3">
+								<h4 class="green">Seasonal</h4>
+								<ul class="">
+									<li><a href="#">Car Charger</a></li>
+									<li><a href="#">Go Share</a></li>
+									<li><a href="#">Power Bank</a></li>
+									<li><a href="#">Wall Charger</a></li>
+									<li><a href="#">Logo cabels</a></li>
+									<li><a href="#">All</a></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="body-main cf">
+
+
+				<div class="spaced product-headline margin-top">
+					<div class="row-fluid">
+						<div class="span3"><h4><a href="product.html">PWB005 Powser Bank</a></h4></div>
+						<div class="span7 tright">
+							<ul>
+								<li><a href="product.html">Overview</a></li>
+								<li><a href="imprint.html">Imprint &amp; Options</a></li>
+								<li><a href="accessories.html">Accesssories</a></li>
+								<li><a href="packaging.html">Packaging</a></li>
+								<li><a href="turnaround.html">Turnaround</a></li> 
+								<li class="active"><a href="faq.html">FAQs</a></li>
+							</ul>
+						</div>
+						<div class="span2">
+							<div class="input-medium pull-right">
+								<select name="" id="" class="chosen-select input-medium" data-placeholder="" data-nosearch="true">
+									<option value="">Distributor view</option>
+									<option value="">End buyer view</option>
+									<option value="">Vendor view</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row-fluid margin-top">
+
+                    <div class="row-fluid spaced">
+                      <a href="javascript:void(0)" class="btn-faq-question spaced">+1 Add question</a>
+                      <div class="form-faq-question none">
+                        <div class="row-fluid">
+                          <div class="span1 tleft"><img src="../../img/icons/ques.png" /></div>
+                          <div class="span1 tcenter"><img src="../../mock/image/user/user-2.jpg" width="56" height="56" alt=""></div>
+                          <div class="span9">
+                            <div class="combo-box">
+                              <div class="row-fluid">
+                                <div class="span12">
+                                  <input type="text" placeholder="Title" class="span12" name="" id="">
+                                </div>
+                              </div>
+                              <div class="row-fluid">
+                                <div class="span12">
+                                  <textarea name="" placeholder="Description" class="span12" rows="3"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="span12">
+                                <button class="btn btn-primary">Add</button> <button class="btn btn-cancel">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="accordion faq-list" id="faq-list">
+
+                      <div class="accordion-group">
+                        <div class="accordion-heading padding">
+                          <div class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#faq-list" href="#faq-1">
+                            <div class="row-fluid">
+                              <div class="span1 tleft"><img src="../../img/icons/ques.png" /></div>
+                              <div class="span1 tcenter"><img src="../../mock/image/user/user-2.jpg" width="56" height="56" alt=""></div>
+                              <div class="span9">
+                                <h5>Advantage of SunJoy Flash Drive</h5>
+                                <p>usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row-fluid grey-light faq-actions">
+                            <div class="span1 tright"></div>
+                            <div class="span1 tcenter"></div>
+                            <div class="span10">
+                              <p><a href="javascript:void(0)" class="btn-faq-answer">Answer</a>  <a class="btn-faq-add-file" href="javascript:void(0)">Attach a file</a>  <a href="javascript:void(0)" class="btn-faq-edit">Edit</a>  <a href="javascript:void(0)">Email</a>  <a href="javascript:void(0)">Delete</a>  <a href="javascript:void(0)">Publish</a></p>
+                            </div>
+                           </div>
+
+                           <div class="form-faq-answer spaced none">
+                              <div class="row-fluid">
+                                <div class="span1"></div>
+                                <div class="span1 tcenter"><img src="../../mock/image/user/user-2.jpg" width="48" height="48" alt=""></div>
+                                <div class="span9 shade-box">
+                                  <div class="combo-box">
+                                    <div class="row-fluid">
+                                      <div class="span12">
+                                        <input type="text" placeholder="Title" class="span12" name="" id="">
+                                      </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                      <div class="span12">
+                                        <textarea name="" placeholder="Description" class="span12" rows="3"></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row-fluid">
+                                    <div class="span12">
+                                      <button class="btn btn-primary">Add</button> <button class="btn btn-cancel">Cancel</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="form-faq-add-file spaced none">
+                              <div class="row-fluid">
+                                <div class="span2"></div>
+                                <div class="span9 shade-box">
+                                  <div class="spaced small">Add a file</div>
+                                  <div class="spaced small"><input type="text" placeholder="Comment on this file" name="" id="" class="span12"></div>
+                                  <div class="spaced small">
+                                    <div class="faq-upload">
+                                      <a href="#" class="btn-faq-upload">Upload the file</a> 
+                                      <a class="btn-add-upload" href="javascript:void(0)">+</a>
+                                    </div>
+
+                                  </div>
+                                  <div class="spaced small">
+                                    <button class="btn btn-primary">Add</button> 
+                                    <div class="btn">Cancel</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-faq-edit spaced none">
+                              <div class="row-fluid">
+                                <div class="span1 tleft"><img src="../../img/icons/ques.png" /></div>
+                              <div class="span1 tcenter"><img src="../../mock/image/user/user-2.jpg" width="56" height="56" alt=""></div>
+                                <div class="span9 shade-box">
+                                  <div class="combo-box">
+                                    <div class="row-fluid">
+                                      <div class="span12">
+                                        <input type="text" placeholder="Title" class="span12" value="Advantage of SunJoy Flash Drive" value="" id="">
+                                      </div>
+                                    </div>
+                                    <div class="row-fluid">
+                                      <div class="span12">
+                                        <textarea name="" placeholder="Description" class="span12" rows="3">usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new</textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row-fluid">
+                                    <div class="span12">
+                                      <button class="btn btn-primary">Save</button> <button class="btn btn-cancel">Cancel</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            
+                        </div>
+                        <div id="faq-1" class="accordion-body collapse">
+                          <div class="form-faq-comment">
+                              <div class="row-fluid">
+                                <div class="span2"></div>
+                                <div class="span9 shade-box"><input type="text" placeholder="Write a comment and press Enter to post" class="span12"></div>
+                              </div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="span2"></div>
+                              <div class="span10"><div class="grey spaced small">Great, this is what we wanted!</div></div>
+                            </div>
+                          <div class="accordion-inner">
+
+                            <div class="row-fluid spaced">
+                              <div class="span1 tleft"><img src="../../img/icons/answ.png" /></div>
+                              <div class="span1 tcenter"><img src="../../mock/image/user/user-1.jpg" width="56" height="56" alt=""></div>
+                              <div class="span9">
+                                <h5><a href="#">Sunjoy eService</a> uploaded the files</h5>
+                                <p>Sunjoy usb flash drives differ from other suppliers. <br>
+
+                                  <div>
+                                    <a href="#"><img src="../../mock/image/250x250/p1.jpg" /> <br>
+                                    Photo.jpg <br></a>
+                                    <span class="grey-light">August 13th, 2013</span>
+                                  </div>
+                                 </p>
+                              </div>
+                              <div class="span1 tright"><a href="#">Review</a></div>
+                            </div>
+
+                            <div class="row-fluid spaced">
+                              <div class="span1 tleft"><img src="../../img/icons/answ.png" /></div>
+                              <div class="span1 tcenter"><img src="../../mock/image/user/user-1.jpg" width="56" height="56" alt=""></div>
+                              <div class="span9">
+                                <h5>Advantage of SunJoy Flash Drive</h5>
+                                <p>Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level.  Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level.  Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level. </p>
+                              </div>
+                              <div class="span1 tright"><a href="#">Review</a></div>
+                            </div>
+
+                            <div class="row-fluid spaced">
+                              <div class="span1 tleft"><img src="../../img/icons/answ.png" /></div>
+                              <div class="span1 tcenter"><img src="../../mock/image/user/user-1.jpg" width="56" height="56" alt=""></div>
+                              <div class="span9">
+                                <h5>Advantage of SunJoy Flash Drive</h5>
+                                <p>Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level.  Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level.  Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level. </p>
+                              </div>
+                              <div class="span1 tright"><a href="#">Review</a></div>
+                            </div>
+
+                            <div class="row-fluid spaced">
+                              <div class="span1 tleft"><img src="../../img/icons/answ.png" /></div>
+                              <div class="span1 tcenter"><img src="../../mock/image/user/user-1.jpg" width="56" height="56" alt=""></div>
+                              <div class="span9">
+                                <h5>Advantage of SunJoy Flash Drive</h5>
+                                <p>Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level.  Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level.  Sunjoy usb flash drives differ from other suppliers. We offer the best pricing in the industry while we manage our quality and server to a new level. </p>
+                              </div>
+                              <div class="span1 tright"><a href="#">Review</a></div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="row-fluid spaced">
+                      <a href="javascript:void(0)" class="btn-faq-question spaced">+1 Add question</a>
+                      <div class="form-faq-question none">
+                        <div class="row-fluid">
+                          <div class="span1 tleft"><img src="../../img/icons/answ.png" /></div>
+                          <div class="span1 tcenter"><img src="../../mock/image/user/user-2.jpg" width="56" height="56" alt=""></div>
+                          <div class="span9">
+                            <div class="combo-box">
+                              <div class="row-fluid">
+                                <div class="span12">
+                                  <input type="text" placeholder="Title" class="span12" name="" id="">
+                                </div>
+                              </div>
+                              <div class="row-fluid">
+                                <div class="span12">
+                                  <textarea name="" placeholder="Description" class="span12" rows="3"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row-fluid">
+                              <div class="span12">
+                                <button class="btn btn-primary">Add</button> <button class="btn btn-cancel">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="pagination pagination-right">
+                      <ul>
+                        <li><a href="#">«</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                    </div>
+
+            </div>
+				
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-main">
+				<div class="row-fluid spaced">
+					<div class="span2">
+						<div class="spaced">
+							<h4>User</h4>
+							<ul>
+								<li><a href="#">Login</a></li>
+								<li><a href="#">Sign Up</a></li>
+							</ul>
+						</div>
+						<div class="about">
+							<h4>About</h4>
+							<ul>
+								<li><a href="#">About Sunjoy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="span8">
+						<div class="explore">
+							<h4>Explore</h4>
+							<div class="row-fluid">
+								<div class="span4">
+									<ul>
+										<li><a href="#">USB Flash Drives</a></li>
+										<li><a href="#">Lapel Pins</a></li>
+										<li><a href="#">Custom Imprinted Mice</a></li>
+										<li><a href="#">Custom Imprinted USB</a></li>
+										<li><a href="#">Drink insulators</a></li>
+										<li><a href="#">Ball Markers</a></li>
+									</ul>
+								</div>
+								<div class="span4">
+									<ul>
+										<li><a href="#">Custom Imprinted Ear</a></li>
+										<li><a href="#">Bag Tags</a></li>
+										<li><a href="#">Custom Coins</a></li>
+										<li><a href="#">Embroideries</a></li>
+										<li><a href="#">Cufflinks</a></li>
+										<li><a href="#">Hat Clips</a></li>
+									</ul>
+								</div>
+								<div class="span4">
+									<ul>
+										<li><a href="#">Car Charger</a></li>
+										<li><a href="#">Go Share</a></li>
+										<li><a href="#">Power Bank</a></li>
+										<li><a href="#">Wall Charger</a></li>
+										<li><a href="#">Logo cables</a></li>
+										<li><a href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span2">
+						<div>
+							<h4>Service</h4>
+							<ul>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Feedback</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tcenter spaced gray-light">
+					Copyright © 2000-2013, Sunjoy Inc. All rights reserved. <a href="#">User Agreement</a> | <a href="#">Privacy Policy</a>
+				</div>
+			</div>
+			
+			
+
+		</div>
+	</div>
+	
+
+
+</body>
+
+</html>
+
