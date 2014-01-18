@@ -122,6 +122,25 @@
   height: 16px;
   border: 2px solid #f60;
 }
+.colors.pms li {
+  width: 92px;
+  height: auto;
+  text-align: center;
+}
+.colors.pms li a {
+  width: 76px;
+  padding: 8px;
+  height: auto;
+  line-height: 1.4;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 0px 1px 1px #666;
+}
+.colors.pms li.active a {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #f60;
+}
 .tabs.tabs-inline.tabs-top {
   border-bottom: 1px solid #ccc;
 }
