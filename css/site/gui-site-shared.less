@@ -206,3 +206,80 @@
 .padding {
   padding: 10px;
 }
+
+#toTop {
+  width:100px;
+  border:1px solid #ccc;
+  background:#f7f7f7;
+  text-align:center;
+  padding:5px;
+  position:fixed; /* this is the magic */
+  bottom:10px; /* together with this to put the div at the bottom*/
+  right:10px;
+  cursor:pointer;
+  display:none;
+  color:#333;
+  font-family:verdana;
+  font-size:11px;
+}
+
+.chosen-noborder {
+  
+  .chzn-container-single .chzn-single {
+    border: none;
+
+  }
+  .chzn-drop {
+    border: none;
+    background: #f0f0f0;
+  }
+}
+
+.box-title {
+  &.noborder {
+    border: none;
+  }
+  &.liner {
+    background: url(../../img/global/titlebg.png);
+  }
+}
+
+.tag-hot {
+  background: #f00;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.tag-new {
+  background: #4D7AFF;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.tag-onsale {
+  background: #fc0;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}

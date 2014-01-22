@@ -155,6 +155,74 @@
 .padding {
   padding: 10px;
 }
+#toTop {
+  width: 100px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  /* this is the magic */
+
+  bottom: 10px;
+  /* together with this to put the div at the bottom*/
+
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #333;
+  font-family: verdana;
+  font-size: 11px;
+}
+.chosen-noborder .chzn-container-single .chzn-single {
+  border: none;
+}
+.chosen-noborder .chzn-drop {
+  border: none;
+  background: #f0f0f0;
+}
+.box-title.noborder {
+  border: none;
+}
+.box-title.liner {
+  background: url(../../img/global/titlebg.png);
+}
+.tag-hot {
+  background: #f00;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.tag-new {
+  background: #4D7AFF;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.tag-onsale {
+  background: #fc0;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
 a {
   color: #444;
 }
@@ -198,7 +266,6 @@ li {
   width: 1002px;
   margin: 0 auto;
   padding: 8px 0;
-  border-bottom: 1px solid #ddd;
 }
 .navi .navi-list {
   margin: 0;
@@ -211,12 +278,30 @@ li {
 }
 .navi .navi-list li a {
   font-weight: bold;
-  padding: 0 15px;
+  padding: 5px 15px;
   font-size: 15px;
   color: #666;
+  display: block;
+  border: 1px solid transparent;
 }
 .navi .navi-list li a:hover {
   color: #f60;
+}
+.navi .navi-list li a.extend-sub-navi:hover {
+  color: #f60;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  position: relative;
+  z-index: 100;
+}
+.navi .navi-list li a.extend-sub-navi.active {
+  color: #f60;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  position: relative;
+  z-index: 102;
 }
 .navi .navi-list li:first-child a {
   padding-left: 0;
@@ -235,8 +320,9 @@ li {
   position: relative;
   left: -16px;
   top: -16px;
-  background: #f9f9f9;
+  background: #fff;
   padding: 10px 15px 15px;
+  border: 1px solid #ddd;
   z-index: 101;
 }
 .navi .navi-sub .navi-sub-main a:hover {
@@ -317,6 +403,7 @@ li {
   border: 1px solid transparent;
   list-style: none;
   text-align: center;
+  position: relative;
 }
 .body .section .item-list li:hover {
   border: 1px solid #ddd;
