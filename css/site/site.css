@@ -156,23 +156,23 @@
   padding: 10px;
 }
 #toTop {
-  width: 100px;
   border: 1px solid #ccc;
-  background: #f7f7f7;
+  background: #ddd;
   text-align: center;
-  padding: 5px;
+  padding: 12px 8px 6px;
   position: fixed;
   /* this is the magic */
 
-  bottom: 10px;
+  bottom: 80px;
   /* together with this to put the div at the bottom*/
 
   right: 10px;
   cursor: pointer;
   display: none;
-  color: #333;
+  color: #fff;
   font-family: verdana;
-  font-size: 11px;
+  font-size: 32px;
+  font-weight: bold;
 }
 .chosen-noborder .chzn-container-single .chzn-single {
   border: none;
@@ -414,6 +414,13 @@ li {
   text-align: center;
   position: relative;
 }
+.body .section .item-list li .icon-lightbulb {
+  font-size: 32px;
+  color: #999;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .body .section .item-list li .more {
   padding: 4px;
 }
@@ -649,6 +656,8 @@ li {
 .alert-promo {
   width: 75%;
   margin: 20px auto;
+  background: #f3f3f3;
+  border: #ddd;
 }
 .alert-white {
   background: #fff;
@@ -999,4 +1008,9 @@ li {
   font-size: 22px;
   padding: 0;
   margin: 0;
+}
+.switch-view .chzn-container-single .chzn-single {
+  background: #006dcc;
+  color: #fff;
+  border: 1px solid #fff;
 }

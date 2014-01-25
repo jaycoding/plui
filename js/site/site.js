@@ -80,6 +80,8 @@ $(function(){
 	        show_descriptions: true
 	    });
 	}
+
+	$("body").append('<div id="toTop">^</div>');
     
 
     $(window).scroll(function() {
