@@ -418,3 +418,37 @@
     }
     
 }
+
+.floatbox-eflyer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    .bd {
+        width: 980px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        background: #fff;
+        border: 1px solid #eee;
+        border-right: 5px solid #ddd;
+        border-bottom: 5px solid #ddd;
+    }
+    h5 {
+        margin-top: 0;
+    }
+    .eflyer-img-list {
+        li {
+            display: inline-block;
+            margin: 0 3px;
+            border: 1px solid #eee;
+            position: relative;
+            .close {
+                position: absolute;
+                top: 0;
+                right: 5px;
+                left: auto;
+            }
+        }
+    }
+}

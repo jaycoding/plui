@@ -96,4 +96,20 @@ $(function(){
 		$('body,html').animate({scrollTop:0},800);
 	});
 
+	if ($(".floatbox-eflyer").length > 0){
+
+		$(window).bind("scroll", function(e){
+			if ($(window).scrollTop() > 100){
+				$(".floatbox-eflyer").removeClass("none");
+			} else {
+				$(".floatbox-eflyer").addClass("none");
+			}
+		})
+
+		$(".btn-remove-eflyer").bind("click", function(){
+			$(this).parent().remove();
+		});
+	}
+	
+
 });
