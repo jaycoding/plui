@@ -82,6 +82,10 @@
 .table td.tleft {
   text-align: left;
 }
+.box-gray {
+  padding: 10px;
+  background: #eee;
+}
 .headline {
   background: #ddd;
   width: 80%;
@@ -1044,4 +1048,16 @@ li {
   top: 0;
   right: 5px;
   left: auto;
+}
+.product-images .tabs {
+  border: none!important;
+}
+.product-images .tabs li a {
+  border: none!important;
+  background: none!important;
+  padding: 5px!important;
+  color: #888!important;
+}
+.product-images .tabs li.active a {
+  color: #333!important;
 }
