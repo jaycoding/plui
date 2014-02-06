@@ -127,16 +127,16 @@
   border: 2px solid #f60;
 }
 .colors.pms li {
-  width: 92px;
+  width: 132px;
   height: auto;
   text-align: center;
 }
 .colors.pms li a {
-  width: 76px;
+  width: 116px;
   padding: 8px;
   height: auto;
   line-height: 1.4;
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
   text-shadow: 0px 1px 1px #666;
 }
@@ -1049,6 +1049,12 @@ li {
   right: 5px;
   left: auto;
 }
+.product-images .thumbnails img {
+  opacity: 0.6;
+}
+.product-images .thumbnails img:hover {
+  opacity: 1;
+}
 .product-images .tabs {
   border: none!important;
 }
@@ -1060,4 +1066,14 @@ li {
 }
 .product-images .tabs li.active a {
   color: #333!important;
+}
+.product-images .product-image-main {
+  position: relative;
+}
+.product-images .product-image-main i.icon-lightbulb {
+  position: absolute;
+  font-size: 56px;
+  top: 8px;
+  left: 8px;
+  opacity: 0.5;
 }
