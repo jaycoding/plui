@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap.css">
+	<link rel="stylesheet" href="../../gui/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../../gui/css/style.css">
+	<link rel="stylesheet" href="../../gui/css/themes.css">
+	<link rel="stylesheet" href="../../css/site/site.css">
+
+	<!-- JS -->
+	<script src="../../gui/js/jquery.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../../gui/js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<script src="../../gui/js/bootstrap.min.js"></script>
+	<script src="../../gui/js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/site/site.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="topbar">
+				<div class="topbar-main cf">
+					<div class="pull-left">
+						Your value customizer! 
+					</div>
+					<div class="pull-right">
+						<a href="#" class="gapped"><i class="icon-shopping-cart"></i> Cart</a> <span class="gapped gray-light">|</span> <a href="#" class="gapped">Login</a> <span class="gapped gray-light">|</span> <a href="#" class="gapped">Register</a>
+					</div>
+				</div>
+			</div>
+			<div class="header">
+				<div class="header-main">
+					<div class="row-fluid">
+						<div class="span3">
+							<div class="header-logo">
+								<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
+							</div>
+						</div>
+						<div class="span9 tright">
+							<h3>
+								<a href="#" class="gapped gray"><i class="icon-facebook-sign"></i></a>
+								<a href="#" class="gapped gray"><i class="icon-twitter"></i></a>
+								<a href="#" class="gapped gray"><i class="icon-linkedin-sign"></i></a>
+								<a href="#" class="gapped gray"><i class="icon-pinterest-sign"></i></a>
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="navi">
+				<div class="navi-main cf">
+					<div class="pull-left">
+						<ul class="navi-list">
+							<li><a href="#">Home</a></li>
+							<li><a href="#" class="extend-sub-navi">Products</a></li>
+							<li><a href="#">Specials</a></li>
+							<li><a href="#">eFlyers</a></li>
+							<li><a href="#">Event &amp; News</a></li>
+						</ul>
+					</div>
+					<div class="pull-right tright">
+						<div class="header-search">
+							<form class='form-horizontal'>
+								<div class="input-append">
+									<input type="text" class="input-xlarge" name="search" placeholder="Search all products, sku or keywords...">
+									<button type='submit' class='btn'><i class="icon-search"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="navi-sub" id="sub-navi">
+						<div class="navi-sub-main">
+							<div class="row-fluid">
+								<div class="span6">
+									<h4 class="green">Categories</h4>
+									<div class="row-fluid">
+										<ul class="span4">
+											<li>
+												<a href="#">USB Flash Drives</a>
+											</li>
+											<li>
+												<a href="#">Lapel Pins</a>
+											</li>
+											<li><a href="#">Custom Imprinted Mice</a></li>
+											<li><a href="#">Custom Imprinted USB</a></li>
+											<li><a href="#">Drink insulators</a></li>
+											<li><a href="#">Ball Markers</a></li>
+											
+										</ul>
+										<ul class="span4">
+											<li><a href="#">Custom Imprinted Ear...</a></li>
+											<li><a href="#">Bag Tags</a></li>
+											<li><a href="#">Custom Coins</a></li>
+											<li><a href="#">Embroideries</a></li>
+											<li><a href="#">Cufflinks</a></li>
+											<li><a href="#">Hat Clips</a></li>
+										</ul>
+										<ul class="span4">
+											<li><a href="#">Car Charger</a></li>
+											<li><a href="#">Go Share</a></li>
+											<li><a href="#">Power Bank</a></li>
+											<li><a href="#">Wall Charger</a></li>
+											<li><a href="#">Logo cabels</a></li>
+											<li><a href="#">All</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="span3">
+									<h4 class="green">Top Sellers</h4>
+									<ul class="">
+										<li><a href="#">USB Flash Drives</a></li>
+										<li><a href="#">Lapel Pins</a></li>
+										<li><a href="#">Custom Imprinted Mice</a></li>
+										<li><a href="#">Custom Imprinted USB</a></li>
+										<li><a href="#">Drink insulators</a></li>
+										<li><a href="#">Ball Markers</a></li>
+									</ul>
+								</div>
+
+								<div class="span3">
+									<h4 class="green">Seasonal</h4>
+									<ul class="">
+										<li><a href="#">Car Charger</a></li>
+										<li><a href="#">Go Share</a></li>
+										<li><a href="#">Power Bank</a></li>
+										<li><a href="#">Wall Charger</a></li>
+										<li><a href="#">Logo cabels</a></li>
+										<li><a href="#">All</a></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="body">
+				<div class="body-main cf">
+					<div class="headline"><h2>Terms &amp; Conditions</h2></div>
+
+
+					<div class="row-fluid">
+						<div class="span8">
+							<h5>Acknowledgement</h5>
+							<p>This item is intended for use by ages 13 and older.
+All first orders and re-orders will be promptly acknowledged in writing by fax or email by SunJoy Group Inc (hereafter called “SunJoy”). If customers do not receive order confirmation from SunJoy, they must notify SunJoy immediately, otherwise their order status will be inactive. It is also the customer’s responsibility to inform SunJoy in a timely fashion regarding any changes or discrepancies in the order details or specifications.</p>
+
+							<h5>Cancellation Charges</h5>
+							<p>The customer is responsible for all charges for work completed up to time of cancellation or for any changes to orders, including artwork, die/set-up, production, and shipping charges. For rush service, once the order has been acknowledged and artwork has been sent to the factory, SunJoy cannot accept any changes or cancellations due to the rush nature of the job. The cancellation fee will be calculated based upon the production stage at the time of cancellation request.</p>
+
+							<h5>Shipping, Delivery and Turnaround Time</h5>
+							<p>SunJoy Turnaround Time means the total time beginning with the confirmation of artwork or approval of a pre-production sample, and ending with the delivery of merchandise to the customer’s dock. Every effort will be made to meet the turnaround time quoted. However, the standard turnaround times as noted in the catalog, or agreed upon at time of order, may have to be adjusted due to unforeseen circumstances associated with “custom” manufacturing and shipping. Please inform SunJoy if the merchandise must arrive by a certain date so that extra attention can be given to your delivery requirements. Any delay in returning the approval of virtual proofs, artwork, or the photo/physical samples to SunJoy will affect the delivery schedule of the order and delivery deadlines. The customer is responsible for the additional expense, cost and time resulting from any delays in SunJoy’s receipt of their complete approval. SunJoy is not responsible for any delays caused by shipping carriers or customs clearance.</p>
+
+							<h5>Storage Fees</h5>
+							<p>
+								SunJoy reserves the right to apply storage fees for any order unable to ship due to delay by the customer. The storage fees will be calculated based upon the number of days the order is delayed past the original ship date:
+								• After 1st 30 days: 2% of order total per month ($1 per day minimum) <br>
+								• After 60 days: 4% of order total per month ($2 per day minimum)<br>
+								• After 90 days: 6% of order total per month ($3 per day minimum)<br>
+								• After 120 days: 8% of order total per month ($4 per day minimum)
+							</p>
+
+							<h5>Blind Shipping, Drop Shipping and Split Shipping</h5>
+							<p>As a premium service, SunJoy can provide drop shipping, blind shipping and/or split shipping at the lowest cost possible to enhance your competition edge. However, in certain special cases, SunJoy or the factory information must be displayed on the shipping documents for security, insurance or other customs requirements. Please always consult and confirm with SunJoy the details when any of these special shipping services are requested or required.</p>
+
+							<h5>Change restrictions</h5>
+							<p>A revised PO must be submitted to SunJoy for any changes to be accepted.</p>
+
+							<h5>Quantity change</h5>
+							<p>Unit quantity can be increased within 3 business days after the order is booked. NOTE: Due to the fluctuation of chip pricing, the new units will be priced at current price at the time of increase. No combined pricing/bundle pricing allowed.</p>
+
+							<h5>Shipping Address Changes</h5>
+							<p>The ship-to address should be determined before the PO is placed with SunJoy. Any change after the Order Confirmation is issued may lead to additional cost and will be subject to reconfirmation from SunJoy. As premium service, we will try to change the ship to address whenever possible. But we will re-evaluate the shipping cost and charge extra when applicable. Also, the change request must be presented to SunJoy in writing 5 business days before ship date for air shipping and 10 business days before ship date for sea shipping. A $30 surcharge will be applied. Any address changes requests received after the above time frame will be subject to delays in the ship date and SunJoy reserves the right to reject the change request if not feasible.</p>
+
+							<h5>Other Change Requests</h5>
+							<p>Due to the custom nature of the business, all change-order requests need to be presented to SunJoy in writing within 3 business days after the order is booked. Material costs associated + a $30 surcharge will be applied to any change requests occurring after 3 days. Any change requests received after the above time frame will also be subject to delays in the ship date and SunJoy reserves the right to reject the change request if not feasible.</p>
+
+							<h5>Custom Tools, Dies, Samples, Films and Moulds</h5>
+							<p>All tools, dies, samples, drawings, films and moulds are maintained for the exclusive use of the original customer, but remain solely the property of SunJoy who may dispose of without notice of “Inactive Moulds” (1 year with no reorder) and “Inactive Film” (6 months with no reorder) . Any repeat order after the disposal will be subject to new charges. Die charges appearing in this catalog are estimated costs only. Exact die charges will be determined when final artwork or an exact sample is received from the customer.</p>
+
+							<h5>Over-runs/Under-runs</h5>
+							<p>Unless expressly stated on the purchase order, SunJoy reserves the right to ship 1.5% over or under the quantity ordered. Invoices and packing lists will reflect the exact quantity shipped and billed. However, every effort is made by SunJoy to produce and ship the exact quantities ordered.</p>
+
+							<h5>Payment Terms</h5>
+							<p>For all new customers, a 100% deposit with order is required, with the balance billed and paid in full by customer prior to shipping. After first order, a 2% discount will be granted to all orders paid in full at time of order or reorder. Any delayed payment will be charged with an additional finance charge of 1% monthly compounded since the balance due date (Due Balance*(1+1%)^n, where n stands for number of months since balance due). Existing customers are subject to periodic credit reviews to continue their NET 30 terms. For convenient, easy payment, SunJoy will accept VISA, MASTERCARD and DISCOVER, as well as Electronic Transfer and Paypal without any additional financial or service charges. We also accept standard bank checks, money orders and cashier checks without an additional charge. But it is the customer’s responsibility to make sure the check arrives before the invoice due date. Any delay on payment may lead to the holding of merchandise or additional finance charges. <br>
+Past due accounts: SunJoy reserves the right to charge the credit card on file for the invoices that are past due after due date. 30-day past due accounts / invoices will be sent to collection agencies.</p>
+
+							<h5>Pre-Productions Sample</h5>
+							<p>To ensure complete hassle free products, it is SunJoy’s recommendation for customers to order actual pre-production samples. The pre-production sample fee, including the artwork, die, set-up and shipping will be firmly quoted. Pre-production charges are non-refundable. However, when the order ensues, the pre-production charges will be fully or partially rebated to the customer. Any changes after a pre-production sample has been approved will result in additional pre-production and die charges. The additional pre-production charges for revising the sample are solely the customer’s responsibility.</p>
+
+							<h5>Price</h5>
+							<p>The prices shown in the SunJoy catalog and price list are effective from the publishing date shown and subject to change without notice. Official SunJoy quotes will be honored per the valid date as specifed in the quote documents. <br>
+Pricing is available by logging onto the SunJoy website or by calling your account representative and is subject to  changes without notice.</p>
+
+							<h5>Warranty</h5>
+							<p>For different category we have different warranty. Any physical damages after use are not covered under any warranty. Please be aware that any imprint can wear off eventually depending on usage.</p>
+
+							<h5>Replacement of Goods</h5>
+							<p>SunJoy accepts no returns of merchandise. Defected goods are subject to inspection by SunJoy and will be replaced if it is determined that defect is a material or production problem. SunJoy’s authorization must be obtained prior to the replacement of merchandise for any reason. Prior to a replacement authorization several samples that illustrate the customer’s complaint must be sent to SunJoy for evaluation. Any claims and replacement requests must be made within 10 days of the receipt of merchandise. Otherwise the merchandise will be considered as accepted as is by the customer.</p>
+
+							<h5>Rush Service</h5>
+							<p>SunJoy offers rush service at the lowest cost possible as a premium service to our customers to meet time-sensitive delivery dates. Rush service time depends on the specific item being ordered. An additional cost will be quoted based on the items and quantities ordered. Once the artwork or samples are sent to factory, no changes can be accepted on rush orders.</p>
+
+							<h5>Trademarks &amp; Promotion</h5>
+							<p>SunJoy assumes no responsibility for determining who holds title to any trademark or copyright. All liabilities of this nature rest with the customer. The artwork, design, and other trademarks on products in our catalog, website, or other media are reproduced for display proposes only, and do not imply/suggest endorsement by the trademark owner, or that the item was originally produced for the trademark owner. The customer agrees to hold SunJoy harmless for any claims of damages, costs or expenses resulting from using any unauthorized logos or trademarks. We do reserve the right to use all products produced by our company in our advertising and displays unless specified in writing to the contrary at time of receiving the customer’s order.</p>
+
+							<h5>Custom Product Design</h5>
+							<p>Whereas SunJoy can assist a customer in developing a new product design, the customer takes full responsibility for any patent infringement that results from SunJoy copying an existing product design supplied by the customer. The customer agrees to hold SunJoy harmless for any claims of damage, costs or expenses resulting from any patent or copyright infringement claim.</p>
+
+							<h5>Safe Product Commitment</h5>
+							<p>SUNJOY is committed to producing and distributing products that are compliant with applicable Product Safety standards established by the Consumer Products Safety Administration (CSPA). Our products utilize many different component and raw materials including copper, brass, iron, zinc alloy, enamels, epoxy, lead, cotton, acetate, nylon, polyester, plastisol inks, PVC (poly vinyl chloride), paper, scents, lead crystal, and batteries.</p>
+
+							<p>To achieve the appearance and effect desired by our customers at effective price points, it is necessary to utilize materials that contain small amounts of chemicals and elements that appear on the list of materials that are restricted to levels considered safe by the CSPA. These materials include nickel, phthalates and lead.</p>
+ 
+							<p>Our factory purchases raw materials in large quantities and all raw materials are tested upon receipt to ensure that they comply with ASTM guidelines established by the CSPA. Due to the nature of our highly customized product, the fact that end users for our products are ordinarily adults and the relatively small size of most individual orders it is not economically feasible to comply with the more stringent CPSIA standard at published prices.</p>
+ 
+							<p>CPSIA standards apply to products intended for distribution to consumers under the age of 12 years. SUNJOY is eager to provide products for these applications. In order to comply with the more stringent CPSIA standards, the materials we must utilize are more costly.  In addition, utilization of restricted manufacturing techniques to ensure no contamination by contact with ambient nickel, lead and phthalates that may be present on equipment and in the manufacturing environment is required. It is also necessary to re-test the completed product and its component parts to ensure compliance with the CPSIA standard if the product is intended for distribution to an audience under the age of 12 years.</p>
+ 
+							<p>For the protection of both SUNJOY and our Distributors we require that we be notified at the time of quotation to the end user if the product is intended for distribution to consumers covered by the CPSIA. We will be pleased to provide custom quotation for these applications. Divergences from our published prices for these applications will include a modest increase in the unit cost as well as costs for the required Product Safety testing. These additional costs will be invoiced to our Distributors on a per order basis. In this way safe products that achieve the goals anticipated by our Distributors and their end user customers will be achieved, avoiding exposure to Product Safety liabilities.</p>
+
+
+						</div>
+
+						<div class="span4">
+							<h5>First timer? Register now</h5>
+							<p>
+								Create unique products plus... <br>
+								Exclusive offers &amp; sneak peeks <br>
+								Instant order tracking <br>
+								Terms and conditions
+							</p>
+							<p><a href="register.html" class="btn btn-large">Register &gt;&gt;</a></p>
+						</div>
+						
+					</div>
+
+					
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="footer-main">
+					<div class="row-fluid spaced">
+						<div class="span2">
+							<div class="spaced">
+								<h4>User</h4>
+								<ul>
+									<li><a href="#">Login</a></li>
+									<li><a href="#">Sign Up</a></li>
+								</ul>
+							</div>
+							<div class="about">
+								<h4>About</h4>
+								<ul>
+									<li><a href="#">About Sunjoy</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="span8">
+							<div class="explore">
+								<h4>Explore</h4>
+								<div class="row-fluid">
+									<div class="span4">
+										<ul>
+											<li><a href="#">USB Flash Drives</a></li>
+											<li><a href="#">Lapel Pins</a></li>
+											<li><a href="#">Custom Imprinted Mice</a></li>
+											<li><a href="#">Custom Imprinted USB</a></li>
+											<li><a href="#">Drink insulators</a></li>
+											<li><a href="#">Ball Markers</a></li>
+										</ul>
+									</div>
+									<div class="span4">
+										<ul>
+											<li><a href="#">Custom Imprinted Ear</a></li>
+											<li><a href="#">Bag Tags</a></li>
+											<li><a href="#">Custom Coins</a></li>
+											<li><a href="#">Embroideries</a></li>
+											<li><a href="#">Cufflinks</a></li>
+											<li><a href="#">Hat Clips</a></li>
+										</ul>
+									</div>
+									<div class="span4">
+										<ul>
+											<li><a href="#">Car Charger</a></li>
+											<li><a href="#">Go Share</a></li>
+											<li><a href="#">Power Bank</a></li>
+											<li><a href="#">Wall Charger</a></li>
+											<li><a href="#">Logo cables</a></li>
+											<li><a href="#"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="span2">
+							<div>
+								<h4>Service</h4>
+								<ul>
+									<li><a href="#">FAQs</a></li>
+									<li><a href="#">Shipping</a></li>
+									<li><a href="#">Returns</a></li>
+									<li><a href="#">Feedback</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tcenter spaced gray-light">
+						Copyright © 2000-2013, Sunjoy Inc. All rights reserved. <a href="#">User Agreement</a> | <a href="#">Privacy Policy</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+	</body>
+
+	</html>
+
