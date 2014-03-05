@@ -422,5 +422,7 @@ $(function(){
 		clearTimeout(hoverTimeout);
 	});
 
+	$('.date').datepicker();
+
 
 });
