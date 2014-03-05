@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../gui/css/bootstrap.css">
+	<link rel="stylesheet" href="../../gui/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/chosen/chosen.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/multiselect/multi-select.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/select2/select2.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/icheck/all.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../../gui/css/style.css">
+	<link rel="stylesheet" href="../../gui/css/themes.css">
+	<link rel="stylesheet" href="../../css/admin/admin.css">
+
+	<!-- JS -->
+	<script src="../../gui/js/jquery.min.js"></script>
+	<script src="../../gui/js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../../gui/js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<script src="../../gui/js/bootstrap.min.js"></script>
+	<script src="../../gui/js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="../../gui/js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<script src="../../gui/js/plugins/chosen/chosen.jquery.min.js"></script>
+	<script src="../../gui/js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="../../gui/js/plugins/select2/select2.min.js"></script>
+	<script src="../../gui/js/plugins/icheck/jquery.icheck.min.js"></script>
+	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../../gui/js/init.js"></script>
+	<script src="../../gui/js/application.js"></script>
+	<script src="../../js/admin/item-admin.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../../gui/js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container">
+			<div class="pull-left" style="padding-top: 4px; min-width: 200px;"><img src="../../mock/image/promo-logo.png" alt="" /></div>
+			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle sidebar"><i class="icon-reorder"></i></a>
+			<ul class='main-nav'>
+				<li>
+					<a href="#">
+						<span>Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Biz Social</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Internal social</a></li>
+					</ul>
+				</li>
+				<li class='active'>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Marketing</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Homepage admin</a></li>
+						<li><a href="#">Item admin</a></li>
+						<li><a href="#">Mass price updating</a></li>
+						<li><a href="#">Mass info updating</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Banners</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Workflow</a></li>
+						<li><a href="#">My surveys</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Customers</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Quotes</a></li>
+						<li><a href="#">Sale orders</a></li>
+						<li><a href="#">AR down invoices</a></li>
+						<li><a href="#">AR invoice</a></li>
+						<li><a href="#">AR credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Vendors</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Inquiries</a></li>
+						<li><a href="#">Puchuse orders</a></li>
+						<li><a href="#">AP down invoices</a></li>
+						<li><a href="#">AP invoices</a></li>
+						<li><a href="#">AP credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Finance</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Currency exchange</a></li>
+						<li><a href="#">Incoming payments</a></li>
+						<li><a href="#">Outgoing payments</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>HR</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Orginizaion chart</a></li>
+						<li><a href="#">Member profiles</a></li>
+						<li><a href="#">Permissions</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user">
+				<ul class="icon-nav">
+					<li class='dropdown colo'>
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-tint"></i></a>
+						<ul class="dropdown-menu pull-right theme-colors">
+							<li class="subtitle">
+								Theme colors
+							</li>
+							<li>
+								<span class="lightgrey" rel="tooltip" title="Classic Black"></span>
+								<span class="blue" rel="tooltip" title="Classic Blue"></span>
+								<span class="darkblue" rel="tooltip" title="Classic Deep Blue"></span>
+								<span class='green' rel="tooltip" title="Classic Green"></span>
+								<span class="satgreen" rel="tooltip" title="Holiday Green"></span>
+								<span class='red' rel="tooltip" title="Classic Red"></span>
+								<span class="lightred" rel="tooltip" title="Holiday Red"></span>
+								<span class="lime" rel="tooltip" title="Classic Yellow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-search"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings" style="padding: 15px 15px 0;">
+							<form class='form-horizontal'>
+								<div class="input-append">
+									<input type="text" name="search" placeholder="Type a company name">
+									<button type='submit' class='btn'><i class="icon-search"></i></button>
+								</div>
+							</form>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings">
+							<li><a href="#">Company profile</a></li>
+							<li><a href="#">Site theme</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="dropdown">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Harrison Fu <img src="../../mock/image/user/user-avatar.jpg" width="27" height="27" alt=""></a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="#">Edit profile</a>
+						</li>
+						<li>
+							<a href="#">Account settings</a>
+						</li>
+						<li>
+							<a href="#">Sign out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="content">
+		<div id="left">
+			<div style="padding: 25px 10px; text-align: center; background: #fff;">
+				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
+			</div>
+			<form action="#" method="GET" class='search-form'>
+				<div class="search-pane">
+					<input type="text" name="search" placeholder="Search finance...">
+					<button type="submit"><i class="icon-search"></i></button>
+				</div>
+			</form>
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>Chart of Accounts</h1>
+					</div>
+				</div>
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Finance</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Payment</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Chart of Accounts</a>
+						</li>
+
+					</ul>
+					<div class="close-bread">
+						<a href="#"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-title"></div>
+							<div class="box-content nopadding">
+								<div class="row-fluid">
+									<div class="tabs-container">
+										<ul class="tabs tabs-inline tabs-left">
+											<li>
+												<a href="finance-accounts-assets.html">Security</a>
+											</li>
+											<li>
+												<a href="finance-accounts-liabilities.html">Liabilities</a>
+											</li>
+											<li class='active'>
+												<a href="finance-accounts-equity.html">Equity</a>
+											</li>
+											<li>
+												<a href="finance-accounts-revenues.html">Revenues</a>
+											</li>
+											<li>
+												<a href="finance-accounts-cost.html">Cost of Sales</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">Expenses</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">Financing</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">Other revenues and expenses</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-content padding tab-content-inline">
+										<div class="tab-pane active" style="min-height: 400px;">
+											<div class="box spaced">
+												<div class="row-fluid">
+													<div class="span12">
+														<h4>Stockholder Equity <a href="#" class="btn btn-small pull-right"><i class="icon-edit"></i> Edit</a></h4>
+														<dl>
+															<dt>Common stock <a href="#set-new-account" data-toggle="modal" class="btn btn-small pull-right"><i class="icon-plus-sign"></i> sub account</a></dt>
+															<dd>Common stock</dd>
+															<dd>Prefered stock</dd>
+														</dl>
+														<dl>
+															<dt>Paid in capital <a href="#set-new-account" data-toggle="modal" class="btn btn-small pull-right"><i class="icon-plus-sign"></i> sub account</a></dt>
+															<dd>Paid in capital</dd>
+														</dl>
+														<dl>
+															<dt>Surplus <a href="#set-new-account" data-toggle="modal" class="btn btn-small pull-right"><i class="icon-plus-sign"></i> sub account</a></dt>
+															<dd>Period profit</dd>
+															<dd>Retained earnings</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
+	</div>
+
+	<div id="set-new-account" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h4 id="myModalLabel">Set a new account</h4>
+		</div>
+		<form action="#" class='form-horizontal form-bordered'>
+			<div class="modal-body nopadding">
+				<div class="control-group">
+					<label class="control-label">Name</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" value="">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Curreny</label>
+					<div class="controls">
+						<div class="input-medium">
+							<select name="sort" id="select-930" class='chosen-select input-medium' data-placeholder="Curreny" data-nosearch="true">
+								<option value="">USD</option>
+								<option value="">CNY</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Status</label>
+					<div class="controls">
+						<div class="input-medium">
+							<select name="sort" id="select-932" class='chosen-select input-medium' data-placeholder="Status" data-nosearch="true">
+								<option value="">Active</option>
+								<option value="">On hold</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">Descriptions</label>
+					<div class="controls">
+						<textarea name="" id="" rows="6" class="input-xlarge"></textarea>
+					</div>
+				</div>
+			</div>
+			
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-primary" value="Add"> 
+				<button class="btn">Cancel</button>
+			</div>
+		</form>
+	</div>
+		
+</body>
+
+</html>
+

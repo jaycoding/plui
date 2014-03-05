@@ -783,3 +783,58 @@
   background-position: 5px center;
   background-repeat: no-repeat;
 }
+.hp-edit-zone {
+  padding: 20px 0;
+}
+.hp-edit-zone .editable {
+  border: 1px dotted #ccc;
+  padding: 3px;
+  position: relative;
+}
+.hp-edit-zone .editable > .operations {
+  margin: 0;
+  border-radius: 5px;
+  line-height: 1.2;
+  position: absolute;
+  background: #f30;
+  padding: 5px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  display: none;
+}
+.hp-edit-zone .editable > .operations li {
+  display: inline-block;
+  margin: 0 3px;
+  line-height: 1.2;
+}
+.hp-edit-zone .editable > .operations a {
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 1.2;
+}
+.hp-edit-zone .editable > .operations a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+.hp-edit-zone .editable:hover {
+  border: 1px dashed #999;
+}
+.hp-edit-zone .editable:hover > .operations {
+  display: block;
+}
+.hp-edit-zone .add {
+  padding: 3px;
+  color: #f30;
+  font-size: 16px;
+}
+.hp-edit-zone .add:hover {
+  text-decoration: none;
+}
+.hp-edit-zone .hp-edit-nav {
+  padding: 5px 15px;
+}
+.hp-edit-zone .hp-edit-nav a {
+  margin: 0 10px;
+}
