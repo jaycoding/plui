@@ -36,6 +36,13 @@ $(function(){
         return false;
     });
 
+    $(".btn-edit-email").live('click', function(){
+        $(this).parents(".activity-thread").find('.section-edit-email').slideDown(300, function(){
+            $(this).removeClass("none");
+        });
+        return false;
+    });
+
     $(".btn-edit-review").live('click', function(){
         $(this).parents(".activity-thread").find('.section-edit-review').slideDown(300, function(){
             $(this).removeClass("none");
