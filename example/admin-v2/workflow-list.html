@@ -204,52 +204,24 @@
 			</div>
 			<form action="#" method="GET" class='search-form'>
 				<div class="search-pane">
-					<input type="text" name="search" placeholder="Search templates by name">
+					<input type="text" name="search" placeholder="Search by name">
 					<button type="submit"><i class="icon-search"></i></button>
 				</div>
 			</form>
 
 			<div class="subnav">
 				<div class="subnav-title">
-					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Type</span></a>
+					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Status</span></a>
 				</div>
 				<ul class="subnav-menu">
 					<li style="padding-left: 27px">
 						<div class="check-line">
-							<input type="radio" class='icheck-me' id="2304" name="3999" data-skin="minimal"> <label class='inline' for="2304">All</label>
+							<input type="checkbox" class='icheck-me' id="di38" name="5892" data-skin="minimal"> <label class='inline' for="di38">Open</label>
 						</div>
 					</li>
 					<li style="padding-left: 27px">
 						<div class="check-line">
-							<input type="radio" class='icheck-me' id="2309" name="3999" data-skin="minimal"> <label class='inline' for="2309">Official</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="radio" class='icheck-me' id="3290" name="3999" data-skin="minimal"> <label class='inline' for="3290">My templates</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="radio" class='icheck-me' id="2998" name="3999" data-skin="minimal"> <label class='inline' for="2998">Others</label>
-						</div>
-					</li>
-				</ul>
-			</div>
-
-			<div class="subnav">
-				<div class="subnav-title">
-					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Validation</span></a>
-				</div>
-				<ul class="subnav-menu">
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="radio" class='icheck-me' id="8388" name="8384" data-skin="minimal"> <label class='inline' for="8388">Valid</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="radio" class='icheck-me' id="9397" name="8384" data-skin="minimal"> <label class='inline' for="9397">Invalid</label>
+							<input type="checkbox" class='icheck-me' id="6id3" name="9942" data-skin="minimal"> <label class='inline' for="6id3">Closed</label>
 						</div>
 					</li>
 				</ul>
@@ -291,16 +263,33 @@
 				</ul>
 			</div>
 
+			<div class="subnav">
+				<div class="subnav-title">
+					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Assign to</span></a>
+				</div>
+				<ul class="subnav-menu">
+					<li style="padding-left: 27px">
+						<div class="input-medium">
+							<select name="k9k7" id="ii30" multiple="multiple" class="chosen-select input-medium">
+								<option value="1">Harrison Fu</option>
+								<option value="2">Michael Beets</option>
+								<option value="2">Jack Chow</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+
 
 		</div>
 		<div id="main">
 			<div class="container-fluid">
 				<div class="page-header">
 					<div class="pull-left">
-						<h1>Templates</h1>
+						<h1>Workflows</h1>
 					</div>
 					<div class="pull-right" style="padding-top: 25px;">
-						<a href="template-add.html" class='btn btn-success'><i class="icon-plus"></i> Add template</a>
+						<a href="workflow-add.html" class='btn btn-success'><i class="icon-plus"></i> Add workflow</a>
 					</div>
 				</div>
 				<div class="breadcrumbs">
@@ -310,11 +299,11 @@
 							<i class="icon-angle-right"></i>
 						</li>
 						<li>
-							<a href="#">Administration</a>
+							<a href="#">Marketing</a>
 							<i class="icon-angle-right"></i>
 						</li>
 						<li>
-							<a href="#">Templates</a>
+							<a href="#">Workflows</a>
 						</li>
 					</ul>
 					<div class="close-bread">
@@ -356,33 +345,14 @@
 								
 								<div class="row-fluid">
 									<table class="table table-hover table-nomargin">
-										<thead>
-											<tr>
-												<th>Template name</th>
-												<th>Category</th>
-												<th>Created by</th>
-												<th></th>
-											</tr>
-										</thead>
 										<tbody>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -394,23 +364,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -422,23 +381,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -450,23 +398,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -478,23 +415,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -506,23 +432,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -534,23 +449,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -562,23 +466,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -590,23 +483,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
-													by <a href="#">Harrison Fu</a>
-												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>How do you like SunJoy website?</td>
-												<td>
-													Email this product
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>
@@ -618,11 +500,14 @@
 												</td>
 											</tr>
 											<tr>
-												<td>Tell us your recent order experience at Sunjoy?</td>
+												<td>5D USB Production</td>
 												<td>
 													Customer relationship
 												</td>
 												<td>
+													to <a href="#">Alan Wegrzyn</a>
+												</td>
+												<td>
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
@@ -632,9 +517,46 @@
 												</td>
 											</tr>
 											<tr>
-												<td>How do you like SunJoy website?</td>
+												<td>5D USB Production</td>
 												<td>
-													Email this product
+													Customer relationship
+												</td>
+												<td>
+													to <a href="#">Alan Wegrzyn</a>
+												</td>
+												<td>
+													by <a href="#">Harrison Fu</a>
+												</td>
+												<td class="tright">
+													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
+													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
+													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<td>5D USB Production</td>
+												<td>
+													Customer relationship
+												</td>
+												<td>
+													to <a href="#">Alan Wegrzyn</a>
+												</td>
+												<td>
+													by <a href="#">Harrison Fu</a>
+												</td>
+												<td class="tright">
+													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
+													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
+													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<td>5D USB Production</td>
+												<td>
+													Customer relationship
+												</td>
+												<td>
+													to <a href="#">Alan Wegrzyn</a>
 												</td>
 												<td>
 													by <a href="#">Harrison Fu</a>

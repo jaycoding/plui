@@ -838,3 +838,9 @@
 .hp-edit-zone .hp-edit-nav a {
   margin: 0 10px;
 }
+.activity-list th a {
+  color: #333;
+}
+.activity-list tr.unread td {
+  font-weight: bold;
+}
