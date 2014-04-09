@@ -838,9 +838,31 @@
 .hp-edit-zone .hp-edit-nav a {
   margin: 0 10px;
 }
-.activity-list th a {
+.activity-list thead th {
+  background: #f9f9f9;
+}
+.activity-list th > a {
   color: #333;
 }
 .activity-list tr.unread td {
   font-weight: bold;
+}
+.activity-list tr td > a {
+  color: #333;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.activity-list tr td > a:hover {
+  text-decoration: none;
+}
+.activity-list tr td .check-line {
+  margin: 0;
+}
+.activity-list tr td .dropdown-toggle.btn-mini {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.schedule-list thead th {
+  background: #f9f9f9;
 }

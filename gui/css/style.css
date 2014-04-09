@@ -55,6 +55,20 @@
   font-style: normal;
 }
 
+body {
+
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from { opacity: 1; }
+    to   { opacity: 1; }
+}
+
 /*  Font Awesome styles
     ------------------------------------------------------- */
 [class^="icon-"],
@@ -3885,7 +3899,7 @@ label, input, button, select, textarea {
 }
 #left .subnav .subnav-title span {
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -4238,7 +4252,7 @@ label, input, button, select, textarea {
 }
 #navigation .user .icon-nav {
   float: left;
-  font-family: 'Open Sans', sans-serif !important;
+  /*font-family: 'Open Sans', sans-serif !important;*/
 }
 #navigation .user .icon-nav > li {
   margin-right: 3px;
@@ -4632,6 +4646,9 @@ label, input, button, select, textarea {
 .check-line {
   position: relative;
   margin-bottom: 10px;
+}
+.check-line.no-margin {
+  margin-bottom: 0;
 }
 .check-line .inline {
   position: absolute;
@@ -7673,7 +7690,7 @@ html, body {
 
 body {
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica' sans-serif;*/
   font-size: 13px !important;
 }
 

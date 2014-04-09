@@ -1,8 +1,33 @@
 .activity-list {
-	th a {
+	thead th {
+		background: #f9f9f9;
+	}
+	th > a {
 		color: #333;
 	}
 	tr.unread td {
 		font-weight: bold;
+	}
+	tr td > a {
+		color: #333;
+		display: block;
+		height: 100%;
+		width: 100%;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	tr td .check-line {
+		margin: 0;
+	}
+	tr td .dropdown-toggle.btn-mini {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+}
+
+.schedule-list {
+	thead th {
+		background: #f9f9f9;
 	}
 }
