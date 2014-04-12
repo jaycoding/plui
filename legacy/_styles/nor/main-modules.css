@@ -111,6 +111,7 @@
 .mod-cate {
 	position:relative;
 	z-index:10000;
+	margin-bottom: 20px;
 }
 .mod-cate h3 {
 	height: 32px;
@@ -226,7 +227,7 @@
 /* -- Module: Category New --*/
 
 .mod-cate-new {
-	margin: 25px 0 0 0;
+	margin-bottom: 20px;
 }
 .mod-cate-new h3 {
 	font-size: 1.2em;
@@ -240,6 +241,9 @@
 .mod-cate-new ul li {
 	line-height: 1.6;
 }
+.mod-cate-new ul li li{
+	padding-left: 10px;
+}
 .mod-cate-new ul li a {
 	font-size: 1.1em;
 	color: #444;
@@ -247,7 +251,7 @@
 /* -- Module: Category Hot --*/
  
 .mod-cate-hot {
-	margin: 25px 0 0 0;
+	margin-bottom: 20px;
 }
 .mod-cate-hot h3 {
 	font-size: 1.2em;
@@ -261,10 +265,38 @@
 .mod-cate-hot ul li {
 	line-height: 1.6;
 }
+.mod-cate-hot ul li li{
+	padding-left: 10px;
+}
 .mod-cate-hot ul li a {
 	font-size: 1.1em;
 	color: #444;
 }
+
+
+.mod-top-searches {
+	margin-bottom: 20px;
+}
+.mod-top-searches h3 {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+.mod-top-searches ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.mod-top-searches ul li {
+	line-height: 1.6;
+}
+.mod-top-searches ul li li{
+	padding-left: 10px;
+}
+.mod-top-searches ul li a {
+	font-size: 1.1em;
+	color: #444;
+}
+
 .mod-banner img {
 	max-width:190px;
 }
@@ -580,11 +612,15 @@
 	width: 168px;
 	line-height: 1.6;
 }
+
+.mod-filter-colors {
+	margin-bottom: 20px;
+}
 .mod-filter-colors h3 {
 	font-size: 1.2em;
 	font-weight: 700;
 }
-.mod-filter-colors li {
+.mod-filter-colors li a {
 	border:1px solid #fff;
 	width:130px;
 	height:30px;
@@ -593,20 +629,28 @@
 	text-align:center;
 	line-height:30px;
 	cursor:pointer;
+	color: #333;
+	text-shadow: 0 1px 1px #fff;
 }
-.mod-filter-colors li.pro-white {
+.mod-filter-colors li a.pro-white {
 	border-color:#e2e1e1;
 }
-.mod-filter-colors li:hover {
+.mod-filter-colors li a:hover {
 	outline:1px solid #95954b;
 	border-color:#fff;
+	text-decoration: none;
 	background:url(../../_imgs/nor/main.png) no-repeat right -85px;
+	color: #333;
+	text-shadow: 0 1px 1px #fff;
+}
+.mod-filter-price {
+	margin-bottom: 20px;
 }
 .mod-filter-price h3 {
 	font-size: 1.2em;
 	font-weight: 700;
 }
-.mod-filter-price li {
+.mod-filter-price li a{
 	height:24px;
 	width:125px;
 	line-height:24px;
@@ -616,8 +660,9 @@
 	padding:0px 0px 0px 5px;
 	cursor:pointer;
 }
-.mod-filter-price li:hover {
+.mod-filter-price li a:hover {
 	outline:1px solid #95954b;
+	text-decoration: none;
 	background:url(../../_imgs/nor/main.png) no-repeat right -88px;
 }
 /* -- Module: Paged eFlyer List --*/
