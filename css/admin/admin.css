@@ -844,6 +844,9 @@
 .activity-list th > a {
   color: #333;
 }
+.activity-list tr.checked td {
+  background: #fcf8e3;
+}
 .activity-list tr.unread td {
   font-weight: bold;
 }
@@ -865,4 +868,10 @@
 }
 .schedule-list thead th {
   background: #f9f9f9;
+}
+.schedule-list tr.checked td {
+  background: #fcf8e3;
+}
+.schedule-list td a {
+  color: #333;
 }

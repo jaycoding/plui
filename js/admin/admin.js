@@ -15,6 +15,14 @@ $(function(){
 		}
 	});
 
+	$('.checkbox-item').bind("change", function(){
+		if ($(this).is(":checked")) {
+			$(this).closest("tr").addClass("checked");
+		} else {
+			$(this).closest("tr").removeClass("checked");
+		}
+	});
+
 	$('.date').datepicker();
 
 	$( ".hp-edit-section-items" ).sortable({ axis: "x", containment: "parent", cursor: "move" });
