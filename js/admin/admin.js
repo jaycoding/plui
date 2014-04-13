@@ -5,6 +5,7 @@ $(function(){
 		} else {
 			$(".activity-list .checkbox-item").iCheck('check');
 		}
+		$(".activity-list .checkbox-item").trigger("change");
 	});
 
 	$('.schedule-list .checkbox-select-all').bind("click", function(){
@@ -13,6 +14,7 @@ $(function(){
 		} else {
 			$(".schedule-list .checkbox-item").iCheck('check');
 		}
+		$(".schedule-list .checkbox-item").trigger("change");
 	});
 
 	$('.checkbox-item').bind("change", function(){
