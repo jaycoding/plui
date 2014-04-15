@@ -866,6 +866,18 @@
   padding-left: 7px;
   padding-right: 7px;
 }
+.activity-list td.alert-select-all {
+  background: #fcf8e3;
+  color: #c09853;
+}
+.activity-list td.alert-select-all a {
+  color: #368ee0;
+  display: inline;
+}
+.activity-list td.alert-select-all:hover {
+  background: #fcf8e3!important;
+  color: #c09853;
+}
 .schedule-list thead th {
   background: #f9f9f9;
 }
@@ -874,4 +886,16 @@
 }
 .schedule-list td a {
   color: #333;
+}
+.schedule-list td.alert-select-all {
+  background: #fcf8e3;
+  color: #c09853;
+}
+.schedule-list td.alert-select-all a {
+  color: #368ee0;
+  display: inline;
+}
+.schedule-list td.alert-select-all:hover {
+  background: #fcf8e3!important;
+  color: #c09853;
 }
