@@ -29,5 +29,17 @@ $(function(){
 
 	$( ".hp-edit-section-items" ).sortable({ axis: "x", containment: "parent", cursor: "move" });
 
+	$(".filter-date-btn").bind("click", function(){
+		if ($(this).next(".filter-date-dropdown").hasClass("none")) {
+			$(this).next(".filter-date-dropdown").removeClass("none")
+		} else {
+			$(this).next(".filter-date-dropdown").addClass("none")
+		}
+	});
+
+	$(".filter-date .btn-filter").bind("click", function(){
+		$(this).closest(".filter-date-dropdown").addClass("none");
+	});
+
 
 });

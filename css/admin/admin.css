@@ -899,3 +899,28 @@
   background: #fcf8e3!important;
   color: #c09853;
 }
+.filter-date {
+  top: -3px;
+  display: inline-block;
+  position: relative;
+}
+.filter-date .filter-date-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #999;
+  background: #fff;
+  border: 1px solid #aaa;
+}
+.filter-date .filter-date-btn .caret {
+  position: relative;
+  top: 7px;
+  border-top-color: #666;
+}
+.filter-date .filter-date-dropdown {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top: 0;
+  position: absolute;
+  top: 31px;
+  padding: 10px;
+}

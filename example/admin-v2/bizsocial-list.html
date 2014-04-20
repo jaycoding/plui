@@ -370,12 +370,14 @@
 													</select>
 												</th>
 												<th>
-													<select name="sort" id="498f" class='chosen-select input-medium' data-placeholder="Created on" data-nosearch="true">
-														<option value=""></option>
-														<option value="sort-1">Today</option>
-														<option value="sort-1">Past 7 days</option>
-														<option value="sort-1">Past 30 days</option>
-													</select>
+													<div class="filter-date">
+														<div class="filter-date-btn">Created on <span class="caret"></span></div>
+														<div class="filter-date-dropdown none">
+															<input type="text" name="textfield" value="" placeholder="From" id="textfield" class="input-small datepick"> <br>
+															<input type="text" name="textfield" value="" placeholder="To" id="textfield" class="input-small datepick"> <br>
+															<a href="javascript:void(0)" class="btn btn-filter">Search</a>
+														</div>
+													</div>
 												</th>
 												<th></th>
 											</tr>
