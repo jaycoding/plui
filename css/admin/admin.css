@@ -22,12 +22,19 @@
 #left {
   background: none;
 }
+#navigation,
+#content {
+  min-width: 992px;
+}
 .badge .close {
   float: none;
   line-height: 14px;
   position: relative;
   top: -3px;
   left: 2px;
+}
+.icon-large {
+  font-size: 16px;
 }
 .pms-swatch {
   display: inline-block;

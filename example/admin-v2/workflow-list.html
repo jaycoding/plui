@@ -202,7 +202,7 @@
 			<div style="padding: 25px 10px; text-align: center; background: #fff;">
 				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
 			</div>
-			<form action="#" method="GET" class='search-form'>
+			<form action="#" method="GET" class='search-form spaced'>
 				<div class="search-pane">
 					<input type="text" name="search" placeholder="Search by name">
 					<button type="submit"><i class="icon-search"></i></button>
@@ -213,75 +213,63 @@
 				<div class="subnav-title">
 					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Status</span></a>
 				</div>
-				<ul class="subnav-menu">
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="checkbox" class='icheck-me' id="di38" name="5892" data-skin="minimal"> <label class='inline' for="di38">Open</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="checkbox" class='icheck-me' id="6id3" name="9942" data-skin="minimal"> <label class='inline' for="6id3">Closed</label>
-						</div>
-					</li>
-				</ul>
+				<div class="subnav-menu" style="padding-left: 27px;">
+					<div class="input-medium">
+						<select name="8881" id="23623" multiple="multiple" class="chosen-select input-medium">
+							<option value="1">Open</option>
+							<option value="2">Closed</option>
+						</select>
+					</div>
+				</div>
 			</div>
 
 			<div class="subnav">
 				<div class="subnav-title">
 					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Category</span></a>
 				</div>
-				<ul class="subnav-menu">
-					<li style="padding-left: 27px">
-						<div class="input-medium">
-							<div class="input-medium">
-							<select name="8881" id="3993" multiple="multiple" class="chosen-select input-medium">
-								<option value="1">Cate A</option>
-								<option value="2">Cate B</option>
-								<option value="2">Cate C</option>
-							</select>
-						</div>
-						</div>
-					</li>
-				</ul>
+				<div class="subnav-menu" style="padding-left: 27px;">
+					<div class="input-medium">
+						<select name="8881" id="3993" multiple="multiple" class="chosen-select input-medium">
+							<option value="1">Cate A</option>
+							<option value="2">Cate B</option>
+							<option value="2">Cate C</option>
+						</select>
+					</div>
+				</div>
 			</div>
 
 			<div class="subnav">
 				<div class="subnav-title">
 					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Created by</span></a>
 				</div>
-				<ul class="subnav-menu">
-					<li style="padding-left: 27px">
-						<div class="input-medium">
-							<select name="3991" id="8838" multiple="multiple" class="chosen-select input-medium">
-								<option value="1">Harrison Fu</option>
-								<option value="2">Michael Beets</option>
-								<option value="2">Jack Chow</option>
-							</select>
-						</div>
-					</li>
-				</ul>
+				<div class="subnav-menu" style="padding-left: 27px;">
+					<div class="input-medium">
+						<select name="3991" id="8838" multiple="multiple" class="chosen-select input-medium">
+							<option value="1">Harrison Fu</option>
+							<option value="2">Michael Beets</option>
+							<option value="2">Jack Chow</option>
+						</select>
+					</div>
+				</div>
 			</div>
 
 			<div class="subnav">
 				<div class="subnav-title">
 					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Assign to</span></a>
 				</div>
-				<ul class="subnav-menu">
-					<li style="padding-left: 27px">
-						<div class="input-medium">
-							<select name="k9k7" id="ii30" multiple="multiple" class="chosen-select input-medium">
-								<option value="1">Harrison Fu</option>
-								<option value="2">Michael Beets</option>
-								<option value="2">Jack Chow</option>
-							</select>
-						</div>
-					</li>
-				</ul>
+				<div class="subnav-menu" style="padding-left: 27px;">
+					<div class="input-medium">
+						<select name="k9k7" id="ii30" multiple="multiple" class="chosen-select input-medium">
+							<option value="1">Harrison Fu</option>
+							<option value="2">Michael Beets</option>
+							<option value="2">Jack Chow</option>
+						</select>
+					</div>
+				</div>
 			</div>
 
-
 		</div>
+
 		<div id="main">
 			<div class="container-fluid">
 				<div class="page-header">
@@ -316,6 +304,9 @@
 						<div class="box">
 							<div class="box-content nopadding">
 								<div class="highlight-toolbar">
+									<div class="pull-left" style="margin-right: 10px;">
+										<div class="btn-toolbar"><a href="#" class="btn btn-warning"><i class="icon-reply"></i> Back to all</a></div>
+									</div>
 									<div class="pull-left">
 										<div class="btn-toolbar">
 											<div class="btn-group">
@@ -347,20 +338,25 @@
 									<table class="table table-hover table-nomargin">
 										<tbody>
 											<tr>
-												<td>5D USB Production</td>
-												<td>
+												<td style="width: 25%;">5D USB Production</td>
+												<td style="width: 25%;">
 													Customer relationship
 												</td>
-												<td>
+												<td style="width: 22%;">
 													to <a href="#">Alan Wegrzyn</a>
 												</td>
-												<td>
+												<td style="width: 22%;">
 													by <a href="#">Harrison Fu</a>
 												</td>
-												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+												<td style="width: 6%;" class="tright">
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -375,9 +371,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -392,9 +393,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -409,9 +415,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -426,9 +437,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -443,9 +459,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -460,9 +481,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -477,9 +503,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -494,9 +525,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -511,9 +547,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -528,9 +569,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -545,9 +591,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -562,9 +613,14 @@
 													by <a href="#">Harrison Fu</a>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Delete" class="btn btn-mini"><i class="icon-trash"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Delete</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											

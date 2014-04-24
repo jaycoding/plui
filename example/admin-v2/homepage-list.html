@@ -202,7 +202,7 @@
 			<div style="padding: 25px 10px; text-align: center; background: #fff;">
 				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
 			</div>
-			<form action="#" method="GET" class='search-form'>
+			<form action="#" method="GET" class='search-form spaced'>
 				<div class="search-pane">
 					<input type="text" name="search" placeholder="Search homepage by name">
 					<button type="submit"><i class="icon-search"></i></button>
@@ -213,50 +213,34 @@
 				<div class="subnav-title">
 					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Validation</span></a>
 				</div>
-				<ul class="subnav-menu">
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="radio" class='icheck-me' id="2304" name="3999" data-skin="minimal"> <label class='inline' for="2304">All Pages</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="radio" class='icheck-me' id="2309" name="3999" data-skin="minimal"> <label class='inline' for="2309">Current</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="radio" class='icheck-me' id="3290" name="3999" data-skin="minimal"> <label class='inline' for="3290">Future</label>
-						</div>
-					</li>
-				</ul>
+				<div class="subnav-menu" style="padding-left: 27px;">
+					<div class="input-medium">
+						<select name="" id="48822" class='chosen-select input-medium' data-placeholder="Display" data-nosearch="true">
+							<option value="">All Pages</option>
+							<option value="">Current</option>
+							<option value="">Future</option>x
+						</select>
+					</div>
+				</div>
 			</div>
 
 			<div class="subnav">
 				<div class="subnav-title">
 					<a href="#" class="toggle-subnav"><i class="icon-angle-down"></i><span>Page Status</span></a>
 				</div>
-				<ul class="subnav-menu">
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="checkbox" class='icheck-me' id="c1" data-skin="minimal"> <label class='inline' for="c1">Active</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="checkbox" class='icheck-me' id="c2" data-skin="minimal"> <label class='inline' for="c2">Demo</label>
-						</div>
-					</li>
-					<li style="padding-left: 27px">
-						<div class="check-line">
-							<input type="checkbox" class='icheck-me' id="c3" data-skin="minimal"> <label class='inline' for="c3">On hold</label>
-						</div>
-					</li>
-				</ul>
+				<div class="subnav-menu" style="padding-left: 27px;">
+					<div class="input-medium">
+						<select name="a235" id="a235" multiple="multiple" class="chosen-select input-medium">
+							<option value="">Active</option>
+							<option value="">Demo</option>
+							<option value="">On hold</option>x
+						</select>
+					</div>
+				</div>
 			</div>
 
-
 		</div>
+
 		<div id="main">
 			<div class="container-fluid">
 				<div class="page-header">
@@ -264,7 +248,7 @@
 						<h1>Homepage Admin</h1>
 					</div>
 					<div class="pull-right" style="padding-top: 25px;">
-						<a href="finance-journal-entry-add.html" class='btn btn-success'><i class="icon-plus"></i> Add homepage</a>
+						<a href="finance-journal-entry-add.html" class='btn btn-success'><i class="icon-plus"></i> Add homepage</a> 
 					</div>
 				</div>
 				<div class="breadcrumbs">
@@ -292,6 +276,9 @@
 						<div class="box">
 							<div class="box-content nopadding">
 								<div class="highlight-toolbar">
+									<div class="pull-left" style="margin-right: 10px;">
+										<div class="btn-toolbar"><a href="#" class="btn btn-warning"><i class="icon-reply"></i> Back to all</a></div>
+									</div>
 									<div class="pull-left">
 										<div class="btn-toolbar">
 											<div class="btn-group">
@@ -323,11 +310,11 @@
 									<table class="table table-hover table-nomargin">
 										<thead>
 											<tr>
-												<th>No.</th>
-												<th>Name</th>
-												<th>Display From</th>
-												<th>Display To</th>
-												<th></th>
+												<th style="width: 5%;">No.</th>
+												<th style="width: 45%;">Name</th>
+												<th style="width: 22%;">Display From</th>
+												<th style="width: 22%;">Display To</th>
+												<th style="width: 6%;"></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -343,9 +330,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -360,9 +352,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -377,9 +374,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -394,9 +396,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -411,9 +418,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -428,9 +440,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -445,9 +462,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -462,9 +484,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -479,9 +506,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -496,9 +528,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 											<tr>
@@ -513,9 +550,14 @@
 													<span>Feb 12, 2012</span>
 												</td>
 												<td class="tright">
-													<a href="javascript:void(0)" rel="tooltip" title="Duplicate" class="btn btn-mini"><i class="icon-copy"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Edit" class="btn btn-mini"><i class="icon-edit"></i></a> 
-													<a href="javascript:void(0)" rel="tooltip" title="Preview" class="btn btn-mini"><i class="icon-eye-open"></i></a>
+													<div class="btn-group tleft">
+														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle">&nbsp;<span class="caret"></span>&nbsp;</a>
+														<ul class="dropdown-menu pull-right">
+															<li><a href="#">Edit</a></li>
+															<li><a href="#">Duplicate</a></li>
+															<li><a href="#">Preview</a></li>
+														</ul>
+													</div>
 												</td>
 											</tr>
 										</tbody>
