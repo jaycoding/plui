@@ -34,6 +34,7 @@
 	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
 	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
 	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
 	<script src="../../gui/js/init.js"></script>
 	<script src="../../gui/js/application.js"></script>
 	<script src="../../js/admin/admin.js"></script>
@@ -202,10 +203,6 @@
 			<div style="padding: 25px 10px; text-align: center; background: #fff;">
 				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
 			</div>
-
-			<div class="spaced">
-				<a href="template-add.html" class='btn btn-success'><i class="icon-plus"></i> Add activity</a>
-			</div>
 			
 
 			<div class="side-filter spaced">
@@ -364,27 +361,30 @@
 									<table class="table table-hover table-nomargin activity-list">
 										<thead>
 											<tr>
-												<th>
-													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-select-all' id="8388" name="2983" data-skin="minimal" class=""></div>
-												</th>
-												<th colspan="5">
-													<div class="row-fluid">
-														<div class="span10">
-															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Add to Todo"><i class="icon-ok-circle icon-large"></i></a> 
-															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as important"><i class="icon-star icon-large"></i></a> 
-															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
-															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as read"><i class="icon-bookmark-empty icon-large"></i></a>
-															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Tag"><i class="icon-tag icon-large"></i></a> 
-															<div class="btn-group">
-																<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"> More <span class="caret"></span></a>
-																<ul class="dropdown-menu">
-																	<li><a href="#">Action 1</a></li>
-																	<li><a href="#">Action 2</a></li>
-																</ul>
+												<th colspan="6" class="list-actions-container">
+													<div class="list-actions-bar">
+														<div class="row-fluid">
+															<div class="span1">
+																<div class="check-line"><input type="checkbox" class='icheck-me checkbox-select-all' id="8388" name="2983" data-skin="minimal" class=""></div>
 															</div>
-														</div>
-														<div class="span2 tright">
-															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Settings"><i class="icon-cog icon-large"></i></a> 
+															<div class="span10" style="margin-left:0;">
+																<a href="template-add.html" class='btn btn-success'><i class="icon-plus"></i> Add activity</a>
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Add to Todo"><i class="icon-ok-circle icon-large"></i></a> 
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as important"><i class="icon-star icon-large"></i></a> 
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as read"><i class="icon-bookmark-empty icon-large"></i></a>
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Tag"><i class="icon-tag icon-large"></i></a> 
+																<div class="btn-group">
+																	<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"> More <span class="caret"></span></a>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">Action 1</a></li>
+																		<li><a href="#">Action 2</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="span1 tright">
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Settings"><i class="icon-cog icon-large"></i></a> 
+															</div>
 														</div>
 													</div>
 												</th>

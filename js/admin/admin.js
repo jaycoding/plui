@@ -41,5 +41,9 @@ $(function(){
 		$(this).closest(".filter-date-dropdown").addClass("none");
 	});
 
+	if ($(".list-actions-bar").length > 0) {
+		$(".list-actions-bar").scrollToFixed();
+	}
+
 
 });
