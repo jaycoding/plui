@@ -202,12 +202,11 @@
 			<div style="padding: 25px 10px; text-align: center; background: #fff;">
 				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
 			</div>
-			<form action="#" method="GET" class='search-form spaced'>
-				<div class="search-pane">
-					<input type="text" name="search" placeholder="Search templates by name">
-					<button type="submit"><i class="icon-search"></i></button>
-				</div>
-			</form>
+
+			<div class="spaced">
+				<a href="template-add.html" class='btn btn-success'><i class="icon-plus"></i> Add activity</a>
+			</div>
+			
 
 			<div class="side-filter spaced">
 				<div class="side-filter-hd">To me</div>
@@ -281,7 +280,12 @@
 						<h1>Biz Social</h1>
 					</div>
 					<div class="pull-right" style="padding-top: 25px;">
-						<a href="template-add.html" class='btn btn-success'><i class="icon-plus"></i> Add activity</a>
+						<form action="#" method="GET" class='search-form spaced'>
+							<div class="search-pane">
+								<input type="text" name="search" placeholder="Search activity">
+								<button type="submit"><i class="icon-search"></i></button>
+							</div>
+						</form>
 					</div>
 				</div>
 				<div class="breadcrumbs">
@@ -364,10 +368,25 @@
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-select-all' id="8388" name="2983" data-skin="minimal" class=""></div>
 												</th>
 												<th colspan="5">
-													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Add to Todo"><i class="icon-ok-circle icon-large"></i></a> 
-													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as important"><i class="icon-star icon-large"></i></a> 
-													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
-													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as read"><i class="icon-bookmark-empty icon-large"></i></a> 
+													<div class="row-fluid">
+														<div class="span10">
+															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Add to Todo"><i class="icon-ok-circle icon-large"></i></a> 
+															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as important"><i class="icon-star icon-large"></i></a> 
+															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
+															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as read"><i class="icon-bookmark-empty icon-large"></i></a>
+															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Tag"><i class="icon-tag icon-large"></i></a> 
+															<div class="btn-group">
+																<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"> More <span class="caret"></span></a>
+																<ul class="dropdown-menu">
+																	<li><a href="#">Action 1</a></li>
+																	<li><a href="#">Action 2</a></li>
+																</ul>
+															</div>
+														</div>
+														<div class="span2 tright">
+															<a href="javascript:void(0)" class="btn" rel="tooltip" title="Settings"><i class="icon-cog icon-large"></i></a> 
+														</div>
+													</div>
 												</th>
 											</tr>
 										</thead>
@@ -375,6 +394,14 @@
 											<tr>
 												<td colspan="6" class="alert-select-all">
 													All 48 activities on this page are selected. <a href="#">Select all 1,167 activities. </a>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="6" class="separator-read">
+													<div>
+														<span class="caret" style="position: relative; top: 7px;"></span> Unread 
+														<hr>
+													</div>
 												</td>
 											</tr>
 											<tr class="unread">
@@ -385,17 +412,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr class="unread">
 												<td>
@@ -405,17 +421,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr class="unread">
 												<td>
@@ -425,17 +430,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr class="unread">
 												<td>
@@ -445,17 +439,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr class="unread">
 												<td>
@@ -465,17 +448,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr class="unread">
 												<td>
@@ -485,17 +457,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr class="unread">
 												<td>
@@ -505,17 +466,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr class="unread">
 												<td>
@@ -525,15 +475,13 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
+											</tr>
+
+											<tr>
+												<td colspan="6" class="separator-read">
+													<div>
+														<span class="caret" style="position: relative; top: 7px;"></span> Read 
+														<hr>
 													</div>
 												</td>
 											</tr>
@@ -546,17 +494,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr>
 												<td>
@@ -566,17 +503,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr>
 												<td>
@@ -586,77 +512,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4752" name="" data-skin="minimal"></div>
-												</td>
-												<td><a href="#">Harrison Fu</a></td>
-												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
-												<td><a href="#">IClick, Inc</a></td>
-												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0588" name="" data-skin="minimal"></div>
-												</td>
-												<td><a href="#">Harrison Fu</a></td>
-												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
-												<td><a href="#">IClick, Inc</a></td>
-												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="8677" name="" data-skin="minimal"></div>
-												</td>
-												<td><a href="#">Harrison Fu</a></td>
-												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
-												<td><a href="#">IClick, Inc</a></td>
-												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr>
 												<td>
@@ -666,18 +521,44 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
+											<tr>
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4752" name="" data-skin="minimal"></div>
+												</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0588" name="" data-skin="minimal"></div>
+												</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="8677" name="" data-skin="minimal"></div>
+												</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2995" name="" data-skin="minimal"></div>
+												</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+
 											<tr>
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="9354" name="" data-skin="minimal"></div>
@@ -686,17 +567,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr>
 												<td>
@@ -706,17 +576,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr>
 												<td>
@@ -726,17 +585,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											<tr>
 												<td>
@@ -746,17 +594,6 @@
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
-												<td class="tright">
-													<div class="btn-group tleft">
-														<a href="#" data-toggle="dropdown" class="btn btn-mini dropdown-toggle"> <span class="caret"></span></a>
-														<ul class="dropdown-menu pull-right">
-															<li><a href="#">Mark as important</a></li>
-															<li><a href="#">Add to tasks</a></li>
-															<li><a href="#">Hide</a></li>
-															<li><a href="#">Mark as read</a></li>
-														</ul>
-													</div>
-												</td>
 											</tr>
 											
 										</tbody>

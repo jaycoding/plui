@@ -892,6 +892,29 @@
   background: #fcf8e3!important;
   color: #c09853;
 }
+.activity-list td.separator-read {
+  background: #f9f9f9;
+  color: #333;
+}
+.activity-list td.separator-read:hover {
+  background: #f9f9f9!important;
+  color: #333;
+}
+.activity-list td.separator-read div {
+  font-weight: bold;
+  position: relative;
+}
+.activity-list td.separator-read hr {
+  display: none;
+  position: absolute;
+  top: 50%;
+  width: 92%;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  right: -10px;
+  border-top: 1px dashed #ccc;
+}
 .schedule-list thead th {
   background: #f9f9f9;
 }

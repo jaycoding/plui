@@ -39,6 +39,31 @@
 			color: #c09853;
 		}
 	}
+
+	td.separator-read {
+		background: #f9f9f9;
+		color: #333;
+		&:hover {
+			background: #f9f9f9!important;
+			color: #333;
+		}
+		div {
+			font-weight: bold;
+			position: relative;
+		}
+		hr {
+			display: none;
+			position: absolute;
+			top: 50%;
+			width: 92%;
+			margin: 0;
+			padding: 0;
+			height: 0;
+
+			right: -10px;
+			border-top: 1px dashed #ccc;
+		}
+	}
 }
 
 .schedule-list {
