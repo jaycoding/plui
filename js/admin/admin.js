@@ -45,5 +45,28 @@ $(function(){
 		$(".list-actions-bar").scrollToFixed();
 	}
 
+	if ($(".side-scrollfixed").length > 0) {
+		$(".side-scrollfixed").scrollToFixed();
+	}
+
+	if ($(".multiselect-tag").length > 0) {
+		$(".multiselect-tag").multiselect({
+	      buttonText: function() {
+	        return "<i class='icon-tag icon-large'></i> <span class='caret'></span>";
+	      },
+	      numberDisplayed: 1,
+	      enableFiltering: true
+	    });
+	}
+
+	if ($(".multiselect-folder").length > 0) {
+		$(".multiselect-folder").multiselect({
+	      buttonText: function() {
+	        return "<i class='icon-folder-close icon-large'></i> <span class='caret'></span>";
+	      },
+	      numberDisplayed: 1,
+	      enableFiltering: true
+	    });
+	}
 
 });

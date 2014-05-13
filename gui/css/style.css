@@ -7801,3 +7801,12 @@ a:focus {
 .ui-spinner .ui-spinner-input {
   margin: 0;
 }
+
+.multiselect .dropdown-menu li > a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.multiselect .input-group-addon {
+  display: none;
+}
