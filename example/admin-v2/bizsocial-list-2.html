@@ -35,8 +35,8 @@
 	<script src="../../gui/js/plugins/fancybox/jquery.fancybox.js"></script>
 	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
 	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
-	<script src="../../gui/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
 	<script src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
+	<script src="../../gui/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
 	<script src="../../gui/js/init.js"></script>
 	<script src="../../gui/js/application.js"></script>
 	<script src="../../js/admin/admin.js"></script>
@@ -214,56 +214,67 @@
 				
 
 				<div class="side-filter spaced">
+					<button class="btn btn-warning"><i class="icon-remove"></i> Remove all filters</button>
+
+					<div class="filter-section">
+						<h5>To me:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Assigned to me</span>
+						</div>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Replied to me</span>
+						</div>
+					</div>
+
+					<div class="filter-section">
+						<h5>Target type:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Type A</span>
+						</div>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Type B</span>
+						</div>
+					</div>
+					
+				</div>
+				
+
+				<div class="side-filter spaced">
 					<div class="side-filter-hd">To me</div>
 					<div class="side-filter-bd">
-						<select name="" id="72423" class='chosen-select' data-placeholder="To me" data-nosearch="true">
-							<option value="">All</option>
-							<option value="">Assigned to me</option>
-							<option value="">Notify me</option>
-							<option value="">Replied by me</option>
-						</select>
+						<input type="text" class="input-medium">
 					</div>
 				</div>
 
 				<div class="side-filter spaced">
 					<div class="side-filter-hd">Target type</div>
 					<div class="side-filter-bd">
-						<select name="8881" id="3993" multiple="multiple" class="chosen-select input-medium">
-							<option value="1">Type A</option>
-							<option value="2">Type B</option>
-							<option value="2">Type C</option>
-						</select>
+						<input type="text" class="input-medium">
 					</div>
 				</div>
 
 				<div class="side-filter spaced">
 					<div class="side-filter-hd">Created by</div>
 					<div class="side-filter-bd">
-						<select name="sort" id="8998" class='chosen-select input-medium' data-placeholder="Created By">
-							<option value=""></option>
-							<option value="sort-1">Harrison Fu</option>
-							<option value="sort-2">Tom Wong</option>
-						</select>
+						<input type="text" class="input-medium">
 					</div>
 				</div>
 
 				<div class="side-filter spaced">
 					<div class="side-filter-hd">Content tag</div>
 					<div class="side-filter-bd">
-						<select name="sort" id="8o90" class='chosen-select input-large' data-placeholder="Filter contnet by tag name">
-							<option value=""></option>
-							<option value="sort-1">Tag name</option>
-						</select>
+						<input type="text" class="input-medium">
 					</div>
 				</div>
 
 				<div class="side-filter spaced">
 					<div class="side-filter-hd">Target type</div>
 					<div class="side-filter-bd">
-						<select name="sort" id="s8bw" class='chosen-select input-medium' data-placeholder="Target">
-							<option value=""></option>
-							<option value="sort-1">All target</option>
-						</select>
+						<input type="text" class="input-medium">
 					</div>
 				</div>
 
@@ -275,6 +286,8 @@
 					</div>
 				</div>
 			</div>
+
+			
 
 		</div>
 
@@ -294,7 +307,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="breadcrumbs">
+				<div class="breadcrumbs spaced">
 					<ul>
 						<li>
 							<a href="#">Home</a>
@@ -313,59 +326,8 @@
 					<div class="span12">
 						<div class="box">
 							<div class="box-content nopadding">
-								<div class="highlight-toolbar">
-									<!-- Only display "Back to all" button in filter mode. -->
-									<div class="pull-left" style="margin-right: 10px;">
-										<div class="btn-toolbar"><a href="#" class="btn btn-warning"><i class="icon-reply"></i> Back to all</a></div>
-									</div>
-									<div class="pull-left">
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<select name="sort" id="status" class='chosen-select input-medium' data-placeholder="Created Date" data-nosearch="true">
-													<option value=""></option>
-													<option value="sort-1">Updated date</option>
-													<option value="sort-2">Created date</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<div class="pull-right">
-										<div class="btn-toolbar">
-											<div class="btn-group">
-												<select name="cat" id="cat" class='chosen-select input-medium' data-placeholder="Show items">
-													<option value=""></option>
-													<option value="opt-1">10</option>
-													<option value="opt-2">25</option>
-													<option value="opt-3">50</option>
-													<option value="opt-4">100</option>
-													<option value="opt-5">all</option>
-												</select>
-											</div>
-										</div>
-									</div>
-								</div>
 								
 								<div class="row-fluid">
-									<ul class="nav nav-tabs">
-										<li class="active">
-											<a href="#">&nbsp;&nbsp;All&nbsp;&nbsp;</a>
-										</li>
-										<li>
-											<a href="#">Activities</a>
-										</li>
-										<li>
-											<a href="#">Meetings</a>
-										</li>
-										<li>
-											<a href="#">Knowledge</a>
-										</li>
-										<li>
-											<a href="#">News</a>
-										</li>
-										<li>
-											<a href="#">Survey</a>
-										</li>
-									</ul>
 
 									<table class="table table-hover table-nomargin activity-list">
 										<thead>
@@ -378,10 +340,10 @@
 															</div>
 															<div class="span10" style="margin-left:0;">
 																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle todo"><i class="icon-ok-circle icon-large"></i></a> 
-																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle important"><i class="icon-star icon-large"></i></a> 
-																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle hide"><i class="icon-eye-close icon-large"></i></a> 
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toogle important"><i class="icon-star icon-large"></i></a> 
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
 																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle read"><i class="icon-bookmark-empty icon-large"></i></a>
-
+																
 																<div class="btn-group">
 																	<select class="multiselect-folder" multiple="multiple">
 																	  <option value="">Folder 1</option>
@@ -421,7 +383,6 @@
 																		<li><a href="#">Show 200 per page</a></li>
 																	</ul>
 																</div>
-
 															</div>
 														</div>
 													</div>
@@ -435,9 +396,9 @@
 												</td>
 											</tr>
 											<tr>
-												<td colspan="6" class="separator-read">
+												<td colspan="6" class="separator-unread">
 													<div>
-														<span class="caret" style="position: relative; top: 7px;"></span> Unread 
+														<i class="icon-caret-down"></i> Unread 
 														<hr>
 													</div>
 												</td>
@@ -518,13 +479,13 @@
 											<tr>
 												<td colspan="6" class="separator-read">
 													<div>
-														<span class="caret" style="position: relative; top: 7px;"></span> Read 
+														<i class="icon-caret-down"></i> Read 
 														<hr>
 													</div>
 												</td>
 											</tr>
 
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4752" name="" data-skin="minimal"></div>
 												</td>
@@ -533,7 +494,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0588" name="" data-skin="minimal"></div>
 												</td>
@@ -542,7 +503,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="8677" name="" data-skin="minimal"></div>
 												</td>
@@ -551,7 +512,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2995" name="" data-skin="minimal"></div>
 												</td>
@@ -560,7 +521,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4752" name="" data-skin="minimal"></div>
 												</td>
@@ -569,7 +530,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0588" name="" data-skin="minimal"></div>
 												</td>
@@ -578,7 +539,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="8677" name="" data-skin="minimal"></div>
 												</td>
@@ -587,7 +548,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2995" name="" data-skin="minimal"></div>
 												</td>
@@ -597,7 +558,7 @@
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
 
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="9354" name="" data-skin="minimal"></div>
 												</td>
@@ -606,7 +567,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="3842" name="" data-skin="minimal"></div>
 												</td>
@@ -615,7 +576,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0058" name="" data-skin="minimal"></div>
 												</td>
@@ -624,7 +585,7 @@
 												<td><a href="#">IClick, Inc</a></td>
 												<td><a href="#">9:12 AM</a></td>
 											</tr>
-											<tr>
+											<tr class="read">
 												<td>
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4992" name="" data-skin="minimal"></div>
 												</td>
