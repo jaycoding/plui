@@ -7802,11 +7802,11 @@ a:focus {
   margin: 0;
 }
 
-.multiselect .dropdown-menu li > a {
+.multiselect-container.dropdown-menu li > a {
   padding-left: 0;
   padding-right: 0;
 }
 
-.multiselect .input-group-addon {
+.multiselect-container .input-group-addon {
   display: none;
 }
