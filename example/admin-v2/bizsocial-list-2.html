@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="../../gui/css/plugins/tagsinput/jquery.tagsinput.css">
 	<link rel="stylesheet" href="../../gui/css/plugins/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="../../gui/css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../../gui/css/plugins/bootstrap-multiselect/bootstrap-multiselect.css">
 	<link rel="stylesheet" href="../../gui/css/style.css">
 	<link rel="stylesheet" href="../../gui/css/themes.css">
 	<link rel="stylesheet" href="../../css/admin/admin.css">
@@ -35,6 +36,7 @@
 	<script src="../../gui/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
 	<script src="../../gui/js/plugins/multiselect/jquery.multi-select.js"></script>
 	<script src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
+	<script src="../../gui/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
 	<script src="../../gui/js/init.js"></script>
 	<script src="../../gui/js/application.js"></script>
 	<script src="../../js/admin/admin.js"></script>
@@ -204,78 +206,88 @@
 				<img src="../../mock/image/logo/sunjoy.gif" width="150" alt="" />
 			</div>
 
-			<div class="side-filter spaced">
-				<button class="btn btn-warning"><i class="icon-remove"></i> Remove all filters</button>
+			<div class="side-scrollfixed">
 
-				<div class="filter-section">
-					<h5>To me:</h5>
-					<div class="filter-tag">
-						<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
-						<span>Assigned to me</span>
-					</div>
-					<div class="filter-tag">
-						<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
-						<span>Replied to me</span>
-					</div>
-				</div>
-
-				<div class="filter-section">
-					<h5>Target type:</h5>
-					<div class="filter-tag">
-						<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
-						<span>Type A</span>
-					</div>
-					<div class="filter-tag">
-						<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
-						<span>Type B</span>
-					</div>
+				<div class="side-filter spaced">
+					<a href="#" class='btn btn-large btn-block btn-success'><i class="icon-plus"></i> Add activity</a>
 				</div>
 				
+
+				<div class="side-filter spaced">
+					<button class="btn btn-warning"><i class="icon-remove"></i> Remove all filters</button>
+
+					<div class="filter-section">
+						<h5>To me:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Assigned to me</span>
+						</div>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Replied to me</span>
+						</div>
+					</div>
+
+					<div class="filter-section">
+						<h5>Target type:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Type A</span>
+						</div>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Type B</span>
+						</div>
+					</div>
+					
+				</div>
+				
+
+				<div class="side-filter spaced">
+					<div class="side-filter-hd">To me</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter spaced">
+					<div class="side-filter-hd">Target type</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter spaced">
+					<div class="side-filter-hd">Created by</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter spaced">
+					<div class="side-filter-hd">Content tag</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter spaced">
+					<div class="side-filter-hd">Target type</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter spaced">
+					<div class="side-filter-hd">Created date</div>
+					<div class="side-filter-bd">
+						<input type="text" name="textfield" value="" placeholder="From" id="t23234" class="input-small datepick">
+						<input type="text" name="textfield" value="" placeholder="To" id="23423" class="input-small datepick">
+					</div>
+				</div>
 			</div>
+
 			
-
-			<div class="side-filter spaced">
-				<div class="side-filter-hd">To me</div>
-				<div class="side-filter-bd">
-					<input type="text" class="input-medium">
-				</div>
-			</div>
-
-			<div class="side-filter spaced">
-				<div class="side-filter-hd">Target type</div>
-				<div class="side-filter-bd">
-					<input type="text" class="input-medium">
-				</div>
-			</div>
-
-			<div class="side-filter spaced">
-				<div class="side-filter-hd">Created by</div>
-				<div class="side-filter-bd">
-					<input type="text" class="input-medium">
-				</div>
-			</div>
-
-			<div class="side-filter spaced">
-				<div class="side-filter-hd">Content tag</div>
-				<div class="side-filter-bd">
-					<input type="text" class="input-medium">
-				</div>
-			</div>
-
-			<div class="side-filter spaced">
-				<div class="side-filter-hd">Target type</div>
-				<div class="side-filter-bd">
-					<input type="text" class="input-medium">
-				</div>
-			</div>
-
-			<div class="side-filter spaced">
-				<div class="side-filter-hd">Created date</div>
-				<div class="side-filter-bd">
-					<input type="text" name="textfield" value="" placeholder="From" id="t23234" class="input-small datepick">
-					<input type="text" name="textfield" value="" placeholder="To" id="23423" class="input-small datepick">
-				</div>
-			</div>
 
 		</div>
 
@@ -327,27 +339,35 @@
 																<div class="check-line"><input type="checkbox" class='icheck-me checkbox-select-all' id="8388" name="2983" data-skin="minimal" class=""></div>
 															</div>
 															<div class="span10" style="margin-left:0;">
-																<a href="template-add.html" class='btn btn-success'><i class="icon-plus"></i> Add activity</a>
-																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Add to Todo"><i class="icon-ok-circle icon-large"></i></a> 
-																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as important"><i class="icon-star icon-large"></i></a> 
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle todo"><i class="icon-ok-circle icon-large"></i></a> 
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toogle important"><i class="icon-star icon-large"></i></a> 
 																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
-																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Mark as read"><i class="icon-bookmark-empty icon-large"></i></a>
+																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle read"><i class="icon-bookmark-empty icon-large"></i></a>
+																
 																<div class="btn-group">
-																	<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"> <i class="icon-folder-close icon-large"></i> <span class="caret"></span></a>
-																	<ul class="dropdown-menu">
-																		<li><a href="#">Action 1</a></li>
-																		<li><a href="#">Action 2</a></li>
-																	</ul>
+																	<select class="multiselect-folder" multiple="multiple">
+																	  <option value="">Folder 1</option>
+																	  <option value="">Folder 2</option>
+																	  <option value="">Folder 3</option>
+																	  <option value="">Folder 4</option>
+																	  <option value="">Folder 5</option>
+																	  <option value="">Folder 6</option>
+																	</select>
 																</div>
+
 																<div class="btn-group">
-																	<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"> <i class="icon-tag icon-large"></i> <span class="caret"></span></a>
-																	<ul class="dropdown-menu">
-																		<li><a href="#">Action 1</a></li>
-																		<li><a href="#">Action 2</a></li>
-																	</ul>
+																	<select class="multiselect-tag" multiple="multiple">
+																	  <option value="">Tag 1</option>
+																	  <option value="">Tag 2</option>
+																	  <option value="">Tag 3</option>
+																	  <option value="">Tag 4</option>
+																	  <option value="">Tag 5</option>
+																	  <option value="">Tag 6</option>
+																	</select>
 																</div>
+
 																<div class="btn-group">
-																	<a href="#" data-toggle="dropdown" class="btn dropdown-toggle"> More <span class="caret"></span></a>
+																	<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle"> More <span class="caret"></span></a>
 																	<ul class="dropdown-menu">
 																		<li><a href="#">Action 1</a></li>
 																		<li><a href="#">Action 2</a></li>
@@ -355,7 +375,14 @@
 																</div>
 															</div>
 															<div class="span1 tright">
-																<a href="javascript:void(0)" class="btn" rel="tooltip" title="Settings"><i class="icon-cog icon-large"></i></a> 
+																<div class="btn-group pull-right">
+																	<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle"> <i class="icon-cog icon-large"></i></a>
+																	<ul class="dropdown-menu pull-right tleft">
+																		<li><a href="#">Show 50 per page</a></li>
+																		<li><a href="#">Show 100 per page</a></li>
+																		<li><a href="#">Show 200 per page</a></li>
+																	</ul>
+																</div>
 															</div>
 														</div>
 													</div>
