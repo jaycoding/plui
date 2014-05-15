@@ -42,7 +42,9 @@ $(function(){
 	});
 
 	if ($(".list-actions-bar").length > 0) {
-		$(".list-actions-bar").scrollToFixed();
+		$(".list-actions-bar").scrollToFixed({
+			zIndex : 1
+		});
 	}
 
 	$(".separator-unread").bind("click", function(){
