@@ -65,9 +65,6 @@ $(function(){
 		}
 	});
 
-	if ($(".side-scrollfixed").length > 0) {
-		$(".side-scrollfixed").scrollToFixed();
-	}
 
 	if ($(".multiselect-tag").length > 0) {
 		$(".multiselect-tag").multiselect({

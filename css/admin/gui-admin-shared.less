@@ -312,10 +312,91 @@
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
+
+.side-logo {
+  padding: 25px 10px; 
+  text-align: center; 
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.side-action {
+  padding: 0 5px;
+}
+
 .side-filter {
   padding: 0 5px;
+  h4, h5 {
+    margin-top: 0;
+  }
   .side-filter-hd {
     font-size: 14px;
     padding-bottom: 5px;
+  }
+}
+
+
+.filter-date {
+  top: -3px;
+  display: inline-block;
+  position: relative;
+  .filter-date-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: #999;
+    background: #fff;
+    border: 1px solid #aaa;
+    .caret {
+      position: relative;
+      top: 7px;
+      border-top-color: #666;
+    }
+  }
+  .filter-date-dropdown {
+    background: #fff;
+    border: 1px solid #aaa;
+    border-top: 0;
+    position: absolute;
+    top: 31px;
+    padding: 10px;
+  }
+}
+
+.filter-section {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-tag {
+  padding: 4px 8px;
+  background: #ddd;
+  margin-bottom: 5px;
+  .btn-remove-filter {
+    color: #666;
+    float: right;
+    font-size: 16px;
+    &:hover {
+      text-decoration: none;
+      color: #333;
+    }
+  } 
+}
+
+.side-filter-group {
+  background: #f3f3f3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-header {
+  .search-form {
+    input {
+      width: 200px;
+      transition: all 0.3s;
+      &:active,
+      &:focus {
+        width: 300px;
+      }
+    }
   }
 }

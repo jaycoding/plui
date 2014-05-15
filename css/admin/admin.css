@@ -269,12 +269,81 @@
   background-image: none;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
+.side-logo {
+  padding: 25px 10px;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.side-action {
+  padding: 0 5px;
+}
 .side-filter {
   padding: 0 5px;
+}
+.side-filter h4,
+.side-filter h5 {
+  margin-top: 0;
 }
 .side-filter .side-filter-hd {
   font-size: 14px;
   padding-bottom: 5px;
+}
+.filter-date {
+  top: -3px;
+  display: inline-block;
+  position: relative;
+}
+.filter-date .filter-date-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #999;
+  background: #fff;
+  border: 1px solid #aaa;
+}
+.filter-date .filter-date-btn .caret {
+  position: relative;
+  top: 7px;
+  border-top-color: #666;
+}
+.filter-date .filter-date-dropdown {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-top: 0;
+  position: absolute;
+  top: 31px;
+  padding: 10px;
+}
+.filter-section {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.filter-tag {
+  padding: 4px 8px;
+  background: #ddd;
+  margin-bottom: 5px;
+}
+.filter-tag .btn-remove-filter {
+  color: #666;
+  float: right;
+  font-size: 16px;
+}
+.filter-tag .btn-remove-filter:hover {
+  text-decoration: none;
+  color: #333;
+}
+.side-filter-group {
+  background: #f3f3f3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.page-header .search-form input {
+  width: 200px;
+  transition: all 0.3s;
+}
+.page-header .search-form input:active,
+.page-header .search-form input:focus {
+  width: 300px;
 }
 .sortable-img-item-placeholder {
   border: 1px dotted #ccc;
@@ -967,48 +1036,4 @@
 .schedule-list td.alert-select-all:hover {
   background: #fcf8e3!important;
   color: #c09853;
-}
-.filter-date {
-  top: -3px;
-  display: inline-block;
-  position: relative;
-}
-.filter-date .filter-date-btn {
-  cursor: pointer;
-  padding: 5px 10px;
-  color: #999;
-  background: #fff;
-  border: 1px solid #aaa;
-}
-.filter-date .filter-date-btn .caret {
-  position: relative;
-  top: 7px;
-  border-top-color: #666;
-}
-.filter-date .filter-date-dropdown {
-  background: #fff;
-  border: 1px solid #aaa;
-  border-top: 0;
-  position: absolute;
-  top: 31px;
-  padding: 10px;
-}
-.filter-section {
-  border-bottom: 1px dotted #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-.filter-tag {
-  padding: 4px 8px;
-  background: #f6f6f6;
-  margin-bottom: 5px;
-}
-.filter-tag .btn-remove-filter {
-  color: #666;
-  float: right;
-  font-size: 16px;
-}
-.filter-tag .btn-remove-filter:hover {
-  text-decoration: none;
-  color: #333;
 }
