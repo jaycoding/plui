@@ -47,6 +47,12 @@ $(function(){
 		});
 	}
 
+	if ($(".side-scrollfixed").length > 0) {
+		$(".side-scrollfixed").scrollToFixed({
+			zIndex : 1
+		});
+	}
+
 	$(".separator-unread").bind("click", function(){
 		if ($(this).hasClass("collapsed")) {
 			$(this).removeClass("collapsed").find(".icon-caret-down").removeClass("icon-caret-up");

@@ -276,7 +276,7 @@
   margin-bottom: 20px;
 }
 .side-action {
-  padding: 0 5px;
+  padding: 0;
 }
 .side-filter {
   padding: 0 5px;
@@ -314,9 +314,17 @@
   top: 31px;
   padding: 10px;
 }
+.filter-sections {
+  background: #f0f0f0;
+  padding: 5px;
+}
 .filter-section {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.filter-section h4,
+.filter-section h5 {
+  margin-top: 0;
 }
 .filter-tag {
   padding: 4px 8px;
@@ -331,11 +339,6 @@
 .filter-tag .btn-remove-filter:hover {
   text-decoration: none;
   color: #333;
-}
-.side-filter-group {
-  background: #f3f3f3;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .page-header .search-form input {
   width: 200px;
