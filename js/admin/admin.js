@@ -48,6 +48,10 @@ $(function(){
 	}
 
 	if ($(".side-scrollfixed").length > 0) {
+		$(".side-scrollfixed").css("max-height", $(window).height() + "px")
+		$(window).bind("resize", function(){
+			$(".side-scrollfixed").css("max-height", $(window).height() + "px");
+		});
 		$(".side-scrollfixed").scrollToFixed({
 			zIndex : 1
 		});

@@ -275,6 +275,9 @@
   background: #fff;
   margin-bottom: 20px;
 }
+.side-scrollfixed {
+  overflow: auto;
+}
 .side-action {
   padding: 0;
 }
