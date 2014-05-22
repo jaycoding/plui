@@ -57,10 +57,10 @@
 				minimumInputLength: 1,
 				ajax: {
 					//Replace URL Here
-					url: "http://localhost:3000/mock/json/states.json",
+					url: "/plui/mock/json/states.json",
 					dataType: 'json',
 					data: function (term, page) {
-						
+						//query data
 					},
 					results: function (data, page) {
 						return {results: data.states};
@@ -74,10 +74,10 @@
 				multiple: true,
 				ajax: {
 					//Replace URL Here
-					url: "http://localhost:3000/mock/json/states.json",
+					url: "/plui/mock/json/states.json",
 					dataType: 'json',
 					data: function (term, page) {
-						
+						//query data
 					},
 					results: function (data, page) {
 						return {results: data.states};
@@ -94,7 +94,7 @@
 
 		<div class="span4 offset2">
 			<div class="box">
-				<div class="box-title">Single</div>
+				<div class="box-title"><h3>Single Select</h3></div>
 				<div class="box-content">
 					<input type="hidden" class="span12" id="e1"/>
 				</div>
@@ -107,7 +107,7 @@
 
 		<div class="span4 offset2">
 			<div class="box">
-				<div class="box-title">Multiple</div>
+				<div class="box-title"><h3>Multiple Select</h3></div>
 				<div class="box-content">
 					<input type="hidden" class="span12" id="e2"/>
 				</div>
