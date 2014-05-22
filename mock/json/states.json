@@ -1,0 +1,13 @@
+{
+     "states": [
+        { "id": "CA", "text": "California" },
+        { "id": "AL", "text": "Alabama" },
+        { "id": "NV", "text": "Nevada" },
+        { "id": "OR", "text": "Oregon" },
+        { "id": "WA", "text": "Washington" },
+        { "id": "AZ", "text": "Arizona" },
+        { "id": "CO", "text": "Colorado" },
+        { "id": "TX", "text": "Texas" },
+        { "id": "KY", "text": "Kentucky" }
+     ]
+}
